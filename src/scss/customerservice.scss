@@ -1,0 +1,33 @@
+@import "./functions.scss";
+
+.mtd-page {
+  .customer-service {
+    section.section-1 {
+      .wrapper {
+        max-width: rem(800);
+      }
+    }
+
+    section.section-7 {
+      .icon {
+        width: rem(20);
+        height: rem(20);
+
+        svg {
+          * {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: rem(1024)) {
+  .mtd-page {
+  }
+
+  .quote-block {
+    max-width: 100%;
+  }
+}
