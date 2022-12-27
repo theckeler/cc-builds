@@ -15,7 +15,7 @@ const MyProducts = (weiData) => {
     <div className="wrapper p-3">
       <h1>Purchase History</h1>
 
-      <ul className="list-unstyled flex align-items-center my-2 filter-buttons border-bottom pb-2 mb-2">
+      <ul className="list-unstyled d-flex align-items-center my-2 filter-buttons border-bottom pb-2 mb-2">
         <li className="col text-center pl-0">
           <Button
             copy="All Orders"

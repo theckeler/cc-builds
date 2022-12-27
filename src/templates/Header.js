@@ -8,7 +8,7 @@ function Header() {
     <header>
       <nav className="mtd-page">
         <div
-          className="wrapper ml-auto mr-auto flex"
+          className="wrapper ml-auto mr-auto d-flex"
           style={{ padding: "20px", maxWidth: "1400px" }}
         >
           <a href="/" title="Cub Cadet Home">

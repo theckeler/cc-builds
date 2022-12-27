@@ -17,7 +17,7 @@ const ThreeX = () => {
   return (
     <>
       <div className="snow-v2 snow-v2-threex">
-        <section className="flex flex-column-reverse px-2 py-4">
+        <section className="d-flex flex-column-reverse px-2 py-4">
           <div
             className="wrapper d-flex align-items-end"
             style={{ minHeight: "37.5rem" }}
@@ -32,7 +32,7 @@ const ThreeX = () => {
           <ImgCover importData={indexData.hero} />
         </section>
 
-        <section className="flex flex-column">
+        <section className="d-flex flex-column">
           <div className="wrapper p-sm-6 p-md-9 max-width-1000">
             <h1
               dangerouslySetInnerHTML={{ __html: indexData.copyBlock.h1 }}
@@ -52,8 +52,8 @@ const ThreeX = () => {
 
           <div>
             <div className="wrapper">
-              <ul className="list-unstyled flex flex-wrap">
-                <li className="col-lg-6 flex flex-column">
+              <ul className="list-unstyled d-flex flex-wrap">
+                <li className="col-lg-6 d-flex flex-column">
                   <div className="w-100 h-100" style={{ maxHeight: "600px" }}>
                     <img
                       src={indexData.threeStages.img}
@@ -63,15 +63,16 @@ const ThreeX = () => {
                     />
                   </div>
                 </li>
-                <li className="col-lg-6 flex flex-column bg-white">
+                <li className="col-lg-6 d-flex flex-column bg-white">
                   {indexData.threeStages.blocks.map((block, i) => {
                     return (
                       <div
                         className="mb-2 p-1"
                         style={{ backgroundColor: "#efefef" }}
+                        key={i}
                       >
                         <ul
-                          className="list-unstyled flex flex-wrap h-100 p-1 p-lg-0"
+                          className="list-unstyled d-flex flex-wrap h-100 p-1 p-lg-0"
                           key={i}
                         >
                           <li

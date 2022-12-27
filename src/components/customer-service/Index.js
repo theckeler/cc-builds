@@ -51,15 +51,15 @@ const App = () => {
 
               return (
                 <li
-                  className="flex flex-column col-12 col-sm-12 col-md-4 p-1"
+                  className="d-flex flex-column col-12 col-sm-12 col-md-4 p-1"
                   key={i}
                 >
                   <a
                     href={block.url}
-                    className="flex flex-column p-6 h-100 text-decoration-none bg-grey justify-content-center"
+                    className="d-flex flex-column p-6 h-100 text-decoration-none bg-grey justify-content-center"
                   >
                     <div
-                      className="icon w-75 mx-auto flex flex-column justify-content-center"
+                      className="icon w-75 mx-auto d-flex flex-column justify-content-center"
                       style={{ minHeight: "130px" }}
                     >
                       <ComponentName />
@@ -77,7 +77,7 @@ const App = () => {
           </ul>
           <a
             href={jsonData.section2.button.url}
-            className="text-uppercase fw-bold flex justify-content-center"
+            className="text-uppercase font-weight-bold d-flex justify-content-center"
           >
             {jsonData.section2.button.copy}
           </a>
@@ -87,8 +87,8 @@ const App = () => {
       <section className="section-3">
         <div className="wrapper px-3 py-6">
           <ul className="row list-unstyled">
-            <li className="flex flex-column quote col-12 col-sm-12 col-md-6 p-1">
-              <div className="flex flex-column p-6 h-100 bg-grey">
+            <li className="d-flex flex-column quote col-12 col-sm-12 col-md-6 p-1">
+              <div className="d-flex flex-column p-6 h-100 bg-grey">
                 <TrackOrder
                   title={jsonData.section3.findOrder.h2}
                   sub={jsonData.section3.findOrder.copy}
@@ -97,8 +97,8 @@ const App = () => {
                 />
               </div>
             </li>
-            <li className="flex flex-column quote col-12 col-sm-12 col-md-6 p-1">
-              <div className="flex flex-column p-6 h-100 bg-grey">
+            <li className="d-flex flex-column quote col-12 col-sm-12 col-md-6 p-1">
+              <div className="d-flex flex-column p-6 h-100 bg-grey">
                 <SupportModel
                   title={jsonData.section3.findModel.h2}
                   sub={jsonData.section3.findModel.copy}
@@ -137,14 +137,14 @@ const App = () => {
 
               return (
                 <li
-                  className="flex flex-column col-12 col-sm-12 col-md-6 col-lg-3 p-1"
+                  className="d-flex flex-column col-12 col-sm-12 col-md-6 col-lg-3 p-1"
                   key={i}
                 >
                   <a
                     href={block.url}
-                    className="flex flex-column p-2 h-100 text-decoration-none justify-content-center"
+                    className="d-flex flex-column p-2 h-100 text-decoration-none justify-content-center"
                   >
-                    <div className="icon mx-auto flex justify-content-center pb-4">
+                    <div className="icon mx-auto d-flex justify-content-center pb-4">
                       <ComponentName
                         style={{
                           width: "100%",
@@ -177,12 +177,12 @@ const App = () => {
             {jsonData.section6.blocks.map((block, i) => {
               return (
                 <li
-                  className="flex flex-column col-12 col-sm-12 col-md-6 col-lg-3 p-1"
+                  className="d-flex flex-column col-12 col-sm-12 col-md-6 col-lg-3 p-1"
                   key={i}
                 >
                   <a
                     href={block.url}
-                    className="flex flex-column p-3 h-100 text-decoration-none justify-content-center"
+                    className="d-flex flex-column p-3 h-100 text-decoration-none justify-content-center"
                   >
                     <h3
                       className="text-center mt-4 mb-0"
@@ -211,9 +211,9 @@ const App = () => {
           />
 
           <ul className="row list-unstyled mx-auto">
-            <li className="flex flex-column quote col-12 col-sm-12 col-md-6 p-1">
-              <div className="flex flex-column p-0">
-                <button className="bg-black flex justify-content-center align-items-center py-2 px-5 border-0">
+            <li className="d-flex flex-column quote col-12 col-sm-12 col-md-6 p-1">
+              <div className="d-flex flex-column p-0">
+                <button className="bg-black d-flex justify-content-center align-items-center py-2 px-5 border-0">
                   <span className="icon mr-1">
                     <IconPhone />
                   </span>
@@ -221,9 +221,9 @@ const App = () => {
                 </button>
               </div>
             </li>
-            <li className="flex flex-column quote col-12 col-sm-12 col-md-6 p-1">
-              <div className="flex flex-column p-0">
-                <button className="bg-black flex justify-content-center align-items-center py-2 px-5 border-0">
+            <li className="d-flex flex-column quote col-12 col-sm-12 col-md-6 p-1">
+              <div className="d-flex flex-column p-0">
+                <button className="bg-black d-flex justify-content-center align-items-center py-2 px-5 border-0">
                   <span className="icon mr-1">
                     <IconChat />
                   </span>

@@ -1,7 +1,7 @@
 {
   "hero": {
-    "h1": "Cub Cadet<sup>®</sup> Engine Technology",
-    "copy": "Take on heavy, deep and wet snow with the Cub Cadet engine advantage. Available with IntelliPower<sup>™</sup> and electronic fuel injection (EFI) engine technology, a Cub Cadet engine helps you get the job done."
+    "h1": "Cub Cadet® Engine Technology",
+    "copy": "Take on heavy, deep and wet snow with the Cub Cadet engine advantage. Available with IntelliPower™ and electronic fuel injection (EFI) engine technology, a Cub Cadet engine helps you get the job done."
   },
 
   "intellipower": {
@@ -10,22 +10,22 @@
 
   "stats": {
     "h2": "More available power<sup>*</sup>",
-    "copy": "<sup>*</sup>When compared to the same engine without IntelliPower<sup>™</sup> technology, improvements vary depending on engine models and specific operating conditions.",
+    "copy": "<sup>*</sup>When compared to the same engine without IntelliPower™ technology, improvements vary depending on engine models and specific operating conditions.",
     "blocks": [
       {
         "line1": "18%",
         "line2": "For 243cc<sup>*</sup>",
-        "line3": "IntelliPower<sup>™</sup> engine technology provides up to 18% more power for 243cc EGOV with a digital throttle control that consistently optimizes engine output.<sup>*</sup>"
+        "line3": "IntelliPower™ engine technology provides up to 18% more power for 243cc EGOV with a digital throttle control that consistently optimizes engine output.<sup>*</sup>"
       },
       {
         "line1": "13%",
         "line2": "For 272cc<sup>*</sup>",
-        "line3": "IntelliPower<sup>™</sup> engine technology provides up to 13% more power for 272cc EGOV with a digital throttle control that consistently optimizes engine output.<sup>*</sup>"
+        "line3": "IntelliPower™ engine technology provides up to 13% more power for 272cc EGOV with a digital throttle control that consistently optimizes engine output.<sup>*</sup>"
       },
       {
         "line1": "12%",
         "line2": "For 357cc<sup>*</sup>",
-        "line3": "IntelliPower<sup>™</sup> engine technology provides up to 12% more power for 357cc EGOV with a digital throttle control that consistently optimizes engine output.<sup>*</sup>"
+        "line3": "IntelliPower™ engine technology provides up to 12% more power for 357cc EGOV with a digital throttle control that consistently optimizes engine output.<sup>*</sup>"
       }
     ]
   },
@@ -44,7 +44,7 @@
   },
 
   "howItWorks": {
-    "h2": "How IntelliPower<sup>™</sup> Works",
+    "h2": "How IntelliPower™ Works",
     "blocks": [
       {
         "title": "PHASE 1",
@@ -52,7 +52,7 @@
       },
       {
         "title": "PHASE 2",
-        "copy": "Intellipower<sup>™</sup> automatically increases engine RPMs, offering you more available power resulting in less bogging down when clearing heavy and wet snow.<sup>*</sup>"
+        "copy": "IntelliPower™ automatically increases engine RPMs, offering you more available power resulting in less bogging down when clearing heavy and wet snow.<sup>*</sup>"
       }
     ]
   },
@@ -74,9 +74,26 @@
     ]
   },
 
+  "quotesIntellipower": {
+    "blocks": [
+      {
+        "title": "Awesome performance and features!",
+        "copy": "“First year with new Cub Cadet has been very impressive. Easy to start, steering feature works great, snow clearing and throwing was excellent. Snow was very wet and heavy but blower had no problem.”",
+        "name": "Big R, Rochester NY",
+        "unit": "2X 24” IntelliPower™ "
+      },
+      {
+        "title": "High Quality!",
+        "copy": "“I am really enjoying this new snow blower! It is very high quality and very easy to use. I would strongly recommend.”",
+        "name": "Ndwest, Bismarck ND",
+        "unit": "2X 26” IntelliPower™ "
+      }
+    ]
+  },
+
   "efi": {
-    "copy": "Cub Cadet electronic fuel-injected (EFI) engines set new standards in strength and power. EFI provides reliable starting, and IntelliPower<sup>™</sup> technology offers more available power when you need it most.<sup>*</sup>",
-    "small": "*When compared to the same engine without IntelliPower<sup>™</sup> technology, improvements vary depending on engine models and specific operating conditions",
+    "copy": "Cub Cadet electronic fuel-injected (EFI) engines set new standards in strength and power. EFI provides reliable starting, and IntelliPower™ technology offers more available power when you need it most.<sup>*</sup>",
+    "small": "*When compared to the same engine without IntelliPower™ technology, improvements vary depending on engine models and specific operating conditions",
     "blocks": [
       {
         "title": "Easy to Start",
@@ -101,11 +118,11 @@
   },
 
   "learnMore": {
-    "h2": "Learn More about Cub Cadet IntelliPower<sup>™</sup> and EFI",
+    "h2": "Learn More about Cub Cadet IntelliPower™ and EFI",
     "blocks": [
       {
         "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/ve1f3e6cb0cf2f950d44a96bbcdc4fbdabb979847/snow-v2/31AM5HVSB10_Cub2x26Int_env1.jpg?version=1,667,999,594,000",
-        "title": "IntelliPower<sup>™</sup>",
+        "title": "IntelliPower™",
         "copy": "Cub Cadet® snow blowers are engineered for extreme. The 2X® 30 EFI with IntelliPower™ combines two technologies — IntelliPower and Electronic Fuel Injection (EFI) — to give you a powerful combination and help handle whatever winter has to offer.",
         "button": {
           "copy": "Learn more",
@@ -129,8 +146,8 @@
     "blocks": [
       {
         "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwf61d20a5/products/Equipment/Cub-Cadet_2X24_IP_9.jpg?sw=1000&sh=1000&sm=fit",
-        "title": "2X 24&rdquo; INTELLIPOWER<sup>™</sup> Snow Blower",
-        "copy": "2X<sup>™</sup> TWO-STAGE POWER",
+        "title": "2X 24&rdquo; INTELLIPOWER™ Snow Blower",
+        "copy": "2X™ TWO-STAGE POWER",
         "price": "From $1,199.00 MSRP",
         "button": {
           "copy": "View More"
@@ -139,8 +156,8 @@
       },
       {
         "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw6e9bb2ba/products/Equipment/Cub-Cadet_2X26_IP_11.jpg?sw=1000&sh=1000&sm=fit",
-        "title": "2X 26&rdquo; INTELLIPOWER<sup>™</sup> Snow Blower",
-        "copy": "2X<sup>™</sup> TWO-STAGE POWER",
+        "title": "2X 26&rdquo; INTELLIPOWER™ Snow Blower",
+        "copy": "2X™ TWO-STAGE POWER",
         "price": "From $1,299.00 MSRP",
         "button": {
           "copy": "View More"
@@ -149,8 +166,8 @@
       },
       {
         "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw528bc56b/products/Equipment/Cub-Cadet_2X26Trac_IP_2.jpg?sw=1000&sh=1000&sm=fit",
-        "title": "2X 26&rdquo; TRAC INTELLIPOWER<sup>™</sup> Snow Blower",
-        "copy": "2X<sup>™</sup> TWO-STAGE POWER",
+        "title": "2X 26&rdquo; TRAC INTELLIPOWER™ Snow Blower",
+        "copy": "2X™ TWO-STAGE POWER",
         "price": "From $1,899.00 MSRP",
         "button": {
           "copy": "View More"
@@ -159,8 +176,8 @@
       },
       {
         "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw0d2ca778/products/Equipment/Cub-Cadet_2X28_IP_4.jpg?sw=1000&sh=1000&sm=fit",
-        "title": "2X 28&rdquo; INTELLIPOWER<sup>™</sup> Snow Blower ",
-        "copy": "2X<sup>™</sup> TWO-STAGE POWER",
+        "title": "2X 28&rdquo; INTELLIPOWER™ Snow Blower ",
+        "copy": "2X™ TWO-STAGE POWER",
         "price": "From $1,499.00 MSRP",
         "button": {
           "copy": "View More"
@@ -170,7 +187,7 @@
       {
         "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw1022d4eb/products/Equipment/Cub-Cadet_2X_30EFI_14.jpg?sw=1000&sh=1000&sm=fit",
         "title": "2X 30&rdquo; EFI Snow Blower",
-        "copy": "2X<sup>™</sup> TWO-STAGE POWER",
+        "copy": "2X™ TWO-STAGE POWER",
         "price": "From $1,999.00 MSRP",
         "button": {
           "copy": "View More"
@@ -185,7 +202,7 @@
       "intellipower": [
         {
           "question": "What is IntelliPower?",
-          "answer": "This engine technology electronically controls engine speed to create consistent mowing performance for users that might be challenged to cut through thick, wet heavy grass by delivering more power from the engine to the blades resulting in a Signature Cut<sup>™</sup> every time."
+          "answer": "This engine technology electronically controls engine speed to create consistent mowing performance for users that might be challenged to cut through thick, wet heavy grass by delivering more power from the engine to the blades resulting in a Signature Cut™ every time."
         },
         {
           "question": "How does IntelliPower work?",

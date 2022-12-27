@@ -6,9 +6,9 @@ const ImgCover = ({
   objectMobilePos = "center",
   maxWidth = "100%",
 }) => {
-  console.log(addCSS);
+  //console.log(addCSS);
   addCSS = { ...{ left: "0", top: "0" }, ...addCSS };
-  console.log("new", addCSS);
+  //console.log("new", addCSS);
 
   return (
     <div className={`position-absolute w-100 h-100 ${addClass}`} style={addCSS}>

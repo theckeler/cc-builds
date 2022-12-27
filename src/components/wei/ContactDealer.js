@@ -16,7 +16,7 @@ const ContactDealer = () => {
       <h1 className="border-bottom pb-2 mb-2">
         Contact Dealer for Order #{orderID}
       </h1>
-      <ul className="list-unstyled flex align-items-center mb-2">
+      <ul className="list-unstyled d-flex align-items-center mb-2">
         <li className="col col-sm-12 col-lg-6">
           <Button
             copy="Customer Support"
@@ -34,8 +34,8 @@ const ContactDealer = () => {
         </li>
       </ul>
 
-      <ul className="flex list-unstyled p-1 mb-2">
-        <li className="col col-sm-12 col-lg-9 flex flex-column">
+      <ul className="d-flex list-unstyled p-1 mb-2">
+        <li className="col col-sm-12 col-lg-9 d-flex flex-column">
           {submitted ? (
             <div className="h2">Thanks</div>
           ) : (
@@ -55,8 +55,8 @@ const ContactDealer = () => {
             </>
           )}
         </li>
-        <li className="col col-sm-12 col-lg-3 flex flex-column">
-          <ul className="flex flex-column list-unstyled p-3 border">
+        <li className="col col-sm-12 col-lg-3 d-flex flex-column">
+          <ul className="d-flex flex-column list-unstyled p-3 border">
             <li className="border-bottom pb-1 mb-1">Dealer Info:</li>
             <li className="display-3 mb-1">{order.dealer.name}</li>
             <li>{order.dealer.address}</li>

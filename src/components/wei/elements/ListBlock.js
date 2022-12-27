@@ -1,11 +1,11 @@
 const ListBlock = (product) => {
   return (
-    <ul className="list-unstyled flex py-2 border-bottom">
+    <ul className="list-unstyled d-flex py-2 border-bottom">
       <li className="col-lg-2 pl-0">
         <img src={product.img} alt="" className="w-100 border p-1" />
       </li>
       <li className="col-lg-10 px-0">
-        <ul className="list-unstyled flex align-items-center">
+        <ul className="list-unstyled d-flex align-items-center">
           <li className="h3 col col-lg-11">{product.product}</li>
           <li className="ml-auto col col-lg-1 px-0">
             <button className="bg-none w-50 p-0">
@@ -23,7 +23,7 @@ const ListBlock = (product) => {
             </button>
           </li>
         </ul>
-        <ul className="list-unstyled flex align-items-center">
+        <ul className="list-unstyled d-flex align-items-center">
           <li className="col text-center text-uppercase p-1">
             <a
               href="#top"
@@ -59,7 +59,7 @@ const ListBlock = (product) => {
           <li className="col text-center text-uppercase p-1">
             <a
               href="#top"
-              className="small d-block border p-1 text-decoration-none bg-yellow fw-bold"
+              className="small d-block border p-1 text-decoration-none bg-yellow font-weight-bold"
             >
               Add to Cart
             </a>

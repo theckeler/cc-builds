@@ -62,7 +62,7 @@ const Index = () => {
 
   return (
     <div className="wei">
-      <div className="wrapper flex my-1">
+      <div className="wrapper d-flex my-1">
         <Button
           copy="Wei Home"
           addClass="btn bg-dark text-white ml-auto mr-1"

@@ -9,9 +9,9 @@ const TrackBlock = ({ order }) => {
     <React.Fragment>
       {order.products.map((product, i) => {
         return (
-          <ul className="list-unstyled flex border" key={i}>
+          <ul className="list-unstyled d-flex border" key={i}>
             <li className="col col-sm-12 col-lg-9 border-right">
-              <ul className="list-unstyled flex p-2" key={i}>
+              <ul className="list-unstyled d-flex p-2" key={i}>
                 <li className="col col-sm-12 col-lg-2">
                   <img src={product.img} alt="" className="w-100 border p-1" />
                 </li>
@@ -22,10 +22,10 @@ const TrackBlock = ({ order }) => {
                 </li>
               </ul>
             </li>
-            <li className="col col-sm-12 col-lg-3 flex flex-column">
+            <li className="col col-sm-12 col-lg-3 d-flex flex-column">
               {order.type === "dealer" ? (
                 <>
-                  <ul className="flex flex-column list-unstyled p-1 mb-2 justify-content-center">
+                  <ul className="d-flex flex-column list-unstyled p-1 mb-2 justify-content-center">
                     <li className="text-center">Dealer Info:</li>
                     <li className="text-center">{order.dealer.name}</li>
                     <li className="text-center">{order.dealer.address}</li>

@@ -11,7 +11,7 @@ const Ultima = () => {
   return (
     <>
       <div className="top">
-        <section className="flex p-0">
+        <section className="d-flex p-0">
           <img
             src={jsonData.hero.img}
             alt={jsonData.hero.alt}

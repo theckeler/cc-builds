@@ -43,7 +43,7 @@ const App = () => {
     <>
       <div className="snow-v2 snow-v2-index">
         {/* HERO */}
-        <section className="section-1 hero flex flex-column-reverse">
+        <section className="section-1 hero d-flex flex-column-reverse">
           <div className="wrapper">
             <div className="block bg-black clip-corner">
               <Logo className="w-100" />
@@ -53,7 +53,7 @@ const App = () => {
         </section>
 
         {/* COPY BLOCK */}
-        <section className="section-2 bg-black flex flex-column">
+        <section className="section-2 bg-black d-flex flex-column">
           <Pluses addClass="top" num="9" />
           <div className="wrapper">
             <h1
@@ -126,7 +126,7 @@ const App = () => {
         </section>
 
         {/* QUOTE */}
-        <section className="section-5 quote flex flex-column-reverse">
+        <section className="section-5 quote d-flex flex-column-reverse">
           <div className="wrapper">
             <QuoteBlock
               quote={jsonData.quote}
@@ -141,8 +141,8 @@ const App = () => {
         <section className="section-6">
           <div className="wrapper container">
             <ul className="row list-unstyled">
-              <li className="col-12 col-sm-12 col-md-6 flex">
-                <div className="bg-black clip-corner p-2 flex flex-column">
+              <li className="col-12 col-sm-12 col-md-6 d-flex">
+                <div className="bg-black clip-corner p-2 d-flex flex-column">
                   <div
                     className="logo intellipower p-6 position-relative"
                     style={{ zIndex: "1" }}
@@ -150,7 +150,7 @@ const App = () => {
                     <Intellipower />
                   </div>
                   <ul
-                    className="flex list-unstyled p-2 position-relative"
+                    className="d-flex list-unstyled p-2 position-relative"
                     style={{ zIndex: "1" }}
                   >
                     <li className="plus">+</li>
@@ -180,12 +180,12 @@ const App = () => {
                   />
                 </div>
               </li>
-              <li className="col-12 col-sm-12 col-md-6 p-1 flex">
-                <div className="bg-black clip-corner p-2 flex flex-column">
+              <li className="col-12 col-sm-12 col-md-6 p-1 d-flex">
+                <div className="bg-black clip-corner p-2 d-flex flex-column">
                   <div className="logo efi p-6 w-75 mx-auto">
                     <EFI />
                   </div>
-                  <ul className="flex list-unstyled p-2">
+                  <ul className="d-flex list-unstyled p-2">
                     <li className="plus">+</li>
                     <li className="content">
                       <p
@@ -288,19 +288,19 @@ const App = () => {
                       }
 
                       if (block2.copy) {
-                        output += `<span class="flex flex-column justify-content-center">${block2.copy}</span>`;
+                        output += `<span class="d-flex flex-column justify-content-center">${block2.copy}</span>`;
                       }
 
                       if (block2.active === true) {
                         output =
-                          '<span class="dash-bull flex flex-column justify-content-center">&bull;</span>';
+                          '<span class="dash-bull d-flex flex-column justify-content-center">&bull;</span>';
                       } else if (block2.active === false) {
                         output =
-                          '<span class="dash-bull flex flex-column justify-content-center">&ndash;</span>';
+                          '<span class="dash-bull d-flex flex-column justify-content-center">&ndash;</span>';
                       }
                       return (
                         <li
-                          className={`flex p-2 column-${x} row-${i}`}
+                          className={`d-flex p-2 column-${x} row-${i}`}
                           key={x}
                           dangerouslySetInnerHTML={{
                             __html: output,

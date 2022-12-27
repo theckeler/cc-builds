@@ -9,16 +9,16 @@ const Menu = ({ loggedIn, logIn, logOut, closeMenu }) => {
   serviceDate.setMonth(serviceDate.getMonth() + 3);
 
   return (
-    <div className="menu flex flex-column " style={{ minHeight: "40vh" }}>
-      <ul className="list-unstyled flex flex-column">
-        <li className="bg-black p-3 title flex flex-column xxl-hide">
+    <div className="menu d-flex flex-column " style={{ minHeight: "40vh" }}>
+      <ul className="list-unstyled d-flex flex-column">
+        <li className="bg-black p-3 title d-flex flex-column xxl-hide">
           <Button
             copy="&#10005;"
-            addClass="menu-close bg-yellow d-inline-block rounded-circle p-0 flex ml-auto font-weight-bold lg-hide"
+            addClass="menu-close bg-yellow d-inline-block rounded-circle p-0 d-flex ml-auto font-weight-bold lg-hide"
             addClick={closeMenu}
           />
         </li>
-        <li className="bg-black px-2 py-1 flex-xxl-column flex align-items-center pb-3">
+        <li className="bg-black px-2 py-1 d-flex-xxl-column d-flex align-items-center pb-3">
           {loggedIn === 1 ? (
             <>
               <h2 className="h1 pt-1">Joe Schmo</h2>
@@ -34,7 +34,7 @@ const Menu = ({ loggedIn, logIn, logOut, closeMenu }) => {
         </li>
         {loggedIn === 1 && (
           <>
-            <li className="px-0 py-0 flex flex-column">
+            <li className="px-0 py-0 d-flex flex-column">
               <Button
                 copy="Manage Account &gt;"
                 addClass="w-100 text-left font-weight-normal text-capitalize bg-yellow"
@@ -49,8 +49,8 @@ const Menu = ({ loggedIn, logIn, logOut, closeMenu }) => {
         <li className="my-1">
           {loggedIn === 1 ? (
             <>
-              <ul className="list-unstyled flex flex-column">
-                <li className="px-0 py-0 title flex flex-column">
+              <ul className="list-unstyled d-flex flex-column">
+                <li className="px-0 py-0 title d-flex flex-column">
                   <Button
                     copy="Purchase History"
                     addClass="w-100 text-left font-weight-normal text-capitalize bg-white"
@@ -60,7 +60,7 @@ const Menu = ({ loggedIn, logIn, logOut, closeMenu }) => {
                     }}
                   />
                 </li>
-                <li className="px-0 py-0 title flex flex-column">
+                <li className="px-0 py-0 title d-flex flex-column">
                   <Button
                     copy="My Products"
                     addClass="w-100 text-left font-weight-normal text-capitalize bg-white"
@@ -70,7 +70,7 @@ const Menu = ({ loggedIn, logIn, logOut, closeMenu }) => {
                     }}
                   />
                 </li>
-                <li className="px-0 py-0 title flex flex-column">
+                <li className="px-0 py-0 title d-flex flex-column">
                   <Button
                     copy="My Lists"
                     addClass="w-100 text-left font-weight-normal text-capitalize bg-white"
@@ -97,7 +97,7 @@ const Menu = ({ loggedIn, logIn, logOut, closeMenu }) => {
                   </div>
                 </li>
 
-                <li className="flex flex-lg-column mt-3 px-3 py-0 border-top pt-2">
+                <li className="d-flex d-flex-lg-column mt-3 px-3 py-0 border-top pt-2">
                   <input
                     className="p-1 w-100"
                     placeholder="Tracking Number"
@@ -117,7 +117,7 @@ const Menu = ({ loggedIn, logIn, logOut, closeMenu }) => {
             </>
           ) : (
             <div className="my-1 px-2 py-1">
-              <ul className="list-unstyled flex flex-column">
+              <ul className="list-unstyled d-flex flex-column">
                 <li className="mt-0">
                   <label>Email</label>
                   <input type="email" className="form-control w-100" />

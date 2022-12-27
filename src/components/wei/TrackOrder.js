@@ -13,7 +13,7 @@ const TrackOrder = ({ weiData }) => {
     <div className="wrapper p-3">
       <h1 className="border-bottom pb-2 mb-1">Track Order: #{orderID}</h1>
 
-      <ul className="list-unstyled flex align-items-center mb-2">
+      <ul className="list-unstyled d-flex align-items-center mb-2">
         <li className="col col-sm-12 col-lg-6">
           <Button
             copy="Customer Support"

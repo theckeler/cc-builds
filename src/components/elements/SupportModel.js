@@ -2,7 +2,7 @@ const SupportModel = ({ title, sub, addClass, addStyle }) => {
   return (
     <form
       action="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Search-Show"
-      className="flex flex-column h-100"
+      className="d-flex flex-column h-100"
       method="get"
       name="simpleSearch"
       noValidate=""

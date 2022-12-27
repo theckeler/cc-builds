@@ -49,7 +49,7 @@ const MyProducts = ({ weiData }) => {
   return (
     <div className="wrapper p-3">
       <h1 className="mb-4 border-bottom pb-2 mb-2">My Products</h1>
-      <ul className="list-unstyled flex flex-wrap">
+      <ul className="list-unstyled d-flex flex-wrap">
         {orderBoxes.map((product, i) => {
           return (
             <li
@@ -61,9 +61,9 @@ const MyProducts = ({ weiData }) => {
               onDragOver={handleDragOver}
               draggable="true"
             >
-              <ul className="list-unstyled flex flex-column border bg-white h-100">
-                <li className="bg-grey-dark-2 flex">
-                  <ul className="list-unstyled flex align-items-center w-100 p-1">
+              <ul className="list-unstyled d-flex flex-column border bg-white h-100">
+                <li className="bg-grey-dark-2 d-flex">
+                  <ul className="list-unstyled d-flex align-items-center w-100 p-1">
                     <li className="col col-lg-1 px-0 cursor-grab">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +77,7 @@ const MyProducts = ({ weiData }) => {
                         />
                       </svg>
                     </li>
-                    <li className="col col-lg-10 fw-bold text-uppercase">
+                    <li className="col col-lg-10 font-weight-bold text-uppercase">
                       <span style={{ color: "#ffc20f" }}>
                         {product.product}
                       </span>
@@ -100,7 +100,7 @@ const MyProducts = ({ weiData }) => {
                   </ul>
                 </li>
                 <li className="p-1">
-                  <ul className="list-unstyled flex">
+                  <ul className="list-unstyled d-flex">
                     <li className="col-sm-5 p-0">
                       <img
                         src={product.img}
@@ -147,9 +147,9 @@ const MyProducts = ({ weiData }) => {
           );
         })}
         <li className="col col-sm-12 col-lg-4 mb-4" id="sort-box-1">
-          <ul className="list-unstyled flex flex-column border bg-white h-100">
-            <li className="bg-grey-dark-2 flex align-items-center">
-              <ul className="list-unstyled flex align-items-center w-100 p-1">
+          <ul className="list-unstyled d-flex flex-column border bg-white h-100">
+            <li className="bg-grey-dark-2 d-flex align-items-center">
+              <ul className="list-unstyled d-flex align-items-center w-100 p-1">
                 <li className="col col-lg-10">
                   <strong>Add Item</strong>
                 </li>

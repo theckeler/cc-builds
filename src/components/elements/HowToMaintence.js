@@ -19,7 +19,7 @@ const HowToMaintence = ({ jsonData }) => {
             {jsonData.howTo.blocks.map((block, i) => {
               return (
                 <li
-                  className="col-sm-12 col-md-4 p-1 flex flex-column "
+                  className="col-sm-12 col-md-4 p-1 d-flex flex-column "
                   key={i}
                 >
                   <ImgCopyBlockStacked

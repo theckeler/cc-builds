@@ -13,7 +13,7 @@ const ViewInvoice = ({ weiData }) => {
     <div className="wrapper p-4">
       <h1 className="border-bottom pb-2 mb-1">View Invoice: #{orderID}</h1>
 
-      <ul className="list-unstyled flex align-items-center my-2">
+      <ul className="list-unstyled d-flex align-items-center my-2">
         <li className="col col-sm-12 col-lg-6 pl-0">
           <Button
             copy="Customer Support"

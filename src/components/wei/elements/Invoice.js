@@ -6,7 +6,7 @@ const TrackBlock = ({ order }) => {
   const orderTotal = order.total + order.ship;
 
   return (
-    <ul className="list-unstyled flex flex-column border p-3">
+    <ul className="list-unstyled d-flex flex-column border p-3">
       <li className="border-bottom">
         <p className="mb-1">
           <strong>Order Date:</strong> {order.date}
@@ -19,7 +19,7 @@ const TrackBlock = ({ order }) => {
         </p>
       </li>
       <li className="border-bottom px-0 py-3">
-        <ul className="list-unstyled flex flex-wrap">
+        <ul className="list-unstyled d-flex flex-wrap">
           <li className="col-sm-12 col-lg-10 pb-1 border-bottom h4">Items</li>
           <li className="col-sm-12 col-lg-2 pb-1 text-right border-bottom h4">
             Price
@@ -27,7 +27,7 @@ const TrackBlock = ({ order }) => {
           {order.products.map((product, i) => {
             return (
               <React.Fragment key={i}>
-                <li className="col-sm-12 col-lg-10 fw-bold pt-2">
+                <li className="col-sm-12 col-lg-10 font-weight-bold pt-2">
                   Delivered: {product.delivered}
                 </li>
                 <li className="col-sm-12 col-lg-10">{product.product}</li>
@@ -43,13 +43,13 @@ const TrackBlock = ({ order }) => {
         <p className="h4">
           <strong>Payment</strong>
         </p>
-        <ul className="list-unstyled flex flex-wrap">
+        <ul className="list-unstyled d-flex flex-wrap">
           <li className="col-sm-12 col-lg-10 pb-1">
             <strong>Payment Method</strong>
           </li>
           <li className="col-sm-12 col-lg-10 pb-1">{order.paymentMethod}</li>
           <li className="col-sm-12 col-lg-2 pb-1 text-right">
-            <ul className="list-unstyled flex flex-column">
+            <ul className="list-unstyled d-flex flex-column">
               <li className="">{currencyConverter(order.total)}</li>
               <li className="">{currencyConverter(order.ship)}</li>
               <li className="">{currencyConverter(orderTotal)}</li>

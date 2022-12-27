@@ -3,11 +3,11 @@ import jsonData from "./data/intellipower.json";
 
 import { ReactComponent as Intellipower } from "../../images/intellipower-logo.svg";
 import { ReactComponent as EFI } from "../../images/efi-logo.svg";
-import { ReactComponent as IntellipowerBack } from "../../images/intellipower-back.svg";
 import Button from "../elements/Button";
 import QuoteBlock from "../elements/QuoteBlock";
 import Faqs from "../elements/Faqs";
 import Video from "../elements/Video";
+import ImgCopyBlock from "../elements/ImgCopyBlock";
 
 const App = () => {
   // console.log(jsonData);
@@ -78,8 +78,9 @@ window.onload = function() {
 
   return (
     <div className="snow-v2 snow-v2-intellipower">
-      <section className="section-1">
-        <div className="wrapper flex flex-column align-items-center justify-content-center px-3">
+      {/* HERO */}
+      <section className="section-1" style={{ background: "#efefef" }}>
+        <div className="wrapper d-flex flex-column align-items-center justify-content-center px-3">
           <h1
             className="text-center"
             dangerouslySetInnerHTML={{ __html: jsonData.hero.h1 }}
@@ -91,8 +92,9 @@ window.onload = function() {
         </div>
       </section>
 
+      {/* Intellpower */}
       <section className="section-2 bg-black">
-        <div className="wrapper flex flex-column align-items-center justify-content-center px-3">
+        <div className="wrapper d-flex flex-column align-items-center justify-content-center px-3">
           <div className="logo">
             <Intellipower />
           </div>
@@ -101,9 +103,15 @@ window.onload = function() {
             dangerouslySetInnerHTML={{ __html: jsonData.intellipower.text }}
           ></h2>
         </div>
-        <IntellipowerBack />
+        <img
+          src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/snow-v2/intellipower-back.svg"
+          alt=""
+          className="position-absolute w-100 h-100"
+          style={{ top: "0", opacity: "0.25", objectFit: "cover" }}
+        />
       </section>
 
+      {/* Stats */}
       <section className="section-3 pt-8 pb-8">
         <div className="wrapper px-3">
           <h2
@@ -122,28 +130,29 @@ window.onload = function() {
             {jsonData.stats.blocks.map((block, i) => {
               return (
                 <li className="col-12 col-sm-12 col-md-4 p-2 mt-2" key={i}>
-                  <div className="p-2 flex flex-column">
-                    <p className="text-uppercase text-center fw-bold text-uppercase h3 line-1 mb-0">
+                  <div className="p-2 d-flex flex-column">
+                    <p className="text-uppercase text-center font-weight-bold text-uppercase h3 mb-0">
                       Up To
                     </p>
                     <p
-                      className="text-uppercase text-center fw-bold text-uppercase h1 mt-0"
+                      className="text-uppercase text-center font-weight-bold text-uppercase h1"
                       dangerouslySetInnerHTML={{
                         __html: block.line1,
                       }}
-                    ></p>
+                      style={{ lineHeight: "0.8" }}
+                    />
                     <p
-                      className="text-uppercase text-center fw-bold text-uppercase h3 line-3 mt-0 "
+                      className="text-uppercase text-center font-weight-bold text-uppercase h3 mt-0"
                       dangerouslySetInnerHTML={{
                         __html: block.line2,
                       }}
-                    ></p>
+                    />
                     <p
                       className="text-center small line-4 mb-0 pb-0 text-black-50 mt-4 pt-2 w-75 ml-auto mr-auto"
                       dangerouslySetInnerHTML={{
                         __html: block.line3,
                       }}
-                    ></p>
+                    />
                   </div>
                 </li>
               );
@@ -154,19 +163,22 @@ window.onload = function() {
             {jsonData.consistent.blocks.map((block, i) => {
               return (
                 <li className="col-12 col-sm-12 col-md-6 p-1" key={i}>
-                  <div className="h-100 bg-yellow p-5 flex flex-column">
+                  <div
+                    className="h-100 p-5 d-flex flex-column"
+                    style={{ background: "#efefef" }}
+                  >
                     <p
                       className="text-center h3 mt-0 pt-0 line-1"
                       dangerouslySetInnerHTML={{
                         __html: block.title,
                       }}
-                    ></p>
+                    />
                     <p
                       className="text-center w-100 pt-2 mt-2 pb-0 mb-0 line-2"
                       dangerouslySetInnerHTML={{
                         __html: block.copy,
                       }}
-                    ></p>
+                    />
                   </div>
                 </li>
               );
@@ -183,9 +195,9 @@ window.onload = function() {
             {jsonData.howItWorks.blocks.map((block, i) => {
               return (
                 <li className="col-12 col-sm-12 col-md-6 p-1" key={i}>
-                  <div className="bg-black clip-corner p-4 flex flex-column">
+                  <div className="bg-black clip-corner p-4 d-flex flex-column">
                     <p
-                      className="text-uppercase fw-bold"
+                      className="text-uppercase font-weight-bold"
                       dangerouslySetInnerHTML={{
                         __html: block.title,
                       }}
@@ -207,7 +219,7 @@ window.onload = function() {
               className="col-12 col-sm-12 col-md-12 p-1 active video"
               id="step-up"
             >
-              <div className="p-4 flex flex-column">
+              <div className="p-4 d-flex flex-column">
                 <img
                   src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/ve1f3e6cb0cf2f950d44a96bbcdc4fbdabb979847/snow-v2/18-percent-power.jpg"
                   alt=""
@@ -215,20 +227,20 @@ window.onload = function() {
               </div>
             </li>
             <li className="col-12 col-sm-12 col-md-12 p-1 video" id="vr">
-              <div className="p-4 flex flex-column">VR Video</div>
+              <div className="p-4 d-flex flex-column">VR Video</div>
             </li>
           </ul>
 
           <ul className="row list-unstyled p-0 m-0 video-buttons">
             <li className="col-12 col-sm-6 col-md-6 p-0">
-              <div className="p-0 flex flex-column">
+              <div className="p-0 d-flex flex-column">
                 <button className="active" id="button-step-up">
                   IntelliPower<sup>™</sup> Step-Up: Wall of Winter
                 </button>
               </div>
             </li>
             <li className="col-12 col-sm-6 col-md-6 p-0">
-              <div className="p-0 flex flex-column">
+              <div className="p-0 d-flex flex-column">
                 <button className="" id="button-vr">
                   IntelliPower<sup>™</sup> VR Experience
                 </button>
@@ -238,6 +250,7 @@ window.onload = function() {
         </div>
       </section>
 
+      {/* Quotes */}
       <section className="section-3 pt-8 pb-8 bg-yellow">
         <div className="wrapper">
           <ul className="row list-unstyled bg-yellow">
@@ -255,6 +268,7 @@ window.onload = function() {
         </div>
       </section>
 
+      {/* EFI Blocks */}
       <section className="section-4 bg-black pt-9 pb-9">
         <div className="wrapper">
           <div className="logo w-50 m-auto">
@@ -273,7 +287,7 @@ window.onload = function() {
             {jsonData.efi.blocks.map((block, i) => {
               return (
                 <li className="block col-12 col-sm-12 col-md-6 p-3" key={i}>
-                  <div className="p-4 h-100 flex flex-column bg-white clip-corner">
+                  <div className="p-4 h-100 d-flex flex-column bg-white clip-corner">
                     <strong
                       className="title text-center mb-2 pb-2"
                       dangerouslySetInnerHTML={{
@@ -294,6 +308,7 @@ window.onload = function() {
         </div>
       </section>
 
+      {/* Video */}
       <section className="section-5 pt-9 pb-9">
         <div className="wrapper p-3">
           <h2
@@ -314,10 +329,11 @@ window.onload = function() {
         </div>
       </section>
 
+      {/* 2 Quotes */}
       <section className="section-6 pt-9 pb-9 bg-yellow">
         <div className="wrapper">
           <ul className="row list-unstyled bg-yellow">
-            {jsonData.quotes.blocks.map((block, i) => {
+            {jsonData.quotesIntellipower.blocks.map((block, i) => {
               return (
                 <li
                   className="quote col-12 col-sm-12 col-md-6 pt-3 pr-3 pb-3 pl-3"
@@ -331,39 +347,7 @@ window.onload = function() {
         </div>
       </section>
 
-      {/* <section className="section-7 py-9">
-        <div className="wrapper flex flex-column">
-          <ul className="row list-unstyled">
-            {jsonData.learnMore.blocks.map((block, i) => {
-              return (
-                <li className="quote col-12 col-sm-12 col-md-6 p-0" key={i}>
-                  <a href="#top" className="text-decoration-none p-3 d-block">
-                    <img src={block.img} alt="" className="w-100" />
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-          <h2
-            className="text-center"
-            dangerouslySetInnerHTML={{
-              __html: jsonData.learnMore.h2,
-            }}
-          />
-          <p
-            className="copy text-center max-width-1000 mb-4 mt-1"
-            dangerouslySetInnerHTML={{
-              __html: jsonData.learnMore.copy,
-            }}
-          />
-          <Button
-            copy={jsonData.learnMore.button.copy}
-            url={jsonData.learnMore.button.url}
-            addClass="bg-yellow mx-auto"
-          />
-        </div>
-      </section> */}
-
+      {/* Learn More */}
       <section className="section-7 pt-9 pb-9">
         <div className="wrapper">
           <h2
@@ -376,13 +360,13 @@ window.onload = function() {
             {jsonData.learnMore.blocks.map((block, i) => {
               return (
                 <li
-                  className="quote col-12 col-sm-12 col-md-6 pt-3 pr-3 pb-3 pl-3 bg-grey"
+                  className="quote col-12 col-sm-12 col-md-6 pt-3 pr-3 pb-3 pl-3"
                   key={i}
                 >
-                  <a href={block.button.url} className="text-decoration-none">
+                  {/* <a href={block.button.url} className="text-decoration-none">
                     <img src={block.img} alt="" className="w-100" />
                     <p
-                      className="title mt-2 fw-bold"
+                      className="title mt-2 font-weight-bold"
                       dangerouslySetInnerHTML={{
                         __html: block.title,
                       }}
@@ -394,7 +378,13 @@ window.onload = function() {
                       }}
                     ></p>
                     <Button copy={block.button.copy} addClass="bg-yellow" />
-                  </a>
+                  </a> */}
+                  <ImgCopyBlock
+                    {...{ block }}
+                    linkable={false}
+                    addStyle={{ background: "#efefef" }}
+                    flushImg={true}
+                  />
                 </li>
               );
             })}
@@ -402,6 +392,7 @@ window.onload = function() {
         </div>
       </section>
 
+      {/* View More */}
       <section className="section-8 pt-9 pb-9">
         <div className="wrapper">
           <h2
@@ -414,16 +405,16 @@ window.onload = function() {
             {jsonData.viewMore.blocks.map((block, i) => {
               return (
                 <li
-                  className="flex flex-column quote col-12 col-sm-12 col-md-4 p-1"
+                  className="d-flex flex-column quote col-12 col-sm-12 col-md-4 p-1"
                   key={i}
                 >
-                  <a
+                  {/* <a
                     href={block.url}
-                    className="flex flex-column p-3 h-100 text-decoration-none bg-grey"
+                    className="d-flex flex-column p-3 h-100 text-decoration-none bg-grey"
                   >
                     <img src={block.img} alt="" className="w-100" />
                     <p
-                      className="copy fw-bold mt-2 mb-0 pb-0"
+                      className="copy font-weight-bold mt-2 mb-0 pb-0"
                       dangerouslySetInnerHTML={{
                         __html: block.title,
                       }}
@@ -438,36 +429,45 @@ window.onload = function() {
                       copy={block.button.copy}
                       addClass="bg-yellow mt-auto"
                     />
-                  </a>
+                  </a> */}
+                  <ImgCopyBlock
+                    {...{ block }}
+                    linkable={false}
+                    addStyle={{ background: "#efefef" }}
+                    addClass="p-2"
+                  />
                 </li>
               );
             })}
-            <li class="flex flex-column quote col-12 col-sm-12 col-md-4 p-1">
-              <a
-                href="https://www.cubcadet.com/en_US/snow-blowers/two-stage-snow-blowers"
-                class="flex flex-column p-3 h-100 text-decoration-none bg-grey"
+            <li className="d-flex flex-column col-12 col-sm-12 col-md-4 p-1">
+              <div
+                className="d-flex flex-column p-3 h-100 text-decoration-none"
+                style={{ background: "#efefef" }}
               >
-                <div className="img-wrapper">
+                <div className="img-wrapper" style={{ minHeight: "500px" }}>
                   <img
                     src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw26bee84c/images/product-line-browse/Main-Carousel/SnowBlow_PLB_31AH5GVO710_2X_30EFI_desktop_1015x630.jpg"
                     alt=""
-                    class="w-100 h-100"
+                    className="w-100 h-100"
                   />
                 </div>
-                <button class="coh-link coh-style-button-action bg-yellow mt-auto py-2 px-5 border-0">
-                  View All 2X Snowblowers
-                </button>
-              </a>
+                <Button
+                  copy="View All 2X Snowblowers"
+                  url="https://www.cubcadet.com/en_US/snow-blowers/two-stage-snow-blowers"
+                  addClass="bg-secondary align-self-start mt-auto"
+                />
+              </div>
             </li>
           </ul>
         </div>
       </section>
 
+      {/* FAQs */}
       <section className="section-9 pt-9 pb-9 p-0">
         <div className="wrapper p-3">
           <ul className="row list-unstyled">
             <li className="col-12 col-sm-12 col-md-6 p-0">
-              <div className="p-0 flex flex-column">
+              <div className="p-0 d-flex flex-column">
                 <button
                   className="active py-2 px-5 border-0"
                   id="button-intellipower-faqs"
@@ -477,7 +477,7 @@ window.onload = function() {
               </div>
             </li>
             <li className="col-12 col-sm-12 col-md-6 p-0">
-              <div className="p-0 flex flex-column">
+              <div className="p-0 d-flex flex-column">
                 <button className="py-2 px-5 border-0" id="button-efi-faqs">
                   EFI
                 </button>

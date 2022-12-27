@@ -2,11 +2,11 @@ const ImgCopyBlockStacked = ({ block, addClass, addStyle }) => {
   return (
     <a
       href={block.url}
-      className={`flex flex-column text-decoration-none ${addClass}`}
+      className={`d-flex flex-column text-decoration-none ${addClass}`}
       style={addStyle}
     >
       <img src={block.img} alt="" />
-      <div className="content flex flex-column p-3 h-100">
+      <div className="content d-flex flex-column p-3 h-100">
         <strong
           className="h3"
           dangerouslySetInnerHTML={{
@@ -21,7 +21,7 @@ const ImgCopyBlockStacked = ({ block, addClass, addStyle }) => {
           }}
         />
         <span
-          className="mt-auto text-uppercase fw-bold"
+          className="mt-auto text-uppercase font-weight-bold"
           style={{ textDecoration: "underline" }}
         >
           Read more

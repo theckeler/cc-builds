@@ -9,6 +9,7 @@ import ImgCover from "../elements/ImgCover";
 import Footer from "./elements/Footer";
 import Engineered from "./elements/Engineered";
 import HeaderSnowflake from "./elements/HeaderSnowflake";
+import ImgCopyBlock from "../elements/ImgCopyBlock";
 
 const OneX = () => {
   //console.log("indexData", indexData.engineeredFor.blocks);
@@ -16,7 +17,8 @@ const OneX = () => {
   return (
     <>
       <div className="snow-v2 snow-v2-threex">
-        <section className="flex flex-column-reverse px-2 py-4">
+        {/* HERO */}
+        <section className="d-flex flex-column-reverse px-2 py-4">
           <div
             className="wrapper d-flex align-items-end"
             style={{ minHeight: "37.5rem" }}
@@ -31,7 +33,8 @@ const OneX = () => {
           <ImgCover importData={indexData.hero} />
         </section>
 
-        <section className="flex flex-column px-1">
+        {/* TEXT */}
+        <section className="d-flex flex-column px-1">
           <div className="wrapper p-sm-6 p-md-9 max-width-1000">
             <h1
               dangerouslySetInnerHTML={{ __html: indexData.copyBlock.h1 }}
@@ -44,8 +47,10 @@ const OneX = () => {
           </div>
         </section>
 
+        {/* Engineered */}
         <Engineered {...{ indexData }} />
 
+        {/* Confidently Compact */}
         <section className="mb-6 px-2">
           <HeaderSnowflake title={indexData.options.title} />
 
@@ -54,13 +59,13 @@ const OneX = () => {
               {indexData.options.blocks.map((block, i) => {
                 return (
                   <li className="quote col-sm-12 col-md-4" key={i}>
-                    <div
+                    {/* <div
                       className="h-100"
                       style={{ backgroundColor: "#efefef" }}
                     >
                       <img src={block.img} alt="" className="w-100" />
                       <p
-                        className="mt-2 fw-bold text-uppercase display-3 px-2"
+                        className="mt-2 font-weight-bold text-uppercase display-3 px-2"
                         dangerouslySetInnerHTML={{
                           __html: block.title,
                         }}
@@ -71,7 +76,14 @@ const OneX = () => {
                           __html: block.copy,
                         }}
                       />
-                    </div>
+                    </div> */}
+                    <ImgCopyBlock
+                      {...{ block }}
+                      linkable={false}
+                      flushImg={true}
+                      addStyle={{ background: "#efefef" }}
+                      addClass=""
+                    />
                   </li>
                 );
               })}
@@ -79,6 +91,7 @@ const OneX = () => {
           </div>
         </section>
 
+        {/* Quote */}
         <section className="d-flex flex-column p-2 min-height-quote">
           <div className="wrapper d-flex flex-column h-100 mt-auto mr-auto mb-0 my-md-0 p-0 p-lg-2">
             <QuoteBlock
@@ -94,6 +107,7 @@ const OneX = () => {
           />
         </section>
 
+        {/* Machine Extreme */}
         <section className="py-8 px-2">
           <div className="wrapper">
             <h2 className="text-center">{indexData.machineExtreme.h2}</h2>
@@ -113,6 +127,7 @@ const OneX = () => {
           </div>
         </section>
 
+        {/* Shop & Compare */}
         <section>
           <div className="wrapper text-center">
             <h2>Shop & Compare Single-Stage Snow Blowers</h2>

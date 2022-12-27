@@ -4,18 +4,18 @@ import Button from "../../elements/Button";
 
 const AccountForm = ({ weiData }) => {
   const navigate = useNavigate();
-  let ulClass = "list-unstyled flex p-2";
+  let ulClass = "list-unstyled d-flex p-2";
 
   return (
     <>
       {weiData.orders.map((order, i) => {
         return (
           <ul
-            className={`list-unstyled flex flex-column border order-info mt-3 ${order.type}-order`}
+            className={`list-unstyled d-flex flex-column border order-info mt-3 ${order.type}-order`}
             key={i}
           >
-            <li className="flex flex-column bg-grey-dark-2 p-1">
-              <ul className="list-unstyled flex align-items-center">
+            <li className="d-flex flex-column bg-grey-dark-2 p-1">
+              <ul className="list-unstyled d-flex align-items-center">
                 <li className="col col-sm-12 col-lg-2 border-right text-center">
                   Order Date
                   <p className="mb-0">{order.date}</p>
@@ -47,13 +47,13 @@ const AccountForm = ({ weiData }) => {
               </ul>
             </li>
             <li>
-              <ul className="list-unstyled flex border">
+              <ul className="list-unstyled d-flex border">
                 <li className="col col-sm-12 col-lg-9 border-right">
                   {order.products.map((product, i) => {
                     if (i >= 0 && i < order.products.length - 1) {
-                      ulClass = "list-unstyled flex p-2 border-bottom";
+                      ulClass = "list-unstyled d-flex p-2 border-bottom";
                     } else {
-                      ulClass = "list-unstyled flex p-2";
+                      ulClass = "list-unstyled d-flex p-2";
                     }
                     return (
                       <ul className={ulClass} key={i}>
@@ -67,7 +67,7 @@ const AccountForm = ({ weiData }) => {
                         <li className="col col-sm-12 col-lg-10">
                           <p className="h3">{product.product}</p>
                           <p className="small">{product.copy}</p>
-                          <ul className="list-unstyled flex align-items-center">
+                          <ul className="list-unstyled d-flex align-items-center">
                             {product.buttons.map((button, i) => {
                               return (
                                 <li
@@ -89,7 +89,7 @@ const AccountForm = ({ weiData }) => {
                     );
                   })}
                 </li>
-                <li className="col col-sm-12 col-lg-3 flex flex-column">
+                <li className="col col-sm-12 col-lg-3 d-flex flex-column">
                   {order.type === "dealer" ? (
                     <>
                       <ul className="row row-column list-unstyled p-1 mb-2 justify-content-center">

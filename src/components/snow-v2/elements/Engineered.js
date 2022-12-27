@@ -3,7 +3,7 @@ import Pluses from "../../elements/Pluses";
 
 const Engineered = ({ indexData }) => {
   return (
-    <section className="flex flex-column">
+    <section className="d-flex flex-column">
       <div
         className="position-relative mx-auto"
         style={{
@@ -53,7 +53,7 @@ const Engineered = ({ indexData }) => {
                   <div className="">
                     <strong className="text-uppercase">{block.title}</strong>
                     <div
-                      className="flex justify-content-center align-items-center p-3"
+                      className="d-flex justify-content-center align-items-center p-3"
                       style={{ height: "120px" }}
                     >
                       <img

@@ -7,7 +7,7 @@ const Home = () => {
       className="wrapper home"
       style={{
         minHeight: "50vh",
-        display: "flex",
+        display: "d-flex",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",

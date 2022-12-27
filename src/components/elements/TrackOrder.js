@@ -2,7 +2,7 @@ const TrackOrder = ({ title, sub, addClass, addStyle }) => {
   return (
     // <form
     //   action="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Order-Track"
-    //   className="trackorder flex flex-column h-100"
+    //   className="trackorder d-flex flex-column h-100"
     //   method="GET"
     //   name="trackorder-form"
     // >

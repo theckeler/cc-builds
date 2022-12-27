@@ -12,7 +12,7 @@ const QuoteBlock = ({
 
   return (
     <div
-      className={`quote-block flex flex-column h-100 w-100 p-4 ${addClass}`}
+      className={`quote-block d-flex flex-column h-100 w-100 p-4 ${addClass}`}
       style={addCSS}
     >
       <ul className={`list-unstyled d-flex mb-0 ${stackEmUp}`}>

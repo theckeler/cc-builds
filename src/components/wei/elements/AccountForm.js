@@ -5,14 +5,14 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
   const navigate = useNavigate();
 
   return (
-    <ul className="list-unstyled flex">
+    <ul className="list-unstyled d-flex">
       <li className="col col-lg-6 px-0">
-        <ul className="list-unstyled flex flex-column">
-          <li className=" title flex flex-column">
+        <ul className="list-unstyled d-flex flex-column">
+          <li className=" title d-flex flex-column">
             <label>Name</label>
             <input className="border p-1 w-100" value="Joe Schmo" readOnly />
           </li>
-          <li className="title flex flex-column mt-2">
+          <li className="title d-flex flex-column mt-2">
             <label>Address</label>
             <input
               className="border p-1 w-100"
@@ -20,19 +20,19 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
               readOnly
             />
           </li>
-          <li className="title flex flex-column mt-2">
+          <li className="title d-flex flex-column mt-2">
             <label>City</label>
             <input className="border p-1 w-100" value="Valley City" readOnly />
           </li>
-          <li className="title flex flex-column mt-2">
+          <li className="title d-flex flex-column mt-2">
             <label>State</label>
             <input className="border p-1 w-100" value="OH" readOnly />
           </li>
-          <li className="title flex flex-column mt-2">
+          <li className="title d-flex flex-column mt-2">
             <label>Zip</label>
             <input className="border p-1 w-100" value="44280" readOnly />
           </li>
-          <li className="title flex flex-column mt-2">
+          <li className="title d-flex flex-column mt-2">
             <label>Phone</label>
             <input
               className="border p-1 w-100"
@@ -40,10 +40,10 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
               readOnly
             />
           </li>
-          <li className="title flex flex-column mt-2">
+          <li className="title d-flex flex-column mt-2">
             <label>Interested in?</label>
-            <ul className="list-unstyled flex flex-column">
-              <li className="title flex mt-2">
+            <ul className="list-unstyled d-flex flex-column">
+              <li className="title d-flex mt-2">
                 <input
                   type="checkbox"
                   id="lawn"
@@ -58,9 +58,9 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
                 />
                 <label htmlFor="lawn">Lawn Mowers</label>
               </li>
-              <li className="title flex mt-0 hide" id="mower-more">
-                <ul className="list-unstyled flex flex-column m-2">
-                  <li className="title flex mt-2">
+              <li className="title d-flex mt-0 hide" id="mower-more">
+                <ul className="list-unstyled d-flex flex-column m-2">
+                  <li className="title d-flex mt-2">
                     <input
                       type="checkbox"
                       id="walk"
@@ -69,7 +69,7 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
                     />
                     <label htmlFor="walk">Walk-Behind Mowers</label>
                   </li>
-                  <li className="title flex mt-2">
+                  <li className="title d-flex mt-2">
                     <input
                       type="checkbox"
                       id="Riding"
@@ -78,7 +78,7 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
                     />
                     <label htmlFor="Riding">Riding Lawn Mowers</label>
                   </li>
-                  <li className="title flex mt-2">
+                  <li className="title d-flex mt-2">
                     <input
                       type="checkbox"
                       id="Robotic"
@@ -89,11 +89,11 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
                   </li>
                 </ul>
               </li>
-              <li className="title flex mt-2">
+              <li className="title d-flex mt-2">
                 <input type="checkbox" id="zero" name="zero" className="mr-1" />
                 <label htmlFor="zero">Zero-Turn</label>
               </li>
-              <li className="title flex mt-2">
+              <li className="title d-flex mt-2">
                 <input
                   type="checkbox"
                   id="electric"
@@ -102,11 +102,11 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
                 />
                 <label htmlFor="electric">Electric</label>
               </li>
-              <li className="title flex mt-2">
+              <li className="title d-flex mt-2">
                 <input type="checkbox" id="pro" name="pro" className="mr-1" />
                 <label htmlFor="pro">Professional</label>
               </li>
-              <li className="title flex mt-2">
+              <li className="title d-flex mt-2">
                 <input
                   type="checkbox"
                   id="snow"
@@ -121,27 +121,27 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
                 />
                 <label htmlFor="snow">Snow</label>
               </li>
-              <li className="title flex mt-0 hide" id="snow-more">
-                <ul className="list-unstyled flex flex-column m-2">
-                  <li className="title flex mt-2">
+              <li className="title d-flex mt-0 hide" id="snow-more">
+                <ul className="list-unstyled d-flex flex-column m-2">
+                  <li className="title d-flex mt-2">
                     <input type="checkbox" id="1X" name="1X" className="mr-1" />
                     <label htmlFor="walk">1X</label>
                   </li>
-                  <li className="title flex mt-2">
+                  <li className="title d-flex mt-2">
                     <input type="checkbox" id="2X" name="2X" className="mr-1" />
                     <label htmlFor="Riding">2X</label>
                   </li>
-                  <li className="title flex mt-2">
+                  <li className="title d-flex mt-2">
                     <input type="checkbox" id="3X" name="3X" className="mr-1" />
                     <label htmlFor="3X">3X</label>
                   </li>
                 </ul>
               </li>
-              <li className="title flex mt-2">
+              <li className="title d-flex mt-2">
                 <input type="checkbox" id="utv" name="utv" className="mr-1" />
                 <label htmlFor="utv">UTV</label>
               </li>
-              <li className="title flex mt-2">
+              <li className="title d-flex mt-2">
                 <input
                   type="checkbox"
                   id="chore"
@@ -156,19 +156,19 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
                 />
                 <label htmlFor="chore">Chore & Handheld</label>
               </li>
-              <li className="title flex mt-0 hide" id="chore-more">
-                <ul className="list-unstyled flex flex-column m-2">
-                  <li className="title flex mt-2">
+              <li className="title d-flex mt-0 hide" id="chore-more">
+                <ul className="list-unstyled d-flex flex-column m-2">
+                  <li className="title d-flex mt-2">
                     <input type="checkbox" id="1X" name="1X" className="mr-1" />
                     <label htmlFor="walk">Chainsaw</label>
                   </li>
-                  <li className="title flex mt-2">
+                  <li className="title d-flex mt-2">
                     <input type="checkbox" id="2X" name="2X" className="mr-1" />
                     <label htmlFor="Riding">Trimmers</label>
                   </li>
                 </ul>
               </li>
-              <li className="title flex mt-2">
+              <li className="title d-flex mt-2">
                 <input
                   type="checkbox"
                   id="attachments"
@@ -184,7 +184,7 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
         <div className="mt-3 pt-3 border-top">
           <Button
             copy={`Add More <span class="ml-auto">&plus;</span>`}
-            addClass="w-100 text-left text-uppercase flex bg-yellow px-2"
+            addClass="w-100 text-left text-uppercase d-flex bg-yellow px-2"
             addClick={() => {
               document
                 .querySelector("#account-more-1")
@@ -194,10 +194,10 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
         </div>
 
         <ul
-          className="list-unstyled flex flex-column mt-3 hide"
+          className="list-unstyled d-flex flex-column mt-3 hide"
           id="account-more-1"
         >
-          <li className=" title flex flex-column">
+          <li className=" title d-flex flex-column">
             <label>Extra Field</label>
             <input
               className="border p-1 w-100"
@@ -205,7 +205,7 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
               readOnly
             />
           </li>
-          <li className="title flex flex-column mt-2">
+          <li className="title d-flex flex-column mt-2">
             <label>Make a selection</label>
             <select
               className="border p-1 w-100"
@@ -229,10 +229,10 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
             </select>
 
             <ul
-              className="list-unstyled flex flex-column mt-3 subs hide"
+              className="list-unstyled d-flex flex-column mt-3 subs hide"
               id="select-more"
             >
-              <li className=" title flex flex-column">
+              <li className=" title d-flex flex-column">
                 <label>Select more</label>
                 <input
                   className="p-1 w-100"
@@ -243,10 +243,10 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
             </ul>
 
             <ul
-              className="list-unstyled flex flex-column mt-3 subs hide"
+              className="list-unstyled d-flex flex-column mt-3 subs hide"
               id="select-more-2"
             >
-              <li className=" title flex flex-column">
+              <li className=" title d-flex flex-column">
                 <label>Select even more Based on the selection</label>
                 <input
                   className="p-1 w-100"
@@ -254,7 +254,7 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
                   readOnly
                 />
               </li>
-              <li className=" title flex flex-column mt-2">
+              <li className=" title d-flex flex-column mt-2">
                 <label>Select even more Based on the selection</label>
                 <input
                   className="p-1 w-100"
@@ -262,7 +262,7 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
                   readOnly
                 />
               </li>
-              <li className=" title flex flex-column mt-2">
+              <li className=" title d-flex flex-column mt-2">
                 <label>Select even more Based on the selection</label>
                 <input
                   className="p-1 w-100"

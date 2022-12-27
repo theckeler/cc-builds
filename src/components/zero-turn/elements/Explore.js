@@ -20,7 +20,7 @@ const Explore = ({ jsonCommonData, addButton }) => {
         </ul>
         {addButton && (
           <Button
-            addClass="bg-secondary mb-0 text-center w-lg-auto flex-fill mx-lg-auto mt-2 d-block d-lg-inline-block"
+            addClass="bg-secondary mb-0 text-center w-lg-auto d-flex-fill mx-lg-auto mt-2 d-block d-lg-inline-block"
             copy={jsonCommonData.explore.button.copy}
             url={jsonCommonData.explore.button.url}
           />

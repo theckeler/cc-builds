@@ -39,7 +39,7 @@ const Footer = ({ indexData }) => {
               {indexData.howTo.blocks.map((block, i) => {
                 return (
                   <li
-                    className="col-sm-12 col-md-4 p-1 flex flex-column"
+                    className="col-sm-12 col-md-4 p-1 d-flex flex-column"
                     key={i}
                   >
                     <ImgCopyBlockStacked {...{ block }} />
@@ -59,7 +59,7 @@ const Footer = ({ indexData }) => {
               {indexData.snowArticles.blocks.map((block, i) => {
                 return (
                   <li
-                    className="col-sm-12 col-md-4 p-1 flex flex-column"
+                    className="col-sm-12 col-md-4 p-1 d-flex flex-column"
                     key={i}
                   >
                     <ImgCopyBlockStacked {...{ block }} />
@@ -79,12 +79,12 @@ const Footer = ({ indexData }) => {
               {indexData.attAcc.blocks.map((block, i) => {
                 return (
                   <li
-                    className="col-12 col-sm-12 col-md-3 p-1 flex flex-column"
+                    className="col-12 col-sm-12 col-md-3 p-1 d-flex flex-column"
                     key={i}
                   >
-                    <a href={block.url} className="flex flex-column">
+                    <a href={block.url} className="d-flex flex-column">
                       <img src={block.img} alt="" />
-                      <div className="content flex flex-column p-3">
+                      <div className="content d-flex flex-column p-3">
                         <strong
                           className="title"
                           dangerouslySetInnerHTML={{

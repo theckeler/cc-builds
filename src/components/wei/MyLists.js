@@ -19,14 +19,14 @@ const MyProducts = ({ weiData }) => {
     <div className="wrapper p-3 mt-4">
       <h1>My Lists</h1>
 
-      <ul className="list-unstyled flex mt-3">
+      <ul className="list-unstyled d-flex mt-3">
         <li className="col-9 p-0 border-top">
           {weiData.myLists[whichList].map((product, i) => {
             return <ListBlock {...product} key={i} />;
           })}
         </li>
         <li className="col-3 pl-2">
-          <ul className="list-unstyled flex flex-column align-items-center filter-buttons border mt-0 pt-0">
+          <ul className="list-unstyled d-flex flex-column align-items-center filter-buttons border mt-0 pt-0">
             <li className="col p-1">
               <Button
                 copy="Main List"
@@ -63,7 +63,7 @@ const MyProducts = ({ weiData }) => {
         </li>
       </ul>
 
-      <ul className="list-unstyled flex"></ul>
+      <ul className="list-unstyled d-flex"></ul>
     </div>
   );
 };

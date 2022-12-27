@@ -21,7 +21,10 @@ const Articles = ({ jsonData }) => {
           <ul className="list-unstyled d-flex flex-column flex-md-row">
             {jsonData.articles.blocks.map((block, i) => {
               return (
-                <li className="col-sm-12 col-md-4 p-1 flex flex-column" key={i}>
+                <li
+                  className="col-sm-12 col-md-4 p-1 d-flex flex-column"
+                  key={i}
+                >
                   <ImgCopyBlockStacked
                     {...{ block }}
                     addClass="p-2 h-100"
