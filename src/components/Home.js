@@ -15,6 +15,12 @@ const Home = () => {
     >
       <h1 style={{ textTransform: "uppercase" }}>CC Page Builds:</h1>
       <ul className="home-list">
+        {/* <li style={{ marginTop: "20px" }}>
+          <Link to="/base">
+            Base CSS (preestabilished from
+            https://cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1666955151563/css/global.css)
+          </Link>
+        </li> */}
         <li style={{ marginTop: "20px" }}>
           <Link to="/wei">The Wei (rapid prototyping)</Link>
         </li>
@@ -55,6 +61,7 @@ const Home = () => {
         <li style={{ marginTop: "20px" }}>
           <Link to="/customerservice">Customer Service</Link>
         </li>
+
         <li style={{ marginTop: "60px" }}>
           <a href="https://github.com/theckeler/cc-builds" target="_new">
             <svg
