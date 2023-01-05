@@ -1,25 +1,21 @@
-const Video = ({
-  img,
-  ytVideo,
-  addClass,
-  addStyle,
-  videoClass,
-  videoStyle,
-  title,
-}) => {
+const Video = ({ img, ytVideo, addClass, addStyle, title }) => {
   const urlEnd = "autoplay=1&mute=1&enablejsapi=1";
 
   return (
-    <div className={`video-wrapper ${addClass}`} style={addStyle}>
+    <div
+      className={`video-wrapper position-relative ${addClass}`}
+      style={addStyle}
+    >
       <iframe
         src={`https://www.youtube.com/embed/${ytVideo}?${urlEnd}`}
         srcDoc={`
 <style>
-    *{padding:0;margin:0;overflow:hidden}a{display:d-flex;width:100%;height:100%}html,body{height:100%}span{position:absolute;left:50%;top:50%;margin:auto;transform:translate(-50%,-50%);border:3px solid #fff;width:120px;height:120px;display:d-flex;justify-content:center;align-items:center;border-radius:100%}img{width:100%;height:100%;object-fit:cover}span{text-align:center;font:45px/1.5 sans-serif;color:#fff;text-shadow:0 0 .5em #000}
+  *{padding:0;margin:0;overflow:hidden}
+  html,body{height:100%}
 </style>
-<a href="https://www.youtube.com/embed/${ytVideo}?${urlEnd}">
-    <img src="${img}" alt='' loading=lazy>
-    <span>▶</span>
+<a href="https://www.youtube.com/embed/${ytVideo}?${urlEnd}" style="display:flex;width:100%;height:100%">
+    <img src="${img}" alt="" style="width:100%;height:100%;object-fit:cover" loading=lazy>
+    <span style="position:absolute;left:50%;top:50%;margin:auto;transform:translate(-50%,-50%);border:3px solid #fff;width:120px;height:120px;display:flex;justify-content:center;align-items:center;border-radius:100%;color:#fff;font-size:2.8125em">▶</span>
 </a>
 `}
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -27,8 +23,7 @@ const Video = ({
         title={title}
         width="100%"
         height="100%"
-        className={`border-0 video ${videoClass}`}
-        style={videoStyle}
+        className={`border-0 video`}
       ></iframe>
     </div>
   );

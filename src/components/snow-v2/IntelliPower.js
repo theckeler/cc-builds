@@ -9,7 +9,7 @@ import Faqs from "../elements/Faqs";
 import Video from "../elements/Video";
 import ImgCopyBlock from "../elements/ImgCopyBlock";
 
-const App = () => {
+const IntelliPower = () => {
   // console.log(jsonData);
   useEffect(() => {
     document.querySelectorAll(".js-scripts").forEach(function (elem) {
@@ -59,22 +59,6 @@ window.onload = function() {
       .createContextualFragment(footerHTML);
     document.body.appendChild(scriptFooterHTML);
   });
-
-  // document.querySelector("#button-step-up").onclick = () => {
-  //   document.querySelector("#button-vr").classList.remove("active");
-  //   document.querySelector("#button-step-up").classList.add("active");
-
-  //   document.querySelector("#vr").classList.remove("active");
-  //   document.querySelector("#step-up").classList.add("active");
-  // };
-
-  // document.querySelector("#button-vr").onclick = () => {
-  //   document.querySelector("#button-vr").classList.add("active");
-  //   document.querySelector("#button-step-up").classList.remove("active");
-
-  //   document.querySelector("#vr").classList.add("active");
-  //   document.querySelector("#step-up").classList.remove("active");
-  // };
 
   return (
     <div className="snow-v2 snow-v2-intellipower">
@@ -213,40 +197,27 @@ window.onload = function() {
               );
             })}
           </ul>
+        </div>
+      </section>
 
-          {/* <ul className="row list-unstyled videos">
-            <li
-              className="col-12 col-sm-12 col-md-12 p-1 active video"
-              id="step-up"
-            >
-              <div className="p-4 d-flex flex-column">
-                <img
-                  src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/ve1f3e6cb0cf2f950d44a96bbcdc4fbdabb979847/snow-v2/18-percent-power.jpg"
-                  alt=""
-                />
-              </div>
-            </li>
-            <li className="col-12 col-sm-12 col-md-12 p-1 video" id="vr">
-              <div className="p-4 d-flex flex-column">VR Video</div>
-            </li>
+      {/* Videos */}
+      <section className="pb-8">
+        <div className="wrapper">
+          <ul className="row list-unstyled">
+            {jsonData.videoBlock.blocks.map((block, i) => {
+              return (
+                <li className="col-sm-12 col-md-6 p-1" key={i}>
+                  <div className="d-flex flex-column">
+                    <Video
+                      img={block.img}
+                      ytVideo={block.ytVideo}
+                      addClass="w-100"
+                    />
+                  </div>
+                </li>
+              );
+            })}
           </ul>
-
-          <ul className="row list-unstyled p-0 m-0 video-buttons">
-            <li className="col-12 col-sm-6 col-md-6 p-0">
-              <div className="p-0 d-flex flex-column">
-                <button className="active" id="button-step-up">
-                  IntelliPower<sup>™</sup> Step-Up: Wall of Winter
-                </button>
-              </div>
-            </li>
-            <li className="col-12 col-sm-6 col-md-6 p-0">
-              <div className="p-0 d-flex flex-column">
-                <button className="" id="button-vr">
-                  IntelliPower<sup>™</sup> VR Experience
-                </button>
-              </div>
-            </li>
-          </ul> */}
         </div>
       </section>
 
@@ -322,9 +293,7 @@ window.onload = function() {
             img={jsonData.efiBlock.img}
             ytVideo={jsonData.efiBlock.ytVideo}
             addClass="w-100 mt-6"
-            // addStyle={{ minHeight: "300px" }}
-            // videoClass="w-100"
-            // videoStyle={{ minHeight: "56.25vw" }}
+           
           />
         </div>
       </section>
@@ -363,22 +332,6 @@ window.onload = function() {
                   className="quote col-12 col-sm-12 col-md-6 pt-3 pr-3 pb-3 pl-3"
                   key={i}
                 >
-                  {/* <a href={block.button.url} className="text-decoration-none">
-                    <img src={block.img} alt="" className="w-100" />
-                    <p
-                      className="title mt-2 font-weight-bold"
-                      dangerouslySetInnerHTML={{
-                        __html: block.title,
-                      }}
-                    ></p>
-                    <p
-                      className="copy"
-                      dangerouslySetInnerHTML={{
-                        __html: block.copy,
-                      }}
-                    ></p>
-                    <Button copy={block.button.copy} addClass="bg-yellow" />
-                  </a> */}
                   <ImgCopyBlock
                     {...{ block }}
                     linkable={false}
@@ -408,28 +361,6 @@ window.onload = function() {
                   className="d-flex flex-column quote col-12 col-sm-12 col-md-4 p-1"
                   key={i}
                 >
-                  {/* <a
-                    href={block.url}
-                    className="d-flex flex-column p-3 h-100 text-decoration-none bg-grey"
-                  >
-                    <img src={block.img} alt="" className="w-100" />
-                    <p
-                      className="copy font-weight-bold mt-2 mb-0 pb-0"
-                      dangerouslySetInnerHTML={{
-                        __html: block.title,
-                      }}
-                    ></p>
-                    <p
-                      className="copy mt-0 pt-0"
-                      dangerouslySetInnerHTML={{
-                        __html: block.copy,
-                      }}
-                    ></p>
-                    <Button
-                      copy={block.button.copy}
-                      addClass="bg-yellow mt-auto"
-                    />
-                  </a> */}
                   <ImgCopyBlock
                     {...{ block }}
                     linkable={false}
@@ -503,4 +434,4 @@ window.onload = function() {
   );
 };
 
-export default App;
+export default IntelliPower;

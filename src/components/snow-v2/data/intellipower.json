@@ -270,5 +270,26 @@
         }
       ]
     }
-  ]
+  ],
+
+  "videoBlock": {
+    "blocks": [
+      {
+        "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/snow-v2/gaN0IKLrhv8.png",
+        "ytVideo": "gaN0IKLrhv8"
+      },
+      {
+        "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/snow-v2/HS2DVLymTMs.png",
+        "ytVideo": "HS2DVLymTMs"
+      },
+      {
+        "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/snow-v2/nL-TKh16K_g.png",
+        "ytVideo": "nL-TKh16K_g"
+      },
+      {
+        "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/snow-v2/vEicy3HwDFg.png",
+        "ytVideo": "vEicy3HwDFg"
+      }
+    ]
+  }
 }
