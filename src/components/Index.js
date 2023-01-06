@@ -8,6 +8,7 @@ import CustomerService from "./customer-service/Index";
 import WeiIndex from "./wei/Index";
 import ZeroTurn from "./zero-turn/Index";
 import Base from "./base/Index";
+import Financing from "./financing/Index";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
       <Route path="/snowv2/*" element={<SnowV2Index />} />
       <Route path="/zero-turn/*" element={<ZeroTurn />} />
       <Route path="/base/*" element={<Base />} />
+      <Route path="/financing/*" element={<Financing />} />
     </Routes>
   );
 };

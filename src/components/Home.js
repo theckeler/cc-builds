@@ -4,7 +4,7 @@ import "../scss/home.scss";
 const Home = () => {
   return (
     <div
-      className="wrapper home"
+      className="wrapper home p-8"
       style={{
         minHeight: "50vh",
         display: "d-flex",
@@ -21,6 +21,9 @@ const Home = () => {
             https://cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1666955151563/css/global.css)
           </Link>
         </li> */}
+        <li style={{ marginTop: "20px" }}>
+          <Link to="/financing">Financing Updates</Link>
+        </li>
         <li style={{ marginTop: "20px" }}>
           <Link to="/wei">The Wei (rapid prototyping)</Link>
         </li>
