@@ -275,18 +275,26 @@
   "videoBlock": {
     "blocks": [
       {
+        "title": "Lorem ipsum dolor sit amet",
+        "copy": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam ac metus vitae nibh posuere gravida. Sed tempus, diam in auctor hendrerit, velit lorem feugiat leo, a viverra ex nibh nec justo. Vestibulum non blandit dolor. Donec scelerisque id ipsum nec fermentum. Proin vel quam faucibus, feugiat erat vitae, finibus purus.",
         "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/snow-v2/gaN0IKLrhv8.png",
         "ytVideo": "gaN0IKLrhv8"
       },
       {
+        "title": "Lorem ipsum dolor sit amet",
+        "copy": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam ac metus vitae nibh posuere gravida. Sed tempus, diam in auctor hendrerit, velit lorem feugiat leo, a viverra ex nibh nec justo. Vestibulum non blandit dolor. Donec scelerisque id ipsum nec fermentum. Proin vel quam faucibus, feugiat erat vitae, finibus purus.",
         "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/snow-v2/HS2DVLymTMs.png",
         "ytVideo": "HS2DVLymTMs"
       },
       {
+        "title": "Lorem ipsum dolor sit amet",
+        "copy": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam ac metus vitae nibh posuere gravida. Sed tempus, diam in auctor hendrerit, velit lorem feugiat leo, a viverra ex nibh nec justo. Vestibulum non blandit dolor. Donec scelerisque id ipsum nec fermentum. Proin vel quam faucibus, feugiat erat vitae, finibus purus.",
         "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/snow-v2/nL-TKh16K_g.png",
         "ytVideo": "nL-TKh16K_g"
       },
       {
+        "title": "Lorem ipsum dolor sit amet",
+        "copy": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam ac metus vitae nibh posuere gravida. Sed tempus, diam in auctor hendrerit, velit lorem feugiat leo, a viverra ex nibh nec justo. Vestibulum non blandit dolor. Donec scelerisque id ipsum nec fermentum. Proin vel quam faucibus, feugiat erat vitae, finibus purus.",
         "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/snow-v2/vEicy3HwDFg.png",
         "ytVideo": "vEicy3HwDFg"
       }

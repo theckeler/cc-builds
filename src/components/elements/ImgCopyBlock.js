@@ -1,4 +1,5 @@
 import Button from "./Button";
+import Video from "../elements/Video";
 
 const ImgCopyBlock = ({
   block,
@@ -6,7 +7,7 @@ const ImgCopyBlock = ({
   linkable = true,
   ContainerType = "div",
   addStyle,
-  divClass,
+  //divClass,
   flushImg = false,
 }) => {
   if (linkable) {
@@ -16,14 +17,17 @@ const ImgCopyBlock = ({
   //console.log("flushImg: ", flushImg);
 
   return (
-    <ContainerType
+    <div
       href={block.url}
       className={`d-flex flex-column text-decoration-none h-100 ${addClass}`}
       style={addStyle}
     >
       {flushImg === true && <ImgBlock img={block.img} />}
       <div className={`d-flex flex-column h-100 ${flushImg ? "p-3" : ""}`}>
-        {flushImg !== true && <ImgBlock img={block.img} />}
+        {flushImg !== true && !block.ytVideo && <ImgBlock img={block.img} />}
+        {block.ytVideo && (
+          <Video img={block.img} ytVideo={block.ytVideo} addClass="w-100" />
+        )}
         <p
           className={`font-weight-bold ${!flushImg && "mt-2"} mb-0 display-4`}
           dangerouslySetInnerHTML={{
@@ -46,7 +50,7 @@ const ImgCopyBlock = ({
           />
         )}
       </div>
-    </ContainerType>
+    </div>
   );
 };
 

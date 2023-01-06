@@ -206,14 +206,22 @@ window.onload = function() {
           <ul className="row list-unstyled">
             {jsonData.videoBlock.blocks.map((block, i) => {
               return (
-                <li className="col-sm-12 col-md-6 p-1" key={i}>
-                  <div className="d-flex flex-column">
-                    <Video
+                <li className="col-12 col-lg-6 p-3" key={i}>
+                  {/* <Video
                       img={block.img}
                       ytVideo={block.ytVideo}
                       addClass="w-100"
-                    />
-                  </div>
+                    /> */}
+
+                  <ImgCopyBlock
+                    {...{
+                      addClass: "d-flex flex-column h-100 bg-white",
+                      block,
+                      linkable: false,
+                      divClass: "",
+                    }}
+                    // addStyle={{ background: "#efefef" }}
+                  />
                 </li>
               );
             })}
@@ -293,7 +301,6 @@ window.onload = function() {
             img={jsonData.efiBlock.img}
             ytVideo={jsonData.efiBlock.ytVideo}
             addClass="w-100 mt-6"
-           
           />
         </div>
       </section>
