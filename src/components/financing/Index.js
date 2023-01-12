@@ -6,41 +6,14 @@ import FilterOptions from "./elements/FilterOptions";
 import Button from "../elements/Button";
 
 const Financing = () => {
-  // const [checked, setChecked] = useState({
-  //   terms: jsonData.keys.terms,
-  //   minPurchase: jsonData.keys.minPurchase,
-  //   interestRate: jsonData.keys.interestRate,
-  // });
-  // useEffect(() => {
-  //   //setChecked({"terms":jsonData.keys.terms.inputs})
-  //   console.log(checked);
-  // }, [checked]);
-
-  const [checkedTerms, setCheckedTerms] = useState({
-    ...jsonData.keys.terms,
-  });
+  const [checkedBoxes, setCheckedBoxes] = useState({ ...jsonData.keys });
   useEffect(() => {
-    console.log("d:              ", checkedTerms);
-    // console.log(checkedTerms);
-  }, [checkedTerms]);
+    console.log("checkedBoxes:", checkedBoxes);
+  }, [checkedBoxes]);
 
-  const [checkedMinPurchase, setCheckedMinPurchase] = useState({
-    ...jsonData.keys.minPurchase,
-  });
-  // useEffect(() => {
-  //   console.log(checkedMinPurchase);
-  // }, [checkedMinPurchase]);
-
-  const [checkedInterestRate, setCheckedInterestRate] = useState({
-    ...jsonData.keys.interestRate,
-  });
-  // useEffect(() => {
-  //   console.log(checkedInterestRate);
-  // }, [checkedInterestRate]);
-
-  const handleQuery = (e, r = "d-none", a = "d-block") => {
+  const handleQuery = (e, which, r = "d-none", a = "d-block") => {
     document
-      .querySelectorAll(`.financing-filter-terms.${e.value}`)
+      .querySelectorAll(`.financing-filter.${e.value}`)
       .forEach(function (e) {
         e.classList.remove(r);
         e.classList.add(a);
@@ -48,44 +21,30 @@ const Financing = () => {
   };
 
   const handleChange = (e) => {
-    let updateCheckbox = { ...checkedTerms };
-    const checkboxType = e.target.getAttribute("data-which");
-    const checkboxChecked = e.target.checked;
-    const checkboxLabel = e.target.checked;
-    const checkboxID = e.target.id;
+    const updateCheckbox = [
+      ...checkedBoxes[e.target.getAttribute("data-which")].inputs,
+    ];
+    updateCheckbox[e.target.getAttribute("data-pos")] = {
+      label: e.target.getAttribute("data-label"),
+      val: e.target.id,
+      isChecked: e.target.checked,
+    };
 
-    console.log("updateCheckbox: ", updateCheckbox);
-    console.log("e:              ", e);
-    console.log("checkboxChecked:", checkboxChecked);
-    console.log("checkboxType:   ", checkboxType);
-    console.log("checkboxID:     ", checkboxID);
+    setCheckedBoxes({
+      ...checkedBoxes,
+      [e.target.getAttribute("data-which")]: {
+        ...checkedBoxes[e.target.getAttribute("data-which")],
+        inputs: updateCheckbox,
+      },
+    });
 
-    updateCheckbox["inputs"] = { ...checkedTerms.inputs };
-    console.log("updateCheckbox: ", updateCheckbox);
-
-    //updateCheckbox[checkboxType]["inputs"] = checkboxChecked;
-
-    //setChecked();
-    //
-    // document.querySelector(`#${e.target.id}`).checked = false;
-    // console.log("e:", document.querySelector(`#${e.target.id}`));
-    // document.querySelectorAll(`.financing-input`).forEach(function (e) {
-    //   switch (e.getAttribute("data-which")) {
-    //     case "terms":
-    //       if (e.checked) {
-    //         handleQuery(e, "d-none", "d-block");
-    //       } else {
-    //         handleQuery(e, "d-block", "d-none");
-    //       }
-    //       break;
-    //     case "min-purchase":
-    //     case "interest-rate":
-    //       // console.log("min-purchase & interest-rate");
-    //       break;
-    //     default:
-    //       console.log(`Nothing`);
-    //   }
-    // });
+    document.querySelectorAll(`.financing-input`).forEach(function (e) {
+      if (e.checked) {
+        handleQuery(e, e.getAttribute("data-which"), "d-none", "d-block");
+      } else {
+        handleQuery(e, e.getAttribute("data-which"), "d-block", "d-none");
+      }
+    });
   };
 
   return (
@@ -115,17 +74,20 @@ const Financing = () => {
             >
               <li className="mb-1 text-uppercase h4">Filter:</li>
               <li className="mb-2">
-                <FilterOptions option={checkedTerms} {...{ handleChange }} />
-              </li>
-              <li className="mb-2">
                 <FilterOptions
-                  option={checkedMinPurchase}
+                  option={checkedBoxes.terms}
                   {...{ handleChange }}
                 />
               </li>
               <li className="mb-2">
                 <FilterOptions
-                  option={checkedInterestRate}
+                  option={checkedBoxes.minPurchase}
+                  {...{ handleChange }}
+                />
+              </li>
+              <li className="mb-2">
+                <FilterOptions
+                  option={checkedBoxes.interestRate}
                   {...{ handleChange }}
                 />
               </li>
@@ -147,7 +109,7 @@ const Financing = () => {
 
                 return (
                   <li
-                    className={`financing-filter-terms col-12 col-lg-6 col-lg-6 mb-1 p-1 ${keywords.trim()}`}
+                    className={`financing-filter col-12 col-lg-6 col-lg-6 mb-1 p-1 ${keywords.trim()}`}
                     key={i}
                   >
                     <div className="border d-flex flex-column h-100">

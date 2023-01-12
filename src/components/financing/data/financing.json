@@ -186,7 +186,7 @@
     },
     "minPurchase": {
       "title": "Select Min Purchase",
-      "type": "min-purchase",
+      "type": "minPurchase",
       "inputs": [
         { "label": "$199", "val": "min-199", "isChecked": true },
         { "label": "$500", "val": "min-500", "isChecked": true },
@@ -198,7 +198,7 @@
     },
     "interestRate": {
       "title": "Select Interest Rate",
-      "type": "interest-rate",
+      "type": "interestRate",
       "inputs": [
         { "label": "No Interest", "val": "no-interest", "isChecked": true },
         { "label": "0% Interest", "val": "zero-interest", "isChecked": true },

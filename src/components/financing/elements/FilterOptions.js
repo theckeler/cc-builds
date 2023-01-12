@@ -11,7 +11,9 @@ const FilterOptions = ({ option, handleChange }) => {
               value={block.val}
               onChange={handleChange}
               className={`${option.type} financing-input`}
+              data-pos={i}
               data-which={option.type}
+              data-label={block.label}
               checked={block.isChecked}
             />
             <label htmlFor={block.val} className="ml-1">

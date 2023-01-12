@@ -1,8 +1,6 @@
 import currencyConverter from "../../../utilities/currencyConverter";
 
 const FinancingBlock = ({ block, addClass }) => {
-  //console.log("block", block);
-
   const startDate = new Date(block.promoStart);
   const endDate = new Date(block.promoEnd);
 
@@ -15,8 +13,7 @@ const FinancingBlock = ({ block, addClass }) => {
 
   return (
     <div
-      className={`financing-filter-details px-3 pt-3 ${keywords.trim()} ${addClass}`}
-      // style={{ borderWidth: "3px" }}
+      className={`financing-filter px-3 pt-3 ${keywords.trim()} ${addClass}`}
     >
       <p
         className="mb-2 pb-2 border-bottom text-center"
@@ -47,7 +44,6 @@ const FinancingBlock = ({ block, addClass }) => {
         style={{
           fontSize: "1.1em",
           lineHeight: "1.4",
-          //backgroundColor: "#efefef",
         }}
       />
       <p
@@ -69,7 +65,6 @@ const FinancingBlock = ({ block, addClass }) => {
         style={{
           fontSize: "1.1em",
           lineHeight: "1.4",
-          //backgroundColor: "#efefef",
         }}
       />
 
