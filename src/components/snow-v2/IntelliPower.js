@@ -44,15 +44,14 @@ const IntelliPower = () => {
     document.querySelector("#faqs-efi").classList.remove("active");
   };
 </script>
-<script class="js-scripts">
-window.onload = function() {
-  $(".slick").slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-  });
-};
-</script>
 <script type="text/javascript" class="js-scripts" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script class="js-scripts">
+  $(".videos-slick").slick({
+   slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true,
+  });
+</script>
 `;
     const scriptFooterHTML = document
       .createRange()
@@ -203,17 +202,17 @@ window.onload = function() {
       {/* Videos */}
       <section className="pb-8">
         <div className="wrapper">
-          <ul className="row list-unstyled">
+          <ul className="row list-unstyled videos-slick">
             {jsonData.videoBlock.blocks.map((block, i) => {
               return (
-                <li className="col-12 col-lg-6 p-3" key={i}>
-                  {/* <Video
-                      img={block.img}
-                      ytVideo={block.ytVideo}
-                      addClass="w-100"
-                    /> */}
+                <li className="col-12 col-lg-6 p-6" key={i}>
+                  <Video
+                    img={block.img}
+                    ytVideo={block.ytVideo}
+                    addClass="w-100"
+                  />
 
-                  <ImgCopyBlock
+                  {/* <ImgCopyBlock
                     {...{
                       addClass: "d-flex flex-column h-100 bg-white",
                       block,
@@ -221,7 +220,7 @@ window.onload = function() {
                       divClass: "",
                     }}
                     // addStyle={{ background: "#efefef" }}
-                  />
+                  /> */}
                 </li>
               );
             })}
