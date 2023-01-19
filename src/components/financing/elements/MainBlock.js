@@ -6,7 +6,7 @@ import FinancingBlock from "./FinancingBlock";
 const MainBlock = ({ block, i, keywords, multiBlockLength }) => {
   return (
     <li
-      className={`financing-filter col-12 col-lg-6 col-lg-6 mb-1 p-1 ${keywords.trim()}`}
+      className={`financing-filter col-12 col-lg-6 mb-1 p-1 ${keywords.trim()}`}
       key={i}
     >
       <div className="border d-flex flex-column h-100">
@@ -29,22 +29,32 @@ const MainBlock = ({ block, i, keywords, multiBlockLength }) => {
             Months
           </p>
         </div>
-        {block.offers.map((block, i) => {
-          const borderRun = i < multiBlockLength - 1 ? `border-bottom` : "";
+        {!!block.offerCount > 0 ? (
+          block.offers.map((block, i) => {
+            const borderRun = i < multiBlockLength - 1 ? `border-bottom` : "";
 
-          return (
-            <React.Fragment key={i}>
-              {block.display === true && (
-                <FinancingBlock
-                  {...{
-                    block,
-                    addClass: borderRun,
-                  }}
-                />
-              )}
-            </React.Fragment>
-          );
-        })}
+            return (
+              <React.Fragment key={i}>
+                {block.display === true && (
+                  <FinancingBlock
+                    {...{
+                      block,
+                      addClass: borderRun,
+                    }}
+                  />
+                )}
+              </React.Fragment>
+            );
+          })
+        ) : (
+          <div className="px-3 pt-3">
+            <p className="nb-0" style={{ minHeight: "100px" }}>
+              Sorry. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque a condimentum ex. Quisque fringilla libero ac arcu
+              tincidunt vulputate vitae sed eros.
+            </p>
+          </div>
+        )}
         <div className="p-1 mt-auto">
           <Button
             copy={block.button.copy}

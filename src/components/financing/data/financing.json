@@ -6,6 +6,7 @@
       "term": 6,
       "keywords": ["months-6"],
       "display": true,
+      "offerCount": 2,
       "offers": [
         {
           "keywords": ["no-interest", "min-199"],
@@ -43,6 +44,7 @@
       "term": 12,
       "keywords": ["months-12"],
       "display": true,
+      "offerCount": 1,
       "offers": [
         {
           "keywords": ["no-interest", "min-500"],
@@ -67,6 +69,7 @@
       "term": 18,
       "keywords": ["months-18"],
       "display": true,
+      "offerCount": 1,
       "offers": [
         {
           "keywords": ["no-interest", "min-750"],
@@ -91,6 +94,7 @@
       "term": 24,
       "keywords": ["months-24"],
       "display": true,
+      "offerCount": 1,
       "offers": [
         {
           "keywords": ["zero-interest", "min-2000"],
@@ -116,6 +120,7 @@
       "term": 36,
       "keywords": ["months-36"],
       "display": true,
+      "offerCount": 1,
       "offers": [
         {
           "keywords": ["zero-interest", "min-3000"],
@@ -140,6 +145,7 @@
       "term": 48,
       "keywords": ["months-48"],
       "display": true,
+      "offerCount": 1,
       "offers": [
         {
           "keywords": ["one-percent-apr", "min-5000"],
@@ -164,6 +170,7 @@
       "term": 60,
       "keywords": ["months-60"],
       "display": true,
+      "offerCount": 1,
       "offers": [
         {
           "keywords": ["two-percent-apr", "min-5000"],

@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+//import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import jsonData from "./data/financing.json";
 import MainBlock from "./elements/MainBlock";
@@ -12,9 +13,9 @@ const Financing = () => {
     uncheckedInputs: [],
   });
 
-  useEffect(() => {
-    console.log("offersData", offersData);
-  });
+  // useEffect(() => {
+  //   console.log("offersData", offersData);
+  // });
 
   const handleChange = (e) => {
     // SETUP:
@@ -45,7 +46,6 @@ const Financing = () => {
     let updateOffers = [];
     updateOffers = [...offersData.blocks];
     jsonData.blocks.forEach(function (e) {
-      e.offerCount = 0;
       switch (changeWhich) {
         case "terms":
           if (e.keywords.includes(eValue)) {
@@ -53,6 +53,7 @@ const Financing = () => {
           }
           break;
         default:
+          let offerCount = 0;
           e.offers.forEach(function (offer) {
             const result = offer.keywords.filter((keyword) =>
               uncheckedInputs.includes(keyword)
@@ -60,10 +61,11 @@ const Financing = () => {
             if (result.length > 0) {
               offer.display = false;
             } else {
-              e.offerCount = Number(e.offerCount) + 1;
               offer.display = true;
+              offerCount++;
             }
           });
+          e.offerCount = offerCount;
       }
     });
 
@@ -131,13 +133,6 @@ const Financing = () => {
           <li className="col-9 no-gutters">
             <ul className="d-flex flex-wrap list-unstyled no-gutters">
               {offersData.blocks.map((block, i) => {
-                let countBlocks = 0;
-                block.offers.forEach((e) => {
-                  if (e.display === true) {
-                    countBlocks++;
-                  }
-                });
-
                 let keywords = "";
                 if (block.keywords) {
                   for (const keyword of block.keywords) {
@@ -151,7 +146,7 @@ const Financing = () => {
 
                 return (
                   <React.Fragment key={i}>
-                    {!!countBlocks && block.display === true && (
+                    {block.display === true && (
                       <MainBlock
                         {...{ block, i, keywords, multiBlockLength }}
                       />
