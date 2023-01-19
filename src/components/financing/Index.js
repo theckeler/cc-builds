@@ -1,49 +1,84 @@
 import React, { useState, useEffect } from "react";
 
 import jsonData from "./data/financing.json";
-import FinancingBlock from "./elements/FinancingBlock";
+import MainBlock from "./elements/MainBlock";
 import FilterOptions from "./elements/FilterOptions";
-import Button from "../elements/Button";
 
 const Financing = () => {
-  const [checkedBoxes, setCheckedBoxes] = useState({ ...jsonData.keys });
-  useEffect(() => {
-    console.log("checkedBoxes:", checkedBoxes);
-  }, [checkedBoxes]);
+  const [offersData, setOffersData] = useState({
+    blocks: [...jsonData.blocks],
+    keys: { ...jsonData.keys },
+    checkedInputs: [],
+    uncheckedInputs: [],
+  });
 
-  const handleQuery = (e, which, r = "d-none", a = "d-block") => {
-    document
-      .querySelectorAll(`.financing-filter.${e.value}`)
-      .forEach(function (e) {
-        e.classList.remove(r);
-        e.classList.add(a);
-      });
-  };
+  useEffect(() => {
+    console.log("offersData", offersData);
+  });
 
   const handleChange = (e) => {
-    const updateCheckbox = [
-      ...checkedBoxes[e.target.getAttribute("data-which")].inputs,
-    ];
-    updateCheckbox[e.target.getAttribute("data-pos")] = {
-      label: e.target.getAttribute("data-label"),
-      val: e.target.id,
-      isChecked: e.target.checked,
-    };
+    // SETUP:
+    const changeWhich = e.target.getAttribute("data-which");
+    const eValue = e.target.value;
+    const eChecked = e.target.checked;
+    const ePos = e.target.getAttribute("data-pos");
 
-    setCheckedBoxes({
-      ...checkedBoxes,
-      [e.target.getAttribute("data-which")]: {
-        ...checkedBoxes[e.target.getAttribute("data-which")],
-        inputs: updateCheckbox,
-      },
+    let checkedInputs = [];
+    let uncheckedInputs = [];
+    document.querySelectorAll(".financing-input").forEach(function (e) {
+      if (e.checked) {
+        checkedInputs.push(e.id);
+      } else {
+        uncheckedInputs.push(e.id);
+      }
     });
 
-    document.querySelectorAll(`.financing-input`).forEach(function (e) {
-      if (e.checked) {
-        handleQuery(e, e.getAttribute("data-which"), "d-none", "d-block");
-      } else {
-        handleQuery(e, e.getAttribute("data-which"), "d-block", "d-none");
+    // CHANGE CHECKBOXES:
+    const updateCheckbox = [...offersData.keys[changeWhich].inputs];
+    updateCheckbox[ePos] = {
+      label: e.target.getAttribute("data-label"),
+      val: e.target.id,
+      isChecked: eChecked,
+    };
+
+    // UPDATE TERMS & OFFERS:
+    let updateOffers = [];
+    updateOffers = [...offersData.blocks];
+    jsonData.blocks.forEach(function (e) {
+      e.offerCount = 0;
+      switch (changeWhich) {
+        case "terms":
+          if (e.keywords.includes(eValue)) {
+            updateOffers[ePos] = { ...e, display: eChecked };
+          }
+          break;
+        default:
+          e.offers.forEach(function (offer) {
+            const result = offer.keywords.filter((keyword) =>
+              uncheckedInputs.includes(keyword)
+            );
+            if (result.length > 0) {
+              offer.display = false;
+            } else {
+              e.offerCount = Number(e.offerCount) + 1;
+              offer.display = true;
+            }
+          });
       }
+    });
+
+    // UPDATE IT ALL:
+    setOffersData({
+      checkedInputs: checkedInputs,
+      uncheckedInputs: uncheckedInputs,
+      keys: {
+        ...offersData.keys,
+        [changeWhich]: {
+          ...offersData.keys[changeWhich],
+          inputs: updateCheckbox,
+        },
+      },
+      blocks: [...updateOffers],
     });
   };
 
@@ -62,7 +97,7 @@ const Financing = () => {
         </p>
       </section>
 
-      <section className="">
+      <section>
         <ul className="row list-unstyled container mx-auto">
           <li
             className="position-sticky col-3 h-100 p-1 no-gutters"
@@ -75,19 +110,19 @@ const Financing = () => {
               <li className="mb-1 text-uppercase h4">Filter:</li>
               <li className="mb-2">
                 <FilterOptions
-                  option={checkedBoxes.terms}
+                  option={offersData.keys.terms}
                   {...{ handleChange }}
                 />
               </li>
               <li className="mb-2">
                 <FilterOptions
-                  option={checkedBoxes.minPurchase}
+                  option={offersData.keys.minPurchase}
                   {...{ handleChange }}
                 />
               </li>
               <li className="mb-2">
                 <FilterOptions
-                  option={checkedBoxes.interestRate}
+                  option={offersData.keys.interestRate}
                   {...{ handleChange }}
                 />
               </li>
@@ -95,7 +130,14 @@ const Financing = () => {
           </li>
           <li className="col-9 no-gutters">
             <ul className="d-flex flex-wrap list-unstyled no-gutters">
-              {jsonData.blocks.map((block, i) => {
+              {offersData.blocks.map((block, i) => {
+                let countBlocks = 0;
+                block.offers.forEach((e) => {
+                  if (e.display === true) {
+                    countBlocks++;
+                  }
+                });
+
                 let keywords = "";
                 if (block.keywords) {
                   for (const keyword of block.keywords) {
@@ -108,54 +150,13 @@ const Financing = () => {
                   : "";
 
                 return (
-                  <li
-                    className={`financing-filter col-12 col-lg-6 col-lg-6 mb-1 p-1 ${keywords.trim()}`}
-                    key={i}
-                  >
-                    <div className="border d-flex flex-column h-100">
-                      <div className="bg-secondary text-center py-2 px-2 font-weight-bold">
-                        <p
-                          className="mb-0"
-                          style={{
-                            fontSize: "3em",
-                            lineHeight: "1",
-                          }}
-                        >
-                          {block.term}
-                        </p>
-                        <p
-                          className="mb-0 font-weight-normal text-uppercase"
-                          style={{
-                            fontSize: "1.5em",
-                          }}
-                        >
-                          Months
-                        </p>
-                      </div>
-                      {block.offers.map((block, i) => {
-                        const borderRun =
-                          i < multiBlockLength - 1 ? `border-bottom` : "";
-
-                        return (
-                          <React.Fragment key={i}>
-                            <FinancingBlock
-                              {...{
-                                block,
-                                addClass: borderRun,
-                              }}
-                            />
-                          </React.Fragment>
-                        );
-                      })}
-                      <div className="p-1 mt-auto">
-                        <Button
-                          copy={block.button.copy}
-                          url={block.button.url}
-                          addClass="bg-secondary w-100 text-center"
-                        />
-                      </div>
-                    </div>
-                  </li>
+                  <React.Fragment key={i}>
+                    {!!countBlocks && block.display === true && (
+                      <MainBlock
+                        {...{ block, i, keywords, multiBlockLength }}
+                      />
+                    )}
+                  </React.Fragment>
                 );
               })}
             </ul>
@@ -164,8 +165,11 @@ const Financing = () => {
       </section>
 
       <section
-        style={{ minHeight: "200vh", backgroundColor: "lightgray" }}
-      ></section>
+        className="d-flex justify-content-center align-items-center"
+        style={{ minHeight: "100vh", backgroundColor: "lightgray" }}
+      >
+        <div className="bg-secondary p-8"> TESTING STICKY GOES AWAY</div>
+      </section>
     </>
   );
 };
