@@ -246,6 +246,8 @@ const IntelliPower = () => {
         </div>
       </section>
 
+      <section className="p-9"></section>
+
       {/* EFI Blocks */}
       <section className="section-4 bg-black pt-9 pb-9">
         <div className="wrapper">
