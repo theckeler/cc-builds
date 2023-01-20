@@ -147,8 +147,8 @@ const IntelliPower = () => {
               return (
                 <li className="col-12 col-sm-12 col-md-6 p-1" key={i}>
                   <div
-                    className="h-100 p-5 d-flex flex-column"
-                    style={{ background: "#efefef" }}
+                    className="h-100 p-5 d-flex flex-column bg-secondary"
+                    //style={{ background: "#efefef" }}
                   >
                     <p
                       className="text-center h3 mt-0 pt-0 line-1"

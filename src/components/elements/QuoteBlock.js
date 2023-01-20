@@ -27,7 +27,7 @@ const QuoteBlock = ({
       <ul className="list-unstyled d-flex mt-1">
         <li className="border-right font-weight-bold pr-2">{quote.name}</li>
         <li
-          className="font-weight-bold pl-2"
+          className="font-weight-normal pl-2"
           dangerouslySetInnerHTML={{
             __html: quote.unit,
           }}

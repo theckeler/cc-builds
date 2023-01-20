@@ -196,6 +196,7 @@
     "terms": {
       "title": "Select Term Length",
       "type": "terms",
+      "show": true,
       "inputs": [
         { "label": "6 Months", "val": "months-6", "isChecked": true },
         { "label": "12 Months", "val": "months-12", "isChecked": true },
@@ -209,6 +210,7 @@
     "minPurchase": {
       "title": "Select Min Purchase",
       "type": "minPurchase",
+      "show": false,
       "inputs": [
         { "label": "$199", "val": "min-199", "isChecked": true },
         { "label": "$500", "val": "min-500", "isChecked": true },
@@ -222,6 +224,7 @@
     "interestRate": {
       "title": "Select Interest Rate",
       "type": "interestRate",
+      "show": false,
       "inputs": [
         { "label": "No Interest", "val": "no-interest", "isChecked": true },
         { "label": "0% Interest", "val": "zero-interest", "isChecked": true },

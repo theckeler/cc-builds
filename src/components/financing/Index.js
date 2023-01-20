@@ -102,13 +102,26 @@ const Financing = () => {
       <section>
         <ul className="row list-unstyled container mx-auto">
           <li
-            className="position-sticky col-3 h-100 p-1 no-gutters"
-            style={{ top: 0, zIndex: 1001 }}
+            className="position-sticky col-lg-3 h-100 p-1 no-gutters"
+            style={{ top: 0, zIndex: 1001, maxHeight: "100vh", overflow: "scroll" }}
           >
             <ul
               className="list-unstyled p-2 w-100 h-100"
               style={{ backgroundColor: "#efefef" }}
             >
+              {/* <li className="mb-1 text-uppercase h4">Rows:</li>
+              <li>
+                <input
+                  type="range"
+                  id="numRows"
+                  name="numRows"
+                  min="1"
+                  max="6"
+                  step="1"
+                  value="2"
+                  className="w-100"
+                />
+              </li> */}
               <li className="mb-1 text-uppercase h4">Filter:</li>
               <li className="mb-2">
                 <FilterOptions
@@ -130,7 +143,7 @@ const Financing = () => {
               </li>
             </ul>
           </li>
-          <li className="col-9 no-gutters">
+          <li className="col-lg-9 no-gutters">
             <ul className="d-flex flex-wrap list-unstyled no-gutters">
               {offersData.blocks.map((block, i) => {
                 let keywords = "";

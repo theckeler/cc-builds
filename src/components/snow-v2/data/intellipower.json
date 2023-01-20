@@ -1,6 +1,6 @@
 {
   "hero": {
-    "h1": "Cub Cadet® Engine Technology",
+    "h1": "Cub Cadet<sup><small>®</small></sup> Engine Technology",
     "copy": "Take on heavy, deep and wet snow with the Cub Cadet engine advantage. Available with IntelliPower™ and electronic fuel injection (EFI) engine technology, a Cub Cadet engine helps you get the job done."
   },
 
@@ -60,23 +60,6 @@
   "quotes": {
     "blocks": [
       {
-        "title": "Cuts like butter",
-        "copy": "“This snow blower is a beast! We got a storm that dropped two feet of pure powder on us. The snow blower went through it like a hot knife through butter and no bogging at all!”",
-        "name": "NJsnowstorm New Jersey",
-        "unit": "2X® 30” EFI"
-      },
-      {
-        "title": "Starts with ease",
-        "copy": "“I’ve had lots of other equipment without an EFI and they are a nightmare to start. This snow blower starts with one pull every time.”",
-        "name": "MSDComp08022 East Fishkill, NY",
-        "unit": "2X® 30” EFI"
-      }
-    ]
-  },
-
-  "quotesIntellipower": {
-    "blocks": [
-      {
         "title": "Awesome performance and features!",
         "copy": "“First year with new Cub Cadet has been very impressive. Easy to start, steering feature works great, snow clearing and throwing was excellent. Snow was very wet and heavy but blower had no problem.”",
         "name": "Big R, Rochester NY",
@@ -87,6 +70,23 @@
         "copy": "“I am really enjoying this new snow blower! It is very high quality and very easy to use. I would strongly recommend.”",
         "name": "Ndwest, Bismarck ND",
         "unit": "2X 26” IntelliPower™ "
+      }
+    ]
+  },
+
+  "quotesIntellipower": {
+    "blocks": [
+      {
+        "title": "Cuts like butter",
+        "copy": "“This snow blower is a beast! We got a storm that dropped two feet of pure powder on us. The snow blower went through it like a hot knife through butter and no bogging at all!”",
+        "name": "NJsnowstorm New Jersey",
+        "unit": "2X<sup>®</sup> 30” EFI"
+      },
+      {
+        "title": "Starts with ease",
+        "copy": "“I’ve had lots of other equipment without an EFI and they are a nightmare to start. This snow blower starts with one pull every time.”",
+        "name": "MSDComp08022 East Fishkill, NY",
+        "unit": "2X<sup>®</sup> 30” EFI"
       }
     ]
   },
@@ -126,7 +126,7 @@
         "copy": "Cub Cadet® snow blowers are engineered for extreme. The 2X® 30 EFI with IntelliPower™ combines two technologies — IntelliPower and Electronic Fuel Injection (EFI) — to give you a powerful combination and help handle whatever winter has to offer.",
         "button": {
           "copy": "Learn more",
-          "url": "https://www.cubcadet.com/en_US/product-information/knowledge-the-benefits-of-intellipower-for-snow-blowers.html"
+          "url": "https://www.cubcadet.com/en_US/product-information/power-up-for-winter-with-intellipower.html"
         }
       },
       {
@@ -135,7 +135,7 @@
         "copy": "If you’ve ever had to tackle winter, you understand the necessity of packing as much power as you can to take on the season’s extremes. As the temperature drops, you need to get your snow blower prepared so you can keep up with the anticipated snowfall.",
         "button": {
           "copy": "Learn more",
-          "url": "https://www.cubcadet.com/en_US/product-information/power-up-for-winter-with-intellipower.html"
+          "url": "https://www.cubcadet.com/en_US/product-information/knowledge-the-benefits-of-intellipower-for-snow-blowers.html"
         }
       }
     ]
