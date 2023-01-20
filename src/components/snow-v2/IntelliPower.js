@@ -304,6 +304,8 @@ const IntelliPower = () => {
         </div>
       </section> */}
 
+      <section className="p-9"></section>
+
       {/* 2 Quotes */}
       <section className="section-6 pt-9 pb-9 bg-yellow">
         <div className="wrapper">
