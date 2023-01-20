@@ -287,7 +287,7 @@ const IntelliPower = () => {
       </section>
 
       {/* Video */}
-      <section className="section-5 pt-9 pb-9">
+      {/* <section className="section-5 pt-9 pb-9">
         <div className="wrapper p-3">
           <h2
             className="text-center"
@@ -302,7 +302,7 @@ const IntelliPower = () => {
             addClass="w-100 mt-6"
           />
         </div>
-      </section>
+      </section> */}
 
       {/* 2 Quotes */}
       <section className="section-6 pt-9 pb-9 bg-yellow">
