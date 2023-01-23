@@ -2,6 +2,7 @@ import React from "react";
 
 import Button from "../../elements/Button";
 import FinancingBlock from "./FinancingBlock";
+import EmptyBlock from "./EmptyBlock";
 
 const MainBlock = ({ block, i, keywords, multiBlockLength }) => {
   return (
@@ -29,7 +30,7 @@ const MainBlock = ({ block, i, keywords, multiBlockLength }) => {
             Months
           </p>
         </div>
-        {!!block.offerCount > 0 ? (
+        {!!multiBlockLength > 0 ? (
           block.offers.map((block, i) => {
             const borderRun = i < multiBlockLength - 1 ? `border-bottom` : "";
 
@@ -47,13 +48,7 @@ const MainBlock = ({ block, i, keywords, multiBlockLength }) => {
             );
           })
         ) : (
-          <div className="px-3 pt-3">
-            <p className="nb-0" style={{ minHeight: "100px" }}>
-              Sorry. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque a condimentum ex. Quisque fringilla libero ac arcu
-              tincidunt vulputate vitae sed eros.
-            </p>
-          </div>
+          <EmptyBlock />
         )}
         <div className="p-1 mt-auto">
           <Button

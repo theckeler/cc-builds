@@ -1,9 +1,11 @@
 //import React, { useState, useEffect } from "react";
 import React, { useState } from "react";
 
+import "./scss/financing.scss";
 import jsonData from "./data/financing.json";
 import MainBlock from "./elements/MainBlock";
 import FilterOptions from "./elements/FilterOptions";
+import MenuButton from "./elements/MenuButton";
 
 const Financing = () => {
   const [offersData, setOffersData] = useState({
@@ -14,7 +16,7 @@ const Financing = () => {
   });
 
   // useEffect(() => {
-  //   console.log("offersData", offersData);
+  //   console.log("cssUpdate", cssUpdate);
   // });
 
   const handleChange = (e) => {
@@ -53,7 +55,7 @@ const Financing = () => {
           }
           break;
         default:
-          let offerCount = 0;
+          //let offerCount = 0;
           e.offers.forEach(function (offer) {
             const result = offer.keywords.filter((keyword) =>
               uncheckedInputs.includes(keyword)
@@ -62,10 +64,10 @@ const Financing = () => {
               offer.display = false;
             } else {
               offer.display = true;
-              offerCount++;
+              //  offerCount++;
             }
           });
-          e.offerCount = offerCount;
+        // e.offerCount = offerCount;
       }
     });
 
@@ -90,7 +92,8 @@ const Financing = () => {
         <img
           src="https://d1dy019watpwba.cloudfront.net/images/financing/cub-cadet-credit-card.png"
           alt=""
-          className="w-25 mb-4"
+          className="w-100 mb-4"
+          style={{ maxWidth: "400px" }}
         />
         <h1>Shop Online Financing Plans</h1>
         <p className="mb-0">
@@ -99,51 +102,63 @@ const Financing = () => {
         </p>
       </section>
 
-      <section>
-        <ul className="row list-unstyled container mx-auto">
+      <section className="container p-0 m-0 m-lg-auto w-100">
+        <ul className="list-unstyled mx-auto no-gutters d-flex flex-column flex-lg-row p-0 p-lg-1">
           <li
-            className="position-sticky col-lg-3 h-100 p-1 no-gutters"
-            style={{ top: 0, zIndex: 1001, maxHeight: "100vh", overflow: "scroll" }}
+            className="col-lg-3 position-sticky h-100"
+            style={{ top: "8px", zIndex: "101" }}
           >
-            <ul
-              className="list-unstyled p-2 w-100 h-100"
-              style={{ backgroundColor: "#efefef" }}
-            >
-              {/* <li className="mb-1 text-uppercase h4">Rows:</li>
-              <li>
-                <input
-                  type="range"
-                  id="numRows"
-                  name="numRows"
-                  min="1"
-                  max="6"
-                  step="1"
-                  value="2"
-                  className="w-100"
-                />
-              </li> */}
-              <li className="mb-1 text-uppercase h4">Filter:</li>
-              <li className="mb-2">
-                <FilterOptions
-                  option={offersData.keys.terms}
-                  {...{ handleChange }}
-                />
+            <ul className="d-flex flex-column list-unstyled p-lg-1" style={{}}>
+              <li
+                className="financing-filters-button d-lg-none"
+                id="financing-filters-button"
+                style={{
+                  zIndex: "100",
+                }}
+              >
+                <MenuButton />
               </li>
-              <li className="mb-2">
-                <FilterOptions
-                  option={offersData.keys.minPurchase}
-                  {...{ handleChange }}
-                />
-              </li>
-              <li className="mb-2">
-                <FilterOptions
-                  option={offersData.keys.interestRate}
-                  {...{ handleChange }}
-                />
+              <li
+                className="financing-filters position-fixed position-lg-relative w-100"
+                id="financing-filters"
+                style={{
+                  top: 0,
+                  zIndex: "101",
+                  backgroundColor: "#efefef",
+                }}
+              >
+                <ul className="list-unstyled h-100 p-lg-1">
+                  <li className="p-1 text-uppercase h4 border-bottom d-flex align-items-center">
+                    <span>Filter:</span>
+                    <span className="ml-auto d-lg-none">
+                      <MenuButton addClass="p-2" />
+                    </span>
+                  </li>
+                  <li
+                    className="mb-2 overflow-auto no-scrollbar px-3 px-lg-0 pb-8"
+                    style={{
+                      height: "calc(100vh - 60px)",
+                      maxHeight: "100vh",
+                    }}
+                  >
+                    <FilterOptions
+                      option={offersData.keys.terms}
+                      {...{ handleChange }}
+                    />
+                    <FilterOptions
+                      option={offersData.keys.minPurchase}
+                      {...{ handleChange }}
+                    />
+                    <FilterOptions
+                      option={offersData.keys.interestRate}
+                      {...{ handleChange }}
+                    />
+                  </li>
+                </ul>
               </li>
             </ul>
           </li>
-          <li className="col-lg-9 no-gutters">
+          <li className="col-lg-9 mt-n5 mt-lg-0">
             <ul className="d-flex flex-wrap list-unstyled no-gutters">
               {offersData.blocks.map((block, i) => {
                 let keywords = "";
@@ -153,9 +168,16 @@ const Financing = () => {
                   }
                 }
 
-                const multiBlockLength = block.offers
-                  ? block.offers.length
-                  : "";
+                let multiBlockLength = 0;
+                block.offers.map((block) => {
+                  if (block.display) {
+                    multiBlockLength++;
+                  }
+                });
+
+                // const multiBlockLength = block.offers
+                //   ? block.offers.length
+                //   : "";
 
                 return (
                   <React.Fragment key={i}>

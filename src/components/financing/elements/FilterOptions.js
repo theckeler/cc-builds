@@ -3,13 +3,11 @@ import React from "react";
 const FilterOptions = ({ option, handleChange }) => {
   let showHideOptions, showHideOpen, showHideClose;
   if (option.show) {
-    showHideOptions = "d-none d-lg-none d-lg-block";
-
-    showHideOpen = "d-none d-block d-lg-none";
-    showHideClose = "d-none d-lg-block";
+    showHideOptions = "d-none d-block";
+    showHideOpen = "d-none";
+    showHideClose = "d-none d-block";
   } else {
     showHideOptions = "d-none";
-
     showHideOpen = "d-none d-block";
     showHideClose = "d-none";
   }
@@ -28,8 +26,6 @@ const FilterOptions = ({ option, handleChange }) => {
           onClick={(e) => {
             e.stopPropagation();
             e.target.parentElement.nextSibling.classList.toggle("d-block");
-            e.target.parentElement.nextSibling.classList.toggle("d-lg-block");
-            //  e.target.parentElement.nextSibling.classList.toggle("d-lg-none");
 
             document
               .querySelectorAll(

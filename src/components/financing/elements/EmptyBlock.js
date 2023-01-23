@@ -1,10 +1,11 @@
-const EmptyBlock = ({ block, i, keywords, multiBlockLength }) => {
+const EmptyBlock = () => {
   return (
-    <div
-      className="financing-none text-center py-2 px-2 font-weight-bold"
-      style={{ backgroundColor: "red" }}
-    >
-      test
+    <div className="px-3 pt-3">
+      <p className="nb-0" style={{ minHeight: "100px" }}>
+        Sorry. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Pellentesque a condimentum ex. Quisque fringilla libero ac arcu
+        tincidunt vulputate vitae sed eros.
+      </p>
     </div>
   );
 };
