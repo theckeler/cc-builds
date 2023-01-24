@@ -14,7 +14,7 @@ const CTABlock = ({ block, addClass, addCSS }) => {
       <Button
         url={block.button.url}
         copy={block.button.copy}
-        addClass="bg-white mt-2"
+        addClass="bg-white mt-2 my-auto"
       />
     </>
   );

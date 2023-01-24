@@ -219,8 +219,8 @@ const Financing = () => {
         </div>
       </section>
 
-      <section className="d-flex justify-content-center align-items-center p-3 bg-secondary">
-        <div className="container">
+      <section className="d-flex justify-content-center align-items-center p-8 bg-secondary">
+        <div className="container d-flex flex-column align-items-center">
           <CTABlock block={jsonData.cta} />
         </div>
       </section>
