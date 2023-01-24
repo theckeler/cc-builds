@@ -243,7 +243,12 @@
   "myProducts": [
     {
       "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw8f055b11/products/Equipment/Cub-Cadet_XT1LT46_New_2000x2000_8.jpg",
-      "product": "XT1 LT46"
+      "product": "XT1 LT46",
+      "service": true,
+      "dealer": {
+        "name": "Worcester Sales and Service, Inc",
+        "address": "34200 LORAIN ROAD, NORTH RIDGEVILLE, OH 44039"
+      }
     },
     {
       "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw855378c6/products/Equipment/Cub-Cadet-1X_21LHP_1.jpg",
@@ -255,7 +260,8 @@
     },
     {
       "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw532f8707/products/Equipment/Cub_Cadet_LB600E_wo_Battery_2000x2000_8.jpg",
-      "product": "LB600E"
+      "product": "LB600E",
+      "service": true
     }
   ],
   "myList1": [

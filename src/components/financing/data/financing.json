@@ -233,9 +233,55 @@
       ]
     }
   },
-  "keywords": [],
   "button": {
     "copy": "Learn more about the Ultima series",
     "url": "https://www.cubcadet.com/en_US/ultima-series-features-benefits.html"
+  },
+  "inStore": {
+    "img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw1026a6c1/Financing/become_a_dealer_desktop_1015x765.jpg",
+    "title": "Finance In-Store",
+    "copy": "We have multiple financing offers to fit your needs. Financing is available at participating independent dealers.",
+    "button": {
+      "copy": "Find a Local Dealer",
+      "url": "https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&horizontalView=true&isForm=true&rid=dealers"
+    },
+    "extraLink": {
+      "copy": "View all online and in-store financing plans",
+      "url": "https://www.cubcadet.com/en_US/financing-view-all.html"
+    }
+  },
+  "faqs": [
+    {
+      "question": "How long does the online application take?",
+      "answer": "The application takes only minutes, and most application decisions are returned within seconds."
+    },
+    {
+      "question": "Is there an annual fee with the Cub Cadet credit card?",
+      "answer": "There is no annual fee to carry the Cub Cadet credit card."
+    },
+    {
+      "question": "Can I apply for the Cub Cadet credit card by mail?",
+      "answer": "There is no mail-in application. Applications can be completed online or at your local participating dealer."
+    },
+    {
+      "question": "How do I make payments on my Cub Cadet credit card account?",
+      "answer": "You can make payments on your Cub Cadet credit card account in 3 convenient ways:<ul><li>Online with TD's Online Account Management system at www.myonlineaccount.net</li><li>Via phone at 1-888-382-6665</li><li>Via mail: Cub Cadet, PO BOX 100114, Columbia SC 29202-3114</li></ul>"
+    },
+    {
+      "question": "How do I contact customer service regarding my Cub Cadet credit card account?",
+      "answer": "The customer service number for your Cub Cadet credit card account is 1-866-702-4074."
+    },
+    {
+      "question": "I am a commercial customer. Can I apply online?",
+      "answer": "No, commercial customers can only apply at your local participating dealer."
+    }
+  ],
+  "cta": {
+    "h1": "Still have financing questions?",
+    "copy": "We're happy to help! Call a customer service specialist (877) 428-2349 8am-5pm EST",
+    "button": {
+      "copy": "Apply Now",
+      "url": "https://www.cubcadet.com/en_US/financing-view-all.html"
+    }
   }
 }

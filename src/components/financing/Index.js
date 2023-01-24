@@ -6,6 +6,9 @@ import jsonData from "./data/financing.json";
 import MainBlock from "./elements/MainBlock";
 import FilterOptions from "./elements/FilterOptions";
 import MenuButton from "./elements/MenuButton";
+import Faqs from "../elements/Faqs";
+import ImgCopyBlock from "../elements/ImgCopyBlock";
+import CTABlock from "../elements/CTABlock";
 
 const Financing = () => {
   const [offersData, setOffersData] = useState({
@@ -195,10 +198,31 @@ const Financing = () => {
       </section>
 
       <section
-        className="d-flex justify-content-center align-items-center"
-        style={{ minHeight: "100vh", backgroundColor: "lightgray" }}
+        className="d-flex justify-content-center align-items-center p-3"
+        // style={{ backgroundColor: "#e7e7e7" }}
       >
-        <div className="bg-secondary p-8"> TESTING STICKY GOES AWAY</div>
+        <div className="container px-5 py-2">
+          <ul className="list-unstyled d-flex flex-column flex-lg-row">
+            <li className="col-lg-6 p-2" style={{ backgroundColor: "#e7e7e7" }}>
+              <ImgCopyBlock
+                block={jsonData.inStore}
+                linkable={false}
+                flushImg={true}
+                addClass="h-auto"
+              />
+            </li>
+            <li className="col-lg-6 px-2 py-5 p-lg-6">
+              <h2>FAQs</h2>
+              <Faqs faqs={jsonData.faqs} addID="faqs-financing" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="d-flex justify-content-center align-items-center p-3 bg-secondary">
+        <div className="container">
+          <CTABlock block={jsonData.cta} />
+        </div>
       </section>
     </>
   );

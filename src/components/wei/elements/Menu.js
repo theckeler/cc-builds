@@ -2,11 +2,10 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import Button from "../../elements/Button";
+import ServiceNotification from "../elements/ServiceNotification";
 
 const Menu = ({ loggedIn, logIn, logOut, closeMenu }) => {
   const navigate = useNavigate();
-  var serviceDate = new Date();
-  serviceDate.setMonth(serviceDate.getMonth() + 3);
 
   return (
     <div className="menu d-flex flex-column " style={{ minHeight: "40vh" }}>
@@ -81,37 +80,32 @@ const Menu = ({ loggedIn, logIn, logOut, closeMenu }) => {
                   />
                 </li>
                 <li>
-                  <div className="border p-2 m-2 text-center">
-                    <strong className="text-uppercase">
-                      Service date coming up for XT1 LT46 on
-                      {" " + serviceDate.toLocaleDateString()}
-                    </strong>
-                    <Button
-                      copy="Order Parts for your XT1 LT46"
-                      addClass="w-100 font-weight-normal text-capitalize bg-yellow mt-1"
-                      addClick={() => {
-                        // closeMenu();
-                        // navigate("/wei/track-order/29323-32434");
-                      }}
-                    />
-                  </div>
+                  <ServiceNotification />
                 </li>
-
                 <li className="d-flex d-flex-lg-column mt-3 px-3 py-0 border-top pt-2">
-                  <input
-                    className="p-1 w-100"
-                    placeholder="Tracking Number"
-                    value="29323-32434"
-                    readOnly
-                  />
-                  <Button
-                    copy="Track Your Order"
-                    addClass="w-100 font-weight-normal text-capitalize bg-yellow mt-1"
-                    addClick={() => {
-                      closeMenu();
-                      navigate("/wei/track-order/29323-32434");
-                    }}
-                  />
+                  <strong>Track Your Order:</strong>
+                </li>
+                <li className="d-flex d-flex-lg-column mt-1 px-3 py-0">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Tracking Number"
+                      value="29323-32434"
+                      aria-label="Tracking Number"
+                      aria-describedby="button-addon2"
+                    />
+                    <button
+                      class="btn btn-outline-secondary"
+                      type="button"
+                      addClick={() => {
+                        closeMenu();
+                        navigate("/wei/track-order/29323-32434");
+                      }}
+                    >
+                      Track
+                    </button>
+                  </div>
                 </li>
               </ul>
             </>

@@ -4,6 +4,10 @@ import Button from "../../elements/Button";
 const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
   const navigate = useNavigate();
 
+  const checkboxChange = (showWhat) => {
+    document.querySelector(showWhat).classList.toggle("d-block");
+  };
+
   return (
     <ul className="list-unstyled d-flex">
       <li className="col col-lg-6 px-0">
@@ -49,16 +53,13 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
                   id="lawn"
                   name="lawn"
                   className="mr-1"
-                  onChange={() => {
-                    console.log("mower More");
-                    document
-                      .querySelector("#mower-more")
-                      .classList.toggle("active");
+                  onChange={(e) => {
+                    checkboxChange("#mower-more");
                   }}
                 />
                 <label htmlFor="lawn">Lawn Mowers</label>
               </li>
-              <li className="title d-flex mt-0 hide" id="mower-more">
+              <li className="title mt-0 d-none" id="mower-more">
                 <ul className="list-unstyled d-flex flex-column m-2">
                   <li className="title d-flex mt-2">
                     <input
@@ -112,16 +113,13 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
                   id="snow"
                   name="snow"
                   className="mr-1"
-                  onChange={() => {
-                    console.log("Snow More");
-                    document
-                      .querySelector("#snow-more")
-                      .classList.toggle("active");
+                  onChange={(e) => {
+                    checkboxChange("#snow-more");
                   }}
                 />
                 <label htmlFor="snow">Snow</label>
               </li>
-              <li className="title d-flex mt-0 hide" id="snow-more">
+              <li className="title mt-0 d-none" id="snow-more">
                 <ul className="list-unstyled d-flex flex-column m-2">
                   <li className="title d-flex mt-2">
                     <input type="checkbox" id="1X" name="1X" className="mr-1" />
@@ -147,16 +145,13 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
                   id="chore"
                   name="chore"
                   className="mr-1"
-                  onChange={() => {
-                    console.log("chore More");
-                    document
-                      .querySelector("#chore-more")
-                      .classList.toggle("active");
+                  onChange={(e) => {
+                    checkboxChange("#chore-more");
                   }}
                 />
                 <label htmlFor="chore">Chore & Handheld</label>
               </li>
-              <li className="title d-flex mt-0 hide" id="chore-more">
+              <li className="title mt-0 d-none" id="chore-more">
                 <ul className="list-unstyled d-flex flex-column m-2">
                   <li className="title d-flex mt-2">
                     <input type="checkbox" id="1X" name="1X" className="mr-1" />
@@ -185,16 +180,14 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
           <Button
             copy={`Add More <span class="ml-auto">&plus;</span>`}
             addClass="w-100 text-left text-uppercase d-flex bg-yellow px-2"
-            addClick={() => {
-              document
-                .querySelector("#account-more-1")
-                .classList.toggle("active");
+            addClick={(e) => {
+              checkboxChange("#account-more-1");
             }}
           />
         </div>
 
         <ul
-          className="list-unstyled d-flex flex-column mt-3 hide"
+          className="list-unstyled flex-column mt-3 d-none"
           id="account-more-1"
         >
           <li className=" title d-flex flex-column">
@@ -211,13 +204,13 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
               className="border p-1 w-100"
               onChange={(e) => {
                 document.querySelectorAll(".subs").forEach(function (el) {
-                  el.classList.remove("active");
+                  el.classList.remove("d-block");
                 });
 
                 if (e.target.value) {
                   document
                     .querySelector("#" + e.target.value)
-                    .classList.toggle("active");
+                    .classList.toggle("d-block");
                 }
               }}
             >
@@ -229,7 +222,7 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
             </select>
 
             <ul
-              className="list-unstyled d-flex flex-column mt-3 subs hide"
+              className="list-unstyled flex-column mt-3 subs d-none"
               id="select-more"
             >
               <li className=" title d-flex flex-column">
@@ -243,7 +236,7 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
             </ul>
 
             <ul
-              className="list-unstyled d-flex flex-column mt-3 subs hide"
+              className="list-unstyled flex-column mt-3 subs d-none"
               id="select-more-2"
             >
               <li className=" title d-flex flex-column">
@@ -283,8 +276,11 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
           }}
         />
       </li>
-      <li className="col col-lg-6 px-2">
-        <div className="p-4 border">
+      <li
+        className="col col-lg-6 px-2 h-100 position-sticky"
+        style={{ top: 0 }}
+      >
+        <div className="p-4 border mt-2">
           <h3 className="h3">Donec quis tincidunt ante</h3>
           <p className="mb-0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel

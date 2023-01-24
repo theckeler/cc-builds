@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+import ServiceNotification from "./elements/ServiceNotification";
+
 const MyProducts = ({ weiData }) => {
   const [dragId, setDragId] = useState();
   const [orderBoxes, setOrderBoxes] = useState([...weiData.myProducts]);
@@ -45,6 +47,9 @@ const MyProducts = ({ weiData }) => {
   // useEffect(() => {
   //   console.log("orderBoxes: ", orderBoxes);
   // }, [orderBoxes]);
+
+  var serviceDate = new Date();
+  serviceDate.setMonth(serviceDate.getMonth() + 3);
 
   return (
     <div className="wrapper p-3">
@@ -142,6 +147,14 @@ const MyProducts = ({ weiData }) => {
                     </li>
                   </ul>
                 </li>
+                {!!product.service && (
+                  <li>
+                    <ServiceNotification
+                      {...{ product }}
+                      title={product.product}
+                    />
+                  </li>
+                )}
               </ul>
             </li>
           );

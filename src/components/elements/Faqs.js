@@ -8,7 +8,6 @@ const Faqs = ({ faqs, addClass, addID }) => {
     const html = `
 <script type="text/javascript" id="faqs-script">
   document.querySelectorAll("#${addID} .question").forEach(function (el) {
-
   el.addEventListener("click", function () {
     this.classList.toggle("active");
     this.nextElementSibling.classList.toggle("active");
@@ -25,12 +24,16 @@ const Faqs = ({ faqs, addClass, addID }) => {
         {faqs.map((block, i) => {
           return (
             <React.Fragment key={i}>
-              <li className="question">
+              <li className="question" style={{ cursor: "pointer" }}>
                 {block.question}
                 <span>✖</span>
               </li>
               <li className="answer">
-                <p>{block.answer}</p>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: block.answer,
+                  }}
+                />
               </li>
             </React.Fragment>
           );
