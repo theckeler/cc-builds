@@ -111,7 +111,7 @@ const Financing = () => {
             className="col-lg-3 position-sticky h-100"
             style={{ top: "8px", zIndex: "101" }}
           >
-            <ul className="d-flex flex-column list-unstyled p-lg-1" style={{}}>
+            <ul className="d-flex flex-column list-unstyled p-lg-1">
               <li
                 className="financing-filters-button d-lg-none"
                 id="financing-filters-button"
@@ -172,15 +172,11 @@ const Financing = () => {
                 }
 
                 let multiBlockLength = 0;
-                block.offers.map((block) => {
+                block.offers.forEach(async (block) => {
                   if (block.display) {
                     multiBlockLength++;
                   }
                 });
-
-                // const multiBlockLength = block.offers
-                //   ? block.offers.length
-                //   : "";
 
                 return (
                   <React.Fragment key={i}>
@@ -197,10 +193,7 @@ const Financing = () => {
         </ul>
       </section>
 
-      <section
-        className="d-flex justify-content-center align-items-center p-3"
-        // style={{ backgroundColor: "#e7e7e7" }}
-      >
+      <section className="d-flex justify-content-center align-items-center p-3">
         <div className="container px-5 py-2">
           <ul className="list-unstyled d-flex flex-column flex-lg-row">
             <li className="col-lg-6 p-2" style={{ backgroundColor: "#e7e7e7" }}>

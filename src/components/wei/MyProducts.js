@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import Button from "../elements/Button";
 
 import ServiceNotification from "./elements/ServiceNotification";
 
 const MyProducts = ({ weiData }) => {
   const [dragId, setDragId] = useState();
   const [orderBoxes, setOrderBoxes] = useState([...weiData.myProducts]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     let sortUpdate = [];
@@ -153,6 +156,69 @@ const MyProducts = ({ weiData }) => {
                       {...{ product }}
                       title={product.product}
                     />
+                  </li>
+                )}
+                {!!product.serviceHistory && (
+                  <li>
+                    <div className="border p-1 m-1">
+                      <p className="text-uppercase small mb-1">
+                        Service records for {product.product}:
+                      </p>
+                      <button
+                        className="button font-weight-bold undefined small w-100 mb-1 border"
+                        onClick={() => {
+                          navigate("/wei/service-records");
+                        }}
+                      >
+                        Feb 22, 2021
+                      </button>
+                      <button
+                        className="button font-weight-bold undefined small w-100 border"
+                        onClick={() => {
+                          navigate("/wei/service-records");
+                        }}
+                      >
+                        Nov 2, 2019
+                      </button>
+                    </div>
+                  </li>
+                )}
+                {!!product.toubleTicket && (
+                  <li>
+                    <div className="border p-1 m-1">
+                      <p className="text-uppercase small mb-1">
+                        Trouble tickets for {product.product}:
+                      </p>
+                      <button
+                        className="button font-weight-bold undefined small w-100 mb-1 border"
+                        onClick={() => {
+                          navigate("/wei/service-records");
+                        }}
+                      >
+                        Dec 10, 2016
+                      </button>
+                    </div>
+                  </li>
+                )}
+                {!!product.warranty && (
+                  <li>
+                    <div className="border p-1 m-1">
+                      <p className="text-uppercase small mb-1 text-center">
+                        <img
+                          src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/ew/ew-logo.svg"
+                          alt=""
+                          className="w-25"
+                        />
+                      </p>
+                      <button
+                        className="button font-weight-bold undefined small w-100 mb-1 border"
+                        onClick={() => {
+                          navigate("/wei/service-records");
+                        }}
+                      >
+                        Purchase Warranty
+                      </button>
+                    </div>
                   </li>
                 )}
               </ul>

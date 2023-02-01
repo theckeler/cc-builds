@@ -30,6 +30,7 @@ const App = () => {
 
   return (
     <div className="customer-service">
+      {/* HERO */}
       <section className="section-1 bg-yellow">
         <div className="wrapper px-3 py-4">
           <h1
@@ -43,6 +44,7 @@ const App = () => {
         </div>
       </section>
 
+      {/* Three Blocks */}
       <section className="section-2">
         <div className="wrapper px-3 py-6">
           <ul className="row list-unstyled">
@@ -84,6 +86,7 @@ const App = () => {
         </div>
       </section>
 
+      {/* Track Order / Find Support */}
       <section className="section-3">
         <div className="wrapper px-3 py-6">
           <ul className="row list-unstyled">
@@ -111,6 +114,7 @@ const App = () => {
         </div>
       </section>
 
+      {/* CTA */}
       <section className="section-4 bg-black py-5 px-3">
         <div className="wrapper">
           <h2
@@ -125,6 +129,7 @@ const App = () => {
         </div>
       </section>
 
+      {/* Popular Links */}
       <section className="section-5 py-4">
         <div className="wrapper px-3 py-6">
           <h2
@@ -167,6 +172,7 @@ const App = () => {
         </div>
       </section>
 
+      {/* Find Support */}
       <section className="section-6">
         <div className="wrapper px-3 py-6">
           <h2
@@ -199,6 +205,7 @@ const App = () => {
         </div>
       </section>
 
+      {/* Didn’t Find What You Were Looking For? */}
       <section className="section-7 bg-yellow py-5">
         <div className="wrapper" style={{ maxWidth: "700px" }}>
           <h2

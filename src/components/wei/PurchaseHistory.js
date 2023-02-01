@@ -21,7 +21,6 @@ const MyProducts = (weiData) => {
             copy="All Orders"
             addClass="w-100 text-uppercase border active"
             addClick={(e) => {
-              //console.log("View Orders: ", e);
               resetButtons();
               e.target.classList.add("active");
             }}
@@ -31,6 +30,7 @@ const MyProducts = (weiData) => {
           <Button
             copy="Dealer Orders"
             addClass="w-100 text-uppercase border"
+            addStyle={{ border: "1px solid #000" }}
             addClick={(e) => {
               resetButtons();
               document

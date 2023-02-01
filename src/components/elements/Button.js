@@ -5,7 +5,7 @@ const Button = ({ copy, url, addClass, addClick, addStyle }) => {
     return (
       <a
         href={url}
-        className={`button text-uppercase font-weight-bold text-decoration-none d-inline-block border-0 ${addClass}`}
+        className={`button text-uppercase font-weight-bold text-decoration-none d-inline-block ${addClass}`}
         dangerouslySetInnerHTML={{ __html: copy }}
         style={{ ...addStyle, ...addPadding }}
       />
@@ -14,7 +14,7 @@ const Button = ({ copy, url, addClass, addClick, addStyle }) => {
     return (
       <button
         onClick={addClick}
-        className={`button border-0 font-weight-bold ${addClass}`}
+        className={`button font-weight-bold ${addClass}`}
         dangerouslySetInnerHTML={{ __html: copy }}
         style={{ ...addStyle, ...addPadding }}
       />

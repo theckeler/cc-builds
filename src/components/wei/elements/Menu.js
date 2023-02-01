@@ -10,10 +10,10 @@ const Menu = ({ loggedIn, logIn, logOut, closeMenu }) => {
   return (
     <div className="menu d-flex flex-column " style={{ minHeight: "40vh" }}>
       <ul className="list-unstyled d-flex flex-column">
-        <li className="bg-black p-3 title d-flex flex-column xxl-hide">
+        <li className="bg-black p-3 title d-flex flex-column">
           <Button
             copy="&#10005;"
-            addClass="menu-close bg-yellow d-inline-block rounded-circle p-0 d-flex ml-auto font-weight-bold lg-hide"
+            addClass="menu-close bg-yellow d-inline-block rounded-circle p-0 d-flex ml-auto font-weight-bold border-0"
             addClick={closeMenu}
           />
         </li>
@@ -23,7 +23,7 @@ const Menu = ({ loggedIn, logIn, logOut, closeMenu }) => {
               <h2 className="h1 pt-1">Joe Schmo</h2>
               <Button
                 copy="Logout"
-                addClass="ml-auto bg-yellow"
+                addClass="ml-auto bg-yellow border-0"
                 addClick={logOut}
               />
             </>
@@ -36,7 +36,7 @@ const Menu = ({ loggedIn, logIn, logOut, closeMenu }) => {
             <li className="px-0 py-0 d-flex flex-column">
               <Button
                 copy="Manage Account &gt;"
-                addClass="w-100 text-left font-weight-normal text-capitalize bg-yellow"
+                addClass="w-100 text-left font-weight-normal text-capitalize bg-yellow border-0"
                 addClick={() => {
                   closeMenu();
                   navigate("/wei/manage-account");
@@ -52,7 +52,7 @@ const Menu = ({ loggedIn, logIn, logOut, closeMenu }) => {
                 <li className="px-0 py-0 title d-flex flex-column">
                   <Button
                     copy="Purchase History"
-                    addClass="w-100 text-left font-weight-normal text-capitalize bg-white"
+                    addClass="w-100 text-left font-weight-normal text-capitalize bg-white border-0"
                     addClick={() => {
                       closeMenu();
                       navigate("/wei/purchase-history");
@@ -62,7 +62,7 @@ const Menu = ({ loggedIn, logIn, logOut, closeMenu }) => {
                 <li className="px-0 py-0 title d-flex flex-column">
                   <Button
                     copy="My Products"
-                    addClass="w-100 text-left font-weight-normal text-capitalize bg-white"
+                    addClass="w-100 text-left font-weight-normal text-capitalize bg-white border-0"
                     addClick={() => {
                       closeMenu();
                       navigate("/wei/my-products");
@@ -72,33 +72,76 @@ const Menu = ({ loggedIn, logIn, logOut, closeMenu }) => {
                 <li className="px-0 py-0 title d-flex flex-column">
                   <Button
                     copy="My Lists"
-                    addClass="w-100 text-left font-weight-normal text-capitalize bg-white"
+                    addClass="w-100 text-left font-weight-normal text-capitalize bg-white border-0"
                     addClick={() => {
                       closeMenu();
                       navigate("/wei/my-lists");
                     }}
                   />
                 </li>
-                <li>
-                  <ServiceNotification />
+                <li className="p-2">
+                  <ServiceNotification
+                    product={{
+                      img: "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw8f055b11/products/Equipment/Cub-Cadet_XT1LT46_New_2000x2000_8.jpg",
+                      product: "XT1 LT46",
+                      service: true,
+                      dealer: {
+                        name: "Worcester Sales and Service, Inc",
+                        address:
+                          "34200 LORAIN ROAD, NORTH RIDGEVILLE, OH 44039",
+                      },
+                    }}
+                  />
+                  <ServiceNotification
+                    product={{
+                      img: "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw532f8707/products/Equipment/Cub_Cadet_LB600E_wo_Battery_2000x2000_8.jpg",
+                      product: "LB600E",
+                      service: true,
+                    }}
+                  />
+                </li>
+                <li className="mt-3 px-3 py-0 border-top pt-2">
+                  <p className="font-weight-bold mb-1">Your dealer is:</p>
+                  <p className="mb-1">Worcester Sales and Service, Inc</p>
+                  <p className="mb-2">
+                    34200 LORAIN ROAD, NORTH RIDGEVILLE, OH 44039
+                  </p>
+                  <ul className="list-unstyled d-flex flex-column">
+                    <li>
+                      <button
+                        className="btn border"
+                        type="button"
+                        onClick={() => {
+                          closeMenu();
+                          navigate("/wei/track-order/29323-32434");
+                        }}
+                      >
+                        Change Dealer
+                      </button>
+                    </li>
+                  </ul>
                 </li>
                 <li className="d-flex d-flex-lg-column mt-3 px-3 py-0 border-top pt-2">
                   <strong>Track Your Order:</strong>
                 </li>
                 <li className="d-flex d-flex-lg-column mt-1 px-3 py-0">
-                  <div class="input-group">
+                  <div className="input-group">
                     <input
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       placeholder="Tracking Number"
                       value="29323-32434"
                       aria-label="Tracking Number"
                       aria-describedby="button-addon2"
+                      onChange={(e) => {
+                        closeMenu();
+                        navigate("/wei/track-order/29323-32434");
+                      }}
                     />
                     <button
-                      class="btn btn-outline-secondary"
+                      className="btn btn-outline-secondary"
                       type="button"
-                      addClick={() => {
+                      onClick={() => {
                         closeMenu();
                         navigate("/wei/track-order/29323-32434");
                       }}
@@ -124,14 +167,14 @@ const Menu = ({ loggedIn, logIn, logOut, closeMenu }) => {
                 <li className="mt-2">
                   <Button
                     copy="Login"
-                    addClass="bg-yellow w-100"
+                    addClass="bg-yellow w-100 border-0"
                     addClick={logIn}
                   />
                 </li>
                 <li className="mt-4">
                   <Button
                     copy="Create Account"
-                    addClass="bg-grey w-100"
+                    addClass="bg-grey w-100 border-0"
                     addClick={() => {
                       closeMenu();
                       navigate("/wei/create-account");

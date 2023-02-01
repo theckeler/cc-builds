@@ -14,7 +14,7 @@ import DealerReview from "./DealerReview";
 import Button from "../../components/elements/Button";
 import ViewInvoice from "./ViewInvoice";
 
-import "../../scss/wei.scss";
+import "./scss/wei.scss";
 
 import weiData from "./data/wei.json";
 

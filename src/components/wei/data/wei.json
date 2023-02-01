@@ -252,11 +252,14 @@
     },
     {
       "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw855378c6/products/Equipment/Cub-Cadet-1X_21LHP_1.jpg",
-      "product": "1X 21\" LHP Snow Blower"
+      "product": "1X 21\" LHP Snow Blower",
+      "toubleTicket": true
     },
     {
       "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw7b269624/products/Equipment/Cub_Cadet_CS16E_2000x2000_4.jpg",
-      "product": "CS16E"
+      "product": "CS16E",
+      "serviceHistory": true,
+      "warranty": true
     },
     {
       "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw532f8707/products/Equipment/Cub_Cadet_LB600E_wo_Battery_2000x2000_8.jpg",
