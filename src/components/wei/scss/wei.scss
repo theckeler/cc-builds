@@ -40,15 +40,15 @@
   .mtd-page {
     .wei {
       .menu {
-        position: fixed;
-        right: 0;
-        max-width: rem(300);
-        box-shadow: 0 0 0 transparent;
-        border-left: 1px solid rgb(115, 115, 115);
+        // position: fixed;
+        // right: 0;
+        // max-width: rem(300);
+        // box-shadow: 0 0 0 transparent;
+        // border-left: 1px solid rgb(115, 115, 115);
 
-        button {
-          width: 100%;
-        }
+        // button {
+        //   width: 100%;
+        // }
       }
     }
 
@@ -57,7 +57,7 @@
     }
 
     .xxl-hide {
-      display: none;
+    //  display: none;
     }
 
     .overlay.active {

@@ -1,287 +1,274 @@
 {
-  "h2": "Shop Online Financing Plans",
-  "copy": "The offers below are available online. Additional financing offers may be available at your local dealer.",
-  "blocks": [
-    {
-      "term": 6,
-      "keywords": ["months-6"],
-      "display": true,
-      "offerCount": 2,
-      "offers": [
-        {
-          "keywords": ["no-interest", "min-199"],
-          "display": true,
-          "title": "No interest if paid in full within 6 months<sup>1</sup>",
-          "copy": "Interest will be charged from the purchase date if the purchase balance is not paid in full by the end of the promotional period.",
-          "minPurchase": 199,
-          "promoStart": "2022-11-01T04:00:00.000Z",
-          "promoEnd": "2023-06-30T05:00:00.000Z",
-          "terms": {
-            "title": "Cub Cadet Revolving Plan Disclosures Available 11/1/2022-1/31/2023 Commercial Cards also available. For offer details about Commercial Cards please contact your Dealer.",
-            "copy": "<sup>1</sup> <strong>No Interest if Paid in Full within X Months:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium condimentum egestas. Donec eget auctor nisi. Nulla eu scelerisque odio. Nullam eu quam libero. Suspendisse in quam non elit egestas efficitur. Aliquam lectus erat, sodales dignissim elementum sed, eleifend sit amet dolor. Phasellus feugiat vel mauris sed suscipit. Nullam efficitur ipsum aliquam nunc sollicitudin facilisis. Nullam sagittis varius tincidunt. Praesent sollicitudin lacinia tincidunt. Nam ex magna, ultricies ac dui porttitor, tincidunt imperdiet arcu. Vivamus vel facilisis felis, ut pretium sem. Fusce metus nisi, porta ac augue nec, porttitor accumsan urna. Nam mauris nisi, ornare et erat at, tincidunt ullamcorper risus. Suspendisse potenti."
-          }
-        },
-        {
-          "keywords": ["zero-interest", "min-600"],
-          "display": true,
-          "title": "0% APR for 6 months with equal payments<sup>4</sup>",
-          "copy": "Interest will be charged from the purchase date if the purchase balance is not paid in full by the end of the promotional period.",
-          "minPurchase": 600,
-          "promoStart": "2022-11-01T04:00:00.000Z",
-          "promoEnd": "2023-04-01T05:00:00.000Z",
-          "terms": {
-            "title": "Cub Cadet Revolving Plan Disclosures Available 11/1/2022-1/31/2023 Commercial Cards also available. For offer details about Commercial Cards please contact your Dealer.",
-            "copy": "<sup>4</sup> <strong>No Interest if Paid in Full within X Months:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium condimentum egestas. Donec eget auctor nisi. Nulla eu scelerisque odio. Nullam eu quam libero. Suspendisse in quam non elit egestas efficitur. Aliquam lectus erat, sodales dignissim elementum sed, eleifend sit amet dolor. Phasellus feugiat vel mauris sed suscipit. Nullam efficitur ipsum aliquam nunc sollicitudin facilisis. Nullam sagittis varius tincidunt. Praesent sollicitudin lacinia tincidunt. Nam ex magna, ultricies ac dui porttitor, tincidunt imperdiet arcu. Vivamus vel facilisis felis, ut pretium sem. Fusce metus nisi, porta ac augue nec, porttitor accumsan urna. Nam mauris nisi, ornare et erat at, tincidunt ullamcorper risus. Suspendisse potenti."
-          }
-        }
-      ],
-      "button": {
-        "copy": "Apply Now",
-        "url": "https://www.cubcadet.com/en_US/financing-view-all.html"
-      }
-    },
-    {
-      "term": 12,
-      "keywords": ["months-12"],
-      "display": true,
-      "offerCount": 1,
-      "offers": [
-        {
-          "keywords": ["no-interest", "min-500"],
-          "display": true,
-          "title": "No interest if paid in full within 12 months<sup>2</sup>",
-          "copy": "Interest will be charged from the purchase date if the purchase balance is not paid in full by the end of the promotional period.",
-          "minPurchase": 500,
-          "promoStart": "2022-11-01T04:00:00.000Z",
-          "promoEnd": "2023-01-31T05:00:00.000Z",
-          "terms": {
-            "title": "Cub Cadet Revolving Plan Disclosures Available 11/1/2022-1/31/2023 Commercial Cards also available. For offer details about Commercial Cards please contact your Dealer.",
-            "copy": "<sup>2</sup> <strong>No Interest if Paid in Full within X Months:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium condimentum egestas. Donec eget auctor nisi. Nulla eu scelerisque odio. Nullam eu quam libero. Suspendisse in quam non elit egestas efficitur. Aliquam lectus erat, sodales dignissim elementum sed, eleifend sit amet dolor. Phasellus feugiat vel mauris sed suscipit. Nullam efficitur ipsum aliquam nunc sollicitudin facilisis. Nullam sagittis varius tincidunt. Praesent sollicitudin lacinia tincidunt. Nam ex magna, ultricies ac dui porttitor, tincidunt imperdiet arcu. Vivamus vel facilisis felis, ut pretium sem. Fusce metus nisi, porta ac augue nec, porttitor accumsan urna. Nam mauris nisi, ornare et erat at, tincidunt ullamcorper risus. Suspendisse potenti.<p>Nullam mollis pulvinar aliquet. Aenean efficitur leo non ligula lacinia molestie. Suspendisse id faucibus turpis. Etiam convallis faucibus vehicula. Maecenas maximus maximus diam quis tempus. Vestibulum iaculis odio non viverra mattis. Integer ex tortor, ullamcorper quis felis nec, vulputate molestie mauris. Nunc id accumsan diam, quis eleifend lorem. Cras at iaculis lectus."
-          }
-        }
-      ],
-      "button": {
-        "copy": "Apply Now",
-        "url": "https://www.cubcadet.com/en_US/financing-view-all.html"
-      }
-    },
-    {
-      "term": 18,
-      "keywords": ["months-18"],
-      "display": true,
-      "offerCount": 1,
-      "offers": [
-        {
-          "keywords": ["no-interest", "min-750"],
-          "display": true,
-          "title": "No interest if paid in full within 18 months<sup>3</sup>",
-          "copy": "Interest will be charged from the purchase date if the purchase balance is not paid in full by the end of the promotional period.",
-          "minPurchase": 750,
-          "promoStart": "2022-11-01T04:00:00.000Z",
-          "promoEnd": "2023-01-31T05:00:00.000Z",
-          "terms": {
-            "title": "Cub Cadet Revolving Plan Disclosures Available 11/1/2022-1/31/2023 Commercial Cards also available. For offer details about Commercial Cards please contact your Dealer.",
-            "copy": "<sup>3</sup> <strong>No Interest if Paid in Full within X Months:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium condimentum egestas. Donec eget auctor nisi. Nulla eu scelerisque odio. Nullam eu quam libero. Suspendisse in quam non elit egestas efficitur. Aliquam lectus erat, sodales dignissim elementum sed, eleifend sit amet dolor. Phasellus feugiat vel mauris sed suscipit. Nullam efficitur ipsum aliquam nunc sollicitudin facilisis. Nullam sagittis varius tincidunt. Praesent sollicitudin lacinia tincidunt. Nam ex magna, ultricies ac dui porttitor, tincidunt imperdiet arcu. Vivamus vel facilisis felis, ut pretium sem. Fusce metus nisi, porta ac augue nec, porttitor accumsan urna. Nam mauris nisi, ornare et erat at, tincidunt ullamcorper risus. Suspendisse potenti.<p>Sed leo massa, mattis suscipit dignissim non, cursus ut velit. Donec eget urna ut lacus euismod gravida in scelerisque ex. Ut id cursus ex. Curabitur ullamcorper, ligula vitae consectetur eleifend, lacus sem laoreet ante, sit amet dignissim mauris ex eu dui. In vel luctus nisi. Vivamus pellentesque elit sed ipsum ultricies efficitur. Vestibulum ante nibh, tincidunt eleifend mollis ut, mattis sed arcu. Nulla feugiat maximus enim ac interdum. Proin mattis metus nec risus pulvinar, non scelerisque urna tincidunt.<p>Aenean vel hendrerit eros. Morbi nec enim vehicula tortor rhoncus tempor at ac tortor. Proin pharetra orci eu velit dictum, sed rhoncus est fringilla. Aliquam fringilla in ex at porttitor. Praesent augue leo, scelerisque at laoreet ac, elementum ac felis. Cras velit nunc, elementum vel placerat sit amet, placerat sit amet magna. Sed dignissim massa diam, eu sagittis purus commodo at. Maecenas vulputate mauris sit amet enim pellentesque tempus. Etiam tempus viverra molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mi justo, viverra ac sagittis ut, mollis vel justo. Quisque vel mauris at ante viverra pretium sit amet a leo. Nunc euismod gravida nulla. Pellentesque molestie suscipit erat, vel mattis lacus eleifend et. Duis vulputate mauris nisl, quis ultrices libero vehicula et."
-          }
-        }
-      ],
-      "button": {
-        "copy": "Apply Now",
-        "url": "https://www.cubcadet.com/en_US/financing-view-all.html"
-      }
-    },
-    {
-      "term": 24,
-      "keywords": ["months-24"],
-      "display": true,
-      "offerCount": 1,
-      "offers": [
-        {
-          "keywords": ["zero-interest", "min-2000"],
-          "display": true,
-          "title": "0% APR for 24 months with equal payments<sup>4</sup>",
-          "copy": "There is a promotional fee of $125 for this transaction.",
-          "minPurchase": 2000,
-          "promoStart": "2022-11-01T04:00:00.000Z",
-          "promoEnd": "2023-04-30T04:00:00.000Z",
+	"h2": "Shop Online Financing Plans",
+	"copy": "The offers below are available online. Additional financing offers may be available at your local dealer.",
+	"blocks": [
+		{
+			"term": 6,
+			"keywords": ["months-6"],
+			"display": true,
+			"offerCount": 2,
+			"offers": [
+				{
+					"keywords": ["no-interest", "min-199"],
+					"display": true,
+					"title": "No interest if paid in full within 6 months<sup>1</sup>",
+					"copy": "Interest will be charged from the purchase date if the purchase balance is not paid in full by the end of the promotional period.",
+					"minPurchase": 199,
+					"promoStart": "2022-11-01T04:00:00.000Z",
+					"promoEnd": "2023-06-30T05:00:00.000Z",
+					"terms": {
+						"title": "Cub Cadet Revolving Plan Disclosures Available 11/1/2022-1/31/2023 Commercial Cards also available. For offer details about Commercial Cards please contact your Dealer.",
+						"copy": "<sup>1</sup> <strong>No Interest if Paid in Full within X Months:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium condimentum egestas. Donec eget auctor nisi. Nulla eu scelerisque odio. Nullam eu quam libero. Suspendisse in quam non elit egestas efficitur. Aliquam lectus erat, sodales dignissim elementum sed, eleifend sit amet dolor. Phasellus feugiat vel mauris sed suscipit. Nullam efficitur ipsum aliquam nunc sollicitudin facilisis. Nullam sagittis varius tincidunt. Praesent sollicitudin lacinia tincidunt. Nam ex magna, ultricies ac dui porttitor, tincidunt imperdiet arcu. Vivamus vel facilisis felis, ut pretium sem. Fusce metus nisi, porta ac augue nec, porttitor accumsan urna. Nam mauris nisi, ornare et erat at, tincidunt ullamcorper risus. Suspendisse potenti."
+					}
+				}
+			],
+			"button": {
+				"copy": "Apply Now",
+				"url": "https://www.cubcadet.com/en_US/financing-view-all.html"
+			}
+		},
+		{
+			"term": 12,
+			"keywords": ["months-12"],
+			"display": true,
+			"offerCount": 1,
+			"offers": [
+				{
+					"keywords": ["no-interest", "min-500"],
+					"display": true,
+					"title": "No interest if paid in full within 12 months<sup>2</sup>",
+					"copy": "Interest will be charged from the purchase date if the purchase balance is not paid in full by the end of the promotional period.",
+					"minPurchase": 500,
+					"promoStart": "2022-11-01T04:00:00.000Z",
+					"promoEnd": "2023-01-31T05:00:00.000Z",
+					"terms": {
+						"title": "Cub Cadet Revolving Plan Disclosures Available 11/1/2022-1/31/2023 Commercial Cards also available. For offer details about Commercial Cards please contact your Dealer.",
+						"copy": "<sup>2</sup> <strong>No Interest if Paid in Full within X Months:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium condimentum egestas. Donec eget auctor nisi. Nulla eu scelerisque odio. Nullam eu quam libero. Suspendisse in quam non elit egestas efficitur. Aliquam lectus erat, sodales dignissim elementum sed, eleifend sit amet dolor. Phasellus feugiat vel mauris sed suscipit. Nullam efficitur ipsum aliquam nunc sollicitudin facilisis. Nullam sagittis varius tincidunt. Praesent sollicitudin lacinia tincidunt. Nam ex magna, ultricies ac dui porttitor, tincidunt imperdiet arcu. Vivamus vel facilisis felis, ut pretium sem. Fusce metus nisi, porta ac augue nec, porttitor accumsan urna. Nam mauris nisi, ornare et erat at, tincidunt ullamcorper risus. Suspendisse potenti.<p>Nullam mollis pulvinar aliquet. Aenean efficitur leo non ligula lacinia molestie. Suspendisse id faucibus turpis. Etiam convallis faucibus vehicula. Maecenas maximus maximus diam quis tempus. Vestibulum iaculis odio non viverra mattis. Integer ex tortor, ullamcorper quis felis nec, vulputate molestie mauris. Nunc id accumsan diam, quis eleifend lorem. Cras at iaculis lectus."
+					}
+				}
+			],
+			"button": {
+				"copy": "Apply Now",
+				"url": "https://www.cubcadet.com/en_US/financing-view-all.html"
+			}
+		},
+		{
+			"term": 18,
+			"keywords": ["months-18"],
+			"display": true,
+			"offerCount": 1,
+			"offers": [
+				{
+					"keywords": ["no-interest", "min-750"],
+					"display": true,
+					"title": "No interest if paid in full within 18 months<sup>3</sup>",
+					"copy": "Interest will be charged from the purchase date if the purchase balance is not paid in full by the end of the promotional period.",
+					"minPurchase": 750,
+					"promoStart": "2022-11-01T04:00:00.000Z",
+					"promoEnd": "2023-01-31T05:00:00.000Z",
+					"terms": {
+						"title": "Cub Cadet Revolving Plan Disclosures Available 11/1/2022-1/31/2023 Commercial Cards also available. For offer details about Commercial Cards please contact your Dealer.",
+						"copy": "<sup>3</sup> <strong>No Interest if Paid in Full within X Months:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium condimentum egestas. Donec eget auctor nisi. Nulla eu scelerisque odio. Nullam eu quam libero. Suspendisse in quam non elit egestas efficitur. Aliquam lectus erat, sodales dignissim elementum sed, eleifend sit amet dolor. Phasellus feugiat vel mauris sed suscipit. Nullam efficitur ipsum aliquam nunc sollicitudin facilisis. Nullam sagittis varius tincidunt. Praesent sollicitudin lacinia tincidunt. Nam ex magna, ultricies ac dui porttitor, tincidunt imperdiet arcu. Vivamus vel facilisis felis, ut pretium sem. Fusce metus nisi, porta ac augue nec, porttitor accumsan urna. Nam mauris nisi, ornare et erat at, tincidunt ullamcorper risus. Suspendisse potenti.<p>Sed leo massa, mattis suscipit dignissim non, cursus ut velit. Donec eget urna ut lacus euismod gravida in scelerisque ex. Ut id cursus ex. Curabitur ullamcorper, ligula vitae consectetur eleifend, lacus sem laoreet ante, sit amet dignissim mauris ex eu dui. In vel luctus nisi. Vivamus pellentesque elit sed ipsum ultricies efficitur. Vestibulum ante nibh, tincidunt eleifend mollis ut, mattis sed arcu. Nulla feugiat maximus enim ac interdum. Proin mattis metus nec risus pulvinar, non scelerisque urna tincidunt.<p>Aenean vel hendrerit eros. Morbi nec enim vehicula tortor rhoncus tempor at ac tortor. Proin pharetra orci eu velit dictum, sed rhoncus est fringilla. Aliquam fringilla in ex at porttitor. Praesent augue leo, scelerisque at laoreet ac, elementum ac felis. Cras velit nunc, elementum vel placerat sit amet, placerat sit amet magna. Sed dignissim massa diam, eu sagittis purus commodo at. Maecenas vulputate mauris sit amet enim pellentesque tempus. Etiam tempus viverra molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mi justo, viverra ac sagittis ut, mollis vel justo. Quisque vel mauris at ante viverra pretium sit amet a leo. Nunc euismod gravida nulla. Pellentesque molestie suscipit erat, vel mattis lacus eleifend et. Duis vulputate mauris nisl, quis ultrices libero vehicula et."
+					}
+				}
+			],
+			"button": {
+				"copy": "Apply Now",
+				"url": "https://www.cubcadet.com/en_US/financing-view-all.html"
+			}
+		},
+		{
+			"term": 24,
+			"keywords": ["months-24"],
+			"display": true,
+			"offerCount": 1,
+			"offers": [
+				{
+					"keywords": ["zero-interest", "min-2000"],
+					"display": true,
+					"title": "0% APR for 24 months with equal payments<sup>4</sup>",
+					"copy": "There is a promotional fee of $125 for this transaction.",
+					"minPurchase": 2000,
+					"promoStart": "2022-11-01T04:00:00.000Z",
+					"promoEnd": "2023-04-30T04:00:00.000Z",
 
-          "terms": {
-            "title": "Cub Cadet Revolving Plan Disclosures Available 11/1/2022-1/31/2023 Commercial Cards also available. For offer details about Commercial Cards please contact your Dealer.",
-            "copy": "<sup>4</sup> <strong>No Interest if Paid in Full within X Months:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium condimentum egestas. Donec eget auctor nisi. Nulla eu scelerisque odio. Nullam eu quam libero. Suspendisse in quam non elit egestas efficitur. Aliquam lectus erat, sodales dignissim elementum sed, eleifend sit amet dolor. Phasellus feugiat vel mauris sed suscipit. Nullam efficitur ipsum aliquam nunc sollicitudin facilisis. Nullam sagittis varius tincidunt. Praesent sollicitudin lacinia tincidunt. Nam ex magna, ultricies ac dui porttitor, tincidunt imperdiet arcu. Vivamus vel facilisis felis, ut pretium sem. Fusce metus nisi, porta ac augue nec, porttitor accumsan urna. Nam mauris nisi, ornare et erat at, tincidunt ullamcorper risus. Suspendisse potenti."
-          }
-        }
-      ],
-      "button": {
-        "copy": "Apply Now",
-        "url": "https://www.cubcadet.com/en_US/financing-view-all.html"
-      }
-    },
-    {
-      "term": 36,
-      "keywords": ["months-36"],
-      "display": true,
-      "offerCount": 1,
-      "offers": [
-        {
-          "keywords": ["zero-interest", "min-3000"],
-          "display": true,
-          "title": "0% APR for 36 months with equal payments<sup>5</sup>",
-          "copy": "There is a promotional fee of $125 for this transaction.",
-          "minPurchase": 3000,
-          "promoStart": "2022-11-01T04:00:00.000Z",
-          "promoEnd": "2023-04-30T04:00:00.000Z",
-          "terms": {
-            "title": "Cub Cadet Revolving Plan Disclosures Available 11/1/2022-1/31/2023 Commercial Cards also available. For offer details about Commercial Cards please contact your Dealer.",
-            "copy": "<sup>5</sup> <strong>No Interest if Paid in Full within X Months:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium condimentum egestas. Donec eget auctor nisi. Nulla eu scelerisque odio. Nullam eu quam libero. Suspendisse in quam non elit egestas efficitur. Aliquam lectus erat, sodales dignissim elementum sed, eleifend sit amet dolor. Phasellus feugiat vel mauris sed suscipit. Nullam efficitur ipsum aliquam nunc sollicitudin facilisis. Nullam sagittis varius tincidunt. Praesent sollicitudin lacinia tincidunt. Nam ex magna, ultricies ac dui porttitor, tincidunt imperdiet arcu. Vivamus vel facilisis felis, ut pretium sem. Fusce metus nisi, porta ac augue nec, porttitor accumsan urna. Nam mauris nisi, ornare et erat at, tincidunt ullamcorper risus. Suspendisse potenti."
-          }
-        }
-      ],
-      "button": {
-        "copy": "Apply Now",
-        "url": "https://www.cubcadet.com/en_US/financing-view-all.html"
-      }
-    },
-    {
-      "term": 48,
-      "keywords": ["months-48"],
-      "display": true,
-      "offerCount": 1,
-      "offers": [
-        {
-          "keywords": ["one-percent-apr", "min-5000"],
-          "display": true,
-          "title": "0.999% APR for 48 months with equal payments<sup>6</sup>",
-          "copy": "There is a promotional fee of $125 for this transaction.",
-          "minPurchase": 5000,
-          "promoStart": "2022-11-01T04:00:00.000Z",
-          "promoEnd": "2023-03-31T04:00:00.000Z",
-          "terms": {
-            "title": "Cub Cadet Revolving Plan Disclosures Available 11/1/2022-1/31/2023 Commercial Cards also available. For offer details about Commercial Cards please contact your Dealer.",
-            "copy": "<sup>6</sup> <strong>No Interest if Paid in Full within X Months:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium condimentum egestas. Donec eget auctor nisi. Nulla eu scelerisque odio. Nullam eu quam libero. Suspendisse in quam non elit egestas efficitur. Aliquam lectus erat, sodales dignissim elementum sed, eleifend sit amet dolor. Phasellus feugiat vel mauris sed suscipit. Nullam efficitur ipsum aliquam nunc sollicitudin facilisis. Nullam sagittis varius tincidunt. Praesent sollicitudin lacinia tincidunt. Nam ex magna, ultricies ac dui porttitor, tincidunt imperdiet arcu. Vivamus vel facilisis felis, ut pretium sem. Fusce metus nisi, porta ac augue nec, porttitor accumsan urna. Nam mauris nisi, ornare et erat at, tincidunt ullamcorper risus. Suspendisse potenti."
-          }
-        }
-      ],
-      "button": {
-        "copy": "Apply Now",
-        "url": "https://www.cubcadet.com/en_US/financing-view-all.html"
-      }
-    },
-    {
-      "term": 60,
-      "keywords": ["months-60"],
-      "display": true,
-      "offerCount": 1,
-      "offers": [
-        {
-          "keywords": ["two-percent-apr", "min-5000"],
-          "display": true,
-          "title": "2% APR for 60 months with equal payments<sup>6</sup>",
-          "copy": "There is a promotional fee of $125 for this transaction.",
-          "minPurchase": 5000,
-          "promoStart": "2022-11-01T04:00:00.000Z",
-          "promoEnd": "2023-02-28T05:00:00.000Z",
-          "terms": {
-            "title": "Cub Cadet Revolving Plan Disclosures Available 11/1/2022-1/31/2023 Commercial Cards also available. For offer details about Commercial Cards please contact your Dealer.",
-            "copy": "<sup>7</sup> <strong>No Interest if Paid in Full within X Months:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium condimentum egestas. Donec eget auctor nisi. Nulla eu scelerisque odio. Nullam eu quam libero. Suspendisse in quam non elit egestas efficitur. Aliquam lectus erat, sodales dignissim elementum sed, eleifend sit amet dolor. Phasellus feugiat vel mauris sed suscipit. Nullam efficitur ipsum aliquam nunc sollicitudin facilisis. Nullam sagittis varius tincidunt. Praesent sollicitudin lacinia tincidunt. Nam ex magna, ultricies ac dui porttitor, tincidunt imperdiet arcu. Vivamus vel facilisis felis, ut pretium sem. Fusce metus nisi, porta ac augue nec, porttitor accumsan urna. Nam mauris nisi, ornare et erat at, tincidunt ullamcorper risus. Suspendisse potenti."
-          }
-        }
-      ],
-      "button": {
-        "copy": "Apply Now",
-        "url": "https://www.cubcadet.com/en_US/financing-view-all.html"
-      }
-    }
-  ],
-  "keys": {
-    "terms": {
-      "title": "Select Term Length",
-      "type": "terms",
-      "show": true,
-      "inputs": [
-        { "label": "6 Months", "val": "months-6", "isChecked": true },
-        { "label": "12 Months", "val": "months-12", "isChecked": true },
-        { "label": "18 Months", "val": "months-18", "isChecked": true },
-        { "label": "24 Months", "val": "months-24", "isChecked": true },
-        { "label": "36 Months", "val": "months-36", "isChecked": true },
-        { "label": "48 Months", "val": "months-48", "isChecked": true },
-        { "label": "60 Months", "val": "months-60", "isChecked": true }
-      ]
-    },
-    "minPurchase": {
-      "title": "Select Min Purchase",
-      "type": "minPurchase",
-      "show": false,
-      "inputs": [
-        { "label": "$199", "val": "min-199", "isChecked": true },
-        { "label": "$500", "val": "min-500", "isChecked": true },
-        { "label": "$600", "val": "min-600", "isChecked": true },
-        { "label": "$750", "val": "min-750", "isChecked": true },
-        { "label": "$2000", "val": "min-2000", "isChecked": true },
-        { "label": "$3000", "val": "min-3000", "isChecked": true },
-        { "label": "$5000", "val": "min-5000", "isChecked": true }
-      ]
-    },
-    "interestRate": {
-      "title": "Select Interest Rate",
-      "type": "interestRate",
-      "show": false,
-      "inputs": [
-        { "label": "No Interest", "val": "no-interest", "isChecked": true },
-        { "label": "0% Interest", "val": "zero-interest", "isChecked": true },
-        { "label": "1% APR", "val": "one-percent-apr", "isChecked": true },
-        { "label": "2% APR", "val": "two-percent-apr", "isChecked": true }
-      ]
-    }
-  },
-  "button": {
-    "copy": "Learn more about the Ultima series",
-    "url": "https://www.cubcadet.com/en_US/ultima-series-features-benefits.html"
-  },
-  "inStore": {
-    "img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw1026a6c1/Financing/become_a_dealer_desktop_1015x765.jpg",
-    "title": "Finance In-Store",
-    "copy": "We have multiple financing offers to fit your needs. Financing is available at participating independent dealers.",
-    "button": {
-      "copy": "Find a Local Dealer",
-      "url": "https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&horizontalView=true&isForm=true&rid=dealers"
-    },
-    "extraLink": {
-      "copy": "View all online and in-store financing plans",
-      "url": "https://www.cubcadet.com/en_US/financing-view-all.html"
-    }
-  },
-  "faqs": [
-    {
-      "question": "How long does the online application take?",
-      "answer": "The application takes only minutes, and most application decisions are returned within seconds."
-    },
-    {
-      "question": "Is there an annual fee with the Cub Cadet credit card?",
-      "answer": "There is no annual fee to carry the Cub Cadet credit card."
-    },
-    {
-      "question": "Can I apply for the Cub Cadet credit card by mail?",
-      "answer": "There is no mail-in application. Applications can be completed online or at your local participating dealer."
-    },
-    {
-      "question": "How do I make payments on my Cub Cadet credit card account?",
-      "answer": "You can make payments on your Cub Cadet credit card account in 3 convenient ways:<ul><li>Online with TD's Online Account Management system at www.myonlineaccount.net</li><li>Via phone at 1-888-382-6665</li><li>Via mail: Cub Cadet, PO BOX 100114, Columbia SC 29202-3114</li></ul>"
-    },
-    {
-      "question": "How do I contact customer service regarding my Cub Cadet credit card account?",
-      "answer": "The customer service number for your Cub Cadet credit card account is 1-866-702-4074."
-    },
-    {
-      "question": "I am a commercial customer. Can I apply online?",
-      "answer": "No, commercial customers can only apply at your local participating dealer."
-    }
-  ],
-  "cta": {
-    "h1": "Still have financing questions?",
-    "copy": "We're happy to help! Call a customer service specialist (877) 428-2349 8am-5pm EST",
-    "button": {
-      "copy": "Apply Now",
-      "url": "https://www.cubcadet.com/en_US/financing-view-all.html"
-    }
-  }
+					"terms": {
+						"title": "Cub Cadet Revolving Plan Disclosures Available 11/1/2022-1/31/2023 Commercial Cards also available. For offer details about Commercial Cards please contact your Dealer.",
+						"copy": "<sup>4</sup> <strong>No Interest if Paid in Full within X Months:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium condimentum egestas. Donec eget auctor nisi. Nulla eu scelerisque odio. Nullam eu quam libero. Suspendisse in quam non elit egestas efficitur. Aliquam lectus erat, sodales dignissim elementum sed, eleifend sit amet dolor. Phasellus feugiat vel mauris sed suscipit. Nullam efficitur ipsum aliquam nunc sollicitudin facilisis. Nullam sagittis varius tincidunt. Praesent sollicitudin lacinia tincidunt. Nam ex magna, ultricies ac dui porttitor, tincidunt imperdiet arcu. Vivamus vel facilisis felis, ut pretium sem. Fusce metus nisi, porta ac augue nec, porttitor accumsan urna. Nam mauris nisi, ornare et erat at, tincidunt ullamcorper risus. Suspendisse potenti."
+					}
+				}
+			],
+			"button": {
+				"copy": "Apply Now",
+				"url": "https://www.cubcadet.com/en_US/financing-view-all.html"
+			}
+		},
+		{
+			"term": 36,
+			"keywords": ["months-36"],
+			"display": true,
+			"offerCount": 1,
+			"offers": [
+				{
+					"keywords": ["zero-interest", "min-3000"],
+					"display": true,
+					"title": "0% APR for 36 months with equal payments<sup>5</sup>",
+					"copy": "There is a promotional fee of $125 for this transaction.",
+					"minPurchase": 3000,
+					"promoStart": "2022-11-01T04:00:00.000Z",
+					"promoEnd": "2023-04-30T04:00:00.000Z",
+					"terms": {
+						"title": "Cub Cadet Revolving Plan Disclosures Available 11/1/2022-1/31/2023 Commercial Cards also available. For offer details about Commercial Cards please contact your Dealer.",
+						"copy": "<sup>5</sup> <strong>No Interest if Paid in Full within X Months:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium condimentum egestas. Donec eget auctor nisi. Nulla eu scelerisque odio. Nullam eu quam libero. Suspendisse in quam non elit egestas efficitur. Aliquam lectus erat, sodales dignissim elementum sed, eleifend sit amet dolor. Phasellus feugiat vel mauris sed suscipit. Nullam efficitur ipsum aliquam nunc sollicitudin facilisis. Nullam sagittis varius tincidunt. Praesent sollicitudin lacinia tincidunt. Nam ex magna, ultricies ac dui porttitor, tincidunt imperdiet arcu. Vivamus vel facilisis felis, ut pretium sem. Fusce metus nisi, porta ac augue nec, porttitor accumsan urna. Nam mauris nisi, ornare et erat at, tincidunt ullamcorper risus. Suspendisse potenti."
+					}
+				}
+			],
+			"button": {
+				"copy": "Apply Now",
+				"url": "https://www.cubcadet.com/en_US/financing-view-all.html"
+			}
+		},
+		{
+			"term": 48,
+			"keywords": ["months-48"],
+			"display": true,
+			"offerCount": 1,
+			"offers": [
+				{
+					"keywords": ["one-percent-apr", "min-5000"],
+					"display": true,
+					"title": "0.999% APR for 48 months with equal payments<sup>6</sup>",
+					"copy": "There is a promotional fee of $125 for this transaction.",
+					"minPurchase": 5000,
+					"promoStart": "2022-11-01T04:00:00.000Z",
+					"promoEnd": "2023-03-31T04:00:00.000Z",
+					"terms": {
+						"title": "Cub Cadet Revolving Plan Disclosures Available 11/1/2022-1/31/2023 Commercial Cards also available. For offer details about Commercial Cards please contact your Dealer.",
+						"copy": "<sup>6</sup> <strong>No Interest if Paid in Full within X Months:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium condimentum egestas. Donec eget auctor nisi. Nulla eu scelerisque odio. Nullam eu quam libero. Suspendisse in quam non elit egestas efficitur. Aliquam lectus erat, sodales dignissim elementum sed, eleifend sit amet dolor. Phasellus feugiat vel mauris sed suscipit. Nullam efficitur ipsum aliquam nunc sollicitudin facilisis. Nullam sagittis varius tincidunt. Praesent sollicitudin lacinia tincidunt. Nam ex magna, ultricies ac dui porttitor, tincidunt imperdiet arcu. Vivamus vel facilisis felis, ut pretium sem. Fusce metus nisi, porta ac augue nec, porttitor accumsan urna. Nam mauris nisi, ornare et erat at, tincidunt ullamcorper risus. Suspendisse potenti."
+					}
+				}
+			],
+			"button": {
+				"copy": "Apply Now",
+				"url": "https://www.cubcadet.com/en_US/financing-view-all.html"
+			}
+		},
+		{
+			"term": 60,
+			"keywords": ["months-60"],
+			"display": true,
+			"offerCount": 1,
+			"offers": [
+				{
+					"keywords": ["two-percent-apr", "min-5000"],
+					"display": true,
+					"title": "2% APR for 60 months with equal payments<sup>6</sup>",
+					"copy": "There is a promotional fee of $125 for this transaction.",
+					"minPurchase": 5000,
+					"promoStart": "2022-11-01T04:00:00.000Z",
+					"promoEnd": "2023-02-28T05:00:00.000Z",
+					"terms": {
+						"title": "Cub Cadet Revolving Plan Disclosures Available 11/1/2022-1/31/2023 Commercial Cards also available. For offer details about Commercial Cards please contact your Dealer.",
+						"copy": "<sup>7</sup> <strong>No Interest if Paid in Full within X Months:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium condimentum egestas. Donec eget auctor nisi. Nulla eu scelerisque odio. Nullam eu quam libero. Suspendisse in quam non elit egestas efficitur. Aliquam lectus erat, sodales dignissim elementum sed, eleifend sit amet dolor. Phasellus feugiat vel mauris sed suscipit. Nullam efficitur ipsum aliquam nunc sollicitudin facilisis. Nullam sagittis varius tincidunt. Praesent sollicitudin lacinia tincidunt. Nam ex magna, ultricies ac dui porttitor, tincidunt imperdiet arcu. Vivamus vel facilisis felis, ut pretium sem. Fusce metus nisi, porta ac augue nec, porttitor accumsan urna. Nam mauris nisi, ornare et erat at, tincidunt ullamcorper risus. Suspendisse potenti."
+					}
+				}
+			],
+			"button": {
+				"copy": "Apply Now",
+				"url": "https://www.cubcadet.com/en_US/financing-view-all.html"
+			}
+		}
+	],
+	"keys": {
+		"terms": {
+			"title": "Select Term Length",
+			"type": "terms",
+			"show": true,
+			"inputs": [
+				{ "label": "6 Months", "val": "months-6", "isChecked": true },
+				{ "label": "12 Months", "val": "months-12", "isChecked": true },
+				{ "label": "18 Months", "val": "months-18", "isChecked": true },
+				{ "label": "24 Months", "val": "months-24", "isChecked": true },
+				{ "label": "36 Months", "val": "months-36", "isChecked": true },
+				{ "label": "48 Months", "val": "months-48", "isChecked": true },
+				{ "label": "60 Months", "val": "months-60", "isChecked": true }
+			]
+		},
+		"minPurchase": {
+			"title": "Select Min Purchase",
+			"type": "minPurchase",
+			"show": false,
+			"inputs": [
+				{ "label": "$199", "val": "min-199", "isChecked": true },
+				{ "label": "$500", "val": "min-500", "isChecked": true },
+				{ "label": "$600", "val": "min-600", "isChecked": true },
+				{ "label": "$750", "val": "min-750", "isChecked": true },
+				{ "label": "$2000", "val": "min-2000", "isChecked": true },
+				{ "label": "$3000", "val": "min-3000", "isChecked": true },
+				{ "label": "$5000", "val": "min-5000", "isChecked": true }
+			]
+		},
+		"interestRate": {
+			"title": "Select Interest Rate",
+			"type": "interestRate",
+			"show": false,
+			"inputs": [
+				{ "label": "No Interest", "val": "no-interest", "isChecked": true },
+				{ "label": "0% Interest", "val": "zero-interest", "isChecked": true },
+				{ "label": "1% APR", "val": "one-percent-apr", "isChecked": true },
+				{ "label": "2% APR", "val": "two-percent-apr", "isChecked": true }
+			]
+		}
+	},
+	"button": {
+		"copy": "Learn more about the Ultima series",
+		"url": "https://www.cubcadet.com/en_US/ultima-series-features-benefits.html"
+	},
+	"inStore": {
+		"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw1026a6c1/Financing/become_a_dealer_desktop_1015x765.jpg",
+		"title": "Finance In-Store",
+		"copy": "We have multiple financing offers to fit your needs. Financing is available at participating independent dealers.",
+		"button": {
+			"copy": "Find a Local Dealer",
+			"url": "https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&horizontalView=true&isForm=true&rid=dealers"
+		},
+		"extraLink": {
+			"copy": "View all online and in-store financing plans",
+			"url": "https://www.cubcadet.com/en_US/financing-view-all.html"
+		}
+	},
+	"faqs": [
+		{
+			"question": "How long does the online application take?",
+			"answer": "The application takes only minutes, and most application decisions are returned within seconds."
+		},
+		{
+			"question": "Is there an annual fee with the Cub Cadet credit card?",
+			"answer": "There is no annual fee to carry the Cub Cadet credit card."
+		},
+		{
+			"question": "Can I apply for the Cub Cadet credit card by mail?",
+			"answer": "There is no mail-in application. Applications can be completed online or at your local participating dealer."
+		},
+		{
+			"question": "How do I make payments on my Cub Cadet credit card account?",
+			"answer": "You can make payments on your Cub Cadet credit card account in 3 convenient ways:<ul><li>Online with TD's Online Account Management system at www.myonlineaccount.net</li><li>Via phone at 1-888-382-6665</li><li>Via mail: Cub Cadet, PO BOX 100114, Columbia SC 29202-3114</li></ul>"
+		},
+		{
+			"question": "How do I contact customer service regarding my Cub Cadet credit card account?",
+			"answer": "The customer service number for your Cub Cadet credit card account is 1-866-702-4074."
+		},
+		{
+			"question": "I am a commercial customer. Can I apply online?",
+			"answer": "No, commercial customers can only apply at your local participating dealer."
+		}
+	],
+	"cta": {
+		"h1": "Still have financing questions?",
+		"copy": "We're happy to help! Call a customer service specialist (877) 428-2349 8am-5pm EST",
+		"button": {
+			"copy": "Apply Now",
+			"url": "https://www.cubcadet.com/en_US/financing-view-all.html"
+		}
+	}
 }
