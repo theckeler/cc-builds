@@ -6,10 +6,10 @@
 			"term": 6,
 			"keywords": ["months-6"],
 			"display": true,
-			"offerCount": 2,
+			"offerCount": 1,
 			"offers": [
 				{
-					"keywords": ["no-interest", "min-199"],
+					"keywords": ["no-interest", "min-199", "online"],
 					"display": true,
 					"title": "No interest if paid in full within 6 months<sup>1</sup>",
 					"copy": "Interest will be charged from the purchase date if the purchase balance is not paid in full by the end of the promotional period.",
@@ -34,7 +34,7 @@
 			"offerCount": 1,
 			"offers": [
 				{
-					"keywords": ["no-interest", "min-500"],
+					"keywords": ["no-interest", "min-500", "in-store"],
 					"display": true,
 					"title": "No interest if paid in full within 12 months<sup>2</sup>",
 					"copy": "Interest will be charged from the purchase date if the purchase balance is not paid in full by the end of the promotional period.",
@@ -59,7 +59,7 @@
 			"offerCount": 1,
 			"offers": [
 				{
-					"keywords": ["no-interest", "min-750"],
+					"keywords": ["no-interest", "min-750", "in-store"],
 					"display": true,
 					"title": "No interest if paid in full within 18 months<sup>3</sup>",
 					"copy": "Interest will be charged from the purchase date if the purchase balance is not paid in full by the end of the promotional period.",
@@ -84,7 +84,7 @@
 			"offerCount": 1,
 			"offers": [
 				{
-					"keywords": ["zero-interest", "min-2000"],
+					"keywords": ["zero-interest", "min-2000", "online"],
 					"display": true,
 					"title": "0% APR for 24 months with equal payments<sup>4</sup>",
 					"copy": "There is a promotional fee of $125 for this transaction.",
@@ -110,7 +110,7 @@
 			"offerCount": 1,
 			"offers": [
 				{
-					"keywords": ["zero-interest", "min-3000"],
+					"keywords": ["zero-interest", "min-3000", "in-store"],
 					"display": true,
 					"title": "0% APR for 36 months with equal payments<sup>5</sup>",
 					"copy": "There is a promotional fee of $125 for this transaction.",
@@ -135,7 +135,7 @@
 			"offerCount": 1,
 			"offers": [
 				{
-					"keywords": ["one-percent-apr", "min-5000"],
+					"keywords": ["one-percent-apr", "min-5000", "online"],
 					"display": true,
 					"title": "0.999% APR for 48 months with equal payments<sup>6</sup>",
 					"copy": "There is a promotional fee of $125 for this transaction.",
@@ -160,7 +160,7 @@
 			"offerCount": 1,
 			"offers": [
 				{
-					"keywords": ["two-percent-apr", "min-5000"],
+					"keywords": ["two-percent-apr", "min-5000", "online"],
 					"display": true,
 					"title": "2% APR for 60 months with equal payments<sup>6</sup>",
 					"copy": "There is a promotional fee of $125 for this transaction.",
@@ -179,22 +179,27 @@
 			}
 		}
 	],
-	"keys": {
-		"terms": {
-			"title": "Select Term Length",
-			"type": "terms",
+	"keys": [
+		{
+			"title": "Select Type",
+			"type": "type",
 			"show": true,
 			"inputs": [
-				{ "label": "6 Months", "val": "months-6", "isChecked": true },
-				{ "label": "12 Months", "val": "months-12", "isChecked": true },
-				{ "label": "18 Months", "val": "months-18", "isChecked": true },
-				{ "label": "24 Months", "val": "months-24", "isChecked": true },
-				{ "label": "36 Months", "val": "months-36", "isChecked": true },
-				{ "label": "48 Months", "val": "months-48", "isChecked": true },
-				{ "label": "60 Months", "val": "months-60", "isChecked": true }
+				{
+					"label": "Online",
+					"val": "online",
+					"isChecked": true,
+					"bgColor": "red"
+				},
+				{
+					"label": "In Store",
+					"val": "in-store",
+					"isChecked": true,
+					"bgColor": "orange"
+				}
 			]
 		},
-		"minPurchase": {
+		{
 			"title": "Select Min Purchase",
 			"type": "minPurchase",
 			"show": false,
@@ -208,18 +213,36 @@
 				{ "label": "$5000", "val": "min-5000", "isChecked": true }
 			]
 		},
-		"interestRate": {
+		{
 			"title": "Select Interest Rate",
 			"type": "interestRate",
 			"show": false,
 			"inputs": [
 				{ "label": "No Interest", "val": "no-interest", "isChecked": true },
-				{ "label": "0% Interest", "val": "zero-interest", "isChecked": true },
+				{
+					"label": "0% Interest",
+					"val": "zero-interest",
+					"isChecked": true
+				},
 				{ "label": "1% APR", "val": "one-percent-apr", "isChecked": true },
 				{ "label": "2% APR", "val": "two-percent-apr", "isChecked": true }
 			]
+		},
+		{
+			"title": "Select Term Length",
+			"type": "terms",
+			"show": false,
+			"inputs": [
+				{ "label": "6 Months", "val": "months-6", "isChecked": true },
+				{ "label": "12 Months", "val": "months-12", "isChecked": true },
+				{ "label": "18 Months", "val": "months-18", "isChecked": true },
+				{ "label": "24 Months", "val": "months-24", "isChecked": true },
+				{ "label": "36 Months", "val": "months-36", "isChecked": true },
+				{ "label": "48 Months", "val": "months-48", "isChecked": true },
+				{ "label": "60 Months", "val": "months-60", "isChecked": true }
+			]
 		}
-	},
+	],
 	"button": {
 		"copy": "Learn more about the Ultima series",
 		"url": "https://www.cubcadet.com/en_US/ultima-series-features-benefits.html"

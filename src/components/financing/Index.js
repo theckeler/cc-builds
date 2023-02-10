@@ -12,7 +12,7 @@ import CTABlock from "../elements/CTABlock";
 const Financing = () => {
 	const [offersData, setOffersData] = useState({
 		blocks: [...jsonData.blocks],
-		keys: { ...jsonData.keys },
+		keys: [...jsonData.keys],
 		checkedInputs: [],
 		uncheckedInputs: [],
 	});
@@ -23,6 +23,13 @@ const Financing = () => {
 		const eValue = e.target.value;
 		const eChecked = e.target.checked;
 		const ePos = e.target.getAttribute("data-pos");
+		const keysPos = e.target.getAttribute("data-keys-pos");
+
+		// console.log("changeWhich: ", changeWhich);
+		// console.log("eValue:      ", eValue);
+		// console.log("eChecked:    ", eChecked);
+		// console.log("ePos:        ", ePos);
+		// console.log("keysPos:     ", keysPos);
 
 		let checkedInputs = [];
 		let uncheckedInputs = [];
@@ -35,8 +42,8 @@ const Financing = () => {
 		});
 
 		// CHANGE CHECKBOXES:
-		const updateCheckbox = [...offersData.keys[changeWhich].inputs];
-		updateCheckbox[ePos] = {
+		const updateCheckbox = [...offersData.keys];
+		updateCheckbox[keysPos].inputs[ePos] = {
 			label: e.target.getAttribute("data-label"),
 			val: e.target.id,
 			isChecked: eChecked,
@@ -70,13 +77,7 @@ const Financing = () => {
 		setOffersData({
 			checkedInputs: checkedInputs,
 			uncheckedInputs: uncheckedInputs,
-			keys: {
-				...offersData.keys,
-				[changeWhich]: {
-					...offersData.keys[changeWhich],
-					inputs: updateCheckbox,
-				},
-			},
+			keys: [...offersData.keys],
 			blocks: [...updateOffers],
 		});
 	};
@@ -132,18 +133,16 @@ const Financing = () => {
 											height: "calc(100vh - 60px)",
 											maxHeight: "100vh",
 										}}>
-										<FilterOptions
-											option={offersData.keys.terms}
-											{...{ handleChange }}
-										/>
-										<FilterOptions
-											option={offersData.keys.minPurchase}
-											{...{ handleChange }}
-										/>
-										<FilterOptions
-											option={offersData.keys.interestRate}
-											{...{ handleChange }}
-										/>
+										{offersData.keys.map((key, i) => {
+											return (
+												<FilterOptions
+													option={key}
+													{...{ handleChange }}
+													keysPos={i}
+													key={i}
+												/>
+											);
+										})}
 									</li>
 								</ul>
 							</li>
@@ -168,7 +167,7 @@ const Financing = () => {
 
 								return (
 									<React.Fragment key={i}>
-										{block.display === true && (
+										{block.display === true && !!multiBlockLength && (
 											<MainBlock
 												{...{ block, i, keywords, multiBlockLength }}
 											/>
