@@ -70,7 +70,7 @@ const FilterOptions = ({ option, keysPos, handleChange }) => {
 								className="d-flex align-items-center btn mr-1 p-0 w-100 text-left"
 								style={{
 									backgroundColor: `${
-										block.isChecked ? "transparent" : "transparent"
+										block.bgColor ? block.bgColor : "transparent"
 									}`,
 									opacity: `${block.isChecked ? "1" : "0.5"}`,
 								}}>

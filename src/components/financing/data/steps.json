@@ -1,0 +1,56 @@
+[
+	{
+		"title": "How are you planning to complete your transaction?",
+		"buttons": [
+			{ "for": "online", "label": "Online", "color": "red", "active": false },
+			{
+				"for": "in-store",
+				"label": "In-Store",
+				"color": "orange",
+				"active": false
+			},
+			{
+				"for": "no-preference",
+				"label": "No Preference",
+				"color": "#d9d9d9",
+				"active": false,
+				"allOn": true
+			}
+		]
+	},
+	{
+		"title": "Step 2?",
+		"buttons": [
+			{
+				"for": "min-199",
+				"label": "$199",
+				"color": "orange",
+				"active": false
+			},
+			{
+				"for": "no-preference",
+				"label": "No Preference",
+				"color": "#d9d9d9",
+				"active": false,
+				"allOn": true
+			}
+		]
+	},
+	{
+		"title": "Step 3?",
+		"buttons": [
+			{
+				"for": "in-store",
+				"label": "In-Store",
+				"color": "orange",
+				"active": false
+			},
+			{
+				"for": "no-preference",
+				"label": "No Preference",
+				"color": "#d9d9d9",
+				"active": false
+			}
+		]
+	}
+]

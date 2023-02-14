@@ -1,35 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import "./scss/financing.scss";
 import jsonData from "./data/financing.json";
 import MainBlock from "./elements/MainBlock";
-import FilterOptions from "./elements/FilterOptions";
-import MenuButton from "./elements/MenuButton";
 import Faqs from "../elements/Faqs";
 import ImgCopyBlock from "../elements/ImgCopyBlock";
 import CTABlock from "../elements/CTABlock";
+import GetHelp from "./elements/GetHelp";
+import Menu from "./elements/Menu";
 
 const Financing = () => {
 	const [offersData, setOffersData] = useState({
 		blocks: [...jsonData.blocks],
 		keys: [...jsonData.keys],
-		checkedInputs: [],
-		uncheckedInputs: [],
 	});
+	const [getHelp, setGetHelp] = useState(false);
+
+	// useEffect(() => {
+	// 	console.log("useEffect:", offersData);
+	// }, [offersData]);
 
 	const handleChange = (e) => {
+		//console.log("handleChange");
+
 		// SETUP:
 		const changeWhich = e.target.getAttribute("data-which");
 		const eValue = e.target.value;
 		const eChecked = e.target.checked;
 		const ePos = e.target.getAttribute("data-pos");
 		const keysPos = e.target.getAttribute("data-keys-pos");
-
-		// console.log("changeWhich: ", changeWhich);
-		// console.log("eValue:      ", eValue);
-		// console.log("eChecked:    ", eChecked);
-		// console.log("ePos:        ", ePos);
-		// console.log("keysPos:     ", keysPos);
 
 		let checkedInputs = [];
 		let uncheckedInputs = [];
@@ -44,6 +43,7 @@ const Financing = () => {
 		// CHANGE CHECKBOXES:
 		const updateCheckbox = [...offersData.keys];
 		updateCheckbox[keysPos].inputs[ePos] = {
+			...updateCheckbox[keysPos].inputs[ePos],
 			label: e.target.getAttribute("data-label"),
 			val: e.target.id,
 			isChecked: eChecked,
@@ -75,10 +75,39 @@ const Financing = () => {
 
 		// UPDATE IT ALL:
 		setOffersData({
-			checkedInputs: checkedInputs,
-			uncheckedInputs: uncheckedInputs,
 			keys: [...offersData.keys],
 			blocks: [...updateOffers],
+		});
+	};
+
+	const help = (toogleOn = false) => {
+		//console.log("toogleOn: ", toogleOn);
+		if (toogleOn) {
+			toggleCheckboxes(false, true);
+		} else {
+			toggleCheckboxes(true, false);
+		}
+
+		// SETUP:
+
+		const filterContainer = document.querySelector("#filter-screen");
+		filterContainer.style.maxHeight = getHelp === false ? "600px" : "";
+		filterContainer.style.overflow = "hidden";
+		document.querySelector("#help-screen").classList.toggle("d-block");
+
+		setGetHelp(!getHelp);
+		document.querySelector("#scroll").scrollIntoView();
+	};
+
+	const toggleCheckboxes = (allOff = false, allOn = true) => {
+		//console.log("allOff: ", allOff);
+		//console.log("allOn: ", allOn);
+		document.querySelectorAll(".financing-input").forEach(function (e) {
+			if (allOff && e.checked) {
+				e.click();
+			} else if (allOn && !e.checked) {
+				e.click();
+			}
 		});
 	};
 
@@ -98,56 +127,59 @@ const Financing = () => {
 				</p>
 			</section>
 
-			<section className="container p-0 m-0 m-lg-auto w-100">
+			<section
+				className="pt-8 text-center mb-3 border-bottom container"
+				id="scroll">
 				<ul className="list-unstyled mx-auto no-gutters d-flex flex-column flex-lg-row p-0">
+					<li className="col-2">
+						<button
+							onClick={() => {
+								help();
+							}}
+							className="py-1 px-4 w-100 border-0 text-white h-100"
+							style={{ background: "#000" }}>
+							Help Me Decide?
+						</button>
+					</li>
+					<li className="col-2 ml-auto">
+						<label
+							htmlFor="online"
+							role="button"
+							className="py-2 px-4 w-100 h-100"
+							style={{ background: "red" }}>
+							Online
+						</label>
+					</li>
+					<li className="col-2">
+						<label
+							htmlFor="in-store"
+							role="button"
+							className="py-2 px-4 w-100 h-100"
+							style={{ background: "orange" }}>
+							In-Store
+						</label>
+					</li>
+				</ul>
+			</section>
+
+			<section
+				className="container p-0 m-0 m-lg-auto w-100 position-relative"
+				id="filter-screen">
+				<GetHelp {...{ toggleCheckboxes, help }} />
+				<ul className="list-unstyled mx-auto no-gutters d-flex flex-column flex-lg-row p-0">
+					{/* MENU */}
 					<li
 						className="col-lg-3 position-sticky h-100"
 						style={{ top: "8px", zIndex: "101" }}>
-						<ul className="d-flex flex-column list-unstyled p-lg-1">
-							<li
-								className="financing-filters-button d-lg-none"
-								id="financing-filters-button"
-								style={{
-									zIndex: "100",
-								}}>
-								<MenuButton />
-							</li>
-							<li
-								className="financing-filters position-fixed position-lg-relative w-100"
-								id="financing-filters"
-								style={{
-									top: 0,
-									zIndex: "101",
-									backgroundColor: "#efefef",
-								}}>
-								<ul className="list-unstyled h-100 p-lg-1">
-									<li className="p-1 text-uppercase h4 border-bottom d-flex align-items-center">
-										<span>Filter:</span>
-										<span className="ml-auto d-lg-none">
-											<MenuButton addClass="p-2" />
-										</span>
-									</li>
-									<li
-										className="mb-2 overflow-auto no-scrollbar px-3 px-lg-0 pb-8"
-										style={{
-											height: "calc(100vh - 60px)",
-											maxHeight: "100vh",
-										}}>
-										{offersData.keys.map((key, i) => {
-											return (
-												<FilterOptions
-													option={key}
-													{...{ handleChange }}
-													keysPos={i}
-													key={i}
-												/>
-											);
-										})}
-									</li>
-								</ul>
-							</li>
-						</ul>
+						<Menu
+							{...{
+								offersData,
+								handleChange,
+								toggleCheckboxes,
+							}}
+						/>
 					</li>
+					{/* Output */}
 					<li className="col-lg-9 mt-n5 mt-lg-0">
 						<ul className="d-flex flex-wrap list-unstyled no-gutters">
 							{offersData.blocks.map((block, i) => {
