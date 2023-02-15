@@ -33,12 +33,7 @@ const Menu = ({
 							<MenuButton addClass="p-2" />
 						</span>
 					</li>
-					<li className="mb-2 overflow-auto no-scrollbar px-3 px-lg-0">
-						<div className="px-1" style={{ fontSize: ".8em" }}>
-							Available number of offers: {numBlocks}
-						</div>
-					</li>
-					<li className="mb-2 overflow-auto no-scrollbar px-3 px-lg-0">
+					<li className="mb-2 px-3 px-lg-0">
 						<button
 							onClick={() => {
 								help();
@@ -47,9 +42,12 @@ const Menu = ({
 							style={{ background: "#ffc20f" }}>
 							Help Me Decide?
 						</button>
+						<div className="px-1 text-center mt-1" style={{ fontSize: ".8em" }}>
+							Available number of offers: <strong>{numBlocks}</strong>
+						</div>
 					</li>
 					<li
-						className="mb-2 overflow-auto no-scrollbar px-3 px-lg-0 pb-8"
+						className="mb-2  px-3 px-lg-0 pb-8"
 						style={{
 							height: "calc(100vh - 60px)",
 							maxHeight: "100vh",

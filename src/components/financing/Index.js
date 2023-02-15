@@ -127,14 +127,40 @@ const Financing = () => {
 			</section>
 
 			<section className="d-lg-none text-center mb-3 pb-3 border-bottom container">
-				<button
-					onClick={() => {
-						help();
-					}}
-					className="py-2 px-4 w-100 border-0 text-black font-bold h-100"
-					style={{ background: "#ffc20f" }}>
-					Help Me Decide?
-				</button>
+				<ul className="list-unstyled mx-auto no-gutters d-flex p-0">
+					<li className="col-6 p-1">
+						<button
+							onClick={() => {
+								help();
+							}}
+							className="py-2 px-4 w-100 border-0 text-black font-bold h-100"
+							style={{ background: "#ffc20f" }}>
+							Help Me Decide?
+						</button>
+					</li>
+					<li className="col-6 p-1">
+						<button
+							onClick={() => {
+								document
+									.querySelector("#financing-filters")
+									.classList.toggle("active");
+								document
+									.querySelector("#financing-filters-button")
+									.classList.toggle("active");
+								document.querySelectorAll(".icon-svg").forEach(function (e) {
+									e.classList.toggle("d-block");
+								});
+							}}
+							className="py-2 px-4 w-100 border-0 text-black font-bold h-100 text-white"
+							style={{ background: "#000" }}>
+							Filter Options
+						</button>
+					</li>
+				</ul>
+
+				<div className="px-1 mt-2" style={{ fontSize: "1em" }}>
+					Available number of offers: {numBlocks}
+				</div>
 			</section>
 
 			<section
