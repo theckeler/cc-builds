@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+//import { useEffect } from "react";
 
 import "./scss/financing.scss";
 import jsonData from "./data/financing.json";
+
 import MainBlock from "./elements/MainBlock";
 import Faqs from "../elements/Faqs";
 import ImgCopyBlock from "../elements/ImgCopyBlock";
@@ -15,14 +17,13 @@ const Financing = () => {
 		keys: [...jsonData.keys],
 	});
 	const [getHelp, setGetHelp] = useState(false);
+	const [numBlocks, setNumBlocks] = useState(offersData.blocks.length);
 
 	// useEffect(() => {
-	// 	console.log("useEffect:", offersData);
-	// }, [offersData]);
+	// 	console.log(numBlocks);
+	// }, [numBlocks]);
 
 	const handleChange = (e) => {
-		//console.log("handleChange");
-
 		// SETUP:
 		const changeWhich = e.target.getAttribute("data-which");
 		const eValue = e.target.value;
@@ -66,8 +67,10 @@ const Financing = () => {
 						);
 						if (result.length > 0) {
 							offer.display = false;
+							e.display = false;
 						} else {
 							offer.display = true;
+							e.display = true;
 						}
 					});
 			}
@@ -78,21 +81,19 @@ const Financing = () => {
 			keys: [...offersData.keys],
 			blocks: [...updateOffers],
 		});
+
+		// UPDATE Num Blocks
+		let numBlocksCheck = 0;
+		jsonData.blocks.forEach(function (e) {
+			e.display && numBlocksCheck++;
+		});
+		setNumBlocks(numBlocksCheck);
 	};
 
 	const help = (toogleOn = false) => {
-		//console.log("toogleOn: ", toogleOn);
-		if (toogleOn) {
-			toggleCheckboxes(false, true);
-		} else {
-			toggleCheckboxes(true, false);
-		}
-
-		// SETUP:
-
-		const filterContainer = document.querySelector("#filter-screen");
-		filterContainer.style.maxHeight = getHelp === false ? "600px" : "";
-		filterContainer.style.overflow = "hidden";
+		//const filterContainer = document.querySelector("#filter-screen");
+		//filterContainer.style.maxHeight = getHelp === false ? "600px" : "";
+		//filterContainer.style.overflow = "hidden";
 		document.querySelector("#help-screen").classList.toggle("d-block");
 
 		setGetHelp(!getHelp);
@@ -100,8 +101,6 @@ const Financing = () => {
 	};
 
 	const toggleCheckboxes = (allOff = false, allOn = true) => {
-		//console.log("allOff: ", allOff);
-		//console.log("allOn: ", allOn);
 		document.querySelectorAll(".financing-input").forEach(function (e) {
 			if (allOff && e.checked) {
 				e.click();
@@ -127,26 +126,16 @@ const Financing = () => {
 				</p>
 			</section>
 
-			<section
+			{/* <section
 				className="pt-8 text-center mb-3 border-bottom container"
 				id="scroll">
 				<ul className="list-unstyled mx-auto no-gutters d-flex flex-column flex-lg-row p-0">
-					<li className="col-2">
-						<button
-							onClick={() => {
-								help();
-							}}
-							className="py-1 px-4 w-100 border-0 text-white h-100"
-							style={{ background: "#000" }}>
-							Help Me Decide?
-						</button>
-					</li>
 					<li className="col-2 ml-auto">
 						<label
 							htmlFor="online"
 							role="button"
-							className="py-2 px-4 w-100 h-100"
-							style={{ background: "red" }}>
+							className="py-2 px-4 w-100 h-100 text-white"
+							style={{ background: "#333" }}>
 							Online
 						</label>
 					</li>
@@ -154,18 +143,18 @@ const Financing = () => {
 						<label
 							htmlFor="in-store"
 							role="button"
-							className="py-2 px-4 w-100 h-100"
-							style={{ background: "orange" }}>
+							className="py-2 px-4 w-100 h-100 text-white"
+							style={{ background: "#555555" }}>
 							In-Store
 						</label>
 					</li>
 				</ul>
-			</section>
+			</section> */}
 
 			<section
 				className="container p-0 m-0 m-lg-auto w-100 position-relative"
 				id="filter-screen">
-				<GetHelp {...{ toggleCheckboxes, help }} />
+				<GetHelp {...{ toggleCheckboxes, help, offersData, numBlocks }} />
 				<ul className="list-unstyled mx-auto no-gutters d-flex flex-column flex-lg-row p-0">
 					{/* MENU */}
 					<li
@@ -176,37 +165,63 @@ const Financing = () => {
 								offersData,
 								handleChange,
 								toggleCheckboxes,
+								numBlocks,
+								help,
 							}}
 						/>
 					</li>
 					{/* Output */}
 					<li className="col-lg-9 mt-n5 mt-lg-0">
 						<ul className="d-flex flex-wrap list-unstyled no-gutters">
-							{offersData.blocks.map((block, i) => {
-								let keywords = "";
-								if (block.keywords) {
-									for (const keyword of block.keywords) {
-										keywords += `${keyword} `;
+							{numBlocks > 0 ? (
+								offersData.blocks.map((block, i) => {
+									let keywords = "";
+									if (block.keywords) {
+										for (const keyword of block.keywords) {
+											keywords += `${keyword} `;
+										}
 									}
-								}
 
-								let multiBlockLength = 0;
-								block.offers.forEach(async (block) => {
-									if (block.display) {
-										multiBlockLength++;
-									}
-								});
+									let multiBlockLength = 0;
+									block.offers.forEach(async (block) => {
+										if (block.display) {
+											multiBlockLength++;
+										}
+									});
 
-								return (
-									<React.Fragment key={i}>
-										{block.display === true && !!multiBlockLength && (
-											<MainBlock
-												{...{ block, i, keywords, multiBlockLength }}
-											/>
-										)}
-									</React.Fragment>
-								);
-							})}
+									return (
+										<React.Fragment key={i}>
+											{block.display === true && !!multiBlockLength && (
+												<MainBlock
+													{...{ block, i, keywords, multiBlockLength }}
+												/>
+											)}
+										</React.Fragment>
+									);
+								})
+							) : (
+								<li className="financing-filter col-12 mb-1 p-1">
+									<h2>No Results Found for Your Selection</h2>
+									<p>
+										We're sorry, but there are no results that match your
+										selected criteria. It's possible that there are no options
+										available for the specific filters or categories you've
+										chosen, or the information may not be available on our
+										website.
+									</p>
+									<p>
+										Please try adjusting your selection by removing or changing
+										some of the filters, or broadening your search criteria. You
+										can also contact us for assistance with finding the
+										information you need.
+									</p>
+									<p>
+										We understand that finding the right information is
+										important, and we apologize for any inconvenience caused by
+										the lack of results.
+									</p>
+								</li>
+							)}
 						</ul>
 					</li>
 				</ul>

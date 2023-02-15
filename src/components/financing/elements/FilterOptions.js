@@ -69,9 +69,9 @@ const FilterOptions = ({ option, keysPos, handleChange }) => {
 								role="button"
 								className="d-flex align-items-center btn mr-1 p-0 w-100 text-left"
 								style={{
-									backgroundColor: `${
-										block.bgColor ? block.bgColor : "transparent"
-									}`,
+									// backgroundColor: `${
+									// 	block.color ? block.color : "transparent"
+									// }`,
 									opacity: `${block.isChecked ? "1" : "0.5"}`,
 								}}>
 								<svg

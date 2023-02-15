@@ -1,7 +1,13 @@
 import MenuButton from "./MenuButton";
 import FilterOptions from "./FilterOptions";
 
-const Menu = ({ offersData, handleChange, toggleCheckboxes }) => {
+const Menu = ({
+	offersData,
+	handleChange,
+	toggleCheckboxes,
+	numBlocks,
+	help,
+}) => {
 	return (
 		<ul className="d-flex flex-column list-unstyled p-lg-1">
 			<li
@@ -26,6 +32,23 @@ const Menu = ({ offersData, handleChange, toggleCheckboxes }) => {
 						<span className="ml-auto d-lg-none">
 							<MenuButton addClass="p-2" />
 						</span>
+					</li>
+					<li className="mb-2 overflow-auto no-scrollbar px-3 px-lg-0">
+						<div className="px-1" style={{ fontSize: ".8em" }}>
+							Available number of offers: {numBlocks}
+						</div>
+					</li>
+					<li className="mb-2 overflow-auto no-scrollbar px-3 px-lg-0">
+						<div className="px-1" style={{ fontSize: ".8em" }}>
+							<button
+								onClick={() => {
+									help();
+								}}
+								className="py-2 px-4 w-100 border-0 text-black font-bold h-100"
+								style={{ background: "#ffc20f" }}>
+								Help Me Decide?
+							</button>
+						</div>
 					</li>
 					<li
 						className="mb-2 overflow-auto no-scrollbar px-3 px-lg-0 pb-8"

@@ -6,7 +6,6 @@
 			"term": 6,
 			"keywords": ["months-6"],
 			"display": true,
-			"offerCount": 1,
 			"offers": [
 				{
 					"keywords": ["no-interest", "min-199", "online"],
@@ -31,7 +30,6 @@
 			"term": 12,
 			"keywords": ["months-12"],
 			"display": true,
-			"offerCount": 1,
 			"offers": [
 				{
 					"keywords": ["no-interest", "min-500", "in-store"],
@@ -56,7 +54,6 @@
 			"term": 18,
 			"keywords": ["months-18"],
 			"display": true,
-			"offerCount": 1,
 			"offers": [
 				{
 					"keywords": ["no-interest", "min-750", "in-store"],
@@ -81,7 +78,6 @@
 			"term": 24,
 			"keywords": ["months-24"],
 			"display": true,
-			"offerCount": 1,
 			"offers": [
 				{
 					"keywords": ["zero-interest", "min-2000", "online"],
@@ -107,7 +103,6 @@
 			"term": 36,
 			"keywords": ["months-36"],
 			"display": true,
-			"offerCount": 1,
 			"offers": [
 				{
 					"keywords": ["zero-interest", "min-3000", "in-store"],
@@ -132,7 +127,6 @@
 			"term": 48,
 			"keywords": ["months-48"],
 			"display": true,
-			"offerCount": 1,
 			"offers": [
 				{
 					"keywords": ["one-percent-apr", "min-5000", "online"],
@@ -157,7 +151,6 @@
 			"term": 60,
 			"keywords": ["months-60"],
 			"display": true,
-			"offerCount": 1,
 			"offers": [
 				{
 					"keywords": ["two-percent-apr", "min-5000", "online"],
@@ -189,13 +182,15 @@
 					"label": "Online",
 					"val": "online",
 					"isChecked": true,
-					"bgColor": "red"
+					"helpActive": false,
+					"color": "#333"
 				},
 				{
 					"label": "In Store",
 					"val": "in-store",
 					"isChecked": true,
-					"bgColor": "orange"
+					"helpActive": false,
+					"color": "#333"
 				}
 			]
 		},
@@ -204,13 +199,55 @@
 			"type": "minPurchase",
 			"show": false,
 			"inputs": [
-				{ "label": "$199", "val": "min-199", "isChecked": true },
-				{ "label": "$500", "val": "min-500", "isChecked": true },
-				{ "label": "$600", "val": "min-600", "isChecked": true },
-				{ "label": "$750", "val": "min-750", "isChecked": true },
-				{ "label": "$2000", "val": "min-2000", "isChecked": true },
-				{ "label": "$3000", "val": "min-3000", "isChecked": true },
-				{ "label": "$5000", "val": "min-5000", "isChecked": true }
+				{
+					"label": "$199",
+					"val": "min-199",
+					"isChecked": true,
+					"helpActive": false,
+					"color": "#333"
+				},
+				{
+					"label": "$500",
+					"val": "min-500",
+					"isChecked": true,
+					"helpActive": false,
+					"color": "#333"
+				},
+				{
+					"label": "$600",
+					"val": "min-600",
+					"isChecked": true,
+					"helpActive": false,
+					"color": "#333"
+				},
+				{
+					"label": "$750",
+					"val": "min-750",
+					"isChecked": true,
+					"helpActive": false,
+					"color": "#333"
+				},
+				{
+					"label": "$2000",
+					"val": "min-2000",
+					"isChecked": true,
+					"helpActive": false,
+					"color": "#333"
+				},
+				{
+					"label": "$3000",
+					"val": "min-3000",
+					"isChecked": true,
+					"helpActive": false,
+					"color": "#333"
+				},
+				{
+					"label": "$5000",
+					"val": "min-5000",
+					"isChecked": true,
+					"helpActive": false,
+					"color": "#333"
+				}
 			]
 		},
 		{
@@ -218,14 +255,34 @@
 			"type": "interestRate",
 			"show": false,
 			"inputs": [
-				{ "label": "No Interest", "val": "no-interest", "isChecked": true },
+				{
+					"label": "No Interest",
+					"val": "no-interest",
+					"isChecked": true,
+					"helpActive": false,
+					"color": "#333"
+				},
 				{
 					"label": "0% Interest",
 					"val": "zero-interest",
-					"isChecked": true
+					"isChecked": true,
+					"helpActive": false,
+					"color": "#333"
 				},
-				{ "label": "1% APR", "val": "one-percent-apr", "isChecked": true },
-				{ "label": "2% APR", "val": "two-percent-apr", "isChecked": true }
+				{
+					"label": "1% APR",
+					"val": "one-percent-apr",
+					"isChecked": true,
+					"helpActive": false,
+					"color": "#333"
+				},
+				{
+					"label": "2% APR",
+					"val": "two-percent-apr",
+					"isChecked": true,
+					"helpActive": false,
+					"color": "#333"
+				}
 			]
 		},
 		{
@@ -233,13 +290,55 @@
 			"type": "terms",
 			"show": false,
 			"inputs": [
-				{ "label": "6 Months", "val": "months-6", "isChecked": true },
-				{ "label": "12 Months", "val": "months-12", "isChecked": true },
-				{ "label": "18 Months", "val": "months-18", "isChecked": true },
-				{ "label": "24 Months", "val": "months-24", "isChecked": true },
-				{ "label": "36 Months", "val": "months-36", "isChecked": true },
-				{ "label": "48 Months", "val": "months-48", "isChecked": true },
-				{ "label": "60 Months", "val": "months-60", "isChecked": true }
+				{
+					"label": "6 Months",
+					"val": "months-6",
+					"isChecked": true,
+					"helpActive": false,
+					"color": "#333"
+				},
+				{
+					"label": "12 Months",
+					"val": "months-12",
+					"isChecked": true,
+					"helpActive": false,
+					"color": "#333"
+				},
+				{
+					"label": "18 Months",
+					"val": "months-18",
+					"isChecked": true,
+					"helpActive": false,
+					"color": "#333"
+				},
+				{
+					"label": "24 Months",
+					"val": "months-24",
+					"isChecked": true,
+					"helpActive": false,
+					"color": "#333"
+				},
+				{
+					"label": "36 Months",
+					"val": "months-36",
+					"isChecked": true,
+					"helpActive": false,
+					"color": "#333"
+				},
+				{
+					"label": "48 Months",
+					"val": "months-48",
+					"isChecked": true,
+					"helpActive": false,
+					"color": "#333"
+				},
+				{
+					"label": "60 Months",
+					"val": "months-60",
+					"isChecked": true,
+					"helpActive": false,
+					"color": "#333"
+				}
 			]
 		}
 	],

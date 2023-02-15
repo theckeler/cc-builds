@@ -51,7 +51,7 @@ const MainBlock = ({ block, i, keywords, multiBlockLength }) => {
 					<Button
 						copy={block.button.copy}
 						url={block.button.url}
-						addClass="bg-secondary w-100 text-center"
+						addClass="w-100 text-center bg-black text-white"
 					/>
 				</div>
 			</div>

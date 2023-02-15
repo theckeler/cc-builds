@@ -1,6 +1,6 @@
-import Step1 from "./Step";
+import Step from "./Step";
 
-const GetHelp = ({ toggleCheckboxes, help }) => {
+const GetHelp = ({ toggleCheckboxes, help, offersData, numBlocks }) => {
 	return (
 		<div
 			id="help-screen"
@@ -10,12 +10,11 @@ const GetHelp = ({ toggleCheckboxes, help }) => {
 				background: `linear-gradient(to bottom, rgba(255,255,255,0.6) 0%, rgba(255,255,255,1) 100%)`,
 			}}>
 			<div
-				className="d-flex flex-column h-100 w-100  bg-white rounded p-5 position-relative"
+				className="d-flex flex-column w-100  bg-white rounded p-5 position-relative"
 				style={{ border: ".4em solid #000" }}>
 				<button
-					//onClick={() => help()}
 					onClick={() => {
-						toggleCheckboxes(false, true);
+						//toggleCheckboxes(false, true);
 						help(true);
 					}}
 					className="position-absolute border-0 bg-black"
@@ -25,12 +24,13 @@ const GetHelp = ({ toggleCheckboxes, help }) => {
 				<div className="mb-5 border-bottom w-100 text-center pb-2">
 					<h2>Find the plan that's right for you.</h2>
 					<p>
-						Answer a few short questions and we can help match you with a
-						finance plan that meets your goals.
+						If you unselect the options that don't apply to you, we can assist
+						you in finding a finance plan that aligns with your goals.
 					</p>
+					<p>Available number of offers: {numBlocks}</p>
 				</div>
-				<div className="w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-					<Step1 />
+				<div className="w-100 h-100 d-flex flex-column justify-content-start align-items-center">
+					<Step {...{ offersData, help }} />
 				</div>
 			</div>
 		</div>

@@ -1,95 +1,73 @@
 import React, { useState, useEffect } from "react";
 
-import stepsData from "../data/steps.json";
-
-const Step = () => {
+const Step = ({ offersData, help }) => {
 	const [whichStep, setWhichStep] = useState(0);
-	const [stepData, setStepData] = useState({ ...stepsData[whichStep] });
+	const [stepData, setStepData] = useState({ ...offersData.keys[whichStep] });
 
 	const updateButton = (e) => {
 		const whichNum = Number(e.target.getAttribute("data-pos"));
 		let updateButton = { ...stepData };
-		updateButton.buttons[whichNum].active = !stepData.buttons[whichNum].active;
+		updateButton.inputs[whichNum].isChecked =
+			!stepData.inputs[whichNum].isChecked;
 		setStepData({ ...updateButton });
 	};
 
 	const updateAllButton = (allOn = true) => {
-		console.log("updateAllButton:", allOn);
-
 		let allOnStatus = [];
-		stepData.buttons.forEach(function (button, i) {
-			// if (button.allOn) {
-			// 	console.log(button, i);
-			// 	//button.active = !button.active;
-			// }
-			allOnStatus[i] = { ...button, active: allOn };
+		stepData.inputs.forEach(function (button, i) {
+			allOnStatus[i] = { ...button, helpActive: allOn };
 		});
-
 		document.querySelectorAll(".help-button").forEach(function (e) {
 			e.click();
 		});
-
 		setStepData({ ...stepData, buttons: [...allOnStatus] });
 	};
 
 	useEffect(() => {
-		setStepData({ ...stepsData[whichStep] });
-		//	console.log(whichStep);
-	}, [whichStep]);
+		setStepData({ ...offersData.keys[whichStep] });
+	}, [offersData.keys, whichStep]);
 
-	useEffect(() => {
-		console.log(stepData);
-	}, [stepData]);
+	const buttonCSS = "w-100 h-100 p-3 text-center mb-0 user-select-none";
+	const buttonStyle = (button) => {
+		return {
+			userSelect: "none",
+			fontSize: "1em",
+			borderColor: button.color,
+			borderWidth: "2px",
+			borderStyle: "solid",
+			cursor: "pointer",
+			color: button.isChecked ? "white" : button.color,
+			backgroundColor: button.isChecked ? button.color : "transparent",
+		};
+	};
 
 	return (
 		<>
 			<h3 className="mb-2 text-center">{stepData.title}</h3>
-			<ul className="list-unstyled no-gutters d-flex flex-column flex-lg-row w-100 mb-0 border-bottom pb-2">
-				{stepData.buttons.map((button, i) => {
-					console.log(button);
-
+			<ul className="list-unstyled no-gutters d-flex flex-column flex-lg-row flex-wrap align-self-start w-100 mb-0 border-bottom pb-2">
+				{stepData.inputs.map((button, i) => {
 					return (
-						<li className="col p-1" key={i}>
+						<li className="flex-fill p-1" key={i}>
 							{button.allOn ? (
 								<button
 									data-pos={i}
-									className="w-100 h-100 h3 p-3 text-center mb-0"
-									//	htmlFor={button.for}
-									//	role="button"
+									className={`all-on-button ${buttonCSS}`}
 									onClick={(e) =>
-										button.active
+										button.isChecked
 											? updateAllButton(false)
 											: updateAllButton(true)
 									}
-									style={{
-										borderColor: button.color,
-										borderWidth: "2px",
-										borderStyle: "solid",
-										cursor: "pointer",
-										color: button.active ? "white" : button.color,
-										backgroundColor: button.active
-											? button.color
-											: "transparent",
-									}}>
+									style={buttonStyle(button)}>
 									{button.label}
 								</button>
 							) : (
 								<label
 									data-pos={i}
-									className="help-button w-100 h-100 h3 p-3 text-center mb-0"
-									htmlFor={button.for}
+									className={`help-button ${buttonCSS}`}
+									htmlFor={button.val}
 									role="button"
 									onClick={(e) => updateButton(e)}
-									style={{
-										borderColor: button.color,
-										borderWidth: "2px",
-										borderStyle: "solid",
-										cursor: "pointer",
-										color: button.active ? "white" : button.color,
-										backgroundColor: button.active
-											? button.color
-											: "transparent",
-									}}>
+									style={buttonStyle(button)}>
 									{button.label}
 								</label>
 							)}
@@ -110,13 +88,29 @@ const Step = () => {
 					)}
 				</li>
 				<li className="col-6 p-1">
-					{whichStep + 1 < stepsData.length && (
+					{whichStep < offersData.keys.length - 1 ? (
 						<button
 							className="btn bg-black text-white"
 							onClick={() => {
-								setWhichStep(Number(whichStep) + 1);
+								let error = false;
+								stepData.inputs.forEach(function (button, i) {
+									//console.log(button);
+									error = false;
+								});
+
+								if (!error) {
+									setWhichStep(Number(whichStep) + 1);
+								}
 							}}>
 							Next ❯
+						</button>
+					) : (
+						<button
+							className="btn bg-black text-white"
+							onClick={() => {
+								help(false);
+							}}>
+							View Results ❯
 						</button>
 					)}
 				</li>
