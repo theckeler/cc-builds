@@ -7,7 +7,7 @@ const GetHelp = ({ toggleCheckboxes, help, offersData, numBlocks }) => {
 			className="p-5 position-absolute top w-100 h-100 d-none"
 			style={{
 				zIndex: "1001",
-				background: `linear-gradient(to bottom, rgba(255,255,255,0.6) 0%, rgba(255,255,255,1) 100%)`,
+				background: `rgba(255,255,255,0.75)`,
 			}}>
 			<div
 				className="d-flex flex-column w-100  bg-white rounded p-5 position-relative"
@@ -17,9 +17,16 @@ const GetHelp = ({ toggleCheckboxes, help, offersData, numBlocks }) => {
 						//toggleCheckboxes(false, true);
 						help(true);
 					}}
-					className="position-absolute border-0 bg-black"
-					style={{ top: "1em", right: "1em", width: "2.4em", height: "2.4em" }}>
-					X
+					className="position-absolute border-0 bg-black rounded-circle d-flex justify-content-center"
+					style={{
+						top: ".2em",
+						right: ".2em",
+						width: "42px",
+						height: "42px",
+						fontSize: "2em",
+						lineHeight: 0,
+					}}>
+					×
 				</button>
 				<div className="mb-5 border-bottom w-100 text-center pb-2">
 					<h2>Find the plan that's right for you.</h2>
@@ -27,7 +34,7 @@ const GetHelp = ({ toggleCheckboxes, help, offersData, numBlocks }) => {
 						If you unselect the options that don't apply to you, we can assist
 						you in finding a finance plan that aligns with your goals.
 					</p>
-					<p>Available number of offers: {numBlocks}</p>
+					<p>Number of offers available: {numBlocks}</p>
 				</div>
 				<div className="w-100 h-100 d-flex flex-column justify-content-start align-items-center">
 					<Step {...{ offersData, help }} />

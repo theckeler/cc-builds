@@ -39,16 +39,14 @@ const Menu = ({
 						</div>
 					</li>
 					<li className="mb-2 overflow-auto no-scrollbar px-3 px-lg-0">
-						<div className="px-1" style={{ fontSize: ".8em" }}>
-							<button
-								onClick={() => {
-									help();
-								}}
-								className="py-2 px-4 w-100 border-0 text-black font-bold h-100"
-								style={{ background: "#ffc20f" }}>
-								Help Me Decide?
-							</button>
-						</div>
+						<button
+							onClick={() => {
+								help();
+							}}
+							className="py-2 px-4 w-100 border-0 text-black font-bold h-100"
+							style={{ background: "#ffc20f" }}>
+							Help Me Decide?
+						</button>
 					</li>
 					<li
 						className="mb-2 overflow-auto no-scrollbar px-3 px-lg-0 pb-8"
@@ -66,12 +64,14 @@ const Menu = ({
 								/>
 							);
 						})}
-						<button onClick={(e) => toggleCheckboxes(false, true)}>
-							Reset
+						<button
+							className="btn bg-black text-white w-100 p-1"
+							onClick={(e) => toggleCheckboxes(false, true)}>
+							Reset Options
 						</button>
-						<button onClick={(e) => toggleCheckboxes(true, false)}>
+						{/* <button onClick={(e) => toggleCheckboxes(true, false)}>
 							False
-						</button>
+						</button> */}
 					</li>
 				</ul>
 			</li>

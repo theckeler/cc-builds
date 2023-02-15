@@ -126,30 +126,16 @@ const Financing = () => {
 				</p>
 			</section>
 
-			{/* <section
-				className="pt-8 text-center mb-3 border-bottom container"
-				id="scroll">
-				<ul className="list-unstyled mx-auto no-gutters d-flex flex-column flex-lg-row p-0">
-					<li className="col-2 ml-auto">
-						<label
-							htmlFor="online"
-							role="button"
-							className="py-2 px-4 w-100 h-100 text-white"
-							style={{ background: "#333" }}>
-							Online
-						</label>
-					</li>
-					<li className="col-2">
-						<label
-							htmlFor="in-store"
-							role="button"
-							className="py-2 px-4 w-100 h-100 text-white"
-							style={{ background: "#555555" }}>
-							In-Store
-						</label>
-					</li>
-				</ul>
-			</section> */}
+			<section className="d-lg-none text-center mb-3 pb-3 border-bottom container">
+				<button
+					onClick={() => {
+						help();
+					}}
+					className="py-2 px-4 w-100 border-0 text-black font-bold h-100"
+					style={{ background: "#ffc20f" }}>
+					Help Me Decide?
+				</button>
+			</section>
 
 			<section
 				className="container p-0 m-0 m-lg-auto w-100 position-relative"
@@ -172,6 +158,7 @@ const Financing = () => {
 					</li>
 					{/* Output */}
 					<li className="col-lg-9 mt-n5 mt-lg-0">
+						<span id="scroll"></span>
 						<ul className="d-flex flex-wrap list-unstyled no-gutters">
 							{numBlocks > 0 ? (
 								offersData.blocks.map((block, i) => {
