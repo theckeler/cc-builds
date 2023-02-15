@@ -17,14 +17,14 @@ const GetHelp = ({ toggleCheckboxes, help, offersData, numBlocks }) => {
 						//toggleCheckboxes(false, true);
 						help(true);
 					}}
-					className="position-absolute border-0 bg-black rounded-circle d-flex justify-content-center"
+					className="position-absolute border-0 bg-black rounded-circle d-flex justify-content-center align-items-center"
 					style={{
 						top: ".2em",
 						right: ".2em",
 						width: "42px",
 						height: "42px",
 						fontSize: "2em",
-						lineHeight: 0,
+						lineHeight: "-2px",
 					}}>
 					×
 				</button>
