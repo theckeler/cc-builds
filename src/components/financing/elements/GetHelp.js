@@ -4,23 +4,22 @@ const GetHelp = ({ toggleCheckboxes, help, offersData, numBlocks }) => {
 	return (
 		<div
 			id="help-screen"
-			className="p-5 position-absolute top w-100 h-100 d-none"
+			className="p-1 p-lg-5 position-lg-absolute top w-100 h-100 d-none"
 			style={{
 				zIndex: "1001",
 				background: `rgba(255,255,255,0.75)`,
 			}}>
 			<div
-				className="d-flex flex-column w-100  bg-white rounded p-5 position-relative"
-				style={{ border: ".4em solid #000" }}>
+				className="d-flex flex-column w-100  bg-white rounded p-1 p-lg-5 position-relative"
+				style={{ border: ".3em solid #000" }}>
 				<button
 					onClick={() => {
-						//toggleCheckboxes(false, true);
 						help(true);
 					}}
-					className="position-absolute border-0 bg-black rounded-circle d-flex justify-content-center align-items-center"
+					className="d-none d-lg-flex position-absolute border-0 bg-black rounded-circle justify-content-center align-items-center"
 					style={{
-						top: ".2em",
-						right: ".2em",
+						top: ".3em",
+						right: ".3em",
 						width: "42px",
 						height: "42px",
 						fontSize: "2em",

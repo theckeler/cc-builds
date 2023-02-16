@@ -20,11 +20,11 @@ const FilterOptions = ({ option, keysPos, handleChange }) => {
 				className="border-bottom pb-1 mb-2 mt-2 font-weight-bold"
 				id={`${option.type}-child`}>
 				<button
-					className="border-0 w-100 d-flex"
+					className="border-0 w-100 d-flex text-primary"
+					style={{ background: "rgb(239, 239, 239)" }}
 					onClick={(e) => {
 						e.stopPropagation();
 						e.target.parentElement.nextSibling.classList.toggle("d-block");
-
 						document
 							.querySelectorAll(
 								`#${option.type}-parent #${option.type}-child .open-close-icon`
@@ -43,7 +43,7 @@ const FilterOptions = ({ option, keysPos, handleChange }) => {
 					<span
 						style={{ pointerEvents: "none" }}
 						id="closeIcon"
-						className={`open-close-icon ml-auto ${showHideClose}`}>
+						className={`open-close-icon ml-auto  ${showHideClose}`}>
 						-
 					</span>
 				</button>

@@ -10,6 +10,8 @@ import ImgCopyBlock from "../elements/ImgCopyBlock";
 import CTABlock from "../elements/CTABlock";
 import GetHelp from "./elements/GetHelp";
 import Menu from "./elements/Menu";
+import NoResults from "./elements/NoResults";
+import FilterButton from "./elements/FilterButton";
 
 const Financing = () => {
 	const [offersData, setOffersData] = useState({
@@ -126,6 +128,7 @@ const Financing = () => {
 				</p>
 			</section>
 
+			<span id="scroll"></span>
 			<section className="d-lg-none text-center mb-3 pb-3 border-bottom container">
 				<ul className="list-unstyled mx-auto no-gutters d-flex p-0">
 					<li className="col-6 p-1">
@@ -133,28 +136,16 @@ const Financing = () => {
 							onClick={() => {
 								help();
 							}}
-							className="py-2 px-4 w-100 border-0 text-black font-bold h-100"
+							className="py-2 px-4 w-100 border-0 text-primary font-bold h-100"
 							style={{ background: "#ffc20f" }}>
 							Help Me Decide?
 						</button>
 					</li>
 					<li className="col-6 p-1">
-						<button
-							onClick={() => {
-								document
-									.querySelector("#financing-filters")
-									.classList.toggle("active");
-								document
-									.querySelector("#financing-filters-button")
-									.classList.toggle("active");
-								document.querySelectorAll(".icon-svg").forEach(function (e) {
-									e.classList.toggle("d-block");
-								});
-							}}
-							className="py-2 px-4 w-100 border-0 text-black font-bold h-100 text-white"
-							style={{ background: "#000" }}>
-							Filter Options
-						</button>
+						<FilterButton
+							copy="Filter Options"
+							addClass="py-2 px-4 w-100 border-0 text-primary font-bold h-100 text-white"
+						/>
 					</li>
 				</ul>
 
@@ -167,6 +158,7 @@ const Financing = () => {
 				className="container p-0 m-0 m-lg-auto w-100 position-relative"
 				id="filter-screen">
 				<GetHelp {...{ toggleCheckboxes, help, offersData, numBlocks }} />
+
 				<ul className="list-unstyled mx-auto no-gutters d-flex flex-column flex-lg-row p-0">
 					{/* MENU */}
 					<li
@@ -180,11 +172,12 @@ const Financing = () => {
 								numBlocks,
 								help,
 							}}
+							//	buttonMenuToggle={buttonMenuToggle}
 						/>
 					</li>
+
 					{/* Output */}
 					<li className="col-lg-9 mt-n5 mt-lg-0">
-						<span id="scroll"></span>
 						<ul className="d-flex flex-wrap list-unstyled no-gutters">
 							{numBlocks > 0 ? (
 								offersData.blocks.map((block, i) => {
@@ -213,27 +206,7 @@ const Financing = () => {
 									);
 								})
 							) : (
-								<li className="financing-filter col-12 mb-1 p-1">
-									<h2>No Results Found for Your Selection</h2>
-									<p>
-										We're sorry, but there are no results that match your
-										selected criteria. It's possible that there are no options
-										available for the specific filters or categories you've
-										chosen, or the information may not be available on our
-										website.
-									</p>
-									<p>
-										Please try adjusting your selection by removing or changing
-										some of the filters, or broadening your search criteria. You
-										can also contact us for assistance with finding the
-										information you need.
-									</p>
-									<p>
-										We understand that finding the right information is
-										important, and we apologize for any inconvenience caused by
-										the lack of results.
-									</p>
-								</li>
+								<NoResults />
 							)}
 						</ul>
 					</li>

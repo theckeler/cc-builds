@@ -27,16 +27,16 @@ const Step = ({ offersData, help }) => {
 		setStepData({ ...offersData.keys[whichStep] });
 	}, [offersData.keys, whichStep]);
 
-	const buttonCSS = "w-100 h-100 p-3 text-center mb-0 user-select-none";
+	const buttonCSS = "w-100 h-100 p-1 p-lg-3 text-center mb-0 user-select-none";
 	const buttonStyle = (button) => {
 		return {
 			userSelect: "none",
 			fontSize: "1em",
-			borderColor: button.color,
+			borderColor: "#000",
 			borderWidth: "2px",
 			borderStyle: "solid",
 			cursor: "pointer",
-			color: button.isChecked ? "white" : button.color,
+			color: button.isChecked ? "#ffc20f" : "#000",
 			backgroundColor: button.isChecked ? button.color : "transparent",
 		};
 	};
@@ -68,6 +68,23 @@ const Step = ({ offersData, help }) => {
 									role="button"
 									onClick={(e) => updateButton(e)}
 									style={buttonStyle(button)}>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 48 48"
+										style={{ width: "1.6em" }}
+										className="mr-1">
+										<path
+											d="M24 43.8c-2.7 0-5.3-.5-7.7-1.6-2.4-1-4.5-2.5-6.3-4.2s-3.1-4-4.2-6.4c-1-2.4-1.6-4.9-1.6-7.6 0-2.7.5-5.3 1.6-7.7 1-2.4 2.5-4.5 4.3-6.3s3.9-3.2 6.3-4.2 4.9-1.6 7.6-1.6c2.7 0 5.3.5 7.7 1.6 2.4 1 4.5 2.4 6.3 4.2 1.8 1.8 3.2 3.9 4.2 6.3s1.5 5 1.5 7.7-.5 5.3-1.6 7.7-2.4 4.5-4.2 6.3c-1.8 1.8-3.9 3.2-6.3 4.2-2.3 1-4.9 1.6-7.6 1.6z"
+											fill={button.isChecked ? "#ffc20f" : "rgba(0,0,0,.2)"}
+										/>
+										{button.isChecked && (
+											<path
+												fill="#000"
+												d="M21.1 33 35 19l-2.2-2.2-11.7 11.8-6-6-2.2 2.2z"
+											/>
+										)}
+									</svg>
+
 									{button.label}
 								</label>
 							)}

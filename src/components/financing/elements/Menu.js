@@ -1,4 +1,4 @@
-import MenuButton from "./MenuButton";
+import FilterButton from "./FilterButton";
 import FilterOptions from "./FilterOptions";
 
 const Menu = ({
@@ -16,7 +16,7 @@ const Menu = ({
 				style={{
 					zIndex: "100",
 				}}>
-				<MenuButton />
+				<FilterButton />
 			</li>
 			<li
 				className="financing-filters position-fixed position-lg-relative w-100"
@@ -30,10 +30,10 @@ const Menu = ({
 					<li className="p-1 text-uppercase h4 border-bottom d-flex align-items-center">
 						<span>Filter:</span>
 						<span className="ml-auto d-lg-none">
-							<MenuButton addClass="p-2" />
+							<FilterButton />
 						</span>
 					</li>
-					<li className="mb-2 px-3 px-lg-0">
+					<li className="mb-2 px-3 px-lg-0 d-none d-lg-block">
 						<button
 							onClick={() => {
 								help();
@@ -47,7 +47,7 @@ const Menu = ({
 						</div>
 					</li>
 					<li
-						className="mb-2  px-3 px-lg-0 pb-8"
+						className="mb-2  px-3 px-lg-0 pb-8 overflow-auto"
 						style={{
 							height: "calc(100vh - 60px)",
 							maxHeight: "100vh",
