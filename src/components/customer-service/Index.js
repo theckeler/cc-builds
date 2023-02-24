@@ -5,7 +5,8 @@ import "../../scss/customerservice.scss";
 
 import Button from "../elements/Button";
 import SupportModel from "../elements/SupportModel";
-import TrackOrder from "../elements/TrackOrder";
+//import TrackOrder from "../elements/TrackOrder";
+import TrackOrderCTA from "../elements/TrackOrderCTA";
 
 import { ReactComponent as IconBelt } from "../../images/icon-belt.svg";
 import { ReactComponent as IconBlades } from "../../images/icon-blades.svg";
@@ -84,12 +85,12 @@ const App = () => {
 			{/* Track Order / Find Support */}
 			<section className="section-3">
 				<div className="container px-3 py-6">
-					<ul className="row list-unstyled">
-						<li className="d-flex flex-column quote col-12 col-sm-12 col-md-6 p-1">
+					<ul className="row list-unstyled justify-content-center">
+						<li className="d-flex flex-column quote col-12 col-md-6 p-1">
 							<div
 								className="d-flex flex-column p-6 h-100"
 								style={{ background: "#d8d8d8" }}>
-								<TrackOrder
+								<TrackOrderCTA
 									title={jsonData.section3.findOrder.h2}
 									sub={jsonData.section3.findOrder.copy}
 									addClass=""
@@ -97,7 +98,7 @@ const App = () => {
 								/>
 							</div>
 						</li>
-						<li className="d-flex flex-column quote col-12 col-sm-12 col-md-6 p-1">
+						<li className="d-flex flex-column quote col-12 col-md-6 p-1">
 							<div
 								className="d-flex flex-column p-6 h-100"
 								style={{ background: "#d8d8d8" }}>

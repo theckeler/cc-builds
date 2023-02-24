@@ -36,13 +36,13 @@ const FilterOptions = ({ option, keysPos, handleChange }) => {
 					<span style={{ pointerEvents: "none" }}>{option.title}</span>
 					<span
 						style={{ pointerEvents: "none" }}
-						id="openIcon"
+						//id="openIcon"
 						className={`open-close-icon ml-auto ${showHideOpen}`}>
 						+
 					</span>
 					<span
 						style={{ pointerEvents: "none" }}
-						id="closeIcon"
+						//id="closeIcon"
 						className={`open-close-icon ml-auto  ${showHideClose}`}>
 						-
 					</span>
