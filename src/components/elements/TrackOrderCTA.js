@@ -13,11 +13,13 @@ const TrackOrder = ({ title, sub, addClass, addStyle }) => {
 				Looking to track your order? Look no further! Simply click below to get
 				started and stay up-to-date on the whereabouts of your purchase.
 			</p>
-			<Button
-				copy="Track My Order"
-				url="https://www.cubcadet.com/en_US/track-my-order"
-				addClass="mt-2 bg-black text-white border-0 w-100 text-center"
-			/>
+			<p className="mt-4">
+				<Button
+					copy="Track My Order"
+					url="https://www.cubcadet.com/en_US/track-my-order"
+					addClass="btn btn-secondary btn-pf-search mt-auto py-2 px-5 border-0 w-100"
+				/>
+			</p>
 		</form>
 	);
 };
