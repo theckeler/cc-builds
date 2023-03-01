@@ -9,18 +9,20 @@ import WeiIndex from "./wei/Index";
 import ZeroTurn from "./zero-turn/Index";
 import Base from "./base/Index";
 import Financing from "./financing/Index";
+import XTEnduro from "./xt-enduro-series/Index";
 
 const Index = () => {
-  return (
-    <Routes>
-      <Route index path="/" element={<Home />} />
-      <Route path="/customerservice" element={<CustomerService />} />
-      <Route path="/wei/*" element={<WeiIndex />} />
-      <Route path="/snowv2/*" element={<SnowV2Index />} />
-      <Route path="/zero-turn/*" element={<ZeroTurn />} />
-      <Route path="/base/*" element={<Base />} />
-      <Route path="/financing/*" element={<Financing />} />
-    </Routes>
-  );
+	return (
+		<Routes>
+			<Route index path="/" element={<Home />} />
+			<Route path="/customerservice" element={<CustomerService />} />
+			<Route path="/wei/*" element={<WeiIndex />} />
+			<Route path="/snowv2/*" element={<SnowV2Index />} />
+			<Route path="/zero-turn/*" element={<ZeroTurn />} />
+			<Route path="/base/*" element={<Base />} />
+			<Route path="/financing/*" element={<Financing />} />
+			<Route path="/xt-enduro-series/*" element={<XTEnduro />} />
+		</Routes>
+	);
 };
 export default Index;
