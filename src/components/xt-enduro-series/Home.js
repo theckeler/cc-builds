@@ -23,14 +23,14 @@ const XTEnduroSeriesHome = () => {
 				</section>
 
 				{/* copyBlock */}
-				<section className="mt-0 mb-4 text-white">
-					<ul className="row list-unstyled no-gutters">
-						<li className="col-md-2 d-none d-lg-block bg-secondary position-relative">
+				<section className="mt-0 mb-4 text-white bg-primary">
+					<ul className="flex list-unstyled no-gutters">
+						<li className="col-md-2 d-none d-lg-block position-relative">
 							<img
-								src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw0d2ca778/products/Equipment/Cub-Cadet_2X28_IP_4.jpg"
+								src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v582c411dbdcc7ee64433f9664381a8e3be9a94d8/xt-enduro-series/left-side.svg?version=1,678,194,539,000"
 								alt=""
 								className="w-100 h-100 position-absolute"
-								style={{ objectFit: "cover" }}
+								style={{ objectFit: "contain", objectPosition: "left top" }}
 							/>
 						</li>
 						<li className="col-12 col-md-8 py-9 bg-primary">
@@ -39,12 +39,17 @@ const XTEnduroSeriesHome = () => {
 								<p className="">{jsonData.copyBlock.copy}</p>
 							</div>
 						</li>
-						<li className="col-md-2 d-none d-lg-block bg-secondary position-relative">
+						<li className="col-md-2 d-none d-lg-block position-relative">
 							<img
-								src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw0d2ca778/products/Equipment/Cub-Cadet_2X28_IP_4.jpg"
+								src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v582c411dbdcc7ee64433f9664381a8e3be9a94d8/xt-enduro-series/left-side.svg?version=1,678,194,539,000"
 								alt=""
 								className="w-100 h-100 position-absolute"
-								style={{ objectFit: "cover" }}
+								style={{
+									objectFit: "contain",
+									objectPosition: "left top",
+									transform: "scaleX(-1)",
+									right: 0,
+								}}
 							/>
 						</li>
 					</ul>

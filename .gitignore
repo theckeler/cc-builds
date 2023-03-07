@@ -24,4 +24,4 @@ yarn-debug.log*
 yarn-error.log*
 .zip
 
-/sbd-builds
+/~sbd-flat
