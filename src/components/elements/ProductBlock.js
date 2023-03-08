@@ -1,7 +1,7 @@
 import Button from "../elements/Button";
 
 const ProductBlock = ({ block, addClass, addCSS }) => {
-	console.log(block.border);
+	//console.log(block.border);
 
 	return (
 		<div
