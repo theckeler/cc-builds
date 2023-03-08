@@ -1,6 +1,6 @@
 {
 	"hero": {
-		"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/vde16d024a27b8e0c81e1c6e963f0a6bf041c9496/snow-v2/31AM5HVSB56_2X26_Inteli_env02.jpg",
+		"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/hero.jpg?version=1,678,298,490,000",
 		"logo": "",
 		"alt": ""
 	},
@@ -13,6 +13,34 @@
 	"lineup": {
 		"h2": "Vestibulum feugiat dignissim lectus",
 		"blocks": [
+			{
+				"url": "#NEED_URL_FOR_THIS_LINK",
+				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw855378c6/products/Equipment/Cub-Cadet-1X_21LHP_1.jpg?sw=290&sh=290&sm=fit",
+				"title": "Nam tincidunt euismod",
+				"copy": "Etiam neque erat, porta eget turpis vitae, blandit malesuada lectus. Nam ligula nisl, luctus sed nulla et, viverra sodales arcu. Aliquam erat volutpat. Pellentesque gravida metus nec eros consequat porta luctus sed nulla et, viverra sodales arcu. Aliquam erat volutpat. Pellentesque gravida metus nec eros consequat porta. Luctus sed nulla et, viverra sodales arcu. Aliquam erat volutpat. Pellentesque gravida metus nec eros consequat porta.",
+				"engFor": [
+					{
+						"title": "Terrain",
+						"icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-snowfall-up-6.svg",
+						"copy": "Proin tristique"
+					},
+					{
+						"title": "Seat Type",
+						"icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-driveway-up-8.svg",
+						"copy": "Aliquam lacinia"
+					},
+					{
+						"title": "Speed",
+						"icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-surfaces-smooth.svg",
+						"copy": "Class aptent"
+					}
+				],
+				"button": {
+					"copy": "Etiam neque erat",
+					"bgColor": "bg-secondary"
+				},
+				"border": false
+			},
 			{
 				"url": "#NEED_URL_FOR_THIS_LINK",
 				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw855378c6/products/Equipment/Cub-Cadet-1X_21LHP_1.jpg?sw=290&sh=290&sm=fit",
@@ -90,8 +118,8 @@
 
 	"quote": {
 		"stars": 5,
-		"imgMobile": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/quote-mobile.jpg",
-		"imgDesktop": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/quote-desktop.jpg",
+		"imgMobile": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/quote.jpg?version=1,678,298,495,000",
+		"imgDesktop": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/quote.jpg?version=1,678,298,495,000",
 		"alt": "",
 		"title": "Donec viverra purus tortor",
 		"copy": "“Donec euismod efficitur libero, sed rhoncus sem euismod aliquam. Fusce id leo porttitor, consectetur quam id, vestibulum ante. Vivamus facilisis faucibus odio. Sed malesuada porta placerat. Suspendisse varius risus felis, a pulvinar ligula elementum et. Duis at nibh est. Pellentesque sagittis eu nisi sed eleifend.”",
@@ -104,24 +132,19 @@
 		"copy": "Cras in accumsan nulla. Pellentesque consectetur euismod mi, vel semper eros consequat at. Nam ac blandit tortor. Suspendisse gravida, dolor sit amet rutrum lacinia, dolor mauris scelerisque nisl, in mollis sapien purus euismod tellus. Vivamus auctor justo neque, vel condimentum neque lacinia id.",
 		"blocks": [
 			{
-				"icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-surfaces-smooth-gravel.svg",
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/versatility-1.jpg?version=1,678,298,499,000",
 				"title": "Phasellus purus leo",
 				"copy": "Morbi sed est elementum, egestas nisi at, pretium orci. Quisque condimentum porttitor libero vitae sodales. Donec non justo ipsum. Suspendisse sit amet mi tincidunt, rhoncus felis dignissim, vestibulum erat."
 			},
 			{
-				"icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-surfaces-smooth-gravel.svg",
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/versatility-2.jpg?version=1,678,298,499,000",
 				"title": "Sed consequat",
 				"copy": "Maecenas consequat risus aliquet dui porta sagittis. Nulla ut mattis sapien. Fusce nec bibendum turpis. Sed fermentum diam ac sem accumsan, id vehicula tortor sodales. Nunc dapibus ligula diam, id feugiat elit convallis eget. In est quam, hendrerit in urna sed, venenatis eleifend nulla."
 			},
 			{
-				"icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-surfaces-smooth-gravel.svg",
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/versatility-1.jpg?version=1,678,298,499,000",
 				"title": "Nunc dignissim purus lorem",
 				"copy": "Suspendisse potenti. Maecenas consequat risus aliquet dui porta sagittis. Nulla ut mattis sapien. Fusce nec bibendum turpis. Sed fermentum diam ac sem accumsan, id vehicula tortor sodales. Nunc dapibus ligula diam, id feugiat elit convallis eget. In est quam, hendrerit in urna sed, venenatis eleifend nulla."
-			},
-			{
-				"icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-surfaces-smooth-gravel.svg",
-				"title": "Pellentesque tempor lectus sed",
-				"copy": "Phasellus tincidunt gravida lectus, quis consectetur leo rutrum et. In et risus lacinia lacus varius vestibulum id a nulla."
 			}
 		]
 	},
