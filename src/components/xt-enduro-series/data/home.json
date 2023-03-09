@@ -106,12 +106,14 @@
 			{
 				"icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/icon-battery.svg?version=1,678,303,258,000",
 				"title": "Aliquam erat volutpat",
-				"copy": "Sed pulvinar ultricies mauris vitae venenatis. Vivamus eu quam lorem. Ut egestas in dui a feugiat. Suspendisse at accumsan lectus. Phasellus ultricies lorem id diam vestibulum bibendum."
+				"copy": "Sed pulvinar ultricies mauris vitae venenatis. Vivamus eu quam lorem. Ut egestas in dui a feugiat. Suspendisse at accumsan lectus. Phasellus ultricies lorem id diam vestibulum bibendum.",
+				"addStyle": { "maxHeight": "6em" }
 			},
 			{
 				"icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/icon-gas.svg?version=1,678,303,258,000",
 				"title": "Curabitur a egestas",
-				"copy": "Proin tristique velit sem, sed finibus ante malesuada a. Aliquam lacinia massa justo, vitae egestas metus efficitur vel. Vestibulum feugiat dignissim lectus, eget sollicitudin augue volutpat non."
+				"copy": "Proin tristique velit sem, sed finibus ante malesuada a. Aliquam lacinia massa justo, vitae egestas metus efficitur vel. Vestibulum feugiat dignissim lectus, eget sollicitudin augue volutpat non.",
+				"addStyle": { "maxHeight": "6em" }
 			}
 		]
 	},
@@ -146,7 +148,12 @@
 				"title": "Nunc dignissim purus lorem",
 				"copy": "Suspendisse potenti. Maecenas consequat risus aliquet dui porta sagittis. Nulla ut mattis sapien. Fusce nec bibendum turpis. Sed fermentum diam ac sem accumsan, id vehicula tortor sodales. Nunc dapibus ligula diam, id feugiat elit convallis eget. In est quam, hendrerit in urna sed, venenatis eleifend nulla."
 			}
-		]
+		],
+		"button": {
+			"copy": "Etiam neqasdasdasdue erat",
+			"addClass": "bg-secondary text-center",
+			"url": "#NEED_URL_FOR_THIS_LINK"
+		}
 	},
 
 	"howTo": {

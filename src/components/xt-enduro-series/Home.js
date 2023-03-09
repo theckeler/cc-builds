@@ -7,6 +7,7 @@ import Articles from "../elements/Articles";
 import ProductBlock from "../elements/ProductBlock";
 import ImgBackDesktopMobile from "../elements/ImgBackDesktopMobile";
 import ImgCopyBlock from "../elements/ImgCopyBlock";
+import Button from "../elements/Button";
 
 const XTEnduroSeriesHome = () => {
 	return (
@@ -47,8 +48,8 @@ const XTEnduroSeriesHome = () => {
 								/>
 							</svg>
 						</li>
-						<li className="col-12 col-md-8 py-9 bg-primary flex flex-column justify-content-center">
-							<div className="container py-3 text-center ">
+						<li className="col-12 col-lg-8 py-9 bg-primary flex flex-column justify-content-center">
+							<div className="container py-3 px-1 text-center">
 								<h1 className="h1 d-block">{jsonData.copyBlock.h1}</h1>
 								<p className="">{jsonData.copyBlock.copy}</p>
 							</div>
@@ -79,7 +80,7 @@ const XTEnduroSeriesHome = () => {
 				</section>
 
 				{/* lineup */}
-				<section className="container d-flex flex-column p-0 mt-8 mb-4 bg-light">
+				<section className="container d-flex flex-column p-1 mt-8 mb-4">
 					<h2 className="h2 d-block text-center mb-8">{jsonData.lineup.h2}</h2>
 
 					<ul className="row list-unstyled">
@@ -87,44 +88,6 @@ const XTEnduroSeriesHome = () => {
 							return (
 								<li key={i} className="col-12 col-md-6 col-lg-4">
 									<ProductBlock {...{ block }} />
-									{/* <div className="d-flex flex-column h-100">
-										<img
-											src={block.img}
-											alt={block.alt}
-											className="w-100 p-2"
-										/>
-										<div
-											className="p-4 d-flex flex-column h-100"
-											style={{ backgroundColor: "#efefef" }}>
-											<strong className="title">{block.title}</strong>
-											<p className="copy">{block.copy}</p>
-											<ul
-												className="row list-unstyled"
-												style={{
-													minHeight: "220px",
-												}}>
-												{block.engFor.map((subblock, i) => {
-													return (
-														<li
-															key={i}
-															className="flex-column col col-12 col-sm-12 col-md-4 eng-for-blocks">
-															<strong>{subblock.title}</strong>
-															<img src={subblock.img} alt="" className="icon" />
-															<p
-																dangerouslySetInnerHTML={{
-																	__html: subblock.copy,
-																}}
-																style={{ marginTop: "auto" }}></p>
-														</li>
-													);
-												})}
-											</ul>
-											<Button
-												addClass="text-center border-0 w-100 bg-secondary text-black mt-auto"
-												copy={block.button.copy}
-											/>
-										</div>
-									</div> */}
 								</li>
 							);
 						})}
@@ -132,12 +95,17 @@ const XTEnduroSeriesHome = () => {
 				</section>
 
 				{/* powerLevel */}
-				<section className="container d-flex flex-column p-0 mt-3 bg-light">
-					<ul className="row list-unstyled">
+				<section className="container d-flex flex-column p-1 mt-3">
+					<ul
+						className="row list-unstyled p-2 no-gutters"
+						style={{ backgroundColor: "#efefef" }}>
 						{jsonData.powerLevel.blocks.map((block, i) => {
 							return (
-								<li key={i} className="col col-12 col-sm-12 col-md-6">
-									<IconCopyBlock {...{ block }} />
+								<li key={i} className="col col-12 col-sm-12 col-md-6 p-2">
+									<IconCopyBlock
+										{...{ block }}
+										//addStyle={{ maxHeight: "3em" }}
+									/>
 								</li>
 							);
 						})}
@@ -145,7 +113,7 @@ const XTEnduroSeriesHome = () => {
 				</section>
 
 				{/* QuoteBlock */}
-				<section className="d-flex flex-column p-0 mt-3 bg-light position-relative">
+				<section className="d-flex flex-column p-0 mt-3 position-relative">
 					<div
 						className="container position-absolute position-lg-relative w-100"
 						style={{ zIndex: "2", paddingTop: "3em" }}>
@@ -177,7 +145,7 @@ const XTEnduroSeriesHome = () => {
 				</section>
 
 				{/* forEveryJob */}
-				<section className="container d-flex flex-column p-0 mt-8 bg-light">
+				<section className="container d-flex flex-column align-items-center p-1 mt-8">
 					<h2 className="text-center mb-3">{jsonData.forEveryJob.h2}</h2>
 					<p className="text-center mb-6">{jsonData.forEveryJob.copy}</p>
 					<ul className="row list-unstyled">
@@ -189,6 +157,11 @@ const XTEnduroSeriesHome = () => {
 							);
 						})}
 					</ul>
+					<Button
+						copy={jsonData.forEveryJob.button.copy}
+						url={jsonData.forEveryJob.button.url}
+						addClass={jsonData.forEveryJob.button.addClass}
+					/>
 				</section>
 
 				{/* RIDING MOWER FINDER */}
