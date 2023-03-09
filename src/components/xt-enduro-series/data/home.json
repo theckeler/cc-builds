@@ -1,8 +1,18 @@
 {
 	"hero": {
-		"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/hero.jpg?version=1,678,298,490,000",
-		"logo": "",
-		"alt": ""
+		"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/hero-1024w.jpg?version=1,678,298,490,000",
+		"srcset": [
+			{
+				"size": "768",
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/hero-640w.jpg?version=1,678,369,060,000"
+			},
+			{
+				"size": "1200",
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/hero-1024w.jpg?version=1,678,369,065,000"
+			}
+		],
+		"alt": "",
+		"minHeight": "33em"
 	},
 
 	"copyBlock": {
@@ -45,6 +55,7 @@
 				"url": "#NEED_URL_FOR_THIS_LINK",
 				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw8f055b11/products/Equipment/Cub-Cadet_XT1LT46_New_2000x2000_8.jpg?sw=1000&sh=1000&sm=fit",
 				"title": "Nam tincidunt euismod",
+				"titleImg": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/logo-XT1.svg?version=1,678,374,028,000",
 				"copy": "Etiam neque erat, porta eget turpis vitae, blandit malesuada lectus. Nam ligula nisl, luctus sed nulla et, viverra sodales arcu. Aliquam erat volutpat. Pellentesque gravida metus nec eros consequat porta luctus sed nulla et, viverra sodales arcu. Aliquam erat volutpat. Pellentesque gravida metus nec eros consequat porta. Luctus sed nulla et, viverra sodales arcu. Aliquam erat volutpat. Pellentesque gravida metus nec eros consequat porta.",
 				"engFor": [
 					{
@@ -73,6 +84,7 @@
 				"url": "#NEED_URL_FOR_THIS_LINK",
 				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwd121df42/products/Equipment/Cub-Cadet_XT2_LX46_2000x2000_1.jpg?sw=740&sh=740&sm=fit",
 				"title": "Nam tincidunt euismod",
+				"titleImg": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/logo-XT2.svg?version=1,678,374,032,000",
 				"copy": " Morbi imperdiet sapien in urna congue accumsan. Nulla facilisi. Donec maximus vulputate enim, id lobortis sem accumsan sed. Phasellus a nisi eros.",
 				"engFor": [
 					{

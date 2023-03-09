@@ -8,6 +8,7 @@ import ProductBlock from "../elements/ProductBlock";
 import ImgBackDesktopMobile from "../elements/ImgBackDesktopMobile";
 import ImgCopyBlock from "../elements/ImgCopyBlock";
 import Button from "../elements/Button";
+import HeroImg from "../elements/HeroImg";
 
 const XTEnduroSeriesHome = () => {
 	return (
@@ -15,14 +16,7 @@ const XTEnduroSeriesHome = () => {
 			{/* Head */}
 			<div className="">
 				{/* HERO */}
-				<section className="position-relative" style={{ minHeight: "30em" }}>
-					<img
-						src={jsonData.hero.img}
-						alt={jsonData.hero.alt}
-						className="position-absolute w-100 h-100"
-						style={{ objectFit: "cover" }}
-					/>
-				</section>
+				<HeroImg hero={jsonData.hero} />
 
 				{/* copyBlock */}
 				<section className="mt-0 mb-4 text-white bg-primary">
@@ -145,13 +139,13 @@ const XTEnduroSeriesHome = () => {
 				</section>
 
 				{/* forEveryJob */}
-				<section className="container d-flex flex-column align-items-center p-1 mt-8">
+				<section className="container d-flex flex-column align-items-center p-0 mt-8">
 					<h2 className="text-center mb-3">{jsonData.forEveryJob.h2}</h2>
 					<p className="text-center mb-6">{jsonData.forEveryJob.copy}</p>
-					<ul className="row list-unstyled">
+					<ul className="flex flex-column flex-md-row list-unstyled">
 						{jsonData.forEveryJob.blocks.map((block, i) => {
 							return (
-								<li key={i} className="col col-12 col-sm-12 col-md-4">
+								<li key={i} className="col-12 col-md-4">
 									<ImgCopyBlock {...{ block }} linkable={false} />
 								</li>
 							);

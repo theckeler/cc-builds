@@ -1,5 +1,5 @@
 const IconCopyBlock = ({ block, addClass = "", addStyle }) => {
-	console.log(addStyle);
+	//console.log(addStyle);
 	return (
 		<ul
 			className={`row list-unstyled align-items-center ${addClass}`}

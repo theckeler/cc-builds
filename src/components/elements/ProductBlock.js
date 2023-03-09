@@ -1,7 +1,7 @@
 import Button from "../elements/Button";
 
 const ProductBlock = ({ block, addClass, addCSS }) => {
-	//console.log(block.border);
+	console.log(block);
 
 	return (
 		<div
@@ -36,7 +36,11 @@ const ProductBlock = ({ block, addClass, addCSS }) => {
 						block.border === false && "p-1 p-lg-4"
 					}`}
 					style={{ backgroundColor: "#efefef" }}>
-					<h2 className="h2">{block.title}</h2>
+					{block.titleImg ? (
+						<img src={block.titleImg} alt="" className="w-100 mt-1 mb-3" />
+					) : (
+						<h2 className="h2">{block.title}</h2>
+					)}
 					<p
 						dangerouslySetInnerHTML={{
 							__html: block.copy,
