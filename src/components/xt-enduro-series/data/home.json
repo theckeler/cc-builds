@@ -4,11 +4,13 @@
 		"srcset": [
 			{
 				"size": "768",
-				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/hero-640w.jpg?version=1,678,369,060,000"
+				"sizingType": "px",
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/hero-1024w.jpg?version=1,678,369,065,000"
 			},
 			{
-				"size": "1200",
-				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/hero-1024w.jpg?version=1,678,369,065,000"
+				"size": "0",
+				"sizingType": "px",
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/hero-640w.jpg?version=1,678,369,060,000"
 			}
 		],
 		"alt": "",
@@ -132,13 +134,28 @@
 
 	"quote": {
 		"stars": 5,
-		"imgMobile": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/quote.jpg?version=1,678,298,495,000",
-		"imgDesktop": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/quote.jpg?version=1,678,298,495,000",
 		"alt": "",
 		"title": "Donec viverra purus tortor",
 		"copy": "“Donec euismod efficitur libero, sed rhoncus sem euismod aliquam. Fusce id leo porttitor, consectetur quam id, vestibulum ante. Vivamus facilisis faucibus odio. Sed malesuada porta placerat. Suspendisse varius risus felis, a pulvinar ligula elementum et. Duis at nibh est. Pellentesque sagittis eu nisi sed eleifend.”",
 		"name": "Nulla venenatis from Ultricies, Dolor",
-		"unit": "Fusce nec massa"
+		"unit": "Fusce nec massa",
+		"hero": {
+			"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/quote.jpg?version=1,678,298,495,000",
+			"srcset": [
+				{
+					"size": "768",
+					"sizingType": "px",
+					"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/quote.jpg?version=1,678,298,495,000"
+				},
+				{
+					"size": "0",
+					"sizingType": "px",
+					"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/quote-768-2.jpg?version=1,678,451,807,000"
+				}
+			],
+			"alt": "",
+			"minHeight": "33em"
+		}
 	},
 
 	"forEveryJob": {

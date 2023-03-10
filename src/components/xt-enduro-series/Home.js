@@ -5,7 +5,6 @@ import QuoteBlock from "../elements/QuoteBlock";
 import HowToMaintence from "../elements/HowToMaintence";
 import Articles from "../elements/Articles";
 import ProductBlock from "../elements/ProductBlock";
-import ImgBackDesktopMobile from "../elements/ImgBackDesktopMobile";
 import ImgCopyBlock from "../elements/ImgCopyBlock";
 import Button from "../elements/Button";
 import HeroImg from "../elements/HeroImg";
@@ -16,7 +15,9 @@ const XTEnduroSeriesHome = () => {
 			{/* Head */}
 			<div className="">
 				{/* HERO */}
-				<HeroImg hero={jsonData.hero} />
+				<section className="position-relative">
+					<HeroImg hero={jsonData.hero} />
+				</section>
 
 				{/* copyBlock */}
 				<section className="mt-0 mb-4 text-white bg-primary">
@@ -43,7 +44,7 @@ const XTEnduroSeriesHome = () => {
 							</svg>
 						</li>
 						<li className="col-12 col-lg-8 py-9 bg-primary flex flex-column justify-content-center">
-							<div className="container py-3 px-1 text-center">
+							<div className="container p-3 text-left text-lg-center">
 								<h1 className="h1 d-block">{jsonData.copyBlock.h1}</h1>
 								<p className="">{jsonData.copyBlock.copy}</p>
 							</div>
@@ -80,7 +81,7 @@ const XTEnduroSeriesHome = () => {
 					<ul className="row list-unstyled">
 						{jsonData.lineup.blocks.map((block, i) => {
 							return (
-								<li key={i} className="col-12 col-md-6 col-lg-4">
+								<li key={i} className="col-12  col-md-4">
 									<ProductBlock {...{ block }} />
 								</li>
 							);
@@ -108,34 +109,18 @@ const XTEnduroSeriesHome = () => {
 
 				{/* QuoteBlock */}
 				<section className="d-flex flex-column p-0 mt-3 position-relative">
+					<HeroImg hero={jsonData.quote.hero} addClass="position-absolute" />
 					<div
-						className="container position-absolute position-lg-relative w-100"
-						style={{ zIndex: "2", paddingTop: "3em" }}>
+						className="container w-100 p-1 pb-9 pb-lg-9"
+						style={{ zIndex: "2", paddingTop: "3em", minHeight: "45em" }}>
 						<QuoteBlock
 							quote={jsonData.quote}
-							addClass="position-relative text-white"
+							addClass="position-relative text-white pb-9 pb-lg-9"
 							addCSS={{ maxWidth: "700px", zIndex: 1 }}
 							stackStars={true}
 							starFill="#fff"
 						/>
 					</div>
-					<ImgBackDesktopMobile
-						imgMobile={jsonData.quote.imgMobile}
-						imgDesktop={jsonData.quote.imgDesktop}
-						addCSS={{
-							mobile: {
-								block: {
-									background:
-										"linear-gradient(to bottom, rgb(0,0,0) 0%, rgba(0,0,0,0) 60%)",
-								},
-								img: { maxHeight: "44em" },
-							},
-							desktop: {
-								block: { minHeight: "20em" },
-								img: {},
-							},
-						}}
-					/>
 				</section>
 
 				{/* forEveryJob */}

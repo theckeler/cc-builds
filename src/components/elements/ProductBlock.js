@@ -1,8 +1,6 @@
 import Button from "../elements/Button";
 
 const ProductBlock = ({ block, addClass, addCSS }) => {
-	console.log(block);
-
 	return (
 		<div
 			className={`mb-2 h-100 d-flex flex-column h-100 position-relative ${addClass}`}
