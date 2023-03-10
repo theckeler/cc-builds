@@ -45,8 +45,16 @@ const XTEnduroSeriesHome = () => {
 						</li>
 						<li className="col-12 col-lg-8 py-9 bg-primary flex flex-column justify-content-center">
 							<div className="container p-3 text-left text-lg-center">
-								<h1 className="h1 d-block">{jsonData.copyBlock.h1}</h1>
-								<p className="">{jsonData.copyBlock.copy}</p>
+								<h1
+									className="h1 d-block"
+									dangerouslySetInnerHTML={{
+										__html: jsonData.copyBlock.h1,
+									}}></h1>
+								<p
+									className=""
+									dangerouslySetInnerHTML={{
+										__html: jsonData.copyBlock.copy,
+									}}></p>
 							</div>
 						</li>
 						<li
@@ -76,7 +84,11 @@ const XTEnduroSeriesHome = () => {
 
 				{/* lineup */}
 				<section className="container d-flex flex-column p-1 mt-8 mb-4">
-					<h2 className="h2 d-block text-center mb-8">{jsonData.lineup.h2}</h2>
+					<h2
+						className="h2 d-block text-center mb-8"
+						dangerouslySetInnerHTML={{
+							__html: jsonData.lineup.h2,
+						}}></h2>
 
 					<ul className="row list-unstyled">
 						{jsonData.lineup.blocks.map((block, i) => {
@@ -125,8 +137,8 @@ const XTEnduroSeriesHome = () => {
 
 				{/* forEveryJob */}
 				<section className="container d-flex flex-column align-items-center p-0 mt-8">
-					<h2 className="text-center mb-3">{jsonData.forEveryJob.h2}</h2>
-					<p className="text-center mb-6">{jsonData.forEveryJob.copy}</p>
+					<h2 className="text-center mb-3 p-1">{jsonData.forEveryJob.h2}</h2>
+					<p className="text-center mb-6 p-1">{jsonData.forEveryJob.copy}</p>
 					<ul className="flex flex-column flex-md-row list-unstyled">
 						{jsonData.forEveryJob.blocks.map((block, i) => {
 							return (

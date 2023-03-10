@@ -18,72 +18,72 @@
 	},
 
 	"copyBlock": {
-		"h1": "Lorem ipsum dolor sit amet",
-		"copy": "Cras in accumsan nulla. Pellentesque consectetur euismod mi, vel semper eros consequat at. Nam ac blandit tortor. Suspendisse gravida, dolor sit amet rutrum lacinia, dolor mauris scelerisque nisl, in mollis sapien purus euismod tellus. Vivamus auctor justo neque, vel condimentum neque lacinia id."
+		"h1": "The Lawn & Garden Tractors to Get It Done",
+		"copy": "Get the most out of your lawn and garden tractors, including the XT Enduro Series&trade;. Designed with comfort and command in mind, you can tackle your diverse lawn from season to season while enjoying a premium experience. "
 	},
 
 	"lineup": {
-		"h2": "Vestibulum feugiat dignissim lectus",
+		"h2": "Cub Cadet&reg; Lawn & Garden Tractors",
 		"blocks": [
 			{
-				"url": "https://www.cubcadet.com/en_US/small-riding-lawn-mower-cc-30-h/13AC21JDA10.html",
+				"url": "https://www.cubcadet.com/en_US/riding-lawn-mowers/lawn-and-garden-tractors?prefn1=series&prefv1=XT1%C2%AE%20Enduro%20Series%E2%84%A2%7CCC30%20Series",
 				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw24519b24/products/Equipment/Cub-Cadet_CC30H_6.jpg?sw=740&sh=740&sm=fit",
-				"title": "CC30H",
-				"copy": "Etiam neque erat, porta eget turpis vitae, blandit malesuada lectus. Nam ligula nisl, luctus sed nulla et, viverra sodales arcu. Aliquam erat volutpat. Pellentesque gravida metus nec eros consequat porta luctus sed nulla et, viverra sodales arcu. Aliquam erat volutpat. Pellentesque gravida metus nec eros consequat porta. Luctus sed nulla et, viverra sodales arcu. Aliquam erat volutpat. Pellentesque gravida metus nec eros consequat porta.",
+				"title": "CC30",
+				"copy": "The Cub Cadet Mini-Riders delivers the same strength, durability and perfect cut as our larger riders; but in a more compact design.",
 				"engFor": [
 					{
 						"title": "Terrain",
 						"icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/icon-sm-bump.svg?version=1,678,300,141,000",
-						"copy": "Proin tristique"
+						"copy": "Mostly flat"
 					},
 					{
 						"title": "Seat Type",
 						"icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/icon-seat.svg?version=1,678,300,141,000",
-						"copy": "Aliquam lacinia"
+						"copy": "15\" high-back seat"
 					},
 					{
 						"title": "Speed",
 						"icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/icon-fast.svg?version=1,678,300,141,000",
-						"copy": "Class aptent"
+						"copy": "Up to 4 mph"
 					}
 				],
 				"button": {
-					"copy": "Etiam neque erat",
+					"copy": "EXPLORE MINI RIDERS",
 					"bgColor": "bg-secondary"
 				},
 				"border": false
 			},
 			{
-				"url": "#NEED_URL_FOR_THIS_LINK",
+				"url": "https://www.cubcadet.com/en_US/riding-lawn-mowers/lawn-and-garden-tractors?prefn1=series&prefv1=XT1%C2%AE%20Enduro%20Series%E2%84%A2%7CCC30%20Series",
 				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw8f055b11/products/Equipment/Cub-Cadet_XT1LT46_New_2000x2000_8.jpg?sw=1000&sh=1000&sm=fit",
 				"title": "Nam tincidunt euismod",
 				"titleImg": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/logo-XT1.svg?version=1,678,374,028,000",
-				"copy": "Etiam neque erat, porta eget turpis vitae, blandit malesuada lectus. Nam ligula nisl, luctus sed nulla et, viverra sodales arcu. Aliquam erat volutpat. Pellentesque gravida metus nec eros consequat porta luctus sed nulla et, viverra sodales arcu. Aliquam erat volutpat. Pellentesque gravida metus nec eros consequat porta. Luctus sed nulla et, viverra sodales arcu. Aliquam erat volutpat. Pellentesque gravida metus nec eros consequat porta.",
+				"copy": "The base model of the Enduro Series, the XT1 tractors are loaded from the start-equipped for mowing, hauling and using a variety of attachments.",
 				"engFor": [
 					{
 						"title": "Terrain",
 						"icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/icon-md-bump.svg?version=1,678,300,141,000",
-						"copy": "Proin tristique"
+						"copy": "Mostly flat"
 					},
 					{
 						"title": "Seat Type",
 						"icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/icon-seat.svg?version=1,678,300,141,000",
-						"copy": "Aliquam lacinia"
+						"copy": "15\" high-back seat"
 					},
 					{
 						"title": "Speed",
 						"icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/icon-fast.svg?version=1,678,300,141,000",
-						"copy": "Class aptent"
+						"copy": "Up to 5.5 mph"
 					}
 				],
 				"button": {
-					"copy": "Etiam neque erat",
+					"copy": "EXPLORE XT1 ENDURO",
 					"bgColor": "bg-secondary"
 				},
 				"border": false
 			},
 			{
-				"url": "#NEED_URL_FOR_THIS_LINK",
+				"url": "https://www.cubcadet.com/en_US/riding-lawn-mowers/lawn-and-garden-tractors?prefn1=series&prefv1=XT2%C2%AE%20Enduro%20Series%E2%84%A2%7CXT1%C2%AE%20Enduro%20Series%E2%84%A2",
 				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwd121df42/products/Equipment/Cub-Cadet_XT2_LX46_2000x2000_1.jpg?sw=740&sh=740&sm=fit",
 				"title": "Nam tincidunt euismod",
 				"titleImg": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/logo-XT2.svg?version=1,678,374,032,000",
@@ -92,21 +92,21 @@
 					{
 						"title": "Terrain",
 						"icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/icon-lg-bump.svg?version=1,678,300,141,000",
-						"copy": "Ut mollis urna tincidunt"
+						"copy": "Slight hills, mostly flat"
 					},
 					{
 						"title": "Seat Type",
 						"icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/icon-seat-arms.svg?version=1,678,300,141,000",
-						"copy": "Vivamus auctor"
+						"copy": "15\" high-back seat with armrests"
 					},
 					{
 						"title": "Speed",
 						"icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/icon-fast.svg?version=1,678,300,141,000",
-						"copy": "Etiam nec"
+						"copy": "Up to 5.5 mph"
 					}
 				],
 				"button": {
-					"copy": "Etiam neqasdasdasdue erat",
+					"copy": "EXPLORE XT2 ENDURO",
 					"bgColor": "bg-secondary"
 				},
 				"border": false
@@ -115,18 +115,18 @@
 	},
 
 	"powerLevel": {
-		"h2": "Nam ligula nisl luctus sed nulla",
+		"h2": "Power on a Whole New Level",
 		"blocks": [
 			{
 				"icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/icon-battery.svg?version=1,678,303,258,000",
-				"title": "Aliquam erat volutpat",
-				"copy": "Sed pulvinar ultricies mauris vitae venenatis. Vivamus eu quam lorem. Ut egestas in dui a feugiat. Suspendisse at accumsan lectus. Phasellus ultricies lorem id diam vestibulum bibendum.",
+				"title": "Electric",
+				"copy": "Our lithium-ion battery technology provides long runtime, quiet operation, minimal power fade, less maintenance than gas and a fast charge.",
 				"addStyle": { "maxHeight": "6em" }
 			},
 			{
 				"icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/icon-gas.svg?version=1,678,303,258,000",
-				"title": "Curabitur a egestas",
-				"copy": "Proin tristique velit sem, sed finibus ante malesuada a. Aliquam lacinia massa justo, vitae egestas metus efficitur vel. Vestibulum feugiat dignissim lectus, eget sollicitudin augue volutpat non.",
+				"title": "Gas Engine",
+				"copy": "Engine options offer smooth operation, quick acceleration with simple recovery; also available with electronic fuel injection technology (EFI) for easy startup.",
 				"addStyle": { "maxHeight": "6em" }
 			}
 		]
@@ -134,11 +134,10 @@
 
 	"quote": {
 		"stars": 5,
-		"alt": "",
-		"title": "Donec viverra purus tortor",
-		"copy": "“Donec euismod efficitur libero, sed rhoncus sem euismod aliquam. Fusce id leo porttitor, consectetur quam id, vestibulum ante. Vivamus facilisis faucibus odio. Sed malesuada porta placerat. Suspendisse varius risus felis, a pulvinar ligula elementum et. Duis at nibh est. Pellentesque sagittis eu nisi sed eleifend.”",
-		"name": "Nulla venenatis from Ultricies, Dolor",
-		"unit": "Fusce nec massa",
+		"title": "TRACTOR MAN",
+		"copy": "“Have had this tractor for a year now. Love it! Can't wait to get more attachments for it...”",
+		"name": "Simply the best from Detroit, MI",
+		"unit": "XT1 LT46",
 		"hero": {
 			"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/quote.jpg?version=1,678,298,495,000",
 			"srcset": [
@@ -159,75 +158,75 @@
 	},
 
 	"forEveryJob": {
-		"h2": "Nam ligula nisl luctus sed nulla",
-		"copy": "Cras in accumsan nulla. Pellentesque consectetur euismod mi, vel semper eros consequat at. Nam ac blandit tortor. Suspendisse gravida, dolor sit amet rutrum lacinia, dolor mauris scelerisque nisl, in mollis sapien purus euismod tellus. Vivamus auctor justo neque, vel condimentum neque lacinia id.",
+		"h2": "Year-Round Versatility",
+		"copy": "Designed to get more done season after season with a selection of attachments and accessories designed for a variety of jobs.",
 		"blocks": [
 			{
 				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/versatility-1.jpg?version=1,678,298,499,000",
-				"title": "Phasellus purus leo",
-				"copy": "Morbi sed est elementum, egestas nisi at, pretium orci. Quisque condimentum porttitor libero vitae sodales. Donec non justo ipsum. Suspendisse sit amet mi tincidunt, rhoncus felis dignissim, vestibulum erat."
+				"title": "Bagger System",
+				"copy": "Designed for excellent bagging performance with twin baggers available to fit every lawn and garden tractor. And for even bigger jobs, triple baggers are available on lawn and garden tractors 42 inches and larger"
 			},
 			{
 				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/versatility-2.jpg?version=1,678,298,499,000",
-				"title": "Sed consequat",
-				"copy": "Maecenas consequat risus aliquet dui porta sagittis. Nulla ut mattis sapien. Fusce nec bibendum turpis. Sed fermentum diam ac sem accumsan, id vehicula tortor sodales. Nunc dapibus ligula diam, id feugiat elit convallis eget. In est quam, hendrerit in urna sed, venenatis eleifend nulla."
+				"title": "Hauler",
+				"copy": "Designed for up to 800 pounds and built with fold-out side panels for easy loading and unloading, the hauler allows you to easily move mulch, logs and more."
 			},
 			{
-				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/versatility-1.jpg?version=1,678,298,499,000",
-				"title": "Nunc dignissim purus lorem",
-				"copy": "Suspendisse potenti. Maecenas consequat risus aliquet dui porta sagittis. Nulla ut mattis sapien. Fusce nec bibendum turpis. Sed fermentum diam ac sem accumsan, id vehicula tortor sodales. Nunc dapibus ligula diam, id feugiat elit convallis eget. In est quam, hendrerit in urna sed, venenatis eleifend nulla."
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/versatility-3.jpg?version=1,678,458,327,000",
+				"title": "All-Season Plow",
+				"copy": "With the convenience of the FastAttach&reg; Connection System, this 46-inch heavy-duty all-season plow can move snow, dirt, gravel, mulch and more."
 			}
 		],
 		"button": {
-			"copy": "Etiam neqasdasdasdue erat",
+			"copy": "VIEW ALL ATTACHMENTS",
 			"addClass": "bg-secondary text-center",
-			"url": "#NEED_URL_FOR_THIS_LINK"
+			"url": "https://www.cubcadet.com/en_US/riding-lawn-mowers/riding-mower-accessories"
 		}
 	},
 
 	"howTo": {
-		"h2": "Nulla venenatis odio ac",
+		"h2": "Lawn & Garden Tractor Articles",
 		"blocks": [
 			{
-				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw6de79658/Knowledge_Center/help-center/snow-thrower-safety-tips_1100x572.jpg?sw=1116",
-				"title": "Suspendisse ac dignissim tortor",
-				"copy": "Nulla tristique bibendum sapien, quis bibendum lectus congue eget. Nulla cursus metus nulla, non semper quam luctus a. Fusce non erat euismod, pretium odio a, maximus tellus.",
-				"url": "#NEED_URL_FOR_THIS_LINK"
+				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw36bb159f/Knowledge_Center/help-center/best-in-class-cut_1100x572.jpg?sw=1116",
+				"title": "What Does It Mean to Have the Best-in-Class Cut?",
+				"copy": "Cut quality is a primary consideration when purchasing a lawn mower, and the ability to cut a consistent, even surface with fewer clumps and finer clippings is an important reason...",
+				"url": "https://www.cubcadet.com/en_US/popular-faqs/knowledge-best-in-class-cut.html"
 			},
 			{
-				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw6de79658/Knowledge_Center/help-center/snow-thrower-safety-tips_1100x572.jpg?sw=1116",
-				"title": "Quisque sed quam",
-				"copy": "Quisque condimentum porttitor libero vitae sodales. Donec non justo ipsum. Suspendisse sit amet mi tincidunt, rhoncus felis dignissim, vestibulum erat. Aenean euismod maximus mi at feugiat. Nulla a iaculis nisi. Etiam eu metus consequat, ornare mauris ac, luctus elit. Suspendisse bibendum, ex ut efficitur consectetur, arcu leo auctor massa, ac fringilla augue sapien eget metus.",
-				"url": "#NEED_URL_FOR_THIS_LINK"
+				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dwadb425f5/Knowledge_Center/help-center/must-have-riding-mower-attachments_1100x572.jpg?sw=1116",
+				"title": "5 Must-Have Riding Mower Attachments",
+				"copy": "The Cub Cadet&reg; XT Enduro Series&trade; was built to be versatile. Attachments and accessories will unlock the full potential of your riding mower, making it work for you year-round...",
+				"url": "https://www.cubcadet.com/en_US/popular-faqs/knowledge-must-have-riding-mower-attachments.html"
 			},
 			{
-				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw6de79658/Knowledge_Center/help-center/snow-thrower-safety-tips_1100x572.jpg?sw=1116",
-				"title": "Integer vel libero eget leo feugiat scelerisque",
-				"copy": "Pellentesque mollis dolor sit amet nibh vulputate maximus. Vivamus rutrum efficitur odio nec sodales. Nam suscipit orci eu eros volutpat mattis. Curabitur fringilla sapien id eros varius feugiat. Nullam aliquet ultrices elit.",
-				"url": "#NEED_URL_FOR_THIS_LINK"
+				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw203ebac9/Knowledge_Center/help-center/benefits-of-battery-lawn-mower_1100x572.jpg?sw=1116",
+				"title": "Benefits of a Battery-Powered Lawn Mower",
+				"copy": "A battery-powered lawn mower can enhance your overall mowing experience. After taking into account yard size and terrain- battery powered mowers are a better fit for smaller yards...",
+				"url": "https://www.cubcadet.com/en_US/popular-faqs/knowledge-benefits-of-battery-lawn-mower.html"
 			}
 		]
 	},
 
 	"articles": {
-		"h2": "Quisque dolor erat",
+		"h2": "How To's & Maintenance",
 		"blocks": [
 			{
-				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw26bee84c/images/product-line-browse/Main-Carousel/SnowBlow_PLB_31AH5GVO710_2X_30EFI_desktop_1015x630.jpg?sw=1116",
-				"title": "Nunc nec purus id elit ornare fringilla vulputate",
-				"copy": "Maecenas mi mauris, bibendum sed turpis sed, condimentum tincidunt purus. Cras facilisis faucibus rutrum. Phasellus pharetra massa at neque consequat mollis.",
-				"url": "#NEED_URL_FOR_THIS_LINK"
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/how-to-1.png?version=1,678,468,412,000",
+				"title": "How to Change the Air Filter on a Riding Mower",
+				"copy": "It is recommended that your engine air filter be cleaned or replaced every 50 operating hours. In dry, dusty conditions this should be done more frequently. The video instructions below...",
+				"url": "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-change-the-air-filter-on-a-cub-cadet-rider.html"
 			},
 			{
-				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw26bee84c/images/product-line-browse/Main-Carousel/SnowBlow_PLB_31AH5GVO710_2X_30EFI_desktop_1015x630.jpg?sw=1116",
-				"title": "Phasellus mattis quam porta",
-				"copy": "Etiam ultricies pulvinar urna, sed varius velit blandit quis. Donec viverra purus tortor, eget iaculis ligula scelerisque in. Sed pharetra urna vel augue mattis, quis sagittis urna scelerisque. Integer interdum metus fermentum, hendrerit libero eget, euismod turpis. Duis mi diam, lobortis eu orci in, posuere dictum dui.",
-				"url": "#NEED_URL_FOR_THIS_LINK"
+				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw79307f23/Knowledge_Center/help-center/how-to-change-the-oil-in-a-cub-cadet-riding-lawn-mower_1100x572.jpg?sw=1116",
+				"title": "How to Change the Oil in your Riding Mower",
+				"copy": "Regular oil changes are critical to keeping your riding lawn mower's engine in top shape and prolonging the life of your mower. Watch this video to learn how to change the oil...",
+				"url": "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-change-the-oil-in-a-cub-cadet-riding-lawn-mower.html"
 			},
 			{
-				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw26bee84c/images/product-line-browse/Main-Carousel/SnowBlow_PLB_31AH5GVO710_2X_30EFI_desktop_1015x630.jpg?sw=1116",
-				"title": "Suspendisse varius risus",
-				"copy": "Proin ornare feugiat magna vel dapibus. Cras ultricies, dolor suscipit vehicula dictum, risus risus vehicula ligula, eget posuere arcu felis lacinia sapien.",
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/how-to-3.png?version=1,678,468,417,000",
+				"title": "How to Assemble Tire Chains on your Riding Mower",
+				"copy": "Just because it's winter, doesn't mean you won't be using your riding lawn mower. Whether hauling wood or clearing the drive with the snow thrower attachment, your machine can be a vital asset...",
 				"url": "#NEED_URL_FOR_THIS_LINK"
 			}
 		]
