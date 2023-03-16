@@ -139,17 +139,17 @@
 		"name": "Simply the best from Detroit, MI",
 		"unit": "XT1 LT46",
 		"hero": {
-			"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/hero-2-1024w.jpg?version=1,678,712,842,000",
+			"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/vf8f3346f3f9e48fc80cac0087ded1ed737356c1b/xt-enduro-series/hero-2-1024w.jpg?version=1,678,990,691,000",
 			"srcset": [
 				{
 					"size": "768",
 					"sizingType": "px",
-					"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/hero-2-1024w.jpg?version=1,678,712,842,000"
+					"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/vf8f3346f3f9e48fc80cac0087ded1ed737356c1b/xt-enduro-series/hero-2-1024w.jpg?version=1,678,990,691,000"
 				},
 				{
 					"size": "0",
 					"sizingType": "px",
-					"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/hero-2-768w.jpg?version=1,678,712,730,000"
+					"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/vf8f3346f3f9e48fc80cac0087ded1ed737356c1b/xt-enduro-series/hero-2-768w.jpg?version=1,678,991,353,000"
 				}
 			],
 			"alt": "",

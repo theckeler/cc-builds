@@ -120,11 +120,19 @@ const XTEnduroSeriesHome = () => {
 				</section>
 
 				{/* QuoteBlock */}
-				<section className="d-flex flex-column p-0 mt-3 position-relative">
-					<HeroImg hero={jsonData.quote.hero} addClass="position-absolute" />
+				<section className="d-flex flex-column p-0 mt-3 position-relative bg-primary">
+					<HeroImg
+						hero={jsonData.quote.hero}
+						addClass="position-absolute"
+						addCSS={{
+							maxWidth: "100em",
+							left: "50%",
+							transform: "translateX(-50%)",
+						}}
+					/>
 					<div
 						className="container w-100 p-1 pb-9 pb-lg-9"
-						style={{ zIndex: "2", paddingTop: "3em", minHeight: "45em" }}>
+						style={{ zIndex: "2", paddingTop: "3em", minHeight: "35em" }}>
 						<QuoteBlock
 							quote={jsonData.quote}
 							addClass="position-relative text-white pb-9 pb-lg-9"
