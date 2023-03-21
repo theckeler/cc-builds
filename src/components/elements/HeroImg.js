@@ -1,12 +1,12 @@
 const HeroImg = ({ hero, minHeightStyle = "", addClass = "", addCSS }) => {
-	console.log(addCSS);
 	return (
 		<picture className="">
 			{hero.srcset.map((block, i) => {
 				return (
 					<source
 						media={`(min-width: ${block.size}${block.sizingType})`}
-						srcset={block.img}
+						srcSet={block.img}
+						key={i}
 					/>
 				);
 			})}

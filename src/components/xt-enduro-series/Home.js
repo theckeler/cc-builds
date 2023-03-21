@@ -1,4 +1,7 @@
-import jsonData from "./data/home.json";
+import React, { useState, useEffect } from "react";
+
+import jsonDataUS from "./data/home.json";
+import jsonDataCA from "./data/home-ca.json";
 
 import IconCopyBlock from "../elements/IconCopyBlock";
 import QuoteBlock from "../elements/QuoteBlock";
@@ -8,12 +11,34 @@ import ProductBlock from "../elements/ProductBlock";
 import ImgCopyBlock from "../elements/ImgCopyBlock";
 import Button from "../elements/Button";
 import HeroImg from "../elements/HeroImg";
+import BuildMenu from "../elements/BuildMenu";
 
 const XTEnduroSeriesHome = () => {
+	const [switchLang, setSwitchLang] = useState({
+		active: "US",
+		langs: ["US", "CA"],
+	});
+	const [jsonData, setJsonData] = useState({ ...jsonDataUS });
+
+	useEffect(() => {
+		switch (switchLang.active) {
+			case "CA":
+				setJsonData({ ...jsonDataCA });
+				break;
+			case "CAFrench":
+				//setJsonData({ ...jsonDataCAFrench });
+				break;
+			default:
+				setJsonData({ ...jsonDataUS });
+		}
+	}, [switchLang]);
+
 	return (
 		<>
+			<BuildMenu {...{ switchLang, setSwitchLang }} />
+
 			{/* Head */}
-			<div className="">
+			<div className="mtd-page">
 				{/* HERO */}
 				<section className="position-relative">
 					<HeroImg hero={jsonData.hero} />
