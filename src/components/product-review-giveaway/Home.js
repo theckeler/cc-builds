@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const ProductReviewGiveaway = () => {
 	return (
-		<div className="container">
+		<div className="container py-4">
 			<h1>CUB CADET U.S. PRODUCT REVIEW GIVEAWAY</h1>
 			<h2>OFFICIAL RULES</h2>
 			<p>
