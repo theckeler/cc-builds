@@ -10,6 +10,7 @@ import ZeroTurn from "./zero-turn/Index";
 import Base from "./base/Index";
 import Financing from "./financing/Index";
 import XTEnduro from "./xt-enduro-series/Index";
+import ProductReviewGiveaway from "./product-review-giveaway/Index";
 
 const Index = () => {
 	return (
@@ -22,6 +23,10 @@ const Index = () => {
 			<Route path="/base/*" element={<Base />} />
 			<Route path="/financing/*" element={<Financing />} />
 			<Route path="/xt-enduro-series/*" element={<XTEnduro />} />
+			<Route
+				path="/product-review-giveaway/*"
+				element={<ProductReviewGiveaway />}
+			/>
 		</Routes>
 	);
 };

@@ -66,7 +66,9 @@ const Home = () => {
 				<li style={{ marginTop: "20px" }}>
 					<Link to="/xt-enduro-series">XT Enduro Series</Link>
 				</li>
-
+				<li style={{ marginTop: "20px" }}>
+					<Link to="/product-review-giveaway">Product Review Giveaway</Link>
+				</li>
 				{/* <li style={{ marginTop: "60px" }}>
           <a href="https://github.com/theckeler/cc-builds" target="_new">
             <svg
