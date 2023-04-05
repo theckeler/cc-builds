@@ -3,13 +3,17 @@ import React, { useState, useEffect } from "react";
 const ProductReviewGiveaway = () => {
 	return (
 		<div className="container py-4">
-			<h1>CUB CADET U.S. PRODUCT REVIEW GIVEAWAY</h1>
+			<h1>CUB CADET U.S. SPRING GIVEAWAY</h1>
 			<h2>OFFICIAL RULES</h2>
+			<h3>
+				NO PURCHASE NECESSARY TO ENTER OR WIN. A PURCHASE OR PRODUCT REVIEW WILL
+				NOT INCREASE YOUR CHANCE OF WINNING.
+			</h3>
 			<p>
-				This CUB CADET U.S. PRODUCT REVIEW GIVEAWAY (“Giveaway”) is sponsored by
-				MTD Products, Inc., a subsidiary of Stanley Black & Decker, Inc., with
-				its principal place of business at 5903 Grafton Road, Valley City, OH
-				44280 (“Sponsor”). The Giveaway period is from April 5 2023 at 12:01 am,
+				This CUB CADET U.S. SPRING GIVEAWAY (“Giveaway”) is sponsored by MTD
+				Products, Inc., a subsidiary of Stanley Black & Decker, Inc., with its
+				principal place of business at 5903 Grafton Road, Valley City, OH 44280
+				(“Sponsor”). The Giveaway period is from April 5, 2023 at 12:01 am,
 				Eastern Time (“ET”) through April 30, 2023, at 11:59 pm, ET (the
 				“Giveaway Period”). There will be one prize awarded.
 			</p>
@@ -36,12 +40,12 @@ const ProductReviewGiveaway = () => {
 				not fully agree to the terms of the Privacy Policy, such entrant should
 				not enter this Giveaway. Limit of one Entry per person, per Entry
 				Period. One (1) Winner to be declared; and one (1) prize total to be
-				awarded, for each Entry Period. Subject to federal, state and local laws
-				and regulations. Void where prohibited.
+				awarded. Prize draw will be held on May 2, 2023. Entry Period. Subject
+				to federal, state and local laws and regulations. Void where prohibited.
 			</p>
 			<p>
-				1. ELIGIBILITY: This Giveaway is open only to persons who are legal
-				residents of USA (50 states or Wash., DC), and at least the age of
+				1. <u>ELIGIBILITY:</u> This Giveaway is open only to persons who are
+				legal residents of USA (50 states or Wash., DC), and at least the age of
 				majority in their state of residence. Employees, their immediate
 				families (spouse, domestic partner, children, siblings, parents,
 				grandparents, grandchildren and step family members) and/or people
@@ -50,106 +54,59 @@ const ProductReviewGiveaway = () => {
 				eligible to enter.
 			</p>
 			<p>
-				2. HOW TO ENTER: Entrants must enter this Giveaway, during the Entry
-				Period only, as follows:
+				2. <u>HOW TO ENTER:</u> Entrants must enter this Giveaway, during the
+				Entry Period only, as follows:
 			</p>
 			<p>
-				1) Visit{" "}
-				<a href="ttps://www.cubcadet.com/en US/cub-review-sweepstakes.html">
+				1) Answer and submit the questions on the email (What is your lawn
+				size?; What type of mower do you prefer?)
+			</p>
+			<p>2) Agree to the Official Rules and Terms of Use.</p>
+			<p>
+				Visit{" "}
+				<a href="https://www.cubcadet.com/en US/cub-review-sweepstakes.html">
 					https://www.cubcadet.com/en US/cub-review-sweepstakes.html
-				</a>{" "}
-				(the "Giveaway Website");
-			</p>
-			<p>2) Include your first name, last name and email address;</p>
-			<p>
-				3) Complete and submit a product review per the Sponsor’s entry form;
-			</p>
-			<p>4) Agree to the Official Rules and Terms of Use.</p>
-			<p>
-				Limit of one (1) Entry per person, per Entry Period.{" "}
-				<u>
-					Entries must reflect entrant’s personal experience, contain a comment
-					or caption that is responsive to Section 2(3) above, and cannot
-					contain any objectionable or inappropriate content, in Sponsor’s sole
-					and absolute discretion.
-				</u>{" "}
-				By entering this Giveaway, each entrant represents and warrants that
-				their Entry is original, and they own all right and title thereto and
-				their Entry does not infringe any third party intellectual property
-				rights. Entrants agree to assign and hereby do assign to Sponsor the
-				ownership rights to the Entries. Entries must be entered at one time and
-				once an entrant submits their Entry, it cannot be changed. Entries will
-				be reviewed for content by Sponsor and Sponsor reserves the right to
-				remove any entry, in its sole and absolute discretion. Entry in this
-				Giveaway constitutes permission (except where prohibited by law) to use
-				entrant’s name, city, state, likeness, image and Entry for purposes of
-				advertising, promotion and publicity in all media now or hereafter
-				known, throughout the world in perpetuity, without additional
-				compensation, notification, permission or approval. All Entries become
-				the property of Sponsor and will not be returned and may not be
-				acknowledged. If Sponsor determines that an entrant has entered this
-				Giveaway more than once, such entrant’s first Entry will be the only
-				valid Entry and the other entries will be voided]. If this Giveaway is
-				not completed in accordance with these Official Rules, including if the
-				entry does not contain the required subject criteria, the entrant’s
-				entry will be voided. Entries made by any other individual or any
-				entity, including but not limited to commercial Giveaway subscription
-				notification and/or entering services, will be declared invalid and
-				disqualified for this Giveaway. Tampering with the entry process or the
-				operation of this Giveaway is prohibited and any entries deemed by
-				Sponsor, in its sole and absolute discretion, to have been entered in
-				this manner will be void. Entries generated by a script, macro, or other
-				automated means will be disqualified. Entries that are incomplete,
-				garbled, corrupted, or unintelligible for any reason, including, but not
-				limited to, computer or network malfunction or congestion, are void and
-				will not be accepted. In case of a dispute over the identity of an
-				entrant, the authorized account holder of the account used to enter will
-				be deemed to be the entrant. An entry will be disqualified if it is
-				forged, falsified, altered or improperly tampered with in any way.
+				</a>
 			</p>
 			<p>
-				ALTERNATIVE METHOD OF ENTRY (“Mail-In entry”) -- NO PURCHASE OR PRODUCT
-				REVIEW NECESSARY TO ENTER OR WIN.
+				Limit of one (1) Entry per person, per Entry Period. By entering this
+				Giveaway, each entrant represents and warrants that their Entry is
+				original, and they own all right and title thereto and their Entry does
+				not infringe any third party intellectual property rights. Entrants
+				agree to assign and hereby do assign to Sponsor the ownership rights to
+				the Entries. Entries must be entered at one time and once an entrant
+				submits their Entry, it cannot be changed. Entries will be reviewed for
+				content by Sponsor and Sponsor reserves the right to remove any entry,
+				in its sole and absolute discretion. Entry in this Giveaway constitutes
+				permission (except where prohibited by law) to use entrant’s name, city,
+				state, likeness, image and Entry for purposes of advertising, promotion
+				and publicity in all media now or hereafter known, throughout the world
+				in perpetuity, without additional compensation, notification, permission
+				or approval. All Entries become the property of Sponsor and will not be
+				returned and may not be acknowledged. If Sponsor determines that an
+				entrant has entered this Giveaway more than once, such entrant’s first
+				Entry will be the only valid Entry and the other entries will be
+				voided]. If this Giveaway is not completed in accordance with these
+				Official Rules, including if the entry does not contain the required
+				subject criteria, the entrant’s entry will be voided. Entries made by
+				any other individual or any entity, including but not limited to
+				commercial Giveaway subscription notification and/or entering services,
+				will be declared invalid and disqualified for this Giveaway. Tampering
+				with the entry process or the operation of this Giveaway is prohibited
+				and any entries deemed by Sponsor, in its sole and absolute discretion,
+				to have been entered in this manner will be void. Entries generated by a
+				script, macro, or other automated means will be disqualified. Entries
+				that are incomplete, garbled, corrupted, or unintelligible for any
+				reason, including, but not limited to, computer or network malfunction
+				or congestion, are void and will not be accepted. In case of a dispute
+				over the identity of an entrant, the authorized account holder of the
+				account used to enter will be deemed to be the entrant. An entry will be
+				disqualified if it is forged, falsified, altered or improperly tampered
+				with in any way.
 			</p>
-			<p>Entrants may enter this Giveaway by doing the following:</p>
-			<ul className="" style={{ listStyleType: "none" }}>
-				<li>
-					(1) Complete a card by providing your name, USA street mailing address
-					and email address;
-				</li>
-				<li>
-					(2) Mail your completed card to MTD Products Inc, 5903 Grafton Road,
-					Valley City OH 44280, ATTN: [CONTACT NAME] and include Cub Cadet
-					Product Review Giveaway on the outer envelope;
-				</li>
-				<li>
-					(3) Mail-In entries must be postmarked during an Entry Period and
-					received by Sponsor at the above address no later than 11:59:59 PM ET
-					on the End Date indicated above for each Entry Period;{" "}
-				</li>
-				<li>
-					(4) Full responsibility for the proper postage rests solely with
-					entrant (you);
-				</li>
-				<li>
-					(5) Mail-In entries must be submitted by entrant (you) and contain all
-					required information;
-				</li>
-				<li>
-					(6) Limit of one (1) Mail-in entry per entrant, per Entry Period;
-				</li>
-				<li>
-					(7) Sponsor is not responsible for any lost, late, damaged,
-					incomplete, misdirected or illegible Mail-in entries; and
-				</li>
-				<li>
-					(8) Proof of sending or submission will not be deemed to be proof of
-					receipt of any Mail-in entries by Sponsor.{" "}
-				</li>
-			</ul>
 			<p>
-				3. RANDOM DRAWING: The random drawing will be held on each of the Draw
-				Dates indicated above. The one Entry drawn will be declared the
+				3. <u>RANDOM DRAWING:</u> The random drawing will be held on each of the
+				Draw Date indicated above. The one Entry drawn will be declared the
 				potential “Winner”. Entrants are not required to be present to win. Odds
 				of winning depend on the total number of Entries received. AN ENTRANT IS
 				NOT THE OFFICIAL WINNER UNLESS AND UNTIL ENTRANT'S ELIGIBILITY HAS BEEN
@@ -157,32 +114,32 @@ const ProductReviewGiveaway = () => {
 				COMPLETE.
 			</p>
 			<p>
-				4. NOTIFICATION / PRIZE ACCEPTANCE: The potential Winners will be
+				4. <u>NOTIFICATION / PRIZE ACCEPTANCE:</u> The potential Winners will be
 				notified by Sponsor via email within five (5) days after the drawing is
 				held.
 			</p>
 			<p>
 				The potential Winner must accept the prize by returning to Sponsor a
 				completed and personally signed Affidavit of Eligibility and
-				Liability/Publicity Release{" "}
-				<u>
-					within fourteen (14) business days of Sponsor’s first notification
-					attempt -- failure to do so will result in forfeiture of the prize.
-				</u>{" "}
-				Sponsor shall have no liability for any notification that is not
-				received by the potential Winner for any reason. If the potential Winner
-				does not respond to notification and accept the prize as required herein
-				or if prize notification is returned as unclaimed or undeliverable, such
-				potential Winner will be disqualified and forfeit prize. If the
-				potential Winner is found to be ineligible, has not complied with these
-				Official Rules or declines the prize such potential Winner will be
-				disqualified and forfeit prize. If the potential Winner is disqualified
-				or forfeits prize, Sponsor may, but shall not be required to, select an
-				alternate potential Winner from amongst all remaining eligible Entries.
+				Liability/Publicity Release within fourteen (14) business days of
+				Sponsor’s first notification attempt -- failure to do so will result in
+				forfeiture of the prize. Sponsor shall have no liability for any
+				notification that is not received by the potential Winner for any
+				reason. If the potential Winner does not respond to notification and
+				accept the prize as required herein or if prize notification is returned
+				as unclaimed or undeliverable, such potential Winner will be
+				disqualified and forfeit prize. If the potential Winner is found to be
+				ineligible, has not complied with these Official Rules or declines the
+				prize such potential Winner will be disqualified and forfeit prize. If
+				the potential Winner is disqualified or forfeits prize, Sponsor may, but
+				shall not be required to, select an alternate potential Winner from
+				amongst all remaining eligible Entries.
 			</p>
 			<p>
-				5. PRIZE: The prize to be awarded for each Entry Period is a Visa® Gift
-				Card in the amount of US $100.{" "}
+				5. <u>PRIZE:</u> The prize to be awarded for each Entry Period is a
+				Visa® Gift Card in the amount of US $100. After being verified, winner
+				will receive the gift card via overnight mail/courier to winner’s home
+				address.{" "}
 			</p>
 			<p>
 				The prize is non-assignable and non-transferable and has no credit or
@@ -193,16 +150,14 @@ const ProductReviewGiveaway = () => {
 				Winner by Sponsor. The prize will be mailed to the Winner’s USA street
 				mailing address (cannot ship to a post office box) via regular ground
 				mail. The prize ARV represents Sponsor’s good faith determination, is
-				final and binding and cannot be challenged or appealed.{" "}
-				<u>
-					All income and other taxes (federal, state and local) on the prize are
-					the sole responsibility of the Winner.
-				</u>
+				final and binding and cannot be challenged or appealed. All income and
+				other taxes (federal, state and local) on the prize are the sole
+				responsibility of the Winner.
 			</p>
 			<p>
-				6. PUBLICITY RELEASE: Acceptance of the prize constitutes the Winner's
-				permission for Sponsor to use the Winner's name, photograph, video,
-				image, likeness, voice, biographical information, statements,
+				6. <u>PUBLICITY RELEASE:</u> Acceptance of the prize constitutes the
+				Winner's permission for Sponsor to use the Winner's name, photograph,
+				video, image, likeness, voice, biographical information, statements,
 				testimonial (in whole or part), prize information and address (city and
 				state) (collectively, "Attributes") for advertising and/or publicity
 				purposes worldwide and in all forms of media now known or hereafter
@@ -211,7 +166,7 @@ const ProductReviewGiveaway = () => {
 				all claims arising out of the use of such Attributes.
 			</p>
 			<p>
-				7. ENTRY CONDITIONS AND RELEASES: By entering this GIVEAWAY, EACH
+				7. <u>ENTRY CONDITIONS AND RELEASES:</u> By entering this GIVEAWAY, EACH
 				ENTRANT AGREES for entrant and for entrant’s heirs, executors,
 				administrators, representatives, insurers and assigns: (A) to release
 				and hold harmless and indemnify the Giveaway Entities, Giveaway prize
@@ -255,8 +210,8 @@ const ProductReviewGiveaway = () => {
 				to depiction of the prize or announcement of the Winner.
 			</p>
 			<p>
-				8. RELEASE OF CLAIMS (CALIFORNIA): Each entrant acknowledges that there
-				is a possibility that, subsequent to their involvement with this
+				8. <u>RELEASE OF CLAIMS (CALIFORNIA):</u> Each entrant acknowledges that
+				there is a possibility that, subsequent to their involvement with this
 				Giveaway and adherence to these Official Rules they may discover facts
 				or incur or suffer claims which were unknown or unsuspected at the time
 				agreeing to these Official Rules, and which if known by them at that
@@ -269,11 +224,11 @@ const ProductReviewGiveaway = () => {
 				1542 of the California Civil Code, which provides: “A general release
 				does not extend to claims that the creditor does not know or suspect to
 				exist in his favor at the time of executing the release, which if known
-				by him must have materially affected his settlement with the debtor.”{" "}
+				by him must have materially affected his settlement with the debtor.”
 			</p>
 			<p>
-				9. DISQUALIFICATION/FORCE MAJEURE. Sponsor reserves the right to modify,
-				extend or terminate this Giveaway if it determines, in its sole
+				9. <u>DISQUALIFICATION/FORCE MAJEURE.</u> Sponsor reserves the right to
+				modify, extend or terminate this Giveaway if it determines, in its sole
 				discretion, that this Giveaway is technically impaired or corrupted or
 				that fraud or technical problems, failures or malfunctions or other
 				causes beyond Sponsor’s control have destroyed or severely undermined or
@@ -298,30 +253,32 @@ const ProductReviewGiveaway = () => {
 				remedy under such circumstances.
 			</p>
 			<p>
-				10. DISPUTES: Except where prohibited, entrant agrees that: (1) any and
-				all disputes, claims and causes of action arising out of or connected
-				with this Giveaway or the prize awarded shall be resolved individually,
-				without resort to any form of class action; (2) any and all claims,
-				judgments and awards shall be limited to actual out-of-pocket costs
-				incurred, including costs associated with entering this Giveaway, but in
-				no event attorneys' or legal fees; and (3) unless otherwise prohibited,
-				under no circumstances will entrant be permitted to obtain awards for,
-				and entrant hereby waives all rights to claim, indirect, punitive,
-				incidental and consequential damages and any other damages, other than
-				for actual out-of-pocket expenses, and any and all rights to have
-				damages multiplied or otherwise increased. All issues and questions
-				concerning the construction, validity, interpretation and enforceability
-				of these Official Rules shall be governed by, and construed in
-				accordance with, the laws of the State of Maryland without giving effect
-				to any choice of law or conflict of law rules (whether of State of
-				Maryland or any other jurisdiction), which would cause the application
-				of the laws of any jurisdiction other than the State of Maryland.
+				10. <u>DISPUTES:</u> Except where prohibited, entrant agrees that: (1)
+				any and all disputes, claims and causes of action arising out of or
+				connected with this Giveaway or the prize awarded shall be resolved
+				individually, without resort to any form of class action; (2) any and
+				all claims, judgments and awards shall be limited to actual
+				out-of-pocket costs incurred, including costs associated with entering
+				this Giveaway, but in no event attorneys' or legal fees; and (3) unless
+				otherwise prohibited, under no circumstances will entrant be permitted
+				to obtain awards for, and entrant hereby waives all rights to claim,
+				indirect, punitive, incidental and consequential damages and any other
+				damages, other than for actual out-of-pocket expenses, and any and all
+				rights to have damages multiplied or otherwise increased. All issues and
+				questions concerning the construction, validity, interpretation and
+				enforceability of these Official Rules shall be governed by, and
+				construed in accordance with, the laws of the State of Maryland without
+				giving effect to any choice of law or conflict of law rules (whether of
+				State of Maryland or any other jurisdiction), which would cause the
+				application of the laws of any jurisdiction other than the State of
+				Maryland.
 			</p>
 			<p>
-				11. OFFICIAL RULES: To obtain these Official Rules, send a
-				self-addressed envelope to MTD Products Inc., 5903 Grafton Road, Valley
-				City OH 44280, Attn: Morgan Fabian. All such requests must be received
-				by December 30, 2022
+				11. <u>OFFICIAL RULES/WINNER’S NAME:</u> To obtain these Official Rules
+				or the name of the winner, send a self-addressed envelope to MTD
+				Products Inc., 5903 Grafton Road, Valley City OH 44280, Attn: Morgan
+				Fabian. All such requests must be received by May 15, 2023. Please
+				specify which you are requesting, official rules or winner’s name.
 			</p>
 			<p>
 				<small>
