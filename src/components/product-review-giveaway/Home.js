@@ -1,5 +1,3 @@
-import React, { useState, useEffect } from "react";
-
 const ProductReviewGiveaway = () => {
 	return (
 		<div className="container py-4">
