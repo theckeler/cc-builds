@@ -1,5 +1,8 @@
-const Button = ({ copy, url, addClass, addClick, addStyle }) => {
+const Button = ({ copy, url, addClass, addClick, addStyle, srOnly }) => {
   const addPadding = { padding: "0.625rem 2.5rem" };
+
+
+  
 
   if (url) {
     return (
