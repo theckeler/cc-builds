@@ -1,17 +1,16 @@
-import React, { useState } from "react";
-//import { useEffect } from "react";
+// import { useEffect, useState } from "react";
 
 import "./scss/financing.scss";
 import jsonData from "./data/financing-new.json";
 
-//import MainBlock from "./elements/MainBlock";
-import Faqs from "../elements/Faqs";
-import ImgCopyBlock from "../elements/ImgCopyBlock";
-import CTABlock from "../elements/CTABlock";
+// import MainBlock from "./elements/MainBlock";
+// import ImgCopyBlock from "../elements/ImgCopyBlock";
 // import GetHelp from "./elements/GetHelp";
 // import Menu from "./elements/Menu";
 // import NoResults from "./elements/NoResults";
 // import FilterButton from "./elements/FilterButton";
+import Faqs from "../elements/Faqs";
+import CTABlock from "../elements/CTABlock";
 import Button from "../elements/Button";
 
 const Financing = () => {
@@ -258,15 +257,15 @@ const Financing = () => {
 												</small>
 											</button>
 											<div
-												className="d-none text-left details-block position-fixed p-xl-3 min-vh-100 overflow-auto"
+												className="d-none text-left details-block p-md-3 overflow-auto"
 												id={`details-block-${i + 1}`}
 												style={{
 													top: 0,
 													right: 0,
-													maxWidth: "400px",
+													//maxWidth: "400px",
 													zIndex: 1001,
 													backgroundColor: "#fff",
-													boxShadow: "0 0 10px rgba(0,0,0,0.3)",
+													//boxShadow: "0 0 10px rgba(0,0,0,0.3)",
 													maxHeight: "100vh",
 												}}>
 												<div className="">
