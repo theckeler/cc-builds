@@ -1,0 +1,680 @@
+<link
+	rel="stylesheet"
+	href="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1677240364535/css/global.css" />
+
+<!-- ALL BELOW -->
+
+<div class="mtd-page container">
+	<style type="text/css">
+		.hero.slant-down.content-page-image {
+			display: none;
+			position: absolute;
+			top: -1000000vw;
+			left: -1000000vh;
+			height: 0;
+			width: 0;
+		}
+		.container.content-asset-container {
+			max-width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+		.model-num-modal h4 {
+			margin-bottom: 1rem;
+		}
+		.model-num-modal .modal-header {
+			padding-bottom: 0;
+		}
+		.model-num-modal .modal-body {
+			clear: both;
+			overflow: hidden;
+		}
+		.model-num-modal .img-wrap {
+			width: 300px;
+			display: block;
+			margin-bottom: 1rem;
+		}
+		.model-num-modal ul {
+			padding-left: 1rem;
+		}
+		.model-num-modal img {
+			max-width: 100%;
+		}
+		.tab-browse-parts {
+			padding: 0 1rem;
+		}
+		.tab-browse-parts h2 {
+			margin-bottom: 1rem;
+			text-align: center;
+		}
+		.tab-browse-parts nav {
+			overflow-x: auto;
+			overflow-y: hidden;
+			white-space: nowrap;
+			margin-bottom: 1.5rem;
+			margin-left: -1rem;
+			margin-right: -1rem;
+		}
+		.tab-browse-parts ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		.tab-browse-parts li {
+			display: inline-block;
+		}
+		.tab-browse-parts li a {
+			text-decoration: none;
+			font-weight: 600;
+			text-align: center;
+			display: block;
+			text-transform: uppercase;
+		}
+		.tab-browse-parts .img-wrap {
+			display: block;
+			width: 150px;
+			margin-bottom: 8px;
+		}
+		.tab-browse-parts .img-wrap img {
+			max-width: 100%;
+		}
+		.tab-browse-parts .btn-secondary {
+			margin-bottom: 3rem;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 150px;
+		}
+		.pf-search {
+			background: #efefef;
+			padding: 2rem 0;
+			max-width: 1220px;
+			margin: 0 auto 3rem;
+		}
+		.pf-search .wrap {
+			max-width: 375px;
+			margin: 0px auto;
+		}
+		.pf-search h3 {
+			text-transform: uppercase;
+			font-size: 1.125rem;
+			text-align: center;
+			margin: 0 0 1rem;
+		}
+		.pf-search .input-btn {
+			position: relative;
+			width: 290px;
+		}
+		.pf-search .input-btn input {
+			width: 250px;
+		}
+		.pf-search .input-btn button {
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 40px;
+			width: 40px;
+			padding: 0;
+		}
+		.pf-search .input-btn .icon-container {
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			top: 0px;
+			right: 0px;
+		}
+		.pf-search .find-model {
+			text-transform: uppercase;
+			font-weight: 500;
+			text-align: center;
+			display: block;
+		}
+		.pf-search .col {
+			margin-bottom: 1.5rem;
+		}
+		.pf-search .cs {
+			text-align: center;
+			font-weight: 500;
+		}
+		.pf-search .cs p {
+			font-size: 1rem;
+			line-height: 1.25rem;
+		}
+		.pf-search .cs .heading {
+			font-size: 1.125rem;
+			line-height: 1.5rem;
+		}
+		.pf-search .heading span {
+			display: block;
+		}
+		.pf-search .cs a {
+			font-size: 1.5rem;
+			line-height: 1.5rem;
+			font-weight: 700;
+			margin-bottom: 0;
+			display: block;
+			text-decoration: none;
+		}
+		.pf-search .cs .btn-outline-secondary svg {
+			margin-right: 0.25rem;
+		}
+		.s-a-p {
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+		.s-a-p .tab-browse-parts,
+		.s-a-p .tab-attachments,
+		.s-a-p .tab-diagrams,
+		.s-a-p .tab-part-finder {
+			display: none;
+			transition: opacity 0.4s ease-in-out;
+		}
+		.s-a-p .show-tab {
+			transition: opacity 0.4s ease-in-out;
+			display: block;
+		}
+		.s-a-p .sticky {
+			background: #000;
+			padding: 0.25rem 0.5rem;
+			position: -webkit-sticky;
+			position: sticky;
+			top: 0;
+			margin-bottom: 2rem;
+			z-index: 1;
+		}
+		.s-a-p .sticky nav {
+			overflow-x: auto;
+			overflow-y: hidden;
+			white-space: nowrap;
+		}
+		.s-a-p .sticky ul {
+			max-width: 380px;
+			margin: 0px auto;
+			padding: 0;
+		}
+		.s-a-p .sticky li {
+			display: inline-block;
+			position: relative;
+			padding: 0.5rem 0;
+		}
+		.s-a-p .sticky a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 0.75rem;
+			text-transform: uppercase;
+			font-weight: 700;
+			padding: 0.5rem 0.375rem;
+			transition: background-color 0.5s ease;
+		}
+		.s-a-p .sticky a:hover {
+			color: #000;
+			background-color: #fff;
+		}
+		.s-a-p .sticky .active:hover,
+		.s-a-p .sticky .active {
+			background: #ffc20f;
+			color: #000;
+		}
+		.oc {
+			background: #ffc10f;
+			padding: 1rem;
+			margin-bottom: 2rem;
+		}
+		.oc .group {
+			max-width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.oc .col {
+			background: #fff;
+			padding: 1.5rem 2rem;
+			margin-bottom: 1.5rem;
+		}
+		.oc h1,
+		.oc .col h2,
+		.oc .col p {
+			text-align: center;
+		}
+		.oc h1,
+		.oc h2,
+		.oc p {
+			margin-bottom: 1.5rem;
+		}
+		.oc .icon-container {
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 1rem;
+			width: 84px;
+		}
+		.oc p {
+			max-width: 220px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.oc .col .btn-secondary {
+			width: 90%;
+			margin: 0px auto;
+			display: block;
+		}
+		.hli {
+			padding: 1rem;
+			margin-bottom: 2rem;
+		}
+		.hli h1 {
+			text-align: center;
+			text-transform: uppercase;
+		}
+		.hli .group {
+			max-width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.hli .col {
+			padding: 1.5rem 2rem;
+		}
+		.hli ul {
+			list-style-type: none;
+			margin: 0 0 0 1rem;
+			padding: 0;
+		}
+		.hli li {
+			margin-bottom: 0.3125rem;
+		}
+		.hli a {
+			text-decoration: none;
+			font-size: 1rem;
+			font-weight: 500;
+			display: block;
+		}
+		@media only screen and (min-width: 23.4375em) {
+			.pf-search .input-btn {
+				position: relative;
+				width: 348px;
+			}
+			.pf-search .input-btn input {
+				width: 308px;
+			}
+		}
+		@media only screen and (min-width: 48em) {
+			.s-a-p .sticky {
+				padding: 0.5rem 1rem;
+			}
+			.s-a-p .sticky nav {
+				overflow: hidden;
+				white-space: normal;
+			}
+			.s-a-p .sticky ul {
+				max-width: 530px;
+			}
+			.s-a-p .sticky li {
+				padding: 0.5rem;
+			}
+			.s-a-p .sticky a {
+				font-size: 0.875rem;
+				line-height: 1rem;
+				padding: 0.5rem 0.75rem;
+			}
+			.tab-browse-parts {
+				max-width: 768px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 4rem;
+			}
+			.tab-attachments {
+				max-width: 615px;
+			}
+			.tab-browse-parts h2 {
+				text-align: center;
+			}
+			.tab-browse-parts nav {
+				overflow: hidden;
+				margin-bottom: 2rem;
+			}
+			.tab-browse-parts .part-types-list .img-wrap {
+				width: 125px;
+			}
+			.model-num-modal .img-wrap {
+				float: right;
+			}
+		}
+		@media only screen and (min-width: 52.5em) {
+			.pf-search .wrap {
+				max-width: 840px;
+			}
+			.pf-search .group {
+				clear: both;
+				overflow: hidden;
+			}
+			.pf-search .col {
+				float: left;
+				width: 50%;
+			}
+			.pf-search h3 {
+				text-align: left;
+			}
+			.pf-search .find-model {
+				text-align: left;
+				margin-left: 4rem;
+			}
+			.pf-search .heading span {
+				display: inline;
+			}
+			.tab-browse-parts {
+				max-width: 840px;
+			}
+			.tab-attachments {
+				max-width: 672px;
+			}
+			.tab-browse-parts li {
+				margin-right: 1rem;
+			}
+		}
+		@media only screen and (min-width: 60em) {
+			.oc {
+				padding: 2rem 0 3rem;
+			}
+			.oc h1 {
+				margin-bottom: 2.5rem;
+				font-size: 2.5rem;
+			}
+			.oc .group {
+				clear: both;
+				overflow: hidden;
+				max-width: 940px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.oc .col {
+				float: left;
+				width: 31%;
+				margin: 0 2rem 0 0;
+			}
+			.oc .col:last-child {
+				margin-right: 0;
+			}
+			.hli h1 {
+				font-size: 1.75rem;
+			}
+			.oc h2,
+			.hli h3 {
+				font-size: 1.5rem;
+			}
+			.oc .icon-container {
+				height: 70px;
+			}
+			.hli .group {
+				clear: both;
+				overflow: hidden;
+				width: 99%;
+				max-width: 1220px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.hli .col {
+				float: left;
+				width: 23%;
+				margin: 0 1rem 0 0;
+				padding-left: 0;
+				padding-right: 0;
+			}
+			.hli .ilt {
+				width: 20%;
+			}
+			.hli .pml {
+				width: 30%;
+			}
+			.hli .ppl {
+				width: 26%;
+			}
+			.hli .pa {
+				width: 18%;
+			}
+			.hli .col:last-child {
+				margin-right: 0;
+			}
+			.hli li {
+				margin-bottom: 0.75rem;
+			}
+			.tab-browse-parts h2 {
+				margin-bottom: 2rem;
+			}
+			.tab-browse-parts h2 a {
+				top: 1rem;
+			}
+			.tab-browse-parts li {
+				margin-right: 1rem;
+			}
+		}
+		@media only screen and (min-width: 69.25em) {
+			.tab-browse-parts {
+				max-width: 1108px;
+			}
+			.tab-attachments {
+				max-width: 886px;
+			}
+			.tab-browse-parts .img-wrap {
+				width: 190px;
+			}
+			.tab-browse-parts .part-types-list .img-wrap {
+				width: 160px;
+			}
+		}
+		@media only screen and (min-width: 80em) {
+			.oc .group {
+				max-width: 1220px;
+			}
+			.oc .col {
+				width: 28%;
+				margin-right: 6rem;
+			}
+		}
+
+		.bg-yellow {
+			background: #ffc20f;
+		}
+
+		.bg-yellow p {
+			font-size: 26px;
+		}
+
+		.bg-yellow a {
+			text-decoration: none;
+			font-size: 26px;
+			font-weight: 700;
+		}
+
+		.section-8 {
+			margin-top: 60px;
+			padding: 40px 20px;
+			font-size: 36px;
+			font-weight: 700;
+			text-align: center;
+		}
+	</style>
+	<section class="pt-6">
+		<div class="wrapper">
+			<ul
+				class="list-unstyled d-flex flex-column flex-md-row align-items-center px-3">
+				<li class="">
+					<h2 class="text-center">Lawn &amp; Garden Tractor Articles</h2>
+				</li>
+				<li class="ml-2">
+					<a class="d-block text-center"><u>View All</u></a>
+				</li>
+			</ul>
+			<div class="slick pl-3 pr-3">
+				<ul class="list-unstyled d-flex flex-column flex-md-row">
+					<li class="col-sm-12 col-md-4 p-1 d-flex flex-column">
+						<a
+							href="https://www.cubcadet.ca/en/knowledge-best-in-class-cut-ca.html"
+							class="d-flex flex-column text-decoration-none p-2 h-100"
+							style="background-color: rgb(239, 239, 239)">
+							<img
+								src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw36bb159f/Knowledge_Center/help-center/best-in-class-cut_1100x572.jpg?sw=1116"
+								alt="" />
+							<div class="content d-flex flex-column p-3 h-100">
+								<strong class="h3" style="font-size: 1.6em">
+									What Does It Mean to Have the Best-in-Class Cut?
+								</strong>
+								<p class="copy mt-2">
+									Cut quality is a primary consideration when purchasing a lawn
+									mower, and the ability to cut a consistent, even surface with
+									fewer clumps and finer clippings is an important reason...
+								</p>
+								<span
+									class="mt-auto text-uppercase font-weight-bold"
+									style="text-decoration: underline">
+									Read more
+								</span>
+							</div>
+						</a>
+					</li>
+					<li class="col-sm-12 col-md-4 p-1 d-flex flex-column">
+						<a
+							href="https://www.cubcadet.ca/en/knowledge-must-have-riding-mower-attachments-ca.html"
+							class="d-flex flex-column text-decoration-none p-2 h-100"
+							style="background-color: rgb(239, 239, 239)">
+							<img
+								src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dwadb425f5/Knowledge_Center/help-center/must-have-riding-mower-attachments_1100x572.jpg?sw=1116"
+								alt="" />
+							<div class="content d-flex flex-column p-3 h-100">
+								<strong class="h3" style="font-size: 1.6em">
+									5 Must-Have Riding Mower Attachments
+								</strong>
+								<p class="copy mt-2">
+									The Cub Cadet® XT Enduro Series™ was built to be versatile.
+									Attachments and accessories will unlock the full potential of
+									your riding mower, making it work for you year-round...
+								</p>
+								<span
+									class="mt-auto text-uppercase font-weight-bold"
+									style="text-decoration: underline">
+									Read more
+								</span>
+							</div>
+						</a>
+					</li>
+					<li class="col-sm-12 col-md-4 p-1 d-flex flex-column">
+						<a
+							href="https://www.cubcadet.ca/en/knowledge-benefits-of-battery-lawn-mower-ca.html"
+							class="d-flex flex-column text-decoration-none p-2 h-100"
+							style="background-color: rgb(239, 239, 239)">
+							<img
+								src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw203ebac9/Knowledge_Center/help-center/benefits-of-battery-lawn-mower_1100x572.jpg?sw=1116"
+								alt="" />
+							<div class="content d-flex flex-column p-3 h-100">
+								<strong class="h3" style="font-size: 1.6em">
+									Benefits of a Battery-Powered Lawn Mower
+								</strong>
+								<p class="copy mt-2">
+									A battery-powered lawn mower can enhance your overall mowing
+									experience. After taking into account yard size and terrain-
+									battery powered mowers are a better fit for smaller yards...
+								</p>
+								<span
+									class="mt-auto text-uppercase font-weight-bold"
+									style="text-decoration: underline">
+									Read more
+								</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="pb-6">
+		<div class="wrapper">
+			<ul
+				class="list-unstyled d-flex flex-column flex-md-row align-items-center px-3">
+				<li class="">
+					<h2 class="text-center">How To's &amp; Maintenance</h2>
+				</li>
+				<li class="ml-2">
+					<a class="d-block text-center"><u>View All</u></a>
+				</li>
+			</ul>
+			<div class="slick pl-3 pr-3">
+				<ul class="list-unstyled d-flex flex-column flex-md-row">
+					<li class="col-sm-12 col-md-4 p-1 d-flex flex-column">
+						<a
+							href="https://www.cubcadet.ca/en/knowledge-how-to-change-the-air-filter-on-a-cub-cadet-rider.html"
+							class="d-flex flex-column text-decoration-none p-2 h-100"
+							style="background-color: rgb(239, 239, 239)">
+							<img
+								src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/how-to-1.png?version=1,678,468,412,000"
+								alt="" />
+							<div class="content d-flex flex-column p-3 h-100">
+								<strong class="h3" style="font-size: 1.6em">
+									How to Change the Air Filter on a Riding Mower
+								</strong>
+								<p class="copy mt-2">
+									It is recommended that your engine air filter be cleaned or
+									replaced every 50 operating hours. In dry, dusty conditions
+									this should be done more frequently. The video instructions
+									below...
+								</p>
+								<span
+									class="mt-auto text-uppercase font-weight-bold"
+									style="text-decoration: underline">
+									Read more
+								</span>
+							</div>
+						</a>
+					</li>
+					<li class="col-sm-12 col-md-4 p-1 d-flex flex-column">
+						<a
+							href="https://www.cubcadet.ca/en/https%3Awww.cubcadet.comequipmentcubcadetknowledge-centermaintenancehow-to-change-the-oil-in-a-cub-cadet-riding-lawn-mower/knowledge-how-to-change-the-oil-in-a-cub-cadet-riding-lawn-mower.html"
+							class="d-flex flex-column text-decoration-none p-2 h-100"
+							style="background-color: rgb(239, 239, 239)">
+							<img
+								src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw79307f23/Knowledge_Center/help-center/how-to-change-the-oil-in-a-cub-cadet-riding-lawn-mower_1100x572.jpg?sw=1116"
+								alt="" />
+							<div class="content d-flex flex-column p-3 h-100">
+								<strong class="h3" style="font-size: 1.6em">
+									How to Change the Oil in your Riding Mower
+								</strong>
+								<p class="copy mt-2">
+									Regular oil changes are critical to keeping your riding lawn
+									mower's engine in top shape and prolonging the life of your
+									mower. Watch this video to learn how to change the oil...
+								</p>
+								<span
+									class="mt-auto text-uppercase font-weight-bold"
+									style="text-decoration: underline">
+									Read more
+								</span>
+							</div>
+						</a>
+					</li>
+					<li class="col-sm-12 col-md-4 p-1 d-flex flex-column">
+						<a
+							href="https://www.cubcadet.ca/en/knowledge-how-to-assemble-tire-chains-on-your-cub-cadet-riding-mower.html"
+							class="d-flex flex-column text-decoration-none p-2 h-100"
+							style="background-color: rgb(239, 239, 239)">
+							<img
+								src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/how-to-3.png?version=1,678,468,417,000"
+								alt="" />
+							<div class="content d-flex flex-column p-3 h-100">
+								<strong class="h3" style="font-size: 1.6em">
+									How to Assemble Tire Chains on your Riding Mower
+								</strong>
+								<p class="copy mt-2">
+									Just because it's winter, doesn't mean you won't be using your
+									riding lawn mower. Whether hauling wood or clearing the drive
+									with the snow thrower attachment, your machine can be a vital
+									asset...
+								</p>
+								<span
+									class="mt-auto text-uppercase font-weight-bold"
+									style="text-decoration: underline">
+									Read more
+								</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</div>

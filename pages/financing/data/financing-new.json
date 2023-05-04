@@ -1,0 +1,122 @@
+{
+	"h2": "Shop Online Financing Plans",
+	"copy": "The offers below are available online. Additional financing offers may be available at your local dealer.",
+	"plans": {
+		"blocks": [
+			{
+				"term": 6,
+				"title": "No interest if paid in full within 6 months<sup>1</sup>",
+				"copy": "Interest will be charged from the purchase date if the purchase balance is not paid in full by the end of the promotional period.",
+				"minPurchase": 199,
+				"promoStart": "May 1, 2023",
+				"promoEnd": "July 31, 2023",
+				"terms": {
+					"title": "Cub Cadet Revolving Plan Disclosures Available 5/1/2023-7/31/2023 Commercial Cards also available. For offer details about Commercial Cards please contact your Dealer.",
+					"copy": "<strong><sup>1</sup> No Interest if Paid in Full within 6 Months: </strong> Minimum purchase $199. To avoid interest, you must pay the full promotional balance before the promotional period ends. If you do not, you will be charged interest from the purchase date at the standard Purchase APR. After the promotional period ends, the standard Purchase APR also applies to the remaining balance and the charged interest. <strong> Minimum monthly payments required, but they will not pay off the balance in time. You must make larger payments to avoid the interest. </strong> Advertised monthly payment, if any, is greater than your required minimum payment and may exclude taxes, delivery or other charges. Prior purchases excluded. Account must be in good standing. Offer valid 5/1/2023-7/31/2023. Other finance plans may be available. Standard account terms apply to purchases that do not qualify. New accounts: standard Purchase APR 29.99%. Minimum interest charge $1. Existing accounts, see your Cardholder Agreement for applicable terms. Subject to credit approval. Cub Cadet financing account issued by TD Bank, N.A."
+				},
+				"button": {
+					"copy": "Apply Now",
+					"url": "https://www.cubcadet.com/en_US/financing-view-all.html"
+				}
+			},
+			{
+				"term": 12,
+				"title": "No interest if paid in full within 12 months<sup>2</sup>",
+				"copy": "Interest will be charged from the purchase date if the purchase balance is not paid in full by the end of the promotional period.",
+				"minPurchase": 500,
+				"promoStart": "May 1, 2023",
+				"promoEnd": "July 31, 2023",
+				"terms": {
+					"title": "Cub Cadet Revolving Plan Disclosures Available 5/1/2023-7/31/2023 Commercial Cards also available. For offer details about Commercial Cards please contact your Dealer.",
+					"copy": "<strong><sup>2</sup> No Interest if Paid in Full within 12 Months: </strong> Minimum purchase $500. To avoid interest, you must pay the full promotional balance before the promotional period ends. If you do not, you will be charged interest from the purchase date at the standard Purchase APR. After the promotional period ends, the standard Purchase APR also applies to the remaining balance and the charged interest. <strong> Minimum monthly payments required, but they will not pay off the balance in time. You must make larger payments to avoid the interest. </strong> Advertised monthly payment, if any, is greater than your required minimum payment and may exclude taxes, delivery or other charges. Prior purchases excluded. Account must be in good standing. Offer valid 5/1/2023-7/31/2023. Other finance plans may be available. Standard account terms apply to purchases that do not qualify. New accounts: standard Purchase APR 29.99%. Minimum interest charge $1. Existing accounts, see your Cardholder Agreement for applicable terms. Subject to credit approval. Cub Cadet financing account issued by TD Bank, N.A."
+				},
+
+				"button": {
+					"copy": "Apply Now",
+					"url": "https://www.cubcadet.com/en_US/financing-view-all.html"
+				}
+			},
+			{
+				"term": 24,
+				"title": "0% APR for 24 months with equal payments<sup>3</sup>",
+				"minPurchase": 2000,
+				"copy": "<strong>There is a promotional fee of $125 for this transaction.</strong>",
+				"promoStart": "May 1, 2023",
+				"promoEnd": "July 31, 2023",
+				"terms": {
+					"title": "Cub Cadet Revolving Plan Disclosures Available 5/1/2023-7/31/2023 Commercial Cards also available. For offer details about Commercial Cards please contact your Dealer.",
+					"copy": "<strong><sup>3</sup> 0% APR for 24 Months with Equal Payments: </strong> Minimum purchase $2,000. <strong> There is a promotional fee of $125 for this transaction. </strong> 0% APR from date of eligible purchase until paid in full. Monthly payment is the purchase amount divided by the number of months in the offer. Last payment may vary due to rounding. On-time payments will pay off the promotional balance. Advertised monthly payment, if any, may exclude taxes, delivery, or other charges. Other transactions and charges affect total monthly payment amount. Prior purchases excluded. Account must be in good standing. Offer valid 5/1/2023-7/31/2023. Standard account terms apply to purchases that do not qualify. New accounts: standard Purchase APR 29.99%. Minimum interest charge $1. Existing accounts, see your Cardholder Agreement for applicable terms. Subject to credit approval. Cub Cadet financing account issued by TD Bank, N.A."
+				},
+
+				"button": {
+					"copy": "Apply Now",
+					"url": "https://www.cubcadet.com/en_US/financing-view-all.html"
+				}
+			},
+			{
+				"term": 36,
+				"title": "0% APR for 36 months with equal payments<sup>5</sup>",
+				"minPurchase": 3000,
+				"copy": "<strong>There is a promotional fee of $125 for this transaction.</strong>",
+				"promoStart": "May 1, 2023",
+				"promoEnd": "July 31, 2023",
+				"terms": {
+					"title": "Cub Cadet Revolving Plan Disclosures Available 5/1/2023-7/31/2023 Commercial Cards also available. For offer details about Commercial Cards please contact your Dealer.",
+					"copy": "<strong><sup>5</sup> 0% APR for 36 Months with Equal Payments: </strong> Minimum purchase $3,000. Excludes Utility Vehicles. <strong> There is a promotional fee of $125 for this transaction. </strong> 0% APR from date of eligible purchase until paid in full. Monthly payment is the purchase amount divided by the number of months in the offer. Last payment may vary due to rounding. On-time payments will pay off the promotional balance. Advertised monthly payment, if any, may exclude taxes, delivery, or other charges. Other transactions and charges affect total monthly payment amount. Prior purchases excluded. Account must be in good standing. Offer valid 5/1/2023-7/31/2023. Standard account terms apply to purchases that do not qualify. New accounts: standard Purchase APR 29.99%. Minimum interest charge $1. Existing accounts, see your Cardholder Agreement for applicable terms. Subject to credit approval. Cub Cadet financing account issued by TD Bank, N.A."
+				},
+
+				"button": {
+					"copy": "Apply Now",
+					"url": "https://www.cubcadet.com/en_US/financing-view-all.html"
+				}
+			}
+		]
+	},
+	"inStore": {
+		"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw1026a6c1/Financing/become_a_dealer_desktop_1015x765.jpg",
+		"title": "Finance In-Store",
+		"copy": "We have multiple financing offers to fit your needs. Financing is available at participating independent dealers.",
+		"button": {
+			"copy": "Find a Local Dealer",
+			"url": "https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&horizontalView=true&isForm=true&rid=dealers"
+		},
+		"extraLink": {
+			"copy": "View all online and in-store financing plans",
+			"url": "https://www.cubcadet.com/en_US/financing-view-all.html"
+		}
+	},
+	"faqs": [
+		{
+			"question": "How long does the online application take?",
+			"answer": "The application takes only minutes, and most application decisions are returned within seconds."
+		},
+		{
+			"question": "Is there an annual fee with the Cub Cadet credit card?",
+			"answer": "There is no annual fee to carry the Cub Cadet credit card."
+		},
+		{
+			"question": "Can I apply for the Cub Cadet credit card by mail?",
+			"answer": "There is no mail-in application. Applications can be completed online or at your local participating dealer."
+		},
+		{
+			"question": "How do I make payments on my Cub Cadet credit card account?",
+			"answer": "You can make payments on your Cub Cadet credit card account in 3 convenient ways:<ul><li>Online with TD's Online Account Management system at www.myonlineaccount.net</li><li>Via phone at 1-888-382-6665</li><li>Via mail: Cub Cadet, PO BOX 100114, Columbia SC 29202-3114</li></ul>"
+		},
+		{
+			"question": "How do I contact customer service regarding my Cub Cadet credit card account?",
+			"answer": "The customer service number for your Cub Cadet credit card account is 1-866-702-4074."
+		},
+		{
+			"question": "I am a commercial customer. Can I apply online?",
+			"answer": "No, commercial customers can only apply at your local participating dealer."
+		}
+	],
+	"cta": {
+		"h1": "Still have financing questions?",
+		"copy": "We're happy to help! Call a customer service specialist (877) 428-2349 8am-5pm EST",
+		"button": {
+			"copy": "Apply Now",
+			"url": "https://www.cubcadet.com/en_US/financing-view-all.html"
+		}
+	}
+}
