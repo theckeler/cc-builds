@@ -1,0 +1,84 @@
+{
+  "howTo": {
+    "h2": "How To’s & Maintenance",
+    "blocks": [
+      {
+        "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/how-to-1.jpg",
+        "title": "How to clean or replace an air filter on an Ultima Zero Turn",
+        "copy": "It is recommended that your engine air filter be cleaned or replaced every 50 operating hours. In dry, dusty conditions this should be done more frequently. The video and instructions…",
+        "url": "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-change-the-air-filter-on-a-cub-cadet-zero-turn-rider.html "
+      },
+      {
+        "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/how-to-2.jpg",
+        "title": "How to Change the Blades on a Zero-Turn Lawn Mower",
+        "copy": "Over time, the blades on your zero-turn riding lawn mower can become worn out, bent or dinged. This gradual damage can reduce the effectiveness of your mower, so be sure to…",
+        "url": "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-change-the-blades-on-a-zero-turn.html"
+      },
+      {
+        "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/how-to-3.jpg",
+        "title": "How to Install a Bagger Attachment on a Zero-Turn Riding Mower",
+        "copy": "The following video will show you how to install a double bagger on your Ultima Series ZT Zero Turn mower. The tools needed for installation include two 9/16 in. socket wrenches…",
+        "url": "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-install-a-bagger-on-a-zero-turn.html"
+      }
+    ]
+  },
+
+  "articles": {
+    "h2": "Zero-Turn Articles",
+    "viewAllURL": "https://www.cubcadet.com/en_US/how-to/",
+    "blocks": [
+      {
+        "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/zero-turn-1.jpg",
+        "title": "How to Pick the Best Zero-Turn Lawn Mower",
+        "copy": "There are plenty of options in the marketplace when it comes to choosing the right zero-turn lawn mower. And if you’ve decided that a zero-turn mower is right for you, it’s time to understand what to look for in a machine…",
+        "url": "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-pick-the-best-zero-turn.html "
+      },
+      {
+        "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/zero-turn-2.jpg",
+        "title": "Is a Zero-Turn Lawn Mower Right for You?",
+        "copy": "Homeowners looking to reduce the amount of time spent mowing their lawns may want to invest in a zero-turn mower. With free time at a premium and these powerful mowers becoming more affordable, many homeowners are asking themselves…",
+        "url": "https://www.cubcadet.com/en_US/popular-faqs/knowledge-is-a-zero-turn-mower-right-for-you.html"
+      },
+      {
+        "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/zero-turn-3.jpg",
+        "title": "Cub Cadet Adds Another Step Up With Commercial-Grade Residential Zero-Turn",
+        "copy": "Building on the groundbreaking launch of the Ultima Series residential zero-turn lawn mowers, Cub Cadet announced another step up in the ultimate all-around mowing experience…",
+        "url": "https://www.cubcadet.com/en_US/current-news/news-commercial-grade-zero-turn-ztx-2020.html"
+      }
+    ]
+  },
+
+  "attAcc": {
+    "h2": "Attachments & Accessories",
+    "blocks": [
+      {
+        "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/attach-1.jpg",
+        "title": "Triple Bagger for 50-, 54- and 60-inch Decks",
+        "item": "19A70056100",
+        "price": "From $699.99 MSRP",
+        "url": "https://www.cubcadet.com/en_US/riding-mower-accessories/triple-bagger-for-50--54--and-60-inch-decks/19A70056100.html"
+      },
+      {
+        "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/attach-2.jpg",
+        "title": "52-inch All-Season Plow Blade Attachment",
+        "item": "19A70063OEM",
+        "price": "From $924.99 MSRP",
+        "url": "https://www.cubcadet.com/en_US/zero-turn-mower-accessories/52-inch-all-season-plow-blade-attachment/19A70063OEM.html"
+      },
+      {
+        "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/attach-3.jpg",
+        "title": "Double Bagger for 42- and 46-inch Decks",
+        "item": "19B70054100",
+        "price": "From $549.99 MSRP",
+        "url": "https://www.cubcadet.com/en_US/baggers-and-grass-collectors/double-bagger-for-42--and-46-inch-decks/19B70054100.html"
+      },
+      {
+        "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/attach-4.jpg",
+        "title": "Xtreme® Mulching Kit for 42-inch Cutting Decks",
+        "item": "19A30046100",
+        "price": "From $76.29 MSRP",
+        "url": "https://www.cubcadet.com/en_US/riding-mower-accessories/xtreme-mulching-kit-for-42-inch-cutting-decks/19A30046100.html"
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+	"explore": {
+		"h2": "Explore Electric Products",
+		"blocks": [
+			{
+				"img": "",
+				"title": "Electric Lawn Mowers",
+				"copy": "When you look at your yard, you see what it could be. Lead-acid electric riders lose power as you go, but our lithium-ion battery delivers full strength from the first pass to the finishing touches. The Cub Cadet electric lineup delivers the performance you need to bring every possibility to life.",
+				"button": {
+					"copy": "Shop Electric Mowers",
+					"url": "https://www.cubcadet.com/en_US/riding-lawn-mowers/electric-riding-mowers"
+				}
+			},
+			{
+				"img": "",
+				"title": "Cordless Electric Lawn and Garden Tools",
+				"copy": "All products in the Cub Cadet 60V MAX line run on the same, interchangeable lithium ion battery system, making it convenient to get all of your jobs done. Choose from a fully electric cordless hedge trimmer, chainsaw or blower.",
+				"button": {
+					"copy": "Shop Electric Tools",
+					"url": "https://www.cubcadet.com/en_US/electric-mowers-and-tools/cordless-electric-lawn-and-garden-tools-2"
+				}
+			}
+		]
+	},
+
+	"howTo": {
+		"h2": "Learn More About Electric Products",
+		"blocks": [
+			{
+				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dwb2939b8c/images/product-line-browse/Main-Carousel/Hero_60V_Desktop_1015x630.jpg?sw=1116",
+				"title": "Learn more about the 60V Max battery system",
+				"copy": "Cub Cadet's 60 Volt Max battery system has many convenient features, including lithium-ion batteries, flexibile charging and an interchangeable battery platform.",
+				"url": "https://www.cubcadet.com/en_US/product-information/60-volt-max-system.html"
+			},
+			{
+				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw36d4877f/Knowledge_Center/help-center/33AA27JDB10_CC30E_Env_02_1100x572.jpg?sw=1116",
+				"title": "Lithium-Ion Battery vs. Lead Acid Battery — which is Better?",
+				"copy": "Lithium-ion batteries have several advantages over their lead acid counterparts, which is why Cub Cadet uses them throughout its suite of battery-powered outdoor power equipment.",
+				"url": "https://www.cubcadet.com/en_US/product-information/lithium-ion-battery-advantage.html"
+			},
+			{
+				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dwd4e74107/Knowledge_Center/help-center/33AA27JDB10_CC30E_Env_01_1100x572.jpg?sw=1116",
+				"title": "What is a Brushless Motor?",
+				"copy": "Brushless motors provide several advantages for battery powered lawn equipment, learn more about how they work.",
+				"url": "https://www.cubcadet.com/en_US/product-information/brushless-motor-advantage.html"
+			}
+		]
+	},
+	"faqs": [
+		{
+			"question": "What is the run time of the battery?",
+			"answer": "The run time of the battery varies by product:<ul><li>Our ZT1 42E zero-turn mower has a run time of up to 2 acres on a single charge without power fade.</li><li>The Cub Cadet LT42E lawn tractor runs for up to 1.5 hours, or up to 2 acres, on a single charge without power fade.</li><li>The CC30E riding mower runs up to 1 hour, or up to 1 acre, on a single charge without power fade.</li><li>The 60 Volt Max walk behind push mower runs up to 50 minutes or ½ acre on a single charge without power fade.</li><li>The 60 Volt Max leaf blower clears up to 90 minutes on low speed or 11 minutes on high speed.</li><li>The 60 Volt Max string trimmer runs up to 45 minutes on a single charge on low speed without power fade. (Disclaimer: Run time based on using 0.080” line.)</li><li>The 60 Volt Max hedge trimmer runs up to 80 minutes on a single charge without power fade.</li><li>The 60 Volt Max chainsaw provides up to up to 80 minutes of run time on a single charge with no power fade. (Disclaimer: Up to 140 cuts of 4-in. x 4-in. pressure treated pine per charge.)</li></ul>"
+		},
+		{
+			"question": "What is the life of the battery?",
+			"answer": "Operating under normal conditions and care, our lithium-ion batteries will last for the lifetime of the product as defined in the operator’s manual. Cub Cadet offers a 3-year limited warranty that protects your mower and a 4-year battery warranty against manufacturing defects."
+		},
+		{
+			"question": "Are the batteries included?",
+			"answer": "The Cub Cadet ZT1 42E zero-turn and LT42E lawn tractor come with two batteries and one charger. The CC30E riding mower comes with one battery and one charger. Our 60 Volt Max walk behind push mower comes with one batter and one charger. The bundled suite of 60 Volt Max handheld products — leaf blower, string trimmer, hedge trimmer, and chainsaw — includes one interchangeable battery and charger. Battery and charger are not included when purchased as a bare tool, however the suite is compatible with the battery included with the 60 Volt Max walk behind push mower, too."
+		},
+		{
+			"question": "Is the cut quality the same as gas engines?",
+			"answer": "All of our lithium-ion battery powered lawn mowers are being engineered to the same specifications as their gas counterparts. Our electric mowers have to pass the same cut quality tests, and we apply our experience in gas to ensure that our electric equipment delivers the same premium cut you’ve come to expect from Cub Cadet."
+		},
+		{
+			"question": "What cost benefits does a lithium-ion battery powered riding lawn mower provide over a gas-powered mower?",
+			"answer": "One of the biggest benefits of a lithium-ion battery-powered lawn mower is the reduction of regular maintenance. Unlike their gas-powered counterparts, battery-powered mowers do not require belts, filters or oil to be changed. Additional benefits include a reduction of noise and savings seen through the elimination of purchasing gas. Feel free to use our time savings calculator to better understand the time savings you gain from performing less maintenace."
+		},
+		{
+			"question": "How long does it take the battery to recharge?",
+			"answer": "Recharge time varies by product:<ul><li>The recharge time of our riding mowers — the ZT1 42E zero-turn, LT42E riding mower, and CC30E riding mower — is about 4 hours.</li><li>The recharge time of the 5 Ah Lithium-ion battery used by our 60 Volt Max walk behind push mower is 2.5 hours.</li><li>The recharge time of the 2.5 Ah Lithium-ion battery used by our 60 Volt Max handheld products — leaf blower, string trimmer, hedge trimmer, and chainsaw — is 75 minutes.</li></ul>"
+		},
+		{
+			"question": "Will the electric riders work on sloped terrain/hills?",
+			"answer": "Our lithium-ion powered mowers have the same restrictions as their gas counterparts when it comes to uneven terrain and hills. Please refer to each unit’s operator’s manual for specific guidelines."
+		}
+	]
+}

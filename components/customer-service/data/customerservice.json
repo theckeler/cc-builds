@@ -1,0 +1,129 @@
+{
+	"section1": {
+		"h1": "Help & Support",
+		"copy": "We provide value to our Cub Cadet owners with support content to help you feel confident to tackle simple tasks or advice to extend the lifetime of your machine "
+	},
+	"section2": {
+		"blocks": [
+			{
+				"img": "iconBelt",
+				"title": "How to Change the Deck Belt on a Riding Mower",
+				"url": "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-change-the-pto-belt-on-a-cub-cadet-rider.html"
+			},
+			{
+				"img": "iconBlades",
+				"title": "How to Change the Blades on a Riding Mower",
+				"url": "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-change-the-blade-on-your-cub-cadet-rider.html"
+			},
+			{
+				"img": "iconLevel",
+				"title": "How to Level the Deck on a Riding Mower",
+				"url": "https://www.cubcadet.com/en_US/knowledge-center/knowledge-how-to-level-the-deck-on-your-cub-cadet-rider.html"
+			}
+		],
+		"button": {
+			"copy": "See all how-to content",
+			"url": "https://www.cubcadet.com/en_US/how-to/"
+		}
+	},
+	"section3": {
+		"findOrder": {
+			"h2": "Find Your Order",
+			"copy": "Track the status of your order."
+		},
+		"findModel": {
+			"h2": "Find Support by Model",
+			"copy": "Your model number is essential to finding the right replacement parts, product manuals, or locating parts on your machine."
+		}
+	},
+	"section4": {
+		"h2": "Don't have an account?",
+		"copy": "Find information related to your mower with ease when you <a href=\"https://www.cubcadet.com/en_US/login\" style=\"color:#ffc20f\">create an account</a> and <a href=\"https://www.cubcadet.com/en_US/content-asset-page-includes/registration.html\" style=\"color:#ffc20f\">register your mower</a>. Benefits include: Proof of purchase for insurance, find warranty information, view safety information and get timely maintenance reminders."
+	},
+	"section5": {
+		"h2": "Popular Help Links",
+		"blocks": [
+			{
+				"img": "iconMagGlassBolt",
+				"copy": "Search parts for your machine or view diagrams",
+				"url": "https://www.cubcadet.com/en_US/service-and-parts",
+				"button": {
+					"copy": "Find parts"
+				}
+			},
+			{
+				"img": "iconManuals",
+				"copy": "Use your model number to download your Operator’s Manual",
+				"url": "https://www.cubcadet.com/en_US/operatorsmanuals",
+				"button": {
+					"copy": "Find manuals"
+				}
+			},
+			{
+				"img": "iconScrewdriverWrench",
+				"copy": "Find a licensed mechanic at a service center near you ",
+				"url": "https://www.cubcadet.com/en_US/servicelocator",
+				"button": {
+					"copy": "Find service"
+				}
+			},
+			{
+				"img": "iconAward",
+				"copy": "Find warranty information and extended plans",
+				"url": "https://www.cubcadet.com/en_US/ew-info-page.html",
+				"button": {
+					"copy": "Find warranty info"
+				}
+			}
+		]
+	},
+	"section6": {
+		"h2": "Find Support by Model",
+		"blocks": [
+			{
+				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw8f055b11/products/Equipment/Cub-Cadet_XT1LT46_New_2000x2000_8.jpg?sw=290&sh=290&sm=fit",
+				"title": "Lawn Mowers",
+				"url": "https://www.cubcadet.com/en_US/how-to/?crefn1=tags&crefv1=Lawn%20%26%20Garden%20Tractors"
+			},
+			{
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9e835077e52279a69a54b4c30b00cf9f3c2d0358/ultima/product-ZTS.jpg?version=1,639,577,713,000",
+				"title": "Zero-Turn",
+				"url": "https://www.cubcadet.com/en_US/how-to/?crefn1=tags&crefv1=Zero%20Turn%20Mowers"
+			},
+			{
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9e835077e52279a69a54b4c30b00cf9f3c2d0358/ultima/product-ZT-el.jpg?version=1,639,577,700,000",
+				"title": "Electric",
+				"url": "https://www.cubcadet.com/en_US/electric-mowers-and-tools"
+			},
+			{
+				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw9d00b090/products/Equipment/Cub-Cadet_ProZ_972SD_1.jpg?sw=550&sh=550&sm=fit",
+				"title": "Professional",
+				"url": "https://www.cubcadet.com/en_US/commercial-equipment"
+			},
+			{
+				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw5cb54c82/products/Equipment/Cub-Cadet_3X_30HD_3.jpg?sw=290&sh=290&sm=fit",
+				"title": "Snow",
+				"url": "https://www.cubcadet.com/en_US/how-to/?crefn1=tags&crefv1=Snow%20Blowers"
+			},
+			{
+				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwa5c0e1bd/products/Equipment/37DZ7CKK710_MX550_H.jpg?sw=290&sh=290&sm=fit",
+				"title": "UTV",
+				"url": "https://www.cubcadet.com/en_US/utility-vehicles"
+			},
+			{
+				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw7b269624/products/Equipment/Cub_Cadet_CS16E_2000x2000_4.jpg?sw=1000&sh=1000&sm=fit",
+				"title": "Chore & Handheld",
+				"url": "https://www.cubcadet.com/en_US/how-to/?crefn1=tags&crefv1=Yard%20Equipment"
+			},
+			{
+				"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dw63b8d5db/menu-card-images/Cub-Cadet-Riding-Mower-Accessory1_NavCard.png",
+				"title": "Attachments",
+				"url": "https://www.cubcadet.com/en_US/riding-lawn-mowers/riding-mower-accessories"
+			}
+		]
+	},
+	"section7": {
+		"h2": "Didn’t Find What You Were Looking For?",
+		"copy": "Our team is available between 8:30AM - 5:30PM ET, Monday-Friday."
+	}
+}

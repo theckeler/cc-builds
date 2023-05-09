@@ -1,0 +1,172 @@
+{
+	"hero": {
+		"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v79aaf7ecda8938ade203c5711b32319c1ca9a8f8/mini-riders/hero.jpg?version=1,683,637,296,000",
+		"srcset": [
+			{
+				"size": "768",
+				"sizingType": "px",
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v79aaf7ecda8938ade203c5711b32319c1ca9a8f8/mini-riders/hero.jpg?version=1,683,637,296,000"
+			},
+			{
+				"size": "0",
+				"sizingType": "px",
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v79aaf7ecda8938ade203c5711b32319c1ca9a8f8/mini-riders/hero.jpg?version=1,683,637,296,000"
+			}
+		],
+		"alt": "",
+		"minHeight": "33em"
+	},
+
+	"copyBlock": {
+		"h1": "COMPACT YET POWERFUL.",
+		"copy": "Designed to deliver, the CC30’s compact frame helps provide easy maneuverability and control so you can make quick work of even those hard-to-reach areas."
+	},
+
+	"lineup": {
+		"h2": "Cub Cadet&reg; Lawn & Garden Tractors",
+		"blocks": [
+			{
+				"url": "https://www.cubcadet.com/en_US/riding-lawn-mowers/lawn-and-garden-tractors?prefn1=series&prefv1=XT1%C2%AE%20Enduro%20Series%E2%84%A2%7CCC30%20Series",
+				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw24519b24/products/Equipment/Cub-Cadet_CC30H_6.jpg?sw=740&sh=740&sm=fit",
+				"title": "CC30H",
+				"copy": "The Cub Cadet Mini-Riders delivers the same strength, durability and perfect cut as our larger riders; but in a more compact design.",
+
+				"button": {
+					"copy": "EXPLORE The CC30H",
+					"bgColor": "bg-secondary"
+				},
+				"border": false
+			},
+			{
+				"url": "https://www.cubcadet.com/en_US/electric-riding-mowers/cc30e/33BA27JDB10.html?fitsOnModel=false#prefn1=series&prefv1=XT1%C2%AE%20Enduro%20Series%E2%84%A2%7CCC30%20Series&start=3",
+				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw506ac45e/products/Equipment/Cub_Cadet_CC30E_2000x2000_4.jpg?sw=1000&sh=1000&sm=fit",
+				"title": "CC30E",
+
+				"copy": "Its compact size gives you incredible maneuverability and control so you can mow through small areas like most backyard gateways.",
+
+				"button": {
+					"copy": "EXPLORE the CC30E",
+					"bgColor": "bg-secondary"
+				},
+				"border": false
+			}
+		]
+	},
+
+	"powerLevel": {
+		"h2": "Power on a Whole New Level",
+		"blocks": [
+			{
+				"icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/icon-gas.svg?version=1,678,303,258,000",
+				"title": "Gas Engine",
+				"copy": "Engine options offer smooth operation, quick acceleration with simple recovery; also available with electronic fuel injection technology (EFI) for easy startup.",
+				"addStyle": { "maxHeight": "6em" }
+			},
+			{
+				"icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/icon-battery.svg?version=1,678,303,258,000",
+				"title": "Electric",
+				"copy": "Our lithium-ion battery technology provides long runtime, quiet operation, minimal power fade, less maintenance than gas and a fast charge.",
+				"addStyle": { "maxHeight": "6em" }
+			}
+		]
+	},
+
+	"quote": {
+		"stars": 5,
+		"title": "CUSTOMER RATING",
+		"copy": "“Compact, Smooth. Quiet. I've only had the unit a short time, but I love it, it handles very well, quiet, compact fits in garage well”",
+		"unit": "CC30E",
+		"hero": {
+			"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v79aaf7ecda8938ade203c5711b32319c1ca9a8f8/mini-riders/quote.jpg?version=1,683,638,386,000",
+			"srcset": [
+				{
+					"size": "768",
+					"sizingType": "px",
+					"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v79aaf7ecda8938ade203c5711b32319c1ca9a8f8/mini-riders/quote.jpg?version=1,683,638,386,000"
+				},
+				{
+					"size": "0",
+					"sizingType": "px",
+					"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v79aaf7ecda8938ade203c5711b32319c1ca9a8f8/mini-riders/quote.jpg?version=1,683,638,386,000"
+				}
+			],
+			"alt": "",
+			"minHeight": "33em"
+		}
+	},
+
+	"forEveryJob": {
+		"h2": "Year-Round Versatility",
+		"copy": "Designed to get more done season after season with a selection of attachments and accessories designed for a variety of jobs.",
+		"blocks": [
+			{
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/versatility-1.jpg?version=1,678,298,499,000",
+				"title": "Bagger System",
+				"copy": "Designed for excellent bagging performance with twin baggers available to fit every lawn and garden tractor. And for even bigger jobs, triple baggers are available on lawn and garden tractors 42 inches and larger"
+			},
+			{
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/versatility-2.jpg?version=1,678,298,499,000",
+				"title": "Hauler",
+				"copy": "Designed for up to 800 pounds and built with fold-out side panels for easy loading and unloading, the hauler allows you to easily move mulch, logs and more."
+			},
+			{
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/versatility-3.jpg?version=1,678,458,327,000",
+				"title": "All-Season Plow",
+				"copy": "With the convenience of the FastAttach&reg; Connection System, this 46-inch heavy-duty all-season plow can move snow, dirt, gravel, mulch and more."
+			}
+		],
+		"button": {
+			"copy": "VIEW ALL ATTACHMENTS",
+			"addClass": "bg-secondary text-center",
+			"url": "https://www.cubcadet.com/en_US/riding-lawn-mowers/riding-mower-accessories"
+		}
+	},
+
+	"howTo": {
+		"h2": "Lawn & Garden Tractor Articles",
+		"blocks": [
+			{
+				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw36bb159f/Knowledge_Center/help-center/best-in-class-cut_1100x572.jpg?sw=1116",
+				"title": "What Does It Mean to Have the Best-in-Class Cut?",
+				"copy": "Cut quality is a primary consideration when purchasing a lawn mower, and the ability to cut a consistent, even surface with fewer clumps and finer clippings is an important reason...",
+				"url": "https://www.cubcadet.com/en_US/popular-faqs/knowledge-best-in-class-cut.html"
+			},
+			{
+				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dwadb425f5/Knowledge_Center/help-center/must-have-riding-mower-attachments_1100x572.jpg?sw=1116",
+				"title": "5 Must-Have Riding Mower Attachments",
+				"copy": "The Cub Cadet&reg; XT Enduro Series&trade; was built to be versatile. Attachments and accessories will unlock the full potential of your riding mower, making it work for you year-round...",
+				"url": "https://www.cubcadet.com/en_US/popular-faqs/knowledge-must-have-riding-mower-attachments.html"
+			},
+			{
+				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw203ebac9/Knowledge_Center/help-center/benefits-of-battery-lawn-mower_1100x572.jpg?sw=1116",
+				"title": "Benefits of a Battery-Powered Lawn Mower",
+				"copy": "A battery-powered lawn mower can enhance your overall mowing experience. After taking into account yard size and terrain- battery powered mowers are a better fit for smaller yards...",
+				"url": "https://www.cubcadet.com/en_US/popular-faqs/knowledge-benefits-of-battery-lawn-mower.html"
+			}
+		]
+	},
+
+	"articles": {
+		"h2": "How To's & Maintenance",
+		"blocks": [
+			{
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/how-to-1.png?version=1,678,468,412,000",
+				"title": "How to Change the Air Filter on a Riding Mower",
+				"copy": "It is recommended that your engine air filter be cleaned or replaced every 50 operating hours. In dry, dusty conditions this should be done more frequently. The video instructions below...",
+				"url": "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-change-the-air-filter-on-a-cub-cadet-rider.html"
+			},
+			{
+				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw79307f23/Knowledge_Center/help-center/how-to-change-the-oil-in-a-cub-cadet-riding-lawn-mower_1100x572.jpg?sw=1116",
+				"title": "How to Change the Oil in your Riding Mower",
+				"copy": "Regular oil changes are critical to keeping your riding lawn mower's engine in top shape and prolonging the life of your mower. Watch this video to learn how to change the oil...",
+				"url": "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-change-the-oil-in-a-cub-cadet-riding-lawn-mower.html"
+			},
+			{
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/how-to-3.png?version=1,678,468,417,000",
+				"title": "How to Assemble Tire Chains on your Riding Mower",
+				"copy": "Just because it's winter, doesn't mean you won't be using your riding lawn mower. Whether hauling wood or clearing the drive with the snow thrower attachment, your machine can be a vital asset...",
+				"url": "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-assemble-tire-chains-on-your-cub-cadet-riding-mower.html"
+			}
+		]
+	}
+}

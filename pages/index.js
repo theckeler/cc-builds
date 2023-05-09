@@ -20,7 +20,7 @@ export default function Index() {
 				<li style={{ marginTop: "20px" }}>
 					<Link href="/dynosite-1.1">Dynosite 1.1</Link>
 				</li>
-				<li style={{ marginTop: "20px" }}>
+				{/* <li style={{ marginTop: "20px" }}>
 					<Link href="/financing">Financing Updates</Link>
 				</li>
 				<li style={{ marginTop: "20px" }}>
@@ -68,7 +68,7 @@ export default function Index() {
 				</li>
 				<li style={{ marginTop: "20px" }}>
 					<Link href="/product-review-giveaway">Product Review Giveaway</Link>
-				</li>
+				</li> */}
 				<li style={{ marginTop: "20px" }}>
 					<Link href="https://cc-site-build.vercel.app/" target="_new">
 						CC Site Redo
