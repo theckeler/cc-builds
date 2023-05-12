@@ -13,29 +13,10 @@ import HeroImg from "@/c/HeroImg";
 import BuildMenu from "@/c/BuildMenu";
 
 const XTEnduroSeriesHome = () => {
-	// const [switchLang, setSwitchLang] = useState({
-	// 	active: "US",
-	// 	langs: ["US", "CA"],
-	// });
 	const [jsonData, setJsonData] = useState({ ...jsonDataUS });
-
-	// useEffect(() => {
-	// 	switch (switchLang.active) {
-	// 		case "CA":
-	// 			setJsonData({ ...jsonDataCA });
-	// 			break;
-	// 		case "CAFrench":
-	// 			//setJsonData({ ...jsonDataCAFrench });
-	// 			break;
-	// 		default:
-	// 			setJsonData({ ...jsonDataUS });
-	// 	}
-	// }, [switchLang]);
 
 	return (
 		<>
-			{/* <BuildMenu {...{ switchLang, setSwitchLang }} /> */}
-
 			{/* Head */}
 			<div className="mtd-page">
 				{/* HERO */}

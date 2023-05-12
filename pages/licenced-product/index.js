@@ -1256,7 +1256,7 @@ const LicencedProduct = () => {
 								</div>
 								{/* Prices */}
 								<div className="d-flex">
-									<div className="prices finance">
+									<div className="prices finance" style={{ "borderRight": 0 }}>
 										<div
 											className="price"
 											itemProp="offers"
@@ -1284,44 +1284,8 @@ const LicencedProduct = () => {
 											</span>
 										</div>
 									</div>
-									<div className="finance-estimation-container">
-										<span className="finance-border-text">Or</span>
-										<div className="td-estimation">
-											<div>
-												<strong>$610/mo</strong> |{" "}
-												<strong>
-													0% APR<sup>3</sup>
-												</strong>{" "}
-												| <strong>24Mo</strong> with{" "}
-												<strong>$125 Promo Fee</strong>. Total:{" "}
-												<strong>$14,640.00</strong>
-											</div>
-											<div>
-												<a
-													href="javascript:void(0)"
-													data-url="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/FinancingApplication-Disclosure"
-													data-title="Details & Disclosures"
-													className="td-payment-details">
-													See details
-												</a>
-											</div>
-										</div>
-										<a
-											className="td-apply-finance btn btn-secondary"
-											data-url="/on/demandware.store/Sites-cubcadet-Site/en_US/FinancingApplication-GetURL"
-											href="">
-											Apply Now
-										</a>
-										<div className="cc-container">
-											<img
-												src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/default/dw08887810/images/cc-td-card-3d.png"
-												alt=""
-											/>
-										</div>
-									</div>
 								</div>
 								<hr className="d-none" />
-								<div></div>
 							</div>
 							<hr />
 							<div className="row justify-content-center">
@@ -17832,25 +17796,7 @@ const LicencedProduct = () => {
 									</div>
 								</div>
 							</div>
-							{/* CQuotient Activity Tracking (viewReco-cquotient.js) */}
-							{/* CQuotient Activity Tracking (viewReco-cquotient.js) */}
-							{/* CQuotient Activity Tracking (viewReco-cquotient.js) */}
-							{/* CQuotient Activity Tracking (viewReco-cquotient.js) */}
-							{/* CQuotient Activity Tracking (viewReco-cquotient.js) */}
-							{/* CQuotient Activity Tracking (viewReco-cquotient.js) */}
-							{/* CQuotient Activity Tracking (viewReco-cquotient.js) */}
-							{/* CQuotient Activity Tracking (viewReco-cquotient.js) */}
-							{/* CQuotient Activity Tracking (viewReco-cquotient.js) */}
-							{/* CQuotient Activity Tracking (viewReco-cquotient.js) */}
-							{/* CQuotient Activity Tracking (viewReco-cquotient.js) */}
-							{/* CQuotient Activity Tracking (viewReco-cquotient.js) */}
-							{/* CQuotient Activity Tracking (viewReco-cquotient.js) */}
-							{/* CQuotient Activity Tracking (viewReco-cquotient.js) */}
-							{/* CQuotient Activity Tracking (viewReco-cquotient.js) */}
-							{/* CQuotient Activity Tracking (viewReco-cquotient.js) */}
-							{/* CQuotient Activity Tracking (viewReco-cquotient.js) */}
-							{/* CQuotient Activity Tracking (viewReco-cquotient.js) */}
-							{/* CQuotient Activity Tracking (viewReco-cquotient.js) */}
+
 							<button
 								className="slick-next slick-arrow"
 								aria-label="Next"
@@ -18009,30 +17955,6 @@ const LicencedProduct = () => {
 												<i className="where-to-buy__option__badge__icon" />
 											</div>
 										</div>
-									</div>
-									<div className="where-to-buy__buttons">
-										<div className="simple-quantity invisible d-none">
-											<input
-												id="quantity"
-												type="text"
-												name="quantity-input"
-												className="quantity-input quantity-select form-control"
-												defaultValue={1}
-												data-url="/on/demandware.store/Sites-cubcadet-Site/en_US/Product-Variation?pid=37DZ7CKK010"
-											/>
-										</div>
-										<input
-											type="hidden"
-											className="add-to-cart-url"
-											defaultValue="/on/demandware.store/Sites-cubcadet-Site/en_US/Cart-AddProduct"
-										/>
-										<button
-											className="where-to-buy__button btn btn-secondary js-contact-dealer-modal"
-											data-product-id="37DZ7CKK010"
-											data-product-name="null"
-											data-contact-dealer-modal-update-url="/on/demandware.store/Sites-cubcadet-Site/en_US/Dealer-ContactDealerModalUpdate">
-											Contact Dealer
-										</button>
 									</div>
 								</div>
 							</div>
