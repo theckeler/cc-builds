@@ -37,7 +37,7 @@ const Financing = () => {
 							</strong>
 						</p>
 						<a
-							className="btn btn-primary"
+							className="btn btn-primary d-block d-lg-inline-block"
 							href="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&horizontalView=true&isForm=true&rid=dealers"
 							title="Find a dealer">
 							Find a dealer
@@ -51,7 +51,7 @@ const Financing = () => {
 					<h2 className="text-uppercase text-center">Online Financing</h2>
 				</div>
 				<div className="container">
-					<Faqs faqs={jsonData.online} id="faqs-financing" className="p-4" />
+					<Faqs faqs={jsonData.online} id="faqs-financing" className="p-2 p-lg-4" />
 				</div>
 				<div className="bg-secondary p-2 p-lg-4">
 					<h2 className="text-uppercase text-center">
@@ -59,7 +59,7 @@ const Financing = () => {
 					</h2>
 				</div>
 				<div className="container">
-					<Faqs faqs={jsonData.inStore} id="faqs-financing" className="p-4" />
+					<Faqs faqs={jsonData.inStore} id="faqs-financing" className="p-2 p-lg-4" />
 				</div>
 				<div className="bg-secondary p-2 p-lg-4">
 					<h2 className="text-uppercase text-center">
@@ -70,7 +70,7 @@ const Financing = () => {
 					<Faqs
 						faqs={jsonData.inStoreSheffield}
 						id="faqs-financing"
-						className="p-4"
+						className="p-2 p-lg-4"
 					/>
 				</div>
 				<div className="bg-secondary p-2 p-lg-4">
@@ -82,7 +82,7 @@ const Financing = () => {
 					<Faqs
 						faqs={jsonData.inStoreStandardSheffield}
 						id="faqs-financing"
-						className="p-4"
+						className="p-2 p-lg-4"
 					/>
 				</div>
 				<div className="bg-secondary p-2 p-lg-4">
@@ -94,7 +94,7 @@ const Financing = () => {
 					<Faqs
 						faqs={jsonData.inStoreUVTDBank}
 						id="faqs-financing"
-						className="p-4"
+						className="p-2 p-lg-4"
 					/>
 				</div>
 				<div className="bg-secondary p-2 p-lg-4">
@@ -106,7 +106,7 @@ const Financing = () => {
 					<Faqs
 						faqs={jsonData.inStoreUVSheffield}
 						id="faqs-financing"
-						className="p-4"
+						className="p-2 p-lg-4"
 					/>
 				</div>
 			</section>
