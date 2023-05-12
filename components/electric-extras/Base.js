@@ -40,7 +40,7 @@ const Base = () => {
 					<ul className="list-unstyled d-flex flex-column flex-lg-row">
 						<li className="px-2 py-5 p-lg-6">
 							<h2>FAQs</h2>
-							<Faqs faqs={jsonData.faqs} addID="faqs-financing" />
+							<Faqs faqs={jsonData.online} addID="faqs-online" />
 						</li>
 					</ul>
 				</div>

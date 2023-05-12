@@ -8,6 +8,11 @@ const nextConfig = {
 				hostname: "www.cubcadet.com",
 				port: "",
 			},
+			{
+				protocol: "https",
+				hostname: "staging-na01-mtd.demandware.net",
+				port: "",
+			},
 		],
 	},
 };

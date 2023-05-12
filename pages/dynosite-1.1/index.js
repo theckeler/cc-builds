@@ -134,8 +134,10 @@ const Financing = () => {
 			</section>
 
 			<a id="how-tos" name="how-tos"></a>
-			<section className={containerCSS}>
-				<HowTos />
+			<section className="" style={{ backgroundColor: "#e2e2e2" }}>
+				<div className={containerCSS}>
+					<HowTos />
+				</div>
 			</section>
 
 			<a id="registration" name="registration"></a>

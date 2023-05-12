@@ -1251,12 +1251,10 @@ const LicencedProduct = () => {
 												</button>
 											</div>
 										</div>
-										{/* End Reviews Summary */}
 									</div>
 								</div>
-								{/* Prices */}
 								<div className="d-flex">
-									<div className="prices finance" style={{ "borderRight": 0 }}>
+									<div className="prices finance" style={{ borderRight: 0 }}>
 										<div
 											className="price"
 											itemProp="offers"
