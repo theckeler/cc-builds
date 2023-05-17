@@ -1,29 +1,45 @@
-import IconCubDays from "./logo.js";
-
 export default function LawnAndGardenTractors() {
 	return (
-		<div>
-			<section className="position-relative">
+		<div className="mtd-page">
+			<section className="position-relative" style={{ minHeight: "600px" }}>
 				<picture>
 					<source
 						media="(min-width: 768px)"
-						srcSet="
-					https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/hero-1024w.jpg?version=1,678,369,065,000
-				"
+						srcSet="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/vd006db48162baba2af567f7c8619194f2376165f/cub-days-2023/cubdays-hero-1024w.jpg?version=1,678,369,065,000"
 					/>
 					<source
 						media="(min-width: 0px)"
-						srcSet="
-					https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/hero-640w.jpg?version=1,678,369,060,000
-				"
+						srcSet="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/vd006db48162baba2af567f7c8619194f2376165f/cub-days-2023/cubdays-hero-640w.jpg?version=1,678,369,060,000"
 					/>
 					<img
 						alt=""
-						className="w-100 h-100"
-						src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/hero-1024w.jpg?version=1,678,298,490,000"
-						style={{ objectFit: "cover" }}
+						className="w-100 h-100 position-relative"
+						src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/vd006db48162baba2af567f7c8619194f2376165f/cub-days-2023/cubdays-hero-1024w.jpg?version=1,678,298,490,000"
+						style={{ objectFit: "cover", zIndex: 0 }}
 					/>
 				</picture>
+				<div
+					className="position-lg-absolute w-100 h-100"
+					style={{ zIndex: 1, top: 0, left: 0 }}>
+					<div className="container pt-lg-9">
+						<div className="bg-white p-2 w-lg-500">
+							<h2>Lorem ipsum dolor sit amet</h2>
+							<p className="mb-0">
+								Etiam sed pretium mauris. Nam semper sem nec quam facilisis, eu
+								rutrum lorem interdum. Etiam vitae nibh sed augue rutrum aliquam
+								sit amet nec mi. Cras ac eros urna. Maecenas efficitur aliquam
+								dui, sed scelerisque ex suscipit vitae. Praesent pulvinar ante
+								metus, sit amet faucibus eros varius id. Donec consectetur ante
+								nec rhoncus posuere. Aenean lorem dui, gravida eget arcu sit
+								amet, porttitor faucibus justo. Cras viverra mi nec erat
+								hendrerit, lacinia mollis velit rhoncus. Nunc sit amet ultricies
+								augue. In tortor nisi, commodo id diam eget, dictum venenatis
+								tortor. Sed lorem dolor, volutpat nec tortor luctus, euismod
+								ullamcorper justo.
+							</p>
+						</div>
+					</div>
+				</div>
 			</section>
 
 			<section className="text-white bg-primary">
@@ -80,9 +96,9 @@ export default function LawnAndGardenTractors() {
 				</ul>
 			</section>
 
-			<section>
+			{/* <section>
 				<IconCubDays />
-			</section>
+			</section> */}
 
 			<section className="container d-flex flex-column p-1 mt-8 mb-4">
 				<h2 className="h2 d-block text-center mb-8">
