@@ -12,15 +12,15 @@ import Button from "@/c/Button";
 
 import Image from "next/image";
 
-const Financing = () => {
+const Dynosite = () => {
 	const containerCSS = "container mb-3 pb-3 border-bottom";
 	const buttonCSS =
 		"ml-auto btn bg-secondary d-flex align-items-center justify-content-center p-1 ";
 
 	return (
 		<div className="mtd-page product-dyno-results">
-			<section className={`mt-2 ${containerCSS}`}>
-				<div className="">
+			<section className={`mt-2 overflow-auto w-100 sticky-top bg-white`}>
+				<div className="container">
 					<h1 className="mb-0 pr-1" style={{ fontSize: "2.5em" }}>
 						XT1 ST54
 					</h1>
@@ -28,43 +28,43 @@ const Financing = () => {
 						Model(s)#: 13AQA2CM010, 13AQA2CM011, 13AQA2CM012, 13AQA2CM014,
 						13AQA2CM018
 					</h2>
-					<div className="overflow-auto w-100">
-						<ul className="list-unstyled flex flex-column  flex-lg-row mb-2 w-100">
-							<li className="mb-1 mr-lg-1 mb-lg-0">
-								<Button
-									url="#parts"
-									copy="Buy Parts"
-									addClass={buttonCSS}
-									style={{}}
-								/>
-							</li>
-							<li className="mb-1 mr-lg-1 mb-lg-0">
-								<Button
-									url="#support"
-									copy="Dealer Support"
-									addClass={buttonCSS}
-								/>
-							</li>
-							<li className="mb-1 mr-lg-1 mb-lg-0">
-								<Button url="#diagrams" copy="Diagrams" addClass={buttonCSS} />
-							</li>
-							<li className="mb-1 mr-lg-1 mb-lg-0">
-								<Button url="#warranty" copy="Warranty" addClass={buttonCSS} />
-							</li>
-							<li className="mb-1 mr-lg-1 mb-lg-0">
-								<Button url="#how-tos" copy="How-Tos" addClass={buttonCSS} />
-							</li>
-							<li>
-								<Button
-									url="#registration"
-									copy="Registration"
-									addClass={buttonCSS}
-								/>
-							</li>
-						</ul>
-					</div>
+					<ul className="list-unstyled flex flex-column  flex-lg-row mb-2 w-100">
+						<li className="mb-1 mr-lg-1 mb-lg-0">
+							<Button
+								url="#parts"
+								copy="Buy Parts"
+								addClass={buttonCSS}
+								style={{}}
+							/>
+						</li>
+						<li className="mb-1 mr-lg-1 mb-lg-0">
+							<Button
+								url="#support"
+								copy="Dealer Support"
+								addClass={buttonCSS}
+							/>
+						</li>
+						<li className="mb-1 mr-lg-1 mb-lg-0">
+							<Button url="#diagrams" copy="Diagrams" addClass={buttonCSS} />
+						</li>
+						<li className="mb-1 mr-lg-1 mb-lg-0">
+							<Button url="#warranty" copy="Warranty" addClass={buttonCSS} />
+						</li>
+						<li className="mb-1 mr-lg-1 mb-lg-0">
+							<Button url="#how-tos" copy="How-Tos" addClass={buttonCSS} />
+						</li>
+						<li>
+							<Button
+								url="#registration"
+								copy="Registration"
+								addClass={buttonCSS}
+							/>
+						</li>
+					</ul>
 				</div>
+			</section>
 
+			<section className={`mt-2 ${containerCSS}`}>
 				<ul className="list-unstyled flex flex-column-reverse flex-lg-row flex-wrap">
 					<li className="col-12 col-lg-9">
 						<ul className="" style={{ fontSize: "0.9em", lineHeight: "1.8" }}>
@@ -159,4 +159,4 @@ const Financing = () => {
 	);
 };
 
-export default Financing;
+export default Dynosite;
