@@ -27,7 +27,7 @@ export default function ZeroTurnMowers() {
 						<div className="p-2 w-lg-500">
 							<h2 className="h1">CUB CADET DAYS</h2>
 							<p className="display-4 mb-0">
-								Get $150 off the XT Enduro Series now through June 17th*
+								Get up to $1,100 off the Ultima Series Zero-Turn Mowers
 							</p>
 							<small className="mb-0 pl-4" style={{ fontSize: "10px" }}>
 								*Restrictions apply. Visit your local retailer or click to learn
