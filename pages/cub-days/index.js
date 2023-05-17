@@ -8,14 +8,14 @@ const Tractors = () => {
 
 	return (
 		<>
-			{/* <button
+			<button
 				className="position-fixed bg-danger"
 				style={{ zIndex: 1001, right: "20px", top: "20px" }}
 				onClick={(e) => {
 					setChange(!change);
 				}}>
 				Switch View
-			</button> */}
+			</button>
 			{change ? <LawnAndGardenTractors /> : <ZeroTurnMowers />}
 		</>
 	);

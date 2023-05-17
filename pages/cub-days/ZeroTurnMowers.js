@@ -2,22 +2,46 @@ import IconCubDays from "./logo.js";
 
 export default function ZeroTurnMowers() {
 	return (
-		<div>
-			<section className="flex p-0">
-				<img
-					src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/hero.jpg"
-					alt=""
-					className="d-none d-md-block w-100"
-				/>
-				<img
-					src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/hero-mobile.jpg"
-					alt=""
-					className="d-block d-md-none w-100"
-				/>
-			</section>
-
-			<section>
-				<IconCubDays />
+		<div className="mtd-page">
+			<section className="position-relative">
+				<picture>
+					<source
+						media="(min-width: 768px)"
+						srcSet="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/vd006db48162baba2af567f7c8619194f2376165f/cub-days-2023/cubdays-hero2.jpg"
+					/>
+					<source
+						media="(min-width: 0px)"
+						srcSet="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/vd006db48162baba2af567f7c8619194f2376165f/cub-days-2023/cubdays-hero2.jpg"
+					/>
+					<img
+						alt=""
+						className="w-100 h-100 position-relative"
+						src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/hero.jpg"
+						style={{ objectFit: "contain", zIndex: 0 }}
+					/>
+				</picture>
+				<div
+					className="position-lg-absolute w-100 h-100"
+					style={{ zIndex: 1, top: 0, left: 0 }}>
+					<div className="container pt-lg-9 bg-yellow bg-lg-transparant">
+						<div className="p-2 w-lg-500">
+							<h2 className="h1">CUB CADET DAYS</h2>
+							<p className="display-4 mb-0">
+								Get $150 off the XT Enduro Series now through June 17th*
+							</p>
+							<small className="mb-0 pl-4" style={{ fontSize: "10px" }}>
+								*Restrictions apply. Visit your local retailer or click to learn
+								more for{" "}
+								<a
+									href="https://www.cubcadet.com/en_US/seasonal-offers.html"
+									style={{ fontSize: "10px" }}>
+									complete details
+								</a>
+								.
+							</small>
+						</div>
+					</div>
+				</div>
 			</section>
 
 			<section className="py-5 px-1">

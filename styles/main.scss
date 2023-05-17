@@ -9,6 +9,10 @@
 .mtd-page {
 	font-size: 16px;
 
+	.bg-yellow {
+		background: #fff;
+	}
+
 	section {
 		//position: relative;
 		// overflow: hidden;
@@ -289,6 +293,16 @@
 
 	.w-lg-500 {
 		width: 500px;
+	}
+	.text-lg-white {
+		color: #fff;
+		a {
+			color: #fff;
+		}
+	}
+	.bg-lg-transparant {
+		background: transparent !important;
+		background-color: transparent !important;
 	}
 }
 
