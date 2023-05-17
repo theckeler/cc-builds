@@ -21,8 +21,8 @@ export default function LawnAndGardenTractors() {
 				<div
 					className="position-lg-absolute w-100 h-100"
 					style={{ zIndex: 1, top: 0, left: 0 }}>
-					<div className="container pt-lg-9 bg-yellow bg-lg-transparant">
-						<div className="text-lg-white p-2 w-lg-500">
+					<div className="container pt-lg-9 bg-black bg-lg-transparant">
+						<div className="p-2 w-lg-500 bg-black">
 							<h2 className="h1">CUB CADET DAYS</h2>
 							<p className="display-4 mb-0">
 								Get $150 off the XT Enduro Series now through June 17th*
