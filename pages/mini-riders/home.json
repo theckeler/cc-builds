@@ -18,7 +18,7 @@
 	},
 
 	"copyBlock": {
-		"h1": "COMPACT YET POWERFUL.",
+		"h1": "Compact yet powerful",
 		"copy": "Designed to deliver, the CC30’s compact frame helps provide easy maneuverability and control so you can make quick work of even those hard-to-reach areas."
 	},
 
@@ -28,8 +28,8 @@
 			{
 				"url": "https://www.cubcadet.com/en_US/riding-lawn-mowers/lawn-and-garden-tractors?prefn1=series&prefv1=XT1%C2%AE%20Enduro%20Series%E2%84%A2%7CCC30%20Series",
 				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw24519b24/products/Equipment/Cub-Cadet_CC30H_6.jpg?sw=740&sh=740&sm=fit",
-				"title": "CC30H",
-				"copy": "The Cub Cadet Mini-Riders delivers the same strength, durability and perfect cut as our larger riders; but in a more compact design.",
+				"title": "CC30H Mini Rider",
+				"copy": "Cub Cadet small riding lawn mowers deliver the same strength, durability and perfect cut as our larger riders; but in a more compact design.",
 
 				"button": {
 					"copy": "EXPLORE The CC30H",
@@ -40,7 +40,7 @@
 			{
 				"url": "https://www.cubcadet.com/en_US/electric-riding-mowers/cc30e/33BA27JDB10.html?fitsOnModel=false#prefn1=series&prefv1=XT1%C2%AE%20Enduro%20Series%E2%84%A2%7CCC30%20Series&start=3",
 				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw506ac45e/products/Equipment/Cub_Cadet_CC30E_2000x2000_4.jpg?sw=1000&sh=1000&sm=fit",
-				"title": "CC30E",
+				"title": "CC30E Mini Rider",
 
 				"copy": "Its compact size gives you incredible maneuverability and control so you can mow through small areas like most backyard gateways.",
 
@@ -96,7 +96,7 @@
 	},
 
 	"forEveryJob": {
-		"h2": "Year-Round Versatility",
+		"h2": "Attachments & Accessories",
 		"copy": "Designed to get more done season after season with a selection of attachments and accessories designed for a variety of jobs.",
 		"blocks": [
 			{
@@ -123,7 +123,7 @@
 	},
 
 	"howTo": {
-		"h2": "Lawn & Garden Tractor Articles",
+		"h2": "Riding Lawn Mower Articles",
 		"blocks": [
 			{
 				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw36bb159f/Knowledge_Center/help-center/best-in-class-cut_1100x572.jpg?sw=1116",
@@ -168,5 +168,31 @@
 				"url": "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-assemble-tire-chains-on-your-cub-cadet-riding-mower.html"
 			}
 		]
-	}
+	},
+	"faqs": [
+		{
+			"question": "What size riding mower do I need for 1 acre?",
+			"answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in augue ex. Donec vehicula eleifend lacinia. Ut et metus viverra, efficitur purus sed, lacinia quam. In elit dolor, luctus ac dui nec, interdum facilisis sapien. Phasellus congue sapien a dapibus auctor. Nam tincidunt hendrerit eros. Mauris pretium dapibus laoreet. Nulla pretium erat sapien, sed ultricies augue fringilla nec. Cras pharetra nibh eu vehicula convallis. Donec et ipsum sed felis semper bibendum id eget odio. Nulla aliquam bibendum nisl mollis luctus. Nulla ut orci lacinia, venenatis purus sit amet, lobortis massa. Nam lacus urna, porttitor at condimentum vel, consectetur a odio. Duis condimentum fringilla ultricies. Nam dignissim orci dolor, a dapibus ipsum accumsan non. Proin mollis congue dignissim."
+		},
+		{
+			"question": "Can you use a riding mower on a small yard?",
+			"answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in augue ex. Donec vehicula eleifend lacinia. Ut et metus viverra, efficitur purus sed, lacinia quam. In elit dolor, luctus ac dui nec, interdum facilisis sapien. Phasellus congue sapien a dapibus auctor. Nam tincidunt hendrerit eros. Mauris pretium dapibus laoreet. Nulla pretium erat sapien, sed ultricies augue fringilla nec. Cras pharetra nibh eu vehicula convallis. Donec et ipsum sed felis semper bibendum id eget odio. Nulla aliquam bibendum nisl mollis luctus. Nulla ut orci lacinia, venenatis purus sit amet, lobortis massa. Nam lacus urna, porttitor at condimentum vel, consectetur a odio. Duis condimentum fringilla ultricies. Nam dignissim orci dolor, a dapibus ipsum accumsan non. Proin mollis congue dignissim."
+		},
+		{
+			"question": "What type of mower is recommended for a half acre?",
+			"answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in augue ex. Donec vehicula eleifend lacinia. Ut et metus viverra, efficitur purus sed, lacinia quam. In elit dolor, luctus ac dui nec, interdum facilisis sapien. Phasellus congue sapien a dapibus auctor. Nam tincidunt hendrerit eros. Mauris pretium dapibus laoreet. Nulla pretium erat sapien, sed ultricies augue fringilla nec. Cras pharetra nibh eu vehicula convallis. Donec et ipsum sed felis semper bibendum id eget odio. Nulla aliquam bibendum nisl mollis luctus. Nulla ut orci lacinia, venenatis purus sit amet, lobortis massa. Nam lacus urna, porttitor at condimentum vel, consectetur a odio. Duis condimentum fringilla ultricies. Nam dignissim orci dolor, a dapibus ipsum accumsan non. Proin mollis congue dignissim."
+		},
+		{
+			"question": "Is a riding mower worth it for a half acre?",
+			"answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in augue ex. Donec vehicula eleifend lacinia. Ut et metus viverra, efficitur purus sed, lacinia quam. In elit dolor, luctus ac dui nec, interdum facilisis sapien. Phasellus congue sapien a dapibus auctor. Nam tincidunt hendrerit eros. Mauris pretium dapibus laoreet. Nulla pretium erat sapien, sed ultricies augue fringilla nec. Cras pharetra nibh eu vehicula convallis. Donec et ipsum sed felis semper bibendum id eget odio. Nulla aliquam bibendum nisl mollis luctus. Nulla ut orci lacinia, venenatis purus sit amet, lobortis massa. Nam lacus urna, porttitor at condimentum vel, consectetur a odio. Duis condimentum fringilla ultricies. Nam dignissim orci dolor, a dapibus ipsum accumsan non. Proin mollis congue dignissim."
+		},
+		{
+			"question": "What is the narrowest ride-on mower?",
+			"answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in augue ex. Donec vehicula eleifend lacinia. Ut et metus viverra, efficitur purus sed, lacinia quam. In elit dolor, luctus ac dui nec, interdum facilisis sapien. Phasellus congue sapien a dapibus auctor. Nam tincidunt hendrerit eros. Mauris pretium dapibus laoreet. Nulla pretium erat sapien, sed ultricies augue fringilla nec. Cras pharetra nibh eu vehicula convallis. Donec et ipsum sed felis semper bibendum id eget odio. Nulla aliquam bibendum nisl mollis luctus. Nulla ut orci lacinia, venenatis purus sit amet, lobortis massa. Nam lacus urna, porttitor at condimentum vel, consectetur a odio. Duis condimentum fringilla ultricies. Nam dignissim orci dolor, a dapibus ipsum accumsan non. Proin mollis congue dignissim."
+		},
+		{
+			"question": "What is the smallest zero turn riding mower made?",
+			"answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in augue ex. Donec vehicula eleifend lacinia. Ut et metus viverra, efficitur purus sed, lacinia quam. In elit dolor, luctus ac dui nec, interdum facilisis sapien. Phasellus congue sapien a dapibus auctor. Nam tincidunt hendrerit eros. Mauris pretium dapibus laoreet. Nulla pretium erat sapien, sed ultricies augue fringilla nec. Cras pharetra nibh eu vehicula convallis. Donec et ipsum sed felis semper bibendum id eget odio. Nulla aliquam bibendum nisl mollis luctus. Nulla ut orci lacinia, venenatis purus sit amet, lobortis massa. Nam lacus urna, porttitor at condimentum vel, consectetur a odio. Duis condimentum fringilla ultricies. Nam dignissim orci dolor, a dapibus ipsum accumsan non. Proin mollis congue dignissim."
+		}
+	]
 }

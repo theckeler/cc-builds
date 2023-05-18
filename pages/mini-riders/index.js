@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import jsonDataUS from "./data/home.json";
+import jsonDataUS from "./home.json";
 
 import IconCopyBlock from "@/c/IconCopyBlock";
 import QuoteBlock from "@/c/QuoteBlock";
@@ -10,7 +10,8 @@ import ProductBlock from "@/c/ProductBlock";
 import ImgCopyBlock from "@/c/ImgCopyBlock";
 import Button from "@/c/Button";
 import HeroImg from "@/c/HeroImg";
-import BuildMenu from "@/c/BuildMenu";
+//import BuildMenu from "@/c/BuildMenu";
+import Faqs from "@/c/Faqs";
 
 const XTEnduroSeriesHome = () => {
 	const [jsonData, setJsonData] = useState({ ...jsonDataUS });
@@ -19,6 +20,8 @@ const XTEnduroSeriesHome = () => {
 		<>
 			{/* Head */}
 			<div className="mtd-page">
+				<h1 className="sr-only">Small Riding Lawn Mowers</h1>
+
 				{/* HERO */}
 				<section className="position-relative">
 					<HeroImg hero={jsonData.hero} />
@@ -50,11 +53,12 @@ const XTEnduroSeriesHome = () => {
 						</li>
 						<li className="col-12 col-lg-8 py-9 bg-primary flex flex-column justify-content-center">
 							<div className="container p-3 text-left text-lg-center">
-								<h1
+								<h2
 									className="h1 d-block"
 									dangerouslySetInnerHTML={{
 										__html: jsonData.copyBlock.h1,
-									}}></h1>
+									}}
+								/>
 								<p
 									className=""
 									dangerouslySetInnerHTML={{
@@ -124,8 +128,28 @@ const XTEnduroSeriesHome = () => {
 					</ul>
 				</section>
 
+				{/* forEveryJob */}
+				<section className="container d-flex flex-column align-items-center p-0 mt-8">
+					<h2 className="text-center mb-3 p-1">{jsonData.forEveryJob.h2}</h2>
+					<p className="text-center mb-6 p-1">{jsonData.forEveryJob.copy}</p>
+					<ul className="flex flex-column flex-md-row list-unstyled">
+						{jsonData.forEveryJob.blocks.map((block, i) => {
+							return (
+								<li key={i} className="col-12 col-md-4">
+									<ImgCopyBlock {...{ block }} linkable={false} />
+								</li>
+							);
+						})}
+					</ul>
+					<Button
+						copy={jsonData.forEveryJob.button.copy}
+						url={jsonData.forEveryJob.button.url}
+						addClass={jsonData.forEveryJob.button.addClass}
+					/>
+				</section>
+
 				{/* QuoteBlock */}
-				<section className="d-flex flex-column p-0 mt-3 position-relative bg-primary">
+				<section className="d-flex flex-column p-0 mt-8 position-relative bg-primary">
 					<HeroImg
 						hero={jsonData.quote.hero}
 						addClass="position-absolute"
@@ -170,18 +194,21 @@ const XTEnduroSeriesHome = () => {
 
 				{/* RIDING MOWER FINDER */}
 				<section
-					className="d-flex flex-column p-9 mt-3"
+					className="d-flex flex-column p-9 "
 					style={{ backgroundColor: "#efefef" }}>
-					<div className="container p-9 text-center">
-						FOR RIDING MOWER FINDER
+					<div
+						className="container p-9 text-center d-flex justify-content-center align-items-center"
+						style={{ minHeight: "400px" }}>
+						For Video?
 					</div>
 				</section>
 			</div>
 
 			{/* Footer */}
-			<div className="">
+			<div className="container">
 				<HowToMaintence {...{ jsonData }} />
 				<Articles {...{ jsonData }} />
+				<Faqs faqs={jsonData.faqs} id="faqs-financing" className="p-2 p-lg-4" />
 			</div>
 		</>
 	);
