@@ -20,8 +20,6 @@ const XTEnduroSeriesHome = () => {
 		<>
 			{/* Head */}
 			<div className="mtd-page">
-				<h1 className="sr-only">Small Riding Lawn Mowers</h1>
-
 				{/* HERO */}
 				<section className="position-relative">
 					<HeroImg hero={jsonData.hero} />
@@ -93,11 +91,13 @@ const XTEnduroSeriesHome = () => {
 
 				{/* lineup */}
 				<section className="container d-flex flex-column p-1 mt-8 mb-4">
-					<h2
+					<h1
 						className="h2 d-block text-center mb-8"
+						style={{ fontSize: "2.375rem" }}
 						dangerouslySetInnerHTML={{
 							__html: jsonData.lineup.h2,
-						}}></h2>
+						}}
+					/>
 
 					<ul className="row list-unstyled">
 						{jsonData.lineup.blocks.map((block, i) => {
