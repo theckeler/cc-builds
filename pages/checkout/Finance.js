@@ -40,10 +40,12 @@ export default function Finance() {
 								style={{ padding: 0 }}
 								data-url="/on/demandware.store/Sites-cubcadet-Site/en_US/FinancingApplication-Estimation?pageType=billing">
 								<div className="td-estimation py-2 px-3">
-									<h2 className="display-3 text-center text-lg-left">
+									<h2 className="display-3 text-center text-lg-left mt-n3 mt-lg-0">
 										Buy Now, Pay Later!
 									</h2>
-									<h3 className="text-center text-lg-left">
+									<h3
+										className="text-center text-lg-left font-weight-normal"
+										style={{ fontSize: "22px" }}>
 										Your order is eligible for Cub Cadet Financing.
 									</h3>
 									<p className="finance-estimate-disclaimer d-none">
