@@ -7,8 +7,11 @@ export default function Finance() {
 	const [option, setOption] = useState([false, false]);
 
 	const radioCSS = {
-		width: "1.5em",
+		//width: "1.75em",
+		//height: "100%",
 		accentColor: "#ffc20f",
+		transform: "scale(1.5)",
+		//		boxShadow: "0 0 transparent",
 	};
 
 	return (
@@ -21,21 +24,28 @@ export default function Finance() {
 				</li>
 				<li className="">
 					<div className="border-top border-left border-right">
-						<ul className="list-unstyled d-flex">
-							<li className="col-2 ml-n2 mt-1" style={{ padding: 0 }}>
+						<ul className="list-unstyled d-lg-flex">
+							<li
+								className="col-lg-2 text-center ml-lg-n2 mt-n1 mt-lg-1"
+								style={{ padding: 0 }}>
 								<img
 									className="w-100"
+									style={{ maxWidth: "100px" }}
 									src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/default/dw08887810/images/cc-td-card-3d.png"
 									alt=""
 								/>
 							</li>
 							<li
-								className="finance-estimation-block col-10"
+								className="finance-estimation-block col-lg-10"
 								style={{ padding: 0 }}
 								data-url="/on/demandware.store/Sites-cubcadet-Site/en_US/FinancingApplication-Estimation?pageType=billing">
 								<div className="td-estimation py-2 px-3">
-									<h2 className="display-3">Buy Now, Pay Later!</h2>
-									<h3>Your order is eligible for Cub Cadet Financing.</h3>
+									<h2 className="display-3 text-center text-lg-left">
+										Buy Now, Pay Later!
+									</h2>
+									<h3 className="text-center text-lg-left">
+										Your order is eligible for Cub Cadet Financing.
+									</h3>
 									<p className="finance-estimate-disclaimer d-none">
 										<span>
 											Interest will be charged from the purchase date if the
@@ -47,8 +57,8 @@ export default function Finance() {
 											minimum payment.
 										</span>
 									</p>
-									<ul className="list-unstyled d-flex align-items-center">
-										<li className="">
+									<ul className="list-unstyled d-lg-flex align-items-center">
+										<li className="text-center text-lg-left">
 											<a
 												className="btn btn-secondary td-apply-finance py-1 px-6"
 												href="#top"
@@ -56,9 +66,9 @@ export default function Finance() {
 												Apply Now
 											</a>
 										</li>
-										<li>
+										<li className="text-center text-lg-left">
 											<a
-												className="ml-3"
+												className="ml-lg-3"
 												style={{ fontSize: "12px" }}
 												data-title="Details & Disclosures"
 												data-url="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/FinancingApplication-Disclosure"
@@ -72,15 +82,17 @@ export default function Finance() {
 						</ul>
 
 						<div className="bg-secondary px-1 py-2">
-							<ul className="d-flex align-items-center list-unstyled">
+							<ul className="d-lg-flex align-items-center list-unstyled">
 								<li
-									className="col-8 font-bold"
+									className="col-lg-8 font-bold"
 									style={{ padding: 0, fontSize: "1.3em" }}
 									id="finance-title">
 									$70/MO &amp; No Interest if Paid in Full within 6 Months
 									<sup>1</sup>
 								</li>
-								<li className="ml-auto col-4 text-right" style={{ padding: 0 }}>
+								<li
+									className="ml-auto col-lg-4 text-right"
+									style={{ padding: 0 }}>
 									<span style={{ fontSize: "1em" }}>Total:</span>{" "}
 									<span
 										className="font-bold"
@@ -110,37 +122,37 @@ export default function Finance() {
 							className="list-unstyled w-100"
 							role="tablist">
 							<li
-								className="w-100 flex position-relative"
-								style={{ marginLeft: "-0.75em" }}
+								className="w-100 d-flex align-items-center position-relative"
 								data-method-id="TD_FINANCE">
-								<input
-									type="radio"
-									//className="sr-only"
-									className=""
-									style={radioCSS}
-									id="financePlanId_43439"
-									defaultValue={43439}
-									name="finance-type"
-									//data-is-default-plan="true"
-									//encoding="off"
-									checked={option[0]}
-									onChange={() => {
-										setOption(true, false);
-										document
-											.querySelector("#finance-options-fields")
-											.classList.remove("hidden");
+								<div style={radioCSS} className="ml-n1">
+									<input
+										type="radio"
+										className=""
+										id="financePlanId_43439"
+										defaultValue={43439}
+										name="finance-type"
+										checked={option[0]}
+										onChange={() => {
+											setOption(true, false);
+											document
+												.querySelector("#finance-options-fields")
+												.classList.remove("hidden");
 
-										document.querySelector(
-											"#financePlanId_43440"
-										).checked = true;
-									}}
-								/>
+											document.querySelector(
+												"#financePlanId_43440"
+											).checked = true;
+											document.querySelector(
+												"#finance-option-43440"
+											).style.background = "#ededed";
+										}}
+									/>
+								</div>
 								<label
 									className="position-absolute w-100 h-100"
 									htmlFor="financePlanId_43439"
 									style={{ top: 0, left: 0 }}
 								/>
-								<ul className="list-unstyled w-100 d-block p-2 text-left border-0 bg-transparent">
+								<ul className="list-unstyled d-block p-2 text-left border-0 bg-transparent">
 									<li
 										className="w-100 d-block font-bold text-uppercase"
 										style={{ fontSize: "1.6em" }}>
@@ -175,7 +187,6 @@ export default function Finance() {
 												</li>
 												<li className="">
 													<FinanceOption
-														radioCSS={radioCSS}
 														planID={43441}
 														name="$80/MO &amp; No Interest if Paid in Full within 9 Months<sup>1</sup>"
 														total={426.31}
@@ -184,7 +195,6 @@ export default function Finance() {
 												</li>
 												<li className="">
 													<FinanceOption
-														radioCSS={radioCSS}
 														planID={43442}
 														name="$90/MO &amp; No Interest if Paid in Full within 10 Months<sup>1</sup>"
 														total={436.31}
@@ -193,7 +203,6 @@ export default function Finance() {
 												</li>
 												<li className="">
 													<FinanceOption
-														radioCSS={radioCSS}
 														planID={43443}
 														name="$1000/MO &amp; Standard Purchase APR and Payments<sup>4</sup>"
 														total={446.31}
@@ -209,57 +218,69 @@ export default function Finance() {
 					</div>
 				</li>
 				<li className="mt-2" data-method-id="CREDIT_CARD">
-					<div className="border w-100 flex position-relative">
-						<input
-							type="radio"
-							//className="sr-only"
-							id="credit-card"
-							defaultValue={43439}
-							name="finance-type"
-							//data-is-default-plan="true"
-							//encoding="off"
-							style={radioCSS}
-							className="ml-n1"
-							checked={option[1]}
-							onChange={() => {
-								setOption(false, true);
-								document
-									.querySelector("#finance-options-fields")
-									.classList.add("hidden");
-							}}
-						/>
+					<div className="border w-100 d-flex align-items-center position-relative">
+						<div style={radioCSS} className="ml-n1">
+							<input
+								type="radio"
+								//className="sr-only"
+								id="credit-card"
+								defaultValue={43439}
+								name="finance-type"
+								//data-is-default-plan="true"
+								//encoding="off"
+								//className="ml-n1"
+								checked={option[1]}
+								onChange={() => {
+									setOption(false, true);
+									document
+										.querySelector("#finance-options-fields")
+										.classList.add("hidden");
+								}}
+							/>
+						</div>
 						<label
 							className="position-absolute w-100 h-100 ml-1"
 							htmlFor="credit-card"
 							style={{ textTransform: "none", top: 0, left: 0 }}
 						/>
-						<ul className="list-unstyled w-100 d-flex p-2 text-left border-0 bg-transparent">
+
+						<ul className="list-unstyled w-100 d-flex align-items-center p-2 text-left border-0 bg-transparent">
 							<li
 								className="font-bold text-uppercase"
-								style={{ fontSize: "1.6em" }}>
+								style={{ fontSize: "1.6em", whiteSpace: "nowrap" }}>
 								Credit Card
 							</li>
-							<li className="ml-auto">
-								<img
-									className=""
-									src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/default/dwf60cc71b/images/svg-icons/visa.svg"
-									alt="Visa Accepted"
-								/>
-								<img
-									className=""
-									src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/default/dwab7e1c1c/images/svg-icons/amex.svg"
-									alt="American Express Accepted"
-								/>
-								<img
-									className=""
-									src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/default/dwa22fe473/images/svg-icons/master.svg"
-									alt="Master Card Accepted"
-								/>
-								<img
-									className=""
-									src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/default/dw809a8397/images/svg-icons/discover.svg"
-									alt="Discover Accepted"
-								/>
+							<li className="ml-lg-auto pl-2">
+								<ul className="d-flex flex-wrap list-unstyled ">
+									<li className="col-6 col-lg-3 px-0">
+										<img
+											className="w-100 p-1"
+											src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/default/dwf60cc71b/images/svg-icons/visa.svg"
+											alt="Visa Accepted"
+										/>
+									</li>
+									<li className="col-6 col-lg-3 px-0">
+										<img
+											className="w-100 p-1"
+											src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/default/dwab7e1c1c/images/svg-icons/amex.svg"
+											alt="American Express Accepted"
+										/>
+									</li>
+									<li className="col-6 col-lg-3 px-0">
+										<img
+											className="w-100 p-1"
+											src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/default/dwa22fe473/images/svg-icons/master.svg"
+											alt="Master Card Accepted"
+										/>
+									</li>
+									<li className="col-6 col-lg-3 px-0">
+										<img
+											className="w-100 p-1"
+											src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/default/dw809a8397/images/svg-icons/discover.svg"
+											alt="Discover Accepted"
+										/>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</div>

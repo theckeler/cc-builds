@@ -1,29 +1,40 @@
 export default function FinanceOptions({ finePrint, name, planID, total }) {
 	return (
-		<div className="list-unstyled d-flex px-1 py-2 border-top position-relative">
-			<input
-				type="radio"
-				className="d-flex mr-1 position-relative"
-				id={`financePlanId_${planID}`}
-				defaultValue={planID}
-				name="dwfrm_billing_financeCardFields_planId"
-				data-is-default-plan="true"
-				//defaultChecked=""
-				encoding="off"
-				style={{ accentColor: "#ffc20f", zIndex: 0 }}
-				data-name={name}
-				data-fine={finePrint}
-				data-total={`$${total}`}
-				onChange={(e) => {
-					console.log(e.currentTarget.dataset.name);
-					document.querySelector("#finance-title").innerHTML =
-						e.currentTarget.dataset.name;
-					document.querySelector("#finance-fine").innerHTML =
-						e.currentTarget.dataset.fine;
-					document.querySelector("#finance-total").innerHTML =
-						e.currentTarget.dataset.total;
-				}}
-			/>
+		<div
+			className="list-unstyled d-flex align-items-center px-1 py-2 border-top position-relative finance-option"
+			id={`finance-option-${planID}`}>
+			<div className="mr-1" style={{}}>
+				<input
+					type="radio"
+					className="position-relative"
+					id={`financePlanId_${planID}`}
+					defaultValue={planID}
+					name="dwfrm_billing_financeCardFields_planId"
+					//data-is-default-plan="true"
+					//defaultChecked=""
+					//encoding="off"
+					style={{ accentColor: "#ffc20f", zIndex: 0 }}
+					data-name={name}
+					data-fine={finePrint}
+					data-total={`$${total}`}
+					onChange={(e) => {
+						document.querySelector("#finance-title").innerHTML =
+							e.currentTarget.dataset.name;
+						document.querySelector("#finance-fine").innerHTML =
+							e.currentTarget.dataset.fine;
+						document.querySelector("#finance-total").innerHTML =
+							e.currentTarget.dataset.total;
+
+						document.querySelectorAll(".finance-option").forEach(function (e) {
+							e.style.background = "";
+						});
+						document.querySelector(
+							`#finance-option-${planID}`
+						).style.background = "#ededed";
+					}}
+				/>
+			</div>
+
 			<label
 				className="position-absolute w-100 h-100"
 				htmlFor={`financePlanId_${planID}`}
@@ -31,14 +42,17 @@ export default function FinanceOptions({ finePrint, name, planID, total }) {
 			/>
 			<ul className="list-unstyled position-relative" style={{ zIndex: 0 }}>
 				<li className="" style={{ marginBottom: "6px" }}>
-					<ul className="list-unstyled d-flex font-bold">
+					<ul className="list-unstyled d-flex flex-column flex-lg-row">
 						<li
-							className="position-relative pr-1"
+							className="position-relative pr-1 font-bold"
 							dangerouslySetInnerHTML={{
 								__html: name,
 							}}
 						/>
-						<li className="ml-auto">Total: ${total}</li>
+						<li className="ml-auto">
+							<span style={{ fontSize: "12px" }}>Total:</span>{" "}
+							<strong>${total}</strong>
+						</li>
 					</ul>
 				</li>
 				<li
