@@ -36,42 +36,49 @@ export default function FinanceOptions({ finePrint, name, planID, total }) {
 			</div>
 
 			<label
-				className="position-absolute w-100 h-100"
+				//className="position-absolute w-100 h-100"
 				htmlFor={`financePlanId_${planID}`}
-				style={{ top: 0, left: 0, zIndex: 1 }}
-			/>
-			<ul className="list-unstyled position-relative" style={{ zIndex: 0 }}>
-				<li className="" style={{ marginBottom: "6px" }}>
-					<ul className="list-unstyled d-flex flex-column flex-lg-row">
-						<li
-							className="position-relative pr-1 font-bold"
-							dangerouslySetInnerHTML={{
-								__html: name,
-							}}
-						/>
-						<li className="ml-auto">
-							<span style={{ fontSize: "12px" }}>Total:</span>{" "}
-							<strong>${total}</strong>
-						</li>
-					</ul>
-				</li>
-				<li
-					className="px-1"
-					style={{ fontSize: "11px" }}
-					data-disclaimer={finePrint}
-					data-plan-type="deferred"
-					data-fee="">
-					{finePrint}
-					<a
-						href="#top"
-						data-url="/on/demandware.store/Sites-cubcadet-Site/en_US/FinancingApplication-Disclosure"
-						data-title="Details & Disclosures"
-						className="ml-1"
-						style={{ fontSize: "11px" }}>
-						See Details
-					</a>
-				</li>
-			</ul>
+				style={{
+					top: 0,
+					left: 0,
+					zIndex: 1,
+					fontSize: "16px",
+					fontWeight: "normal",
+					textTransform: "none",
+				}}>
+				<ul className="list-unstyled position-relative" style={{ zIndex: 0 }}>
+					<li className="" style={{ marginBottom: "6px" }}>
+						<ul className="list-unstyled d-flex flex-column flex-lg-row">
+							<li
+								className="position-relative pr-1 font-bold"
+								dangerouslySetInnerHTML={{
+									__html: name,
+								}}
+							/>
+							<li className="ml-auto">
+								<span style={{ fontSize: "12px" }}>Total:</span>{" "}
+								<strong>${total}</strong>
+							</li>
+						</ul>
+					</li>
+					<li
+						className="px-1"
+						style={{ fontSize: "11px" }}
+						data-disclaimer={finePrint}
+						data-plan-type="deferred"
+						data-fee="">
+						{finePrint}
+						<a
+							href="#top"
+							data-url="/on/demandware.store/Sites-cubcadet-Site/en_US/FinancingApplication-Disclosure"
+							data-title="Details & Disclosures"
+							className="ml-1 position-relative"
+							style={{ fontSize: "11px", zIndex: 1001 }}>
+							See Details
+						</a>
+					</li>
+				</ul>
+			</label>
 		</div>
 	);
 }

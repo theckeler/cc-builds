@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import FinanceOption from "./FinanceOption";
-import Checkbox from "@/c/icons/CheckChecked";
-import CheckUnChecked from "@/c/icons/CheckUnChecked";
+import ReturningCustomer from "./ReturningCustomer";
 
 export default function Finance() {
 	const [option, setOption] = useState([false, false]);
@@ -18,11 +17,11 @@ export default function Finance() {
 		<fieldset>
 			<ul className="list-unstyled">
 				<li className="payment-options-section pb-2">
-					<legend className="">
+					<legend>
 						<h6>Payment Method</h6>
 					</legend>
 				</li>
-				<li className="">
+				<li>
 					<div className="border-top border-left border-right">
 						<ul className="list-unstyled d-lg-flex">
 							<li
@@ -104,7 +103,7 @@ export default function Finance() {
 									</span>
 								</li>
 							</ul>
-							<div className="" style={{ fontSize: ".8em" }} id="finance-fine">
+							<div style={{ fontSize: ".8em" }} id="finance-fine">
 								Minimum purchase $1,500. There is a promotional fee of $125 for
 								this transaction.
 								<a
@@ -129,7 +128,6 @@ export default function Finance() {
 								<div style={radioCSS} className="ml-n1">
 									<input
 										type="radio"
-										className=""
 										id="financePlanId_43439"
 										defaultValue={43439}
 										name="finance-type"
@@ -175,27 +173,25 @@ export default function Finance() {
 										id="finance-card-content"
 										role="tabpanel"
 										aria-labelledby="finance-card-content">
-										<li
-											className=""
-											data-url="/on/demandware.store/Sites-cubcadet-Site/en_US/FinancingApplication-Plans?useNewRules=true">
+										<li data-url="/on/demandware.store/Sites-cubcadet-Site/en_US/FinancingApplication-Plans?useNewRules=true">
 											<ul className="list-unstyled">
-												<li className="">
+												<li>
 													<FinanceOption
 														planID={43440}
 														name="$70/MO &amp; No Interest if Paid in Full within 6 Months<sup>1</sup>"
 														total={416.31}
-														finePrint="Interest will be charged from the purchase date if the purchase balance is not paid in full by the end of the promotional period. Minimum purchase $199. See Details"
+														finePrint="Interest will be charged from the purchase date if the purchase balance is not paid in full by the end of the promotional period. Minimum purchase $199."
 													/>
 												</li>
-												<li className="">
+												<li>
 													<FinanceOption
 														planID={43441}
 														name="$80/MO &amp; No Interest if Paid in Full within 9 Months<sup>1</sup>"
 														total={426.31}
-														finePrint="Interest will be charged from the purchase date if the purchase balance is not paid in full by the end of the promotional period. Minimum purchase $199. See Details"
+														finePrint="Interest will be charged from the purchase date if the purchase balance is not paid in full by the end of the promotional period. Minimum purchase $199."
 													/>
 												</li>
-												<li className="">
+												<li>
 													<FinanceOption
 														planID={43442}
 														name="$90/MO &amp; No Interest if Paid in Full within 10 Months<sup>1</sup>"
@@ -203,13 +199,16 @@ export default function Finance() {
 														finePrint="Interest will be charged from the purchase date if the purchase balance is not paid in full by the end of the promotional. Minimum purchase $199."
 													/>
 												</li>
-												<li className="">
+												<li>
 													<FinanceOption
 														planID={43443}
 														name="$1000/MO &amp; Standard Purchase APR and Payments<sup>4</sup>"
 														total={446.31}
-														finePrint="29.99% APR. See Details"
+														finePrint="29.99% APR."
 													/>
+												</li>
+												<li>
+													<ReturningCustomer />
 												</li>
 											</ul>
 										</li>
