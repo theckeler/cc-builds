@@ -21,14 +21,10 @@ export default function LawnAndGardenTractors() {
 				<div
 					className="position-lg-absolute w-100 h-100"
 					style={{ zIndex: 1, top: 0, left: 0 }}>
-					<div className="container pt-lg-9 bg-yellow bg-lg-transparant">
-						<div className="text-lg-white p-2 w-lg-500">
-							<h2 className="h1" style={{ textShadow: "0px 0px 10px black" }}>
-								CUB CADET DAYS
-							</h2>
-							<p
-								className="display-4 mb-0"
-								style={{ textShadow: "0px 0px 10px black" }}>
+					<div className="container pt-lg-9 bg-black bg-lg-transparant">
+						<div className="bg-black text-lg-white p-2 w-lg-500">
+							<h2 className="h1">CUB CADET DAYS</h2>
+							<p className="display-4 mb-0">
 								Get $150 off the XT Enduro Series now through June 17th*
 							</p>
 							<small className="mb-0 pl-4" style={{ fontSize: "10px" }}>
@@ -36,7 +32,7 @@ export default function LawnAndGardenTractors() {
 								more for{" "}
 								<a
 									href="https://www.cubcadet.com/en_US/seasonal-offers.html"
-									style={{ fontSize: "10px" }}>
+									style={{ fontSize: "10px", color: "#fff" }}>
 									complete details
 								</a>
 								.

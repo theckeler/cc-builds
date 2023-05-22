@@ -295,14 +295,24 @@
 		width: 500px;
 	}
 	.text-lg-white {
-		color: #fff;
+		color: #fff !important;
 		a {
-			color: #fff;
+			color: #fff !important;
+		}
+	}
+	.text-lg-black {
+		color: #000 !important;
+		a {
+			color: #000 !important;
 		}
 	}
 	.bg-lg-transparant {
 		background: transparent !important;
 		background-color: transparent !important;
+	}
+	.bg-lg-black {
+		background: #000 !important;
+		background-color: #000 !important;
 	}
 }
 

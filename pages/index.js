@@ -1,7 +1,3 @@
-//import React from "react";
-//import Index from "./components/Index";
-//import Header from "./templates/Header";
-//import Footer from "./templates/Footer";
 import Link from "next/link";
 
 export default function Index() {
@@ -15,8 +11,8 @@ export default function Index() {
 				justifyContent: "center",
 				alignItems: "center",
 			}}>
-			<h1 style={{ textTransform: "uppercase" }}>CC Page Builds:</h1>
-			<ul className="home-list">
+			{/* <h1 style={{ textTransform: "uppercase" }}>CC Page Builds</h1> */}
+			{/* <ul className="home-list">
 				<li style={{ marginTop: "20px" }}>
 					<Link href="/dynosite-1.1">Dynosite 1.1</Link>
 				</li>
@@ -68,13 +64,13 @@ export default function Index() {
 				</li>
 				<li style={{ marginTop: "20px" }}>
 					<Link href="/product-review-giveaway">Product Review Giveaway</Link>
-				</li> */}
+				</li>
 				<li style={{ marginTop: "20px" }}>
 					<Link href="https://cc-site-build.vercel.app/" target="_new">
 						CC Site Redo
 					</Link>
 				</li>
-			</ul>
+			</ul> */}
 		</div>
 	);
 }

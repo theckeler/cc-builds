@@ -178,7 +178,7 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
 
 				<div className="mt-3 pt-3 border-top">
 					<Button
-						copy={`Add More <span class="ml-auto">&plus;</span>`}
+						copy={`Add More <span className="ml-auto">&plus;</span>`}
 						addClass="w-100 text-left text-uppercase d-flex bg-yellow px-2"
 						addClick={(e) => {
 							checkboxChange("#account-more-1");

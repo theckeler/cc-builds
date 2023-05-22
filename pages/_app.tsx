@@ -1,4 +1,5 @@
 import "@/styles/main.scss";
+import "@/styles/checkout.scss";
 import type { AppProps } from "next/app";
 
 import Header from "../templates/Header";

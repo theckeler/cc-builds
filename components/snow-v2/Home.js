@@ -270,23 +270,23 @@ const App = () => {
 											let output = "";
 
 											if (block2.logo) {
-												output += `<div class="logo"><img src=${block2.logo} /></div>`;
+												output += `<div className="logo"><img src=${block2.logo} /></div>`;
 											}
 
 											if (block2.img) {
-												output += `<div class="img"><img src=${block2.img} /></div>`;
+												output += `<div className="img"><img src=${block2.img} /></div>`;
 											}
 
 											if (block2.copy) {
-												output += `<span class="d-flex flex-column justify-content-center">${block2.copy}</span>`;
+												output += `<span className="d-flex flex-column justify-content-center">${block2.copy}</span>`;
 											}
 
 											if (block2.active === true) {
 												output =
-													'<span class="dash-bull d-flex flex-column justify-content-center">&bull;</span>';
+													'<span className="dash-bull d-flex flex-column justify-content-center">&bull;</span>';
 											} else if (block2.active === false) {
 												output =
-													'<span class="dash-bull d-flex flex-column justify-content-center">&ndash;</span>';
+													'<span className="dash-bull d-flex flex-column justify-content-center">&ndash;</span>';
 											}
 											return (
 												<li

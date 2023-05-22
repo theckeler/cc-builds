@@ -211,7 +211,7 @@ const Financing = () => {
 				</ul>
 			</section> */}
 
-			<div class="container">
+			<div className="container">
 				<ul className="list-unstyled d-flex flex-wrap flex-column flex-lg-row">
 					{jsonData.plans.blocks.map((block, i) => {
 						return (
@@ -323,7 +323,7 @@ const Financing = () => {
 				className="d-flex justify-content-center align-items-center py-4 my-6"
 				style={{ backgroundColor: "#e1e1e1" }}>
 				<div className="container px-1">
-					<ul class="list-unstyled d-flex flex-column flex-lg-row text-decoration-none h-100 h-auto">
+					<ul className="list-unstyled d-flex flex-column flex-lg-row text-decoration-none h-100 h-auto">
 						<li className="col-lg-6">
 							<img
 								src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw1026a6c1/Financing/become_a_dealer_desktop_1015x765.jpg"
@@ -332,11 +332,11 @@ const Financing = () => {
 							/>
 						</li>
 
-						<li class="col-lg-6 d-flex flex-column h-100 p-3">
-							<p class="font-weight-bold false mb-0 display-4">
+						<li className="col-lg-6 d-flex flex-column h-100 p-3">
+							<p className="font-weight-bold false mb-0 display-4">
 								Finance In-Store
 							</p>
-							<p class="copy mt-2">
+							<p className="copy mt-2">
 								We have multiple financing offers to fit your needs. Financing
 								is available at participating independent dealers.
 							</p>

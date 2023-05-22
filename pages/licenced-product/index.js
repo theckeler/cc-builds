@@ -18567,7 +18567,7 @@ const LicencedProduct = () => {
 																				View Options:
 																			</label>
 																			<a
-																				href="javascript:void(0)"
+																				href="#top"
 																				className="manual-download-link"
 																				aria-label="Downlad link for Operator Manuals Form number: 769-26020. Manual Name: MANL:OPER:ENGL:MX 550-750"
 																				data-title="Operator Manuals"
@@ -18710,10 +18710,10 @@ const LicencedProduct = () => {
 													data-bv-v="contentList:1"
 													className="bv-shared bv-core-container-173"
 													data-product-id="37DZ7CKK010">
-													{/*[if lt IE 7]> <div class="bv-compat bvie6 bvie-lt8 bvie"> <![endif]*/}{" "}
-													{/*[if IE 7]> <div class="bv-compat bvie7 bvie-lt8 bvie"> <![endif]*/}{" "}
-													{/*[if IE 8]> <div class="bv-compat bv-scroll-spy bvie8 bvie"> <![endif]*/}{" "}
-													{/*[if IE 9]> <div class="bv-compat bv-scroll-spy bvie9 bvie"> <![endif]*/}{" "}
+													{/*[if lt IE 7]> <div className="bv-compat bvie6 bvie-lt8 bvie"> <![endif]*/}{" "}
+													{/*[if IE 7]> <div className="bv-compat bvie7 bvie-lt8 bvie"> <![endif]*/}{" "}
+													{/*[if IE 8]> <div className="bv-compat bv-scroll-spy bvie8 bvie"> <![endif]*/}{" "}
+													{/*[if IE 9]> <div className="bv-compat bv-scroll-spy bvie9 bvie"> <![endif]*/}{" "}
 													{/*[if gt IE 9]> <!*/}
 													<div
 														className="bv-compat bv-scroll-spy"
@@ -19183,7 +19183,7 @@ const LicencedProduct = () => {
 													Enter Zip Code
 												</label>
 												<input
-													autofocus=""
+													autoFocus=""
 													required=""
 													type="text"
 													className="form-control zipcode-postal-code-input"

@@ -27,7 +27,7 @@ const IntelliPower = () => {
 
 		const footerHTML = `
 
-<script type="text/javascript" class="js-scripts">
+<script type="text/javascript" className="js-scripts">
   document.querySelector("#button-efi-faqs").onclick = () => {
      document.querySelector("#button-intellipower-faqs").classList.remove("active");
     document.querySelector("#button-efi-faqs").classList.add("active");
@@ -44,8 +44,8 @@ const IntelliPower = () => {
     document.querySelector("#faqs-efi").classList.remove("active");
   };
 </script>
-<script type="text/javascript" class="js-scripts" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script class="js-scripts">
+<script type="text/javascript" className="js-scripts" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script className="js-scripts">
   $(".videos-slick").slick({
    slidesToShow: 1,
   slidesToScroll: 1,

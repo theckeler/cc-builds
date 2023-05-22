@@ -201,28 +201,28 @@ const Financing = () => {
 								</div>
 							</div>
 						</div>
-						<div class="card-container">
-							<div class="card">
-								<div class="card-body">
-									<div class="front">
-										<h3 class="card-title">
+						<div className="card-container">
+							<div className="card">
+								<div className="card-body">
+									<div className="front">
+										<h3 className="card-title">
 											48 <span>months</span>
 										</h3>
 									</div>
 
-									<div class="back">
-										<h4 class="card-title">
+									<div className="back">
+										<h4 className="card-title">
 											2.99% APR for 48 months with equal payments<sup>8</sup>
 										</h4>
 										&nbsp;
-										<p class="card-text">
+										<p className="card-text">
 											<strong>
 												There is a promotional fee of $125 for this transaction.
 											</strong>
 										</p>
 										&nbsp;
-										<p class="card-text">Minimum purchase $1,500</p>
-										<p class="card-text">
+										<p className="card-text">Minimum purchase $1,500</p>
+										<p className="card-text">
 											Valid from: <span>May 1, 2023 - July 31, 2023</span>
 										</p>
 										<a
@@ -243,28 +243,28 @@ const Financing = () => {
 								</div>
 							</div>
 						</div>
-						<div class="card-container">
-							<div class="card">
-								<div class="card-body">
-									<div class="front">
-										<h3 class="card-title">
+						<div className="card-container">
+							<div className="card">
+								<div className="card-body">
+									<div className="front">
+										<h3 className="card-title">
 											60 <span>months</span>
 										</h3>
 									</div>
 
-									<div class="back">
-										<h4 class="card-title">
+									<div className="back">
+										<h4 className="card-title">
 											3.99% APR for 60 months with equal payments<sup>9</sup>
 										</h4>
 										&nbsp;
-										<p class="card-text">
+										<p className="card-text">
 											<strong>
 												There is a promotional fee of $125 for this transaction.
 											</strong>
 										</p>
 										&nbsp;
-										<p class="card-text">Minimum purchase $1,500</p>
-										<p class="card-text">
+										<p className="card-text">Minimum purchase $1,500</p>
+										<p className="card-text">
 											Valid from: <span>May 1, 2023 - July 31, 2023</span>
 										</p>
 										<a

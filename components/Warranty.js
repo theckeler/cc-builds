@@ -53,7 +53,7 @@ const Warranty = () => {
 						<div className="d-flex justify-content-center w-100">
 							<div className="flex justify-content-center w-100">
 								<input
-									autofocus=""
+									autoFocus=""
 									required=""
 									type="text"
 									className="form-control"
