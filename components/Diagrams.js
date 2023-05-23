@@ -19,7 +19,7 @@ const Diagrams = () => {
 				<div className="row">
 					<h2 style={{ textAlign: "center", width: "100%" }}>Need Help?</h2>
 					<nav className="buttons" style={{ width: "100%" }}>
-						<ul className="d-flex list-unstyled">
+						<ul className="list-unstyled d-flex flex-column ">
 							<li className="col-12 col-lg-3 p-2">
 								<button
 									onclick="location.href='https://www.cubcadet.com/en_US/how-to-find-model-number.html'"

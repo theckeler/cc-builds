@@ -19,48 +19,64 @@ const Dynosite = () => {
 
 	return (
 		<div className="mtd-page product-dyno-results">
-			<section className={`mt-2 overflow-auto w-100 sticky-top bg-white`}>
-				<div className="container">
-					<h1 className="mb-0 pr-1" style={{ fontSize: "2.5em" }}>
-						XT1 ST54
-					</h1>
-					<h2 className="mb-1 pb-1 border-bottom" style={{ fontSize: "0.8em" }}>
-						Model(s)#: 13AQA2CM010, 13AQA2CM011, 13AQA2CM012, 13AQA2CM014,
+			<section className={`overflow-auto w-100 sticky-top bg-white pt-2`}>
+				<ul className="container d-flex align-items-center list-unstyled mb-0">
+					<li className="pr-2">
+						<h1 className="mb-0 pr-1" style={{ fontSize: "2.5em" }}>
+							XT1 ST54
+						</h1>
+					</li>
+					<li className="ml-auto">
+						<Button
+							url="#parts"
+							copy="Menu ▿"
+							addClass={buttonCSS}
+							style={{}}
+						/>
+						<ul className="list-unstyled flex flex-column flex-lg-row w-100 d-none">
+							<li className="mb-1 mr-lg-1 mb-lg-0">
+								<Button
+									url="#parts"
+									copy="Buy Parts"
+									addClass={buttonCSS}
+									style={{}}
+								/>
+							</li>
+							<li className="mb-1 mr-lg-1 mb-lg-0">
+								<Button
+									url="#support"
+									copy="Dealer Support"
+									addClass={buttonCSS}
+								/>
+							</li>
+							<li className="mb-1 mr-lg-1 mb-lg-0">
+								<Button url="#diagrams" copy="Diagrams" addClass={buttonCSS} />
+							</li>
+							<li className="mb-1 mr-lg-1 mb-lg-0">
+								<Button url="#warranty" copy="Warranty" addClass={buttonCSS} />
+							</li>
+							<li className="mb-1 mr-lg-1 mb-lg-0">
+								<Button url="#how-tos" copy="How-Tos" addClass={buttonCSS} />
+							</li>
+							<li>
+								<Button
+									url="#registration"
+									copy="Registration"
+									addClass={buttonCSS}
+								/>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<div className="border-bottom mb-1 pb-2 d-none">
+					<div className="container" style={{ fontSize: "0.7em" }}>
+						For Model(s)#: 13AQA2CM010, 13AQA2CM011, 13AQA2CM012, 13AQA2CM014,
+						13AQA2CM018, 13AQA2CM010, 13AQA2CM011, 13AQA2CM012, 13AQA2CM014,
+						13AQA2CM018, 13AQA2CM010, 13AQA2CM011, 13AQA2CM012, 13AQA2CM014,
+						13AQA2CM018, 13AQA2CM010, 13AQA2CM011, 13AQA2CM012, 13AQA2CM014,
+						13AQA2CM018, 13AQA2CM010, 13AQA2CM011, 13AQA2CM012, 13AQA2CM014,
 						13AQA2CM018
-					</h2>
-					<ul className="list-unstyled flex flex-column  flex-lg-row mb-2 w-100">
-						<li className="mb-1 mr-lg-1 mb-lg-0">
-							<Button
-								url="#parts"
-								copy="Buy Parts"
-								addClass={buttonCSS}
-								style={{}}
-							/>
-						</li>
-						<li className="mb-1 mr-lg-1 mb-lg-0">
-							<Button
-								url="#support"
-								copy="Dealer Support"
-								addClass={buttonCSS}
-							/>
-						</li>
-						<li className="mb-1 mr-lg-1 mb-lg-0">
-							<Button url="#diagrams" copy="Diagrams" addClass={buttonCSS} />
-						</li>
-						<li className="mb-1 mr-lg-1 mb-lg-0">
-							<Button url="#warranty" copy="Warranty" addClass={buttonCSS} />
-						</li>
-						<li className="mb-1 mr-lg-1 mb-lg-0">
-							<Button url="#how-tos" copy="How-Tos" addClass={buttonCSS} />
-						</li>
-						<li>
-							<Button
-								url="#registration"
-								copy="Registration"
-								addClass={buttonCSS}
-							/>
-						</li>
-					</ul>
+					</div>
 				</div>
 			</section>
 

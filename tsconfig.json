@@ -18,9 +18,18 @@
 		"paths": {
 			"@/*": ["./*"],
 			"@/c/*": ["components/*"],
-			"@/i/*": ["icons/*"]
+			"@/i/*": ["icons/*"],
+			"@/t/*": ["templates/*"]
 		}
 	},
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx"
+		// "index.js",
+		// "*/index.js",
+		// "pages/*.js",
+		// "**/[*].js"
+	],
 	"exclude": ["node_modules"]
 }

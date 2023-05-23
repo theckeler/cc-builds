@@ -6,11 +6,8 @@ export default function Finance() {
 	const [option, setOption] = useState([false, false]);
 
 	const radioCSS = {
-		//width: "1.75em",
-		//height: "100%",
 		accentColor: "#ffc20f",
 		transform: "scale(1.5)",
-		//		boxShadow: "0 0 transparent",
 	};
 
 	return (
