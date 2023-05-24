@@ -17,14 +17,14 @@ const ViewInvoice = ({ weiData }) => {
 				<li className="col col-sm-12 col-lg-6 pl-0">
 					<Button
 						copy="Customer Support"
-						addClass="w-100 text-uppercase border bg-white font-weight-normal"
+						className="w-100 text-uppercase border bg-white font-weight-normal"
 					/>
 				</li>
 				<li className="col col-sm-12 col-lg-6 pr-0">
 					<Button
 						copy="View All Orders"
-						addClass="w-100 text-uppercase border bg-white font-weight-normal"
-						addClick={() => {
+						className="w-100 text-uppercase border bg-white font-weight-normal"
+						onClick={() => {
 							navigate("/wei/purchase-history");
 						}}
 					/>

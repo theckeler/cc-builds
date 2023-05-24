@@ -30,8 +30,8 @@ const MyProducts = ({ weiData }) => {
 						<li className="col p-1">
 							<Button
 								copy="Main List"
-								addClass="w-100 text-uppercase border active "
-								addClick={(e) => {
+								className="w-100 text-uppercase border active "
+								onClick={(e) => {
 									resetButtons();
 									e.target.classList.add("active");
 									setWhichList(0);
@@ -41,8 +41,8 @@ const MyProducts = ({ weiData }) => {
 						<li className="col p-1">
 							<Button
 								copy="Second List"
-								addClass="w-100 text-uppercase border"
-								addClick={(e) => {
+								className="w-100 text-uppercase border"
+								onClick={(e) => {
 									resetButtons();
 									e.target.classList.add("active");
 									setWhichList(1);
@@ -52,8 +52,8 @@ const MyProducts = ({ weiData }) => {
 						<li className="col pt-0 pr-1 pb-1 pl-1">
 							<Button
 								copy="Create a New List"
-								addClass="w-100 text-uppercase border mt-1"
-								addClick={(e) => {
+								className="w-100 text-uppercase border mt-1"
+								onClick={(e) => {
 									resetButtons();
 									e.target.classList.add("active");
 								}}

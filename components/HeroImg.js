@@ -1,4 +1,4 @@
-const HeroImg = ({ hero, minHeightStyle = "", addClass = "", addCSS }) => {
+const HeroImg = ({ hero, minHeightStyle = "", className = "", addCSS }) => {
 	return (
 		<picture className="">
 			{hero.srcset.map((block, i) => {
@@ -13,7 +13,7 @@ const HeroImg = ({ hero, minHeightStyle = "", addClass = "", addCSS }) => {
 			<img
 				src={hero.img}
 				alt=""
-				className={`w-100 h-100 ${addClass}`}
+				className={`w-100 h-100 ${className}`}
 				style={{ objectFit: "cover", ...addCSS }}
 			/>
 		</picture>

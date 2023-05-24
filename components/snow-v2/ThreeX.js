@@ -74,7 +74,7 @@ const ThreeX = () => {
 													<li
 														className="col-md-1 p-1 d-none d-md-block"
 														style={{ marginTop: "-9px", maxWidth: "36px" }}>
-														<Pluses addClass="fill-black" num="1" />
+														<Pluses className="fill-black" num="1" />
 													</li>
 													<li className="col-md-5 p-1">
 														<p className="text-uppercase mb-0">
@@ -113,7 +113,7 @@ const ThreeX = () => {
 					<div className="wrapper p-2 d-flex flex-column justify-content-end justify-content-md-start h-100 mt-auto mr-auto mb-0 my-md-0">
 						<QuoteBlock
 							quote={indexData.quote}
-							addClass="bg-white clip-corner"
+							className="bg-white clip-corner"
 							addCSS={{ maxWidth: "40rem" }}
 						/>
 					</div>

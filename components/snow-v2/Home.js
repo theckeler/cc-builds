@@ -54,14 +54,14 @@ const App = () => {
 
 				{/* COPY BLOCK */}
 				<section className="section-2 bg-black d-flex flex-column">
-					<Pluses addClass="top" num="9" />
+					<Pluses className="top" num="9" />
 					<div className="wrapper">
 						<h1
 							dangerouslySetInnerHTML={{ __html: jsonData.copyBlock.h1 }}></h1>
 						<p
 							dangerouslySetInnerHTML={{ __html: jsonData.copyBlock.copy }}></p>
 					</div>
-					<Pluses addClass="bottom" num="6" />
+					<Pluses className="bottom" num="6" />
 				</section>
 
 				{/* LINE UP */}
@@ -102,7 +102,7 @@ const App = () => {
 													})}
 												</ul>
 												<Button
-													addClass="bg-black text-center"
+													className="bg-black text-center"
 													copy={block.button.copy}
 													url={block.url}
 												/>
@@ -125,7 +125,7 @@ const App = () => {
 					<div className="wrapper">
 						<QuoteBlock
 							quote={jsonData.quote}
-							addClass="bg-white clip-corner"
+							className="bg-white clip-corner"
 							addCSS={{ maxWidth: "650px" }}
 						/>
 					</div>
@@ -204,7 +204,7 @@ const App = () => {
 							<Button
 								copy={jsonData.intellipower.button.copy}
 								url={jsonData.intellipower.button.url}
-								addClass="bg-black mx-auto"
+								className="bg-black mx-auto"
 								addStyle={{
 									clipPath:
 										"polygon(1rem 0, 100% 0%, 100% 100%, 0 100%, 0 1rem)",
@@ -306,7 +306,7 @@ const App = () => {
 							<Button
 								copy={jsonData.compare.button.copy}
 								url={jsonData.compare.button.url}
-								addClass="bg-black mx-auto mt-5"
+								className="bg-black mx-auto mt-5"
 								addStyle={{
 									clipPath:
 										"polygon(1rem 0, 100% 0%, 100% 100%, 0 100%, 0 1rem)",

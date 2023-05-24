@@ -22,7 +22,7 @@ const ServiceNotification = ({ product }) => {
 			) : (
 				<Button
 					copy={`Order Parts for your ${product.product}`}
-					addClass="w-100 font-weight-normal text-capitalize bg-yellow mt-1 border-0"
+					className="w-100 font-weight-normal text-capitalize bg-yellow mt-1 border-0"
 				/>
 			)}
 		</div>

@@ -29,7 +29,7 @@ const HowToMaintence = ({ jsonData }) => {
 									key={i}>
 									<ImgCopyBlockStacked
 										{...{ block }}
-										addClass="p-2 h-100"
+										className="p-2 h-100"
 										addStyle={{ backgroundColor: "#efefef" }}
 									/>
 								</li>

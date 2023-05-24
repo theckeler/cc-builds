@@ -144,7 +144,7 @@ const XTEnduroSeriesHome = () => {
 					<Button
 						copy={jsonData.forEveryJob.button.copy}
 						url={jsonData.forEveryJob.button.url}
-						addClass={jsonData.forEveryJob.button.addClass}
+						className={jsonData.forEveryJob.button.className}
 					/>
 				</section>
 
@@ -152,7 +152,7 @@ const XTEnduroSeriesHome = () => {
 				<section className="d-flex flex-column p-0 mt-8 position-relative bg-primary">
 					<HeroImg
 						hero={jsonData.quote.hero}
-						addClass="position-absolute"
+						className="position-absolute"
 						addCSS={{
 							maxWidth: "100em",
 							left: "50%",
@@ -164,7 +164,7 @@ const XTEnduroSeriesHome = () => {
 						style={{ zIndex: "2", paddingTop: "3em", minHeight: "35em" }}>
 						<QuoteBlock
 							quote={jsonData.quote}
-							addClass="position-relative text-white pb-9 pb-lg-9"
+							className="position-relative text-white pb-9 pb-lg-9"
 							addCSS={{ maxWidth: "700px", zIndex: 1 }}
 							stackStars={true}
 							starFill="#fff"
@@ -188,7 +188,7 @@ const XTEnduroSeriesHome = () => {
 					<Button
 						copy={jsonData.forEveryJob.button.copy}
 						url={jsonData.forEveryJob.button.url}
-						addClass={jsonData.forEveryJob.button.addClass}
+						className={jsonData.forEveryJob.button.className}
 					/>
 				</section> */}
 

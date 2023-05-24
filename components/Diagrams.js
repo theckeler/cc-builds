@@ -22,7 +22,7 @@ const Diagrams = () => {
 						<ul className="list-unstyled d-flex flex-column ">
 							<li className="col-12 col-lg-3 p-2">
 								<button
-									onclick="location.href='https://www.cubcadet.com/en_US/how-to-find-model-number.html'"
+									onClick="location.href='https://www.cubcadet.com/en_US/how-to-find-model-number.html'"
 									title="How to Find Your Model Number"
 									className="p-1"
 									style={{
@@ -43,7 +43,7 @@ const Diagrams = () => {
 							</li>
 							<li className="col-12 col-lg-3 p-2">
 								<button
-									onclick="location.href='https://support.cubcadet.com/s/article/10475-1'"
+									onClick="location.href='https://support.cubcadet.com/s/article/10475-1'"
 									title="How to Find Manufacture Year"
 									className="p-1"
 									style={{
@@ -64,7 +64,7 @@ const Diagrams = () => {
 							</li>
 							<li className="col-12 col-lg-3 p-2">
 								<button
-									onclick="location.href='https://www.cubcadet.com/en_US/service-and-parts'"
+									onClick="location.href='https://www.cubcadet.com/en_US/service-and-parts'"
 									title="Explore Service and Parts"
 									className="p-1"
 									style={{
@@ -85,7 +85,7 @@ const Diagrams = () => {
 							</li>
 							<li className="col-12 col-lg-3 p-2">
 								<button
-									onclick="openChat()"
+									onClick="openChat()"
 									title="Start a Live Chat"
 									className="p-1"
 									style={{

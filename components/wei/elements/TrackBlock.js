@@ -32,25 +32,25 @@ const TrackBlock = ({ order }) => {
 									</ul>
 									<Button
 										copy="Contact Dealer"
-										addClass="w-100 text-uppercase border bg-white mt-auto font-weight-normal"
-										addClick={() => {
+										className="w-100 text-uppercase border bg-white mt-auto font-weight-normal"
+										onClick={() => {
 											console.log("test");
 											navigate(`/wei/contact-dealer/${order.orderNum}`);
 										}}
 									/>
 									<Button
 										copy="Track Order"
-										addClass="w-100 text-uppercase border bg-white mt-1 font-weight-normal"
+										className="w-100 text-uppercase border bg-white mt-1 font-weight-normal"
 									/>
 									<Button
 										copy="Write Dealer Review"
-										addClass="w-100 text-uppercase border bg-white mt-1 mb-1 font-weight-normal"
+										className="w-100 text-uppercase border bg-white mt-1 mb-1 font-weight-normal"
 									/>
 								</>
 							) : (
 								<Button
 									copy="Track USPS Package"
-									addClass="w-100 text-uppercase border bg-white mb-1 mt-2 font-weight-normal"
+									className="w-100 text-uppercase border bg-white mb-1 mt-2 font-weight-normal"
 								/>
 							)}
 						</li>

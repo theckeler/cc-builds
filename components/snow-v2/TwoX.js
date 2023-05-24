@@ -81,7 +81,7 @@ const TwoX = () => {
 												linkable={false}
 												flushImg={true}
 												addStyle={{ background: "#efefef" }}
-												addClass=""
+												className=""
 											/>
 										</li>
 									);
@@ -97,7 +97,7 @@ const TwoX = () => {
 					<div className="wrapper p-2 d-flex flex-column justify-content-end justify-content-md-start h-100 mt-auto mr-auto mb-0 my-md-0">
 						<QuoteBlock
 							quote={indexData.quote}
-							addClass="bg-white clip-corner ml-auto"
+							className="bg-white clip-corner ml-auto"
 							addCSS={{ maxWidth: "40rem" }}
 						/>
 					</div>
@@ -195,7 +195,7 @@ const TwoX = () => {
 							<Button
 								copy={indexData.intellipower.button.copy}
 								url={indexData.intellipower.button.url}
-								addClass="bg-black mx-auto"
+								className="bg-black mx-auto"
 							/>
 						</div>
 					</div>

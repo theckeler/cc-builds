@@ -28,7 +28,7 @@ const IntelliPower = () => {
 		const footerHTML = `
 
 <script type="text/javascript" className="js-scripts">
-  document.querySelector("#button-efi-faqs").onclick = () => {
+  document.querySelector("#button-efi-faqs").onClick = () => {
      document.querySelector("#button-intellipower-faqs").classList.remove("active");
     document.querySelector("#button-efi-faqs").classList.add("active");
 
@@ -36,7 +36,7 @@ const IntelliPower = () => {
     document.querySelector("#faqs-efi").classList.add("active");
   };
 
-  document.querySelector("#button-intellipower-faqs").onclick = () => {
+  document.querySelector("#button-intellipower-faqs").onClick = () => {
     document.querySelector("#button-intellipower-faqs").classList.add("active");
     document.querySelector("#button-efi-faqs").classList.remove("active");
     
@@ -203,12 +203,12 @@ const IntelliPower = () => {
 									<Video
 										img={block.img}
 										ytVideo={block.ytVideo}
-										addClass="w-100"
+										className="w-100"
 									/>
 
 									{/* <ImgCopyBlock
                     {...{
-                      addClass: "d-flex flex-column h-100 bg-white",
+                      className: "d-flex flex-column h-100 bg-white",
                       block,
                       linkable: false,
                       divClass: "",
@@ -231,7 +231,7 @@ const IntelliPower = () => {
 								<li
 									className="quote col-12 col-sm-12 col-md-6 pt-3 pr-3 pb-3 pl-3"
 									key={i}>
-									<QuoteBlock quote={block} addClass="bg-white" />
+									<QuoteBlock quote={block} className="bg-white" />
 								</li>
 							);
 						})}
@@ -290,7 +290,7 @@ const IntelliPower = () => {
           <Video
             img={jsonData.efiBlock.img}
             ytVideo={jsonData.efiBlock.ytVideo}
-            addClass="w-100 mt-6"
+            className="w-100 mt-6"
           />
         </div>
       </section> */}
@@ -306,7 +306,7 @@ const IntelliPower = () => {
 								<li
 									className="quote col-12 col-sm-12 col-md-6 pt-3 pr-3 pb-3 pl-3"
 									key={i}>
-									<QuoteBlock quote={block} addClass="bg-white" />
+									<QuoteBlock quote={block} className="bg-white" />
 								</li>
 							);
 						})}
@@ -359,7 +359,7 @@ const IntelliPower = () => {
 										{...{ block }}
 										linkable={false}
 										addStyle={{ background: "#efefef" }}
-										addClass="p-2"
+										className="p-2"
 									/>
 								</li>
 							);
@@ -378,7 +378,7 @@ const IntelliPower = () => {
 								<Button
 									copy="View All 2X Snowblowers"
 									url="https://www.cubcadet.com/en_US/snow-blowers/two-stage-snow-blowers"
-									addClass="bg-secondary align-self-start mt-auto"
+									className="bg-secondary align-self-start mt-auto"
 								/>
 							</div>
 						</li>
@@ -411,12 +411,12 @@ const IntelliPower = () => {
 					<div className="">
 						<Faqs
 							faqs={jsonData.faqs[0].intellipower}
-							addClass="faqs-intellipower active"
+							className="faqs-intellipower active"
 							addID="faqs-intellipower"
 						/>
 						<Faqs
 							faqs={jsonData.faqs[1].efi}
-							addClass="faqs-efi"
+							className="faqs-efi"
 							addID="faqs-efi"
 						/>
 					</div>

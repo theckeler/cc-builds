@@ -7,7 +7,7 @@ const Footer = ({ indexData }) => {
 		<div className="snow-v2 snow-v2-index">
 			<section className="bg-black d-flex flex-column p-3 p-md-9">
 				<Pluses
-					addClass="top d-none d-lg-block"
+					className="top d-none d-lg-block"
 					num="9"
 					addCSS={{
 						top: "2.5rem",
@@ -20,7 +20,7 @@ const Footer = ({ indexData }) => {
 					<CTABlock block={indexData.ctaBlock} />
 				</div>
 				<Pluses
-					addClass="bottom d-none d-lg-block"
+					className="bottom d-none d-lg-block"
 					num="6"
 					addCSS={{
 						bottom: "2.5rem",

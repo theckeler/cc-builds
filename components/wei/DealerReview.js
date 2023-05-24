@@ -21,7 +21,7 @@ const ContactDealer = () => {
 						<div className="h2">Thanks</div>
 					) : (
 						<>
-							<Stars addClass="d-flex w-50 mb-3" fill="#ffc20f" />
+							<Stars className="d-flex w-50 mb-3" fill="#ffc20f" />
 							<textarea
 								className="border p-2 mb-2"
 								style={{ width: "100%", height: "100%", minHeight: "200px" }}
@@ -29,8 +29,8 @@ const ContactDealer = () => {
 							/>
 							<Button
 								copy="Submit Review"
-								addClass="w-100 text-uppercase border mt-2 bg-yellow"
-								addClick={() => {
+								className="w-100 text-uppercase border mt-2 bg-yellow"
+								onClick={() => {
 									setSubmitted(1);
 								}}
 							/>

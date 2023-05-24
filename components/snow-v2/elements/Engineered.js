@@ -27,7 +27,7 @@ const Engineered = ({ indexData }) => {
 					maxWidth="80rem"
 				/>
 				<Pluses
-					addClass="top d-none d-lg-block"
+					className="top d-none d-lg-block"
 					num="9"
 					svgFill="#fff"
 					addCSS={{
@@ -76,7 +76,7 @@ const Engineered = ({ indexData }) => {
 					</ul>
 				</div>
 				<Pluses
-					addClass="bottom d-none d-lg-block"
+					className="bottom d-none d-lg-block"
 					num="6"
 					svgFill="#fff"
 					addCSS={{

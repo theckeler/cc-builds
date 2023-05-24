@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import Button from "../@/c/Button";
 
-const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
+const AccountForm = ({ setLoggedIn, className, onClick }) => {
 	const navigate = useNavigate();
 
 	const checkboxChange = (showWhat) => {
@@ -179,8 +179,8 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
 				<div className="mt-3 pt-3 border-top">
 					<Button
 						copy={`Add More <span className="ml-auto">&plus;</span>`}
-						addClass="w-100 text-left text-uppercase d-flex bg-yellow px-2"
-						addClick={(e) => {
+						className="w-100 text-left text-uppercase d-flex bg-yellow px-2"
+						onClick={(e) => {
 							checkboxChange("#account-more-1");
 						}}
 					/>
@@ -265,8 +265,8 @@ const AccountForm = ({ setLoggedIn, addClass, addClick }) => {
 
 				<Button
 					copy="Submit &gt;"
-					addClass="w-100 text-uppercase bg-yellow mt-6"
-					addClick={() => {
+					className="w-100 text-uppercase bg-yellow mt-6"
+					onClick={() => {
 						setLoggedIn(1);
 						navigate("/wei/");
 					}}

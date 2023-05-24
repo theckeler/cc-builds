@@ -95,22 +95,22 @@ const AccountForm = ({ weiData }) => {
 											</ul>
 											<Button
 												copy="Contact Dealer"
-												addClass="w-100 text-uppercase border bg-white mt-auto font-weight-normal"
-												addClick={() => {
+												className="w-100 text-uppercase border bg-white mt-auto font-weight-normal"
+												onClick={() => {
 													navigate(`/wei/contact-dealer/${order.orderNum}`);
 												}}
 											/>
 											<Button
 												copy="Track Order"
-												addClass="w-100 text-uppercase border bg-white mt-1 font-weight-normal"
-												addClick={() => {
+												className="w-100 text-uppercase border bg-white mt-1 font-weight-normal"
+												onClick={() => {
 													navigate(`/wei/track-order/${order.orderNum}`);
 												}}
 											/>
 											<Button
 												copy="Write Dealer Review"
-												addClass="w-100 text-uppercase border bg-white mt-1 mb-1 font-weight-normal"
-												addClick={() => {
+												className="w-100 text-uppercase border bg-white mt-1 mb-1 font-weight-normal"
+												onClick={() => {
 													navigate(`/wei/dealer-review/${order.orderNum}`);
 												}}
 											/>
@@ -120,8 +120,8 @@ const AccountForm = ({ weiData }) => {
 											{order.type !== "cancelled" && (
 												<Button
 													copy="Track Package"
-													addClass="w-100 text-uppercase border bg-white mb-1 mt-2 font-weight-normal"
-													addClick={() => {
+													className="w-100 text-uppercase border bg-white mb-1 mt-2 font-weight-normal"
+													onClick={() => {
 														navigate(`/wei/track-order/${order.orderNum}`);
 													}}
 												/>
@@ -130,7 +130,7 @@ const AccountForm = ({ weiData }) => {
 									)}
 									<Button
 										copy="Customer Support"
-										addClass="w-100 text-uppercase border bg-white font-weight-normal mt-auto mb-2"
+										className="w-100 text-uppercase border bg-white font-weight-normal mt-auto mb-2"
 									/>
 								</li>
 							</ul>

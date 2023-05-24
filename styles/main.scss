@@ -278,6 +278,7 @@
 }
 
 @media (min-width: em(1024)) {
+	.position-absolute.position-lg-relative,
 	.position-lg-relative {
 		position: relative !important;
 	}
@@ -306,7 +307,8 @@
 			color: #000 !important;
 		}
 	}
-	.bg-lg-transparant {
+	.bg-lg-transparant,
+	.bg-white.bg-lg-transparant {
 		background: transparent !important;
 		background-color: transparent !important;
 	}

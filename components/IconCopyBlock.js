@@ -1,7 +1,7 @@
-const IconCopyBlock = ({ block, addClass = "", addStyle }) => {
+const IconCopyBlock = ({ block, className = "", addStyle }) => {
 	return (
 		<ul
-			className={`row list-unstyled align-items-center ${addClass}`}
+			className={`row list-unstyled align-items-center ${className}`}
 			style={addStyle}>
 			<li className="col-12 col-md-3 p-2">
 				<img src={block.icon} alt="" className="w-100" style={block.addStyle} />

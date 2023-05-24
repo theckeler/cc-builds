@@ -37,7 +37,7 @@ const MainBlock = ({ block, i, keywords, multiBlockLength }) => {
 									<FinancingBlock
 										{...{
 											block,
-											addClass: borderRun,
+											className: borderRun,
 										}}
 									/>
 								)}
@@ -51,7 +51,7 @@ const MainBlock = ({ block, i, keywords, multiBlockLength }) => {
 					<Button
 						copy={block.button.copy}
 						url={block.button.url}
-						addClass="w-100 text-center bg-black text-white"
+						className="w-100 text-center bg-black text-white"
 					/>
 				</div>
 			</div>

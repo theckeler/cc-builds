@@ -2,7 +2,7 @@ const Registration = () => {
 	return (
 		<div className="">
 			<h2 className="h2 text-center">Registration</h2>
-			<button
+			{/* <button
 				className="showHowToFind text-center border-0"
 				id=""
 				onClick={(e) => {
@@ -11,16 +11,14 @@ const Registration = () => {
 						.classList.toggle("d-none");
 				}}>
 				Registration Form
-			</button>
+			</button> */}
 
-			<div
-				className="d-none container content-asset-container "
-				id="registrationForm">
+			<div className="container content-asset-container " id="registrationForm">
 				<iframe
-					// height={1028}
+					height={1028}
 					id="registrationFormFrame"
 					src="https://mtdproducts.secure.force.com/ProductRegistration/cub-cadet?&language=en_US&countryLocation=US&sourceWebsite=www.cubcadet.com"
-					className="border-0 w-100 h-100"
+					className="border-0 w-100"
 					style={{ maxHeight: "1028px" }}
 					onLoad={(e) => {
 						// console.log(

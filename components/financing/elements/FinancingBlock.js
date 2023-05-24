@@ -1,6 +1,6 @@
 import currencyConverter from "../../../utilities/currencyConverter";
 
-const FinancingBlock = ({ block, addClass }) => {
+const FinancingBlock = ({ block, className }) => {
 	const startDate = new Date(block.promoStart);
 	const endDate = new Date(block.promoEnd);
 
@@ -25,7 +25,7 @@ const FinancingBlock = ({ block, addClass }) => {
 				{type}
 			</div>
 			<div
-				className={`financing-filter px-3 pt-3 ${keywords.trim()} ${addClass}`}>
+				className={`financing-filter px-3 pt-3 ${keywords.trim()} ${className}`}>
 				<p
 					className="mb-2 pb-2 border-bottom text-center"
 					style={{

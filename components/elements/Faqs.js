@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 
-const Faqs = ({ faqs, addClass, addID }) => {
-  useEffect(() => {
-    document.querySelectorAll("#faqs-script").forEach(function (elem) {
-      elem.remove();
-    });
-    const html = `
+const Faqs = ({ faqs, className, addID }) => {
+	useEffect(() => {
+		document.querySelectorAll("#faqs-script").forEach(function (elem) {
+			elem.remove();
+		});
+		const html = `
 <script type="text/javascript" id="faqs-script">
   document.querySelectorAll("#${addID} .question").forEach(function (el) {
   el.addEventListener("click", function () {
@@ -14,33 +14,33 @@ const Faqs = ({ faqs, addClass, addID }) => {
   });
 });
 </script>`;
-    const scriptEl = document.createRange().createContextualFragment(html);
-    document.body.appendChild(scriptEl);
-  });
+		const scriptEl = document.createRange().createContextualFragment(html);
+		document.body.appendChild(scriptEl);
+	});
 
-  return (
-    <>
-      <ul className={`faqs list-unstyled ${addClass}`} id={addID}>
-        {faqs.map((block, i) => {
-          return (
-            <React.Fragment key={i}>
-              <li className="question" style={{ cursor: "pointer" }}>
-                {block.question}
-                <span>✖</span>
-              </li>
-              <li className="answer">
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: block.answer,
-                  }}
-                />
-              </li>
-            </React.Fragment>
-          );
-        })}
-      </ul>
-    </>
-  );
+	return (
+		<>
+			<ul className={`faqs list-unstyled ${className}`} id={addID}>
+				{faqs.map((block, i) => {
+					return (
+						<React.Fragment key={i}>
+							<li className="question" style={{ cursor: "pointer" }}>
+								{block.question}
+								<span>✖</span>
+							</li>
+							<li className="answer">
+								<p
+									dangerouslySetInnerHTML={{
+										__html: block.answer,
+									}}
+								/>
+							</li>
+						</React.Fragment>
+					);
+				})}
+			</ul>
+		</>
+	);
 };
 
 export default Faqs;

@@ -1,11 +1,11 @@
-const Button = ({ copy, url, addClass, addClick, addStyle, srOnly }) => {
+const Button = ({ copy, url, className, onClick, addStyle, srOnly }) => {
 	const addPadding = { padding: "0.625rem 2.5rem" };
 
 	if (url) {
 		return (
 			<a
 				href={url}
-				className={`button text-uppercase font-weight-bold text-decoration-none d-inline-block ${addClass}`}
+				className={`button text-uppercase font-weight-bold text-decoration-none d-inline-block ${className}`}
 				dangerouslySetInnerHTML={{ __html: copy }}
 				style={{ ...addStyle, ...addPadding }}
 			/>
@@ -13,8 +13,8 @@ const Button = ({ copy, url, addClass, addClick, addStyle, srOnly }) => {
 	} else {
 		return (
 			<button
-				onClick={addClick}
-				className={`button font-weight-bold ${addClass}`}
+				onClick={onClick}
+				className={`button font-weight-bold ${className}`}
 				dangerouslySetInnerHTML={{ __html: copy }}
 				style={{ ...addStyle, ...addPadding }}
 			/>

@@ -57,7 +57,7 @@ const ZeroTurn = () => {
 						style={{ zIndex: "2", paddingTop: "3em" }}>
 						<QuoteBlock
 							quote={jsonData.quote}
-							addClass="text-white"
+							className="text-white"
 							addCSS={{ maxWidth: "700px" }}
 							stackStars={true}
 							starFill="#fff"

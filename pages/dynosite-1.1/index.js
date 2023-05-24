@@ -1,3 +1,4 @@
+import Image from "next/image";
 import jsonData from "./data.json";
 
 import Faqs from "@/c/Faqs";
@@ -10,69 +11,137 @@ import HowTos from "@/c/HowTos";
 import Registration from "@/c/Registration";
 import Button from "@/c/Button";
 
-import Image from "next/image";
-
 const Dynosite = () => {
-	const containerCSS = "container mb-3 pb-3 border-bottom";
+	const containerCSS = "container ";
 	const buttonCSS =
-		"ml-auto btn bg-secondary d-flex align-items-center justify-content-center p-1 ";
+		"ml-auto btn d-flex align-items-center justify-content-center p-1 border border-primary";
+
+	const scrollToTop = (e = "parts-listing") => {
+		document.querySelector("#dyno-dropdown").classList.toggle("d-none");
+		const top = document.querySelector(`#${e}`).offsetTop - 120;
+		window.scrollTo({
+			top: top,
+			behavior: "smooth",
+		});
+	};
 
 	return (
 		<div className="mtd-page product-dyno-results">
-			<section className={`overflow-auto w-100 sticky-top bg-white pt-2`}>
+			<section
+				className="w-100 sticky-top pt-1"
+				style={{ backgroundColor: "#efefef" }}>
 				<ul className="container d-flex align-items-center list-unstyled mb-0">
 					<li className="pr-2">
 						<h1 className="mb-0 pr-1" style={{ fontSize: "2.5em" }}>
 							XT1 ST54
 						</h1>
 					</li>
-					<li className="ml-auto">
+					<li className="ml-auto d-flex">
 						<Button
-							url="#parts"
-							copy="Menu ▿"
-							addClass={buttonCSS}
+							//url="#parts"
+							copy="Fits Models: ▿"
+							className={`${buttonCSS} d-block d-lg-none mr-1`}
 							style={{}}
+							onClick={(e) => {
+								document.querySelector("#dyno-fits").classList.toggle("d-none");
+							}}
 						/>
-						<ul className="list-unstyled flex flex-column flex-lg-row w-100 d-none">
-							<li className="mb-1 mr-lg-1 mb-lg-0">
-								<Button
-									url="#parts"
-									copy="Buy Parts"
-									addClass={buttonCSS}
-									style={{}}
-								/>
-							</li>
-							<li className="mb-1 mr-lg-1 mb-lg-0">
-								<Button
-									url="#support"
-									copy="Dealer Support"
-									addClass={buttonCSS}
-								/>
-							</li>
-							<li className="mb-1 mr-lg-1 mb-lg-0">
-								<Button url="#diagrams" copy="Diagrams" addClass={buttonCSS} />
-							</li>
-							<li className="mb-1 mr-lg-1 mb-lg-0">
-								<Button url="#warranty" copy="Warranty" addClass={buttonCSS} />
-							</li>
-							<li className="mb-1 mr-lg-1 mb-lg-0">
-								<Button url="#how-tos" copy="How-Tos" addClass={buttonCSS} />
-							</li>
-							<li>
-								<Button
-									url="#registration"
-									copy="Registration"
-									addClass={buttonCSS}
-								/>
-							</li>
-						</ul>
+						<Button
+							//url="#parts"
+							copy="Menu ▿"
+							className={`${buttonCSS} d-block d-lg-none`}
+							style={{}}
+							onClick={(e) => {
+								document
+									.querySelector("#dyno-dropdown")
+									.classList.toggle("d-none");
+							}}
+						/>
+						<div
+							id="dyno-dropdown"
+							className="d-none d-lg-block bg-white bg-lg-transparant position-absolute position-lg-relative p-2 w-100"
+							style={{ zIndex: 101, right: 0, top: "100%" }}>
+							<ul className="list-unstyled flex flex-column flex-lg-row w-100">
+								<li className="mb-1 mr-lg-1 mb-lg-0">
+									<Button
+										//url="#parts"
+										copy="Buy Parts"
+										className={`${buttonCSS} w-100`}
+										onClick={(e) => {
+											scrollToTop("parts-listing");
+										}}
+									/>
+								</li>
+								<li className="mb-1 mr-lg-1 mb-lg-0">
+									<Button
+										//url="#support"
+										copy="Dealer Support"
+										className={`${buttonCSS} w-100`}
+										onClick={(e) => {
+											scrollToTop("support");
+										}}
+									/>
+								</li>
+								<li className="mb-1 mr-lg-1 mb-lg-0">
+									<Button
+										//url="#diagrams"
+										copy="Diagrams"
+										className={`${buttonCSS} w-100`}
+										onClick={(e) => {
+											scrollToTop("diagrams");
+										}}
+									/>
+								</li>
+								<li className="mb-1 mr-lg-1 mb-lg-0">
+									<Button
+										//url="#warranty"
+										copy="Warranty"
+										className={`${buttonCSS} w-100`}
+										onClick={(e) => {
+											scrollToTop("warranty");
+										}}
+									/>
+								</li>
+								<li className="mb-1 mr-lg-1 mb-lg-0">
+									<Button
+										//url="#how-tos"
+										copy="How-Tos"
+										className={`${buttonCSS} w-100`}
+										onClick={(e) => {
+											scrollToTop("how-tos");
+										}}
+									/>
+								</li>
+								<li className="mb-1 mr-lg-1 mb-lg-0">
+									<Button
+										//url="#registration"
+										copy="Registration"
+										className={`${buttonCSS} w-100`}
+										onClick={(e) => {
+											scrollToTop("registration");
+										}}
+									/>
+								</li>
+								<li>
+									<Button
+										//url="#registration"
+										copy="A&Q"
+										className={`${buttonCSS} w-100`}
+										onClick={(e) => {
+											scrollToTop("registration");
+										}}
+									/>
+								</li>
+							</ul>
+						</div>
 					</li>
 				</ul>
-				<div className="border-bottom mb-1 pb-2 d-none">
-					<div className="container" style={{ fontSize: "0.7em" }}>
+				<div className="border-bottom mb-1 pb-1">
+					<div
+						className="container d-none d-lg-block"
+						id="dyno-fits"
+						style={{ fontSize: "0.7em" }}>
 						For Model(s)#: 13AQA2CM010, 13AQA2CM011, 13AQA2CM012, 13AQA2CM014,
-						13AQA2CM018, 13AQA2CM010, 13AQA2CM011, 13AQA2CM012, 13AQA2CM014,
-						13AQA2CM018, 13AQA2CM010, 13AQA2CM011, 13AQA2CM012, 13AQA2CM014,
 						13AQA2CM018, 13AQA2CM010, 13AQA2CM011, 13AQA2CM012, 13AQA2CM014,
 						13AQA2CM018, 13AQA2CM010, 13AQA2CM011, 13AQA2CM012, 13AQA2CM014,
 						13AQA2CM018
@@ -120,7 +189,7 @@ const Dynosite = () => {
 							alt=""
 							width={300}
 							height={300}
-							fit
+							fit={true}
 							className=""
 							style={{ width: "auto", height: "100%", maxHeight: "200px" }}
 						/>
@@ -128,17 +197,22 @@ const Dynosite = () => {
 				</ul>
 			</section>
 
-			<a id="parts" name="parts"></a>
-			<section className={containerCSS}>
-				<PartsListing />
+			<a name="parts"></a>
+			<section className="border-bottom" id="parts-listing">
+				<div className={containerCSS}>
+					<PartsListing />
+				</div>
 			</section>
 
 			<a id="support" name="support"></a>
-			<section className={containerCSS}>
-				<DealerLocation />
+			<section className="border-bottom">
+				<div className={`${containerCSS}`}>
+					<DealerLocation />
+				</div>
 			</section>
+
 			<a id="diagrams" name="diagrams"></a>
-			<section className={containerCSS}>
+			<section className={`${containerCSS} pt-3`}>
 				<Diagrams />
 			</section>
 
@@ -150,20 +224,22 @@ const Dynosite = () => {
 			</section>
 
 			<a id="how-tos" name="how-tos"></a>
-			<section className="" style={{ backgroundColor: "#e2e2e2" }}>
+			<section className="pb-3 mb-3" style={{ backgroundColor: "#e2e2e2" }}>
 				<div className={containerCSS}>
 					<HowTos />
 				</div>
 			</section>
 
 			<a id="registration" name="registration"></a>
-			<section className={containerCSS}>
-				<Registration />
+			<section className="border-bottom pb-2 mb-4">
+				<div className={containerCSS}>
+					<Registration />
+				</div>
 			</section>
 
-			<section className="container">
+			<section className="container mb-6">
 				<h2 className="h2 text-center">Answers & Questions</h2>
-				<Faqs faqs={jsonData.faqs} addID="faqs-financing" />
+				<Faqs faqs={jsonData.faqs} addID="faqs-financing" className="pt-2" />
 			</section>
 
 			<section className="d-flex justify-content-center align-items-center p-8 bg-secondary">

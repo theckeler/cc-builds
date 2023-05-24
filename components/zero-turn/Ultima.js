@@ -43,7 +43,7 @@ const Ultima = () => {
 									<li className="col-12 col-lg-6 p-2" key={i}>
 										<ImgCopyBlock
 											{...{
-												addClass: "d-flex flex-column h-100 bg-white",
+												className: "d-flex flex-column h-100 bg-white",
 												block,
 												linkable: false,
 												divClass: "",
@@ -194,7 +194,7 @@ const Ultima = () => {
 							{jsonData.find.copy}
 						</p>
 						<Button
-							addClass="bg-black mt-3"
+							className="bg-black mt-3"
 							url={jsonData.find.button.url}
 							copy={jsonData.find.button.copy}
 						/>
@@ -320,7 +320,7 @@ const Ultima = () => {
 												<Button
 													url={block.url}
 													copy="Apply Now"
-													addClass="bg-black w-100"
+													className="bg-black w-100"
 												/>
 											</li>
 										</ul>
@@ -330,7 +330,7 @@ const Ultima = () => {
 						</ul>
 
 						<Button
-							addClass="bg-secondary mt-6 font-weight-bold"
+							className="bg-secondary mt-6 font-weight-bold"
 							copy={jsonData.financing.button.copy}
 							url={jsonData.financing.button.url}
 						/>

@@ -20,14 +20,14 @@ const ContactDealer = () => {
 				<li className="col col-sm-12 col-lg-6">
 					<Button
 						copy="Customer Support"
-						addClass="w-100 text-uppercase border bg-white font-weight-normal"
+						className="w-100 text-uppercase border bg-white font-weight-normal"
 					/>
 				</li>
 				<li className="col col-sm-12 col-lg-6">
 					<Button
 						copy="View All Orders"
-						addClass="w-100 text-uppercase border bg-white font-weight-normal"
-						addClick={() => {
+						className="w-100 text-uppercase border bg-white font-weight-normal"
+						onClick={() => {
 							navigate("/wei/purchase-history");
 						}}
 					/>
@@ -47,8 +47,8 @@ const ContactDealer = () => {
 							/>
 							<Button
 								copy="Contact Dealer"
-								addClass="w-100 text-uppercase border mt-2 bg-yellow"
-								addClick={() => {
+								className="w-100 text-uppercase border mt-2 bg-yellow"
+								onClick={() => {
 									setSubmitted(1);
 								}}
 							/>

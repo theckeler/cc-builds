@@ -11,8 +11,8 @@ const Home = ({ openMenu }) => {
 			<p className="xxl-hide">Click button to start:</p>
 			<Button
 				copy="Start"
-				addClass="bg-yellow xxl-hide border-0"
-				addClick={openMenu}
+				className="bg-yellow xxl-hide border-0"
+				onClick={openMenu}
 			/>
 		</div>
 	);

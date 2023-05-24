@@ -13,8 +13,8 @@ const Menu = ({ loggedIn, logIn, logOut, closeMenu }) => {
 				<li className="bg-black p-3 title d-flex flex-column">
 					<Button
 						copy="&#10005;"
-						addClass="menu-close bg-yellow d-inline-block rounded-circle p-0 d-flex ml-auto font-weight-bold border-0"
-						addClick={closeMenu}
+						className="menu-close bg-yellow d-inline-block rounded-circle p-0 d-flex ml-auto font-weight-bold border-0"
+						onClick={closeMenu}
 					/>
 				</li>
 				<li className="bg-black px-2 py-1 d-flex-xxl-column d-flex align-items-center pb-3">
@@ -23,8 +23,8 @@ const Menu = ({ loggedIn, logIn, logOut, closeMenu }) => {
 							<h2 className="h1 pt-1">Joe Schmo</h2>
 							<Button
 								copy="Logout"
-								addClass="ml-auto bg-yellow border-0"
-								addClick={logOut}
+								className="ml-auto bg-yellow border-0"
+								onClick={logOut}
 							/>
 						</>
 					) : (
@@ -36,8 +36,8 @@ const Menu = ({ loggedIn, logIn, logOut, closeMenu }) => {
 						<li className="px-0 py-0 d-flex flex-column">
 							<Button
 								copy="Manage Account &gt;"
-								addClass="w-100 text-left font-weight-normal text-capitalize bg-yellow border-0"
-								addClick={() => {
+								className="w-100 text-left font-weight-normal text-capitalize bg-yellow border-0"
+								onClick={() => {
 									closeMenu();
 									navigate("/wei/manage-account");
 								}}
@@ -52,8 +52,8 @@ const Menu = ({ loggedIn, logIn, logOut, closeMenu }) => {
 								<li className="px-0 py-0 title d-flex flex-column">
 									<Button
 										copy="Purchase History"
-										addClass="w-100 text-left font-weight-normal text-capitalize bg-white border-0"
-										addClick={() => {
+										className="w-100 text-left font-weight-normal text-capitalize bg-white border-0"
+										onClick={() => {
 											closeMenu();
 											navigate("/wei/purchase-history");
 										}}
@@ -62,8 +62,8 @@ const Menu = ({ loggedIn, logIn, logOut, closeMenu }) => {
 								<li className="px-0 py-0 title d-flex flex-column">
 									<Button
 										copy="My Products"
-										addClass="w-100 text-left font-weight-normal text-capitalize bg-white border-0"
-										addClick={() => {
+										className="w-100 text-left font-weight-normal text-capitalize bg-white border-0"
+										onClick={() => {
 											closeMenu();
 											navigate("/wei/my-products");
 										}}
@@ -72,8 +72,8 @@ const Menu = ({ loggedIn, logIn, logOut, closeMenu }) => {
 								<li className="px-0 py-0 title d-flex flex-column">
 									<Button
 										copy="My Lists"
-										addClass="w-100 text-left font-weight-normal text-capitalize bg-white border-0"
-										addClick={() => {
+										className="w-100 text-left font-weight-normal text-capitalize bg-white border-0"
+										onClick={() => {
 											closeMenu();
 											navigate("/wei/my-lists");
 										}}
@@ -165,15 +165,15 @@ const Menu = ({ loggedIn, logIn, logOut, closeMenu }) => {
 								<li className="mt-2">
 									<Button
 										copy="Login"
-										addClass="bg-yellow w-100 border-0"
-										addClick={logIn}
+										className="bg-yellow w-100 border-0"
+										onClick={logIn}
 									/>
 								</li>
 								<li className="mt-4">
 									<Button
 										copy="Create Account"
-										addClass="bg-grey w-100 border-0"
-										addClick={() => {
+										className="bg-grey w-100 border-0"
+										onClick={() => {
 											closeMenu();
 											navigate("/wei/create-account");
 										}}

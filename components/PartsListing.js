@@ -56,7 +56,7 @@ const PartsListing = () => {
 									<i>
 										<img
 											className="icon icon-filter "
-											src="/on/demandware.static/Sites-cubcadet-Site/-/default/dw3bbb05de/images/svg-icons/icon-filter.svg"
+											src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/default/dw3bbb05de/images/svg-icons/icon-filter.svg"
 											alt=""
 										/>
 									</i>
@@ -120,7 +120,7 @@ const PartsListing = () => {
 											<span aria-hidden="true">
 												<img
 													className="icon icon-close "
-													src="/on/demandware.static/Sites-cubcadet-Site/-/default/dw99dcf67a/images/svg-icons/icon-close.svg"
+													src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/default/dw99dcf67a/images/svg-icons/icon-close.svg"
 													alt="close"
 												/>
 											</span>
@@ -157,7 +157,7 @@ const PartsListing = () => {
 															aria-checked="false">
 															<img
 																className="icon icon-checkbox-unselected "
-																src="/on/demandware.static/Sites-cubcadet-Site/-/default/dw215f5d3d/images/svg-icons/icon-checkbox-unselected.svg"
+																src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/default/dw215f5d3d/images/svg-icons/icon-checkbox-unselected.svg"
 																alt=""
 															/>
 															<span className=" ">
@@ -177,7 +177,7 @@ const PartsListing = () => {
 															aria-checked="false">
 															<img
 																className="icon icon-checkbox-unselected "
-																src="/on/demandware.static/Sites-cubcadet-Site/-/default/dw215f5d3d/images/svg-icons/icon-checkbox-unselected.svg"
+																src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/default/dw215f5d3d/images/svg-icons/icon-checkbox-unselected.svg"
 																alt=""
 															/>
 															<span className=" ">

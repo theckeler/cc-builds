@@ -26,11 +26,10 @@
 		// "next-env.d.ts",
 		// "**/*.ts",
 		// "**/*.tsx",
-		"index.js",
-		"*/index.js",
+		"pages/index.js",
 		"pages/*.js",
-		"*/pages/*/*.js",
-		"**/[*].js"
+		"**/[*].js",
+		"**/*.js"
 	],
 	"exclude": ["node_modules"]
 }

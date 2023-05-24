@@ -144,7 +144,7 @@ const Financing = () => {
 					<li className="col-6 p-1">
 						<FilterButton
 							copy="Filter Options"
-							addClass="py-2 px-4 w-100 border-0 text-primary font-bold h-100 text-white"
+							className="py-2 px-4 w-100 border-0 text-primary font-bold h-100 text-white"
 						/>
 					</li>
 				</ul>
@@ -309,7 +309,7 @@ const Financing = () => {
 									<div className="mt-auto pb-2 pt-2">
 										<Button
 											copy="Apply Now"
-											addClass="border-0 bg-secondary font-black"
+											className="border-0 bg-secondary font-black"
 										/>
 									</div>
 								</div>

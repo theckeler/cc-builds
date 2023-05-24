@@ -2,7 +2,7 @@ import Stars from "./Stars";
 
 const QuoteBlock = ({
 	quote,
-	addClass,
+	className,
 	addCSS,
 	stackStars = false,
 	starFill = "#FFC10F",
@@ -12,7 +12,7 @@ const QuoteBlock = ({
 
 	return (
 		<div
-			className={`quote-block d-flex flex-column h-100 w-100 p-1 p-lg-4 ${addClass}`}
+			className={`quote-block d-flex flex-column h-100 w-100 p-1 p-lg-4 ${className}`}
 			style={addCSS}>
 			<ul className={`list-unstyled d-flex mb-0 ${stackEmUp}`}>
 				<li className={`col-${starCSS} font-weight-bold h3 text-uppercase p-0`}>

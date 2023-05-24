@@ -93,7 +93,7 @@ const App = () => {
 								<TrackOrderCTA
 									title={jsonData.section3.findOrder.h2}
 									sub={jsonData.section3.findOrder.copy}
-									addClass=""
+									className=""
 									addStyle=""
 								/>
 							</div>
@@ -105,7 +105,7 @@ const App = () => {
 								<SupportModel
 									title={jsonData.section3.findModel.h2}
 									sub={jsonData.section3.findModel.copy}
-									addClass=""
+									className=""
 									addStyle=""
 								/>
 							</div>
@@ -163,7 +163,10 @@ const App = () => {
 												__html: block.copy,
 											}}
 										/>
-										<Button copy={block.button.copy} addClass="bg-black mt-1" />
+										<Button
+											copy={block.button.copy}
+											className="bg-black mt-1"
+										/>
 									</a>
 								</li>
 							);

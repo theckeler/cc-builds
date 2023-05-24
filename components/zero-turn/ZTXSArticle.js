@@ -99,7 +99,7 @@ const ZTXSArticle = () => {
 						<h2 className="text-center">See the ZTXS In Action</h2>
 						<Video
 							img="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ztxs-article/ztxs-action.jpg"
-							addClass="mt-3"
+							className="mt-3"
 							ytVideo="mjWUwAIRS5w"
 							title="See the ZTXS In Action"
 						/>
@@ -121,7 +121,7 @@ const ZTXSArticle = () => {
 								</p>
 								<p className="mb-0">
 									<Button
-										addClass="bg-black text-white"
+										className="bg-black text-white"
 										copy="Learn More"
 										url="https://www.cubcadet.com/en_US/financing"
 									/>

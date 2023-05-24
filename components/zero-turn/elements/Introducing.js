@@ -33,7 +33,7 @@ const Introducing = ({ jsonData }) => {
 								className="mb-2"
 							/>
 							<Button
-								addClass="bg-black"
+								className="bg-black"
 								copy={jsonData.introZTXS.button.copy}
 								url={jsonData.introZTXS.button.url}
 							/>

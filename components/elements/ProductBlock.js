@@ -1,9 +1,9 @@
 import Button from "@/c/Button";
 
-const ProductBlock = ({ block, addClass, addCSS }) => {
+const ProductBlock = ({ block, className, addCSS }) => {
 	return (
 		<div
-			className={`mb-2 h-100 d-flex flex-column h-100 position-relative ${addClass}`}
+			className={`mb-2 h-100 d-flex flex-column h-100 position-relative ${className}`}
 			style={{
 				backgroundColor: "#efefef",
 				border:
@@ -75,7 +75,7 @@ const ProductBlock = ({ block, addClass, addCSS }) => {
 					</ul>
 
 					<Button
-						addClass={`mb-0 text-center w-100 mt-auto ${
+						className={`mb-0 text-center w-100 mt-auto ${
 							typeof block.button === "undefined"
 								? "bg-black"
 								: block.button.bgColor

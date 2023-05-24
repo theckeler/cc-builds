@@ -19,8 +19,8 @@ const MyProducts = (weiData) => {
 				<li className="col text-center pl-0">
 					<Button
 						copy="All Orders"
-						addClass="w-100 text-uppercase border active"
-						addClick={(e) => {
+						className="w-100 text-uppercase border active"
+						onClick={(e) => {
 							resetButtons();
 							e.target.classList.add("active");
 						}}
@@ -29,9 +29,9 @@ const MyProducts = (weiData) => {
 				<li className="col text-center">
 					<Button
 						copy="Dealer Orders"
-						addClass="w-100 text-uppercase border"
+						className="w-100 text-uppercase border"
 						addStyle={{ border: "1px solid #000" }}
-						addClick={(e) => {
+						onClick={(e) => {
 							resetButtons();
 							document
 								.querySelectorAll(".online-order, .cancelled-order")
@@ -45,8 +45,8 @@ const MyProducts = (weiData) => {
 				<li className="col text-center pr-0">
 					<Button
 						copy="Cancelled Orders"
-						addClass="w-100 text-uppercase border"
-						addClick={(e) => {
+						className="w-100 text-uppercase border"
+						onClick={(e) => {
 							resetButtons();
 							document
 								.querySelectorAll(".online-order, .dealer-order")

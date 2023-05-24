@@ -1,4 +1,4 @@
-const FilterButton = ({ copy, close = false, addClass }) => {
+const FilterButton = ({ copy, close = false, className }) => {
 	const buttonMenuToggle = () => {
 		console.log("buttonMenuToggle");
 		document.querySelector("#financing-filters").classList.toggle("active");
@@ -13,7 +13,7 @@ const FilterButton = ({ copy, close = false, addClass }) => {
 
 	return (
 		<button
-			className={`position-relative border-0 bg-dark d-flex justify-content-center align-items-center p-1 ${addClass}`}
+			className={`position-relative border-0 bg-dark d-flex justify-content-center align-items-center p-1 ${className}`}
 			onClick={() => buttonMenuToggle()}>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"

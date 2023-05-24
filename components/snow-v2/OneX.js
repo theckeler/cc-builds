@@ -80,7 +80,7 @@ const OneX = () => {
 											linkable={false}
 											flushImg={true}
 											addStyle={{ background: "#efefef" }}
-											addClass=""
+											className=""
 										/>
 									</li>
 								);
@@ -94,7 +94,7 @@ const OneX = () => {
 					<div className="wrapper d-flex flex-column h-100 mt-auto mr-auto mb-0 my-md-0 p-0 p-lg-2">
 						<QuoteBlock
 							quote={indexData.quote}
-							addClass="bg-white clip-corner ml-auto"
+							className="bg-white clip-corner ml-auto"
 							addCSS={{ maxWidth: "40rem" }}
 						/>
 					</div>

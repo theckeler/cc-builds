@@ -1,6 +1,6 @@
 import Button from "@/c/Button";
 
-const CTABlock = ({ block, addClass, addCSS }) => {
+const CTABlock = ({ block, className, addCSS }) => {
 	return (
 		<>
 			<h2
@@ -14,7 +14,7 @@ const CTABlock = ({ block, addClass, addCSS }) => {
 			<Button
 				url={block.button.url}
 				copy={block.button.copy}
-				addClass="bg-white mt-2 my-auto"
+				className="bg-white mt-2 my-auto"
 			/>
 		</>
 	);
