@@ -80,22 +80,21 @@ export default function Finance() {
 						</ul>
 
 						<div className="bg-secondary px-1 py-2">
-							<ul className="d-lg-flex align-items-center list-unstyled">
+							<ul
+								className="list-unstyled d-lg-flex align-items-center"
+								style={{ fontSize: "16px" }}>
 								<li
 									className="col-lg-8 font-bold"
-									style={{ padding: 0, fontSize: "1.3em" }}
+									style={{ padding: 0 }}
 									id="finance-title">
 									$70/MO &amp; No Interest if Paid in Full within 6 Months
 									<sup>1</sup>
 								</li>
 								<li
-									className="ml-auto col-lg-4 text-right"
+									className="ml-auto col-lg-4 text-right font-bold"
 									style={{ padding: 0 }}>
-									<span style={{ fontSize: "1em" }}>Total:</span>{" "}
-									<span
-										className="font-bold"
-										style={{ padding: 0, fontSize: "1.3em" }}
-										id="finance-total">
+									Total:
+									<span className="ml-1" id="finance-total">
 										$416.31
 									</span>
 								</li>

@@ -47,17 +47,16 @@ export default function FinanceOptions({ finePrint, name, planID, total }) {
 					textTransform: "none",
 				}}>
 				<ul className="list-unstyled position-relative" style={{ zIndex: 0 }}>
-					<li className="" style={{ marginBottom: "6px" }}>
+					<li className="font-bold" style={{ marginBottom: "6px" }}>
 						<ul className="list-unstyled d-flex flex-column flex-lg-row">
 							<li
-								className="position-relative pr-1 font-bold"
+								className="position-relative pr-1"
 								dangerouslySetInnerHTML={{
 									__html: name,
 								}}
 							/>
 							<li className="ml-auto">
-								<span style={{ fontSize: "12px" }}>Total:</span>{" "}
-								<strong>${total}</strong>
+								Total: <strong>${total}</strong>
 							</li>
 						</ul>
 					</li>
