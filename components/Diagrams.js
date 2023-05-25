@@ -19,8 +19,8 @@ const Diagrams = () => {
 				<div className="row">
 					<h2 style={{ textAlign: "center", width: "100%" }}>Need Help?</h2>
 					<nav className="buttons" style={{ width: "100%" }}>
-						<ul className="list-unstyled d-flex flex-column ">
-							<li className="col-12 col-lg-3 p-2">
+						<ul className="list-unstyled d-flex flex-column flex-lg-row">
+							<li className="col-lg-3 p-1">
 								<button
 									onClick="location.href='https://www.cubcadet.com/en_US/how-to-find-model-number.html'"
 									title="How to Find Your Model Number"
@@ -41,7 +41,7 @@ const Diagrams = () => {
 									How to Find Your Model Number
 								</button>
 							</li>
-							<li className="col-12 col-lg-3 p-2">
+							<li className="col-lg-3 p-1">
 								<button
 									onClick="location.href='https://support.cubcadet.com/s/article/10475-1'"
 									title="How to Find Manufacture Year"
@@ -62,7 +62,7 @@ const Diagrams = () => {
 									How to Find Manufacture Year
 								</button>
 							</li>
-							<li className="col-12 col-lg-3 p-2">
+							<li className="col-lg-3 p-1">
 								<button
 									onClick="location.href='https://www.cubcadet.com/en_US/service-and-parts'"
 									title="Explore Service and Parts"
@@ -83,7 +83,7 @@ const Diagrams = () => {
 									Explore Service and Parts
 								</button>
 							</li>
-							<li className="col-12 col-lg-3 p-2">
+							<li className="col-lg-3 p-1">
 								<button
 									onClick="openChat()"
 									title="Start a Live Chat"
