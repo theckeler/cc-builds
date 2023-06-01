@@ -45,7 +45,7 @@ const ImgCopyBlock = ({
 					<Button
 						copy={block.button.copy}
 						url={block.button.url}
-						className="bg-secondary align-self-start mt-auto"
+						className="bg-secondary align-self-start mt-auto w-100 text-center"
 					/>
 				)}
 			</div>

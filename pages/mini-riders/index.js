@@ -95,7 +95,7 @@ const XTEnduroSeriesHome = () => {
 					<ul className="flex flex-column flex-md-row list-unstyled">
 						{jsonData.forEveryJob.blocks.map((block, i) => {
 							return (
-								<li key={i} className="col-12 col-md-4">
+								<li key={i} className="col-12 col-md-4 mb-2 mb-lg-0">
 									<ImgCopyBlock {...{ block }} linkable={false} />
 								</li>
 							);

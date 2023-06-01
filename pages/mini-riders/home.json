@@ -103,7 +103,7 @@
 			{
 				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/vaff6aec52d6f75de7072641eaa2d6fcd8af2b9b7/mini-riders/mini-attach-01.jpg",
 				"title": "Bagger System",
-				"copy": "This double bag grass collection system mounts quickly and easily to your small riding lawn mower. The vented nylon bags provide superior strength and airflow to reduce grass from clogging. Use this bagger to not only collect your grass clippings while mowing, preventing thatch, but to also collect leaves in the fall. You'll be left with a lush, pristine yard that you can enjoy season after season.",
+				"copy": "This double bag grass collection system mounts easily to your small riding lawn mower to collect grass clippings while mowing. The vented nylon bags provide superior strength and airflow to reduce grass from clogging.",
 				"button": {
 					"copy": "View Bagger System",
 					"className": "w-100",
@@ -137,10 +137,10 @@
 		"h2": "Articles & How To’s",
 		"blocks": [
 			{
-				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dwadb425f5/Knowledge_Center/help-center/must-have-riding-mower-attachments_1100x572.jpg?sw=1116",
-				"title": "5 Must-Have Riding Mower Attachments",
-				"copy": "The Cub Cadet&reg; XT Enduro Series&trade; was built to be versatile. Attachments and accessories will unlock the full potential of your riding mower, making it work for you year-round...",
-				"url": "https://www.cubcadet.com/en_US/popular-faqs/knowledge-must-have-riding-mower-attachments.html"
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/how-to-1.png?version=1,678,468,412,000",
+				"title": "How to Change the Air Filter on a Riding Mower",
+				"copy": "It is recommended that your engine air filter be cleaned or replaced every 50 operating hours. In dry, dusty conditions this should be done more frequently. The video instructions below...",
+				"url": "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-change-the-air-filter-on-a-cub-cadet-rider.html"
 			},
 			{
 				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw203ebac9/Knowledge_Center/help-center/benefits-of-battery-lawn-mower_1100x572.jpg?sw=1116",
