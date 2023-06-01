@@ -101,11 +101,6 @@ const XTEnduroSeriesHome = () => {
 							);
 						})}
 					</ul>
-					<Button
-						copy={jsonData.forEveryJob.button.copy}
-						url={jsonData.forEveryJob.button.url}
-						className={jsonData.forEveryJob.button.className}
-					/>
 				</section>
 
 				{/* QuoteBlock */}
@@ -131,25 +126,14 @@ const XTEnduroSeriesHome = () => {
 						/>
 					</div>
 				</section>
-
-				{/* RIDING MOWER FINDER */}
-				{/* <section
-					className="d-flex flex-column p-9 "
-					style={{ backgroundColor: "#efefef" }}>
-					<div
-						className="container p-9 text-center d-flex justify-content-center align-items-center"
-						style={{ minHeight: "400px" }}>
-						For Video?
-					</div>
-				</section> */}
 			</div>
 
 			{/* Footer */}
 			<div className="container">
-				<HowToMaintence {...{ jsonData }} />
-				<Articles {...{ jsonData }} />
+				<HowToMaintence centerH2={true} {...{ jsonData }} />
+				{/* <Articles {...{ jsonData }} /> */}
 
-				<h2 className="text-center mb-3 p-1">{jsonData.forEveryJob.h2}</h2>
+				<h2 className="text-center mb-3 p-1">Questions & Answers</h2>
 				<Faqs faqs={jsonData.faqs} id="faqs-financing" className="p-2 p-lg-4" />
 			</div>
 		</>

@@ -18,15 +18,15 @@
 	},
 
 	"copyBlock": {
-		"h1": "Compact Yet Powerful",
-		"copy": "Designed to deliver, the CC30’s compact frame helps provide easy maneuverability and control so you can make quick work of even those hard-to-reach areas."
+		"h1": "Compact Convenience",
+		"copy": "Small riding lawn mowers are designed with compactness in mind, making them an ideal choice for those with limited storage space such as garages or small sheds. Their smaller size allows for easy maneuverability in tight areas, ensuring efficient lawn care even in challenging corners or narrow passages. These compact mowers are specifically engineered to fit through standard-sized garden gates and doors, eliminating the hassle of removing fences or other obstacles for storage. Additionally, their reduced dimensions make them lighter and more maneuverable, allowing for effortless navigation and convenient storage, making them a practical and space-saving solution for homeowners with limited outdoor space."
 	},
 
 	"lineup": {
 		"h2": "Small Riding Lawn Mowers",
 		"blocks": [
 			{
-				"url": "https://www.cubcadet.com/en_US/riding-lawn-mowers/lawn-and-garden-tractors?prefn1=series&prefv1=XT1%C2%AE%20Enduro%20Series%E2%84%A2%7CCC30%20Series",
+				"url": "https://www.cubcadet.com/en_US/small-riding-lawn-mower-cc-30-h/13AC21JDA10.html?fitsOnModel=false#prefn1=series&prefv1=XT1%C2%AE%20Enduro%20Series%E2%84%A2%7CCC30%20Series&start=6",
 				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw24519b24/products/Equipment/Cub-Cadet_CC30H_6.jpg?sw=740&sh=740&sm=fit",
 				"title": "CC30H Mini Rider",
 				"copy": "Cub Cadet small riding lawn mowers deliver the same strength, durability and perfect cut as our larger riders; but in a more compact design.",
@@ -73,9 +73,10 @@
 
 	"quote": {
 		"stars": 5,
-		"title": "CUSTOMER RATING",
-		"copy": "“Compact, Smooth. Quiet. I've only had the unit a short time, but I love it, it handles very well, quiet, compact fits in garage well”",
+		"title": "Convenient Size, Great Power",
+		"copy": "“I just got the Cub Cadet CC 30 Rider with the rear engine. I love it! For it's size, it's got great power and the engine is not too loud. I had to cut some really tall and thick grass and not once did the mower bog down. The size of the mower is convenient for fitting it in the back of my Chevy Colorado pickup truck. Of course, I would love to ride one of the big Enduro tractors, but I do have some tight spots to drive around, so the CC 30 is perfect! Smooth running and powerful. And, with the engine in the rear, I don't have exhaust blowing in my face!”",
 		"unit": "CC30E",
+		"name": "JayDawg",
 		"hero": {
 			"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v79aaf7ecda8938ade203c5711b32319c1ca9a8f8/mini-riders/quote.jpg?version=1,683,638,386,000",
 			"srcset": [
@@ -100,37 +101,41 @@
 		"copy": "Designed to get more done season after season with a selection of attachments and accessories designed for a variety of jobs.",
 		"blocks": [
 			{
-				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v83512030b68b7ca1c9318560ad5c7738395cc929/mini-riders/mini-attach-01.jpg",
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/vaff6aec52d6f75de7072641eaa2d6fcd8af2b9b7/mini-riders/mini-attach-01.jpg",
 				"title": "Bagger System",
-				"copy": "Designed for excellent bagging performance with twin baggers available to fit every lawn and garden tractor. And for even bigger jobs, triple baggers are available on lawn and garden tractors 42 inches and larger"
+				"copy": "This double bag grass collection system mounts quickly and easily to your small riding lawn mower. The vented nylon bags provide superior strength and airflow to reduce grass from clogging. Use this bagger to not only collect your grass clippings while mowing, preventing thatch, but to also collect leaves in the fall. You'll be left with a lush, pristine yard that you can enjoy season after season.",
+				"button": {
+					"copy": "View Bagger System",
+					"className": "w-100",
+					"url": "https://www.cubcadet.com/en_US/riding-mower-accessories/bagger-for-30-inch-decks/19A30014OEM.html?fitsOnModel=false#q=19A30014OEM&lang=en_US&start=0"
+				}
 			},
 			{
 				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v83512030b68b7ca1c9318560ad5c7738395cc929/mini-riders/mini-attach-02.jpg?version=1,685,447,235,000",
 				"title": "Hauler",
-				"copy": "Designed for up to 800 pounds and built with fold-out side panels for easy loading and unloading, the hauler allows you to easily move mulch, logs and more."
+				"copy": "Designed for up to 800 pounds and built with fold-out side panels for easy loading and unloading, the hauler allows you to easily move mulch, logs and more.",
+				"button": {
+					"copy": "View Hauler",
+					"className": "w-100",
+					"url": "https://www.cubcadet.com/en_US/riding-mower-accessories/cub-cadet-hauler/19B40026100.html?fitsOnModel=false#q=19B40026100&lang=en_US&start=0"
+				}
 			},
 			{
-				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/versatility-3.jpg?version=1,678,458,327,000",
-				"title": "All-Season Plow",
-				"copy": "With the convenience of the FastAttach&reg; Connection System, this 46-inch heavy-duty all-season plow can move snow, dirt, gravel, mulch and more."
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/vaff6aec52d6f75de7072641eaa2d6fcd8af2b9b7/mini-riders/fpo.jpg?version=1,685,641,908,000",
+				"title": "Armrest Kit",
+				"copy": "These arm rests are designed to provide support for your arms while you're mowing, allowing you to complete your job comfortably. When not in use, the armrest flips up to move out of the way.",
+				"button": {
+					"copy": "View Armrest Kit",
+					"className": "w-100",
+					"url": "https://www.cubcadet.com/en_US/riding-mower-accessories/armrest-kit/757-06093.html?fitsOnModel=false#q=757-06093&lang=en_US&start=0"
+				}
 			}
-		],
-		"button": {
-			"copy": "VIEW ALL ATTACHMENTS",
-			"addClass": "bg-secondary text-center",
-			"url": "https://www.cubcadet.com/en_US/riding-lawn-mowers/riding-mower-accessories"
-		}
+		]
 	},
 
 	"howTo": {
-		"h2": "Riding Lawn Mower Articles",
+		"h2": "Articles & How To’s",
 		"blocks": [
-			{
-				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw36bb159f/Knowledge_Center/help-center/best-in-class-cut_1100x572.jpg?sw=1116",
-				"title": "What Does It Mean to Have the Best-in-Class Cut?",
-				"copy": "Cut quality is a primary consideration when purchasing a lawn mower, and the ability to cut a consistent, even surface with fewer clumps and finer clippings is an important reason...",
-				"url": "https://www.cubcadet.com/en_US/popular-faqs/knowledge-best-in-class-cut.html"
-			},
 			{
 				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dwadb425f5/Knowledge_Center/help-center/must-have-riding-mower-attachments_1100x572.jpg?sw=1116",
 				"title": "5 Must-Have Riding Mower Attachments",
@@ -142,6 +147,12 @@
 				"title": "Benefits of a Battery-Powered Lawn Mower",
 				"copy": "A battery-powered lawn mower can enhance your overall mowing experience. After taking into account yard size and terrain- battery powered mowers are a better fit for smaller yards...",
 				"url": "https://www.cubcadet.com/en_US/popular-faqs/knowledge-benefits-of-battery-lawn-mower.html"
+			},
+			{
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/how-to-1.png?version=1,678,468,412,000",
+				"title": "How to Change the Air Filter on a Riding Mower",
+				"copy": "It is recommended that your engine air filter be cleaned or replaced every 50 operating hours. In dry, dusty conditions this should be done more frequently. The video instructions below...",
+				"url": "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-change-the-air-filter-on-a-cub-cadet-rider.html"
 			}
 		]
 	},
@@ -149,6 +160,12 @@
 	"articles": {
 		"h2": "How To's & Maintenance",
 		"blocks": [
+			{
+				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw36bb159f/Knowledge_Center/help-center/best-in-class-cut_1100x572.jpg?sw=1116",
+				"title": "What Does It Mean to Have the Best-in-Class Cut?",
+				"copy": "Cut quality is a primary consideration when purchasing a lawn mower, and the ability to cut a consistent, even surface with fewer clumps and finer clippings is an important reason...",
+				"url": "https://www.cubcadet.com/en_US/popular-faqs/knowledge-best-in-class-cut.html"
+			},
 			{
 				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/how-to-1.png?version=1,678,468,412,000",
 				"title": "How to Change the Air Filter on a Riding Mower",
@@ -172,27 +189,31 @@
 	"faqs": [
 		{
 			"question": "What size riding mower do I need for 1 acre?",
-			"answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in augue ex. Donec vehicula eleifend lacinia. Ut et metus viverra, efficitur purus sed, lacinia quam. In elit dolor, luctus ac dui nec, interdum facilisis sapien. Phasellus congue sapien a dapibus auctor. Nam tincidunt hendrerit eros. Mauris pretium dapibus laoreet. Nulla pretium erat sapien, sed ultricies augue fringilla nec. Cras pharetra nibh eu vehicula convallis. Donec et ipsum sed felis semper bibendum id eget odio. Nulla aliquam bibendum nisl mollis luctus. Nulla ut orci lacinia, venenatis purus sit amet, lobortis massa. Nam lacus urna, porttitor at condimentum vel, consectetur a odio. Duis condimentum fringilla ultricies. Nam dignissim orci dolor, a dapibus ipsum accumsan non. Proin mollis congue dignissim."
+			"answer": "To maintain a 1-acre lawn efficiently, choose a riding mower with a cut width between 30 to 42 inches. This range provides a good balance between maneuverability and productivity. Consider factors such as lawn layout, obstacles, and personal preferences when deciding on the ideal cut width. A wider cut width allows for faster coverage of a larger area, while a smaller cut width is better for navigating tight corners and narrow passages. Ultimately, selecting a riding mower within the 30 to 42-inch range ensures effective mowing for your 1-acre lawn."
 		},
 		{
 			"question": "Can you use a riding mower on a small yard?",
-			"answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in augue ex. Donec vehicula eleifend lacinia. Ut et metus viverra, efficitur purus sed, lacinia quam. In elit dolor, luctus ac dui nec, interdum facilisis sapien. Phasellus congue sapien a dapibus auctor. Nam tincidunt hendrerit eros. Mauris pretium dapibus laoreet. Nulla pretium erat sapien, sed ultricies augue fringilla nec. Cras pharetra nibh eu vehicula convallis. Donec et ipsum sed felis semper bibendum id eget odio. Nulla aliquam bibendum nisl mollis luctus. Nulla ut orci lacinia, venenatis purus sit amet, lobortis massa. Nam lacus urna, porttitor at condimentum vel, consectetur a odio. Duis condimentum fringilla ultricies. Nam dignissim orci dolor, a dapibus ipsum accumsan non. Proin mollis congue dignissim."
+			"answer": "Riding mowers are suitable for small yards, particularly those that are one-half acre in size or larger. While they may be less powerful and slower compared to lawn and garden tractors, riding mowers excel at handling various terrains, including uphill and downhill slopes, as well as uneven land. Additionally, some riding mowers offer features such as mulching and bagging capabilities, providing additional options for yard maintenance."
+		},
+		{
+			"question": "What are the benefits of a small riding lawn mower?",
+			"answer": "Small riding lawn mowers offer several benefits. Firstly, their compact size makes them highly maneuverable, allowing easy navigation around tight corners and through small gates. This makes them ideal for yards with limited space. Secondly, small riding mowers are well-suited for individuals with smaller yards who do not require a larger machine. They provide efficient and effective mowing without the need for excessive power or size. Lastly, these small machines tend to be more fuel-efficient and produce fewer emissions compared to larger counterparts, making them an environmentally-friendly choice for lawn maintenance."
 		},
 		{
 			"question": "What type of mower is recommended for a half acre?",
-			"answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in augue ex. Donec vehicula eleifend lacinia. Ut et metus viverra, efficitur purus sed, lacinia quam. In elit dolor, luctus ac dui nec, interdum facilisis sapien. Phasellus congue sapien a dapibus auctor. Nam tincidunt hendrerit eros. Mauris pretium dapibus laoreet. Nulla pretium erat sapien, sed ultricies augue fringilla nec. Cras pharetra nibh eu vehicula convallis. Donec et ipsum sed felis semper bibendum id eget odio. Nulla aliquam bibendum nisl mollis luctus. Nulla ut orci lacinia, venenatis purus sit amet, lobortis massa. Nam lacus urna, porttitor at condimentum vel, consectetur a odio. Duis condimentum fringilla ultricies. Nam dignissim orci dolor, a dapibus ipsum accumsan non. Proin mollis congue dignissim."
+			"answer": "When it comes to a half-acre lawn, both small riding lawn mowers and self-propelled gas mowers are viable options. If you prefer a walk-behind mower, a self-propelled gas mower is highly recommended. These mowers feature powered wheels that make maneuvering around the yard much easier, alleviating some of the physical effort required. They offer a convenient solution for maintaining a half-acre lawn efficiently. On the other hand, if you prefer a seated position and want to cover the area more quickly, a small riding lawn mower can also be a suitable choice. It provides comfort and convenience while navigating the yard, especially if there are any slopes or uneven terrain to contend with."
 		},
 		{
 			"question": "Is a riding mower worth it for a half acre?",
-			"answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in augue ex. Donec vehicula eleifend lacinia. Ut et metus viverra, efficitur purus sed, lacinia quam. In elit dolor, luctus ac dui nec, interdum facilisis sapien. Phasellus congue sapien a dapibus auctor. Nam tincidunt hendrerit eros. Mauris pretium dapibus laoreet. Nulla pretium erat sapien, sed ultricies augue fringilla nec. Cras pharetra nibh eu vehicula convallis. Donec et ipsum sed felis semper bibendum id eget odio. Nulla aliquam bibendum nisl mollis luctus. Nulla ut orci lacinia, venenatis purus sit amet, lobortis massa. Nam lacus urna, porttitor at condimentum vel, consectetur a odio. Duis condimentum fringilla ultricies. Nam dignissim orci dolor, a dapibus ipsum accumsan non. Proin mollis congue dignissim."
+			"answer": "When it comes to half-acre lawns, investing in a riding mower can be a worthwhile choice. With lawns of this size, a riding mower offers several advantages, including enhanced efficiency and reduced cutting time. By opting for a fast riding mower with a cutting deck size of 40-60 inches or more, you can significantly speed up the mowing process and cover more ground with each pass. This increased cutting width allows for faster coverage and improved productivity, making the maintenance of your half-acre lawn more manageable and enjoyable."
 		},
 		{
 			"question": "What is the narrowest ride-on mower?",
-			"answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in augue ex. Donec vehicula eleifend lacinia. Ut et metus viverra, efficitur purus sed, lacinia quam. In elit dolor, luctus ac dui nec, interdum facilisis sapien. Phasellus congue sapien a dapibus auctor. Nam tincidunt hendrerit eros. Mauris pretium dapibus laoreet. Nulla pretium erat sapien, sed ultricies augue fringilla nec. Cras pharetra nibh eu vehicula convallis. Donec et ipsum sed felis semper bibendum id eget odio. Nulla aliquam bibendum nisl mollis luctus. Nulla ut orci lacinia, venenatis purus sit amet, lobortis massa. Nam lacus urna, porttitor at condimentum vel, consectetur a odio. Duis condimentum fringilla ultricies. Nam dignissim orci dolor, a dapibus ipsum accumsan non. Proin mollis congue dignissim."
+			"answer": "The narrowest ride-on mowers available are the CC30H and CC30E models offered by Cub Cadet. These small riding lawn mowers feature a compact design and come equipped with a 30-inch cutting deck. Despite their smaller size, these mowers maintain excellent maneuverability and are capable of efficiently navigating tight spaces. Their compact body and narrow cutting deck make them well-suited for working in constrained areas."
 		},
 		{
-			"question": "What is the smallest zero turn riding mower made?",
-			"answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in augue ex. Donec vehicula eleifend lacinia. Ut et metus viverra, efficitur purus sed, lacinia quam. In elit dolor, luctus ac dui nec, interdum facilisis sapien. Phasellus congue sapien a dapibus auctor. Nam tincidunt hendrerit eros. Mauris pretium dapibus laoreet. Nulla pretium erat sapien, sed ultricies augue fringilla nec. Cras pharetra nibh eu vehicula convallis. Donec et ipsum sed felis semper bibendum id eget odio. Nulla aliquam bibendum nisl mollis luctus. Nulla ut orci lacinia, venenatis purus sit amet, lobortis massa. Nam lacus urna, porttitor at condimentum vel, consectetur a odio. Duis condimentum fringilla ultricies. Nam dignissim orci dolor, a dapibus ipsum accumsan non. Proin mollis congue dignissim."
+			"question": "Do smaller mower decks cut better?",
+			"answer": "When it comes to large, hilly lawns, opting for a mower with a smaller deck and a more powerful engine can be advantageous. The combination of a smaller deck and a bigger engine allows for faster mowing while maintaining precision and maneuverability. This setup enables efficient cutting without compromising the quality of the results."
 		}
 	]
 }

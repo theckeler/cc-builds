@@ -1,13 +1,13 @@
 import ImgCopyBlockStacked from "./ImgCopyBlockStacked";
-const HowToMaintence = ({ jsonData }) => {
+const HowToMaintence = ({ jsonData, centerH2 = false }) => {
 	console.log(jsonData.howTo.viewAllURL);
 
 	return (
 		<section className="pt-6">
 			<div className="wrapper">
 				<ul className="list-unstyled d-flex flex-column flex-md-row align-items-center px-3">
-					<li className="">
-						<h2 className="text-center">{jsonData.howTo.h2}</h2>
+					<li className={!!centerH2 && "d-block text-center w-100"}>
+						<h2>{jsonData.howTo.h2}</h2>
 					</li>
 					{typeof jsonData.howTo.viewAllURL !== "undefined" && (
 						<li className="ml-2">
