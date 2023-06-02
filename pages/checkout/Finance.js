@@ -150,7 +150,7 @@ export default function Finance() {
 								/>
 								<ul className="list-unstyled d-block p-2 text-left border-0 bg-transparent">
 									<li
-										className="w-100 d-block font-bold text-uppercase"
+										className="w-100 d-block font-bold"
 										style={{ fontSize: "1.6em" }}>
 										Cub Cadet Financing
 									</li>
@@ -243,7 +243,7 @@ export default function Finance() {
 
 						<ul className="list-unstyled w-100 d-flex align-items-center p-2 text-left border-0 bg-transparent">
 							<li
-								className="font-bold text-uppercase"
+								className="font-bold"
 								style={{ fontSize: "1.6em", whiteSpace: "nowrap" }}>
 								Credit Card
 							</li>
