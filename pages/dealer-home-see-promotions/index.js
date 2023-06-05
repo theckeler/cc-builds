@@ -7,16 +7,14 @@ export default function DealerHomePromos() {
 	return (
 		<div className="container">
 			<h4 className="h4 text-center mb-3" style={{ fontSize: "2.2rem" }}>
-				Current Promos
+				Current Promotions & Financing Offers
 			</h4>
 			<ul className="list-unstyled d-lg-flex">
 				{jsonData.map((block, i) => {
 					return (
 						<li className="col-lg-4 mb-1" key={i}>
-							<div className="border h-100 bg-secondary d-flex flex-column">
-								<ul
-									className="list-unstyled text-center p-2"
-									style={{ backgroundColor: "#efefef" }}>
+							<div className="border h-100 x d-flex flex-column">
+								<ul className="list-unstyled text-center p-2 bg-secondary">
 									<li className="display-1" style={{ fontSize: "68px" }}>
 										{block.term}
 									</li>
@@ -70,6 +68,15 @@ export default function DealerHomePromos() {
 					);
 				})}
 			</ul>
+			<div className="p-2">
+				<a href="https://www.cubcadet.com/en_US/riding-lawn-mowers/zero-turn-mowers">
+					<img
+						src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v24205ba685df807457254c9298e2f06f10f368cb/cub-days-2023/cub-days-2023-xt.jpg?version=1,684,436,020,000"
+						alt=""
+						className="w-100"
+					/>
+				</a>
+			</div>
 		</div>
 	);
 }
