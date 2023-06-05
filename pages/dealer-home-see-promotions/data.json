@@ -1,0 +1,43 @@
+[
+	{
+		"term": 24,
+		"title": "0% APR for 24 months with equal payments<sup>3</sup>",
+		"list": [
+			"<strong>There is a promotional fee of $125 for this transaction</strong>",
+			"Minimum purchase <strong>$1,500</strong>",
+			"<strong>Valid from:</strong> March 1, 2022 - June 30, 2022"
+		],
+		"button": {
+			"title": "Apply Now",
+			"href": "https://finance.consumercreditapp.com/cc/landing/cub_cadet"
+		}
+	},
+	{
+		"term": 36,
+		"title": "0% APR for 36 months with equal payments<sup>5</sup>",
+		"list": [
+			"<strong>There is a promotional fee of $125 for this transaction.</strong>",
+			"Offer valid on Zero Turns only (RZT, Ultima, Z-Force and Pro-Z)",
+			"Minimum purchase <strong>$3,000</strong>",
+			"<strong>Valid from:</strong> March 1, 2022 - June 30, 2022"
+		],
+		"button": {
+			"title": "Apply Now",
+			"href": "https://finance.consumercreditapp.com/cc/landing/cub_cadet"
+		}
+	},
+	{
+		"term": 48,
+		"title": "0% APR for 48 months with equal payments<sup>6</sup>",
+		"list": [
+			"<strong>There is a promotional fee of $125 for this transaction.</strong>",
+			"Offer valid on Pro Series & HW Series only",
+			"Minimum purchase <strong>$3,000</strong>",
+			"<strong>Valid from:</strong> March 1, 2022 - June 30, 2022"
+		],
+		"button": {
+			"title": "Apply Now",
+			"href": "https://finance.consumercreditapp.com/cc/landing/cub_cadet"
+		}
+	}
+]
