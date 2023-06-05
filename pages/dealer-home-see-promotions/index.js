@@ -25,13 +25,13 @@ export default function DealerHomePromos() {
 								<ul className="list-unstyled px-2 pt-2">
 									<li
 										className="text-center font-bold mb-1"
-										style={{ fontSize: "1.5em" }}
+										style={{ fontSize: "1.4rem" }}
 										dangerouslySetInnerHTML={{
 											__html: block.title,
 										}}
 									/>
 									<li className="">
-										<ul className="mx-auto" style={{ fontSize: "1.1em" }}>
+										<ul className="mx-auto" style={{ fontSize: "1.1rem" }}>
 											{block.list.map((item, i) => {
 												return (
 													<li
