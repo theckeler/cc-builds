@@ -7,7 +7,7 @@ export default function DealerHomePromos() {
 	return (
 		<div className="container">
 			<h4 className="h4 text-center mb-3" style={{ fontSize: "2.2rem" }}>
-				Current Promotions & Financing Offers
+				Current In-Store Promotions & Financing Offers
 			</h4>
 			<ul className="list-unstyled d-lg-flex flex-wrap">
 				{jsonData.map((block, i) => {
