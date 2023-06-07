@@ -1,0 +1,96 @@
+[
+	{
+		"term": 24,
+		"title": "0% APR for 24 months with equal payments<sup>3</sup>",
+		"list": [
+			"<strong>There is a promotional fee of $125 for this transaction</strong>",
+			"Minimum purchase <strong>$2,000</strong>",
+			"<strong>Valid from:</strong> 5/1/23 - 7/31/23"
+		],
+		"button": {
+			"title": "Apply Now",
+			"href": "https://finance.consumercreditapp.com/cc/landing/cub_cadet"
+		}
+	},
+	{
+		"term": 36,
+		"title": "0% APR for 36 months with equal payments<sup>5</sup>",
+		"list": [
+			"<strong>There is a promotional fee of $125 for this transaction.</strong>",
+			"Minimum purchase <strong>$3,000</strong>",
+			"Excludes Utility Vehicles",
+			"<strong>Valid from:</strong> 5/1/23 - 7/31/23"
+		],
+		"button": {
+			"title": "Apply Now",
+			"href": "https://finance.consumercreditapp.com/cc/landing/cub_cadet"
+		}
+	},
+	{
+		"term": 48,
+		"title": "0% APR for 48 months with equal payments<sup>6</sup>",
+		"list": [
+			"<strong>There is a promotional fee of $125 for this transaction.</strong>",
+			"Minimum purchase <strong>$3,099</strong>",
+			"Excludes Utility Vehicles",
+			"<strong>Valid from:</strong> 6/1/23 - 6/30/23"
+		],
+		"button": {
+			"title": "Apply Now",
+			"href": "https://finance.consumercreditapp.com/cc/landing/cub_cadet"
+		}
+	},
+	{
+		"term": 60,
+		"title": "0% APR for 60 Months with Equal Payments<sup>15</sup>",
+		"list": [
+			"<strong>There is a promotional fee of $125 for this transaction.</strong>",
+			"Minimum purchase <strong>$6,000</strong>",
+			"Excludes Utility Vehicles",
+			"<strong>Valid from:</strong> 5/1/23 - 7/31/23"
+		],
+		"button": {
+			"title": "Apply Now",
+			"href": "https://finance.consumercreditapp.com/cc/landing/cub_cadet"
+		}
+	},
+	{
+		"term": 36,
+		"title": "1.99% APR with 36 Monthly Payments<sup>7</sup>",
+		"list": [
+			"<strong>There is a promotional fee of $125 for this transaction.</strong>",
+			"Minimum purchase <strong>$1,500</strong>",
+			"<strong>Valid from:</strong> 5/1/23 - 7/31/23"
+		],
+		"button": {
+			"title": "Apply Now",
+			"href": "https://finance.consumercreditapp.com/cc/landing/cub_cadet"
+		}
+	},
+	{
+		"term": 48,
+		"title": "2.99% APR with 48 Monthly Payments<sup>8</sup>",
+		"list": [
+			"<strong>There is a promotional fee of $125 for this transaction.</strong>",
+			"Minimum purchase <strong>$1,500</strong>",
+			"<strong>Valid from:</strong> 5/1/23 - 7/31/23"
+		],
+		"button": {
+			"title": "Apply Now",
+			"href": "https://finance.consumercreditapp.com/cc/landing/cub_cadet"
+		}
+	},
+	{
+		"term": 60,
+		"title": "3.99% APR with 60 Monthly Payments<sup>9</sup>",
+		"list": [
+			"<strong>There is a promotional fee of $125 for this transaction.</strong>",
+			"Minimum purchase <strong>$1,500</strong>",
+			"<strong>Valid from:</strong> 5/1/23 - 7/31/23"
+		],
+		"button": {
+			"title": "Apply Now",
+			"href": "https://finance.consumercreditapp.com/cc/landing/cub_cadet"
+		}
+	}
+]
