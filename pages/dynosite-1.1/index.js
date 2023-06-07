@@ -198,14 +198,16 @@ const Dynosite = () => {
 			</section>
 
 			<a name="parts"></a>
-			<section className="border-bottom" id="parts-listing">
+			<section className="" id="parts-listing">
 				<div className={containerCSS}>
 					<PartsListing />
 				</div>
 			</section>
 
 			<a id="support" name="support"></a>
-			<section className="border-bottom">
+			<section
+				className="border-bottom border-top "
+				style={{ backgroundColor: "#efefef" }}>
 				<div className={`${containerCSS}`}>
 					<DealerLocation />
 				</div>
