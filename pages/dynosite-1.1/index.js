@@ -31,6 +31,17 @@ const Dynosite = () => {
 				className="w-100 sticky-top pt-1"
 				style={{ backgroundColor: "#efefef" }}>
 				<ul className="container d-flex align-items-center list-unstyled mb-0">
+					<li className="pr-2 d-none d-md-block">
+						<Image
+							src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw855f971f/products/Equipment/Cub-Cadet_XT1ST54_New_2000x2000_7.jpg"
+							alt=""
+							width={100}
+							height={100}
+							fit={true}
+							className=""
+							//style={{ width: "auto", height: "100%", maxHeight: "100px" }}
+						/>
+					</li>
 					<li className="pr-2">
 						<h1 className="mb-0 pr-1" style={{ fontSize: "2.5em" }}>
 							XT1 ST54
@@ -65,7 +76,7 @@ const Dynosite = () => {
 								<li className="mb-1 mr-lg-1 mb-lg-0">
 									<Button
 										//url="#parts"
-										copy="Buy Parts"
+										copy="Parts"
 										className={`${buttonCSS} w-100`}
 										onClick={(e) => {
 											scrollToTop("parts-listing");
@@ -75,7 +86,7 @@ const Dynosite = () => {
 								<li className="mb-1 mr-lg-1 mb-lg-0">
 									<Button
 										//url="#support"
-										copy="Dealer Support"
+										copy="Support"
 										className={`${buttonCSS} w-100`}
 										onClick={(e) => {
 											scrollToTop("support");
@@ -124,11 +135,11 @@ const Dynosite = () => {
 								</li>
 								<li>
 									<Button
-										//url="#registration"
+										//url="#aandq"
 										copy="A&Q"
 										className={`${buttonCSS} w-100`}
 										onClick={(e) => {
-											scrollToTop("registration");
+											scrollToTop("aandq");
 										}}
 									/>
 								</li>
@@ -149,7 +160,7 @@ const Dynosite = () => {
 				</div>
 			</section>
 
-			<section className={`mt-2 ${containerCSS}`}>
+			{/* <section className={`mt-2 ${containerCSS}`}>
 				<ul className="list-unstyled flex flex-column-reverse flex-lg-row flex-wrap">
 					<li className="col-12 col-lg-9">
 						<ul className="" style={{ fontSize: "0.9em", lineHeight: "1.8" }}>
@@ -195,7 +206,7 @@ const Dynosite = () => {
 						/>
 					</li>
 				</ul>
-			</section>
+			</section> */}
 
 			<a name="parts"></a>
 			<section className="" id="parts-listing">
@@ -239,6 +250,7 @@ const Dynosite = () => {
 				</div>
 			</section>
 
+			<a id="aandq" name="aandq"></a>
 			<section className="container mb-6">
 				<h2 className="h2 text-center">Answers & Questions</h2>
 				<Faqs faqs={jsonData.faqs} addID="faqs-financing" className="pt-2" />
