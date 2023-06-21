@@ -5,12 +5,9 @@ import jsonDataUS from "./home.json";
 import IconCopyBlock from "@/c/IconCopyBlock";
 import QuoteBlock from "@/c/QuoteBlock";
 import HowToMaintence from "@/c/HowToMaintence";
-// import Articles from "@/c/Articles";
 import ProductBlock from "@/c/ProductBlock";
 import ImgCopyBlock from "@/c/ImgCopyBlock";
-// import Button from "@/c/Button";
 import HeroImg from "@/c/HeroImg";
-//import BuildMenu from "@/c/BuildMenu";
 import Faqs from "@/c/Faqs";
 import HeroWing from "@/c/HeroWing";
 
