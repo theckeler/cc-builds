@@ -11,7 +11,7 @@ import HeroImg from "@/c/HeroImg";
 import Faqs from "@/c/Faqs";
 import HeroWing from "@/c/HeroWing";
 
-const XTEnduroSeriesHome = () => {
+const MiniRiders = () => {
 	const [jsonData, setJsonData] = useState({ ...jsonDataUS });
 
 	return (
@@ -137,4 +137,4 @@ const XTEnduroSeriesHome = () => {
 	);
 };
 
-export default XTEnduroSeriesHome;
+export default MiniRiders;
