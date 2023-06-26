@@ -10,6 +10,7 @@ import ImgCopyBlock from "@/c/ImgCopyBlock";
 import HeroImg from "@/c/HeroImg";
 import Faqs from "@/c/Faqs";
 import HeroWing from "@/c/HeroWing";
+import CTABlock from "../../components/CTABlock";
 
 const MiniRiders = () => {
 	const [jsonData, setJsonData] = useState({ ...jsonDataUS });
@@ -67,6 +68,23 @@ const MiniRiders = () => {
 					</ul>
 				</section>
 
+				<section className="py-2" style={{ backgroundColor: "#efefef" }}>
+					<CTABlock
+						block={{
+							className: "container p-1 mt-8 mb-4 text-center",
+							title: {
+								copy: "Looking for something bigger?",
+								className: "text-center",
+							},
+							button: {
+								copy: "Explore 42” in Mowers",
+								url: "https://www.cubcadet.com/en_US/riding-lawn-mowers/lawn-and-garden-tractors",
+								className: "text-center d-inline-block bg-secondary",
+							},
+						}}
+					/>
+				</section>
+
 				{/* powerLevel */}
 				<section className="container d-flex flex-column p-1 mt-3">
 					<ul
@@ -75,10 +93,7 @@ const MiniRiders = () => {
 						{jsonData.powerLevel.blocks.map((block, i) => {
 							return (
 								<li key={i} className="col col-12 col-sm-12 col-md-6 p-2">
-									<IconCopyBlock
-										{...{ block }}
-										//addStyle={{ maxHeight: "3em" }}
-									/>
+									<IconCopyBlock {...{ block }} />
 								</li>
 							);
 						})}

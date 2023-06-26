@@ -128,7 +128,7 @@ export default function Dealer({}) {
 				})}
 			</ul>
 
-			<ul className="list-unstyled flex align-items-center w-100 mb-0">
+			<ul className="list-unstyled flex align-items-center w-100 mb-1">
 				<li className="col-6 px-0 border-right">
 					<button
 						className="w-100 btn p-1 dealer-button"
@@ -160,7 +160,7 @@ export default function Dealer({}) {
 			</ul>
 
 			<div
-				className="d-none dealer-edit mb-0"
+				className="d-none dealer-edit mb-2"
 				id="change-dealer"
 				style={{ backgroundColor: "#ebebeb" }}>
 				<ul className="list-unstyled d-flex align-items-center p-2 mb-0">
@@ -201,7 +201,7 @@ export default function Dealer({}) {
 			</div>
 
 			<div
-				className="d-none dealer-edit mb-0"
+				className="d-none dealer-edit mb-2"
 				id="change-delivery"
 				style={{ backgroundColor: "#ebebeb" }}>
 				<ul className="list-unstyled d-flex align-items-center p-2 mb-0">
