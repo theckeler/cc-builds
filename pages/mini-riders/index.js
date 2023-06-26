@@ -68,19 +68,22 @@ const MiniRiders = () => {
 					</ul>
 				</section>
 
-				<section className="py-2" style={{ backgroundColor: "#efefef" }}>
+				<section className="py-2 bg-secondary">
 					<CTABlock
 						block={{
 							className: "container p-1 mt-8 mb-4 text-center",
 							title: {
 								copy: "Looking for something bigger?",
-								className: "text-center",
+								className: "",
 							},
-							copy: null,
+							p: {
+								copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis leo nisl, blandit in consectetur ac, commodo at massa. Fusce vel condimentum nunc, ac ullamcorper enim. Nam ultricies vehicula massa, vel pharetra tortor. Ut eu dapibus erat, et vulputate ex.",
+								className: "",
+							},
 							button: {
 								copy: "Explore 42” in Mowers",
 								url: "https://www.cubcadet.com/en_US/riding-lawn-mowers/lawn-and-garden-tractors",
-								className: "text-center d-inline-block bg-secondary",
+								className: " bg-white mx-auto",
 							},
 						}}
 					/>

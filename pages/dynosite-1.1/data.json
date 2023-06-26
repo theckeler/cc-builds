@@ -108,11 +108,15 @@
 		}
 	],
 	"cta": {
-		"h1": "Still have financing questions?",
-		"copy": "We're happy to help! Call a customer service specialist (877) 428-2349 8am-5pm EST",
+		"className": "text-center",
+		"title": { "copy": "Still have financing questions?" },
+		"p": {
+			"copy": "We're happy to help! Call a customer service specialist (877) 428-2349 8am-5pm EST"
+		},
 		"button": {
 			"copy": "Apply Now",
-			"url": "https://www.cubcadet.com/en_US/financing-view-all.html"
+			"url": "https://www.cubcadet.com/en_US/financing-view-all.html",
+			"className": "bg-white"
 		}
 	}
 }

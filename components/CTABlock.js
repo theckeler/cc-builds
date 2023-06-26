@@ -7,8 +7,11 @@ const CTABlock = ({ block }) => {
 				dangerouslySetInnerHTML={{ __html: block.title.copy }}
 				className={block.title.className}
 			/>
-			{block.copy && (
-				<p dangerouslySetInnerHTML={{ __html: block.copy }} className="" />
+			{block.p && (
+				<p
+					dangerouslySetInnerHTML={{ __html: block.p.copy }}
+					className={block.p.className}
+				/>
 			)}
 			<Button
 				url={block.button.url}
