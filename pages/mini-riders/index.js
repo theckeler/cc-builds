@@ -76,6 +76,7 @@ const MiniRiders = () => {
 								copy: "Looking for something bigger?",
 								className: "text-center",
 							},
+							copy: null,
 							button: {
 								copy: "Explore 42” in Mowers",
 								url: "https://www.cubcadet.com/en_US/riding-lawn-mowers/lawn-and-garden-tractors",
