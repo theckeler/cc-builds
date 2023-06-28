@@ -83,6 +83,27 @@ const MiniRiders = () => {
 					</ul>
 				</section>
 
+				<section className="mt-6 py-4 bg-secondary">
+					<CTABlock
+						block={{
+							className: "container py-4 mb-0 text-center",
+							title: {
+								copy: "Looking for something bigger?",
+								className: "",
+							},
+							// p: {
+							// 	copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis leo nisl, blandit in consectetur ac, commodo at massa. Fusce vel condimentum nunc, ac ullamcorper enim. Nam ultricies vehicula massa, vel pharetra tortor. Ut eu dapibus erat, et vulputate ex.",
+							// 	className: "",
+							// },
+							button: {
+								copy: "Explore 42” in Mowers",
+								url: "https://www.cubcadet.com/en_US/riding-lawn-mowers/42inch-enduro-series-riding-mowers",
+								className: " bg-white mx-auto",
+							},
+						}}
+					/>
+				</section>
+
 				{/* forEveryJob */}
 				<section className="container d-flex flex-column align-items-center p-0 mt-8">
 					<h2 className="text-center mb-3 p-1">{jsonData.forEveryJob.h2}</h2>
@@ -98,29 +119,8 @@ const MiniRiders = () => {
 					</ul>
 				</section>
 
-				<section className="mt-6 py-4 bg-secondary">
-					<CTABlock
-						block={{
-							className: "container py-4 mb-0 text-center",
-							title: {
-								copy: "Looking for something bigger?",
-								className: "",
-							},
-							p: {
-								copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis leo nisl, blandit in consectetur ac, commodo at massa. Fusce vel condimentum nunc, ac ullamcorper enim. Nam ultricies vehicula massa, vel pharetra tortor. Ut eu dapibus erat, et vulputate ex.",
-								className: "",
-							},
-							button: {
-								copy: "Explore 42” in Mowers",
-								url: "https://www.cubcadet.com/en_US/riding-lawn-mowers/lawn-and-garden-tractors",
-								className: " bg-white mx-auto",
-							},
-						}}
-					/>
-				</section>
-
 				{/* QuoteBlock */}
-				<section className="d-flex flex-column p-0 position-relative bg-primary">
+				<section className="d-flex flex-column my-4 p-0 position-relative bg-primary">
 					<HeroImg
 						hero={jsonData.quote.hero}
 						className="position-absolute"
