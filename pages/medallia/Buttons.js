@@ -21,8 +21,10 @@ export default function Buttons() {
 			}}>
 			<ul className="list-unstyled d-flex flex-row mb-0">
 				{tabs.map((e, i) => {
+					console.log(e);
+
 					return (
-						<li className="mr-1" key={i}>
+						<li className={i < tabs.length - 1 && `mr-1`} key={i}>
 							<button
 								className="p-1 bg-secondary border-0"
 								style={{ cursor: "pointer" }}>
