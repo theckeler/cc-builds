@@ -19,7 +19,8 @@
 			"@/*": ["./*"],
 			"@/c/*": ["components/*"],
 			"@/i/*": ["components/icons/*"],
-			"@/t/*": ["templates/*"]
+			"@/t/*": ["templates/*"],
+			"@/s/*": ["styles/*"]
 		}
 	},
 	"include": [

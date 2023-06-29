@@ -1,5 +1,6 @@
 //import jsonData from "./data.json";
 
+import OneTrustBanner from "../../components/OneTrustBanner";
 import Buttons from "./Buttons";
 
 export default function Medallia() {
@@ -17,6 +18,7 @@ export default function Medallia() {
 				rel="stylesheet"
 				href="https://display.ugc.bazaarvoice.com/static/CubCadet/main_site/173/7035/en_US/stylesheets/screen.css"
 			/>
+
 			<div className="product-info container no-container-gutters-lg-down">
 				<div className="row">
 					<div className="col-12">
@@ -67,7 +69,7 @@ export default function Medallia() {
 												title=""
 											/>
 										</div>
-									</div>{" "}
+									</div>
 									{/* End content-asset */}
 								</div>
 								{/* Applicable Promotions */}
@@ -410,7 +412,7 @@ export default function Medallia() {
 											title=""
 										/>
 									</div>
-								</div>{" "}
+								</div>
 								{/* End content-asset */}
 							</div>
 						</div>
@@ -1888,12 +1890,12 @@ export default function Medallia() {
 									<span className="finance-border-text">Or</span>
 									<div className="td-estimation">
 										<div>
-											<strong>$69/mo</strong> |{" "}
+											<strong>$69/mo</strong> |
 											<strong>
 												3.99% APR<sup>8</sup>
-											</strong>{" "}
-											| <strong>60Mo</strong> with{" "}
-											<strong>$125 Promo Fee</strong>. Total:{" "}
+											</strong>
+											| <strong>60Mo</strong> with
+											<strong>$125 Promo Fee</strong>. Total:
 											<strong>$4,140.00</strong>
 										</div>
 										<div>
