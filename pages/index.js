@@ -1,5 +1,3 @@
-import "@/s/main.scss";
-
 export default function Index() {
 	return (
 		<div

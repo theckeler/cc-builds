@@ -1,5 +1,4 @@
-import "@/styles/main.scss";
-import "@/styles/checkout.scss";
+import "@/styles/onetrust.css";
 import type { AppProps } from "next/app";
 
 import Header from "@/t/Header";
