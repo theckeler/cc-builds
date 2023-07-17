@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
 			<Header />
 			<Component {...pageProps} />
 			<Footer />
-			<OneTrustBanner />
+			{/* <OneTrustBanner /> */}
 		</>
 	);
 }
