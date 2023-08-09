@@ -1,22 +1,8 @@
 import { useState, useEffect } from "react";
 
+import data from "../data/plans.json";
+
 const FinancingCard = () => {
-	const [data, setData] = useState(null);
-	const [isLoading, setLoading] = useState(false);
-
-	useEffect(() => {
-		console.log("useEffect");
-		setLoading(true);
-		fetch("https://api.npoint.io/5db3a089ce8afefb4f23")
-			.then((res) => res.json())
-			.then((data) => {
-				setData(data);
-				setLoading(false);
-			});
-		//console.log("data:", data);
-	}, []);
-
-	console.log("data:", data);
 	return (
 		<div className="flo">
 			{data &&
@@ -66,9 +52,9 @@ const FinancingCard = () => {
 										</a>
 										<a
 											className="btn btn-primary btn-sm"
-											href={block.button.href}
-											title="Apply Now">
-											{block.button.title}
+											href={block.buttonHref}
+											title={block.buttonTitle}>
+											{block.buttonTitle}
 										</a>
 									</div>
 								</div>

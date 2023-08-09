@@ -1,7 +1,7 @@
-// import Image from "next/image";
-// import Faqs from "@/c/Faqs";
-// import jsonData from "./data.json";
+import Faqs from "../../components/Faqs";
 import FinancingCard from "./components/FinancingCard";
+
+import faqsData from "./data/faqs.json";
 
 const Financing = () => {
 	const containerCSS = "container mb-3 pb-3 border-bottom";
@@ -16,7 +16,7 @@ const Financing = () => {
 			/>
 			<div id="COPY-PASTE">
 				<div className="of-plans container mx-auto" id="of-plans">
-					<div className="container shop-financing container ">
+					<div className="container shop-financing">
 						<div className="row">
 							<div className="plb-group-heading col-12 col-lg-8 offset-lg-2 text-center">
 								<h1>Shop Online Financing Plans</h1>
@@ -39,6 +39,20 @@ const Financing = () => {
 						<FinancingCard />
 					</div>
 				</div>
+
+				<div style={{ backgroundColor: "#ffc20f" }}>
+					<div className="container text-center p-8">
+						<h2 className="h2">Find Out If You Prequalify</h2>
+						<p>
+							Get a decision in seconds with no impact to your credit score.
+							Once approved, you can use your account immediately.
+						</p>
+						<a href="" className="btn btn-primary">
+							See If You Prequalify
+						</a>
+					</div>
+				</div>
+
 				<div className="container-fluid plan-fis">
 					<div className="row">
 						<div className="col-md-8">
@@ -50,8 +64,10 @@ const Financing = () => {
 								}}
 							/>
 							<div id="product-finder-financing">
-								{/* <script>
-								(function (c, a, r, t, f, u, l) {
+								<script
+									type="text/javascript"
+									dangerouslySetInnerHTML={{
+										__html: `(function (c, a, r, t, f, u, l) {
 								(c[u] =
 									c[u] ||
 									function () {
@@ -69,8 +85,10 @@ const Financing = () => {
 									"body",
 									"//embed.cartfulsolutions.com/cubcadet-finance-finder/recommendation.min.js",
 									"cfl672"
-								);
-							</script> */}
+								)
+										`,
+									}}
+								/>
 							</div>
 							<style
 								type="text/css"
@@ -121,86 +139,12 @@ const Financing = () => {
 						</div>
 					</div>
 				</div>
-				<section className="ffaqs">
+
+				<section className="ffaqs container mx-auto">
 					<h3>FAQs</h3>
-					<dl>
-						<dt className="question">
-							How long does the online application take?
-						</dt>
-						<dd>
-							<p>
-								The application takes only minutes, and most application
-								decisions are returned within seconds.
-							</p>
-						</dd>
-						<dt className="question">
-							Is there an annual fee with the Cub Cadet credit card?
-						</dt>
-						<dd>
-							<p>There is no annual fee to carry the Cub Cadet credit card.</p>
-						</dd>
-						<dt className="question">
-							Can I apply for the Cub Cadet credit card by mail?
-						</dt>
-						<dd>
-							<p>
-								There is no mail-in application. Applications can be completed
-								online or at your local participating dealer.
-							</p>
-						</dd>
-						<dt className="question">
-							How do I make payments on my Cub Cadet credit card account?
-						</dt>
-						<dd>
-							<p>
-								You can make payments on your Cub Cadet credit card account in 3
-								convenient ways:
-							</p>
-							<ol>
-								<li>
-									Online with TD's Online Account Management system at{" "}
-									<a href="https://www.myonlineaccount.net">
-										{" "}
-										www.myonlineaccount.net{" "}
-									</a>
-								</li>
-								<li>
-									Via phone at{" "}
-									<a href="tel:18883826665" title="Call 888-382-6665">
-										{" "}
-										1-888-382-6665{" "}
-									</a>
-								</li>
-								<li>
-									Via mail: Cub Cadet, PO BOX 100114, Columbia SC 29202-3114
-								</li>
-							</ol>
-						</dd>
-						<dt className="question">
-							How do I contact customer service regarding my Cub Cadet credit
-							card account?
-						</dt>
-						<dd>
-							<p>
-								The customer service number for your Cub Cadet credit card
-								account is{" "}
-								<a href="tel:18667024074" title="Call 866-702-4074">
-									1-866-702-4074
-								</a>{" "}
-								.
-							</p>
-						</dd>
-						<dt className="question">
-							I am a commercial customer. Can I apply online?
-						</dt>
-						<dd>
-							<p>
-								No, commercial customers can only apply at your local
-								participating dealer.
-							</p>
-						</dd>
-					</dl>
+					<Faqs faqs={faqsData} />
 				</section>
+
 				<div className="container-fluid questions">
 					<div className="row">
 						<div className="plb-group-heading col-12 col-lg-8 offset-lg-2 text-center">
@@ -295,7 +239,6 @@ const Financing = () => {
 									credit approval. Cub Cadet financing account issued by TD
 									Bank, N.A.
 								</p>
-								{/*<p><strong><sup>14</sup> No Interest if Paid in Full within 18 Months:</strong> Offer valid on 2X and 3X snowthrowers. Minimum purchase $750. To avoid interest, you must pay the full promotional balance before the promotional period ends. If you do not, you will be charged interest from the purchase date at the standard Purchase APR. After the promotional period ends, the standard Purchase APR also applies to the remaining balance and the charged interest. <strong>Minimum monthly payments required, but they will not pay off the balance in time. You must make larger payments to avoid the interest.</strong> Advertised monthly payment, if any, is greater than your required minimum payment and may exclude taxes, delivery or other charges. Prior purchases excluded. Account must be in good standing. Offer valid 10/1/22-2/28/23. Other finance plans may be available. Standard account terms apply to purchases that do not qualify. New accounts: standard Purchase APR 29.99%. Minimum interest charge $1. Existing accounts, see your Cardholder Agreement for applicable terms. Subject to credit approval. Cub Cadet financing account issued by TD Bank, N.A.</p>*/}
 								<p>
 									<strong>
 										<sup>3</sup> 0% APR for 24 Months with Equal Payments:{" "}

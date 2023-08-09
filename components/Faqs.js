@@ -1,6 +1,23 @@
 import { Fragment } from "react";
 
 const Faqs = ({ faqs, className, id }) => {
+	let schemea = {
+		"@context": "https://schema.org",
+		"@type": "FAQPage",
+	};
+	let mainEntity = [];
+	faqs.forEach(function (block) {
+		mainEntity = [
+			...mainEntity,
+			{
+				"@type": "Question",
+				name: block.question,
+				acceptedAnswer: { "@type": "Answer", text: block.answer },
+			},
+		];
+	});
+	schemea = { ...schemea, mainEntity: mainEntity };
+
 	return (
 		<div className={`faqs ${className}`} id={id}>
 			{faqs.map((block, i) => {
@@ -51,6 +68,10 @@ const Faqs = ({ faqs, className, id }) => {
 					</Fragment>
 				);
 			})}
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(schemea) }}
+			/>
 		</div>
 	);
 };
