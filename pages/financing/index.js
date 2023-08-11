@@ -1,5 +1,6 @@
 import Faqs from "../../components/Faqs";
 import FinancingCard from "./components/FinancingCard";
+import PreQualify from "./components/PreQualify";
 
 import faqsData from "./data/faqs.json";
 
@@ -40,18 +41,7 @@ const Financing = () => {
 					</div>
 				</div>
 
-				<div style={{ backgroundColor: "#ffc20f" }}>
-					<div className="container text-center p-8">
-						<h2 className="h2">Find Out If You Prequalify</h2>
-						<p>
-							Get a decision in seconds with no impact to your credit score.
-							Once approved, you can use your account immediately.
-						</p>
-						<a href="" className="btn btn-primary">
-							See If You Prequalify
-						</a>
-					</div>
-				</div>
+				<PreQualify />
 
 				<div className="container-fluid plan-fis">
 					<div className="row">
