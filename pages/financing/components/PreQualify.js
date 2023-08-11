@@ -1,15 +1,24 @@
 const PreQualify = () => {
 	return (
 		<div className="mt-6 mb-6 p-1" style={{ backgroundColor: "#e2e2e2" }}>
-			<ul className="container mb-0 p-4 flex list-unstyled">
-				<li className="col-4 p-0">
-					<img
-						src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/ew/DealerIndoor-0170.jpg"
-						alt=""
-						style={{ width: "100%" }}
-					/>
+			<ul className="container mb-0 p-4 flex flex-column flex-md-row list-unstyled">
+				<li className="col-md-4 p-0">
+					<div
+						className="flex w-100 h-100 position-relative"
+						style={{ minHeight: "300px" }}>
+						<img
+							src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/ew/DealerIndoor-0170.jpg"
+							alt=""
+							className="position-absolute w-100 h-100"
+							style={{
+								top: 0,
+								left: 0,
+								objectFit: "cover",
+							}}
+						/>
+					</div>
 				</li>
-				<li className="col-8 p-0">
+				<li className="col-md-8 p-0">
 					<div
 						className="text-center p-4 flex flex-column justify-content-center align-items-center"
 						style={{ backgroundColor: "#ffc20f", height: "100%" }}>
