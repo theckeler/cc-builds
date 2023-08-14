@@ -1,6 +1,9 @@
 const PreQualify = () => {
 	return (
-		<div className="mt-6 mb-6 p-1" style={{ backgroundColor: "#e2e2e2" }}>
+		<div
+			className="mt-6 mb-6 p-1"
+			// style={{ backgroundColor: "#e2e2e2" }}
+		>
 			<ul className="container mb-0 p-4 flex flex-column flex-md-row list-unstyled">
 				<li className="col-md-4 p-0">
 					<div
@@ -27,12 +30,12 @@ const PreQualify = () => {
 							className="w-100"
 							style={{ maxWidth: "20%", borderTop: "3px solid #000" }}
 						/>
-						<p className="ml-auto mr-auto" style={{ maxWidth: "80%" }}>
+						<p className="ml-auto mr-auto" style={{ maxWidth: "60%" }}>
 							Get a decision in seconds with no impact to your credit score.
 							Once approved, you can use your account immediately.
 						</p>
 						<a href="" className="btn btn-primary">
-							See If You Prequalify
+							See If You Pre-Qualify
 						</a>
 					</div>
 				</li>
