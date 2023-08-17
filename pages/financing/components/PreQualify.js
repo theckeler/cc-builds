@@ -30,9 +30,21 @@ const PreQualify = () => {
 							className="w-100"
 							style={{ maxWidth: "20%", borderTop: "3px solid #000" }}
 						/>
-						<p className="ml-auto mr-auto" style={{ maxWidth: "60%" }}>
-							Get a decision in seconds with no impact to your credit score.
-							Once approved, you can use your account immediately.
+						<p
+							className="ml-auto mr-auto mb-4"
+							style={{ maxWidth: "60%", fontSize: "16px" }}>
+							<ul className="text-left">
+								<li>
+									Get a decision in <strong>seconds</strong>.
+								</li>
+								<li>
+									<strong>No</strong> impact to your credit score.
+								</li>
+								<li>
+									Once approved, you can use your account{" "}
+									<strong>immediately</strong>.
+								</li>
+							</ul>
 						</p>
 						<a href="" className="btn btn-primary">
 							See If You Pre-Qualify
