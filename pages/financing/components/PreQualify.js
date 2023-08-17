@@ -33,17 +33,10 @@ const PreQualify = () => {
 						<p
 							className="ml-auto mr-auto mb-4"
 							style={{ maxWidth: "60%", fontSize: "16px" }}>
-							<ul className="text-left">
-								<li>
-									Get a decision in <strong>seconds</strong>.
-								</li>
-								<li>
-									<strong>No</strong> impact to your credit score.
-								</li>
-								<li>
-									Once approved, you can use your account{" "}
-									<strong>immediately</strong>.
-								</li>
+							<ul className="text-left" style={{ listStyleType: "disc" }}>
+								<li>Get a decision in seconds.</li>
+								<li>No impact to your credit score.</li>
+								<li>Once approved, you can use your account immediately.</li>
 							</ul>
 						</p>
 						<a href="" className="btn btn-primary">
