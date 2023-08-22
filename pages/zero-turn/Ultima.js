@@ -1,13 +1,18 @@
+"use client";
 import jsonData from "./data/ultima.json";
+// import jsonCommonData from "./data/common.json";
+
 import jsonCommonData from "./data/common.json";
 
 import Footer from "./elements/Footer";
 import Button from "@/c/Button";
 import ImgCopyBlock from "@/c/ImgCopyBlock";
 import Introducing from "./elements/Introducing";
-import Explore from "./elements/Explore";
+import Explore from "@/c/Explore";
 
 const Ultima = () => {
+	console.log(jsonData);
+
 	return (
 		<>
 			<div className="top">
@@ -182,7 +187,7 @@ const Ultima = () => {
 				</section>
 
 				{/* Explore */}
-				<Explore {...{ jsonCommonData }} />
+				<Explore jsonData={jsonCommonData} />
 
 				{/* find */}
 				<section className="py-6 px-1 bg-secondary">

@@ -1,3 +1,4 @@
+// "use client";
 import Button from "@/c/Button";
 import ProductBlock from "@/c/ProductBlock";
 
@@ -18,7 +19,7 @@ export default function Explore({ jsonData, addButton }) {
 						);
 					})}
 				</ul>
-				{addButton && (
+				{addButton && jsonData && (
 					<Button
 						className={`bg-secondary mb-0 text-center w-lg-auto d-flex-fill mx-lg-auto mt-2 d-block d-lg-inline-block ${jsonData.explore.button.className}`}
 						copy={jsonData.explore.button.copy}

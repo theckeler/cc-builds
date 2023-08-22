@@ -49,7 +49,7 @@ const ZeroTurn = () => {
 
 				<Introducing {...{ jsonData }} />
 
-				<Explore {...{ jsonCommonData }} addButton={true} />
+				<Explore jsonData={jsonCommonData} addButton={true} />
 
 				<section>
 					<div
