@@ -7,7 +7,7 @@ import Explore from "@/c/Explore";
 // import HowToMaintence from "@/c/HowToMaintence";
 import Articles from "@/c/Articles";
 import Faqs from "@/c/Faqs";
-import RelatedLinks from "@/components/RelatedLinks";
+import RelatedLinks from "@/c/RelatedLinks";
 // import AttchmentsAccessories from "@/c/AttchmentsAccessories";
 
 export default function ZeroTurn({}) {

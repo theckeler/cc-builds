@@ -328,7 +328,7 @@ const Financing = () => {
 							<img
 								src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw1026a6c1/Financing/become_a_dealer_desktop_1015x765.jpg"
 								alt=""
-								class="w-100"
+								className="w-100"
 							/>
 						</li>
 
@@ -342,7 +342,7 @@ const Financing = () => {
 							</p>
 							<a
 								href="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&amp;horizontalView=true&amp;isForm=true&amp;rid=dealers"
-								class="btn text-uppercase font-weight-bold text-decoration-none d-inline-block bg-secondary align-self-start mt-auto">
+								className="btn text-uppercase font-weight-bold text-decoration-none d-inline-block bg-secondary align-self-start mt-auto">
 								Find a Local Dealer
 							</a>
 						</li>

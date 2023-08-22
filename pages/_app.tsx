@@ -1,9 +1,10 @@
-import "@/styles/onetrust.css";
+// import "@/styles/onetrust.css";
 import type { AppProps } from "next/app";
 
-import Header from "@/t/Header";
-import Footer from "@/t/Footer";
-import OneTrustBanner from "@/c/OneTrustBanner";
+import Header from "../templates/Header";
+import Footer from "../templates/Footer";
+
+// import OneTrustBanner from "@/c/OneTrustBanner";
 
 export default function App({ Component, pageProps }: AppProps) {
 	return (

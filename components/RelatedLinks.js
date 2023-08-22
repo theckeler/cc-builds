@@ -16,7 +16,7 @@ export default function RelatedLinks({ relatedCats, className }) {
 									className="d-inline-flex align-items-center border p-1"
 									href="#top">
 									<svg
-										class="mr-1"
+										className="mr-1"
 										xmlns="http://www.w3.org/2000/svg"
 										viewBox="0 -960 960 960"
 										style={{ width: "28px" }}>

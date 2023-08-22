@@ -46,7 +46,7 @@ export default function DealerHomePromos() {
 								<ul className="mt-auto list-unstyled pt-1 pb-2 px-6">
 									<li className="pt-1 text-center">
 										<a
-											class="td-payment-details btn-text"
+											className="td-payment-details btn-text"
 											data-title="Details &amp; Disclosures"
 											data-url="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/FinancingApplication-Disclosure"
 											href="javascript:void(0)"
@@ -56,7 +56,7 @@ export default function DealerHomePromos() {
 									</li>
 									<li className="text-center mt-3">
 										<a
-											class="btn btn-primary w-100 w-lg-auto"
+											className="btn btn-primary w-100 w-lg-auto"
 											href="https://finance.consumercreditapp.com/cc/landing/cub_cadet"
 											tabindex="0">
 											Apply Now
@@ -80,111 +80,3 @@ export default function DealerHomePromos() {
 		</div>
 	);
 }
-
-// <div class="see-promotions-container container">
-//     <h4 class="see-promotions-title">
-//         Current Promos
-//     </h4>
-//     <div class="see-promotions-cards-wrapper">
-//         <div class="see-promotions-cards">
-//             <!-- Promo Card 1 -->
-//             <div class="see-promotions-card">
-//                 <div class="see-promotions-card-inner">
-//                     <div class="see-promotions-card-head">
-//                         <img src="Dealer/Promotions/Promo-FPO1.jpg?$staticlink$" />
-//                     </div>
-//                     <div class="see-promotions-card-body">
-//                         <div class="see-promotions-card-msg">
-//                             <div class="see-promotions-card-heading">
-//                                 FINANCING AVAILABLE!
-// <br />Test copy for Scott. What if the copy is really long and it causes something to happen that we don't want? I really don't know...
-//                             </div>
-//                         </div>
-//                         <div class="see-promotions-card-cta">
-//                             <a class="btn btn-primary btn-sm" href="/">Apply Now</a>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//             <!-- Promo Card 2 -->
-//             <div class="see-promotions-card">
-//                 <div class="see-promotions-card-inner">
-//                     <div class="see-promotions-card-head">
-//                         <img src="Dealer/Promotions/Promo-FPO2.jpg?$staticlink$" />
-//                     </div>
-//                     <div class="see-promotions-card-body">
-//                         <div class="see-promotions-card-msg">
-//                             <div class="see-promotions-card-heading">
-//                                 $100 OFF ZT1 & ZT2
-//                             </div>
-//                             <div class="see-promotions-card-subheading">
-//                                 THROUGH 5-31-2020
-//                             </div>
-//                         </div>
-//                         <div class="see-promotions-card-cta">
-//                             <a class="btn btn-primary btn-sm" href="/">Shop Now</a>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//             <!-- Promo Card 3 -->
-//             <div class="see-promotions-card">
-//                 <div class="see-promotions-card-inner">
-//                     <div class="see-promotions-card-head">
-//                         <img src="Dealer/Promotions/Promo-FPO3.jpg?$staticlink$" />
-//                     </div>
-//                     <div class="see-promotions-card-body">
-//                         <div class="see-promotions-card-msg">
-//                             <div class="see-promotions-card-heading">
-//                                 FPO PROMO HEADLINE
-//                             </div>
-//                         </div>
-//                         <div class="see-promotions-card-cta">
-//                             <a class="btn btn-primary btn-sm" href="/">Shop Now</a>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//             <!-- Promo Card 4 -->
-//             <div class="see-promotions-card">
-//                 <div class="see-promotions-card-inner">
-//                     <div class="see-promotions-card-head">
-//                         <img src="Dealer/Promotions/Promo-FPO4.jpg?$staticlink$" />
-//                     </div>
-//                     <div class="see-promotions-card-body">
-//                         <div class="see-promotions-card-msg">
-//                             <div class="see-promotions-card-heading">
-//                                 FPO PROMO HEADLINE
-//                             </div>
-//                         </div>
-//                         <div class="see-promotions-card-cta">
-//                             <a class="btn btn-primary btn-sm" href="/">Shop Now</a>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//             <!-- Promo Card 5 -->
-//             <div class="see-promotions-card">
-//                 <div class="see-promotions-card-inner">
-//                     <div class="see-promotions-card-head">
-//                         <img src="Dealer/Promotions/Promo-FPO1.jpg?$staticlink$" />
-//                     </div>
-//                     <div class="see-promotions-card-body">
-//                         <div class="see-promotions-card-msg">
-//                             <div class="see-promotions-card-heading">
-//                                 FPO PROMO HEADLINE
-//                             </div>
-//                         </div>
-//                         <div class="see-promotions-card-cta">
-//                             <a class="btn btn-primary btn-sm" href="/">Shop Now</a>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//         <!-- Carousel Dots -->
-//         <div class="see-promotions-controls">
-//             <div class="slide-dots slide-dots-md"></div>
-//         </div>
-//     </div>
-// </div>
