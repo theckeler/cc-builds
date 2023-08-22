@@ -94,7 +94,7 @@ const App = () => {
 									title={jsonData.section3.findOrder.h2}
 									sub={jsonData.section3.findOrder.copy}
 									className=""
-									addStyle=""
+									style=""
 								/>
 							</div>
 						</li>
@@ -106,7 +106,7 @@ const App = () => {
 									title={jsonData.section3.findModel.h2}
 									sub={jsonData.section3.findModel.copy}
 									className=""
-									addStyle=""
+									style=""
 								/>
 							</div>
 						</li>

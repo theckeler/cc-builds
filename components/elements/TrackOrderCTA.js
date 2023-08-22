@@ -1,6 +1,6 @@
 import Button from "@/c/Button";
 
-const TrackOrder = ({ title, sub, className, addStyle }) => {
+const TrackOrder = ({ title, sub, className, style }) => {
 	return (
 		<form
 			action="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Order-Track"

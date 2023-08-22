@@ -30,7 +30,7 @@ const MyProducts = (weiData) => {
 					<Button
 						copy="Dealer Orders"
 						className="w-100 text-uppercase border"
-						addStyle={{ border: "1px solid #000" }}
+						style={{ border: "1px solid #000" }}
 						onClick={(e) => {
 							resetButtons();
 							document

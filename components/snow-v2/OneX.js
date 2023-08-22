@@ -79,7 +79,7 @@ const OneX = () => {
 											{...{ block }}
 											linkable={false}
 											flushImg={true}
-											addStyle={{ background: "#efefef" }}
+											style={{ background: "#efefef" }}
 											className=""
 										/>
 									</li>

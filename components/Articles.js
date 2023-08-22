@@ -1,7 +1,7 @@
 import ImgCopyBlockStacked from "./ImgCopyBlockStacked";
-const Articles = ({ jsonData }) => {
+const Articles = ({ jsonData, className }) => {
 	return (
-		<section className="pb-6">
+		<section className="">
 			<div className="wrapper">
 				<ul className="list-unstyled d-flex flex-column flex-md-row align-items-center px-3">
 					<li className="">
@@ -26,7 +26,7 @@ const Articles = ({ jsonData }) => {
 									<ImgCopyBlockStacked
 										{...{ block }}
 										className="p-2 h-100"
-										addStyle={{ backgroundColor: "#efefef" }}
+										style={{ backgroundColor: "#efefef" }}
 									/>
 								</li>
 							);

@@ -1,4 +1,4 @@
-const SupportModel = ({ title, sub, className, addStyle }) => {
+const SupportModel = ({ title, sub, className, style }) => {
 	return (
 		<form
 			action="https://www.cubcadet.com/en_US/service-and-parts#part-finder"

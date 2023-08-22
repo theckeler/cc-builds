@@ -1,10 +1,10 @@
-const Video = ({ img, ytVideo, className, addStyle, title }) => {
+const Video = ({ img, ytVideo, className, style, title }) => {
 	const urlEnd = "autoplay=1&mute=1&enablejsapi=1";
 
 	return (
 		<div
 			className={`video-wrapper position-relative ${className}`}
-			style={addStyle}>
+			style={style}>
 			<iframe
 				src={`https://www.youtube.com/embed/${ytVideo}?${urlEnd}`}
 				srcDoc={`

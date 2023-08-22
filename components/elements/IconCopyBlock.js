@@ -1,11 +1,11 @@
-const IconCopyBlock = ({ block, className = "", addStyle }) => {
-	//console.log(addStyle);
+const IconCopyBlock = ({ block, className = "", style }) => {
+	//console.log(style);
 	return (
 		<ul
 			className={`row list-unstyled align-items-center ${className}`}
-			style={addStyle}>
+			style={style}>
 			<li className="col-12 col-md-3 p-2">
-				<img src={block.icon} alt="" className="w-100" style={block.addStyle} />
+				<img src={block.icon} alt="" className="w-100" style={block.style} />
 			</li>
 			<li className="col-12 col-md-9 p-2">
 				<strong className="text-uppercase">{block.title}</strong>

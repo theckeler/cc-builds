@@ -6,7 +6,7 @@ const ImgCopyBlock = ({
 	className,
 	linkable = true,
 	ContainerType = "div",
-	addStyle,
+	style,
 	//divClass,
 	flushImg = false,
 }) => {
@@ -20,7 +20,7 @@ const ImgCopyBlock = ({
 		<div
 			href={block.url}
 			className={`d-flex flex-column text-decoration-none h-100 ${className}`}
-			style={addStyle}>
+			style={style}>
 			{flushImg === true && <ImgBlock img={block.img} />}
 			<div className={`d-flex flex-column h-100 ${flushImg ? "p-3" : ""}`}>
 				{flushImg !== true && !block.ytVideo && <ImgBlock img={block.img} />}

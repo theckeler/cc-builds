@@ -11,17 +11,6 @@
 		"copy": "A complete lineup of zero-turn mowers, lawn and garden tractors, and electric mowers, all featuring the strength and durability that bring your lawn to life."
 	},
 
-	"introZTXS": {
-		"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/intro.jpg",
-		"h2": "Introducing the Ultima Series<sup>™</sup> ZTXS",
-		"h3": "The Ultima Series™ Zero-Turn with <br />Commercial-Grade Features",
-		"p": "From tight turns to inclined hillsides and stretching valleys, the Ultima ZTXS is built to help tackle your yard’s unique challenges. The Ultima ZTXS brings Cub Cadet’s innovative and proprietary Synchro-Steer<sup>™</sup> technology to the proven Ultima Series<sup>™</sup> platform for reliable precision and confident control.",
-		"button": {
-			"copy": "Learn more about the Ultima ztxs",
-			"url": "https://www.cubcadet.com/en_US/lp/ztxs--zero-turn-mowers"
-		}
-	},
-
 	"quote": {
 		"stars": 5,
 		"imgMobile": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/quote-mobile.jpg",
@@ -30,5 +19,156 @@
 		"copy": "This Cub Cadet mower is a beast. I absolutely love it and all of its features. Honestly, I haven’t found one negative thing to say about it since I’ve bene using it. Needless to say, I love this mower!”",
 		"name": "Twwagoner from Lexington, NC",
 		"unit": "Ultima ZT1"
-	}
+	},
+
+	"howTo": {
+		"h2": "How To’s & Maintenance",
+		"blocks": [
+			{
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/how-to-1.jpg",
+				"title": "How to clean or replace an air filter on an Ultima Zero Turn",
+				"copy": "It is recommended that your engine air filter be cleaned or replaced every 50 operating hours. In dry, dusty conditions this should be done more frequently. The video and instructions…",
+				"url": "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-change-the-air-filter-on-a-cub-cadet-zero-turn-rider.html "
+			},
+			{
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/how-to-2.jpg",
+				"title": "How to Change the Blades on a Zero-Turn Lawn Mower",
+				"copy": "Over time, the blades on your zero-turn riding lawn mower can become worn out, bent or dinged. This gradual damage can reduce the effectiveness of your mower, so be sure to…",
+				"url": "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-change-the-blades-on-a-zero-turn.html"
+			},
+			{
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/how-to-3.jpg",
+				"title": "How to Install a Bagger Attachment on a Zero-Turn Riding Mower",
+				"copy": "The following video will show you how to install a double bagger on your Ultima Series ZT Zero Turn mower. The tools needed for installation include two 9/16 in. socket wrenches…",
+				"url": "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-install-a-bagger-on-a-zero-turn.html"
+			}
+		]
+	},
+
+	"articles": {
+		"h2": "Riding Lawn Mowers Articles",
+		"viewAllURL": "https://www.cubcadet.com/en_US/how-to/",
+		"blocks": [
+			{
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/zero-turn-1.jpg",
+				"title": "How to Pick the Best Zero-Turn Lawn Mower",
+				"copy": "There are plenty of options in the marketplace when it comes to choosing the right zero-turn lawn mower. And if you’ve decided that a zero-turn mower is right for you, it’s time to understand what to look for in a machine…",
+				"url": "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-pick-the-best-zero-turn.html "
+			},
+			{
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/zero-turn-2.jpg",
+				"title": "Is a Zero-Turn Lawn Mower Right for You?",
+				"copy": "Homeowners looking to reduce the amount of time spent mowing their lawns may want to invest in a zero-turn mower. With free time at a premium and these powerful mowers becoming more affordable, many homeowners are asking themselves…",
+				"url": "https://www.cubcadet.com/en_US/popular-faqs/knowledge-is-a-zero-turn-mower-right-for-you.html"
+			},
+			{
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/zero-turn-3.jpg",
+				"title": "Cub Cadet Adds Another Step Up With Commercial-Grade Residential Zero-Turn",
+				"copy": "Building on the groundbreaking launch of the Ultima Series residential zero-turn lawn mowers, Cub Cadet announced another step up in the ultimate all-around mowing experience…",
+				"url": "https://www.cubcadet.com/en_US/current-news/news-commercial-grade-zero-turn-ztx-2020.html"
+			}
+		]
+	},
+
+	"attAcc": {
+		"h2": "Attachments & Accessories",
+		"blocks": [
+			{
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/attach-1.jpg",
+				"title": "Triple Bagger for 50-, 54- and 60-inch Decks",
+				"item": "19A70056100",
+				"price": "From $699.99 MSRP",
+				"url": "https://www.cubcadet.com/en_US/riding-mower-accessories/triple-bagger-for-50--54--and-60-inch-decks/19A70056100.html"
+			},
+			{
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/attach-2.jpg",
+				"title": "52-inch All-Season Plow Blade Attachment",
+				"item": "19A70063OEM",
+				"price": "From $924.99 MSRP",
+				"url": "https://www.cubcadet.com/en_US/zero-turn-mower-accessories/52-inch-all-season-plow-blade-attachment/19A70063OEM.html"
+			},
+			{
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/attach-3.jpg",
+				"title": "Double Bagger for 42- and 46-inch Decks",
+				"item": "19B70054100",
+				"price": "From $549.99 MSRP",
+				"url": "https://www.cubcadet.com/en_US/baggers-and-grass-collectors/double-bagger-for-42--and-46-inch-decks/19B70054100.html"
+			},
+			{
+				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/attach-4.jpg",
+				"title": "Xtreme® Mulching Kit for 42-inch Cutting Decks",
+				"item": "19A30046100",
+				"price": "From $76.29 MSRP",
+				"url": "https://www.cubcadet.com/en_US/riding-mower-accessories/xtreme-mulching-kit-for-42-inch-cutting-decks/19A30046100.html"
+			}
+		]
+	},
+
+	"explore": {
+		"h2": "Explore Zero-Turn Mowers",
+		"blocks": [
+			{
+				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwd121df42/products/Equipment/Cub-Cadet_XT2_LX46_2000x2000_1.jpg?sw=740&sh=740&sm=fit",
+				"title": "Lawn & Garden Tractors",
+				"copy": "Built in America since ‘61 and backed by the industry’s strongest warranty, Cub Cadet® lawn and garden tractors all come standard with the strongest cutting systems for mowing performance, refined ergonomics designed around you and an array of attachments and accessories for year-round versatility and utility.",
+				"button": {
+					"url": "https://www.cubcadet.com/en_US/riding-lawn-mowers/lawn-and-garden-tractors",
+					"copy": "Shop for Lawn & Garden Tractors",
+					"className": "text-white border-0",
+					"style": { "backgroundColor": "#000" }
+				}
+			},
+			{
+				"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v9e835077e52279a69a54b4c30b00cf9f3c2d0358/ultima/product-ZTS.jpg",
+				"title": "Zero-Turn Mowers",
+				"copy": "Designed with strength, comfort and the ability to get the job done 50% faster than riding tractors, each Cub Cadet zero-turn riding mower is engineered to handle a range of terrain and cover up to 5 acres, with steering wheel options that increase ease.",
+				"button": {
+					"url": "https://www.cubcadet.com/en_US/riding-lawn-mowers/zero-turn-mowers",
+					"copy": "Shop for Zero-Turn Mowers",
+					"className": "text-white border-0",
+					"style": { "backgroundColor": "#000" }
+				}
+			},
+			{
+				"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v9e835077e52279a69a54b4c30b00cf9f3c2d0358/ultima/product-ZT-el.jpg",
+				"title": "Electric Riding Mowers",
+				"copy": "We took the proven strength and performance of our gas-powered machines and combined them with a powerful and convenient lithium-ion battery to create electric lawn mowers with no power fade and reduced noise for a more enjoyable ride.",
+				"button": {
+					"url": "https://www.cubcadet.com/en_US/riding-lawn-mowers/electric-riding-mowers",
+					"copy": "Shop for Electric Riding Mowers",
+					"className": "text-white border-0",
+					"style": { "backgroundColor": "#000" }
+				}
+			}
+		]
+	},
+
+	"faqs": [
+		{
+			"question": "How to Choose a Riding Lawn Mower",
+			"answer": "<p>With so many options and features available on riding lawn mowers, how can you make an informed decision about what type of mower to buy? There are two popular options when it comes to riding lawn mowers, both of which provide all-season functionality:</p><p>Most lawn and garden tractors look like a traditional riding lawn mower and have an engine mounted in the front and a steering wheel that steers using the front wheels, like a car. Some have the engine in the back with a simple steering column in front, allowing for increased viability and increased maneuverability for the driver. Zero-turn riding mowers pivot on the rear wheels, meaning there is zero-degree turning radius, and the mower can actually spin in a circle to cut one area or maneuver around obstacles.</p><p>Zero-turn riding lawn mowers are available in both gas-powered and electric.</p>"
+		},
+		{
+			"question": "Types of Riding Mowers",
+			"answer": "<p><strong>Lawn Tractors</strong></p><p>Looking like the stereotypical riding lawn mower, a lawn and garden tractor is the best compromise between performance and cost. Much smaller than zero-turn counterparts, they’re easy to store in a garage or a shed and have plenty of power and maneuverability for small to medium sized yard, all without breaking a sweat like you would with a push mower or walk-behind mower.</p><p><strong>Garden Tractors</strong></p><p>Garden tractors look very similar to a lawn tractor or traditional riding lawn mower, however they are usually a bit larger due to their more powerful engines and transmissions. This added power allows for more utility work and ground-engaging jobs, such as use with plows and other attachments. The added weight of a garden tractor also makes it better on hills, but it will have less maneuverability than a lawn tractor.</p><p><strong>Zero-turn riding lawn mowers</strong></p><p>If you have a large yard, or a yard with a lot of obstacles and tight corners, a zero-turn riding lawn mower is the right mower for you. Zero-turn mowers are available with a wide range of deck sizes and turn more quickly than both lawn and garden tractors and walk-behind mowers, meaning that mowing your lawn will take about half the time with a zero-turn riding lawn mower. Zero-turn mowers come with a lap bar or steering wheel control. Lap bar steering is the most common way to steer, while steering wheel control has little to no learning curve and is needed for mowing along the side edges of slopes and hills due to increased control in the front wheels.</p><p><strong>Gas mowers vs. Electric mowers</strong></p><p>No matter whether you decide on a tractor riding lawn mower or a zero-turn mower, either can be purchased in either gas or electric. Our electric mowers have a cutting time of 1 hour or more, making this the ideal choice for small to medium sized yards. If you’re environmentally conscious, or live in a city with noise ordinances, place your trust in one of our electric riding lawn mowers. With no spark plugs, fuel, or oil changes, electric mowers require less maintenance than their gas counterparts.</p>"
+		},
+		{
+			"question": "The Best Riding Mowers for Different Yard Types",
+			"answer": "<p><strong>Small to Medium Yards</strong></p><p>For small to medium yards, both lawn and garden tractors are recommended. These are two high-performing, yet cost-effective options for those who don’t want to hassle with a push mower. Lawn tractors and garden tractors also allow for much more utility with attachments like snow blowers, leaf collectors, and pull carts.</p><p><strong>Medium to large yards</strong></p><p>As the yard and the mowing job gets bigger, it’s worth considering additional options other than a lawn and garden tractor. A zero-turn riding lawn mower will allow you to get the job done faster and with more maneuverability.</p><p><strong>Yards with obstacles</strong></p><p>For yards with obstacles, such as landscaping, trees, rocks, and so on, we highly recommend a zero-turn mower. Trying to cut around landscaping and trees can be frustrating and time-consuming without the highly maneuverable zero-turn mower. For yards with fences, be sure to compare the deck size of the mower with the fence opening size to be sure it will fit. Even for residential homes, professional mowers can be a great option, as they’re designed for spaces with landscaping and other obstacles. With professional and commercial models, you also have different configuration models, such as stand-on and stand-behind mowers with excellent maneuverability.</p><p><strong>Sloped yards</strong></p><p>If your yard has a notable incline or decline, there are a couple very important factors to consider: traction control and stability. Meeting these needs will allow you to safely negotiate your yard’s hills and slopes. For sloped yards, you should consider a steering wheel zero-turn as the steering wheel provides more control when mowing along slopes, compared to lap bar steering. &nbsp;</p>"
+		},
+		{
+			"question": "Types of Attachments for Riding Lawn Mowers",
+			"answer": "<p>There are a variety of attachments for your riding lawn mower to make your lawn care a breeze:<br>Baggers - Double and triple baggers are available for all models of tractor and zero-turn riding mowers. Baggers collect the cut grass from the discharge for easy disposal.</p><ul><li><strong>Snow blowers</strong> - You can attach a snow blower to the front of your tractor and turn your riding lawn mower into a riding snow blower. They have an auger that feeds snow into the discharge, moving the snow away from walking or driving paths.</li><li><strong>Snow cabs </strong>- Snow cabs are like tents that attach to your mower and cover the top and sides so you can plow or snow blow without getting covered in snow. These can also be used in warmer months to help prevent bug bites.</li><li><strong>All-season plows</strong> - Plows are available for tractors and zero-turns, and can push dirt, snow, or gravel. There’s no discharge with a plow attachment, just pushing to displace.</li><li><strong>Mulchers </strong>- Mulchers take the grass clippings that usually come with cutting grass, and instead of collecting the grass from the discharge chute, the mulcher cuts the grass into fine pieces, which falls into the soil and breaks down, giving nutrients back to the soil.</li><li><strong>Striping kits</strong> - On zero-turn mowers, you have the option of adding a striping kit. This adds those classic manicured stripes into your lawn while you cut.</li><li><strong>Leaf collectors </strong>- With a larger chute, a leaf collector picks up leaves and debris from under your mower and collects it all into a bag for easy disposal.</li><li><strong>Pull carts</strong> - These attach to the back of your riding lawn mower, allowing you to transport tools, soil, or mulch.</li></ul><p>Attachments are available for lawn tractors, garden tractors, and zero-turn riding lawn mowers. Be sure to check specifications on the attachments you’re interested in to see what mowers it’s compatible with.</p>"
+		}
+	],
+
+	"relatedCats": [
+		"Zero-Turn Riding Lawn Mowers",
+		"Lawn & Garden Tractors",
+		"Zero-Turn Mowers",
+		"Electric Riding Mowers",
+		"Lawn Tractors",
+		"Garden Tractors",
+		"Gas Mowers"
+	]
 }

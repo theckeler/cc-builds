@@ -1,9 +1,9 @@
-const ImgCopyBlockStacked = ({ block, className, addStyle }) => {
+const ImgCopyBlockStacked = ({ block, className, style }) => {
 	return (
 		<a
 			href={block.url}
 			className={`d-flex flex-column text-decoration-none ${className}`}
-			style={addStyle}>
+			style={style}>
 			<img src={block.img} alt="" />
 			<div className="content d-flex flex-column p-3 h-100">
 				<strong

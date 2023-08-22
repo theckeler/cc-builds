@@ -1,6 +1,6 @@
 import Button from "@/c/Button";
 
-const ProductBlock = ({ block, className, addCSS }) => {
+export default function ProductBlock({ block, className, addCSS }) {
 	return (
 		<div
 			className={`mb-2 h-100 d-flex flex-column h-100 position-relative ${className}`}
@@ -89,12 +89,11 @@ const ProductBlock = ({ block, className, addCSS }) => {
 								? "Shop Now"
 								: block.button.copy
 						}
+						style={block.button.style}
 						url={block.url}
 					/>
 				</div>
 			</div>
 		</div>
 	);
-};
-
-export default ProductBlock;
+}

@@ -23,7 +23,7 @@ const Base = () => {
 									<ImgCopyBlock
 										{...{ block }}
 										linkable={false}
-										addStyle={{ background: "#efefef" }}
+										style={{ background: "#efefef" }}
 										flushImg={true}
 									/>
 								</li>

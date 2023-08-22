@@ -205,7 +205,7 @@ const App = () => {
 								copy={jsonData.intellipower.button.copy}
 								url={jsonData.intellipower.button.url}
 								className="bg-black mx-auto"
-								addStyle={{
+								style={{
 									clipPath:
 										"polygon(1rem 0, 100% 0%, 100% 100%, 0 100%, 0 1rem)",
 								}}
@@ -307,7 +307,7 @@ const App = () => {
 								copy={jsonData.compare.button.copy}
 								url={jsonData.compare.button.url}
 								className="bg-black mx-auto mt-5"
-								addStyle={{
+								style={{
 									clipPath:
 										"polygon(1rem 0, 100% 0%, 100% 100%, 0 100%, 0 1rem)",
 								}}

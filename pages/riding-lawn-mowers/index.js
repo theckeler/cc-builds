@@ -1,19 +1,26 @@
 // import React, { useEffect } from "react";
 import jsonData from "./data/riding-lawn.json";
 import Explore from "@/c/Explore";
-import jsonCommonData from "./data/common.json";
+// import jsonCommonData from "./data/common.json";
+// import jsonDataArticles from "./data/articles.json";
 
-const ZeroTurn = () => {
-// 	useEffect(() => {
-// 		document.querySelectorAll("#finder-script").forEach(function (elem) {
-// 			elem.remove();
-// 		});
-// 		const html = `<script>
-// (function(c,a,r,t,f,u,l){c[u]=c[u]||function(){(c[u].q=c[u].q||[]).push(arguments)},l=a.createElement(r),l.async=1,l.id=u+"scr",l.src=f,a[t].appendChild(l)})(window,document,"script","body","//embed.cartfulsolutions.com/zero-turn-finder/recommendation.min.js","cfl659");
-// </script>`;
-// 		const scriptEl = document.createRange().createContextualFragment(html);
-// 		document.body.appendChild(scriptEl);
-// 	});
+// import HowToMaintence from "@/c/HowToMaintence";
+import Articles from "@/c/Articles";
+import Faqs from "@/c/Faqs";
+import RelatedLinks from "@/components/RelatedLinks";
+// import AttchmentsAccessories from "@/c/AttchmentsAccessories";
+
+export default function ZeroTurn({}) {
+	// 	useEffect(() => {
+	// 		document.querySelectorAll("#finder-script").forEach(function (elem) {
+	// 			elem.remove();
+	// 		});
+	// 		const html = `<script>
+	// (function(c,a,r,t,f,u,l){c[u]=c[u]||function(){(c[u].q=c[u].q||[]).push(arguments)},l=a.createElement(r),l.async=1,l.id=u+"scr",l.src=f,a[t].appendChild(l)})(window,document,"script","body","//embed.cartfulsolutions.com/zero-turn-finder/recommendation.min.js","cfl659");
+	// </script>`;
+	// 		const scriptEl = document.createRange().createContextualFragment(html);
+	// 		document.body.appendChild(scriptEl);
+	// 	});
 
 	return (
 		<>
@@ -37,7 +44,7 @@ const ZeroTurn = () => {
 					</div>
 				</section>
 
-				<Explore jsonCommonData={jsonCommonData} addButton={false} />
+				<Explore jsonData={jsonData} addButton={false} />
 
 				{/* <section>
 					<div
@@ -74,18 +81,30 @@ const ZeroTurn = () => {
 					<div id="product-finder-zero-turns"></div>
 				</section> */}
 
-				{/* <section>
+				<section>
 					<div className="container-fluid">
 						<h2 className="mt-4 display-1 text-center">
-							Shop & Compare Zero-Turn Mowers
+							Shop & Compare Riding Lawn Mowers
 						</h2>
 					</div>
-				</section> */}
+				</section>
 			</div>
 
-			<div className="bottom">{/* <Footer jsonData={jsonData} /> */}</div>
+			<div
+				className="middle my-6 d-flex justify-content-center align-items-center h2"
+				style={{ backgroundColor: "#cfcfcf", minHeight: "600px" }}>
+				For PLP
+			</div>
+
+			<div className="bottom container">
+				<Articles jsonData={jsonData} />
+
+				<hr />
+
+				<Faqs faqs={jsonData.faqs} allOpen={true} />
+
+				<RelatedLinks relatedCats={jsonData.relatedCats} className="mt-4" />
+			</div>
 		</>
 	);
-};
-
-export default ZeroTurn;
+}

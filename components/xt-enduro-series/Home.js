@@ -136,7 +136,7 @@ const XTEnduroSeriesHome = () => {
 								<li key={i} className="col col-12 col-sm-12 col-md-6 p-2">
 									<IconCopyBlock
 										{...{ block }}
-										//addStyle={{ maxHeight: "3em" }}
+										//style={{ maxHeight: "3em" }}
 									/>
 								</li>
 							);

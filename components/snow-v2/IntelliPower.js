@@ -213,7 +213,7 @@ const IntelliPower = () => {
                       linkable: false,
                       divClass: "",
                     }}
-                    // addStyle={{ background: "#efefef" }}
+                    // style={{ background: "#efefef" }}
                   /> */}
 								</li>
 							);
@@ -331,7 +331,7 @@ const IntelliPower = () => {
 									<ImgCopyBlock
 										{...{ block }}
 										linkable={false}
-										addStyle={{ background: "#efefef" }}
+										style={{ background: "#efefef" }}
 										flushImg={true}
 									/>
 								</li>
@@ -358,7 +358,7 @@ const IntelliPower = () => {
 									<ImgCopyBlock
 										{...{ block }}
 										linkable={false}
-										addStyle={{ background: "#efefef" }}
+										style={{ background: "#efefef" }}
 										className="p-2"
 									/>
 								</li>
