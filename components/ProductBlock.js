@@ -82,7 +82,7 @@ const ProductBlock = ({ block, className, addCSS }) => {
 						className={`mb-0 text-center w-100 mt-auto ${
 							typeof block.button === "undefined"
 								? "bg-black"
-								: block.button.bgColor
+								: block.button.className
 						}`}
 						copy={
 							typeof block.button === "undefined"

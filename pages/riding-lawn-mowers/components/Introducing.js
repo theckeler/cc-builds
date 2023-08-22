@@ -1,4 +1,4 @@
-import Button from "../@/c/Button";
+import Button from "@/c/Button";
 
 const Introducing = ({ jsonData }) => {
 	return (

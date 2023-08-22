@@ -6,7 +6,7 @@ import Footer from "./elements/Footer";
 import QuoteBlock from "@/c/QuoteBlock";
 import ImgBackDesktopMobile from "@/c/ImgBackDesktopMobile";
 import Introducing from "./elements/Introducing";
-import Explore from "./elements/Explore";
+import Explore from "@/c/Explore";
 
 const ZeroTurn = () => {
 	useEffect(() => {

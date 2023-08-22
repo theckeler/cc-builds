@@ -1,0 +1,34 @@
+{
+	"hero": {
+		"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/hero.jpg",
+		"mobile": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/hero-mobile.jpg",
+		"logo": "",
+		"alt": ""
+	},
+
+	"copyBlock": {
+		"h1": "Cub Cadet Riding Lawn Mowers",
+		"copy": "A complete lineup of zero-turn mowers, lawn and garden tractors, and electric mowers, all featuring the strength and durability that bring your lawn to life."
+	},
+
+	"introZTXS": {
+		"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/intro.jpg",
+		"h2": "Introducing the Ultima Series<sup>™</sup> ZTXS",
+		"h3": "The Ultima Series™ Zero-Turn with <br />Commercial-Grade Features",
+		"p": "From tight turns to inclined hillsides and stretching valleys, the Ultima ZTXS is built to help tackle your yard’s unique challenges. The Ultima ZTXS brings Cub Cadet’s innovative and proprietary Synchro-Steer<sup>™</sup> technology to the proven Ultima Series<sup>™</sup> platform for reliable precision and confident control.",
+		"button": {
+			"copy": "Learn more about the Ultima ztxs",
+			"url": "https://www.cubcadet.com/en_US/lp/ztxs--zero-turn-mowers"
+		}
+	},
+
+	"quote": {
+		"stars": 5,
+		"imgMobile": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/quote-mobile.jpg",
+		"imgDesktop": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/quote-desktop.jpg",
+		"title": "LOOK NO MORE FOR A GREAT MOWER.",
+		"copy": "This Cub Cadet mower is a beast. I absolutely love it and all of its features. Honestly, I haven’t found one negative thing to say about it since I’ve bene using it. Needless to say, I love this mower!”",
+		"name": "Twwagoner from Lexington, NC",
+		"unit": "Ultima ZT1"
+	}
+}

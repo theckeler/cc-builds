@@ -30,6 +30,6 @@
 		"pages/index.js",
 		"pages/*.js",
 		"**/[*].js"
-	],
+, "pages/order-status/index.js"	],
 	"exclude": ["node_modules"]
 }

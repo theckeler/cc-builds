@@ -1,8 +1,8 @@
 import jsonData from "../data/howtos-articles.json";
 
-import HowToMaintence from "../@/c/HowToMaintence";
-import Articles from "../@/c/Articles";
-import AttchmentsAccessories from "../@/c/AttchmentsAccessories";
+import HowToMaintence from "@/c/HowToMaintence";
+import Articles from "@/c/Articles";
+import AttchmentsAccessories from "@/c/AttchmentsAccessories";
 
 const Footer = () => {
 	return (
