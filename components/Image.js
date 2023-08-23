@@ -3,39 +3,45 @@
 export default function Image({ img }) {
 	const imgSizes = { xl: 1366, lg: 1025, md: 768, sm: 544, xs: 0 };
 
-	let webPImgs = [];
-	if (img?.webp) {
-		for (const [key, val] of Object.entries(img.webp)) {
-			webPImgs.push(
-				<source
-					media={`(min-width: ${imgSizes[key]}px)`}
-					key={key}
-					type="image/webp"
-					srcSet={val}
-				/>
-			);
-		}
-	}
-	let jpgImgs = [];
-	for (const [key, val] of Object.entries(img.jpg)) {
-		jpgImgs.push(
-			<source
-				media={`(min-width: ${imgSizes[key]}px)`}
-				key={key}
-				type="image/jpg"
-				srcSet={val}
-			/>
-		);
-	}
+	// let webPImgs = [];
+	// if (img?.webp) {
+	// 	for (const [key, val] of Object.entries(img.webp)) {
+	// 		webPImgs.push(
+	// 			<source
+	// 				media={`(min-width: ${imgSizes[key]}px)`}
+	// 				key={key}
+	// 				type="image/webp"
+	// 				srcSet={val}
+	// 			/>
+	// 		);
+	// 	}
+	// }
+	// let jpgImgs = [];
+	// for (const [key, val] of Object.entries(img.jpg)) {
+	// 	jpgImgs.push(
+	// 		<source
+	// 			media={`(min-width: ${imgSizes[key]}px)`}
+	// 			key={key}
+	// 			type="image/jpg"
+	// 			srcSet={val}
+	// 		/>
+	// 	);
+	// }
 
 	let jpgSrcSet = "";
 	for (const [key, val] of Object.entries(img.jpg)) {
-		jpgSrcSet += `${val} ${imgSizes[key]}w `;
+		// if (key === img.jpg.length - 1) {
+		// 	console.log("last", img.jpg.length);
+		// }
+		jpgSrcSet += `${val} ${imgSizes[key]}w, `;
 	}
 
-	// for (const [key, val] of Object.entries(img.webp)) {
-	// 	//console.log(val);
-	// }
+	let webpSrcSet = "";
+	for (const [key, val] of Object.entries(img.webp)) {
+		webpSrcSet += `${val} ${imgSizes[key]}w, `;
+	}
+
+	// console.log("webpSrcSet: ", webpSrcSet.slice(0, -2));
 
 	return (
 		<>
@@ -103,7 +109,7 @@ export default function Image({ img }) {
 					srcSet="https://www.gstatic.com/webp/gallery/1.webp"
 				/> */}
 
-				{webPImgs}
+				{/* {webPImgs} */}
 				{/* {jpgImgs} */}
 
 				{/* <source media="(min-width: 1366px)" type="image/webp" srcSet={img.xl} />
@@ -111,13 +117,13 @@ export default function Image({ img }) {
 				<source media="(min-width: 768px)" type="image/webp" srcSet={img.md} />
 				<source media="(min-width: 544px)" type="image/webp" srcSet={img.sm} />
 				<source media="(min-width: 0)" type="image/webp" srcSet={img.xs} /> */}
-
+				<source type="image/webp" srcSet={webpSrcSet.slice(0, -2)} />
+				<source type="image/jpg" srcSet={jpgSrcSet.slice(0, -2)} />
 				<img
 					alt={img.alt}
-					fetchPriority="high"
-					decoding="async"
-					load="lazy"
-					//data-nimg="fill"
+					fetchPriority={img.fetchpriority}
+					decoding={img.decoding}
+					loading={img.loading}
 					//className="w-100"
 					// style={{
 					// 	//position: "absolute",
@@ -131,9 +137,7 @@ export default function Image({ img }) {
 					// 	// objectFit: "cover",
 					// 	color: "transparent",
 					// }}
-					//sizes="100vw"
 					src={img.jpg.xl}
-					srcSet={jpgSrcSet}
 				/>
 			</picture>
 		</>
