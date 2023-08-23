@@ -23,9 +23,10 @@ export default function Image({ className, img }) {
 				decoding={img.decoding && img.decoding}
 				loading={img.loading && img.loading}
 				src={img.jpg.xl}
-				className={img.className && img.className}
+				className={`w-100 ${img.className}`}
 				width="1366"
 				height="500"
+				cl
 			/>
 		</picture>
 	);
