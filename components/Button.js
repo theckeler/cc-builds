@@ -1,3 +1,4 @@
+"use client";
 const Button = ({ copy, url, className, onClick, style, srOnly }) => {
 	const addPadding = { padding: "0.625rem 2.5rem" };
 

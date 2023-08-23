@@ -1,3 +1,4 @@
+"use client";
 import { useParams, useNavigate } from "react-router-dom";
 
 import TrackBlock from "./elements/TrackBlock";

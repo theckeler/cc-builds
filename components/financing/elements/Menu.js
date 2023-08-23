@@ -1,3 +1,4 @@
+"use client";
 import FilterButton from "./FilterButton";
 import FilterOptions from "./FilterOptions";
 

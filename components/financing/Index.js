@@ -1,4 +1,5 @@
 // import { useEffect, useState } from "react";
+"use client";
 
 import "./scss/financing.scss";
 import jsonData from "./data/financing-new.json";

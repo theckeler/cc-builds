@@ -1,3 +1,4 @@
+"use client";
 import Step from "./Step";
 
 const GetHelp = ({ toggleCheckboxes, help, offersData, numBlocks }) => {

@@ -1,4 +1,5 @@
 //langs: ["US", "CA", "CAFrench"]
+"use client";
 
 const BuildMenu = ({ switchLang, setSwitchLang }) => {
 	return (

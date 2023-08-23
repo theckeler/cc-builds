@@ -1,3 +1,4 @@
+"use client";
 const FilterButton = ({ copy, close = false, className }) => {
 	const buttonMenuToggle = () => {
 		console.log("buttonMenuToggle");

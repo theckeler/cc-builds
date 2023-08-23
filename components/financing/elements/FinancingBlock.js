@@ -1,3 +1,4 @@
+"use client";
 import currencyConverter from "../../../utilities/currencyConverter";
 
 const FinancingBlock = ({ block, className }) => {
