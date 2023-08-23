@@ -1,6 +1,22 @@
 {
 	"hero": {
-		"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/hero.jpg",
+		"img": {
+			"jpg": {
+				"xl": "https://via.placeholder.com/1366x500.jpg/0fe645/000000?Text=1366x500",
+				"lg": "https://via.placeholder.com/1025x500.jpg/0fe645/000000?Text=1025x500",
+				"md": "https://via.placeholder.com/768x500.jpg/0fe645/000000?Text=768x500",
+				"sm": "https://via.placeholder.com/544x500.jpg/0fe645/000000?Text=544x500",
+				"xs": "https://via.placeholder.com/320.jpg/0fe645/000000?Text=320x500"
+			},
+			"webp": {
+				"xl": "https://via.placeholder.com/1366x500.webp/e60f0f/000000?Text=1366x500",
+				"lg": "https://via.placeholder.com/1025x500.webp/e60f0f/000000?Text=1025x500",
+				"md": "https://via.placeholder.com/768x500.webp/e60f0f/000000?Text=768x500",
+				"sm": "https://via.placeholder.com/544x500.webp/e60f0f/000000?Text=544x500",
+				"xs": "https://via.placeholder.com/320.webp/e60f0f/000000?Text=320x500"
+			},
+			"alt": ""
+		},
 		"mobile": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/hero-mobile.jpg",
 		"logo": "",
 		"alt": ""
