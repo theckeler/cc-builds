@@ -1,4 +1,4 @@
-import Button from "@/c/Button";
+import Button from "@/components/Button";
 
 export default function ProductBlock({ block, className, addCSS }) {
 	return (

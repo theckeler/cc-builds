@@ -6,12 +6,12 @@ import { ReactComponent as Intellipower } from "../../images/intellipower-logo.s
 import { ReactComponent as EFI } from "../../images/efi-logo.svg";
 import { ReactComponent as IntellipowerBack } from "../../images/intellipower-back.svg";
 
-import Pluses from "@/c/Pluses";
-import Button from "@/c/Button";
-import QuoteBlock from "@/c/QuoteBlock";
-import HowToMaintence from "@/c/HowToMaintence";
-import Articles from "@/c/Articles";
-import AttchmentsAccessories from "@/c/AttchmentsAccessories";
+import Pluses from "@/components/Pluses";
+import Button from "@/components/Button";
+import QuoteBlock from "@/components/QuoteBlock";
+import HowToMaintence from "@/components/HowToMaintence";
+import Articles from "@/components/Articles";
+import AttchmentsAccessories from "@/components/AttchmentsAccessories";
 
 const App = () => {
 	useEffect(() => {

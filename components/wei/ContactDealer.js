@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
 import getOrder from "./utilities/getOrder";
-import Button from "@/c/Button";
+import Button from "@/components/Button";
 
 const ContactDealer = () => {
 	const navigate = useNavigate();

@@ -1,6 +1,6 @@
-import ImgCopyBlockStacked from "../@/c/ImgCopyBlockStacked";
-import CTABlock from "../@/c/CTABlock";
-import Pluses from "../@/c/Pluses";
+import ImgCopyBlockStacked from "../@/components/ImgCopyBlockStacked";
+import CTABlock from "../@/components/CTABlock";
+import Pluses from "../@/components/Pluses";
 
 const Footer = ({ indexData }) => {
 	return (

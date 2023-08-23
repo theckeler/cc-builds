@@ -3,10 +3,10 @@ import jsonData from "./data/customerservice.json";
 import "../../scss/main.scss";
 import "../../scss/customerservice.scss";
 
-import Button from "@/c/Button";
-import SupportModel from "@/c/SupportModel";
-//import TrackOrder from "@/c/TrackOrder";
-import TrackOrderCTA from "@/c/TrackOrderCTA";
+import Button from "@/components/Button";
+import SupportModel from "@/components/SupportModel";
+//import TrackOrder from "@/components/TrackOrder";
+import TrackOrderCTA from "@/components/TrackOrderCTA";
 
 import { ReactComponent as IconBelt } from "../../images/icon-belt.svg";
 import { ReactComponent as IconBlades } from "../../images/icon-blades.svg";

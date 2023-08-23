@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 
 import TrackBlock from "./elements/TrackBlock";
-import Button from "@/c/Button";
+import Button from "@/components/Button";
 import getOrder from "./utilities/getOrder";
 
 const TrackOrder = ({ weiData }) => {

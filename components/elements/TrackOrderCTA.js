@@ -1,4 +1,4 @@
-import Button from "@/c/Button";
+import Button from "@/components/Button";
 
 const TrackOrder = ({ title, sub, className, style }) => {
 	return (

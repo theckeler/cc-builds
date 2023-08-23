@@ -1,6 +1,6 @@
 import React from "react";
 
-import Button from "../@/c/Button";
+import Button from "../@/components/Button";
 import FinancingBlock from "./FinancingBlock";
 import EmptyBlock from "./EmptyBlock";
 

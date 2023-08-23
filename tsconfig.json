@@ -1,11 +1,32 @@
 {
 	"compilerOptions": {
 		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./*"],
+			"@/components/*": ["components/*"],
+			"@/buttons/*": ["components/Buttons/*"],
+			"@/tabs/*": ["components/Tabs/*"],
+			"@/cards/*": ["components/Cards/*"],
+			"@/icons/*": ["components/Icons/*"],
+			"@/data/*": ["data/*"],
+			"@/cta/*": ["components/CTA/*"],
+			"@/product/*": ["components/Product/*"],
+			"@/addtocart/*": ["components/AddCart/*"],
+			"@/header/*": ["components/Header/*"],
+			"@/footer/*": ["components/Footer/*"],
+			"@/dealer/*": ["components/Menus/components/*"],
+			"@/functions/*": ["components/Functions/*"],
+			"@/menus/*": ["components/Menus/*"],
+			"@/cart/*": ["components/Cart/*"],
+			"@/form/*": ["components/Form/*"],
+			"@/filters/*": ["components/Filters/*"],
+			"@/styles/*": ["styles/*"],
+			"@/cookie/*": ["components/Cookie/*"]
+		},
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"allowJs": true,
 		"skipLibCheck": true,
 		"strict": false,
-		"forceConsistentCasingInFileNames": true,
 		"noEmit": true,
 		"incremental": true,
 		"esModuleInterop": true,
@@ -14,15 +35,12 @@
 		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"jsx": "preserve",
-		"paths": {
-			"@/*": ["./*"],
-			"@/components/*": ["components/*"],
-			"@/c/*": ["components/*"],
-			"@/i/*": ["components/icons/*"],
-			"@/t/*": ["templates/*"],
-			"@/s/*": ["components/styles/*"]
-		}
+		"plugins": [
+			{
+				"name": "next"
+			}
+		]
 	},
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+	"include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx"],
 	"exclude": ["node_modules"]
 }

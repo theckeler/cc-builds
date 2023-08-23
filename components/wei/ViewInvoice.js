@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 
 import Invoice from "./elements/Invoice";
-import Button from "@/c/Button";
+import Button from "@/components/Button";
 import getOrder from "./utilities/getOrder";
 
 const ViewInvoice = ({ weiData }) => {

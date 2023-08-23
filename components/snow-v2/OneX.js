@@ -3,13 +3,13 @@ import indexData from "./data/onex.json";
 
 import { ReactComponent as Logo } from "../../images/x-series.svg";
 
-import QuoteBlock from "@/c/QuoteBlock";
-import IconCopyBlock from "@/c/IconCopyBlock";
-import ImgCover from "@/c/ImgCover";
+import QuoteBlock from "@/components/QuoteBlock";
+import IconCopyBlock from "@/components/IconCopyBlock";
+import ImgCover from "@/components/ImgCover";
 import Footer from "./elements/Footer";
 import Engineered from "./elements/Engineered";
 import HeaderSnowflake from "./elements/HeaderSnowflake";
-import ImgCopyBlock from "@/c/ImgCopyBlock";
+import ImgCopyBlock from "@/components/ImgCopyBlock";
 
 const OneX = () => {
 	//console.log("indexData", indexData.engineeredFor.blocks);

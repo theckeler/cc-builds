@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import Button from "../@/c/Button";
-import ServiceNotification from "@/c/ServiceNotification";
+import Button from "../@/components/Button";
+import ServiceNotification from "@/components/ServiceNotification";
 
 const Menu = ({ loggedIn, logIn, logOut, closeMenu }) => {
 	const navigate = useNavigate();

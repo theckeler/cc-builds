@@ -3,10 +3,10 @@ import indexData from "./data/threex.json";
 
 import { ReactComponent as Logo } from "../../images/x-series.svg";
 
-import QuoteBlock from "@/c/QuoteBlock";
-import Pluses from "@/c/Pluses";
-import IconCopyBlock from "@/c/IconCopyBlock";
-import ImgCover from "@/c/ImgCover";
+import QuoteBlock from "@/components/QuoteBlock";
+import Pluses from "@/components/Pluses";
+import IconCopyBlock from "@/components/IconCopyBlock";
+import ImgCover from "@/components/ImgCover";
 import Engineered from "./elements/Engineered";
 import Footer from "./elements/Footer";
 import HeaderSnowflake from "./elements/HeaderSnowflake";

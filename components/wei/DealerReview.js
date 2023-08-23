@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 
 import getOrder from "./utilities/getOrder";
-import Button from "@/c/Button";
-import Stars from "@/c/Stars";
+import Button from "@/components/Button";
+import Stars from "@/components/Stars";
 
 const ContactDealer = () => {
 	let { orderID } = useParams();

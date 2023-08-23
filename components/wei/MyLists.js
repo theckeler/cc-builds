@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import Button from "@/c/Button";
+import Button from "@/components/Button";
 import ListBlock from "./elements/ListBlock";
 
 const MyProducts = ({ weiData }) => {

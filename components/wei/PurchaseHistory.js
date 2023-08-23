@@ -1,4 +1,4 @@
-import Button from "@/c/Button";
+import Button from "@/components/Button";
 import OrderBlock from "./elements/OrderBlock";
 
 const MyProducts = (weiData) => {

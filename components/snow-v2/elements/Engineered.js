@@ -1,5 +1,5 @@
-import ImgCover from "../@/c/ImgCover";
-import Pluses from "../@/c/Pluses";
+import ImgCover from "../@/components/ImgCover";
+import Pluses from "../@/components/Pluses";
 
 const Engineered = ({ indexData }) => {
 	return (

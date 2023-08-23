@@ -1,6 +1,6 @@
 // "use client";
-import Button from "@/c/Button";
-import ProductBlock from "@/c/ProductBlock";
+import Button from "@/components/Button";
+import ProductBlock from "@/components/ProductBlock";
 
 export default function Explore({ jsonData, addButton }) {
 	return (

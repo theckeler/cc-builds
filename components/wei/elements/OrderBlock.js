@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-import Button from "../@/c/Button";
+import Button from "../@/components/Button";
 
 const AccountForm = ({ weiData }) => {
 	const navigate = useNavigate();

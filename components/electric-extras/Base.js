@@ -1,7 +1,7 @@
 import jsonData from "./data/home.json";
-import Faqs from "@/c/Faqs";
-import ImgCopyBlock from "@/c/ImgCopyBlock";
-import HowToMaintence from "@/c/HowToMaintence";
+import Faqs from "@/components/Faqs";
+import ImgCopyBlock from "@/components/ImgCopyBlock";
+import HowToMaintence from "@/components/HowToMaintence";
 
 const Base = () => {
 	return (

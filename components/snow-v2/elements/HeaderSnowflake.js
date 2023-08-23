@@ -1,4 +1,4 @@
-import Pluses from "../@/c/Pluses";
+import Pluses from "../@/components/Pluses";
 
 const HeaderSnowflake = ({ addCSS, className, title }) => {
 	return (

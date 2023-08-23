@@ -3,11 +3,11 @@ import jsonData from "./data/intellipower.json";
 
 import { ReactComponent as Intellipower } from "../../images/intellipower-logo.svg";
 import { ReactComponent as EFI } from "../../images/efi-logo.svg";
-import Button from "@/c/Button";
-import QuoteBlock from "@/c/QuoteBlock";
-import Faqs from "@/c/Faqs";
-import Video from "@/c/Video";
-import ImgCopyBlock from "@/c/ImgCopyBlock";
+import Button from "@/components/Button";
+import QuoteBlock from "@/components/QuoteBlock";
+import Faqs from "@/components/Faqs";
+import Video from "@/components/Video";
+import ImgCopyBlock from "@/components/ImgCopyBlock";
 
 const IntelliPower = () => {
 	// console.log(jsonData);

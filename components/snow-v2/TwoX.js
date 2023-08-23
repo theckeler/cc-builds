@@ -5,15 +5,15 @@ import { ReactComponent as Logo } from "../../images/x-series.svg";
 import { ReactComponent as Intellipower } from "../../images/intellipower-logo.svg";
 import { ReactComponent as EFI } from "../../images/efi-logo.svg";
 
-import QuoteBlock from "@/c/QuoteBlock";
-//import Pluses from "@/c/Pluses";
-import IconCopyBlock from "@/c/IconCopyBlock";
-import ImgCover from "@/c/ImgCover";
-import Button from "@/c/Button";
+import QuoteBlock from "@/components/QuoteBlock";
+//import Pluses from "@/components/Pluses";
+import IconCopyBlock from "@/components/IconCopyBlock";
+import ImgCover from "@/components/ImgCover";
+import Button from "@/components/Button";
 import Footer from "./elements/Footer";
 import Engineered from "./elements/Engineered";
 import HeaderSnowflake from "./elements/HeaderSnowflake";
-import ImgCopyBlock from "@/c/ImgCopyBlock";
+import ImgCopyBlock from "@/components/ImgCopyBlock";
 
 const TwoX = () => {
 	//console.log("indexData", indexData.engineeredFor.blocks);

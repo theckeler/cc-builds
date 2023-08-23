@@ -4,14 +4,14 @@ import "./scss/financing.scss";
 import jsonData from "./data/financing-new.json";
 
 // import MainBlock from "./elements/MainBlock";
-// import ImgCopyBlock from "@/c/ImgCopyBlock";
+// import ImgCopyBlock from "@/components/ImgCopyBlock";
 // import GetHelp from "./elements/GetHelp";
 // import Menu from "./elements/Menu";
 // import NoResults from "./elements/NoResults";
 // import FilterButton from "./elements/FilterButton";
-import Faqs from "@/c/Faqs";
-import CTABlock from "@/c/CTABlock";
-import Button from "@/c/Button";
+import Faqs from "@/components/Faqs";
+import CTABlock from "@/components/CTABlock";
+import Button from "@/components/Button";
 
 const Financing = () => {
 	// const [offersData, setOffersData] = useState({
