@@ -18,10 +18,8 @@
 			"alt": "",
 			"loading": "eager",
 			"fetchpriority": "high",
-			"decoding": "sync"
-		},
-		"mobile": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/hero-mobile.jpg",
-		"logo": "",
-		"alt": ""
+			"decoding": "sync",
+			"className": ""
+		}
 	}
 }
