@@ -26,7 +26,7 @@ export default function Image({ className, img }) {
 				className={`w-100 ${img.className}`}
 				style={{ height: "auto" }}
 				width="1366"
-				height="auto"
+				height="500"
 				cl
 			/>
 		</picture>
