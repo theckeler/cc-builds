@@ -24,8 +24,9 @@ export default function Image({ className, img }) {
 				loading={img.loading && img.loading}
 				src={img.jpg.xl}
 				className={`w-100 ${img.className}`}
+				style={{ height: "auto" }}
 				width="1366"
-				height="500"
+				height="auto"
 				cl
 			/>
 		</picture>
