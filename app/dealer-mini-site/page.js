@@ -1,5 +1,5 @@
-import Directions from "@/i/Directions";
-import Hamburger from "@/i/Hamburger";
+import Directions from "@/components/icons/Directions";
+import Hamburger from "@/components/icons/Hamburger";
 import DealerInfo from "@/components/DealerInfo";
 import Hours from "@/components/Hours";
 import Address from "@/components/Address";

@@ -1,8 +1,9 @@
-import Faqs from "../../components/Faqs";
+import Faqs from "@/components/Faqs";
 import FinancingCard from "@/components/FinancingCard";
 import PreQualify from "@/components/PreQualify";
 
 import faqsData from "./data/faqs.json";
+import plansData from "./data/plans.json";
 
 const Financing = () => {
 	const containerCSS = "container mb-3 pb-3 border-bottom";
@@ -37,7 +38,7 @@ const Financing = () => {
 						</div>
 					</div>
 					<div className="card-deckz group">
-						<FinancingCard />
+						<FinancingCard plansData={plansData} />
 					</div>
 				</div>
 

@@ -1,3 +1,4 @@
+"use client";
 //import jsonData from "./data.json";
 
 import Finance from "./Finance";

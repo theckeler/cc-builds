@@ -1,6 +1,6 @@
-import Cart from "@/i/Cart";
-import Feedback from "@/i/Feedback";
-import LiveChat from "@/i/LiveChat";
+import Cart from "@/components/icons/Cart";
+import Feedback from "@/components/icons/Feedback";
+import LiveChat from "@/components/icons/LiveChat";
 
 export default function Buttons() {
 	const tabs = [
