@@ -30,42 +30,17 @@ export default function ZeroTurn({}) {
 			<div className="top">
 				<section
 					className="d-flex p-0 position-relative"
-					//style={{ minHeight: "500px" }}
-				>
-					{/* <Image
-						src={jsonData.hero.img.xl}
-						alt={jsonData.hero.alt}
-						className="w-100"
-						width={1200}
-						height={450}
-						//fill={true}
-						//style={{ objectFit: "cover" }}
+					style={{ minHeight: "500px" }}>
+					<Image
+						src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/vd543c4bdcb4ecd57647da8407d6249a8b0c7f051/xt-enduro-series/hero-1024w.jpg?version=1,678,369,065,000"
+						alt=""
+						className="w-100 h-100"
+						//width={1200}
+						//height={450}
+						fill={true}
+						style={{ objectFit: "cover" }}
 						priority
-						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-					/> */}
-
-					<ImageNew img={jsonData.hero.img} alt="" />
-
-					{/* <img
-						alt={jsonData.hero.alt}
-						fetchpriority="high"
-						decoding="async"
-						data-nimg="fill"
-						className="w-100"
-						style={{
-							position: "absolute",
-							height: "100%",
-							width: "100%",
-							left: 0,
-							top: 0,
-							right: 0,
-							bottom: 0,
-							objectFit: "cover",
-							color: "transparent",
-						}}
-						sizes="100vw"
-						srcSet={`${jsonData.hero.img} 544w, ${jsonData.hero.img} 768w, ${jsonData.hero.img} 1025w, ${jsonData.hero.img} 1366w`}
-					/> */}
+					/>
 				</section>
 
 				<section className="py-5 px-1">

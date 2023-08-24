@@ -19,14 +19,14 @@ export default function Image({ className, img }) {
 			<source type="image/jpg" srcSet={jpgSrcSet.slice(0, -2)} />
 			<img
 				alt={img.alt}
-				fetchPriority={img.fetchpriority && img.fetchpriority}
-				decoding={img.decoding && img.decoding}
-				loading={img.loading && img.loading}
+				fetchPriority={img.fetchpriority ? img.fetchpriority : "low"}
+				decoding={img.decoding ? img.decoding : "async"}
+				loading={img.loading ? img.loading : "lazy"}
 				src={img.jpg.xl}
 				className={`w-100 ${img.className}`}
 				style={{ height: "auto" }}
-				width="1366"
-				height="500"
+				width={img.width}
+				height={img.height}
 				cl
 			/>
 		</picture>
