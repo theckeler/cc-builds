@@ -112,7 +112,7 @@ export default function ZeroTurn({}) {
 
 				<section>
 					<div className="container-fluid">
-						<h2 className="mt-4 display-1 text-center">
+						<h2 className="mt-4 display-3 text-center">
 							Shop & Compare Riding Lawn Mowers
 						</h2>
 					</div>
