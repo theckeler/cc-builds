@@ -1,5 +1,4 @@
-import React from "react";
-import { ReactComponent as Plus } from "../../images/icon-plus.svg";
+import Plus from "@/images/IconPlus";
 
 const Pluses = ({ className, addCSS, num, svgFill }) => {
 	return (

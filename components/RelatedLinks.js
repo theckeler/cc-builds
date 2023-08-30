@@ -5,11 +5,14 @@ export default function RelatedLinks({ relatedCats, className }) {
 				className="related-links"
 				aria-labelledby="related-links-title"
 				data-ui="related-links">
-				<h3 id="related-links-title" tag="h3" className="h3">
-					Related Categories
-				</h3>
+				{relatedCats.h3 && (
+					<h3 id="related-links-title" tag="h3" className="h3">
+						{relatedCats.h3}
+					</h3>
+				)}
+				{relatedCats.p && <p>{relatedCats.p}</p>}
 				<ul className="list-unstyled d-flex flex-wrap">
-					{relatedCats.map((e, i) => {
+					{relatedCats.list.map((e, i) => {
 						return (
 							<li className="pt-1 pr-1" key={i}>
 								<a

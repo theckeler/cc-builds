@@ -1,12 +1,10 @@
 import ImgCopyBlockStacked from "./ImgCopyBlockStacked";
-const HowToMaintence = ({ jsonData, centerH2 = false }) => {
-	console.log(jsonData.howTo.viewAllURL);
-
+export default function HowToMaintence({ jsonData, centerH2 = false }) {
 	return (
 		<section className="pt-6">
 			<div className="wrapper">
 				<ul className="list-unstyled d-flex flex-column flex-md-row align-items-center px-3">
-					<li className={!!centerH2 && "d-block text-center w-100"}>
+					<li className={centerH2 ? "d-block text-center w-100" : undefined}>
 						<h2>{jsonData.howTo.h2}</h2>
 					</li>
 					{typeof jsonData.howTo.viewAllURL !== "undefined" && (
@@ -25,7 +23,7 @@ const HowToMaintence = ({ jsonData, centerH2 = false }) => {
 						{jsonData.howTo.blocks.map((block, i) => {
 							return (
 								<li
-									className="col-sm-12 col-md-4 p-1 d-flex flex-column "
+									className="col-sm-12 col-md-4 p-1 d-flex flex-column"
 									key={i}>
 									<ImgCopyBlockStacked
 										{...{ block }}
@@ -40,6 +38,4 @@ const HowToMaintence = ({ jsonData, centerH2 = false }) => {
 			</div>
 		</section>
 	);
-};
-
-export default HowToMaintence;
+}
