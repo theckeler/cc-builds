@@ -5,7 +5,9 @@ const Articles = ({ articles, className, numRows }) => {
 			<div className="wrapper">
 				<ul className="list-unstyled d-flex flex-column flex-md-row align-items-center px-3">
 					<li className="">
-						<h2 className="text-center">{articles.h2}</h2>
+						<h2 className="text-center">
+							{typeof articles.h2 !== undefined && articles.h2}
+						</h2>
 					</li>
 					<li className="ml-2">
 						<a href={articles.viewAllURL} className="d-block text-center">
