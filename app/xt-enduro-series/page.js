@@ -202,7 +202,7 @@ const XTEnduroSeriesHome = () => {
 			{/* Footer */}
 			<div className="">
 				<HowToMaintence {...{ jsonData }} />
-				<Articles {...{ jsonData }} />
+				<Articles articles={jsonData.articles} />
 			</div>
 		</>
 	);

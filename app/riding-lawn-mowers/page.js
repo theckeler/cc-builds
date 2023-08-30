@@ -126,7 +126,7 @@ export default function ZeroTurn({}) {
 			</div>
 
 			<div className="bottom container">
-				<Articles jsonData={jsonData} />
+				<Articles articles={jsonData.articles} />
 
 				<hr />
 

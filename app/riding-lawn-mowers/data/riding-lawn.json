@@ -181,13 +181,15 @@
 		}
 	],
 
-	"relatedCats": [
-		"Zero-Turn Riding Lawn Mowers",
-		"Lawn & Garden Tractors",
-		"Zero-Turn Mowers",
-		"Electric Riding Mowers",
-		"Lawn Tractors",
-		"Garden Tractors",
-		"Gas Mowers"
-	]
+	"relatedCats": {
+		"list": [
+			"Zero-Turn Riding Lawn Mowers",
+			"Lawn & Garden Tractors",
+			"Zero-Turn Mowers",
+			"Electric Riding Mowers",
+			"Lawn Tractors",
+			"Garden Tractors",
+			"Gas Mowers"
+		]
+	}
 }
