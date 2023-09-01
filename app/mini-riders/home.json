@@ -28,10 +28,10 @@
 			{
 				"url": "https://www.cubcadet.com/en_US/small-riding-lawn-mower-cc-30-h/13AC21JDA10.html?fitsOnModel=false#prefn1=series&prefv1=XT1%C2%AE%20Enduro%20Series%E2%84%A2%7CCC30%20Series&start=6",
 				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw24519b24/products/Equipment/Cub-Cadet_CC30H_6.jpg?sw=740&sh=740&sm=fit",
-				"title": "CC30H Mini Rider",
+				"title": "CC30H Small Riding Lawn Mower",
 				"copy": "The Cub Cadet® CC30H riding mower is designed to deliver a premium cut, but in a compact design to fit through and be stored in small spaces.",
 				"button": {
-					"copy": "EXPLORE The CC30H Mini Rider",
+					"copy": "EXPLORE The CC30H",
 					"className": "bg-secondary"
 				},
 				"border": false
@@ -39,10 +39,10 @@
 			{
 				"url": "https://www.cubcadet.com/en_US/electric-riding-mowers/cc30e/33BA27JDB10.html?fitsOnModel=false#prefn1=series&prefv1=XT1%C2%AE%20Enduro%20Series%E2%84%A2%7CCC30%20Series&start=3",
 				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw506ac45e/products/Equipment/Cub_Cadet_CC30E_2000x2000_4.jpg?sw=1000&sh=1000&sm=fit",
-				"title": "CC30E Mini Rider",
+				"title": "CC30E Small Riding Lawn Mower",
 				"copy": "It's compact size gives you incredible maneuverability and control so you can mow through small areas like most backyard gateways.",
 				"button": {
-					"copy": "EXPLORE the CC30E Mini Rider",
+					"copy": "EXPLORE the CC30E",
 					"className": "bg-secondary"
 				},
 				"border": false

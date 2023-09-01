@@ -126,7 +126,7 @@ const MiniRiders = () => {
 						hero={jsonData.quote.hero}
 						className="position-absolute"
 						addCSS={{
-							maxWidth: "100em",
+							//maxWidth: "100em",
 							left: "50%",
 							transform: "translateX(-50%)",
 						}}
