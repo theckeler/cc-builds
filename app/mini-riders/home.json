@@ -19,7 +19,7 @@
 
 	"copyBlock": {
 		"h1": "Compact Convenience",
-		"copy": "Small riding lawn mowers are designed with compactness in mind, making them an ideal choice for those with limited storage space such as garages or small sheds. Their smaller size allows for easy maneuverability in tight areas, ensuring efficient lawn care even in challenging corners or narrow passages. These compact mowers are specifically engineered to fit through standard-sized garden gates and doors, eliminating the hassle of removing fences or other obstacles for storage. Additionally, their reduced dimensions make them lighter and more maneuverable, allowing for effortless navigation and convenient storage, making them a practical and space-saving solution for homeowners with limited outdoor space."
+		"copy": "Small riding lawn mowers are designed with compactness in mind, making them an ideal choice for those with limited storage space such as garages or small sheds. Their smaller size allows for easy maneuverability in tight areas, helping to provide efficient lawn care even in challenging corners or narrow passages. These compact mowers are specifically engineered to fit through standard-sized garden gates and doors, eliminating the hassle of removing fences or other obstacles for storage. Additionally, their compact dimensions make them light and maneuverable, allowing for easy navigation and convenient storage, making them a practical and space-saving solution for homeowners with limited outdoor space."
 	},
 
 	"lineup": {
@@ -29,11 +29,10 @@
 				"url": "https://www.cubcadet.com/en_US/small-riding-lawn-mower-cc-30-h/13AC21JDA10.html?fitsOnModel=false#prefn1=series&prefv1=XT1%C2%AE%20Enduro%20Series%E2%84%A2%7CCC30%20Series&start=6",
 				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw24519b24/products/Equipment/Cub-Cadet_CC30H_6.jpg?sw=740&sh=740&sm=fit",
 				"title": "CC30H Mini Rider",
-				"copy": "Cub Cadet small riding lawn mowers deliver the same strength, durability and perfect cut as our larger riders; but in a more compact design.",
-
+				"copy": "The Cub Cadet® CC30H riding mower is designed to deliver a premium cut, but in a compact design to fit through and be stored in small spaces.",
 				"button": {
-					"copy": "EXPLORE The CC30H",
-					"bgColor": "bg-secondary"
+					"copy": "EXPLORE The CC30H Mini Rider",
+					"className": "bg-secondary"
 				},
 				"border": false
 			},
@@ -41,12 +40,10 @@
 				"url": "https://www.cubcadet.com/en_US/electric-riding-mowers/cc30e/33BA27JDB10.html?fitsOnModel=false#prefn1=series&prefv1=XT1%C2%AE%20Enduro%20Series%E2%84%A2%7CCC30%20Series&start=3",
 				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw506ac45e/products/Equipment/Cub_Cadet_CC30E_2000x2000_4.jpg?sw=1000&sh=1000&sm=fit",
 				"title": "CC30E Mini Rider",
-
-				"copy": "Its compact size gives you incredible maneuverability and control so you can mow through small areas like most backyard gateways.",
-
+				"copy": "It's compact size gives you incredible maneuverability and control so you can mow through small areas like most backyard gateways.",
 				"button": {
-					"copy": "EXPLORE the CC30E",
-					"bgColor": "bg-secondary"
+					"copy": "EXPLORE the CC30E Mini Rider",
+					"className": "bg-secondary"
 				},
 				"border": false
 			}
@@ -74,7 +71,7 @@
 	"quote": {
 		"stars": 5,
 		"title": "Convenient Size, Great Power",
-		"copy": "“I just got the Cub Cadet CC 30 Rider with the rear engine. I love it! For it's size, it's got great power and the engine is not too loud. I had to cut some really tall and thick grass and not once did the mower bog down. The size of the mower is convenient for fitting it in the back of my Chevy Colorado pickup truck. Of course, I would love to ride one of the big Enduro tractors, but I do have some tight spots to drive around, so the CC 30 is perfect! Smooth running and powerful. And, with the engine in the rear, I don't have exhaust blowing in my face!”",
+		"copy": "“I just got the Cub Cadet CC 30 Rider with the rear engine. I love it! For [its] size, it's got great power and the engine is not too loud. I had to cut some really tall and thick grass and not once did the mower bog down…Of course, I would love to ride one of the big Enduro tractors, but I do have some tight spots to drive around, so the CC 30 is perfect! Smooth running and powerful. And, with the engine in the rear, I don't have exhaust blowing in my face!”",
 		"unit": "CC30E",
 		"name": "JayDawg",
 		"hero": {
@@ -103,7 +100,7 @@
 			{
 				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/vaff6aec52d6f75de7072641eaa2d6fcd8af2b9b7/mini-riders/mini-attach-01.jpg",
 				"title": "Bagger System",
-				"copy": "This double bag grass collection system mounts easily to your small riding lawn mower to collect grass clippings while mowing. The vented nylon bags provide superior strength and airflow to reduce grass from clogging.",
+				"copy": "This double bag grass collection system mounts easily to your small riding lawn mower to collect grass clippings while mowing. The vented nylon bags provide strength and airflow to help prevent grass from clogging.",
 				"button": {
 					"copy": "View Bagger System",
 					"className": "w-100",
@@ -113,7 +110,7 @@
 			{
 				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v83512030b68b7ca1c9318560ad5c7738395cc929/mini-riders/mini-attach-02.jpg?version=1,685,447,235,000",
 				"title": "Hauler",
-				"copy": "Designed for up to 800 pounds and built with fold-out side panels for easy loading and unloading, the hauler allows you to easily move mulch, logs and more.",
+				"copy": "Designed to carry up to 800 pounds and built with fold-out side panels for easy loading and unloading, the hauler allows you to easily move mulch, logs and more.",
 				"button": {
 					"copy": "View Hauler",
 					"className": "w-100",
@@ -123,7 +120,7 @@
 			{
 				"img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v7a7209d6e591a4d7f0aef8f7fada11d1a89784ad/mini-riders/mini-attach-03.jpg?version=1,688,066,268,000",
 				"title": "Armrest Kit",
-				"copy": "These arm rests are designed to provide support for your arms while you're mowing, allowing you to complete your job comfortably. When not in use, the armrest flips up to move out of the way.",
+				"copy": "These armrests are designed to provide support for your arms while you're mowing, allowing you to complete your job comfortably. When not in use, the armrest flips up to move out of the way.",
 				"button": {
 					"copy": "View Armrest Kit",
 					"className": "w-100",
@@ -189,24 +186,24 @@
 	"faqs": [
 		{
 			"question": "Can you use a riding mower on a small yard?",
-			"answer": "Riding mowers are suitable for small yards, particularly those that are one-half acre in size or larger. A small riding lawn mower can significantly speed up the mowing process. This increased cutting width allows for faster coverage and improved productivity, making the maintenance of your small yard more manageable."
+			"answer": "Riding mowers are suitable for small yards, particularly those that are one-half acre in size or larger. A small riding lawn mower can significantly speed up the mowing process compared to a standard 21-inch push mower. The 30-inch cutting width vs. a standard 21-inch walk-behind deck helps provide more ground coverage per pass thus improving productivity and making the maintenance of your small yard manageable.  "
 		},
 
 		{
 			"question": "What type of mower is recommended for a half acre?",
-			"answer": "When it comes to a half-acre lawn, both small riding lawn mowers and <a href=\"https://www.cubcadet.com/en_US/walk-behind-mowers/self-propelled-mowers\">self-propelled walk-behind mowers</a> are viable options. Self-propelled mowers feature front or rear-powered wheels that aide in maneuvering around the yard and alleviate some of the physical effort required. They offer a convenient solution for maintaining a half-acre lawn efficiently. On the other hand, if you prefer a seated position and want to cover the area more quickly, a small riding lawn mower can also be a suitable choice. It provides comfort and convenience while navigating the yard. Cub Cadet offers two small riding lawn mowers, the Cub Cadet <a href=\"https://www.cubcadet.com/en_US/small-riding-lawn-mower-cc-30-h/13AC21JDA10.html\">CC30H</a>, and the <a href=\"https://www.cubcadet.com/en_US/electric-riding-mowers/cc30e/33BA27JDB10.html\">CC30E</a>."
+			"answer": "When it comes to a half-acre lawn, both small riding lawn mowers and <a href=\"https://www.cubcadet.com/en_US/walk-behind-mowers/self-propelled-mowers\">self-propelled walk-behind mowers</a> are viable options. Self-propelled mowers feature front or rear-powered wheels that aide in maneuvering around the yard and help alleviate some of the physical effort required. They offer a convenient solution for maintaining a half-acre lawn efficiently. On the other hand, if you prefer a seated position and want to cover the area quickly, a small riding lawn mower can also be a suitable choice. It provides comfort and convenience while navigating the yard. Cub Cadet offers two small riding lawn mowers, the Cub Cadet <a href=\"https://www.cubcadet.com/en_US/small-riding-lawn-mower-cc-30-h/13AC21JDA10.html\">CC30H</a>, and the <a href=\"https://www.cubcadet.com/en_US/electric-riding-mowers/cc30e/33BA27JDB10.html\">CC30E</a>."
 		},
 		{
 			"question": "Is a riding mower worth it for a half acre?",
-			"answer": "When it comes to half-acre lawns, investing in a riding mower can be a worthwhile choice. A riding mower offers several advantages for yards of this size, including enhanced efficiency and reduced cutting time compared to a walk-behind mower. By opting for a riding mower with a 30 deck, you can significantly speed up the mowing process and cover more ground with each pass compared to a walk-behind mower. This increased cutting width allows for faster coverage and improved productivity, making the maintenance of your half-acre lawn more manageable. Cub Cadet offers two riding lawn mowers with a 30 in deck, the Cub Cadet <a href=\"https://www.cubcadet.com/en_US/small-riding-lawn-mower-cc-30-h/13AC21JDA10.html\">CC30H</a>, and the <a href=\"https://www.cubcadet.com/en_US/electric-riding-mowers/cc30e/33BA27JDB10.html\">CC30E</a>. Both models are equipped with a hitch that offers light towing capabilities and a mulch plug that prevents grass from escaping the machine, enabling it to be finely chopped into smaller pieces for use as lawn fertilizer."
+			"answer": "When it comes to half-acre lawns, investing in a riding mower can be a worthwhile choice. A riding mower offers several advantages for yards of this size, including enhanced efficiency and reduced cutting time compared to a walk-behind mower. By opting for a riding mower with a 30-inch deck, you can speed up the mowing process and cover more ground with each pass compared to a residential walk-behind mower with a cutting deck smaller than 30 inches. This increased cutting width allows for faster coverage and improved productivity, making the maintenance of your half-acre lawn more manageable. Cub Cadet offers two riding lawn mowers with a 30-inch deck, the Cub Cadet <a href=\"https://www.cubcadet.com/en_US/small-riding-lawn-mower-cc-30-h/13AC21JDA10.html\">CC30H</a>, and the <a href=\"https://www.cubcadet.com/en_US/electric-riding-mowers/cc30e/33BA27JDB10.html\">CC30E</a>. Both models are equipped with a hitch that offers light towing capabilities and a mulch plug that helps prevent grass from escaping the machine, enabling it to be finely chopped into smaller pieces for use as lawn fertilizer."
 		},
 		{
 			"question": "What are the benefits of a small riding lawn mower?",
-			"answer": "Small riding lawn mowers offer several benefits. A compact design makes them highly maneuverable, allowing easy navigation around tight corners and through small gates. Benefits of the Cub Cadet CC30H and the CC30E specifically include:<ul><li>Ability to mow through a 36” gate doorway.</li><li>The compact size allows for easy storage, fitting in the space of two garbage cans.</li><li>Rear engine/battery location allows for a better line of sight with an unobstructed view while mowing vs. a lawn tractor.</li></ul>"
+			"answer": "Small riding lawn mowers offer several benefits. A compact design makes them highly maneuverable, allowing easy navigation around tight corners and through small gates. Benefits of the Cub Cadet CC30H and the CC30E specifically include: <ul><li>Ability to mow through a 36-inch gate doorway.</li><li>The compact size allows for easy storage, fitting in the space of two garbage cans.</li><li>Rear engine battery location allows for a better line of sight with an unobstructed view while mowing vs. a lawn tractor.</li></ul>"
 		},
 		{
 			"question": "What is the smallest riding lawn mower?",
-			"answer": "The smallest riding lawn mowers available in the Cub Cadet® lineup are the <a href=\"https://www.cubcadet.com/en_US/small-riding-lawn-mower-cc-30-h/13AC21JDA10.html\">CC30H</a> and <a href=\"https://www.cubcadet.com/en_US/electric-riding-mowers/cc30e/33BA27JDB10.html\">CC30E</a> models. These small riding lawn mowers feature a compact design and come equipped with a 30-in. cutting deck. These mowers maintain excellent maneuverability and are capable of efficiently navigating tight spaces. "
+			"answer": "The smallest riding lawn mowers available in the Cub Cadet® lineup are the <a href=\"https://www.cubcadet.com/en_US/small-riding-lawn-mower-cc-30-h/13AC21JDA10.html\">CC30H</a> and <a href=\"https://www.cubcadet.com/en_US/electric-riding-mowers/cc30e/33BA27JDB10.html\">CC30E</a> models. These small riding lawn mowers feature a compact design and come equipped with a 30-inch cutting deck. These mowers maintain excellent maneuverability and are capable of efficiently navigating tight spaces."
 		}
 	]
 }

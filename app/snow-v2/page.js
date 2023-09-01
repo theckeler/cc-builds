@@ -211,7 +211,10 @@ export default function SnowV2({}) {
 										<div
 											href="https://www.cubcadet.com/en_US/snow-blowers/single-stage-snow-blowers"
 											className="unstyled link">
-											<img src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw855378c6/products/Equipment/Cub-Cadet-1X_21LHP_1.jpg?sw=290&sh=290&sm=fit" />
+											<img
+												src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw855378c6/products/Equipment/Cub-Cadet-1X_21LHP_1.jpg?sw=290&sh=290&sm=fit"
+												alt=""
+											/>
 											<strong className="title">
 												1X Single-Stage Snow Blowers
 											</strong>
@@ -264,7 +267,10 @@ export default function SnowV2({}) {
 										<div
 											href="https://www.cubcadet.com/en_US/snow-blowers/two-stage-snow-blowers"
 											className="unstyled link">
-											<img src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw0d2ca778/products/Equipment/Cub-Cadet_2X28_IP_4.jpg" />
+											<img
+												src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw0d2ca778/products/Equipment/Cub-Cadet_2X28_IP_4.jpg"
+												alt=""
+											/>
 											<strong className="title">
 												2X Two-Stage Snow Blowers
 											</strong>
@@ -325,7 +331,10 @@ export default function SnowV2({}) {
 										<div
 											href="https://www.cubcadet.com/en_US/snow-blowers/three-stage-snow-blowers"
 											className="unstyled link">
-											<img src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw5cb54c82/products/Equipment/Cub-Cadet_3X_30HD_3.jpg" />
+											<img
+												src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw5cb54c82/products/Equipment/Cub-Cadet_3X_30HD_3.jpg"
+												alt=""
+											/>
 											<strong className="title">
 												3X Three-Stage Snow Blowers
 											</strong>
