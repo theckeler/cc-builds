@@ -81,14 +81,19 @@ export default function DealerMiniSiteOrig() {
 		<>
 			<div
 				className="position-fixed p-1 bg-white d-flex flex-column border"
-				style={{ left: 10, top: 10, zIndex: 9999, width: "200px" }}>
+				style={{
+					left: 10,
+					top: 10,
+					zIndex: 9999,
+					width: hideMenu === true ? "auto" : "200px",
+				}}>
 				<button
 					className={`${buttonClass} mt-1`}
 					style={{ ...buttonStyle, borderRadius: "10px" }}
 					onClick={() => {
 						setHideMenu(!hideMenu);
 					}}>
-					{hideMenu === true ? "Show" : "Hide"} Menu
+					{hideMenu === true ? "Show" : "Hide Menu"}
 				</button>
 
 				<div className={hideMenu === true ? "d-none" : "Hide"}>
