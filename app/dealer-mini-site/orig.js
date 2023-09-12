@@ -27,6 +27,7 @@ export default function DealerMiniSiteOrig() {
 	const [overlay, setOverlay] = useState(false);
 	const [reverse, setReverse] = useState(false);
 	const [white, setWhite] = useState(false);
+	const [hideMenu, setHideMenu] = useState(false);
 	const [whitePercent, setWhitePercent] = useState(100);
 
 	const imgs = [
@@ -71,7 +72,7 @@ export default function DealerMiniSiteOrig() {
 		minWidth: "48px",
 		minHeight: "48px",
 	};
-	const buttonClass = "bg-secondary border-0 mr-1 mb-1";
+	const buttonClass = "bg-secondary border-0 mr-1 mb-1 w-100";
 	const buttonClick = (e) => {
 		setLogoNum(e.currentTarget.value);
 	};
@@ -85,137 +86,158 @@ export default function DealerMiniSiteOrig() {
 					className={`${buttonClass} mt-1`}
 					style={{ ...buttonStyle, borderRadius: "10px" }}
 					onClick={() => {
-						setShowImg(!showImg);
+						setHideMenu(!hideMenu);
 					}}>
-					Show Image
+					{hideMenu === true ? "Show" : "Hide"} Menu
 				</button>
-				{showImg === true && (
-					<>
-						{!overlay && (
-							<button
-								className={`${buttonClass} mt-1`}
-								style={{ ...buttonStyle, borderRadius: "10px" }}
-								onClick={() => {
-									setReverse(!reverse);
-								}}>
-								Reverse Logo/Image
-							</button>
-						)}
-						<button
-							className={`${buttonClass} mt-1`}
-							style={{ ...buttonStyle, borderRadius: "10px" }}
-							onClick={() => {
-								setOverlay(!overlay);
-							}}>
-							Overlay Image w/ Logo
-						</button>
 
-						{overlay && (
-							<>
-								<div className="mt-1 border-top border-bottom p-1 mb-1">
-									Overlay Options
-								</div>
+				<div className={hideMenu === true ? "d-none" : "Hide"}>
+					<button
+						className={`${buttonClass} mt-1`}
+						style={{ ...buttonStyle, borderRadius: "10px" }}
+						onClick={() => {
+							setShowImg(!showImg);
+						}}>
+						Show Image
+					</button>
+					{showImg === true && (
+						<>
+							{!overlay && (
 								<button
 									className={`${buttonClass} mt-1`}
 									style={{ ...buttonStyle, borderRadius: "10px" }}
 									onClick={() => {
-										setWhite(!white);
+										setReverse(!reverse);
 									}}>
-									White Background
+									Reverse Logo/Image
 								</button>
-								{white && (
+							)}
+							<button
+								className={`${buttonClass} mt-1`}
+								style={{ ...buttonStyle, borderRadius: "10px" }}
+								onClick={() => {
+									setOverlay(!overlay);
+								}}>
+								Overlay Image w/ Logo
+							</button>
+
+							{overlay && (
+								<>
+									<div className="mt-1 border-top border-bottom p-1 mb-1">
+										Overlay Options
+									</div>
+									<button
+										className={`${buttonClass} mt-1`}
+										style={{ ...buttonStyle, borderRadius: "10px" }}
+										onClick={() => {
+											setWhite(!white);
+										}}>
+										White Background
+									</button>
+									{white && (
+										<div className="">
+											<span className="mr-1">White %:</span>
+											<input
+												type="number"
+												id="size"
+												name="size"
+												className="mt-1 p-1"
+												value={whitePercent}
+												min={20}
+												max={100}
+												onChange={(e) => {
+													setWhitePercent(e.target.value);
+												}}
+											/>
+										</div>
+									)}
 									<div className="">
-										<span className="mr-1">White %:</span>
+										<span className="mr-1">Top:</span>
 										<input
 											type="number"
-											id="size"
-											name="size"
 											className="mt-1 p-1"
-											value={whitePercent}
-											min={20}
-											max={100}
+											value={topPos}
+											min={0}
+											max={600}
+											step={10}
 											onChange={(e) => {
-												setWhitePercent(e.target.value);
+												setTop(e.target.value);
 											}}
 										/>
 									</div>
-								)}
-								<div className="">
-									<span className="mr-1">Top:</span>
-									<input
-										type="number"
-										className="mt-1 p-1"
-										value={topPos}
-										min={0}
-										max={600}
-										step={10}
-										onChange={(e) => {
-											setTop(e.target.value);
-										}}
-									/>
-								</div>
-								<div className="">
-									<span className="mr-1">Left:</span>
-									<input
-										type="number"
-										className="mt-1 p-1"
-										value={leftPos}
-										min={0}
-										max={90}
-										onChange={(e) => {
-											setLeft(e.target.value);
-										}}
-									/>
-								</div>
-							</>
-						)}
-					</>
-				)}
-				<div className="mt-1 border-top border-bottom p-1 mb-1">
-					IMG Options
-				</div>
-				<div className="">
-					<span className="mr-1">Logo Size:</span>
-					<input
-						type="number"
-						id="size"
-						name="size"
-						className="mt-1 p-1"
-						value={logoSize}
-						min={20}
-						max={100}
-						onChange={(e) => {
-							setLogoSize(e.target.value);
-						}}
-					/>
-				</div>
+									<div className="">
+										<span className="mr-1">Left:</span>
+										<input
+											type="number"
+											className="mt-1 p-1"
+											value={leftPos}
+											min={0}
+											max={90}
+											onChange={(e) => {
+												setLeft(e.target.value);
+											}}
+										/>
+									</div>
+								</>
+							)}
+						</>
+					)}
+					<div className="mt-1 border-top border-bottom p-1 mb-1">
+						IMG Options
+					</div>
+					<div className="">
+						<span className="mr-1">Logo Size:</span>
+						<input
+							type="number"
+							id="size"
+							name="size"
+							className="mt-1 p-1"
+							value={logoSize}
+							min={20}
+							max={100}
+							onChange={(e) => {
+								setLogoSize(e.target.value);
+							}}
+						/>
+					</div>
 
-				<div className="mt-1 border-top border-bottom p-1 mb-1">Logos</div>
-				<div className="d-flex">
-					{[...Array(2)].map((x, i) => (
-						<button
-							className={buttonClass}
-							style={{ ...buttonStyle, borderRadius: "100%", maxWidth: "48px" }}
-							onClick={(e) => buttonClick(e)}
-							value={i}
-							key={i}>
-							{i + 1}
-						</button>
-					))}
-				</div>
+					<div className="mt-1 border-top border-bottom p-1 mb-1">Logos</div>
+					<div className="d-flex">
+						{[...Array(2)].map((x, i) => (
+							<button
+								className={buttonClass}
+								style={{
+									...buttonStyle,
+									borderRadius: "100%",
+									maxWidth: "48px",
+								}}
+								onClick={(e) => buttonClick(e)}
+								value={i}
+								key={i}>
+								{i + 1}
+							</button>
+						))}
+					</div>
 
-				<div className="mt-1 border-top border-bottom p-1 mb-1">Alt Logos</div>
-				<div className="d-flex flex-wrap">
-					{[...Array(8)].map((x, i) => (
-						<button
-							className={buttonClass}
-							style={{ ...buttonStyle, borderRadius: "100%", maxWidth: "48px" }}
-							onClick={(e) => buttonClick(e)}
-							value={i + 2}
-							key={i}>
-							{i + 1}
-						</button>
-					))}
+					<div className="mt-1 border-top border-bottom p-1 mb-1">
+						Alt Logos
+					</div>
+					<div className="d-flex flex-wrap">
+						{[...Array(8)].map((x, i) => (
+							<button
+								className={buttonClass}
+								style={{
+									...buttonStyle,
+									borderRadius: "100%",
+									maxWidth: "48px",
+								}}
+								onClick={(e) => buttonClick(e)}
+								value={i + 2}
+								key={i}>
+								{i + 1}
+							</button>
+						))}
+					</div>
 				</div>
 			</div>
 
