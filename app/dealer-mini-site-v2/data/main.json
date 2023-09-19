@@ -1,0 +1,103 @@
+{
+	"dealers": [
+		{
+			"name": "Worcester Sales and Service, Inc.",
+			"logo": "https://www.cubcadet.com/on/demandware.static/-/Sites/default/dw0e63aa38/images/stores/dealer-logos/WorcestersInc_BW.png",
+			"address": {
+				"street": "34200 LORAIN ROAD",
+				"city": "NORTH RIDGEVILLE",
+				"state": "OH",
+				"zip": "44039"
+			},
+
+			"phone": "(440) 327-2196",
+			"url": "http://www.worcesters.com",
+			"icons": [true, true, true, true, true],
+			"badges": [true, true],
+			"social": [true, true],
+			"stars": {
+				"average": 4.4,
+				"reviews": 347
+			}
+		},
+		{
+			"name": "State Sharpening Mower & Tractor Repair, Inc.",
+			"logo": "https://www.cubcadet.com/on/demandware.static/-/Sites/default/dw882bb4c7/images/stores/dealer-logos/State_Sharpening_Logo.png",
+			"address": {
+				"street": "10155 BROADVIEW RD SUITE 1",
+				"city": "BROADVIEW HEIGHTS",
+				"state": "OH",
+				"zip": "44147"
+			},
+			"phone": "(440) 838-8437",
+			"url": "http://www.StateSharp.com",
+			"icons": [false, true, true, false, true],
+			"badges": [true, false],
+			"social": [true, false],
+			"stars": {
+				"average": 4.5,
+				"reviews": 96
+			}
+		},
+		{
+			"name": "White's Farm Supply",
+			"logo": "https://www.cubcadet.com/on/demandware.static/-/Sites/default/dw32faa3f3/images/stores/dealer-logos/WhitesFarmSupply5327_4C_1.png",
+			"address": {
+				"street": "5828 WATERLOO ROAD",
+				"city": "ATWATER",
+				"state": "OH",
+				"zip": "44201"
+			},
+			"phone": "(330) 947-2162",
+			"url": "http://www.worcesters.com",
+			"icons": [true, true, true, true, true],
+			"badges": [false, true],
+			"social": [false, true],
+			"stars": {
+				"average": 4.7,
+				"reviews": 176
+			}
+		},
+		{
+			"name": "Northfield Power Equipment",
+			"logo": "https://www.cubcadet.com/on/demandware.static/-/Sites/default/dw5d87d76d/images/stores/dealer-logos/NPE_logo.png",
+			"address": {
+				"street": "49 MEADOW LANE",
+				"city": "NORTHFIELD",
+				"state": "OH",
+				"zip": "44067"
+			},
+			"phone": "(330) 467-0020",
+			"url": "https://www.nfpowerequipment.com",
+			"icons": [true, true, true, true, true],
+			"badges": [false, false],
+			"social": [false, false],
+			"stars": {
+				"average": 4.5,
+				"reviews": 111
+			}
+		}
+	],
+	"faqs": [
+		{
+			"question": "Nulla vitae risus at nibh condimentum tempor?",
+			"answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan nibh at lectus cursus sodales. Mauris quis nunc eros. Fusce accumsan nunc et nisl molestie pretium. Cras tincidunt magna sed nisl faucibus porttitor. Suspendisse consectetur nulla nec arcu laoreet rhoncus. Phasellus sit amet posuere dui. Aliquam a libero et purus dignissim euismod egestas vitae sem. Phasellus tincidunt pulvinar gravida. Maecenas ullamcorper leo quis porttitor facilisis. Sed nunc purus, sodales id felis eget, varius aliquet odio. Cras tempus porttitor urna non cursus. Donec nec nulla libero."
+		},
+		{
+			"question": "Donec a posuere urna, id placerat nulla?",
+			"answer": "Nulla facilisi. Pellentesque purus mauris, blandit at vulputate eu, molestie at arcu. Cras varius dui risus. Aenean elementum finibus vulputate. Suspendisse potenti. Ut gravida eget nunc a fermentum. Suspendisse eget diam lectus. Donec bibendum diam sit amet dui tempus, vel aliquam magna fringilla. Duis sit amet dapibus nibh. Mauris sed sem a ligula posuere bibendum imperdiet et quam. Nam consequat auctor condimentum. Vivamus vulputate porttitor tortor. Aenean laoreet lacinia lectus et auctor. Aenean sollicitudin enim sit amet eros convallis, vitae rutrum urna porttitor."
+		},
+		{
+			"question": "Mauris sed sem a ligula posuere bibendum?",
+			"answer": "Curabitur varius scelerisque ipsum, vel pulvinar quam lobortis in. Praesent venenatis augue imperdiet velit sodales, ut lobortis nibh aliquet. In scelerisque non urna eu convallis. Praesent sed blandit felis. Nulla imperdiet pellentesque massa ut egestas. Sed et metus tortor. Phasellus bibendum pretium pretium. Pellentesque id lorem massa. Nullam nec venenatis metus. Sed sed ex ac diam cursus fermentum quis ut nisi. In in quam ligula. Nullam a luctus neque."
+		},
+		{
+			"question": "Nulla imperdiet pellentesque massa ut egestas?",
+			"answer": "Morbi vitae ornare nibh, et tristique libero. Donec a posuere urna, id placerat nulla. Ut nec lacus eget turpis eleifend laoreet eu ac nulla. Etiam vel mauris eros. Duis diam nisl, vulputate vitae arcu ut, porta aliquet dolor. Mauris feugiat tincidunt libero sit amet tempor. Vivamus rhoncus erat orci, et volutpat nunc eleifend eu. Duis nunc nisi, molestie sed dui id, pellentesque semper leo. Aliquam in aliquam turpis."
+		},
+		{
+			"question": "Pellentesque laoreet ut erat et ornare.?",
+			"answer": "Etiam leo velit, efficitur aliquam tellus sit amet, rhoncus pharetra justo. Pellentesque laoreet ut erat et ornare. Suspendisse ornare tellus vitae maximus rutrum. Nam nulla dui, vestibulum id finibus sed, sollicitudin a diam. Duis sit amet elementum nisl, id mattis nibh. Aliquam imperdiet mi eu ex pulvinar dapibus. Nulla vitae risus at nibh condimentum tempor at sed mi. Nam nunc ante, iaculis sit amet nibh quis, blandit dapibus augue. Quisque iaculis nunc ac orci elementum dignissim."
+		}
+	]
+}

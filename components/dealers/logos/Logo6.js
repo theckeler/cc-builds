@@ -11,13 +11,13 @@ export default function Logo6({ className, style }) {
 				r="88.42"
 				fill="#fff"
 				stroke="#231f20"
-				stroke-miterlimit="10"
+				strokeMiterlimit="10"
 			/>
 			<path
 				fill="#febd1c"
 				stroke="#231f20"
-				stroke-miterlimit="10"
-				stroke-width="2"
+				strokeMiterlimit="10"
+				strokeWidth="2"
 				d="M102.65 62.41v-8.29c0-2.87-1.53-5.52-4.02-6.96l-7.18-4.14c-2.49-1.44-5.55-1.44-8.03 0l-7.18 4.14c-2.49 1.44-4.02 4.09-4.02 6.96v8.29c0 2.87 1.53 5.52 4.02 6.96l7.18 4.14c2.49 1.44 5.55 1.44 8.03 0l7.18-4.14c2.49-1.44 4.02-4.09 4.02-6.96Z"
 			/>
 			<path d="m84.16 66.94-7.87-7.87 2.81-2.81 5.06 5.07 11.62-11.62 2.81 2.81-14.43 14.42z" />
@@ -32,7 +32,7 @@ export default function Logo6({ className, style }) {
 			<path
 				fill="none"
 				stroke="#231f20"
-				stroke-miterlimit="10"
+				strokeMiterlimit="10"
 				d="M33.93 58.27h30.4m45.01 0h30.41m-67.51 77.44h30.4"
 			/>
 		</svg>

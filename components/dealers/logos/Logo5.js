@@ -9,7 +9,7 @@ export default function LogoFive({ className, style }) {
 				<clipPath id="a">
 					<path
 						fill="none"
-						stroke-width="0"
+						strokeWidth="0"
 						d="M282.35 92.41H42.24c-5.02 0-9.14-3.07-9.14-6.83V51.17c0-3.76 4.11-6.83 9.14-6.83h240.11c3.31 0 6.01 3.07 6.01 6.83v34.41c0 3.76-2.7 6.83-6.01 6.83Z"
 					/>
 				</clipPath>
@@ -29,15 +29,15 @@ export default function LogoFive({ className, style }) {
 			<path
 				fill="none"
 				stroke="#000"
-				stroke-miterlimit="10"
-				stroke-width="2"
+				strokeMiterlimit="10"
+				strokeWidth="2"
 				d="M282.35 92.41H42.24c-5.02 0-9.14-3.07-9.14-6.83V7.83C33.1 4.07 37.21 1 42.24 1h240.11c3.31 0 6.01 3.07 6.01 6.83v77.75c0 3.76-2.7 6.83-6.01 6.83Z"
 			/>
 			<path
 				fill="#febd1c"
 				stroke="#231f20"
-				stroke-miterlimit="10"
-				stroke-width="2"
+				strokeMiterlimit="10"
+				strokeWidth="2"
 				d="M65.2 60.6V32.81c0-2.87-1.53-5.52-4.02-6.96l-24.07-13.9c-2.49-1.44-5.55-1.44-8.03 0L5.02 25.85C2.53 27.29 1 29.94 1 32.81V60.6c0 2.87 1.53 5.52 4.02 6.96l24.07 13.9c2.49 1.44 5.55 1.44 8.03 0l24.07-13.9c2.49-1.44 4.02-4.09 4.02-6.96Z"
 			/>
 			<path d="M26.19 65.01 9.57 48.39l5.92-5.92 10.7 10.69 24.52-24.52 5.92 5.92-30.44 30.45z" />

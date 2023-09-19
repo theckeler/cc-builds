@@ -7,8 +7,8 @@ export default function Logo10({ className, style }) {
 			style={style}>
 			<path
 				stroke="#febd1c"
-				stroke-miterlimit="10"
-				stroke-width="2"
+				strokeMiterlimit="10"
+				strokeWidth="2"
 				d="M215.62 169.9H10.14c-5.02 0-9.14-3.07-9.14-6.83V41.05c0-3.76 4.11-6.83 9.14-6.83h205.49c3.31 0 6.01 3.07 6.01 6.83v122.01c0 3.76-2.7 6.83-6.01 6.83Z"
 			/>
 			<path
@@ -18,8 +18,8 @@ export default function Logo10({ className, style }) {
 			<path
 				fill="#febd1c"
 				stroke="#231f20"
-				stroke-miterlimit="10"
-				stroke-width="2"
+				strokeMiterlimit="10"
+				strokeWidth="2"
 				d="M133.21 33.04V17.03c0-2.87-1.53-5.52-4.02-6.96l-13.86-8c-2.49-1.44-5.55-1.44-8.03 0l-13.86 8c-2.49 1.44-4.02 4.09-4.02 6.96v16.01c0 2.87 1.53 5.52 4.02 6.96l13.86 8c2.49 1.44 5.55 1.44 8.03 0l13.86-8c2.49-1.44 4.02-4.09 4.02-6.96Z"
 			/>
 			<path d="M106.6 37.52 95.27 26.19l4.04-4.04 7.29 7.29 16.73-16.72 4.04 4.04-20.77 20.76z" />

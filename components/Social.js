@@ -1,22 +1,10 @@
-export default function Social() {
+export default function Social({ className, style }) {
 	return (
-		<div>
+		<div className={className} style={style}>
 			<ul className="d-flex list-unstyled">
-				<li>
-					<a
-						className="social-icon twitter"
-						title="Go to Twitter"
-						href="https://twitter.com/WorcestersInc"
-						target="_blank"></a>
-				</li>
+				<li>Twitter</li>
 
-				<li>
-					<a
-						className="social-icon facebook"
-						title="Go to Facebook"
-						href="https://www.facebook.com/WorcestersInc"
-						target="_blank"></a>
-				</li>
+				<li>Facebook</li>
 			</ul>
 		</div>
 	);

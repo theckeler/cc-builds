@@ -13,7 +13,7 @@ export default function LogoTwo({ className, style }) {
 						x=".38"
 						y="51.42"
 						fill="none"
-						stroke-width="0"
+						strokeWidth="0"
 						rx="8.05"
 						ry="8.05"
 					/>
@@ -43,8 +43,8 @@ export default function LogoTwo({ className, style }) {
 				y=".38"
 				fill="none"
 				stroke="#000"
-				stroke-miterlimit="10"
-				stroke-width=".77"
+				strokeMiterlimit="10"
+				strokeWidth=".77"
 				rx="8.05"
 				ry="8.05"
 			/>

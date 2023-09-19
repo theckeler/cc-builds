@@ -12,8 +12,8 @@ export default function LogoFour({ className, style }) {
 			<path
 				fill="#febd1c"
 				stroke="#231f20"
-				stroke-miterlimit="10"
-				stroke-width="2"
+				strokeMiterlimit="10"
+				strokeWidth="2"
 				d="M105.61 70.44v-6.75c0-2.87-1.53-5.52-4.02-6.96l-5.85-3.38c-2.49-1.44-5.55-1.44-8.03 0l-5.85 3.38c-2.49 1.44-4.02 4.09-4.02 6.96v6.75c0 2.87 1.53 5.52 4.02 6.96l5.85 3.38c2.49 1.44 5.55 1.44 8.03 0l5.85-3.38c2.49-1.44 4.02-4.09 4.02-6.96Z"
 			/>
 			<path d="m88.74 74.97-7.19-7.18 2.56-2.56 4.63 4.62 10.6-10.6 2.56 2.56-13.16 13.16z" />
@@ -28,7 +28,7 @@ export default function LogoFour({ className, style }) {
 			<path
 				fill="none"
 				stroke="#febd1c"
-				stroke-miterlimit="10"
+				strokeMiterlimit="10"
 				d="M42.89 67.06h27.75m41.08 0h27.75m-61.62 70.68h27.75"
 			/>
 		</svg>

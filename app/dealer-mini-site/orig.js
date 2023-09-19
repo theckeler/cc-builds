@@ -1,16 +1,16 @@
 "use client";
 import { useState, useEffect } from "react";
 
-import Logo1 from "./logos/Logo1";
-import Logo2 from "./logos/Logo2";
-import Logo3 from "./logos/Logo3";
-import Logo4 from "./logos/Logo4";
-import Logo5 from "./logos/Logo5";
-import Logo6 from "./logos/Logo6";
-import Logo7 from "./logos/Logo7";
-import Logo8 from "./logos/Logo8";
-import Logo9 from "./logos/Logo9";
-import Logo10 from "./logos/Logo10";
+import Logo1 from "../../components/dealers/logos/Logo1";
+import Logo2 from "../../components/dealers/logos/Logo2";
+import Logo3 from "../../components/dealers/logos/Logo3";
+import Logo4 from "../../components/dealers/logos/Logo4";
+import Logo5 from "../../components/dealers/logos/Logo5";
+import Logo6 from "../../components/dealers/logos/Logo6";
+import Logo7 from "../../components/dealers/logos/Logo7";
+import Logo8 from "../../components/dealers/logos/Logo8";
+import Logo9 from "../../components/dealers/logos/Logo9";
+import Logo10 from "../../components/dealers/logos/Logo10";
 
 export default function DealerMiniSiteOrig() {
 	const svgStyle = { width: "100%", minWidth: "100%" };
