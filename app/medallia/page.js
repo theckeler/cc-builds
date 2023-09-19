@@ -1900,7 +1900,7 @@ export default function Medallia() {
 										</div>
 										<div>
 											<a
-												href="javascript:void(0)"
+												//href="javascript:void(0)"
 												data-url="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/FinancingApplication-Disclosure"
 												data-title="Details & Disclosures"
 												className="td-payment-details">

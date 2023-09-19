@@ -1674,7 +1674,7 @@ export default function DealerMiniSiteOrig() {
 															className="td-payment-details btn-text"
 															data-title="Details & Disclosures"
 															data-url="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/FinancingApplication-Disclosure"
-															href="javascript:void(0)"
+															//href="javascript:void(0)"
 															tabIndex={0}>
 															Click for Details
 														</a>
@@ -1730,7 +1730,7 @@ export default function DealerMiniSiteOrig() {
 															className="td-payment-details btn-text"
 															data-title="Details & Disclosures"
 															data-url="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/FinancingApplication-Disclosure"
-															href="javascript:void(0)"
+															//href="javascript:void(0)"
 															tabIndex={0}>
 															Click for Details
 														</a>
@@ -1786,7 +1786,7 @@ export default function DealerMiniSiteOrig() {
 															className="td-payment-details btn-text"
 															data-title="Details & Disclosures"
 															data-url="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/FinancingApplication-Disclosure"
-															href="javascript:void(0)"
+															//href="javascript:void(0)"
 															tabIndex={0}>
 															Click for Details
 														</a>
@@ -1843,7 +1843,7 @@ export default function DealerMiniSiteOrig() {
 															className="td-payment-details btn-text"
 															data-title="Details & Disclosures"
 															data-url="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/FinancingApplication-Disclosure"
-															href="javascript:void(0)"
+															//href="javascript:void(0)"
 															tabIndex={0}>
 															Click for Details
 														</a>
@@ -1898,7 +1898,7 @@ export default function DealerMiniSiteOrig() {
 															className="td-payment-details btn-text"
 															data-title="Details & Disclosures"
 															data-url="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/FinancingApplication-Disclosure"
-															href="javascript:void(0)"
+															//href="javascript:void(0)"
 															tabIndex={0}>
 															Click for Details
 														</a>
@@ -1953,7 +1953,7 @@ export default function DealerMiniSiteOrig() {
 															className="td-payment-details btn-text"
 															data-title="Details & Disclosures"
 															data-url="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/FinancingApplication-Disclosure"
-															href="javascript:void(0)"
+															//href="javascript:void(0)"
 															tabIndex={0}>
 															Click for Details
 														</a>
@@ -2008,7 +2008,7 @@ export default function DealerMiniSiteOrig() {
 															className="td-payment-details btn-text"
 															data-title="Details & Disclosures"
 															data-url="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/FinancingApplication-Disclosure"
-															href="javascript:void(0)"
+															//href="javascript:void(0)"
 															tabIndex={0}>
 															Click for Details
 														</a>

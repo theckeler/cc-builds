@@ -10,7 +10,6 @@ export default function NavMain({ navMain }) {
 					mouseOver = (e) => {
 						const dropMenu = e.currentTarget.querySelector(".dropdown-menu");
 						dropMenu.classList.add("show");
-						console.log("dropMenu:", dropMenu);
 					};
 
 					mouseOut = (e) => {

@@ -1,3 +1,4 @@
+import Close from "./components/Close";
 import LogoSearch from "./components/LogoSearch";
 import NavMain from "./components/NavMain";
 import PromoBanner from "./components/PromoBanner";
@@ -39,16 +40,7 @@ export default async function Header({}) {
 											</a>
 										</div>
 										<div className="close-button pull-right">
-											<a href="#" role="button">
-												Close
-												<span aria-hidden="true">
-													<img
-														className="icon icon-close"
-														src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/default/dw305c0d11/images/svg-icons/icon-close.svg"
-														alt=""
-													/>
-												</span>
-											</a>
+											<Close />
 										</div>
 									</div>
 									<div

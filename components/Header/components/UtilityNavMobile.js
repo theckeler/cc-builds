@@ -5,7 +5,7 @@ export default function UtilityNavMobile({}) {
 				<ul className="utility-list">
 					<li>
 						<a
-							href="javascript:void(0)"
+							//href="javascript:void(0)"
 							id="header-live-chat"
 							className="icon-chat">
 							<span>Live Chat</span>

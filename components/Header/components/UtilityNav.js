@@ -3,10 +3,7 @@ export default function UtilityNav({}) {
 		<div className="utility-nav d-none d-lg-block">
 			<ul className="utility-list" style={{ textAlign: "right" }}>
 				<li>
-					<a
-						href="javascript:void(0)"
-						id="header-live-chat"
-						className="icon-chat">
+					<a id="header-live-chat" className="icon-chat">
 						<span>Live Chat</span>
 					</a>
 				</li>

@@ -49,7 +49,7 @@ export default function DealerHomePromos() {
 											className="td-payment-details btn-text"
 											data-title="Details &amp; Disclosures"
 											data-url="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/FinancingApplication-Disclosure"
-											href="javascript:void(0)"
+											//href="javascript:void(0)"
 											tabindex="0">
 											Click for Details
 										</a>

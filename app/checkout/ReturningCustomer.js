@@ -31,7 +31,7 @@ export default function ReturningCustomer() {
 					<ul className="list-unstyled d-lg-flex align-items-center">
 						<li className="w-lg-50 pr-lg-1">
 							<a
-								href="javascript:void(0)"
+								//href="javascript:void(0)"
 								className="finance-account-lookup-link btn-secondary px-3 py-1 d-block text-center font-bold"
 								data-title="Find Your Account Number"
 								data-url="/on/demandware.store/Sites-cubcadet-Site/en_US/FinancingApplication-AccountLookup"
@@ -41,7 +41,7 @@ export default function ReturningCustomer() {
 						</li>
 						<li className="w-lg-50 pl-lg-1">
 							<a
-								href="javascript:void(0)"
+								//href="javascript:void(0)"
 								data-url="/on/demandware.store/Sites-cubcadet-Site/en_US/FinancingApplication-GetURL"
 								className="finance-account-register-link td-apply-finance d-block text-center ">
 								Don't have an account? Apply for financing
