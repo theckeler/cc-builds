@@ -5,7 +5,9 @@ import UtilityNav from "./components/UtilityNav";
 import UtilityNavMobile from "./components/UtilityNavMobile";
 
 async function getData() {
-	const res = await fetch("https://api.npoint.io/c0eb2c63b40959555d42");
+	const res = await fetch("https://api.npoint.io/c0eb2c63b40959555d42", {
+		cache: "no-store",
+	});
 	if (!res.ok) {
 		throw new Error("Failed to fetch data");
 	}
@@ -18,12 +20,10 @@ export default async function Header({}) {
 	return (
 		<>
 			<PromoBanner />
-
 			<header>
 				<nav role="navigation">
 					<UtilityNav />
 					<LogoSearch />
-
 					<div
 						className="main-menu navbar-toggleable-md menu-toggleable-left multilevel-dropdown"
 						id="sg-navbar-collapse">
