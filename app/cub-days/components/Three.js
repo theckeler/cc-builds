@@ -27,11 +27,9 @@ export default function Two() {
 						small="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/veed3207c3f180871c2fe63844e18adc185f28147/snow-v2/3x-hero-sm.png"
 					/>
 				</div>
-				<div
-					className="wrapper position-lg-absolute top-xl-20"
-					style={{ zIndex: 11 }}>
+				<div className="position-lg-absolute w-100 pt-4" style={{ zIndex: 11 }}>
 					<div
-						className=" w-100 d-flex flex-column align-items-end"
+						className="wrapper d-flex flex-column align-items-end"
 						style={{
 							bottom: "20px",
 						}}>

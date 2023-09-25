@@ -27,11 +27,9 @@ export default function SnowBlowers() {
 						large="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/vde16d024a27b8e0c81e1c6e963f0a6bf041c9496/snow-v2/31AM5HVSB56_2X26_Inteli_env02.jpg"
 					/>
 				</div>
-				<div
-					className="wrapper position-lg-absolute top-xl-20"
-					style={{ zIndex: 11 }}>
+				<div className="position-lg-absolute w-100 pt-4" style={{ zIndex: 11 }}>
 					<div
-						className=" w-100 d-flex flex-column align-items-end"
+						className="wrapper w-100 d-flex flex-column align-items-end"
 						style={{
 							bottom: "20px",
 						}}>
