@@ -1,7 +1,7 @@
 "use client";
 const Registration = () => {
 	return (
-		<div className="">
+		<div>
 			<h2 className="h2 text-center">Registration</h2>
 			{/* <button
 				className="showHowToFind text-center border-0"

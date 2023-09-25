@@ -409,7 +409,7 @@ const IntelliPower = () => {
 						</li>
 					</ul>
 
-					<div className="">
+					<div>
 						<Faqs
 							faqs={jsonData.faqs[0].intellipower}
 							className="faqs-intellipower active"

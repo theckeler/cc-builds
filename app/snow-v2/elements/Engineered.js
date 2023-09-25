@@ -48,7 +48,7 @@ const Engineered = ({ indexData }) => {
 						{indexData.engineeredFor.blocks.map((block, i) => {
 							return (
 								<li key={i} className="flex-column col col-4 text-center">
-									<div className="">
+									<div>
 										<strong className="text-uppercase">{block.title}</strong>
 										<div
 											className="d-flex justify-content-center align-items-center p-3"

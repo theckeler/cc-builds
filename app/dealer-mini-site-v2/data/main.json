@@ -1,6 +1,327 @@
 {
+	"accessories": [
+		{
+			"title": "Riding Mower Accessories",
+			"img": {
+				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dw63b8d5db/menu-card-images/Cub-Cadet-Riding-Mower-Accessory1_NavCard.png"
+			},
+			"button": {
+				"title": "Shop Riding Mower Accessories",
+				"href": "#top"
+			}
+		},
+		{
+			"title": "Zero Turn Accessories",
+			"img": {
+				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dwb3c7d8c4/menu-card-images/Cub-Cadet-RZT-Mower-Accessory1_NavCard.png"
+			},
+			"button": {
+				"title": "Shop Zero Turn Accessories",
+				"href": "#top"
+			}
+		},
+		{
+			"title": "Push Mower Accessories",
+			"img": {
+				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dw4e58dcc7/menu-card-images/Cub-Cadet-Walk-Behind-Accessory_NavCard.png"
+			},
+			"button": {
+				"title": "Shop Push Mower Accessories",
+				"href": "#top"
+			}
+		},
+		{
+			"title": "Snow Blower Accessories",
+			"img": {
+				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dwcc225e7e/menu-card-images/Cub-Cadet-Snow-Blower-Accessory_NavCard.png"
+			},
+			"button": {
+				"title": "Shop Snow Blower Accessories",
+				"href": "#top"
+			}
+		}
+	],
+	"promotions": [
+		{
+			"title": "Lorem ipsum dolor sit amet, consectetur",
+			"p": "Adipiscing elit. Proin semper urna sit amet urna luctus, ultricies rhoncus elit faucibus. Vestibulum odio nisl, blandit ac leo vitae, facilisis venenatis odio. Sed lobortis molestie metus eget sagittis. Nunc vel sem consequat, eleifend risus sit amet, bibendum orci. Cras sollicitudin pharetra nibh, nec faucibus neque rutrum id. Proin tincidunt varius massa at convallis. Cras consectetur nisi maximus dolor pulvinar sollicitudin. Aliquam imperdiet tellus nec mattis dictum. Morbi tristique dolor ut dui dignissim tincidunt. Pellentesque at bibendum felis. Suspendisse risus urna, efficitur sit amet lacus ut, semper accumsan lacus. Cras ornare nisl ex, a tristique ipsum cursus eu. Etiam ornare nunc at sagittis scelerisque. Nulla eu turpis tortor. Suspendisse tempus faucibus accumsan.",
+			"img": {
+				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw5e9e50e9/images/product-line-landing/Main-Carousel/RidingMow_ProdLineLand_Hero_ZT1-50_01_desktop_1015x630_v1.jpg",
+				"style": { "objectFit": "cover" }
+			},
+			"button": {
+				"title": "Shop Lorem ipsum dolor sit amet, consectetur",
+				"href": "#top"
+			}
+		},
+		{
+			"title": "Donec id ante eget tellus dictum mollis",
+			"p": "Vestibulum ex neque, volutpat a purus faucibus, sodales accumsan sapien. Cras tincidunt mi eget est imperdiet, ut egestas nunc feugiat. Integer fermentum imperdiet orci, nec aliquet libero euismod vitae. In tempus tortor eu velit mattis, id elementum massa ultricies. Cras laoreet ex ut orci aliquet, at consectetur mauris rutrum. Donec id ante eget tellus dictum mollis. Phasellus at leo ligula. Nam dictum, nunc non feugiat porttitor, mauris enim porta orci, eu cursus tortor ligula non mi. Cras fringilla, augue et tempus efficitur, turpis lorem dignissim augue, vitae rhoncus mi ex vitae ante. Quisque ligula tortor, iaculis ut erat sed, pretium porta sapien. Morbi eu est dictum est scelerisque pellentesque eget sit amet arcu.",
+			"img": {
+				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/vde16d024a27b8e0c81e1c6e963f0a6bf041c9496/snow-v2/31AH5EVZ596_3X30HD_Env03.jpg",
+				"style": { "objectFit": "cover" }
+			},
+			"button": {
+				"title": "Shop Donec id ante eget tellus",
+				"href": "#top"
+			}
+		},
+		{
+			"title": "Curabitur ut elementum sapien",
+			"p": "Proin a bibendum lectus. Aliquam tristique fermentum placerat. Nam viverra ipsum quis condimentum tincidunt. In euismod gravida massa, sed sollicitudin massa. Duis tristique sed urna id egestas. Phasellus hendrerit sapien ut eros sagittis, vitae vulputate leo feugiat. Curabitur elementum in purus ut aliquet. Curabitur ut elementum sapien, et aliquet turpis. Aliquam vulputate, lacus a ullamcorper hendrerit, turpis dui consectetur tortor, ac imperdiet dolor nibh vel erat. Donec malesuada justo justo, ullamcorper aliquam tellus auctor a. Pellentesque mattis dictum orci, nec dignissim dolor varius mattis. Sed elementum dignissim blandit. Cras blandit lorem id iaculis fermentum.",
+			"img": {
+				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/vd543c4bdcb4ecd57647da8407d6249a8b0c7f051/ZeroTurnLanding/hero.jpg?version=1,671,452,470,000",
+				"style": { "objectFit": "cover" }
+			},
+			"button": {
+				"title": "Shop Curabitur ut elementum sapien",
+				"href": "#top"
+			}
+		},
+		{
+			"title": "Nulla laoreet quam",
+			"p": "Maecenas porta dui mattis auctor dictum. Quisque laoreet rutrum urna, at sodales libero scelerisque in. Nulla laoreet quam dui, eget feugiat sem luctus sit amet. Ut non porta lacus. Aenean euismod facilisis justo condimentum suscipit. Donec semper pulvinar magna nec molestie. Ut imperdiet magna a nisl scelerisque finibus.",
+			"img": {
+				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw6ca18349/images/product-line-browse/Series-Feature-Card/Self-Propelled_ProdLineBrow_Feature2_desktop_492x350.jpg",
+				"style": { "objectFit": "cover" }
+			},
+			"button": {
+				"title": "Shop Nulla laoreet quam",
+				"href": "#top"
+			}
+		},
+		{
+			"title": "Cras felis ex, ornare",
+			"p": "Aliquam iaculis arcu ut felis blandit, sed consectetur quam gravida. Duis ut massa dui. Phasellus ut ante convallis sapien iaculis blandit eu eget magna. Mauris nec dui diam. Nullam volutpat vitae libero feugiat consequat. Cras felis ex, ornare fringilla finibus in, fringilla non ipsum. Suspendisse id malesuada velit. Etiam ante metus, congue vel nisi sit amet, vestibulum egestas massa. Integer ullamcorper rutrum nibh quis efficitur. Proin posuere erat sed erat egestas facilisis. Sed orci nisl, molestie id vulputate sed, mollis non dui. Phasellus dictum suscipit quam, id dictum lorem.",
+			"img": {
+				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dwf4d32c72/images/product-line-browse/Main-Carousel/ProCUB5fam007-1015x630.jpg",
+				"style": { "objectFit": "cover" }
+			},
+			"button": {
+				"title": "Shop Cras felis ex, ornare",
+				"href": "#top"
+			}
+		}
+	],
+	"financing": [
+		{
+			"term": 6,
+			"title": "No interest if paid in full within 6 months <sup>1</sup>",
+			"text": "Interest will be charged from the purchase date if the purchase balance is not paid in full by the end of the promotional period.",
+			"minPurchase": "Minimum purchase $199",
+			"validFrom": "August 1, 2023",
+			"validTo": "October 31, 2023",
+			"detailText": "Click for details",
+			"buttonTitle": "Apply Now",
+			"buttonHref": "https://finance.consumercreditapp.com/cc/landing/cub_cadet"
+		},
+		{
+			"term": 12,
+			"title": "No interest if paid in full within 12 months <sup>2</sup>",
+			"text": "Interest will be charged from the purchase date if the purchase balance is not paid in full by the end of the promotional period.",
+			"minPurchase": "Minimum purchase $500",
+			"validFrom": "August 1, 2023",
+			"validTo": "October 31, 2023",
+			"detailText": "Click for details",
+			"buttonTitle": "Apply Now",
+			"buttonHref": "https://finance.consumercreditapp.com/cc/landing/cub_cadet"
+		},
+		{
+			"term": 24,
+			"title": "0% APR for 24 months with equal payments <sup>3</sup>",
+			"text": "<strong>There is a promotional fee of $125 for this transaction.</strong>",
+			"minPurchase": "Minimum purchase $2,000",
+			"validFrom": "August 1, 2023",
+			"validTo": "October 31, 2023",
+			"detailText": "Click for details",
+			"buttonTitle": "Apply Now",
+			"buttonHref": "https://finance.consumercreditapp.com/cc/landing/cub_cadet"
+		},
+		{
+			"term": 36,
+			"title": "0% APR for 36 months with equal payments <sup>5</sup>",
+			"text": "<strong>There is a promotional fee of $125 for this transaction.</strong>",
+			"minPurchase": "Minimum purchase $3,000",
+			"validFrom": "August 1, 2023",
+			"validTo": "October 31, 2023",
+			"detailText": "Click for details",
+			"buttonTitle": "Apply Now",
+			"buttonHref": "https://finance.consumercreditapp.com/cc/landing/cub_cadet"
+		},
+		{
+			"term": 48,
+			"title": "0% APR for 48 months with equal payments <sup>5</sup>",
+			"text": "<strong>There is a promotional fee of $125 for this transaction.</strong>",
+			"minPurchase": "Minimum purchase $2,500",
+			"validFrom": "August 1, 2023",
+			"validTo": "October 31, 2023",
+			"detailText": "Click for details",
+			"buttonTitle": "Apply Now",
+			"buttonHref": "https://finance.consumercreditapp.com/cc/landing/cub_cadet"
+		},
+		{
+			"term": 60,
+			"title": "3.99% APR for 60 months with equal payments <sup>5</sup>",
+			"text": "<strong>There is a promotional fee of $125 for this transaction.</strong>",
+			"minPurchase": "Minimum purchase $1,500",
+			"validFrom": "August 1, 2023",
+			"validTo": "October 31, 2023",
+			"detailText": "Click for details",
+			"buttonTitle": "Apply Now",
+			"buttonHref": "https://finance.consumercreditapp.com/cc/landing/cub_cadet"
+		}
+	],
+	"lineup": [
+		{
+			"title": "Zero Turn Mowers",
+			"p": "Our riding lawn mowers are designed to give you unmatched strength and durability, and they’re packed with performance features you’ll appreciate. Financing available.",
+			"img": {
+				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v9e835077e52279a69a54b4c30b00cf9f3c2d0358/ultima/product-ZT.jpg?version=1,639,577,706,000"
+			},
+			"button": {
+				"title": "Shop Zero-Turns",
+				"href": "/lawn-mowers/riding-lawn-mowers/zero-turn-mowers"
+			}
+		},
+		{
+			"title": "Lawn & Garden Tractors",
+			"p": "Built in America since ‘61 and backed by the industry’s strongest warranty, Cub Cadet® lawn and garden tractors all come standard with the strongest cutting systems for mowing performance, refined ergonomics designed around you and an array of attachments and accessories for year-round versatility and utility.",
+			"img": {
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw8f055b11/products/Equipment/Cub-Cadet_XT1LT46_New_2000x2000_8.jpg?sw=1000&sh=1000&sm=fit"
+			},
+			"button": {
+				"title": "Shop Ultima Series™ Zero-Turns",
+				"href": "#top"
+			}
+		},
+		{
+			"title": "Snow Blowers",
+			"p": "Cub Cadet Snow Blowers are available in 1X, 2X or 3X Series. Find a powerful Snow Thrower to quickly and easily clear snow with incredible control.",
+			"img": {
+				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dw35b23dc7/menu-card-images/Home_CC_Snow_3X-30-ProH_desktop_435x240_v1.png"
+			},
+			"button": {
+				"title": "Shop Snow Blowers",
+				"href": "#top"
+			}
+		},
+		{
+			"title": "Walk-Behind Mowers",
+			"p": "With rugged durability, Cub Cadet Walk-Behind Mowers deliver flawless performance and incredible control with unmatched efficiency and comfort.",
+			"img": {
+				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dwb9318559/menu-card-images/Cub-Cadet-SC300HW_NavCard.png"
+			},
+			"button": {
+				"title": "Shop Walk-Behind Mowers",
+				"href": "#top"
+			}
+		},
+		{
+			"title": "Yard Equipment",
+			"p": "Browse a great selection of lawn equipment including pressure washers, string trimmers, garden tillers and more!",
+			"img": {
+				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dw129da566/menu-card-images/Cub-Cadet-CB2800_NavCard.png"
+			},
+			"button": {
+				"title": "Shop Yard Equipment",
+				"href": "#top"
+			}
+		},
+		{
+			"title": "Leaf Blowers",
+			"p": "Cub Cadet Leaf Blowers make yard cleanup easy! Blow grass clippings off walkways and drives, or quickly clear away leaves in the fall.",
+			"img": {
+				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dw1abe9b0b/menu-card-images/Cub-Cadet-BV428_NavCard.png"
+			},
+			"button": {
+				"title": "Shop Leaf Blowers",
+				"href": "#top"
+			}
+		},
+		{
+			"title": "Chipper Shredders & Vacs",
+			"p": "Cub Cadet's Chipper Shredders feature durable steel chutes and powerful engines that chip branches up to 2\" in diameter and shreds leaves. Learn more here!",
+			"img": {
+				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dw510a063b/menu-card-images/Cub-Cadet-CSV070_NavCard.png"
+			},
+			"button": {
+				"title": "Shop Chipper Shredders & Vacs",
+				"href": "#top"
+			}
+		},
+		{
+			"title": "Edgers & Trenchers",
+			"p": "Edgers create a defined edge in your yard along driveways, walkways, and flower beds that deliver the precise look you're after. Learn more today!",
+			"img": {
+				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dwa5f1b9dc/menu-card-images/Cub-Cadet_LE100_NavCard.png"
+			},
+			"button": {
+				"title": "Shop Edgers & Trenchers",
+				"href": "#top"
+			}
+		},
+		{
+			"title": "Log Splitters",
+			"p": "Cub Cadet Log Splitters feature a precision-made beam, rugged cast-iron wedge and robust cast-steel foot plate that ensure years of operation. Learn more here!",
+			"img": {
+				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dw5d54157c/menu-card-images/Cub-Cadet-LS33CCHP_NavCard.png"
+			},
+			"button": {
+				"title": "Shop Log Splitters",
+				"href": "#top"
+			}
+		},
+		{
+			"title": "Trimmers",
+			"p": "Trim near sidewalks, driveways and landscaping to give your lawn the perfect finishing touch. Shop Cub Cadet for String Trimmers and attachments.",
+			"img": {
+				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dw6adf0d2b/menu-card-images/Cub-Cadet-BC280_NavCard.png"
+			},
+			"button": {
+				"title": "Shop Trimmers",
+				"href": "#top"
+			}
+		},
+		{
+			"title": "Pressure Washers",
+			"p": "Prepping your home for a new coat of paint or cleaning your patio has never been faster or easier with a Cub Cadet Pressure Washer. Blast through the dirt!",
+			"img": {
+				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dwe4183271/menu-card-images/Cub-Cadet-CC3024H_NavCard.png"
+			},
+			"button": {
+				"title": "Shop Pressure Washers",
+				"href": "#top"
+			}
+		},
+		{
+			"title": "Commercial Equipment",
+			"p": "Cub Cadet's commercial lawn equipment is designed with professionals in mind and sets new standards for performance, durability and comfort.",
+			"img": {
+				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dwe7bf9930/menu-card-images/Cub-Cadet-ProZ-LAP_NavCard.png"
+			},
+			"button": {
+				"title": "Shop Commercial Equipment",
+				"href": "#top"
+			}
+		},
+		{
+			"title": "UTV",
+			"p": "Cub Cadet Utility Vehicles offer powerful utility and extreme versatility with four-wheel drive performance and comfortable travel.",
+			"img": {
+				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dwf0e2109e/menu-card-images/Cub-Cadet-Challenger750_NavCard.png"
+			},
+			"button": {
+				"title": "Shop UTV",
+				"href": "#top"
+			}
+		}
+	],
 	"dealers": [
 		{
+			"img": {
+				"src": "https://lh3.googleusercontent.com/p/AF1QipMpUlj5krdDmhoMEFggUoEgZ-JCMQ81zUdhSwQ0=s680-w680-h510",
+				"style": { "minHeight": "280px" }
+			},
 			"name": "Worcester Sales and Service, Inc.",
 			"logo": "https://www.cubcadet.com/on/demandware.static/-/Sites/default/dw0e63aa38/images/stores/dealer-logos/WorcestersInc_BW.png",
 			"address": {
@@ -9,7 +330,6 @@
 				"state": "OH",
 				"zip": "44039"
 			},
-
 			"phone": "(440) 327-2196",
 			"url": "http://www.worcesters.com",
 			"icons": [true, true, true, true, true],
@@ -21,6 +341,10 @@
 			}
 		},
 		{
+			"img": {
+				"src": "https://lh3.googleusercontent.com/p/AF1QipNgLaVYlMQO-J4EIb80kpaMranLvrZI6tm11mG3=s680-w680-h510",
+				"style": { "minHeight": "280px" }
+			},
 			"name": "State Sharpening Mower & Tractor Repair, Inc.",
 			"logo": "https://www.cubcadet.com/on/demandware.static/-/Sites/default/dw882bb4c7/images/stores/dealer-logos/State_Sharpening_Logo.png",
 			"address": {

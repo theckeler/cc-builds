@@ -1,7 +1,6 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
-// import extraCSS from "./css/main.css";
 import mainJSON from "./data/main.json";
 
 import ToggleTab from "@/components/ToggleTab";
@@ -13,6 +12,12 @@ import Social from "@/components/Social";
 import DealerInfo from "./components/DealerInfo";
 import Menu from "./components/Menu";
 import Faqs from "@/components/Faqs";
+import ProductCard from "@/components/Product/Card";
+import FinancingCard from "./components/FinancingCard";
+
+import TitleFlexGridViews from "@/components/FlexGridViews/TitleFlexGridViews";
+import BookService from "./components/BookService";
+import ImageBlock from "./components/Image";
 
 export default function DealerMiniSite() {
 	let dealer = mainJSON.dealers;
@@ -31,54 +36,91 @@ export default function DealerMiniSite() {
 			<div className="list-unstyled mtd-page py-2 mx-0 mx-lg-auto py-xl-5 container px-0 d-flex flex-column flex-column-reverse flex-xl-row">
 				<StickyMenu dealer={dealer[currentDealer]} />
 
-				<div
-					className="col-12 col-xl-8 px-0 px-xl-2 pt-xl-2 align-self-start"
-					style={{ minHeight: "1000vh" }}>
-					<ul className="list-unstyled d-flex flex-column-reverse flex-lg-row border">
+				<div className="col-12 col-xl-8 px-0 px-xl-2 pt-xl-2 align-self-start">
+					{dealer[currentDealer].img && (
+						<ImageBlock
+							src={dealer[currentDealer].img.src}
+							style={dealer[currentDealer].img.style}
+						/>
+					)}
+
+					<ul className="list-unstyled d-flex flex-column-reverse flex-lg-row mb-0">
 						<li className="col-12 col-lg-6 px-0">
 							<DealerInfo dealer={dealer[currentDealer]} />
 						</li>
 						<li className="col-12 col-lg-6 px-0">
-							<div
-								className="position-relative"
-								style={{
-									height: "400px",
-									overflow: "hidden",
-								}}>
-								<img
-									src="https://www.cubcadet.com/on/demandware.static/-/Sites/default/dw14470f46/images/stores/heros/store-hero-default.png"
-									style={{
-										height: "100%",
-										width: "100%",
-										objectFit: "cover",
-										objectPosition: "center",
-									}}
-									alt=""
-								/>
-							</div>
+							<ImageBlock src="https://www.cubcadet.com/on/demandware.static/-/Sites/default/dw14470f46/images/stores/heros/store-hero-default.png" />
 						</li>
 					</ul>
 
 					<ToggleTab
+						className="border border-top-0 p-2"
+						style={{ backgroundColor: "#ebebeb" }}
+						id="book-service"
+						title="Book Service"
+						Component={BookService}
+					/>
+
+					<ToggleTab
 						className="mt-2 border p-2"
-						component={<div>{dealer[currentDealer].name}</div>}
+						style={{ backgroundColor: "#ffc20f" }}
+						id="snow-days"
+						title="Snow Days"
+						Component={<div>Snow Days</div>}
+					/>
+
+					<TitleFlexGridViews
 						id="lineup"
+						className="mt-2 p-2"
+						style={{ backgroundColor: "#ebebeb" }}
+						jsonData={mainJSON.lineup}
 						title={`${dealer[currentDealer].name}'s Product Lineup`}
+						Component={ProductCard}
 					/>
 
-					<ToggleTab
-						className="mt-2 border p-2"
-						component={<div>Promos</div>}
+					<TitleFlexGridViews
+						className="mt-2 p-2"
+						style={{ backgroundColor: "#ebebeb" }}
+						id="parts-accessories"
+						jsonData={mainJSON.accessories}
+						title="Parts & Accessories"
+						Component={ProductCard}
+					/>
+
+					<TitleFlexGridViews
 						id="promotions"
-						title="Promotions"
+						className="mt-2 p-2"
+						style={{ backgroundColor: "#ebebeb" }}
+						jsonData={mainJSON.promotions}
+						title={`${dealer[currentDealer].name}'s Promotions`}
+						Component={ProductCard}
+					/>
+
+					<TitleFlexGridViews
+						id="financing"
+						className="mt-2 p-2"
+						style={{ backgroundColor: "#ebebeb" }}
+						jsonData={mainJSON.financing}
+						title="Financing"
+						Component={FinancingCard}
 					/>
 
 					<ToggleTab
 						className="mt-2 border p-2"
-						component={
-							<div className="">
+						Component={
+							<div>
+								<p className="mt-1">
+									Worcester's is a family owned operation in business since
+									1926. We started as a poultry hatchery, expanded into pet
+									feeds and animal supplies, then added lawn and landscape power
+									equipment in 1950. We specialize in top quality products and
+									back them with parts and service. We are a patriotic company
+									and believe America is the best place to live, work and run a
+									business.
+								</p>
 								<Phone />
 								<Website
+									className="mb-2"
 									style={{
 										fontSize: "22px",
 										fontWeight: "bold",
@@ -90,12 +132,50 @@ export default function DealerMiniSite() {
 							</div>
 						}
 						id="contact"
-						title="Contact"
+						title={dealer[currentDealer].name}
 					/>
 
 					<ToggleTab
 						className="mt-2 border p-2"
-						component={<Faqs faqs={mainJSON.faqs} />}
+						Component={
+							<div className="mt-2">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+									sit amet mauris feugiat, pellentesque mi id, iaculis diam.
+									Donec fermentum suscipit turpis ac luctus. Nam ut nisl
+									egestas, fringilla turpis non, tristique odio. Proin vehicula
+									ac orci nec porta. Donec sed dui eu ligula porttitor semper.
+									Praesent imperdiet est vel auctor vulputate. Proin dignissim
+									quam sed ante gravida, a elementum tellus viverra. Donec risus
+									nisi, accumsan id ultrices id, aliquam at nunc. Sed interdum
+									vestibulum magna, sit amet viverra lacus ultricies malesuada.
+								</p>
+								<p>
+									Donec ut gravida ex, ac laoreet orci. Integer blandit ligula
+									at justo fermentum, eu egestas dolor pulvinar. Vestibulum non
+									metus massa. Cras tellus nunc, posuere in nisi sit amet,
+									eleifend euismod ante. Fusce tincidunt lorem a lacus
+									pellentesque, quis vehicula ex efficitur. Sed nec elit eget
+									ipsum facilisis fermentum. Maecenas nibh libero, condimentum
+									ac placerat at, consectetur at turpis. Pellentesque habitant
+									morbi tristique senectus et netus et malesuada fames ac turpis
+									egestas. Cras consectetur nisi arcu, quis hendrerit risus
+									molestie a. Aliquam facilisis orci sed nunc euismod, eu
+									elementum odio rhoncus. Curabitur pellentesque porttitor urna
+									sit amet venenatis. Proin imperdiet sagittis erat non
+									accumsan. Ut pellentesque mi in porta consequat. Aliquam nibh
+									lorem, pulvinar id ultricies nec, lobortis vitae purus.
+									Pellentesque rhoncus congue arcu ut lacinia.
+								</p>
+							</div>
+						}
+						id="why"
+						title="Why buy from a dealer?"
+					/>
+
+					<ToggleTab
+						className="mt-2 border p-2"
+						Component={<Faqs faqs={mainJSON.faqs} />}
 						id="faqs"
 						title="FAQs"
 					/>

@@ -4,7 +4,7 @@ export default function ReturningCustomer() {
 			className="list-unstyled d-flex align-items-center px-3 py-2 border-top"
 			style={{ background: "#efefef" }}>
 			<ul className="list-unstyled  w-100">
-				<li className="">For Existing Cub Cadet Credit Card Account Holders</li>
+				<li>For Existing Cub Cadet Credit Card Account Holders</li>
 				<li
 					className="form-group financing-customer-links
               required

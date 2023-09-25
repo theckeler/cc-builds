@@ -10,7 +10,7 @@ const DealerLocation = () => {
 			<h2 className="page-title h2 text-center">
 				Find A Cub Cadet Service Location
 			</h2>
-			<div className="">
+			<div>
 				<div className="content-asset text-center">
 					<p>
 						<span className="font-weight-bold d-block">

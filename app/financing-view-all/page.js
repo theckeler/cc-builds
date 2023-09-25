@@ -8,7 +8,7 @@ const Financing = () => {
 		"ml-auto btn bg-secondary d-flex align-items-center justify-content-center p-1 ";
 
 	return (
-		<div className="">
+		<div>
 			<section
 				className="p-2 px-lg-3 py-lg-5"
 				style={{ backgroundColor: "#e2e2e2" }}>
@@ -46,7 +46,7 @@ const Financing = () => {
 				</ul>
 			</section>
 
-			<section className="">
+			<section>
 				<div className="bg-secondary p-2 p-lg-4">
 					<h2 className="text-uppercase text-center">Online Financing</h2>
 				</div>

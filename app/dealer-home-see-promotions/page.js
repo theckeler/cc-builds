@@ -28,7 +28,7 @@ export default function DealerHomePromos() {
 											__html: block.title,
 										}}
 									/>
-									<li className="">
+									<li>
 										<ul className="mx-auto" style={{ fontSize: "1.1rem" }}>
 											{block.list.map((item, i) => {
 												return (

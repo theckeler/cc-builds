@@ -1,17 +1,22 @@
 "use client";
 
-export default function Hours({ className, style, component, id, title }) {
+export default function Hours({ className, style, Component, id, title }) {
 	const hoursCSS = "row col-6";
 
 	return (
-		<div className={className} style={style}>
+		<div
+			className={className}
+			style={{ ...style, scrollMarginTop: "16px" }}
+			id={id}>
 			<h3 className="position-relative flex mb-0">
 				<button
 					className="position-absolute w-100 h-100 d-block d-xl-none"
 					style={{ cursor: "pointer", opacity: 0 }}
 					aria-label={title}
 					onClick={() => {
-						document.querySelector("#" + id).classList.toggle("d-none");
+						document
+							.querySelector("#" + id + "-block")
+							.classList.toggle("d-none");
 					}}
 				/>
 				{title}
@@ -23,10 +28,9 @@ export default function Hours({ className, style, component, id, title }) {
 					<path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z" />
 				</svg>
 			</h3>
-			<div className="d-none d-xl-block" id={id}>
-				{component}
+			<div className="d-none d-xl-block" id={`${id}-block`}>
+				{typeof Component === "object" ? Component : <Component />}
 			</div>
-			{/* <hr className="border-top d-block d-xl-none" /> */}
 		</div>
 	);
 }

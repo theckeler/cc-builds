@@ -269,7 +269,7 @@ const Financing = () => {
 													//boxShadow: "0 0 10px rgba(0,0,0,0.3)",
 													maxHeight: "100vh",
 												}}>
-												<div className="">
+												<div>
 													<ul className="list-unstyled d-flex align-items-center mb-2">
 														<li className="display-4">Details:</li>
 														<li className="ml-auto">

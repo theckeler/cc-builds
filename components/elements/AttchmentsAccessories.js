@@ -5,7 +5,7 @@ const AttchmentsAccessories = ({ jsonData }) => {
 		<section>
 			<div className="wrapper">
 				<ul className="list-unstyled d-flex flex-column flex-md-row align-items-center px-3">
-					<li className="">
+					<li>
 						<h2 className="text-center">{jsonData.attAcc.h2}</h2>
 					</li>
 					<li className="ml-2">

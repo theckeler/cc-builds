@@ -1,21 +1,18 @@
 "use client";
 
 export default function TitleFlexGridViewsButtons({
-	className = null,
 	setWhichView,
+	setView,
 	buttons,
 }) {
 	const resetBG = (e) => {
 		e.currentTarget.parentElement.parentElement
 			.querySelectorAll(".reset-views")
 			.forEach((e) => {
-				e.classList.remove("bg-amber-400");
-				e.classList.add("bg-gray-200");
+				e.classList.remove("bg-secondary");
 			});
-		e.currentTarget
-			.querySelector(".reset-views")
-			.classList.remove("bg-gray-200");
-		e.currentTarget.querySelector(".reset-views").classList.add("bg-amber-400");
+
+		e.currentTarget.classList.add("bg-secondary");
 	};
 
 	return (
@@ -23,10 +20,12 @@ export default function TitleFlexGridViewsButtons({
 			{buttons.map(function (block, i) {
 				return (
 					<button
-						className={`"w-12 p-1  "${block.className}`}
+						className={`reset-views p-1 rounded-circle ml-1 ${block.className}`}
+						style={{ backgroundColor: "#d4d4d4", border: 0, cursor: "pointer" }}
 						onClick={(e) => {
 							resetBG(e);
-							setWhichView(block.whatView);
+							setView(block.whatView);
+							//setWhichView(block.whatView);
 						}}
 						key={i}
 						aria-label={`View ${block.whatView}`}>

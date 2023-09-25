@@ -199,7 +199,7 @@ const XTEnduroSeriesHome = () => {
 			</div>
 
 			{/* Footer */}
-			<div className="">
+			<div>
 				<HowToMaintence {...{ jsonData }} />
 				<Articles {...{ jsonData }} />
 			</div>

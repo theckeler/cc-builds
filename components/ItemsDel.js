@@ -1,7 +1,7 @@
 export default function ItemsDel() {
 	return (
 		<div>
-			<h6 className="">Items for Delivery</h6>
+			<h6>Items for Delivery</h6>
 			<ul className="list-unstyled">
 				<li>Blade Spindle Assembly</li>
 				<li>
@@ -15,12 +15,12 @@ export default function ItemsDel() {
 				<li>
 					<ul>
 						<li className="list-unstyled">
-							<div className="">Qty</div>
-							<div className="">$113.19</div>
+							<div>Qty</div>
+							<div>$113.19</div>
 						</li>
-						<li className="">
-							<div className="">1</div>
-							<div className="">Total:</div>
+						<li>
+							<div>1</div>
+							<div>Total:</div>
 						</li>
 					</ul>
 				</li>

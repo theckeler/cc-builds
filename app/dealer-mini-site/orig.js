@@ -140,7 +140,7 @@ export default function DealerMiniSiteOrig() {
 										White Background
 									</button>
 									{white && (
-										<div className="">
+										<div>
 											<span className="mr-1">White %:</span>
 											<input
 												type="number"
@@ -156,7 +156,7 @@ export default function DealerMiniSiteOrig() {
 											/>
 										</div>
 									)}
-									<div className="">
+									<div>
 										<span className="mr-1">Top:</span>
 										<input
 											type="number"
@@ -170,7 +170,7 @@ export default function DealerMiniSiteOrig() {
 											}}
 										/>
 									</div>
-									<div className="">
+									<div>
 										<span className="mr-1">Left:</span>
 										<input
 											type="number"
@@ -190,7 +190,7 @@ export default function DealerMiniSiteOrig() {
 					<div className="mt-1 border-top border-bottom p-1 mb-1">
 						IMG Options
 					</div>
-					<div className="">
+					<div>
 						<span className="mr-1">Logo Size:</span>
 						<input
 							type="number"

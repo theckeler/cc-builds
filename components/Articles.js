@@ -4,7 +4,7 @@ const Articles = ({ articles, className, numRows }) => {
 		<section className={className}>
 			<div className="wrapper">
 				<ul className="list-unstyled d-flex flex-column flex-md-row align-items-center px-3">
-					<li className="">
+					<li>
 						<h2 className="text-center">
 							{typeof articles.h2 !== undefined && articles.h2}
 						</h2>

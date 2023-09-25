@@ -1167,7 +1167,7 @@ export default function SnowV2({}) {
 
 			<div className="snow-v2 snow-v2-index container">
 				{/* <HowToMaintence {...{ jsonData }} /> */}
-				<Articles articles={jsonData.articles} numRows={4} className="" />
+				<Articles articles={jsonData.articles} numRows={4} />
 				<AttchmentsAccessories {...{ jsonData }} />
 				<RelatedLinks
 					relatedCats={jsonData.relatedCats}

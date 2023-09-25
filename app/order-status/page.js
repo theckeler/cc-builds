@@ -29,16 +29,12 @@ export default function OrderStatus() {
 						</li>
 					</ul>
 
-					<div className="">
-						An email confirmation was sent to bethlucke@gmail.com
-					</div>
+					<div>An email confirmation was sent to bethlucke@gmail.com</div>
 
 					<h4>Factory Delivery</h4>
-					<p className="">
-						Addresses &amp; shipping methods are listed under your items.
-					</p>
+					<p>Addresses &amp; shipping methods are listed under your items.</p>
 
-					<h4 className="">Billing &amp; Payment</h4>
+					<h4>Billing &amp; Payment</h4>
 
 					<OrderInfo />
 

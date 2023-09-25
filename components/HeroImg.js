@@ -1,6 +1,6 @@
 const HeroImg = ({ hero, minHeightStyle = "", className = "", addCSS }) => {
 	return (
-		<picture className="">
+		<picture>
 			{hero.srcset.map((block, i) => {
 				return (
 					<source

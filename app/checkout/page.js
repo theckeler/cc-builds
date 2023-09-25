@@ -241,7 +241,7 @@ const CheckoutIndex = () => {
 														<hr className="d-none d-sm-block" />
 													</div>
 													<fieldset className="shipment-selector-block d-none ">
-														<div className="">
+														<div>
 															<label
 																className="form-control-label"
 																htmlFor="shipmentSelector-8ec23c276a79b3d95fa355804e">
@@ -992,7 +992,7 @@ The billing phone number must match the telephone number on your credit card acc
 													<fieldset className="gift-message-block d-none">
 														<div className="row">
 															<div className="col-12">
-																<div className="">
+																<div>
 																	<div className="custom-control custom-checkbox">
 																		<input
 																			className="custom-control-input gift"
@@ -1012,7 +1012,7 @@ The billing phone number must match the telephone number on your credit card acc
 														</div>
 														<div className="row gift-message d-none">
 															<div className="col-12">
-																<div className="">
+																<div>
 																	<label htmlFor="giftMessage">Message</label>
 																	<textarea
 																		className="form-control gift-message-729ae00bf9f094c0de351ea47f"
@@ -1303,7 +1303,7 @@ The billing phone number must match the telephone number on your credit card acc
 													<hr className="d-none d-sm-block" />
 												</div>
 												<fieldset className="shipment-selector-block  ">
-													<div className="">
+													<div>
 														<label
 															className="form-control-label"
 															htmlFor="shipmentSelector-e09fc15c4d04d6cb23ee27af1f">
@@ -2218,7 +2218,7 @@ The billing phone number must match the telephone number on your credit card acc
 												<fieldset className="gift-message-block d-none">
 													<div className="row">
 														<div className="col-12">
-															<div className="">
+															<div>
 																<div className="custom-control custom-checkbox">
 																	<input
 																		className="custom-control-input gift"
@@ -2237,7 +2237,7 @@ The billing phone number must match the telephone number on your credit card acc
 													</div>
 													<div className="row gift-message d-none">
 														<div className="col-12">
-															<div className="">
+															<div>
 																<label htmlFor="giftMessage">Message</label>
 																<textarea
 																	className="form-control gift-message-729ae00bf9f094c0de351ea47f"
@@ -2440,7 +2440,7 @@ The billing phone number must match the telephone number on your credit card acc
 										<legend>
 											<h6>Billing Address</h6>
 										</legend>
-										<div className="">
+										<div>
 											<label
 												className="form-control-label d-none d-none-shipment"
 												htmlFor="addressSelector">
@@ -2468,9 +2468,7 @@ The billing phone number must match the telephone number on your credit card acc
 														data-gift-message="">
 														New Address
 													</option>
-													<option className="" disabled="">
-														- Existing Shipments -
-													</option>
+													<option disabled="">- Existing Shipments -</option>
 													<option
 														className=""
 														value="729ae00bf9f094c0de351ea47f"

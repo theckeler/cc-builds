@@ -3,7 +3,7 @@ const HowTos = () => {
 		<section className="pt-6">
 			<div className="wrapper">
 				<ul className="list-unstyled d-flex flex-column flex-md-row align-items-center px-3">
-					<li className="">
+					<li>
 						<h2 className="text-center">How To’s &amp; Maintenance</h2>
 					</li>
 					<li className="ml-2">

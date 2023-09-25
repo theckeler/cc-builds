@@ -17,6 +17,10 @@ module.exports = {
 				protocol: "https",
 				hostname: "*.cubcadet.com",
 			},
+			{
+				protocol: "https",
+				hostname: "*.googleusercontent.com",
+			},
 		],
 	},
 };

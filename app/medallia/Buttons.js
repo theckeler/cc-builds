@@ -73,8 +73,8 @@ export default function Buttons() {
 									className="p-1 bg-secondary border-0"
 									style={{ cursor: "pointer" }}>
 									<ul className="list-unstyled d-flex align-items-center">
-										<li className="" style={{ width: "2em" }}>
-											<e.icon className="" style={{ height: "20px" }} />
+										<li style={{ width: "2em" }}>
+											<e.icon style={{ height: "20px" }} />
 										</li>
 										<li className="text-nowrap">{e.title}</li>
 									</ul>

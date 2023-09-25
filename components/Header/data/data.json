@@ -89,16 +89,28 @@
 		]
 	},
 	{
-		"title": "COMMERCIAL EQUIPMENT"
-	},
-	{
-		"title": "UTV",
+		"title": "COMMERCIAL EQUIPMENT",
 		"subNav": [
 			{
-				"title": "CHALLENGER 400",
-				"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dwf0e2109e/menu-card-images/Cub-Cadet-Challenger750_NavCard.png"
+				"title": "Commercial Zero-Turn Mowers",
+				"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dw5439428a/menu-card-images/Cub-Cadet_ProZ_972L_200x200.jpg"
+			},
+			{
+				"title": "Stand-On Mowers",
+				"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dwf225b99e/menu-card-images/ProX654_Nav_200x200.jpg"
+			},
+			{
+				"title": "Hydro Walk-Behind Mowers",
+				"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dwd98f0b3d/menu-card-images/Cub-Cadet-ProHW354_NavCard.png"
+			},
+			{
+				"title": "SurePath Commercial Zero-Turn Mowers",
+				"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dwb5a52365/menu-card-images/53RIHMAY050_ProZ972SSurepath_RT-200x200.jpg"
 			}
 		]
+	},
+	{
+		"title": "UTV"
 	},
 	{
 		"title": "SERVICE & PARTS",
@@ -130,7 +142,7 @@
 		]
 	},
 	{
-		"title": "ATTACHMENTS",
+		"title": "ATTACHMENTS & ACCESSORIES",
 		"subNav": [
 			{
 				"title": "ZERO TURN ACCESSORIES",

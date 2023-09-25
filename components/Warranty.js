@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Warranty = () => {
 	return (
-		<div className="">
+		<div>
 			<div className="position-relative">
 				<div className="container d-flex justify-content-center">
 					<div

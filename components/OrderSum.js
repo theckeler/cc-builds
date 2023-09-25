@@ -1,26 +1,26 @@
 export default function OrderSum() {
 	return (
-		<div className="">
+		<div>
 			<h6>Order Summary</h6>
 
 			<ul className="list-unstyled">
-				<li className="">Subtotal</li>
-				<li className="">$113.19</li>
+				<li>Subtotal</li>
+				<li>$113.19</li>
 
-				<li className="">Order Discount</li>
-				<li className="">-$0.00</li>
+				<li>Order Discount</li>
+				<li>-$0.00</li>
 
-				<li className="">Delivery Charge</li>
-				<li className="">$0.00</li>
+				<li>Delivery Charge</li>
+				<li>$0.00</li>
 
-				<li className="">Delivery Discount</li>
-				<li className="">-0.0</li>
+				<li>Delivery Discount</li>
+				<li>-0.0</li>
 
-				<li className="">Sales Tax</li>
-				<li className="">$7.07</li>
+				<li>Sales Tax</li>
+				<li>$7.07</li>
 
-				<li className="">Order Total</li>
-				<li className="">$120.26</li>
+				<li>Order Total</li>
+				<li>$120.26</li>
 				<li>
 					<a
 						href="/en_US/home"

@@ -35,10 +35,11 @@ export default function StickyMenu({ dealer }) {
 			icon: <SupportIcon style={icon.style} className={icon.class} />,
 			title: "Support",
 		},
-		// {
-		// 	icon: <DirectionsIcon style={icon.style} className={icon.class} />,
-		// 	title: "Directions",
-		// },
+		{
+			icon: <DirectionsIcon style={icon.style} className={icon.class} />,
+			title: "Directions",
+			className: "d-xl-none",
+		},
 		{
 			icon: <ClockIcon style={icon.style} className={icon.class} />,
 			title: "Hours",
@@ -49,16 +50,24 @@ export default function StickyMenu({ dealer }) {
 		},
 	];
 
+	const navButtons = [
+		{ title: "Book Service", id: "book-service" },
+		{ title: "Lineup", id: "lineup" },
+		{ title: "Parts & Accessories", id: "parts-accessories" },
+		{ title: "Promotions", id: "promotions" },
+		{ title: "Financing", id: "financing" },
+		{ title: "Contact", id: "contact" },
+		{ title: "Faqs", id: "faqs" },
+	];
+
 	return (
 		<div
-			className="align-self-start col-12 px-0 col-xl-4 list-unstyled w-100 flex flex-xl-column pt-xl-2"
+			className="align-self-start col-12 px-0 col-xl-4 list-unstyled w-100 flex flex-xl-column pt-xl-2 bg-white"
 			style={{
 				position: "sticky",
 				bottom: 0,
 				top: 0,
 				zIndex: 1001,
-				// maxHeight: "50vh",
-				// minHeight: "50vh",
 			}}>
 			<div className="p-1 border">
 				<h1
@@ -66,9 +75,11 @@ export default function StickyMenu({ dealer }) {
 					style={{ fontSize: "22px", lineHeight: 1 }}>
 					{dealer.name}
 				</h1>
-				<Stars stars={dealer.stars} />
 
-				<ul className="p-1 mt-2 mx-auto mb-0 list-unstyled d-flex">
+				<ul className="p-1 mt-2 mx-auto mb-0 list-unstyled d-none d-xl-block">
+					<li>
+						<Stars stars={dealer.stars} />
+					</li>
 					<li>
 						<Address address={dealer.address} />
 						<Phone />
@@ -87,12 +98,41 @@ export default function StickyMenu({ dealer }) {
 			</div>
 
 			<ul
+				className="list-unstyled border border-top-0 mb-0"
+				style={{ backgroundColor: "#efefef", gap: "0.5em" }}>
+				<li className="border-bottom">
+					<button
+						className="w-100 d-block border-0 text-left p-2 font-weight-bold"
+						style={{ cursor: "pointer" }}
+						onClick={(e) => {}}>
+						Menu
+					</button>
+				</li>
+				{navButtons.map((block, i) => (
+					<li
+						className={`border-bottom d-none d-xl-block ${block.className}`}
+						key={i}>
+						<button
+							className="w-100 d-block border-0 text-left p-2 font-weight-bold"
+							style={{ cursor: "pointer" }}
+							onClick={(e) => {
+								document
+									.querySelector(`#${block.id}`)
+									.scrollIntoView({ behavior: "smooth" });
+							}}>
+							{block.title}
+						</button>
+					</li>
+				))}
+			</ul>
+
+			<ul
 				className="flex list-unstyled border-bottom border-right border-left mb-0"
 				style={{ backgroundColor: "#efefef" }}>
 				{icons.map(
 					(block, i) =>
 						dealer.icons[i] === true && (
-							<li className="d-block" key={i}>
+							<li className={`d-block ${block.className}`} key={i}>
 								<IconBlock block={block} />
 							</li>
 						)

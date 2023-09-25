@@ -6,12 +6,12 @@ export default function OrderInfo() {
 				<div>D0409138P1</div>
 			</li>
 			<li className="row mx-0">
-				<div className="">Order Date:</div>
-				<div className="">07/08/2023</div>
+				<div>Order Date:</div>
+				<div>07/08/2023</div>
 			</li>
 			<li className="row mx-0">
-				<div className="">Order Status:</div>
-				<div className=""> SHIPPED</div>
+				<div>Order Status:</div>
+				<div> SHIPPED</div>
 			</li>
 		</ul>
 	);

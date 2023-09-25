@@ -164,13 +164,13 @@ const Dynosite = () => {
 			{/* <section className={`mt-2 ${containerCSS}`}>
 				<ul className="list-unstyled flex flex-column-reverse flex-lg-row flex-wrap">
 					<li className="col-12 col-lg-9">
-						<ul className="" style={{ fontSize: "0.9em", lineHeight: "1.8" }}>
-							<li className="">
+						<ul style={{ fontSize: "0.9em", lineHeight: "1.8" }}>
+							<li>
 								The Cub Cadet XT1 ST54 FAB is powered by a 24 hp KOHLER 7000
 								Series twin cylinder engine.
 							</li>
 
-							<li className="">
+							<li>
 								54-inch fabricated, 11-gauge, triple-blade deck with
 								AeroForce(TM) deck design that optimizes airflow and maximizes
 								suction to reduce clumping during discharge and improves bagging
@@ -178,18 +178,18 @@ const Dynosite = () => {
 								Cut™.
 							</li>
 
-							<li className="">
+							<li>
 								Optimized steering system for responsive handling gives a
 								16-inch turn radius a zero-turn feel.
 							</li>
 
-							<li className="">
+							<li>
 								3-year/no hour limit warranty (includes powertrain) and 5-year
 								chassis and front axle unlimited hours/limited lifetime
 								fabricated deck shell.
 							</li>
 
-							<li className="">
+							<li>
 								Ideal for mowing up 2-4 acres of mostly flat terrain and a few
 								obstacles.
 							</li>
@@ -210,7 +210,7 @@ const Dynosite = () => {
 			</section> */}
 
 			<a name="parts"></a>
-			<section className="" id="parts-listing">
+			<section id="parts-listing">
 				<div className={containerCSS}>
 					<PartsListing />
 				</div>
