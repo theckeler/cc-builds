@@ -1,8 +1,11 @@
-export default function IconBlock({ block }) {
+export default function IconBlock({ block, className, style }) {
 	return (
-		<a href="#" className="d-block text-center p-1">
+		<a
+			href="#"
+			className={`d-block text-center p-1 ${className}`}
+			style={style}>
 			{block.icon}
-			<span>{block.title}</span>
+			<span className="ml-1">{block.title}</span>
 		</a>
 	);
 }

@@ -17,11 +17,13 @@ import FinancingCard from "./components/FinancingCard";
 
 import TitleFlexGridViews from "@/components/FlexGridViews/TitleFlexGridViews";
 import BookService from "./components/BookService";
-import ImageBlock from "./components/Image";
+import IconCubDays from "@/images/IconCubDays.js";
 
 export default function DealerMiniSite() {
 	let dealer = mainJSON.dealers;
 	const [currentDealer, setCurrentDealer] = useState(0);
+
+	const tabSpacing = "mt-0 mt-xl-2";
 
 	return (
 		<>
@@ -37,76 +39,70 @@ export default function DealerMiniSite() {
 				<StickyMenu dealer={dealer[currentDealer]} />
 
 				<div className="col-12 col-xl-8 px-0 px-xl-2 pt-xl-2 align-self-start">
-					{dealer[currentDealer].img && (
+					{/* {dealer[currentDealer].img && (
 						<ImageBlock
 							src={dealer[currentDealer].img.src}
 							style={dealer[currentDealer].img.style}
 						/>
-					)}
-
-					<ul className="list-unstyled d-flex flex-column-reverse flex-lg-row mb-0">
-						<li className="col-12 col-lg-6 px-0">
-							<DealerInfo dealer={dealer[currentDealer]} />
-						</li>
-						<li className="col-12 col-lg-6 px-0">
-							<ImageBlock src="https://www.cubcadet.com/on/demandware.static/-/Sites/default/dw14470f46/images/stores/heros/store-hero-default.png" />
-						</li>
-					</ul>
+					)} */}
+					<DealerInfo dealer={dealer[currentDealer]} />
 
 					<ToggleTab
-						className="border border-top-0 p-2"
+						className={`border p-2 ${tabSpacing}`}
 						style={{ backgroundColor: "#ebebeb" }}
 						id="book-service"
 						title="Book Service"
 						Component={BookService}
 					/>
-
 					<ToggleTab
-						className="mt-2 border p-2"
-						style={{ backgroundColor: "#ffc20f" }}
-						id="snow-days"
-						title="Snow Days"
-						Component={<div>Snow Days</div>}
+						className={`mt-0 mt-xl-2 border p-2 ${tabSpacing}`}
+						//style={{ backgroundColor: "#000" }}
+						id="cub-days"
+						title="Cub Days"
+						Component={
+							<div>
+								<a href="#top">
+									<IconCubDays />
+								</a>
+							</div>
+						}
 					/>
-
 					<TitleFlexGridViews
 						id="lineup"
-						className="mt-2 p-2"
+						className={`p-2 ${tabSpacing}`}
 						style={{ backgroundColor: "#ebebeb" }}
 						jsonData={mainJSON.lineup}
-						title={`${dealer[currentDealer].name}'s Product Lineup`}
+						//title={`${dealer[currentDealer].name}'s Product Lineup`}
+						title={`Product Lineup`}
 						Component={ProductCard}
 					/>
-
 					<TitleFlexGridViews
-						className="mt-2 p-2"
+						className={`p-2 ${tabSpacing}`}
 						style={{ backgroundColor: "#ebebeb" }}
 						id="parts-accessories"
 						jsonData={mainJSON.accessories}
 						title="Parts & Accessories"
 						Component={ProductCard}
 					/>
-
 					<TitleFlexGridViews
 						id="promotions"
-						className="mt-2 p-2"
+						className={`p-2 ${tabSpacing}`}
 						style={{ backgroundColor: "#ebebeb" }}
 						jsonData={mainJSON.promotions}
-						title={`${dealer[currentDealer].name}'s Promotions`}
+						//title={`${dealer[currentDealer].name}'s Promotions`}
+						title={`Promotions`}
 						Component={ProductCard}
 					/>
-
 					<TitleFlexGridViews
 						id="financing"
-						className="mt-2 p-2"
+						className={`p-2 ${tabSpacing}`}
 						style={{ backgroundColor: "#ebebeb" }}
 						jsonData={mainJSON.financing}
 						title="Financing"
 						Component={FinancingCard}
 					/>
-
 					<ToggleTab
-						className="mt-2 border p-2"
+						className={`border p-2 ${tabSpacing}`}
 						Component={
 							<div>
 								<p className="mt-1">
@@ -134,9 +130,8 @@ export default function DealerMiniSite() {
 						id="contact"
 						title={dealer[currentDealer].name}
 					/>
-
 					<ToggleTab
-						className="mt-2 border p-2"
+						className={`border p-2 ${tabSpacing}`}
 						Component={
 							<div className="mt-2">
 								<p>
@@ -172,9 +167,8 @@ export default function DealerMiniSite() {
 						id="why"
 						title="Why buy from a dealer?"
 					/>
-
 					<ToggleTab
-						className="mt-2 border p-2"
+						className={`border p-2 ${tabSpacing}`}
 						Component={<Faqs faqs={mainJSON.faqs} />}
 						id="faqs"
 						title="FAQs"

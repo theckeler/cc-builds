@@ -4,13 +4,17 @@ export default function Image({ className, img }) {
 	const imgSizes = { xl: 1366, lg: 1025, md: 768, sm: 544, xs: 0 };
 
 	let jpgSrcSet = "";
-	for (const [key, val] of Object.entries(img.jpg)) {
-		jpgSrcSet += `${val} ${imgSizes[key]}w, `;
+	if (img?.jpg) {
+		for (const [key, val] of Object.entries(img.jpg)) {
+			jpgSrcSet += `${val} ${imgSizes[key]}w, `;
+		}
 	}
 
 	let webpSrcSet = "";
-	for (const [key, val] of Object.entries(img.webp)) {
-		webpSrcSet += `${val} ${imgSizes[key]}w, `;
+	if (img?.webp) {
+		for (const [key, val] of Object.entries(img.webp)) {
+			webpSrcSet += `${val} ${imgSizes[key]}w, `;
+		}
 	}
 
 	return (

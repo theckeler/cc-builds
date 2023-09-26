@@ -19,8 +19,8 @@ import IconBlock from "./IconBlock";
 export default function StickyMenu({ dealer }) {
 	const icon = {
 		style: {
-			width: "48px",
-			height: "48px",
+			width: "36px",
+			height: "36px",
 			backgroundColor: "#ffc20f",
 		},
 		class: "rounded-circle p-1",
@@ -69,18 +69,24 @@ export default function StickyMenu({ dealer }) {
 				top: 0,
 				zIndex: 1001,
 			}}>
-			<div className="p-1 border">
+			<div className="p-1 border" style={{ flex: "0 1 auto" }}>
 				<h1
 					className="text-center mt-1"
-					style={{ fontSize: "22px", lineHeight: 1 }}>
+					style={{
+						fontSize: "22px",
+						lineHeight: 1,
+						overflow: "hidden",
+						textOverflow: "ellipsis",
+						whiteSpace: "nowrap",
+					}}>
 					{dealer.name}
 				</h1>
 
-				<ul className="p-1 mt-2 mx-auto mb-0 list-unstyled d-none d-xl-block">
+				<ul className="mx-auto mb-0 list-unstyled d-none d-xl-block">
 					<li>
 						<Stars stars={dealer.stars} />
 					</li>
-					<li>
+					<li className="text-center mt-1">
 						<Address address={dealer.address} />
 						<Phone />
 					</li>
@@ -98,8 +104,8 @@ export default function StickyMenu({ dealer }) {
 			</div>
 
 			<ul
-				className="list-unstyled border border-top-0 mb-0"
-				style={{ backgroundColor: "#efefef", gap: "0.5em" }}>
+				className="list-unstyled border-left border-right mb-0"
+				style={{ flex: "1 1 auto", backgroundColor: "#efefef", gap: "0.5em" }}>
 				<li className="border-bottom">
 					<button
 						className="w-100 d-block border-0 text-left p-2 font-weight-bold"
@@ -128,7 +134,7 @@ export default function StickyMenu({ dealer }) {
 
 			<ul
 				className="flex list-unstyled border-bottom border-right border-left mb-0"
-				style={{ backgroundColor: "#efefef" }}>
+				style={{ flex: "1 1 auto", backgroundColor: "#efefef" }}>
 				{icons.map(
 					(block, i) =>
 						dealer.icons[i] === true && (

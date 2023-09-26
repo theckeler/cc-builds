@@ -1,42 +1,62 @@
 "use client";
 import Badges from "@/components/dealers/Badges";
+import Image from "next/image";
 
 export default function DealerInfo({ dealer }) {
-	//const hasBadges = typeof dealer.badges !== "undefined";
-	// const hasBadges = dealer.badges.map((x) => {
-	// 	x === true ? true : false;
-	// });
 	const hasBadges = dealer.badges.some((x) => x === true);
+	console.log(dealer.img);
 
 	return (
-		<ul className="list-unstyled d-flex align-items-center flex-lg-column h-100">
+		<ul className="list-unstyled mb-0">
 			<li
-				className="px-0 w-100 border"
-				style={{ height: hasBadges === true ? "60%" : "100%" }}>
-				<div
-					className="position-relative w-100 d-flex align-items-center"
+				className="px-0 position-relative overflow-hidden"
+				style={{
+					overflow: "hidden",
+					minHeight: "300px",
+				}}>
+				<Image
+					className="position-absolute w-100 h-100"
+					alt=""
+					src={
+						dealer.img?.src
+							? dealer.img.src
+							: "https://www.cubcadet.com/on/demandware.static/-/Sites/default/dw14470f46/images/stores/heros/store-hero-default.png"
+					}
+					fill
 					style={{
-						minHeight: "120px",
-						height: "100%",
-						overflow: "hidden",
-					}}>
-					<img
-						src={dealer.logo}
-						className="w-100 h-100 position-absolute p-4"
-						style={{
-							objectFit: "contain",
-						}}
-						alt=""
-					/>
-				</div>
+						objectFit: "cover",
+					}}
+				/>
 			</li>
-			{hasBadges === true && (
-				<li
-					className="px-0 border border-top-0 w-100"
-					style={{ height: "40%" }}>
-					<Badges badges={dealer.badges} />
-				</li>
-			)}
+			<li>
+				<ul className="w-100 list-unstyled mb-0 flex">
+					<li
+						className={`px-0 h-100 w-100 border flex position-relative ${
+							hasBadges === true && "col-6"
+						}`}
+						style={{
+							minHeight: "240px",
+						}}>
+						<img
+							src={dealer.logo}
+							className="w-100 h-100 position-absolute p-4"
+							style={{
+								objectFit: "contain",
+							}}
+							alt=""
+						/>
+					</li>
+					{hasBadges === true && (
+						<li
+							className="px-0 h-100 w-100 border flex col-6 align-items-center"
+							style={{
+								minHeight: "240px",
+							}}>
+							<Badges badges={dealer.badges} />
+						</li>
+					)}
+				</ul>
+			</li>
 		</ul>
 	);
 }

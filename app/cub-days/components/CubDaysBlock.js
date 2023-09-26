@@ -1,5 +1,5 @@
-import ButtonMain from "@/components/Buttons/Main.js";
-import IconCubDays from "./logo.js";
+import ButtonMain from "@/components/Buttons/Main";
+import IconCubDays from "@/images/IconCubDaysWinter";
 
 export default function CubDaysBlock({ className, style }) {
 	return (
