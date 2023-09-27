@@ -61,15 +61,15 @@ export default function StickyMenu({ dealer }) {
 	];
 
 	return (
-		<div
-			className="align-self-start col-12 px-0 col-xl-4 list-unstyled w-100 flex flex-xl-column pt-xl-2 bg-white"
+		<ul
+			className="align-self-start col-12 px-0 col-xl-4 list-unstyled w-100 flex flex-xl-column bg-white border border-bottom-0 border-left-0 border-right-0 border-xl-bottom-1"
 			style={{
 				position: "sticky",
 				bottom: 0,
 				top: 0,
 				zIndex: 1001,
 			}}>
-			<div className="p-1 border" style={{ flex: "0 1 auto" }}>
+			<li className="col-3 col-xl-12 p-1 pt-0" style={{ flex: "0 1 auto" }}>
 				<h1
 					className="text-center mt-1"
 					style={{
@@ -101,49 +101,60 @@ export default function StickyMenu({ dealer }) {
 						/>
 					</li>
 				</ul>
-			</div>
+			</li>
 
-			<ul
-				className="list-unstyled border-left border-right mb-0"
-				style={{ flex: "1 1 auto", backgroundColor: "#efefef", gap: "0.5em" }}>
-				<li className="border-bottom">
-					<button
-						className="w-100 d-block border-0 text-left p-2 font-weight-bold"
-						style={{ cursor: "pointer" }}
-						onClick={(e) => {}}>
-						Menu
-					</button>
-				</li>
-				{navButtons.map((block, i) => (
-					<li
-						className={`border-bottom d-none d-xl-block ${block.className}`}
-						key={i}>
+			<li
+				className=""
+				style={{
+					flex: "1 1 auto",
+					//backgroundColor: "#efefef",
+					gap: "0.5em",
+				}}>
+				<ul className="list-unstyled mb-0">
+					<li className="">
 						<button
 							className="w-100 d-block border-0 text-left p-2 font-weight-bold"
 							style={{ cursor: "pointer" }}
-							onClick={(e) => {
-								document
-									.querySelector(`#${block.id}`)
-									.scrollIntoView({ behavior: "smooth" });
-							}}>
-							{block.title}
+							onClick={(e) => {}}>
+							Menu
 						</button>
 					</li>
-				))}
-			</ul>
+					{navButtons.map((block, i) => (
+						<li
+							className={`border-bottom d-none d-xl-block ${block.className}`}
+							key={i}>
+							<button
+								className="w-100 d-block border-0 text-left p-2 font-weight-bold"
+								style={{ cursor: "pointer" }}
+								onClick={(e) => {
+									document
+										.querySelector(`#${block.id}`)
+										.scrollIntoView({ behavior: "smooth" });
+								}}>
+								{block.title}
+							</button>
+						</li>
+					))}
+				</ul>
+			</li>
 
-			<ul
-				className="flex list-unstyled border-bottom border-right border-left mb-0"
-				style={{ flex: "1 1 auto", backgroundColor: "#efefef" }}>
-				{icons.map(
-					(block, i) =>
-						dealer.icons[i] === true && (
-							<li className={`d-block ${block.className}`} key={i}>
-								<IconBlock block={block} />
-							</li>
-						)
-				)}
-			</ul>
-		</div>
+			<li className="">
+				<ul
+					className="flex list-unstyled mb-0"
+					style={{
+						flex: "1 1 auto",
+						//backgroundColor: "#efefef"
+					}}>
+					{icons.map(
+						(block, i) =>
+							dealer.icons[i] === true && (
+								<li className={`d-block ${block.className}`} key={i}>
+									<IconBlock block={block} />
+								</li>
+							)
+					)}
+				</ul>
+			</li>
+		</ul>
 	);
 }

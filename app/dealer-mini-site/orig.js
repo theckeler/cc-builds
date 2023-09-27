@@ -1,16 +1,21 @@
 "use client";
 import { useState, useEffect } from "react";
 
-import Logo1 from "../../components/dealers/logos/Logo1";
-import Logo2 from "../../components/dealers/logos/Logo2";
-import Logo3 from "../../components/dealers/logos/Logo3";
-import Logo4 from "../../components/dealers/logos/Logo4";
-import Logo5 from "../../components/dealers/logos/Logo5";
-import Logo6 from "../../components/dealers/logos/Logo6";
-import Logo7 from "../../components/dealers/logos/Logo7";
-import Logo8 from "../../components/dealers/logos/Logo8";
-import Logo9 from "../../components/dealers/logos/Logo9";
-import Logo10 from "../../components/dealers/logos/Logo10";
+import NowOffering1 from "./logos/NowOffering1";
+import NowOffering2 from "./logos/NowOffering2";
+import NowOffering3 from "./logos/NowOffering3";
+import NowOffering4 from "./logos/NowOffering4";
+import NowOffering5 from "./logos/NowOffering5";
+import NowOffering6 from "./logos/NowOffering6";
+import NowOffering7 from "./logos/NowOffering7";
+
+import SoldHere1 from "./logos/SoldHere1";
+import SoldHere2 from "./logos/SoldHere2";
+import SoldHere3 from "./logos/SoldHere3";
+import SoldHere4 from "./logos/SoldHere4";
+import SoldHere5 from "./logos/SoldHere5";
+import SoldHere6 from "./logos/SoldHere6";
+import SoldHere7 from "./logos/SoldHere7";
 
 export default function DealerMiniSiteOrig() {
 	const svgStyle = { width: "100%", minWidth: "100%" };
@@ -31,16 +36,21 @@ export default function DealerMiniSiteOrig() {
 	const [whitePercent, setWhitePercent] = useState(100);
 
 	const imgs = [
-		<Logo1 key={1} style={svgStyle} />,
-		<Logo2 key={2} style={svgStyle} />,
-		<Logo3 key={3} style={svgStyle} />,
-		<Logo4 key={4} style={svgStyle} />,
-		<Logo5 key={5} style={svgStyle} />,
-		<Logo6 key={6} style={svgStyle} />,
-		<Logo7 key={7} style={svgStyle} />,
-		<Logo8 key={8} style={svgStyle} />,
-		<Logo9 key={9} style={svgStyle} />,
-		<Logo10 key={10} style={svgStyle} />,
+		<NowOffering1 key={1} style={svgStyle} />,
+		<NowOffering2 key={2} style={svgStyle} />,
+		<NowOffering3 key={3} style={svgStyle} />,
+		<NowOffering4 key={4} style={svgStyle} />,
+		<NowOffering5 key={5} style={svgStyle} />,
+		<NowOffering6 key={6} style={svgStyle} />,
+		<NowOffering7 key={7} style={svgStyle} />,
+
+		<SoldHere1 key={1} style={svgStyle} />,
+		<SoldHere2 key={2} style={svgStyle} />,
+		<SoldHere3 key={3} style={svgStyle} />,
+		<SoldHere4 key={4} style={svgStyle} />,
+		<SoldHere5 key={5} style={svgStyle} />,
+		<SoldHere6 key={6} style={svgStyle} />,
+		<SoldHere7 key={7} style={svgStyle} />,
 	];
 
 	useEffect(() => {
@@ -206,9 +216,11 @@ export default function DealerMiniSiteOrig() {
 						/>
 					</div>
 
-					<div className="mt-1 border-top border-bottom p-1 mb-1">Logos</div>
-					<div className="d-flex">
-						{[...Array(2)].map((x, i) => (
+					<div className="mt-1 border-top border-bottom p-1 mb-1">
+						Now Offering Logos
+					</div>
+					<div className="d-flex flex-wrap">
+						{[...Array(7)].map((x, i) => (
 							<button
 								className={buttonClass}
 								style={{
@@ -225,10 +237,10 @@ export default function DealerMiniSiteOrig() {
 					</div>
 
 					<div className="mt-1 border-top border-bottom p-1 mb-1">
-						Alt Logos
+						Sold Here Logos
 					</div>
 					<div className="d-flex flex-wrap">
-						{[...Array(8)].map((x, i) => (
+						{[...Array(7)].map((x, i) => (
 							<button
 								className={buttonClass}
 								style={{
@@ -237,9 +249,9 @@ export default function DealerMiniSiteOrig() {
 									maxWidth: "48px",
 								}}
 								onClick={(e) => buttonClick(e)}
-								value={i + 2}
-								key={i}>
-								{i + 1}
+								value={i + 7}
+								key={i + 7}>
+								{i + 8}
 							</button>
 						))}
 					</div>

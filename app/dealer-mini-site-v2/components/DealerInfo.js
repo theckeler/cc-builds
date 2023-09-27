@@ -4,7 +4,6 @@ import Image from "next/image";
 
 export default function DealerInfo({ dealer }) {
 	const hasBadges = dealer.badges.some((x) => x === true);
-	console.log(dealer.img);
 
 	return (
 		<ul className="list-unstyled mb-0">
