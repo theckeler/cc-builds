@@ -19,18 +19,14 @@ import IconBlock from "./IconBlock";
 export default function StickyMenu({ dealer }) {
 	const icon = {
 		style: {
-			width: "36px",
-			height: "36px",
-			backgroundColor: "#ffc20f",
+			// width: "48px",
+			// height: "48px",
+			// backgroundColor: "#ffc20f",
 		},
-		class: "rounded-circle p-1",
+		class: "w-100 h-100",
 	};
 
 	const icons = [
-		{
-			icon: <PhoneIcon style={icon.style} className={icon.class} />,
-			title: "Phone",
-		},
 		{
 			icon: <SupportIcon style={icon.style} className={icon.class} />,
 			title: "Support",
@@ -40,13 +36,17 @@ export default function StickyMenu({ dealer }) {
 			title: "Directions",
 			className: "d-xl-none",
 		},
-		{
-			icon: <ClockIcon style={icon.style} className={icon.class} />,
-			title: "Hours",
-		},
+		// {
+		// 	icon: <ClockIcon style={icon.style} className={icon.class} />,
+		// 	title: "Hours",
+		// },
 		{
 			icon: <ContactsIcon style={icon.style} className={icon.class} />,
 			title: "Contact",
+		},
+		{
+			icon: <PhoneIcon style={icon.style} className={icon.class} />,
+			title: "Phone",
 		},
 	];
 
@@ -62,16 +62,16 @@ export default function StickyMenu({ dealer }) {
 
 	return (
 		<ul
-			className="align-self-start col-12 px-0 col-xl-4 list-unstyled w-100 flex flex-xl-column bg-white border border-bottom-0 border-left-0 border-right-0 border-xl-bottom-1"
+			className="align-self-start col-12 px-0 col-xl-4 list-unstyled w-100 flex flex-xl-column bg-white border"
 			style={{
 				position: "sticky",
 				bottom: 0,
-				top: 0,
+				top: "10px",
 				zIndex: 1001,
 			}}>
-			<li className="col-3 col-xl-12 p-1 pt-0" style={{ flex: "0 1 auto" }}>
+			<li className="col-6 col-xl-12 p-1 pt-0">
 				<h1
-					className="text-center mt-1"
+					className="text-xl-center h-100 mt-0 mb-0 pt-2"
 					style={{
 						fontSize: "22px",
 						lineHeight: 1,
@@ -82,15 +82,14 @@ export default function StickyMenu({ dealer }) {
 					{dealer.name}
 				</h1>
 
-				<ul className="mx-auto mb-0 list-unstyled d-none d-xl-block">
-					<li>
-						<Stars stars={dealer.stars} />
-					</li>
+				<Stars className="d-none d-xl-flex" stars={dealer.stars} />
+
+				<ul className="mx-auto mb-0 list-unstyled d-none d-xl-flex justify-content-center align-items-center px-1">
 					<li className="text-center mt-1">
 						<Address address={dealer.address} />
 						<Phone />
 					</li>
-					<li>
+					<li className="ml-2">
 						<IconBlock
 							block={{
 								icon: (
@@ -102,27 +101,29 @@ export default function StickyMenu({ dealer }) {
 					</li>
 				</ul>
 			</li>
-
 			<li
-				className=""
+				//className="col-3 col-xl-12"
 				style={{
-					flex: "1 1 auto",
 					//backgroundColor: "#efefef",
 					gap: "0.5em",
 				}}>
-				<ul className="list-unstyled mb-0">
-					<li className="">
-						<button
-							className="w-100 d-block border-0 text-left p-2 font-weight-bold"
-							style={{ cursor: "pointer" }}
-							onClick={(e) => {}}>
-							Menu
-						</button>
-					</li>
+				<style jsx>{`
+					@media (min-width: 1366px) {
+						.position-xl-relative {
+							position: relative !important;
+						}
+
+						.position-xl-absolute {
+							position: absolute !important;
+						}
+					}
+				`}</style>
+				<ul
+					id="sticky-menu"
+					className="list-unstyled mb-0 d-none d-xl-block position-absolute position-xl-relative w-100 border-top bg-secondary"
+					style={{ bottom: "100%", left: 0 }}>
 					{navButtons.map((block, i) => (
-						<li
-							className={`border-bottom d-none d-xl-block ${block.className}`}
-							key={i}>
+						<li className={`border-bottom ${block.className}`} key={i}>
 							<button
 								className="w-100 d-block border-0 text-left p-2 font-weight-bold"
 								style={{ cursor: "pointer" }}
@@ -130,6 +131,19 @@ export default function StickyMenu({ dealer }) {
 									document
 										.querySelector(`#${block.id}`)
 										.scrollIntoView({ behavior: "smooth" });
+									document
+										.querySelector("#sticky-menu")
+										.classList.add("d-none");
+
+									if (
+										document
+											.querySelector("#" + block.id + "-block")
+											?.classList.contains("d-none")
+									) {
+										document
+											.querySelector("#" + block.id + "-block")
+											.classList.remove("d-none");
+									}
 								}}>
 								{block.title}
 							</button>
@@ -138,17 +152,31 @@ export default function StickyMenu({ dealer }) {
 				</ul>
 			</li>
 
-			<li className="">
+			<li className="col-6 col-xl-12 ml-auto pr-0">
 				<ul
-					className="flex list-unstyled mb-0"
+					className="flex justify-content-end list-unstyled h-100 mb-0 p-1"
 					style={{
 						flex: "1 1 auto",
-						//backgroundColor: "#efefef"
+						gap: "0.25em",
 					}}>
+					<li className="d-xl-none">
+						<button
+							className="w-100 border-0 text-left p-2 font-weight-bold"
+							style={{ cursor: "pointer" }}
+							onClick={(e) => {
+								document
+									.querySelector("#sticky-menu")
+									.classList.toggle("d-none");
+							}}>
+							Dealer Menu
+						</button>
+					</li>
 					{icons.map(
 						(block, i) =>
 							dealer.icons[i] === true && (
-								<li className={`d-block ${block.className}`} key={i}>
+								<li
+									className={`flex align-items-center ${block.className}`}
+									key={i}>
 									<IconBlock block={block} />
 								</li>
 							)

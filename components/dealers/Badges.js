@@ -4,11 +4,21 @@ import CertLogo from "./logos/Logo9";
 export default function Badges({ badges }) {
 	const dealerBagdes = [
 		{
-			icon: <EliteLogo style={{ minHeight: "100px" }} />,
+			icon: (
+				<EliteLogo
+					className="w-100"
+					style={{ minHeight: "100px", maxHeight: "140px" }}
+				/>
+			),
 			title: "Elite Dealer",
 		},
 		{
-			icon: <CertLogo style={{ minHeight: "100px" }} />,
+			icon: (
+				<CertLogo
+					className="w-100"
+					style={{ minHeight: "100px", maxHeight: "140px" }}
+				/>
+			),
 			title: "Certified Dealer",
 		},
 	];

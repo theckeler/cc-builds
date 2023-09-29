@@ -1,6 +1,10 @@
-export default function Stars({ stars = { average: 4.6, reviews: 43 } }) {
+export default function Stars({
+	className,
+	stars = { average: 4.6, reviews: 43 },
+}) {
 	return (
-		<div className="flex align-items-center justify-content-center list-unstyled mb-0">
+		<div
+			className={`flex align-items-center justify-content-center list-unstyled mb-0 ${className}`}>
 			<span>{stars.average}</span>
 			<span>
 				{[...Array(5)].map((x, i) => (
