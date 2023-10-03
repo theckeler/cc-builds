@@ -1,10 +1,16 @@
+import ResponsiveImage from "@/components/ResponsiveImage";
+
 const ImgCopyBlockStacked = ({ block, className, style }) => {
 	return (
 		<a
 			href={block.url}
 			className={`d-flex flex-column text-decoration-none ${className}`}
 			style={style}>
-			<img src={block.img} alt="" />
+			<ResponsiveImage
+				src={block.img}
+				alt=""
+				id={block.title.replace(/\s+/g, "-").toLowerCase()}
+			/>
 			<div className="content d-flex flex-column p-3 h-100">
 				<strong
 					className="h3"

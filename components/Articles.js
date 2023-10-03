@@ -1,4 +1,5 @@
 import ImgCopyBlockStacked from "./ImgCopyBlockStacked";
+
 const Articles = ({ articles, className, numRows }) => {
 	return (
 		<section className={className}>
