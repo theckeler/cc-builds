@@ -1,6 +1,6 @@
 "use client";
 
-export default function Hours({ className, style, Component, id, title }) {
+export default function ToggleTab({ className, style, Component, id, title }) {
 	const hoursCSS = "row col-6";
 
 	return (
