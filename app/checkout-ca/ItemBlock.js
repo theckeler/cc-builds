@@ -152,8 +152,11 @@ export default function ItemBlock({ curState }) {
 			</div>
 			{curState === "CA" && (
 				<div className="p-1">
-					<div className="border-bottom pb-1 mb-1 font-bold">
-						Replacement Suggestions:
+					<div className="border-bottom pb-1 mb-1">
+						This model cannot be shipped to an address in California. If you
+						have questions, please contact customer service.
+						<br />
+						<span className="font-bold">Replacement Suggestions:</span>
 					</div>
 
 					<ul className="list-unstyled flex">
