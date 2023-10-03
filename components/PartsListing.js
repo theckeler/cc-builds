@@ -2595,8 +2595,7 @@ const PartsListing = () => {
 					<div
 						className="tab-pane container"
 						id="content-search-results-pane"
-						role="tabpanel"
-						aria-expanded="false">
+						role="tabpanel">
 						<div className="blog-search-results"></div>
 					</div>
 				</div>

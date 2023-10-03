@@ -940,7 +940,7 @@ export default function Medallia() {
 										type="button"
 										role="tab"
 										id="slick-slide-control20"
-										aria-labelled-by="slick-slide-control20"
+										aria-labelledby="slick-slide-control20"
 										aria-controls="slick-slide20"
 										aria-label="Slide 1 of 13"
 										aria-selected="true"
@@ -953,7 +953,7 @@ export default function Medallia() {
 										type="button"
 										role="tab"
 										id="slick-slide-control21"
-										aria-labelled-by="slick-slide-control21"
+										aria-labelledby="slick-slide-control21"
 										aria-controls="slick-slide21"
 										aria-label="Slide 2 of 13">
 										2
@@ -964,7 +964,7 @@ export default function Medallia() {
 										type="button"
 										role="tab"
 										id="slick-slide-control22"
-										aria-labelled-by="slick-slide-control22"
+										aria-labelledby="slick-slide-control22"
 										aria-controls="slick-slide22"
 										aria-label="Slide 3 of 13">
 										3
@@ -975,7 +975,7 @@ export default function Medallia() {
 										type="button"
 										role="tab"
 										id="slick-slide-control23"
-										aria-labelled-by="slick-slide-control23"
+										aria-labelledby="slick-slide-control23"
 										aria-controls="slick-slide23"
 										aria-label="Slide 4 of 13">
 										4
@@ -986,7 +986,7 @@ export default function Medallia() {
 										type="button"
 										role="tab"
 										id="slick-slide-control24"
-										aria-labelled-by="slick-slide-control24"
+										aria-labelledby="slick-slide-control24"
 										aria-controls="slick-slide24"
 										aria-label="Slide 5 of 13">
 										5
@@ -997,7 +997,7 @@ export default function Medallia() {
 										type="button"
 										role="tab"
 										id="slick-slide-control25"
-										aria-labelled-by="slick-slide-control25"
+										aria-labelledby="slick-slide-control25"
 										aria-controls="slick-slide25"
 										aria-label="Slide 6 of 13">
 										6
@@ -1008,7 +1008,7 @@ export default function Medallia() {
 										type="button"
 										role="tab"
 										id="slick-slide-control26"
-										aria-labelled-by="slick-slide-control26"
+										aria-labelledby="slick-slide-control26"
 										aria-controls="slick-slide26"
 										aria-label="Slide 7 of 13">
 										7
@@ -1019,7 +1019,7 @@ export default function Medallia() {
 										type="button"
 										role="tab"
 										id="slick-slide-control27"
-										aria-labelled-by="slick-slide-control27"
+										aria-labelledby="slick-slide-control27"
 										aria-controls="slick-slide27"
 										aria-label="Slide 8 of 13">
 										8
@@ -1030,7 +1030,7 @@ export default function Medallia() {
 										type="button"
 										role="tab"
 										id="slick-slide-control28"
-										aria-labelled-by="slick-slide-control28"
+										aria-labelledby="slick-slide-control28"
 										aria-controls="slick-slide28"
 										aria-label="Slide 9 of 13">
 										9
@@ -1041,7 +1041,7 @@ export default function Medallia() {
 										type="button"
 										role="tab"
 										id="slick-slide-control29"
-										aria-labelled-by="slick-slide-control29"
+										aria-labelledby="slick-slide-control29"
 										aria-controls="slick-slide29"
 										aria-label="Slide 10 of 13">
 										10
@@ -1052,7 +1052,7 @@ export default function Medallia() {
 										type="button"
 										role="tab"
 										id="slick-slide-control210"
-										aria-labelled-by="slick-slide-control210"
+										aria-labelledby="slick-slide-control210"
 										aria-controls="slick-slide210"
 										aria-label="Slide 11 of 13">
 										11
@@ -1063,7 +1063,7 @@ export default function Medallia() {
 										type="button"
 										role="tab"
 										id="slick-slide-control211"
-										aria-labelled-by="slick-slide-control211"
+										aria-labelledby="slick-slide-control211"
 										aria-controls="slick-slide211"
 										aria-label="Slide 12 of 13">
 										12
@@ -1074,7 +1074,7 @@ export default function Medallia() {
 										type="button"
 										role="tab"
 										id="slick-slide-control212"
-										aria-labelled-by="slick-slide-control212"
+										aria-labelledby="slick-slide-control212"
 										aria-controls="slick-slide212"
 										aria-label="Slide 13 of 13">
 										13

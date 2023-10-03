@@ -85,7 +85,10 @@ const Warranty = () => {
 						<div className="content-asset">
 							<div className="row">
 								<div className="col-6">
-									<img src="https://mtdproducts.secure.force.com/ProductRegistration/resource/1619086108000/CmsTemp/ProductRegistration/img/cub-cadet-US-model-plate.jpg" />
+									<img
+										alt=""
+										src="https://mtdproducts.secure.force.com/ProductRegistration/resource/1619086108000/CmsTemp/ProductRegistration/img/cub-cadet-US-model-plate.jpg"
+									/>
 								</div>
 								<div className="col-6">
 									Your machine’s serial number is essential to establishing

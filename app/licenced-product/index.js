@@ -646,7 +646,7 @@ const LicencedProduct = () => {
 											type="button"
 											role="tab"
 											id="slick-slide-control10"
-											aria-labelled-by="slick-slide-control10"
+											aria-labelledby="slick-slide-control10"
 											aria-controls="slick-slide10"
 											aria-label="Slide 1 of 6"
 											aria-selected="true"
@@ -659,7 +659,7 @@ const LicencedProduct = () => {
 											type="button"
 											role="tab"
 											id="slick-slide-control11"
-											aria-labelled-by="slick-slide-control11"
+											aria-labelledby="slick-slide-control11"
 											aria-controls="slick-slide11"
 											aria-label="Slide 2 of 6">
 											2
@@ -670,7 +670,7 @@ const LicencedProduct = () => {
 											type="button"
 											role="tab"
 											id="slick-slide-control12"
-											aria-labelled-by="slick-slide-control12"
+											aria-labelledby="slick-slide-control12"
 											aria-controls="slick-slide12"
 											aria-label="Slide 3 of 6">
 											3
@@ -681,7 +681,7 @@ const LicencedProduct = () => {
 											type="button"
 											role="tab"
 											id="slick-slide-control13"
-											aria-labelled-by="slick-slide-control13"
+											aria-labelledby="slick-slide-control13"
 											aria-controls="slick-slide13"
 											aria-label="Slide 4 of 6">
 											4
@@ -692,7 +692,7 @@ const LicencedProduct = () => {
 											type="button"
 											role="tab"
 											id="slick-slide-control14"
-											aria-labelled-by="slick-slide-control14"
+											aria-labelledby="slick-slide-control14"
 											aria-controls="slick-slide14"
 											aria-label="Slide 5 of 6">
 											5
@@ -703,7 +703,7 @@ const LicencedProduct = () => {
 											type="button"
 											role="tab"
 											id="slick-slide-control15"
-											aria-labelled-by="slick-slide-control15"
+											aria-labelledby="slick-slide-control15"
 											aria-controls="slick-slide15"
 											aria-label="Slide 6 of 6">
 											6
