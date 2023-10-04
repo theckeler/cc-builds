@@ -35,21 +35,21 @@ export default function DealerMiniSiteOrig() {
 	const [whitePercent, setWhitePercent] = useState(100);
 
 	const imgs = [
-		<NowOffering1 key={1} style={svgStyle} />,
+		// <NowOffering1 key={1} style={svgStyle} />,
 		<NowOffering2 key={2} style={svgStyle} />,
-		<NowOffering3 key={3} style={svgStyle} />,
+		// <NowOffering3 key={3} style={svgStyle} />,
 		<NowOffering4 key={4} style={svgStyle} />,
-		<NowOffering5 key={5} style={svgStyle} />,
-		<NowOffering6 key={6} style={svgStyle} />,
-		<NowOffering7 key={7} style={svgStyle} />,
+		// <NowOffering5 key={5} style={svgStyle} />,
+		// <NowOffering6 key={6} style={svgStyle} />,
+		// <NowOffering7 key={7} style={svgStyle} />,
 
-		<SoldHere1 key={1} style={svgStyle} />,
+		// <SoldHere1 key={1} style={svgStyle} />,
 		<SoldHere2 key={2} style={svgStyle} />,
-		<SoldHere3 key={3} style={svgStyle} />,
+		// <SoldHere3 key={3} style={svgStyle} />,
 		<SoldHere4 key={4} style={svgStyle} />,
-		<SoldHere5 key={5} style={svgStyle} />,
-		<SoldHere6 key={6} style={svgStyle} />,
-		<SoldHere7 key={7} style={svgStyle} />,
+		// <SoldHere5 key={5} style={svgStyle} />,
+		// <SoldHere6 key={6} style={svgStyle} />,
+		// <SoldHere7 key={7} style={svgStyle} />,
 	];
 
 	useEffect(() => {
@@ -219,7 +219,7 @@ export default function DealerMiniSiteOrig() {
 						Now Offering Logos
 					</div>
 					<div className="d-flex flex-wrap">
-						{[...Array(7)].map((x, i) => (
+						{[...Array(4)].map((x, i) => (
 							<button
 								className={buttonClass}
 								style={{
@@ -235,7 +235,7 @@ export default function DealerMiniSiteOrig() {
 						))}
 					</div>
 
-					<div className="mt-1 border-top border-bottom p-1 mb-1">
+					{/* <div className="mt-1 border-top border-bottom p-1 mb-1">
 						Sold Here Logos
 					</div>
 					<div className="d-flex flex-wrap">
@@ -253,7 +253,7 @@ export default function DealerMiniSiteOrig() {
 								{i + 8}
 							</button>
 						))}
-					</div>
+					</div> */}
 				</div>
 			</div>
 
