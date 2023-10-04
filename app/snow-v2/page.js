@@ -932,13 +932,13 @@ export default function SnowV2({}) {
 						<div className="wrapper p-1">
 							<ResponsiveImage
 								className="d-block d-md-none w-100"
-								src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Group%203564.png"
+								src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Group3564.png"
 								alt=""
 								//id="Group"
 							/>
 							<ResponsiveImage
 								className="d-none d-md-block w-100"
-								src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Group%203540.png"
+								src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Group3540.png"
 								alt=""
 								id="group-desktop"
 							/>
