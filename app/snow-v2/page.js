@@ -24,30 +24,30 @@ import ImgSwappin from "./elements/ImgSwappin";
 export default function SnowV2({}) {
 	const [imgType, setImgType] = useState("orig");
 
-	useEffect(() => {
-		document.querySelectorAll("#finder-script").forEach(function (elem) {
-			elem.remove();
-		});
-		const html = `
-<script type="text/javascript" id="finder-script">
-  (function(c,a,r,t,f,u,l)
-            {
-              ((c[u] =
-                c[u] ||
-                function () {
-                  (c[u].q = c[u].q || []).push(arguments);
-                }),
-              (l = a.createElement(r)),
-              (l.async = 1),
-              (l.id = u + "scr"),
-              (l.src = f),
-              a[t].appendChild(l))
-            }
-            )(window,document,"script","body","https://embed.cartfulsolutions.com/cub-cadet-finder/recommendation.min.js","cfl643");
-</script>`;
-		const scriptEl = document.createRange().createContextualFragment(html);
-		document.body.appendChild(scriptEl);
-	});
+// 	useEffect(() => {
+// 		document.querySelectorAll("#finder-script").forEach(function (elem) {
+// 			elem.remove();
+// 		});
+// 		const html = `
+// <script type="text/javascript" id="finder-script">
+//   (function(c,a,r,t,f,u,l)
+//             {
+//               ((c[u] =
+//                 c[u] ||
+//                 function () {
+//                   (c[u].q = c[u].q || []).push(arguments);
+//                 }),
+//               (l = a.createElement(r)),
+//               (l.async = 1),
+//               (l.id = u + "scr"),
+//               (l.src = f),
+//               a[t].appendChild(l))
+//             }
+//             )(window,document,"script","body","https://embed.cartfulsolutions.com/cub-cadet-finder/recommendation.min.js","cfl643");
+// </script>`;
+// 		const scriptEl = document.createRange().createContextualFragment(html);
+// 		document.body.appendChild(scriptEl);
+// 	});
 
 	const addPromo = true;
 	const addCta = true;
