@@ -12,7 +12,8 @@ export default function ResponsiveImage({
 	const breakpoints = [544, 768, 1025, 1366, 1920, 2048];
 
 	useEffect(() => {
-		let srcSet = src + ", ";
+		let srcSet = "";
+		// let srcSet = src + ", ";
 		let img = document.createElement("img");
 		img.src = src;
 		img.onload = function () {
@@ -37,7 +38,6 @@ export default function ResponsiveImage({
 
 	return (
 		<img
-			src={src}
 			alt={alt}
 			className={className}
 			style={style}
@@ -49,6 +49,7 @@ export default function ResponsiveImage({
 			decoding={hero && "async"}
 			// NOT
 			loading={!hero && "lazy"}
+			src={src}
 		/>
 	);
 }
