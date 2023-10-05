@@ -29,7 +29,7 @@ export default function ResponsiveImage({
 							.querySelector("#" + id)
 							.setAttribute("srcset", srcSet.substring(0, srcSet.length - 2));
 					} else {
-						console.error("add ID", img.width, img.height);
+						//console.error("add ID", img.width, img.height);
 					}
 				}
 			});
@@ -43,10 +43,10 @@ export default function ResponsiveImage({
 			style={style}
 			id={id}
 			// HERO:
-			rel={hero && "preload"}
-			as={hero && "image"}
-			fetchpriority={hero && "high"}
-			decoding={hero && "async"}
+			rel={hero ? "preload" : "false"}
+			as={hero ? "image" : "false"}
+			fetchPriority={hero ? "high" : "false"}
+			decoding={hero ? "async" : "false"}
 			// NOT
 			loading={!hero && "lazy"}
 			src={src}

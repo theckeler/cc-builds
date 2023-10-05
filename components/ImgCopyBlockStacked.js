@@ -1,16 +1,14 @@
-import ResponsiveImage from "@/components/ResponsiveImage";
+// import ResponsiveImage from "@/components/ResponsiveImage";
 
-const ImgCopyBlockStacked = ({ block, className, style }) => {
+const ImgCopyBlockStacked = ({ block, className, style, imgType = null }) => {
+	console.log("imgType", imgType);
+
 	return (
 		<a
 			href={block.url}
 			className={`d-flex flex-column text-decoration-none ${className}`}
 			style={style}>
-			<ResponsiveImage
-				src={block.img}
-				alt=""
-				id={block.title.replace(/\s+/g, "-").toLowerCase()}
-			/>
+			{imgType === "res" ? block.res : block.orig}
 			<div className="content d-flex flex-column p-3 h-100">
 				<strong
 					className="h3"

@@ -1,6 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
-import jsonData from "./data/home.json";
+import React, { useState, useEffect } from "react";
 
 import "./scss/snow-v2.scss";
 
@@ -20,8 +19,11 @@ import RelatedLinks from "@/components/RelatedLinks";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import HeroPromo from "./elements/HeroPromo";
 import CTABlock from "@/components/CTABlock";
+import ImgSwappin from "./elements/ImgSwappin";
 
 export default function SnowV2({}) {
+	const [imgType, setImgType] = useState("orig");
+
 	useEffect(() => {
 		document.querySelectorAll("#finder-script").forEach(function (elem) {
 			elem.remove();
@@ -53,18 +55,53 @@ export default function SnowV2({}) {
 	return (
 		<>
 			<div className="mtd-page">
+				<div
+					className="position-fixed p-2 bg-white"
+					style={{ right: "20px", top: "20px", zIndex: 1001 }}>
+					<button
+						className="border-0 bg-black p-1 mr-1"
+						style={{ fontSize: "12px" }}
+						onClick={() => {
+							setImgType("orig");
+						}}>
+						Original Images
+					</button>
+					<button
+						className="border-0 bg-black p-1"
+						style={{ fontSize: "12px" }}
+						onClick={() => {
+							setImgType("res");
+						}}>
+						Responsive Images
+					</button>
+				</div>
 				<div className="snow-v2 snow-v2-index">
 					<section className="position-relative section-1 hero d-flex flex-column align-items-stretch">
 						{/* <div className="position-xl-absolute wrapper w-100 d-flex flex-column-reverse align-items-end mb-0"> */}
 
 						<div className="position-relative" style={{ minHeight: "600px" }}>
-							<ResponsiveImage
-								id="hero"
-								src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/31AM5HVSB56_2X26_Inteli_env02.jpg"
-								alt=""
-								className="h-100 w-100 position-absolute"
-								style={{ objectFit: "cover", top: 0 }}
-								hero
+							<ImgSwappin
+								imgType={imgType}
+								res={
+									<ResponsiveImage
+										id="hero"
+										src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/31AM5HVSB56_2X26_Inteli_env02.jpg"
+										alt=""
+										className="h-100 w-100 position-absolute"
+										style={{ objectFit: "cover", top: 0 }}
+										hero
+									/>
+								}
+								orig={
+									<img
+										alt=""
+										className="w-100 h-100 position-absolute"
+										src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/vde16d024a27b8e0c81e1c6e963f0a6bf041c9496/snow-v2/31AM5HVSB56_2X26_Inteli_env02.jpg"
+										loading="lazy"
+										decoding="async"
+										style={{ objectFit: "cover", zIndex: 0 }}
+									/>
+								}
 							/>
 						</div>
 
@@ -196,10 +233,21 @@ export default function SnowV2({}) {
 										<div
 											href="https://www.cubcadet.com/en_US/snow-blowers/single-stage-snow-blowers"
 											className="unstyled link">
-											<ResponsiveImage
-												id="stage-1"
-												src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Cub-Cadet-1X_21LHP_1.jpg"
-												alt=""
+											<ImgSwappin
+												imgType={imgType}
+												res={
+													<ResponsiveImage
+														id="stage-1"
+														src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Cub-Cadet-1X_21LHP_1.jpg"
+														alt=""
+													/>
+												}
+												orig={
+													<img
+														alt=""
+														src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw855378c6/products/Equipment/Cub-Cadet-1X_21LHP_1.jpg?sw=290&sh=290&sm=fit"
+													/>
+												}
 											/>
 											<strong className="title">
 												1X Single-Stage Snow Blowers
@@ -215,28 +263,67 @@ export default function SnowV2({}) {
 												style={{ minHeight: 220 }}>
 												<li className="flex-column col col-12 col-sm-12 col-md-4 eng-for-blocks">
 													<strong>Snowfall</strong>
-													<ResponsiveImage
-														src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-snowfall-up-6.svg"
-														alt=""
-														className="icon"
+
+													<ImgSwappin
+														imgType={imgType}
+														res={
+															<ResponsiveImage
+																src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-snowfall-up-6.svg"
+																alt=""
+																className="icon"
+															/>
+														}
+														orig={
+															<img
+																src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-snowfall-up-6.svg"
+																alt=""
+																className="icon"
+															/>
+														}
 													/>
 													<p style={{ marginTop: "auto" }}>Up to 6"</p>
 												</li>
 												<li className="flex-column col col-12 col-sm-12 col-md-4 eng-for-blocks">
 													<strong>Driveway</strong>
-													<ResponsiveImage
-														src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-driveway-up-8.svg"
-														alt=""
-														className="icon"
+													<ImgSwappin
+														imgType={imgType}
+														res={
+															<ResponsiveImage
+																src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-driveway-up-8.svg"
+																alt=""
+																className="icon"
+															/>
+														}
+														orig={
+															<img
+																src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-driveway-up-8.svg"
+																alt=""
+																className="icon"
+															/>
+														}
 													/>
+
 													<p style={{ marginTop: "auto" }}>Up to 8 cars</p>
 												</li>
 												<li className="flex-column col col-12 col-sm-12 col-md-4 eng-for-blocks">
 													<strong>Surfaces</strong>
-													<ResponsiveImage
-														src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-surfaces-smooth.svg"
-														alt=""
-														className="icon"
+
+													<ImgSwappin
+														imgType={imgType}
+														res={
+															<ResponsiveImage
+																src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-surfaces-smooth.svg"
+																alt=""
+																className="icon"
+															/>
+														}
+														orig={
+															<img
+																src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-surfaces-smooth.svg"
+																alt=""
+																className="icon"
+															/>
+														}
 													/>
 													<p style={{ marginTop: "auto" }}>Smooth</p>
 												</li>
@@ -272,10 +359,23 @@ export default function SnowV2({}) {
 												style={{ minHeight: 220 }}>
 												<li className="flex-column col col-12 col-sm-12 col-md-4 eng-for-blocks">
 													<strong>Snowfall</strong>
-													<ResponsiveImage
-														src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-snowfall-up-18.svg"
-														alt=""
-														className="icon"
+
+													<ImgSwappin
+														imgType={imgType}
+														res={
+															<ResponsiveImage
+																src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-snowfall-up-18.svg"
+																alt=""
+																className="icon"
+															/>
+														}
+														orig={
+															<img
+																src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-snowfall-up-18.svg"
+																alt=""
+																className="icon"
+															/>
+														}
 													/>
 													<p style={{ marginTop: "auto" }}>
 														Up to 18" <br />
@@ -286,19 +386,45 @@ export default function SnowV2({}) {
 												</li>
 												<li className="flex-column col col-12 col-sm-12 col-md-4 eng-for-blocks">
 													<strong>Driveway</strong>
-													<ResponsiveImage
-														src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-driveway-up-15.svg"
-														alt=""
-														className="icon"
+
+													<ImgSwappin
+														imgType={imgType}
+														res={
+															<ResponsiveImage
+																src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-driveway-up-15.svg"
+																alt=""
+																className="icon"
+															/>
+														}
+														orig={
+															<img
+																src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-driveway-up-15.svg"
+																alt=""
+																className="icon"
+															/>
+														}
 													/>
 													<p style={{ marginTop: "auto" }}>Up to 15 cars</p>
 												</li>
 												<li className="flex-column col col-12 col-sm-12 col-md-4 eng-for-blocks">
 													<strong>Surfaces</strong>
-													<ResponsiveImage
-														src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-surfaces-smooth-gravel.svg"
-														alt=""
-														className="icon"
+
+													<ImgSwappin
+														imgType={imgType}
+														res={
+															<ResponsiveImage
+																src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-surfaces-smooth-gravel.svg"
+																alt=""
+																className="icon"
+															/>
+														}
+														orig={
+															<img
+																src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-surfaces-smooth-gravel.svg"
+																alt=""
+																className="icon"
+															/>
+														}
 													/>
 													<p style={{ marginTop: "auto" }}>
 														Smooth &amp; gravel
@@ -317,9 +443,20 @@ export default function SnowV2({}) {
 										<div
 											href="https://www.cubcadet.com/en_US/snow-blowers/three-stage-snow-blowers"
 											className="unstyled link">
-											<ResponsiveImage
-												src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Cub-Cadet_3X_30HD_3.jpg"
-												alt=""
+											<ImgSwappin
+												imgType={imgType}
+												res={
+													<ResponsiveImage
+														src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Cub-Cadet_3X_30HD_3.jpg"
+														alt=""
+													/>
+												}
+												orig={
+													<img
+														src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw5cb54c82/products/Equipment/Cub-Cadet_3X_30HD_3.jpg"
+														alt=""
+													/>
+												}
 											/>
 											<strong className="title">
 												3X Three-Stage Snow Blowers
@@ -336,28 +473,67 @@ export default function SnowV2({}) {
 												style={{ minHeight: 220 }}>
 												<li className="flex-column col col-12 col-sm-12 col-md-4 eng-for-blocks">
 													<strong>Snowfall</strong>
-													<ResponsiveImage
-														src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-snowfall-up-23.svg"
-														alt=""
-														className="icon"
+
+													<ImgSwappin
+														imgType={imgType}
+														res={
+															<ResponsiveImage
+																src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-snowfall-up-23.svg"
+																alt=""
+																className="icon"
+															/>
+														}
+														orig={
+															<img
+																src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-snowfall-up-23.svg"
+																alt=""
+																className="icon"
+															/>
+														}
 													/>
 													<p style={{ marginTop: "auto" }}>Up to 23"</p>
 												</li>
 												<li className="flex-column col col-12 col-sm-12 col-md-4 eng-for-blocks">
 													<strong>Driveway</strong>
-													<ResponsiveImage
-														src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-driveway-up-15-plus.svg"
-														alt=""
-														className="icon"
+
+													<ImgSwappin
+														imgType={imgType}
+														res={
+															<ResponsiveImage
+																src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-driveway-up-15-plus.svg"
+																alt=""
+																className="icon"
+															/>
+														}
+														orig={
+															<img
+																src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-driveway-up-15-plus.svg"
+																alt=""
+																className="icon"
+															/>
+														}
 													/>
 													<p style={{ marginTop: "auto" }}>Up to 15+ cars</p>
 												</li>
 												<li className="flex-column col col-12 col-sm-12 col-md-4 eng-for-blocks">
 													<strong>Surfaces</strong>
-													<ResponsiveImage
-														src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-surfaces-smooth-gravel.svg"
-														alt=""
-														className="icon"
+
+													<ImgSwappin
+														imgType={imgType}
+														res={
+															<ResponsiveImage
+																src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-surfaces-smooth-gravel.svg"
+																alt=""
+																className="icon"
+															/>
+														}
+														orig={
+															<img
+																src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-surfaces-smooth-gravel.svg"
+																alt=""
+																className="icon"
+															/>
+														}
 													/>
 													<p style={{ marginTop: "auto" }}>
 														Smooth &amp; gravel
@@ -453,10 +629,22 @@ export default function SnowV2({}) {
 								</ul>
 							</div>
 						</div>
-						<ResponsiveImage
-							src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/31AH5EVZ596_3X30HD_Env03.jpg"
-							alt=""
-							id="snowguy"
+
+						<ImgSwappin
+							imgType={imgType}
+							res={
+								<ResponsiveImage
+									src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/31AH5EVZ596_3X30HD_Env03.jpg"
+									alt=""
+									id="snowguy"
+								/>
+							}
+							orig={
+								<img
+									src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/vde16d024a27b8e0c81e1c6e963f0a6bf041c9496/snow-v2/31AH5EVZ596_3X30HD_Env03.jpg"
+									alt=""
+								/>
+							}
 						/>
 					</section>
 					<section className="section-6">
@@ -828,10 +1016,21 @@ export default function SnowV2({}) {
 									<div className="p-2">
 										<ul className="row list-unstyled align-items-center">
 											<li className="col-12 col-sm-3 col-md-3 p-1">
-												<ResponsiveImage
-													src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-chute-control.svg"
-													alt=""
-													className=""
+												<ImgSwappin
+													imgType={imgType}
+													res={
+														<ResponsiveImage
+															src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-chute-control.svg"
+															alt=""
+															className=""
+														/>
+													}
+													orig={
+														<img
+															src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-chute-control.svg"
+															alt=""
+														/>
+													}
 												/>
 											</li>
 											<li className="col-12 col-sm-9 col-md-9 p-1 pl-6 pr-6">
@@ -848,10 +1047,21 @@ export default function SnowV2({}) {
 									<div className="p-2">
 										<ul className="row list-unstyled align-items-center">
 											<li className="col-12 col-sm-3 col-md-3 p-1">
-												<ResponsiveImage
-													src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-light.svg"
-													alt=""
-													className=""
+												<ImgSwappin
+													imgType={imgType}
+													res={
+														<ResponsiveImage
+															src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-light.svg"
+															alt=""
+															className=""
+														/>
+													}
+													orig={
+														<img
+															src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-light.svg"
+															alt=""
+														/>
+													}
 												/>
 											</li>
 											<li className="col-12 col-sm-9 col-md-9 p-1 pl-6 pr-6">
@@ -868,10 +1078,21 @@ export default function SnowV2({}) {
 									<div className="p-2">
 										<ul className="row list-unstyled align-items-center">
 											<li className="col-12 col-sm-3 col-md-3 p-1">
-												<ResponsiveImage
-													src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-push-button.svg"
-													alt=""
-													className=""
+												<ImgSwappin
+													imgType={imgType}
+													res={
+														<ResponsiveImage
+															src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-push-button.svg"
+															alt=""
+															className=""
+														/>
+													}
+													orig={
+														<img
+															src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-push-button.svg"
+															alt=""
+														/>
+													}
 												/>
 											</li>
 											<li className="col-12 col-sm-9 col-md-9 p-1 pl-6 pr-6">
@@ -888,10 +1109,21 @@ export default function SnowV2({}) {
 									<div className="p-2">
 										<ul className="row list-unstyled align-items-center">
 											<li className="col-12 col-sm-3 col-md-3 p-1">
-												<ResponsiveImage
-													src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-speed.svg"
-													alt=""
-													className=""
+												<ImgSwappin
+													imgType={imgType}
+													res={
+														<ResponsiveImage
+															src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-speed.svg"
+															alt=""
+															className=""
+														/>
+													}
+													orig={
+														<img
+															src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-speed.svg"
+															alt=""
+														/>
+													}
 												/>
 											</li>
 											<li className="col-12 col-sm-9 col-md-9 p-1 pl-6 pr-6">
@@ -909,17 +1141,41 @@ export default function SnowV2({}) {
 					</section>
 					<section className="section-8">
 						<div className="wrapper p-1">
-							<ResponsiveImage
-								className="d-block d-md-none w-100"
-								src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Group3564.png"
-								alt=""
-								//id="Group"
+							<ImgSwappin
+								imgType={imgType}
+								res={
+									<ResponsiveImage
+										className="d-block d-md-none w-100"
+										src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Group3564.png"
+										alt=""
+										//id="Group"
+									/>
+								}
+								orig={
+									<img
+										className="d-block d-md-none w-100"
+										src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/Group%203564.png"
+										alt=""
+									/>
+								}
 							/>
-							<ResponsiveImage
-								className="d-none d-md-block w-100"
-								src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Group3540.png"
-								alt=""
-								id="group-desktop"
+							<ImgSwappin
+								imgType={imgType}
+								res={
+									<ResponsiveImage
+										className="d-none d-md-block w-100"
+										src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Group3540.png"
+										alt=""
+										id="group-desktop"
+									/>
+								}
+								orig={
+									<img
+										className="d-none d-md-block w-100"
+										src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/Group%203540.png"
+										alt=""
+									/>
+								}
 							/>
 						</div>
 					</section>
@@ -936,10 +1192,32 @@ export default function SnowV2({}) {
 								</li>
 								<li className="d-flex p-2 column-1 row-0">
 									<div className="logo">
-										<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/logo-1x.svg" />
+										<ImgSwappin
+											imgType={imgType}
+											res={
+												<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/logo-1x.svg" />
+											}
+											orig={
+												<img
+													src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/vd62a6d5ff2b6456afa431ebbfa9bf30e6b302ca2/snow-v2/logo-1x.svg"
+													alt=""
+												/>
+											}
+										/>
 									</div>
 									<div className="img">
-										<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-snowfall-up-6.svg" />
+										<ImgSwappin
+											imgType={imgType}
+											res={
+												<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-snowfall-up-6.svg" />
+											}
+											orig={
+												<img
+													src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-snowfall-up-6.svg"
+													alt=""
+												/>
+											}
+										/>
 									</div>
 									<span className="d-flex flex-column justify-content-center">
 										Light Snowfall
@@ -949,10 +1227,32 @@ export default function SnowV2({}) {
 								</li>
 								<li className="d-flex p-2 column-2 row-0">
 									<div className="logo">
-										<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/logo-2x.svg" />
+										<ImgSwappin
+											imgType={imgType}
+											res={
+												<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/logo-2x.svg" />
+											}
+											orig={
+												<img
+													src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/vd62a6d5ff2b6456afa431ebbfa9bf30e6b302ca2/snow-v2/logo-2x.svg"
+													alt=""
+												/>
+											}
+										/>
 									</div>
 									<div className="img">
-										<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-snowfall-up-18.svg" />
+										<ImgSwappin
+											imgType={imgType}
+											res={
+												<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-snowfall-up-18.svg" />
+											}
+											orig={
+												<img
+													src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-snowfall-up-18.svg"
+													alt=""
+												/>
+											}
+										/>
 									</div>
 									<span className="d-flex flex-column justify-content-center">
 										Moderate Snowfall
@@ -962,10 +1262,32 @@ export default function SnowV2({}) {
 								</li>
 								<li className="d-flex p-2 column-3 row-0">
 									<div className="logo">
-										<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/logo-3x.svg" />
+										<ImgSwappin
+											imgType={imgType}
+											res={
+												<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/logo-3x.svg" />
+											}
+											orig={
+												<img
+													src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/vd62a6d5ff2b6456afa431ebbfa9bf30e6b302ca2/snow-v2/logo-3x.svg"
+													alt=""
+												/>
+											}
+										/>
 									</div>
 									<div className="img">
-										<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-snowfall-up-23.svg" />
+										<ImgSwappin
+											imgType={imgType}
+											res={
+												<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-snowfall-up-23.svg" />
+											}
+											orig={
+												<img
+													src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-snowfall-up-23.svg"
+													alt=""
+												/>
+											}
+										/>
 									</div>
 									<span className="d-flex flex-column justify-content-center">
 										Heavy Snowfall
@@ -1157,6 +1479,7 @@ export default function SnowV2({}) {
 			<div className="snow-v2 snow-v2-index container">
 				{/* <HowToMaintence {...{ jsonData }} /> */}
 				<Articles
+					imgType={imgType}
 					articles={{
 						h2: "Articles & How To’s",
 						blocks: [
@@ -1165,30 +1488,67 @@ export default function SnowV2({}) {
 								title: "Cub Cadet Snow Blower Buyers Guide",
 								copy: "If you live in areas where snowfall is frequent or heavy, shoveling becomes part of your daily routine. Ditching your shovel, along with the heavy lifting and repetitive strain that comes with shoveling snow, in favor of a snow blower can save you time and energy. A couple of reasons to justify a snow blower…",
 								url: "https://www.cubcadet.com/en_US/product-information/cub-cadet-snow-blower-buying-guide.html",
+								res: (
+									<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/SnowBlow_ProdLineBrow_Hero_LineUp_01_desktop_1015x630_v1.jpg" />
+								),
+								orig: (
+									<img
+										src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dwa05374e7/images/product-line-browse/Main-Carousel/SnowBlow_ProdLineBrow_Hero_LineUp_01_desktop_1015x630_v1.jpg?sw=1116"
+										alt=""
+									/>
+								),
 							},
 							{
 								img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/recommended-snow-thrower-back-up-parts_1100x572.jpg",
 								title: "Recommended Snow Blower Back-Up Parts",
 								copy: "Always prepare your snow blower for maintenance before starting any repairs. Move your snow blower to a flat surface.  Turn the engine off and let it cool. Disconnect the spark plug ignition wire and remove the safety ignition key to prevent accidental starting of the engine…",
 								url: "https://www.cubcadet.com/en_US/product-information/knowledge-recommended-snow-thrower-back-up-parts.html",
+								res: (
+									<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/recommended-snow-thrower-back-up-parts_1100x572.jpg" />
+								),
+								orig: (
+									<img
+										src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw3ea98eda/Knowledge_Center/help-center/recommended-snow-thrower-back-up-parts_1100x572.jpg?sw=1116"
+										alt=""
+									/>
+								),
 							},
 							{
 								img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/snow-thrower-operation-tips_1100x572.jpg",
 								title: "How to Prepare Your Snow Thrower for Winter Use",
 								copy: "Whether you're prepping your trusty 2X two-stage snow thrower for yet another winter, or getting your new 3X three-stage snow thrower ready to face its first blizzard, these snow thrower maintenance tips can help ensure you're prepared for cold and stormy weather this…",
 								url: "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-prepare-your-snow-thrower-for-winter-use.html",
+								res: (
+									<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/snow-thrower-operation-tips_1100x572.jpg" />
+								),
+								orig: (
+									<img
+										src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/SnowBlow_ProdLineBrow_Hero_LineUp_01_desktop_1015x630_v1.jpg"
+										alt=""
+									/>
+								),
 							},
 							{
 								img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/snow-thrower-safety-tips_1100x572.jpg",
 								title: "Snow Blower Safety Tips",
 								copy: "Snow blowers, often referred to as snow blowers are an easy way to keep the snow off your driveway during the winter months. Like any piece of power equipment, snow blower safety should be a top priority…",
 								url: "https://www.cubcadet.com/en_US/product-information/knowledge-snow-thrower-safety-tips.html",
+								res: (
+									<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/snow-thrower-safety-tips_1100x572.jpg" />
+								),
+								orig: (
+									<img
+										src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw071865a6/Knowledge_Center/help-center/snow-thrower-operation-tips_1100x572.jpg?sw=1116"
+										alt=""
+									/>
+								),
 							},
 						],
 					}}
 					numRows={4}
 				/>
 				<AttchmentsAccessories
+					imgType={imgType}
 					attAcc={{
 						h2: "Attachments & Accessories",
 						blocks: [
@@ -1198,6 +1558,15 @@ export default function SnowV2({}) {
 								item: "490-241-0032",
 								price: "From $132.99 MSRP",
 								url: "https://www.cubcadet.com/en_US/snow-blower-accessories/snow-blower-cab/490-241-0032.html#q=490-241-0032&lang=en_US&start=0",
+								res: (
+									<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/490-241-0032.jpg" />
+								),
+								orig: (
+									<img
+										src="https://www.cubcadet.com/en_US/snow-blower-accessories/snow-blower-cab/490-241-0032.html?fitsOnModel=false"
+										alt=""
+									/>
+								),
 							},
 							{
 								img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/490-290-0010_1.jpg",
@@ -1205,6 +1574,15 @@ export default function SnowV2({}) {
 								item: "490-290-0010",
 								price: "From $38.99 MSRP",
 								url: "https://www.cubcadet.com/en_US/snow-blower-accessories/snow-blower-cover/490-290-0010.html#q=490-290-0010&lang=en_US&start=0",
+								res: (
+									<ResponsiveImage src="https://www.cubcadet.com/en_US/snow-blower-accessories/snow-blower-cover/490-290-0010.html#q=490-290-0010&lang=en_US&start=0" />
+								),
+								orig: (
+									<img
+										src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw2a0b010e/products/Attachments_Accessories/490-290-0010_1.jpg?sw=280&sh=280&sm=fit"
+										alt=""
+									/>
+								),
 							},
 							{
 								img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/OEM-390-679.jpg",
@@ -1212,6 +1590,15 @@ export default function SnowV2({}) {
 								item: "OEM-390-679",
 								price: "From $41.99 MSRP",
 								url: "https://www.cubcadet.com/en_US/snow-blower-accessories/drift-cutter-kit/OEM-390-679.html#q=OEM-390-679&lang=en_US&start=0",
+								res: (
+									<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/OEM-390-679.jpg" />
+								),
+								orig: (
+									<img
+										src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw32dc42ff/products/Attachments_Accessories/OEM-390-679.jpg?sw=280&sh=280&sm=fit"
+										alt=""
+									/>
+								),
 							},
 							{
 								img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/753-08629.jpg",
@@ -1219,6 +1606,15 @@ export default function SnowV2({}) {
 								item: "753-08629A",
 								price: "From $135.89 MSRP",
 								url: "https://www.cubcadet.com/en_US/snow-blower-accessories/led-light-bar-kit/753-08629A.html#q=753-08629A&lang=en_US&start=0",
+								res: (
+									<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/753-08629.jpg" />
+								),
+								orig: (
+									<img
+										src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw301fe215/products/753-08629.jpg?sw=280&sh=280&sm=fit"
+										alt=""
+									/>
+								),
 							},
 						],
 					}}
