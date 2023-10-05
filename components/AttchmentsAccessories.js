@@ -47,7 +47,7 @@ const AttchmentsAccessories = ({ attAcc }) => {
 											<Button
 												copy="View More"
 												url={block.url}
-												className="bg-black text-center w-100 "
+												className="bg-primary text-white text-center w-100 "
 											/>
 										</div>
 									</div>

@@ -18,6 +18,8 @@ import AttchmentsAccessories from "@/components/AttchmentsAccessories";
 import Faqs from "@/components/Faqs";
 import RelatedLinks from "@/components/RelatedLinks";
 import ResponsiveImage from "@/components/ResponsiveImage";
+import HeroPromo from "./elements/HeroPromo";
+import CTABlock from "@/components/CTABlock";
 
 export default function SnowV2({}) {
 	useEffect(() => {
@@ -45,12 +47,17 @@ export default function SnowV2({}) {
 		document.body.appendChild(scriptEl);
 	});
 
+	const addPromo = true;
+	const addCta = true;
+
 	return (
 		<>
 			<div className="mtd-page">
 				<div className="snow-v2 snow-v2-index">
 					<section className="section-1 hero d-flex flex-column-reverse">
-						<div className="wrapper">
+						<div className="wrapper w-100 d-flex flex-column align-items-end">
+							{addPromo && <HeroPromo />}
+
 							<div className="block bg-black clip-corner">
 								<svg
 									id="Layer_1"
@@ -81,72 +88,48 @@ export default function SnowV2({}) {
 							alt=""
 						/>
 					</section>
+
+					{addCta && (
+						<section className="bg-secondary">
+							<ul
+								className="wrapper py-4 list-unstyled flex align-items-center"
+								style={{ gap: "2em" }}>
+								<li
+									className="position-relative col-4"
+									style={{ minWidth: "200px", minHeight: "200px" }}>
+									<ResponsiveImage
+										id="financing-18"
+										src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Drupal_Large-CubFamily_G1.jpg"
+										alt=""
+										className="position-absolute w-100 h-100"
+										style={{ top: 0, left: 0, objectFit: "cover" }}
+									/>
+								</li>
+								<li className="col-8">
+									<CTABlock
+										block={{
+											className: "",
+											title: {
+												copy: "18 Month Financing Available<sup>*</sup>",
+												className: "",
+											},
+											p: {
+												copy: "Phasellus malesuada lectus eget sagittis lobortis. Mauris nibh turpis, consectetur nec sem eget, dictum porttitor mi. Curabitur porta ipsum nec mauris ullamcorper rutrum in sed lacus. Duis vel accumsan urna. Sed eget diam nibh. Aliquam vitae risus congue, dapibus felis quis, ultricies lorem. Curabitur viverra odio sed metus egestas pharetra.",
+												className: "",
+											},
+											button: {
+												copy: "Find out more",
+												url: "https://www.cubcadet.com/en_US/financing",
+												className: "bg-black",
+											},
+										}}
+									/>
+								</li>
+							</ul>
+						</section>
+					)}
+
 					<section className="section-2 bg-black d-flex flex-column">
-						<div className="top">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 45 45"
-								xmlSpace="preserve"
-								style={{ width: "1.875rem", height: "1.875rem" }}>
-								<path d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z" />
-							</svg>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 45 45"
-								xmlSpace="preserve"
-								style={{ width: "1.875rem", height: "1.875rem" }}>
-								<path d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z" />
-							</svg>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 45 45"
-								xmlSpace="preserve"
-								style={{ width: "1.875rem", height: "1.875rem" }}>
-								<path d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z" />
-							</svg>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 45 45"
-								xmlSpace="preserve"
-								style={{ width: "1.875rem", height: "1.875rem" }}>
-								<path d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z" />
-							</svg>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 45 45"
-								xmlSpace="preserve"
-								style={{ width: "1.875rem", height: "1.875rem" }}>
-								<path d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z" />
-							</svg>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 45 45"
-								xmlSpace="preserve"
-								style={{ width: "1.875rem", height: "1.875rem" }}>
-								<path d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z" />
-							</svg>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 45 45"
-								xmlSpace="preserve"
-								style={{ width: "1.875rem", height: "1.875rem" }}>
-								<path d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z" />
-							</svg>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 45 45"
-								xmlSpace="preserve"
-								style={{ width: "1.875rem", height: "1.875rem" }}>
-								<path d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z" />
-							</svg>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 45 45"
-								xmlSpace="preserve"
-								style={{ width: "1.875rem", height: "1.875rem" }}>
-								<path d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z" />
-							</svg>
-						</div>
 						<div className="wrapper">
 							<h1>
 								X Series Snow Blowers by Cub Cadet<sup>®</sup>
@@ -159,51 +142,8 @@ export default function SnowV2({}) {
 								<sup>®</sup> or the three-stage system of the 3X<sup>®</sup>.
 							</p>
 						</div>
-						<div className="bottom">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 45 45"
-								xmlSpace="preserve"
-								style={{ width: "1.875rem", height: "1.875rem" }}>
-								<path d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z" />
-							</svg>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 45 45"
-								xmlSpace="preserve"
-								style={{ width: "1.875rem", height: "1.875rem" }}>
-								<path d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z" />
-							</svg>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 45 45"
-								xmlSpace="preserve"
-								style={{ width: "1.875rem", height: "1.875rem" }}>
-								<path d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z" />
-							</svg>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 45 45"
-								xmlSpace="preserve"
-								style={{ width: "1.875rem", height: "1.875rem" }}>
-								<path d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z" />
-							</svg>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 45 45"
-								xmlSpace="preserve"
-								style={{ width: "1.875rem", height: "1.875rem" }}>
-								<path d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z" />
-							</svg>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 45 45"
-								xmlSpace="preserve"
-								style={{ width: "1.875rem", height: "1.875rem" }}>
-								<path d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z" />
-							</svg>
-						</div>
 					</section>
+
 					<section className="section-3">
 						<div className="wrapper">
 							<div className="container">
@@ -218,10 +158,6 @@ export default function SnowV2({}) {
 												src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Cub-Cadet-1X_21LHP_1.jpg"
 												alt=""
 											/>
-											{/* <ResponsiveImage
-												src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw855378c6/products/Equipment/Cub-Cadet-1X_21LHP_1.jpg?sw=290&sh=290&sm=fit"
-												alt=""
-											/> */}
 											<strong className="title">
 												1X Single-Stage Snow Blowers
 											</strong>
@@ -1254,7 +1190,7 @@ export default function SnowV2({}) {
 							"Snow Blower Accessories",
 						],
 					}}
-					className="mt-6 border-bottom"
+					className="mt-6"
 				/>
 
 				<RelatedLinks
@@ -1269,7 +1205,7 @@ export default function SnowV2({}) {
 							"find a dealer",
 						],
 					}}
-					className="mt-2 border-bottom"
+					className="mt-2"
 				/>
 				<RelatedLinks
 					relatedCats={{
