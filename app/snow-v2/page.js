@@ -24,30 +24,30 @@ import ImgSwappin from "./elements/ImgSwappin";
 export default function SnowV2({}) {
 	const [imgType, setImgType] = useState("orig");
 
-// 	useEffect(() => {
-// 		document.querySelectorAll("#finder-script").forEach(function (elem) {
-// 			elem.remove();
-// 		});
-// 		const html = `
-// <script type="text/javascript" id="finder-script">
-//   (function(c,a,r,t,f,u,l)
-//             {
-//               ((c[u] =
-//                 c[u] ||
-//                 function () {
-//                   (c[u].q = c[u].q || []).push(arguments);
-//                 }),
-//               (l = a.createElement(r)),
-//               (l.async = 1),
-//               (l.id = u + "scr"),
-//               (l.src = f),
-//               a[t].appendChild(l))
-//             }
-//             )(window,document,"script","body","https://embed.cartfulsolutions.com/cub-cadet-finder/recommendation.min.js","cfl643");
-// </script>`;
-// 		const scriptEl = document.createRange().createContextualFragment(html);
-// 		document.body.appendChild(scriptEl);
-// 	});
+	// 	useEffect(() => {
+	// 		document.querySelectorAll("#finder-script").forEach(function (elem) {
+	// 			elem.remove();
+	// 		});
+	// 		const html = `
+	// <script type="text/javascript" id="finder-script">
+	//   (function(c,a,r,t,f,u,l)
+	//             {
+	//               ((c[u] =
+	//                 c[u] ||
+	//                 function () {
+	//                   (c[u].q = c[u].q || []).push(arguments);
+	//                 }),
+	//               (l = a.createElement(r)),
+	//               (l.async = 1),
+	//               (l.id = u + "scr"),
+	//               (l.src = f),
+	//               a[t].appendChild(l))
+	//             }
+	//             )(window,document,"script","body","https://embed.cartfulsolutions.com/cub-cadet-finder/recommendation.min.js","cfl643");
+	// </script>`;
+	// 		const scriptEl = document.createRange().createContextualFragment(html);
+	// 		document.body.appendChild(scriptEl);
+	// 	});
 
 	const addPromo = true;
 	const addCta = true;
@@ -177,12 +177,25 @@ export default function SnowV2({}) {
 								<li
 									className="d-none d-lg-block position-relative col-xl-4"
 									style={{ minWidth: "200px", minHeight: "200px" }}>
-									<ResponsiveImage
-										id="financing-18"
-										src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Drupal_Large-CubFamily_G1.jpg"
-										alt=""
-										className="position-absolute w-100 h-100"
-										style={{ top: 0, left: 0, objectFit: "cover" }}
+									<ImgSwappin
+										imgType={imgType}
+										res={
+											<ResponsiveImage
+												id="financing-18"
+												src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Drupal_Large-CubFamily_G1.jpg"
+												alt=""
+												className="position-absolute w-100 h-100"
+												style={{ top: 0, left: 0, objectFit: "cover" }}
+											/>
+										}
+										orig={
+											<img
+												alt=""
+												className="position-absolute w-100 h-100"
+												style={{ top: 0, left: 0, objectFit: "cover" }}
+												src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v68c7544bdfc72387516ab486d439719f7c9bb8d1/snow-v2/Drupal_Large-CubFamily_G1.jpg"
+											/>
+										}
 									/>
 								</li>
 								<li className="col-xl-8">
