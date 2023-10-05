@@ -1,17 +1,12 @@
 "use client";
 import CubDays from "./CubDays2023";
 
-export default function HeroPromo({}) {
+export default function HeroPromo({ className, style }) {
 	return (
 		<>
-			<style jsx>{`
-				@media (min-width: 64em) {
-					.w-xl-348 {
-						max-width: 348px !important;
-					}
-				}
-			`}</style>
-			<div className="w-100 w-xl-348 bg-black text-center rounded-bottom overflow-hidden mb-2">
+			<div
+				className={`w-100 w-xl-348 bg-black text-center rounded-bottom overflow-hidden mt-lg-2 mb-lg-2 ${className}`}
+				style={style}>
 				<CubDays />
 			</div>
 		</>

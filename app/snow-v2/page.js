@@ -54,10 +54,28 @@ export default function SnowV2({}) {
 		<>
 			<div className="mtd-page">
 				<div className="snow-v2 snow-v2-index">
-					<section className="section-1 hero d-flex flex-column-reverse">
-						<div className="wrapper w-100 d-flex flex-column align-items-end">
-							{addPromo && <HeroPromo />}
+					<section className="position-relative section-1 hero d-flex flex-column align-items-stretch">
+						{/* <div className="position-xl-absolute wrapper w-100 d-flex flex-column-reverse align-items-end mb-0"> */}
 
+						<div className="position-relative" style={{ minHeight: "600px" }}>
+							<ResponsiveImage
+								id="hero"
+								src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/31AM5HVSB56_2X26_Inteli_env02.jpg"
+								alt=""
+								className="h-100 w-100 position-absolute"
+								style={{ objectFit: "cover", top: 0 }}
+							/>
+						</div>
+
+						<div
+							className="mb-0 position-absolute"
+							style={{
+								top: "20px",
+								right: "20px",
+								minHeight: "180px",
+								maxWidth: "80.625rem",
+								margin: "auto",
+							}}>
 							<div className="block bg-black clip-corner">
 								<svg
 									id="Layer_1"
@@ -82,20 +100,44 @@ export default function SnowV2({}) {
 							</div>
 						</div>
 
-						<ResponsiveImage
-							id="hero"
-							src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/31AM5HVSB56_2X26_Inteli_env02.jpg"
-							alt=""
-						/>
+						<style jsx>{`
+							@media (min-width: 64em) {
+								.w-xl-348 {
+									max-width: 348px !important;
+								}
+
+								.position-xl-absolute {
+									position: absolute !important;
+								}
+
+								.bottom-xl-20 {
+									bottom: 20px;
+								}
+
+								.right-xl-20 {
+									right: 20px;
+								}
+							}
+						`}</style>
+						<div
+							className="position-relative position-xl-absolute w-100 w-xl-348 right-xl-20 bottom-xl-20"
+							style={{
+								maxWidth: "80.625rem",
+								margin: "auto",
+							}}>
+							{addPromo && <HeroPromo className="" />}
+						</div>
+
+						{/* </div> */}
 					</section>
 
 					{addCta && (
 						<section className="bg-secondary">
 							<ul
-								className="wrapper py-4 list-unstyled flex align-items-center"
+								className="wrapper py-4 list-unstyled flex align-items-center p-2"
 								style={{ gap: "2em" }}>
 								<li
-									className="position-relative col-4"
+									className="d-none d-lg-block position-relative col-xl-4"
 									style={{ minWidth: "200px", minHeight: "200px" }}>
 									<ResponsiveImage
 										id="financing-18"
@@ -105,10 +147,10 @@ export default function SnowV2({}) {
 										style={{ top: 0, left: 0, objectFit: "cover" }}
 									/>
 								</li>
-								<li className="col-8">
+								<li className="col-xl-8">
 									<CTABlock
 										block={{
-											className: "",
+											className: "text-center text-lg-left",
 											title: {
 												copy: "18 Month Financing Available<sup>*</sup>",
 												className: "",
