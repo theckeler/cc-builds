@@ -64,6 +64,7 @@ export default function SnowV2({}) {
 								alt=""
 								className="h-100 w-100 position-absolute"
 								style={{ objectFit: "cover", top: 0 }}
+								hero
 							/>
 						</div>
 
