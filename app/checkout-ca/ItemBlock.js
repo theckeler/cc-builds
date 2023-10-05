@@ -24,8 +24,8 @@ export default function ItemBlock({ curState }) {
 
 	return (
 		<div
-			className={`product-line-item ${
-				curState === "CA" && "border-danger border"
+			className={`product-line-item mb-0 ${
+				curState === "CA" && "alert alert-danger "
 			}`}
 			data-product-line-item="7789652938c304bdbc4f258be7">
 			<div className="product-line-item-row row no-gutters">
@@ -53,7 +53,7 @@ export default function ItemBlock({ curState }) {
 						style={{ zIndex: 0 }}
 					/>
 				</div>
-				<div className="product-line-item-details col-6 ">
+				<div className="product-line-item-details col-6">
 					<div className="line-item-header">
 						<div className="line-item-name">
 							<span>SCP100</span>
@@ -151,18 +151,18 @@ export default function ItemBlock({ curState }) {
 				</div>
 			</div>
 			{curState === "CA" && (
-				<div className="p-1">
-					<div className="border-bottom pb-1 mb-1">
+				<div className="p-1 mt-2" style={{ background: "#fff" }}>
+					<div className="text-center">
 						This model cannot be shipped to an address in California. If you
 						have questions, please contact customer service.
-						<br />
-						<span className="font-bold">Replacement Suggestions:</span>
 					</div>
-
-					<ul className="list-unstyled flex">
+					<div className="text-center mt-1" style={{ fontSize: "18px" }}>
+						Alternative Products:
+					</div>
+					<ul className="list-unstyled flex mt-1">
 						{suggestions.map((suggestion, i) => {
 							return (
-								<li className="col-4" style={{ background: "#efefef" }} key={i}>
+								<li className="col-4" key={i}>
 									<a
 										href={suggestion.href}
 										data-gtmdata='{"id":"33ABA7ES710","name":"XT1 LT42E","productType":"WholeGood"}'
