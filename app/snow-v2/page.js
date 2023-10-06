@@ -3,15 +3,6 @@ import React, { useState, useEffect } from "react";
 
 import "./scss/snow-v2.scss";
 
-// import Logo from "@/images/XSeries";
-// import Intellipower from "@/images/IntellipowerLogo";
-// import EFI from "@/images/EfiLogo";
-// import IntellipowerBack from "@/images/IntellipowerBack";
-
-// import Pluses from "@/components/Pluses";
-// import Button from "@/components/Button";
-// import QuoteBlock from "@/components/QuoteBlock";
-// import HowToMaintence from "@/components/HowToMaintence";
 import Articles from "@/components/Articles";
 import AttchmentsAccessories from "@/components/AttchmentsAccessories";
 import Faqs from "@/components/Faqs";
@@ -54,27 +45,27 @@ export default function SnowV2({}) {
 
 	return (
 		<>
+			<div
+				className="position-fixed p-2 bg-white"
+				style={{ right: "20px", top: "20px", zIndex: 1001 }}>
+				<button
+					className="border-0 p-1 mr-1"
+					style={{ fontSize: "12px", background: "#000", color: "#fff" }}
+					onClick={() => {
+						setImgType("orig");
+					}}>
+					Original Images
+				</button>
+				<button
+					className="border-0  p-1"
+					style={{ fontSize: "12px", background: "#000", color: "#fff" }}
+					onClick={() => {
+						setImgType("res");
+					}}>
+					Responsive Images
+				</button>
+			</div>
 			<div className="mtd-page">
-				<div
-					className="position-fixed p-2 bg-white"
-					style={{ right: "20px", top: "20px", zIndex: 1001 }}>
-					<button
-						className="border-0 bg-black p-1 mr-1"
-						style={{ fontSize: "12px" }}
-						onClick={() => {
-							setImgType("orig");
-						}}>
-						Original Images
-					</button>
-					<button
-						className="border-0 bg-black p-1"
-						style={{ fontSize: "12px" }}
-						onClick={() => {
-							setImgType("res");
-						}}>
-						Responsive Images
-					</button>
-				</div>
 				<div className="snow-v2 snow-v2-index">
 					<section className="position-relative section-1 hero d-flex flex-column align-items-stretch">
 						{/* <div className="position-xl-absolute wrapper w-100 d-flex flex-column-reverse align-items-end mb-0"> */}
@@ -86,6 +77,7 @@ export default function SnowV2({}) {
 									<ResponsiveImage
 										id="hero"
 										src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/31AM5HVSB56_2X26_Inteli_env02.jpg"
+										// //webp="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/31AM5HVSB56_2X26_Inteli_env02.webp"
 										alt=""
 										className="h-100 w-100 position-absolute"
 										style={{ objectFit: "cover", top: 0 }}
@@ -163,14 +155,25 @@ export default function SnowV2({}) {
 								maxWidth: "80.625rem",
 								margin: "auto",
 							}}>
-							{addPromo && <HeroPromo className="" />}
+							{addPromo && (
+								<>
+									<HeroPromo className="" />
+									<a
+										className="w-100 py-1 border-0 bg-secondary px-4 font-bold text-uppercase d-flex justify-content-center align-items-center mb-2"
+										href="https://www.cubcadet.com/en_US/seasonal-offers.html"
+										aria-label="See Details"
+										style={{ minHeight: 48 }}>
+										See Financing Options
+									</a>
+								</>
+							)}
 						</div>
 
 						{/* </div> */}
 					</section>
 
 					{addCta && (
-						<section className="bg-secondary">
+						<section className="" style={{ background: "#efefef" }}>
 							<ul
 								className="wrapper py-4 list-unstyled flex align-items-center p-2"
 								style={{ gap: "2em" }}>
@@ -183,6 +186,7 @@ export default function SnowV2({}) {
 											<ResponsiveImage
 												id="financing-18"
 												src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Drupal_Large-CubFamily_G1.jpg"
+												// //webp="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Drupal_Large-CubFamily_G1.webp"
 												alt=""
 												className="position-absolute w-100 h-100"
 												style={{ top: 0, left: 0, objectFit: "cover" }}
@@ -252,6 +256,7 @@ export default function SnowV2({}) {
 													<ResponsiveImage
 														id="stage-1"
 														src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Cub-Cadet-1X_21LHP_1.jpg"
+														//webp="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Cub-Cadet-1X_21LHP_1.webp"
 														alt=""
 													/>
 												}
@@ -353,9 +358,20 @@ export default function SnowV2({}) {
 										<div
 											href="https://www.cubcadet.com/en_US/snow-blowers/two-stage-snow-blowers"
 											className="unstyled link">
-											<ResponsiveImage
-												src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Cub-Cadet_2X28_IP_4.jpg"
-												alt=""
+											<ImgSwappin
+												imgType={imgType}
+												res={
+													<ResponsiveImage
+														src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Cub-Cadet_2X28_IP_4-new.jpg"
+														alt=""
+													/>
+												}
+												orig={
+													<img
+														src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw0d2ca778/products/Equipment/Cub-Cadet_2X28_IP_4.jpg"
+														alt=""
+													/>
+												}
 											/>
 											<strong className="title">
 												2X Two-Stage Snow Blowers
@@ -648,6 +664,7 @@ export default function SnowV2({}) {
 							res={
 								<ResponsiveImage
 									src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/31AH5EVZ596_3X30HD_Env03.jpg"
+									//webp="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/31AH5EVZ596_3X30HD_Env03.webp"
 									alt=""
 									id="snowguy"
 								/>
@@ -1035,7 +1052,6 @@ export default function SnowV2({}) {
 														<ResponsiveImage
 															src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-chute-control.svg"
 															alt=""
-															className=""
 														/>
 													}
 													orig={
@@ -1066,7 +1082,6 @@ export default function SnowV2({}) {
 														<ResponsiveImage
 															src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-light.svg"
 															alt=""
-															className=""
 														/>
 													}
 													orig={
@@ -1097,7 +1112,6 @@ export default function SnowV2({}) {
 														<ResponsiveImage
 															src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-push-button.svg"
 															alt=""
-															className=""
 														/>
 													}
 													orig={
@@ -1128,7 +1142,6 @@ export default function SnowV2({}) {
 														<ResponsiveImage
 															src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-speed.svg"
 															alt=""
-															className=""
 														/>
 													}
 													orig={
@@ -1178,6 +1191,7 @@ export default function SnowV2({}) {
 									<ResponsiveImage
 										className="d-none d-md-block w-100"
 										src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Group3540.png"
+										//webp="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Group3540.webp"
 										alt=""
 										id="group-desktop"
 									/>
@@ -1502,7 +1516,10 @@ export default function SnowV2({}) {
 								copy: "If you live in areas where snowfall is frequent or heavy, shoveling becomes part of your daily routine. Ditching your shovel, along with the heavy lifting and repetitive strain that comes with shoveling snow, in favor of a snow blower can save you time and energy. A couple of reasons to justify a snow blower…",
 								url: "https://www.cubcadet.com/en_US/product-information/cub-cadet-snow-blower-buying-guide.html",
 								res: (
-									<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/SnowBlow_ProdLineBrow_Hero_LineUp_01_desktop_1015x630_v1.jpg" />
+									<ResponsiveImage
+										src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/SnowBlow_ProdLineBrow_Hero_LineUp_01_desktop_1015x630_v1.jpg"
+										id="Hero_LineUp_01"
+									/>
 								),
 								orig: (
 									<img

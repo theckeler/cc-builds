@@ -29,7 +29,7 @@ const Articles = ({ articles, className, numRows, imgType = null }) => {
 
 							return (
 								<li
-									className={`col-sm-12 col-md-${
+									className={`col-12 col-md-6 col-xl-3 p-1 d-flex col-md-${
 										12 / numRows
 									} p-1 d-flex flex-column`}
 									key={i}>

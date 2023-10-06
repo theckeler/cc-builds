@@ -1,8 +1,6 @@
 // import ResponsiveImage from "@/components/ResponsiveImage";
 
 const ImgCopyBlockStacked = ({ block, className, style, imgType = null }) => {
-	console.log("imgType", imgType);
-
 	return (
 		<a
 			href={block.url}
