@@ -160,7 +160,7 @@ export default function SnowV2({}) {
 									<HeroPromo className="" />
 									<a
 										className="w-100 py-1 border-0 bg-secondary px-4 font-bold text-uppercase d-flex justify-content-center align-items-center mb-2"
-										href="https://www.cubcadet.com/en_US/seasonal-offers.html"
+										href="#financing"
 										aria-label="See Details"
 										style={{ minHeight: 48 }}>
 										See Financing Options
@@ -202,7 +202,7 @@ export default function SnowV2({}) {
 										}
 									/>
 								</li>
-								<li className="col-xl-8">
+								<li className="col-xl-8" id="financing">
 									<CTABlock
 										block={{
 											className: "text-center text-lg-left",
