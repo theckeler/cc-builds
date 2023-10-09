@@ -211,7 +211,7 @@ export default function SnowV2({}) {
 												className: "",
 											},
 											button: {
-												copy: "Find out more",
+												copy: "LEARN MORE",
 												url: "https://www.cubcadet.com/en_US/financing",
 												className: "bg-black",
 											},
