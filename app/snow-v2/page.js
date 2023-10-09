@@ -68,8 +68,6 @@ export default function SnowV2({}) {
 			<div className="mtd-page">
 				<div className="snow-v2 snow-v2-index">
 					<section className="position-relative section-1 hero d-flex flex-column align-items-stretch">
-						{/* <div className="position-xl-absolute wrapper w-100 d-flex flex-column-reverse align-items-end mb-0"> */}
-
 						<div className="position-relative" style={{ minHeight: "600px" }}>
 							<ImgSwappin
 								imgType={imgType}
@@ -77,7 +75,7 @@ export default function SnowV2({}) {
 									<ResponsiveImage
 										id="hero"
 										src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/31AM5HVSB56_2X26_Inteli_env02.jpg"
-										// //webp="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/31AM5HVSB56_2X26_Inteli_env02.webp"
+										// webp="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/31AM5HVSB56_2X26_Inteli_env02.webp"
 										alt=""
 										className="h-100 w-100 position-absolute"
 										style={{ objectFit: "cover", top: 0 }}
@@ -158,18 +156,16 @@ export default function SnowV2({}) {
 							{addPromo && (
 								<>
 									<HeroPromo className="" />
-									<a
+									{/* <a
 										className="w-100 py-1 border-0 bg-secondary px-4 font-bold text-uppercase d-flex justify-content-center align-items-center mb-2"
 										href="#financing"
 										aria-label="See Details"
 										style={{ minHeight: 48 }}>
 										See Financing Options
-									</a>
+									</a> */}
 								</>
 							)}
 						</div>
-
-						{/* </div> */}
 					</section>
 
 					{addCta && (
@@ -186,7 +182,7 @@ export default function SnowV2({}) {
 											<ResponsiveImage
 												id="financing-18"
 												src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Drupal_Large-CubFamily_G1.jpg"
-												// //webp="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Drupal_Large-CubFamily_G1.webp"
+												// webp="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Drupal_Large-CubFamily_G1.webp"
 												alt=""
 												className="position-absolute w-100 h-100"
 												style={{ top: 0, left: 0, objectFit: "cover" }}
@@ -256,7 +252,7 @@ export default function SnowV2({}) {
 													<ResponsiveImage
 														id="stage-1"
 														src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Cub-Cadet-1X_21LHP_1.jpg"
-														//webp="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Cub-Cadet-1X_21LHP_1.webp"
+														// webp="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Cub-Cadet-1X_21LHP_1.webp"
 														alt=""
 													/>
 												}
@@ -664,7 +660,7 @@ export default function SnowV2({}) {
 							res={
 								<ResponsiveImage
 									src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/31AH5EVZ596_3X30HD_Env03.jpg"
-									//webp="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/31AH5EVZ596_3X30HD_Env03.webp"
+									// webp="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/31AH5EVZ596_3X30HD_Env03.webp"
 									alt=""
 									id="snowguy"
 								/>
@@ -1191,7 +1187,7 @@ export default function SnowV2({}) {
 									<ResponsiveImage
 										className="d-none d-md-block w-100"
 										src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Group3540.png"
-										//webp="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Group3540.webp"
+										// webp="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Group3540.webp"
 										alt=""
 										id="group-desktop"
 									/>
