@@ -174,7 +174,7 @@ export default function SnowV2({}) {
 								className="wrapper py-4 list-unstyled flex align-items-center p-2"
 								style={{ gap: "2em" }}>
 								<li
-									className="d-none d-lg-block position-relative col-xl-4"
+									className="d-none d-lg-block position-relative col-xl-3"
 									style={{ minWidth: "200px", minHeight: "200px" }}>
 									<ImgSwappin
 										imgType={imgType}
@@ -198,7 +198,7 @@ export default function SnowV2({}) {
 										}
 									/>
 								</li>
-								<li className="col-xl-8" id="financing">
+								<li className="col-xl-9" id="financing">
 									<CTABlock
 										block={{
 											className: "text-center text-lg-left",
