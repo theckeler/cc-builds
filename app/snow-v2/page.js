@@ -11,6 +11,7 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 import HeroPromo from "./elements/HeroPromo";
 import CTABlock from "@/components/CTABlock";
 import ImgSwappin from "./elements/ImgSwappin";
+import Button from "@/components/Button";
 
 export default function SnowV2({}) {
 	const [imgType, setImgType] = useState("orig");
@@ -131,7 +132,7 @@ export default function SnowV2({}) {
 						<style jsx>{`
 							@media (min-width: 64em) {
 								.w-xl-348 {
-									max-width: 348px !important;
+									max-width: 450px !important;
 								}
 
 								.position-xl-absolute {
@@ -156,19 +157,62 @@ export default function SnowV2({}) {
 							{addPromo && (
 								<>
 									<HeroPromo className="" />
-									{/* <a
-										className="w-100 py-1 border-0 bg-secondary px-4 font-bold text-uppercase d-flex justify-content-center align-items-center mb-2"
-										href="#financing"
+									<a
+										className="d-block text-white"
+										href="https://www.cubcadet.com/en_US/financing"
 										aria-label="See Details"
-										style={{ minHeight: 48 }}>
-										See Financing Options
-									</a> */}
+										style={{
+											minHeight: 48,
+											textDecoration: "none",
+											background: "#000",
+										}}>
+										<ul
+											className="list-unstyled flex align-items-center p-1"
+											style={{ gap: "0.5em" }}>
+											<li className="col-2 px-0">
+												<ImgSwappin
+													imgType={imgType}
+													res={
+														<ResponsiveImage
+															id="financing-18"
+															src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v2d2985a90f92210137904004bd415f8c604159aa/financing-view-all/cub-cadet-credit-card.png"
+															// webp="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Drupal_Large-CubFamily_G1.webp"
+															alt=""
+															className="position-absolute w-100 h-100"
+															style={{ top: 0, left: 0, objectFit: "cover" }}
+														/>
+													}
+													orig={
+														<img
+															alt=""
+															className=" w-100 "
+															style={{ top: 0, left: 0, objectFit: "cover" }}
+															src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v2d2985a90f92210137904004bd415f8c604159aa/financing-view-all/cub-cadet-credit-card.png"
+														/>
+													}
+												/>
+											</li>
+											<li className="col-6 px-0 font-bold">
+												<span style={{ fontSize: "1.2em" }}>
+													18 Month Financing Available
+												</span>
+												<br />
+												<small>Restrictions apply</small>
+											</li>
+											<li className="col-4 px-0 text-center">
+												<Button
+													copy="Learn More"
+													className="p-1 border-0 bg-secondary"
+												/>
+											</li>
+										</ul>
+									</a>
 								</>
 							)}
 						</div>
 					</section>
 
-					{addCta && (
+					{/* {addCta && (
 						<section className="" style={{ background: "#efefef" }}>
 							<ul
 								className="wrapper py-4 list-unstyled flex align-items-center p-2"
@@ -220,7 +264,7 @@ export default function SnowV2({}) {
 								</li>
 							</ul>
 						</section>
-					)}
+					)} */}
 
 					<section className="section-2 bg-black d-flex flex-column">
 						<div className="wrapper">
