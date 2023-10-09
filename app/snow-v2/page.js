@@ -181,7 +181,7 @@ export default function SnowV2({}) {
 										res={
 											<ResponsiveImage
 												id="financing-18"
-												src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Drupal_Large-CubFamily_G1.jpg"
+												src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v2d2985a90f92210137904004bd415f8c604159aa/financing-view-all/cub-cadet-credit-card.png"
 												// webp="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Drupal_Large-CubFamily_G1.webp"
 												alt=""
 												className="position-absolute w-100 h-100"
@@ -191,9 +191,9 @@ export default function SnowV2({}) {
 										orig={
 											<img
 												alt=""
-												className="position-absolute w-100 h-100"
+												className=" w-100 "
 												style={{ top: 0, left: 0, objectFit: "cover" }}
-												src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v68c7544bdfc72387516ab486d439719f7c9bb8d1/snow-v2/Drupal_Large-CubFamily_G1.jpg"
+												src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v2d2985a90f92210137904004bd415f8c604159aa/financing-view-all/cub-cadet-credit-card.png"
 											/>
 										}
 									/>
@@ -203,11 +203,11 @@ export default function SnowV2({}) {
 										block={{
 											className: "text-center text-lg-left",
 											title: {
-												copy: "18 Month Financing Available<sup>*</sup>",
+												copy: "18 Month Financing Available",
 												className: "",
 											},
 											p: {
-												copy: "Phasellus malesuada lectus eget sagittis lobortis. Mauris nibh turpis, consectetur nec sem eget, dictum porttitor mi. Curabitur porta ipsum nec mauris ullamcorper rutrum in sed lacus. Duis vel accumsan urna. Sed eget diam nibh. Aliquam vitae risus congue, dapibus felis quis, ultricies lorem. Curabitur viverra odio sed metus egestas pharetra.",
+												copy: "Restrictions apply ",
 												className: "",
 											},
 											button: {
