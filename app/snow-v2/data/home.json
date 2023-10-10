@@ -107,12 +107,12 @@
 		"blocks": [
 			{
 				"title": "Discover power that rises to the occasion.",
-				"copy": "IntelliPower<sup>™</sup> technology provides <strong>up to 13% more available power</strong> for the 272cc engine, resulting in less bogging down when clearing heavy, wet and deep snow.<sup>*</sup>",
-				"tag": "<sup>*</sup>When compared to the same engine without IntelliPower<sup>™</sup> technology. Improvements vary depending on engine models and specific operating conditions."
+				"copy": "IntelliPower<sup>®</sup> technology provides <strong>up to 13% more available power</strong> for the 272cc engine, resulting in less bogging down when clearing heavy, wet and deep snow.<sup>*</sup>",
+				"tag": "<sup>*</sup>When compared to the same engine without IntelliPower<sup>®</sup> technology. Improvements vary depending on engine models and specific operating conditions."
 			},
 			{
 				"title": "Cub Cadet electronic fuel-injected (EFI) engines set new standards in strength and power. EFI provides reliable starting in most conditions.",
-				"copy": "Available with IntelliPower<sup>™</sup> engine technology to take on heavy, deep and wet snow conditions.",
+				"copy": "Available with IntelliPower<sup>®</sup> engine technology to take on heavy, deep and wet snow conditions.",
 				"tag": ""
 			}
 		],
@@ -233,7 +233,7 @@
 			{
 				"row": [
 					{
-						"copy": "IntelliPower<sup>™</sup> for more available engine power to tackle heavy and wet snow",
+						"copy": "IntelliPower<sup>®</sup> for more available engine power to tackle heavy and wet snow",
 						"sub": false
 					},
 					{ "active": false },

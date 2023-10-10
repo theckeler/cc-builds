@@ -158,7 +158,7 @@ export default function SnowV2({}) {
 								<>
 									<HeroPromo className="" />
 									<a
-										className="d-block text-white"
+										className="d-block text-white mt-1 ml-1 mr-1 mt-lg-0 ml-lg-0 mr-lg-0"
 										href="https://www.cubcadet.com/en_US/financing"
 										aria-label="See Details"
 										style={{
@@ -192,7 +192,7 @@ export default function SnowV2({}) {
 													}
 												/>
 											</li>
-											<li className="col-6 px-0 font-bold">
+											<li className="col-6 px-0 font-bold text-center text-lg-left">
 												<span style={{ fontSize: "1.2em" }}>
 													18 Month Financing Available
 												</span>
