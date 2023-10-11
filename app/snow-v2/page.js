@@ -737,14 +737,14 @@ export default function SnowV2({}) {
 													Discover power that rises to the occasion.
 												</p>
 												<p className="copy">
-													IntelliPower<sup>™</sup> technology provides
+													IntelliPower<sup>®</sup> technology provides
 													<strong>up to 13% more available power</strong> for
 													the 272cc engine, resulting in less bogging down when
 													clearing heavy, wet and deep snow.<sup>*</sup>
 												</p>
 												<small>
 													<sup>*</sup>When compared to the same engine without
-													IntelliPower<sup>™</sup> technology. Improvements vary
+													IntelliPower<sup>®</sup> technology. Improvements vary
 													depending on engine models and specific operating
 													conditions.
 												</small>
@@ -1044,7 +1044,7 @@ export default function SnowV2({}) {
 													reliable starting in most conditions.
 												</p>
 												<p className="copy">
-													Available with IntelliPower<sup>™</sup> engine
+													Available with IntelliPower<sup>®</sup> engine
 													technology to take on heavy, deep and wet snow
 													conditions.
 												</p>
@@ -1457,7 +1457,7 @@ export default function SnowV2({}) {
 								</li>
 								<li className="d-flex p-2 column-0 row-6">
 									<span className="d-flex flex-column justify-content-center">
-										IntelliPower<sup>™</sup> for more available engine power to
+										IntelliPower<sup>®</sup> for more available engine power to
 										tackle heavy and wet snow
 									</span>
 								</li>
