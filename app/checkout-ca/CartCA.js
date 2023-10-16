@@ -444,9 +444,8 @@ export default function CartCA() {
 
 						<hr />
 						<p className="">
-							Cart Error: This model cannot be shipped to an address in
-							California. If you have questions, please contact customer
-							service.
+							This model cannot be shipped to an address in California. If you
+							have questions, please contact customer service.
 						</p>
 					</div>
 
