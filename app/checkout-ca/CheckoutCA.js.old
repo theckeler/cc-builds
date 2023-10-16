@@ -6,7 +6,7 @@ import ItemBlock from "./ItemBlock";
 import ErrorMessage from "./ErrorMessage";
 
 export default function CheckoutCA() {
-	const [curState, setCurState] = useState("CA");
+	const [curState, setCurState] = useState("");
 	useEffect(() => {
 		document.querySelector(".submit-shipping").disabled = false;
 		if (curState === "CA") {

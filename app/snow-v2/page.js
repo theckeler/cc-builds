@@ -9,7 +9,7 @@ import Faqs from "@/components/Faqs";
 import RelatedLinks from "@/components/RelatedLinks";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import HeroPromo from "./elements/HeroPromo";
-import CTABlock from "@/components/CTABlock";
+// import CTABlock from "@/components/CTABlock";
 import ImgSwappin from "./elements/ImgSwappin";
 import Button from "@/components/Button";
 import IntellipowerLogo from "../images/IntellipowerLogo";

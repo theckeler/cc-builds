@@ -55,6 +55,29 @@ export default function ItemBlock({ curState }) {
 				</div>
 				<div className="product-line-item-details col-6">
 					<div className="line-item-header">
+						<div
+							class="remove-line-item d-block"
+							style={{ textAlign: "right" }}>
+							<button
+								//className="border-1"
+								style={{
+									padding: "1px",
+									backgroundColor: "initial",
+									borderColor: "transparent",
+								}}
+								type="button"
+								class="remove-btn remove-product btn btn-light"
+								data-toggle="modal"
+								data-target="#removeProductModal"
+								data-pid="17AREACM010"
+								data-name="ZT1 54"
+								data-action="/on/demandware.store/Sites-cubcadet-Site/en_US/Cart-RemoveProductLineItem"
+								data-uuid="e134ca58e155bed1dad31c0c58"
+								aria-label="remove ZT1 54"
+								data-removecheckoutproduct="true">
+								<span aria-hidden="true"></span>
+							</button>
+						</div>
 						<div className="line-item-name">
 							<span>SCP100</span>
 							<p className="extended-name ">SIGNATURE CUT™ PUSH LAWN MOWER</p>
