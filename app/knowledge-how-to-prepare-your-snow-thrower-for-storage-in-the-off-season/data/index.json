@@ -1,0 +1,95 @@
+{
+	"h1": {
+		"copy": "FJsa!ce4ahGg2jM",
+		"className": ""
+	},
+	"p": {
+		"copy": "These instructions will explain how to prepare your snow thrower for off-season storage. Some of these steps differ between single-, two- and three-stage snow throwers. Depending on your model, the instructions below may also vary slightly from what is outlined in your operator’s manual. Always refer to your operator's manual for comprehensive instructions on maintenance and storage."
+	},
+	"steps": [
+		{
+			"step": 1,
+			"title": "Prepare your snow blower for maintenance",
+			"p": "Place your snow blower on a flat surface.  Turn the engine off and let it cool. Disconnect the spark plug ignition wire and remove the safety ignition key to prevent accidental starting of the engine."
+		},
+		{
+			"title": "SINGLE-STAGE SNOW THROWER STORAGE MAINTENANCE (STEPS 2 – 6) "
+		},
+		{
+			"step": 2,
+			"title": "Position the snow thrower for maintenance",
+			"p": "Carefully tilt the snow thrower back so it rests on the handle. This will allow you to easily access various components."
+		},
+		{
+			"step": 3,
+			"title": "Check the shave plate",
+			"p": "The shave plate can wear out over time. The shave plate on your snow thrower has two wearing edges, simply reverse it to maximize the life of the plate. If it's already been reversed, replace it with genuine, original equipment part from Cub Cadet."
+		},
+		{
+			"step": 4,
+			"title": "Check the auger",
+			"p": "The auger's rubber paddles become worn with use. They should be replaced if any excessive wear is present."
+		},
+		{
+			"step": 5,
+			"title": "Inspect the belt",
+			"p": "Remove the belt cover on the side of the snow thrower. Check the belt for signs of wear, cracks, fraying, etc. and replace if necessary."
+		},
+		{
+			"step": 6,
+			"title": "Order replacement parts",
+			"p": "If any of the items mentioned above need replacing at the end of the season, it's a good time to order and install them before you put your snow thrower into storage."
+		},
+		{
+			"title": "TWO- AND THREE-STAGE SNOW THROWER STORAGE MAINTENANCE (STEPS 2 – 6)"
+		},
+		{
+			"step": 2,
+			"title": "Check the shave plate",
+			"p": "Check the shave plate and skid shoes for damage and wear. The shave plate and skid shoes protect the housing from damage. Replace these items with genuine, original equipment parts from Cub Cadet."
+		},
+		{
+			"step": 3,
+			"title": "Position the snow thrower for maintenance",
+			"p": "Drain any fuel left in the tank using the siphon pump. A siphon pump can be purchased on cubcadet.com and wherever mower parts are sold. With the help of another person, carefully pivot the snow thrower up and forward so it rests on the auger housing. This will allow you to easily access the parts of the snow thrower that require maintenance."
+		},
+		{
+			"step": 4,
+			"title": "Lubricate the gear shaft",
+			"p": "Remove the lower frame cover from the underside of the unit. Apply a light coating of oil to the hex shaft. Be careful not to get any oil on the aluminum drive plate or the rubber friction disc. Check the rubber friction disc for wear or cracking."
+		},
+		{
+			"step": 5,
+			"title": "Return the snow thrower to its wheels and skid shoes",
+			"p": "Before checking the snow thrower belt, put the lower frame cover back in place. With the help of an additional person, carefully pivot the snow thrower back and down so it rests on the wheels and skid shoes."
+		},
+		{
+			"step": 6,
+			"title": "Inspect the belt",
+			"p": "Remove the belt cover on the front of the engine and inspect the belts for wear, cracks and fraying. If the belts are worn, they should be replaced immediately. Worn belts can break when you least expect it so make sure you replace your snow thrower belt as soon as you see signs of wear. Put the plastic belt cover back in place or order a new one if needed."
+		},
+		{
+			"title": "SINGLE-, TWO- AND THREE-STAGE SNOW THROWER STORAGE MAINTENANCE (STEPS 7 – 10)"
+		},
+		{
+			"step": 7,
+			"title": "Change the oil",
+			"p": "Drain and refill the engine oil before storing your snow thrower. Refer to your engine's Operator's Manual for the correct viscosity and oil capacity. Always dispose of the used oil in an environmentally responsible manner."
+		},
+		{
+			"step": 8,
+			"title": "Check the spark plug",
+			"p": "Remove the spark plug and inspect it for signs of corrosion or residue build-up. Clean it with a wire brush if necessary. If you are unsure if the spark plug is good or not, it is recommended that you replace the spark plug. Reinstall the spark plug and reconnect the spark plug ignition wire."
+		},
+		{
+			"step": 9,
+			"title": "Clean the snow thrower",
+			"p": "Clean debris from around the engine and muffler. Apply a light film of oil on any areas that are susceptible to rust. Wipe away any dried salt that may have accumulated to help prevent your unit from rusting over the winter."
+		},
+		{
+			"step": 10,
+			"title": "Prepare the fuel tank",
+			"p": "Finally, fill your engine's fuel tank with fresh gasoline and add a fuel stabilizer. This is better than storing it empty because an empty fuel system exposes any bare metal parts within it to air and moisture - which can lead to rust and allows gaskets and O-rings to dry out, crack and shrink, causing eventual leaks."
+		}
+	]
+}

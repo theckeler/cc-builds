@@ -17,6 +17,14 @@ const ImgCopyBlockStacked = ({ block, className, style, imgType = null }) => {
 				/>
 				<p
 					className="copy mt-2"
+					style={
+						block.lineClamp && {
+							overflow: "hidden",
+							display: "-webkit-box",
+							WebkitLineClamp: block.lineClamp,
+							WebkitBoxOrient: "vertical",
+						}
+					}
 					dangerouslySetInnerHTML={{
 						__html: block.copy,
 					}}
