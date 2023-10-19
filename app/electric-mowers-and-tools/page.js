@@ -258,7 +258,7 @@ export default function ElectricMowersAndTools({}) {
 								</ul>
 							</div>
 						</section>
-						<section className="pt-6">
+						{/* <section className="pt-6">
 							<div className="wrapper">
 								<ul className="list-unstyled d-flex flex-column flex-md-row align-items-center px-3">
 									<li className="">
@@ -274,9 +274,9 @@ export default function ElectricMowersAndTools({}) {
 												href="https://www.cubcadet.com/en_US/product-information/60-volt-max-system.html"
 												className="d-flex flex-column text-decoration-none p-2 h-100"
 												style={{ backgroundColor: "rgb(239, 239, 239)" }}>
-												<img
-													src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dwb2939b8c/images/product-line-browse/Main-Carousel/Hero_60V_Desktop_1015x630.jpg?sw=1116"
-													alt=""
+												<ResponsiveImage
+													id="CC30E_Env_02_1100x572"
+													src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/electric-mowers-and-tools/Hero_60V_Desktop_1015x630.jpg"
 												/>
 												<div className="content d-flex flex-column p-3 h-100">
 													<strong className="h3" style={{ fontSize: "1.6em" }}>
@@ -301,9 +301,9 @@ export default function ElectricMowersAndTools({}) {
 												href="https://www.cubcadet.com/en_US/product-information/lithium-ion-battery-advantage.html"
 												className="d-flex flex-column text-decoration-none p-2 h-100"
 												style={{ backgroundColor: "rgb(239, 239, 239)" }}>
-												<img
-													src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw36d4877f/Knowledge_Center/help-center/33AA27JDB10_CC30E_Env_02_1100x572.jpg?sw=1116"
-													alt=""
+												<ResponsiveImage
+													id="CC30E_Env_02_1100x572"
+													src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/electric-mowers-and-tools/33AA27JDB10_CC30E_Env_02_1100x572.jpg"
 												/>
 												<div className="content d-flex flex-column p-3 h-100">
 													<strong className="h3" style={{ fontSize: "1.6em" }}>
@@ -329,10 +329,11 @@ export default function ElectricMowersAndTools({}) {
 												href="https://www.cubcadet.com/en_US/product-information/brushless-motor-advantage.html"
 												className="d-flex flex-column text-decoration-none p-2 h-100"
 												style={{ backgroundColor: "rgb(239, 239, 239)" }}>
-												<img
-													src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dwd4e74107/Knowledge_Center/help-center/33AA27JDB10_CC30E_Env_01_1100x572.jpg?sw=1116"
-													alt=""
+												<ResponsiveImage
+													id="CC30E_Env_01_1100x572"
+													src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/electric-mowers-and-tools/33AA27JDB10_CC30E_Env_01_1100x572.jpg"
 												/>
+
 												<div className="content d-flex flex-column p-3 h-100">
 													<strong className="h3" style={{ fontSize: "1.6em" }}>
 														What is a Brushless Motor?
@@ -353,7 +354,7 @@ export default function ElectricMowersAndTools({}) {
 									</ul>
 								</div>
 							</div>
-						</section>
+						</section> */}
 					</div>
 				</div>
 			</div>
