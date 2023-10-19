@@ -1,6 +1,6 @@
 const defaultSVG = (
 	<svg
-		className="mr-1 bg-secondary p-1 rounded"
+		className="mr-1 p-1 border rounded"
 		xmlns="http://www.w3.org/2000/svg"
 		viewBox="0 -960 960 960"
 		style={{ width: "32px" }}>
@@ -26,12 +26,12 @@ export default function RelatedLinks({
 				)}
 				{relatedCats.p && <p className="mb-1">{relatedCats.p}</p>}
 				<ul className="list-unstyled d-flex flex-wrap">
-					{relatedCats.list.map((e, i) => {
+					{relatedCats.list.map(({ href, title }, i) => {
 						return (
 							<li className="pt-1 pr-1" key={i}>
-								<a className="d-inline-flex align-items-center p-1" href="#top">
+								<a className="d-inline-flex align-items-center p-1" href={href}>
 									{icon}
-									<span>{e}</span>
+									<span>{title}</span>
 								</a>
 							</li>
 						);

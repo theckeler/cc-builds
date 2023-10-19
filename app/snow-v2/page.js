@@ -17,30 +17,30 @@ import IntellipowerLogo from "../images/IntellipowerLogo";
 export default function SnowV2({}) {
 	const [imgType, setImgType] = useState("orig");
 
-	// 	useEffect(() => {
-	// 		document.querySelectorAll("#finder-script").forEach(function (elem) {
-	// 			elem.remove();
-	// 		});
-	// 		const html = `
-	// <script type="text/javascript" id="finder-script">
-	//   (function(c,a,r,t,f,u,l)
-	//             {
-	//               ((c[u] =
-	//                 c[u] ||
-	//                 function () {
-	//                   (c[u].q = c[u].q || []).push(arguments);
-	//                 }),
-	//               (l = a.createElement(r)),
-	//               (l.async = 1),
-	//               (l.id = u + "scr"),
-	//               (l.src = f),
-	//               a[t].appendChild(l))
-	//             }
-	//             )(window,document,"script","body","https://embed.cartfulsolutions.com/cub-cadet-finder/recommendation.min.js","cfl643");
-	// </script>`;
-	// 		const scriptEl = document.createRange().createContextualFragment(html);
-	// 		document.body.appendChild(scriptEl);
-	// 	});
+	useEffect(() => {
+		document.querySelectorAll("#finder-script").forEach(function (elem) {
+			elem.remove();
+		});
+		const html = `
+	<script type="text/javascript" id="finder-script">
+	  (function(c,a,r,t,f,u,l)
+	            {
+	              ((c[u] =
+	                c[u] ||
+	                function () {
+	                  (c[u].q = c[u].q || []).push(arguments);
+	                }),
+	              (l = a.createElement(r)),
+	              (l.async = 1),
+	              (l.id = u + "scr"),
+	              (l.src = f),
+	              a[t].appendChild(l))
+	            }
+	            )(window,document,"script","body","https://embed.cartfulsolutions.com/cub-cadet-finder/recommendation.min.js","cfl643");
+	</script>`;
+		const scriptEl = document.createRange().createContextualFragment(html);
+		document.body.appendChild(scriptEl);
+	});
 
 	const addPromo = true;
 	const addCta = true;
@@ -1541,7 +1541,7 @@ export default function SnowV2({}) {
 				<Articles
 					imgType={imgType}
 					articles={{
-						h2: "Articles & How To’s",
+						h2: "Snow Blowers Articles & How To’s",
 						blocks: [
 							{
 								img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/SnowBlow_ProdLineBrow_Hero_LineUp_01_desktop_1015x630_v1.jpg",
@@ -1613,7 +1613,7 @@ export default function SnowV2({}) {
 				<AttchmentsAccessories
 					imgType={imgType}
 					attAcc={{
-						h2: "Attachments & Accessories",
+						h2: "Snow Blowers Attachments & Accessories",
 						blocks: [
 							{
 								img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/490-241-0032.jpg",
@@ -1686,10 +1686,22 @@ export default function SnowV2({}) {
 					relatedCats={{
 						h3: "Related Categories",
 						list: [
-							"Single-Stage Snow Blowers",
-							"Two-Stage Snow Blowers",
-							"Three-Stage Snow Blowers",
-							"Snow Blower Accessories",
+							{
+								title: "Single-Stage Snow Blowers",
+								href: "https://www.cubcadet.com/en_US/snow-blowers/single-stage-snow-blowers",
+							},
+							{
+								title: "Two-Stage Snow Blowers",
+								href: "https://www.cubcadet.com/en_US/snow-blowers/two-stage-snow-blowers",
+							},
+							{
+								title: "Three-Stage Snow Blowers",
+								href: "https://www.cubcadet.com/en_US/snow-blowers/three-stage-snow-blowers",
+							},
+							{
+								title: "Snow Blower Accessories",
+								href: "https://www.cubcadet.com/en_US/snow-blowers/snow-blower-accessories",
+							},
 						],
 					}}
 					className="mt-6"
@@ -1699,12 +1711,26 @@ export default function SnowV2({}) {
 					relatedCats={{
 						h3: "Related Searches",
 						list: [
-							"Snow blower buying guide",
-							"snow blower parts",
-							"financing",
-							"extended warranty",
-							"regular warranty",
-							"find a dealer",
+							{
+								title: "Financing",
+								href: "https://www.cubcadet.com/en_US/financing",
+							},
+							{
+								title: "Extended Warranty",
+								href: "https://www.cubcadet.com/en_US/ew-info-page.html",
+							},
+							{
+								title: "Register My Product",
+								href: "https://www.cubcadet.com/en_US/content-asset-page-includes/registration.html",
+							},
+							{
+								title: "Operator’s Manual",
+								href: "https://www.cubcadet.com/en_US/operatorsmanuals",
+							},
+							{
+								title: "Snow Plow Blade Attachment",
+								href: "https://www.cubcadet.com/en_US/riding-mower-accessories/46-inch-snow-plow-blade-attachment/19A30017OEM.html?fitsOnModel=false#q=snow%2Bplow%2Bblade&lang=en_US&start=0",
+							},
 						],
 					}}
 					className="mt-2"
@@ -1714,11 +1740,30 @@ export default function SnowV2({}) {
 						h3: "Snow Blower Maintenance",
 						p: "When customers buy Snow Blowers they often buy or consider:",
 						list: [
-							"Shear pins",
-							"belts",
-							"shave plates",
-							"slide shoes",
-							"tire chains",
+							{
+								title: "Shear pins",
+								href: "https://www.cubcadet.com/en_US/snow-blower-parts/snow-blower-shear-pins",
+							},
+							{
+								title: "belts",
+								href: "https://www.cubcadet.com/en_US/snow-blower-parts/snow-blower-belts",
+							},
+							{
+								title: "Shave Plates",
+								href: "https://www.cubcadet.com/en_US/snow-blower-parts/snow-blower-shave-plates",
+							},
+							{
+								title: "Slide Shoes",
+								href: "https://www.cubcadet.com/en_US/snow-blower-parts/snow-blower-slide-shoes",
+							},
+							{
+								title: "Tires and Wheels",
+								href: "https://www.cubcadet.com/en_US/snow-blower-parts/snow-blower-tires-and-wheels",
+							},
+							{
+								title: "All Snow Blower Parts",
+								href: "https://www.cubcadet.com/en_US/shop-by-machine-type/snow-blower-parts",
+							},
 						],
 					}}
 					className="mt-2"
@@ -1728,24 +1773,44 @@ export default function SnowV2({}) {
 				<Faqs
 					faqs={[
 						{
+							question: "Hoquestion",
+							answer: `
+								Answer
+								`,
+						},
+						{
 							question: "What does a snow blower do?",
 							answer:
-								"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id dui et eros malesuada condimentum. Duis viverra, elit a commodo bibendum, sapien libero efficitur mi, id tristique mi turpis non dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer dapibus id est in consequat. Morbi accumsan urna eu urna commodo, non imperdiet massa consequat. Aenean ut lacus tincidunt, vulputate ipsum eget, sodales turpis. Maecenas ultricies erat justo, nec aliquam enim interdum at. Sed in sodales magna. Curabitur vitae condimentum neque. Proin tincidunt viverra eros vitae tincidunt. Nunc eget lacus eu nisi suscipit pulvinar. Praesent pretium auctor pretium. Fusce sit amet est at erat iaculis pretium. Aliquam consectetur in est sed viverra. Sed sit amet purus lectus. Ut eget tortor vel ante lobortis pharetra.",
+								"•	Cub Cadet® snow blowers are engineered to quickly remove snow from unwanted areas. A single stage snow blower is the most basic kind, where the auger paddle pulls snow into the machine and throws it out of the chute. More advanced stages are designed to handle more snow.",
 						},
 						{
 							question: "What is the best snow blower for a driveway?",
 							answer:
-								"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id dui et eros malesuada condimentum. Duis viverra, elit a commodo bibendum, sapien libero efficitur mi, id tristique mi turpis non dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer dapibus id est in consequat. Morbi accumsan urna eu urna commodo, non imperdiet massa consequat. Aenean ut lacus tincidunt, vulputate ipsum eget, sodales turpis. Maecenas ultricies erat justo, nec aliquam enim interdum at. Sed in sodales magna. Curabitur vitae condimentum neque. Proin tincidunt viverra eros vitae tincidunt. Nunc eget lacus eu nisi suscipit pulvinar. Praesent pretium auctor pretium. Fusce sit amet est at erat iaculis pretium. Aliquam consectetur in est sed viverra. Sed sit amet purus lectus. Ut eget tortor vel ante lobortis pharetra.",
+								'There’s no one size fits all snow blower. Cub Cadet has models ideal for up to 6-, 12-, and 18-in. of snowfall, so take stock of how much snow is expected in your area to zero in on a category. From there, determine what kind of features you’d benefit from, like electric start, heated hand grips, IntelliPower™ engines, or LED headlights, among others. This <a href="https://www.cubcadet.com/en_US/product-information/cub-cadet-snow-blower-buying-guide.html">snow blower buyers guide</a> goes into more detail.',
 						},
 						{
 							question: "Do I need a 1, 2 or 3 stage snow blower?",
-							answer:
-								"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id dui et eros malesuada condimentum. Duis viverra, elit a commodo bibendum, sapien libero efficitur mi, id tristique mi turpis non dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer dapibus id est in consequat. Morbi accumsan urna eu urna commodo, non imperdiet massa consequat. Aenean ut lacus tincidunt, vulputate ipsum eget, sodales turpis. Maecenas ultricies erat justo, nec aliquam enim interdum at. Sed in sodales magna. Curabitur vitae condimentum neque. Proin tincidunt viverra eros vitae tincidunt. Nunc eget lacus eu nisi suscipit pulvinar. Praesent pretium auctor pretium. Fusce sit amet est at erat iaculis pretium. Aliquam consectetur in est sed viverra. Sed sit amet purus lectus. Ut eget tortor vel ante lobortis pharetra.",
+							answer: `
+								Once you determine how much snowfall your area is expected to get, you can <a href="https://www.cubcadet.com/en_US/product-information/cub-cadet-snow-blower-buying-guide.html">choose the right model</a> for your needs. Cub Cadet® single-stage snow blowers are generally ideal for up to 6-in. of snowfall, 2-stage models can handle up to 12-in. of snowfall and 3-stage units typically can handle up to 18-in. of snowfall. Cub Cadet® MAX units — available in 2-stage and 3-stage models — can tackle up to 23-in. of snowfall.
+								`,
 						},
 						{
 							question: "How do I finance a Cub Cadet snow blower?",
-							answer:
-								"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id dui et eros malesuada condimentum. Duis viverra, elit a commodo bibendum, sapien libero efficitur mi, id tristique mi turpis non dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer dapibus id est in consequat. Morbi accumsan urna eu urna commodo, non imperdiet massa consequat. Aenean ut lacus tincidunt, vulputate ipsum eget, sodales turpis. Maecenas ultricies erat justo, nec aliquam enim interdum at. Sed in sodales magna. Curabitur vitae condimentum neque. Proin tincidunt viverra eros vitae tincidunt. Nunc eget lacus eu nisi suscipit pulvinar. Praesent pretium auctor pretium. Fusce sit amet est at erat iaculis pretium. Aliquam consectetur in est sed viverra. Sed sit amet purus lectus. Ut eget tortor vel ante lobortis pharetra.",
+							answer: `
+								Cub Cadet® offers a variety of financing plans depending on your budget and your purchase minimum. <a href="https://www.cubcadet.com/en_US/financing">Click here</a> for more details.
+								`,
+						},
+						{
+							question: "HOW DO I STORE MY SNOW BLOWER IN THE OFSEASON?",
+							answer: `
+								Always refer to your operator’s manual for comprehensive instructions on maintenance and storage. Instructions will differ between single-, 2-, and 3-stage snow blowers. <a href="https://www.cubcadet.com/en_US/knowledge-center/knowledge-how-to-prepare-your-snow-thrower-for-storage-in-the-off-season.html">This guide</a> can help walk you through some of the most common steps.
+								`,
+						},
+						{
+							question: "HOW DO I REGISTER MY CUB CADET SNOW BLOWER?",
+							answer: `
+								Once you’ve purchased a Cub Cadet® snow blower, you can register your machine <a href="https://www.cubcadet.com/en_US/content-asset-page-includes/registration.html">here</a>.
+								`,
 						},
 					]}
 				/>
