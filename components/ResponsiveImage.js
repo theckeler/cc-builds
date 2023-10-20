@@ -90,7 +90,7 @@ export default function ResponsiveImage({
 			fetchPriority={hero ? "high" : "false"}
 			decoding={hero ? "async" : "false"}
 			// NOT
-			loading={!hero && "lazy"}
+			loading={hero ? "lazy" : "false"}
 		/>
 	);
 }

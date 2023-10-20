@@ -40,7 +40,7 @@ export default function Faqs({ faqs, className, id, allOpen }) {
 						: "rotate(45deg)";
 				}}
 				className="text-left question cursor-pointer w-100 p-1 border-0 bg-transparent"
-				style={{ cursor: "pointer", fontSize: "1.1em" }}>
+				style={{ cursor: "pointer", fontSize: "1.1em", textTransform: "none" }}>
 				<ul className="list-unstyled d-flex items-center w-100 mb-1 mb-0">
 					<li
 						dangerouslySetInnerHTML={{

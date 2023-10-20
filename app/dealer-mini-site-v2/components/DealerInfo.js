@@ -1,6 +1,6 @@
 "use client";
 import Badges from "@/components/dealers/Badges";
-import Image from "next/image";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 export default function DealerInfo({ dealer }) {
 	const hasBadges = dealer.badges.some((x) => x === true);
@@ -13,9 +13,10 @@ export default function DealerInfo({ dealer }) {
 					overflow: "hidden",
 					minHeight: "300px",
 				}}>
-				<Image
+				<ResponsiveImage
 					className="position-absolute w-100 h-100"
 					alt=""
+					hero={true}
 					src={
 						dealer.img?.src
 							? dealer.img.src

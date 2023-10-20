@@ -13,7 +13,6 @@ const WarrantyFaqs = () => {
 				<ResponsiveImage
 					id="hero"
 					src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/31AM5HVSB56_2X26_Inteli_env02.jpg"
-					// webp="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/31AM5HVSB56_2X26_Inteli_env02.webp"
 					alt=""
 					className="h-100 w-100 position-absolute"
 					style={{ objectFit: "cover", top: 0 }}
