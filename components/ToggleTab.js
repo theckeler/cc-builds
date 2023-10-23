@@ -8,7 +8,9 @@ export default function ToggleTab({ className, style, Component, id, title }) {
 			className={className}
 			style={{ ...style, scrollMarginTop: "16px" }}
 			id={id}>
-			<h3 className="position-relative flex mb-0 mb-xl-1">
+			<h3
+				className="position-relative flex mb-0 mb-xl-1"
+				style={{ fontSize: "22px" }}>
 				<button
 					className="position-absolute w-100 h-100 d-block d-xl-none"
 					style={{ cursor: "pointer", opacity: 0 }}
