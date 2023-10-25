@@ -7,7 +7,9 @@ const WarrantyFaqs = () => {
 	return (
 		<div className="mtd-page">
 			{/* HERO */}
-			<section className="position-relative" style={{ minHeight: "400px" }}>
+			<section
+				className="position-relative container px-0"
+				style={{ minHeight: "400px" }}>
 				<ResponsiveImage
 					id="hero"
 					src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/31AM5HVSB56_2X26_Inteli_env02.jpg"
@@ -73,7 +75,7 @@ const WarrantyFaqs = () => {
 									"What is the warranty on parts? Is it three years like equipment?",
 								className: "font-bold",
 								answer:
-									'A limited-service part coverage may be applied for the remainder of the warranty period if the part or parts is purchased and installed through an authorized service provider. <a href="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&horizontalView=true&isForm=true&rid=dealers">Please contact your local dealer for details</a>.',
+									'A limited-service part coverage may be applied for the remainder of the warranty period if the part or parts is purchased and installed through an authorized service provider. Please <a href="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&horizontalView=true&isForm=true&rid=dealers">contact</a> your local dealer for details.',
 							},
 							{
 								question:
@@ -93,18 +95,18 @@ const WarrantyFaqs = () => {
 									"How do I know if the problem with my equipment meets warranty coverage?",
 								className: "font-bold",
 								answer:
-									'Product issues and or problems are determined and evaluated by a local authorized service dealer. The service dealer will evaluate the problem and determine if the problem meets a warrantable failure. Please <a href="https://www.mtdparts.com/en_US/servicelocator?showMap=true&horizontalView=true&isForm=true">contact</a> your local service provider.',
+									'Product issues and or problems are determined and evaluated by a local authorized service dealer. The service dealer will evaluate the problem and determine if the problem meets a warrantable failure. Please <a href="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&horizontalView=true&isForm=true&rid=dealers">contact</a> your local delaer.',
 							},
 							{
 								question: "Do you offer an extended warranty?",
 								className: "font-bold",
-								answer: `Yes, learn more about our extended warranty <a href="">here</a>.`,
+								answer: `Yes, learn more about our extended warranty <a href="https://www.cubcadet.com/en_US/ew-info-page.html">here</a>.`,
 							},
 							{
 								question: "How do I locate an authorized service dealer?",
 								className: "font-bold",
 								answer:
-									'Locate an authorized dealer <a href="https://www.cubcadet.com/en_US/ew-info-page.html">here</a>.',
+									'Locate an authorized dealer <a href="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&horizontalView=true&isForm=true&rid=dealers">here</a>.',
 							},
 							{
 								question: "Is a warranty transferrable?",
@@ -112,8 +114,10 @@ const WarrantyFaqs = () => {
 								answer: "Factory warranties are not transferrable.",
 							},
 							{
+								// question:
+								// 	"What circumstances would void the warranty? Depending on the product and circumstances, there are a number of scenarios that can void a warranty. These circumstances include, but are not limited to, the following:",
 								question:
-									"What circumstances would void the warranty? Depending on the product and circumstances, there are a number of scenarios that can void a warranty. These circumstances include, but are not limited to, the following:",
+									"Depending on the product and circumstances, there are a number of scenarios that can void a warranty. These circumstances include, but are not limited to, the following:",
 								className: "font-bold",
 								answer:
 									"<ul><li>Lack of maintenance and/or improper maintenance as described in the operator’s manual;</li><li>Normal wear and tear resulting from use of the product</li><li>Use of the product that is not consistent with the intended use as described in the operating instructions, including, but not limited to, abuse, misuse, and/or neglect of the product, or any use inconsistent with and/or non-compliant with the instructions contained in the Operator’s Manual. This included operation in sandy and/or corrosive environments; or</li><li>Any product that has been altered or modified in a manner not approved.</li></ul>",
@@ -178,7 +182,7 @@ const WarrantyFaqs = () => {
 								question: "Can I return equipment to the factory or retailer?",
 								className: "font-bold",
 								answer:
-									'The recommendation is to not return equipment to the factory or retailer. <a href="https://www.mtdparts.com/en_US/servicelocator?showMap=true&horizontalView=true&isForm=true">Contact</a> a local authorized service provider for product evaluation, service, and repairs.',
+									'The recommendation is to not return equipment to the factory or retailer. <a href="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&horizontalView=true&isForm=true&rid=dealers">Contact</a> a local authorized service provider for product evaluation, service, and repairs.',
 							},
 							{
 								question:
