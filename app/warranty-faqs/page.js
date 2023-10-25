@@ -9,7 +9,7 @@ const WarrantyFaqs = () => {
 			{/* HERO */}
 			<section
 				className="position-relative container px-0"
-				style={{ minHeight: "400px" }}>
+				style={{ minHeight: "200px" }}>
 				<ResponsiveImage
 					id="hero"
 					src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/31AM5HVSB56_2X26_Inteli_env02.jpg"
@@ -22,7 +22,7 @@ const WarrantyFaqs = () => {
 
 			{/* copyBlock */}
 			<section className="mt-0 mb-0 text-white bg-primary">
-				<div className="container p-3 text-left text-lg-center">
+				<div className="container p-3 text-center">
 					<h1 className="h1 d-block text-white">Warranty FAQs</h1>
 				</div>
 			</section>
@@ -75,7 +75,7 @@ const WarrantyFaqs = () => {
 									"What is the warranty on parts? Is it three years like equipment?",
 								className: "font-bold",
 								answer:
-									'A limited-service part coverage may be applied for the remainder of the warranty period if the part or parts is purchased and installed through an authorized service provider. Please <a href="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&horizontalView=true&isForm=true&rid=dealers">contact</a> your local dealer for details.',
+									'A limited-service part coverage may be applied for the remainder of the warranty period if the part or parts is purchased and installed through an authorized dealer. Please <a href="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&horizontalView=true&isForm=true&rid=dealers">contact</a> your local dealer for details.',
 							},
 							{
 								question:
@@ -116,11 +116,10 @@ const WarrantyFaqs = () => {
 							{
 								// question:
 								// 	"What circumstances would void the warranty? Depending on the product and circumstances, there are a number of scenarios that can void a warranty. These circumstances include, but are not limited to, the following:",
-								question:
-									"Depending on the product and circumstances, there are a number of scenarios that can void a warranty. These circumstances include, but are not limited to, the following:",
+								question: "What circumstances would void the warranty?",
 								className: "font-bold",
 								answer:
-									"<ul><li>Lack of maintenance and/or improper maintenance as described in the operator’s manual;</li><li>Normal wear and tear resulting from use of the product</li><li>Use of the product that is not consistent with the intended use as described in the operating instructions, including, but not limited to, abuse, misuse, and/or neglect of the product, or any use inconsistent with and/or non-compliant with the instructions contained in the Operator’s Manual. This included operation in sandy and/or corrosive environments; or</li><li>Any product that has been altered or modified in a manner not approved.</li></ul>",
+									"Depending on the product and circumstances, there are a number of scenarios that can void a warranty. These circumstances include, but are not limited to, the following:<ul><li>Lack of maintenance and/or improper maintenance as described in the operator’s manual;</li><li>Normal wear and tear resulting from use of the product</li><li>Use of the product that is not consistent with the intended use as described in the operating instructions, including, but not limited to, abuse, misuse, and/or neglect of the product, or any use inconsistent with and/or non-compliant with the instructions contained in the Operator’s Manual. This included operation in sandy and/or corrosive environments; or</li><li>Any product that has been altered or modified in a manner not approved.</li></ul>",
 							},
 							{
 								question: "Is pick up and delivery covered by the warranty?",
