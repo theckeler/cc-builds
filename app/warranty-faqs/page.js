@@ -75,7 +75,7 @@ const WarrantyFaqs = () => {
 									"What is the warranty on parts? Is it three years like equipment?",
 								className: "font-bold",
 								answer:
-									'A limited-service part coverage may be applied for the remainder of the warranty period if the part or parts is purchased and installed through an authorized dealer. Please <a href="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&horizontalView=true&isForm=true&rid=dealers">contact</a> your local dealer for details.',
+									'A limited-service part coverage may be applied for the remainder of the warranty period if the part or parts is purchased and installed through an authorized service provider. Please <a href="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&horizontalView=true&isForm=true&rid=dealers">contact</a> your local dealer for details.',
 							},
 							{
 								question:
@@ -181,7 +181,7 @@ const WarrantyFaqs = () => {
 								question: "Can I return equipment to the factory or retailer?",
 								className: "font-bold",
 								answer:
-									'The recommendation is to not return equipment to the factory or retailer. <a href="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&horizontalView=true&isForm=true&rid=dealers">Contact</a> a local authorized service provider for product evaluation, service, and repairs.',
+									'The recommendation is to not return equipment to the factory or retailer. <a href="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&horizontalView=true&isForm=true&rid=dealers">Contact</a> a local authorized dealer for product evaluation, service, and repairs.',
 							},
 							{
 								question:
