@@ -1541,7 +1541,7 @@ export default function SnowV2({}) {
 				<Articles
 					imgType={imgType}
 					articles={{
-						h2: "Snow Blowers Articles & How To’s",
+						h2: "Snow Blower Articles & How To’s",
 						blocks: [
 							{
 								img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/SnowBlow_ProdLineBrow_Hero_LineUp_01_desktop_1015x630_v1.jpg",
@@ -1613,7 +1613,7 @@ export default function SnowV2({}) {
 				<AttchmentsAccessories
 					imgType={imgType}
 					attAcc={{
-						h2: "Snow Blowers Attachments & Accessories",
+						h2: "Snow Blower Attachments & Accessories",
 						blocks: [
 							{
 								img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/490-241-0032.jpg",
@@ -1741,11 +1741,11 @@ export default function SnowV2({}) {
 						p: "When customers buy Snow Blowers they often buy or consider:",
 						list: [
 							{
-								title: "Shear pins",
+								title: "Shear Pins",
 								href: "https://www.cubcadet.com/en_US/snow-blower-parts/snow-blower-shear-pins",
 							},
 							{
-								title: "belts",
+								title: "Belts",
 								href: "https://www.cubcadet.com/en_US/snow-blower-parts/snow-blower-belts",
 							},
 							{
@@ -1773,15 +1773,9 @@ export default function SnowV2({}) {
 				<Faqs
 					faqs={[
 						{
-							question: "Hoquestion",
-							answer: `
-								Answer
-								`,
-						},
-						{
 							question: "What does a snow blower do?",
 							answer:
-								"•	Cub Cadet® snow blowers are engineered to quickly remove snow from unwanted areas. A single stage snow blower is the most basic kind, where the auger paddle pulls snow into the machine and throws it out of the chute. More advanced stages are designed to handle more snow.",
+								"Cub Cadet® snow blowers are engineered to quickly remove snow from unwanted areas. A single stage snow blower is the most basic kind, where the auger paddle pulls snow into the machine and throws it out of the chute. More advanced stages are designed to handle more snow.",
 						},
 						{
 							question: "What is the best snow blower for a driveway?",
@@ -1801,13 +1795,13 @@ export default function SnowV2({}) {
 								`,
 						},
 						{
-							question: "HOW DO I STORE MY SNOW BLOWER IN THE OFSEASON?",
+							question: "How do I store my snow blower in the offseason?",
 							answer: `
-								Always refer to your operator’s manual for comprehensive instructions on maintenance and storage. Instructions will differ between single-, 2-, and 3-stage snow blowers. <a href="https://www.cubcadet.com/en_US/knowledge-center/knowledge-how-to-prepare-your-snow-thrower-for-storage-in-the-off-season.html">This guide</a> can help walk you through some of the most common steps.
+								Always refer to your <a href="https://www.cubcadet.com/en_US/operatorsmanuals">operator’s manual</a> for comprehensive instructions on maintenance and storage. Instructions will differ between single-, 2-, and 3-stage snow blowers. <a href="https://www.cubcadet.com/en_US/knowledge-center/knowledge-how-to-prepare-your-snow-thrower-for-storage-in-the-off-season.html">This guide</a> can help walk you through some of the most common steps.
 								`,
 						},
 						{
-							question: "HOW DO I REGISTER MY CUB CADET SNOW BLOWER?",
+							question: "How do I register my cub cadet snow blower?",
 							answer: `
 								Once you’ve purchased a Cub Cadet® snow blower, you can register your machine <a href="https://www.cubcadet.com/en_US/content-asset-page-includes/registration.html">here</a>.
 								`,
