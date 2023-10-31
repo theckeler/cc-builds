@@ -47,11 +47,7 @@ const WarrantyFaqs = () => {
 							</div>
 						</li>
 						<li className="col-8">
-							<h1>
-								Cub Cadet
-								<sup style={{ fontSize: "22px", top: "-24px" }}>®</sup> Warranty
-								FAQs
-							</h1>
+							<h1>Warranty FAQs</h1>
 							<p className="px-xl-9">
 								Mauris tempor tincidunt tincidunt. Orci varius natoque penatibus
 								et magnis dis parturient montes, nascetur ridiculus mus. Ut
