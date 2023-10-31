@@ -7,7 +7,7 @@ const WarrantyFaqs = () => {
 	return (
 		<div className="mtd-page">
 			{/* HERO */}
-			<section
+			{/* <section
 				className="position-relative container px-0"
 				style={{ minHeight: "200px" }}>
 				<ResponsiveImage
@@ -18,14 +18,32 @@ const WarrantyFaqs = () => {
 					style={{ objectFit: "cover", top: 0 }}
 					hero
 				/>
+			</section> */}
+
+			<section class="py-4" style={{ backgroundColor: "#ffc20f" }}>
+				<div class="container text-center">
+					<h1>
+						Cub Cadet
+						<sup style={{ fontSize: "22px", top: "-24px" }}>®</sup> Warranty
+						FAQs
+					</h1>
+					<p className="px-xl-9">
+						Mauris tempor tincidunt tincidunt. Orci varius natoque penatibus et
+						magnis dis parturient montes, nascetur ridiculus mus. Ut tellus leo,
+						rutrum et consequat a, mattis sit amet justo. Proin in metus eu est
+						tempus ultrices. Vestibulum vel purus in tellus lobortis
+						scelerisque. Quisque non est eu mi suscipit aliquam ut eu lectus.
+						Nulla vel efficitur justo.
+					</p>
+				</div>
 			</section>
 
 			{/* copyBlock */}
-			<section className="mt-0 mb-0 text-white bg-primary">
+			{/* <section className="mt-0 mb-0 text-white bg-primary">
 				<div className="container p-3 text-center">
 					<h1 className="h1 d-block text-white">Warranty FAQs</h1>
 				</div>
-			</section>
+			</section> */}
 
 			<section className="container">
 				<section className="container">
@@ -114,8 +132,6 @@ const WarrantyFaqs = () => {
 								answer: "Factory warranties are not transferrable.",
 							},
 							{
-								// question:
-								// 	"What circumstances would void the warranty? Depending on the product and circumstances, there are a number of scenarios that can void a warranty. These circumstances include, but are not limited to, the following:",
 								question: "What circumstances would void the warranty?",
 								className: "font-bold",
 								answer:
