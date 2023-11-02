@@ -49,12 +49,9 @@ const WarrantyFaqs = () => {
 						<li className="col-8">
 							<h1>Warranty FAQs</h1>
 							<p className="px-xl-9">
-								Mauris tempor tincidunt tincidunt. Orci varius natoque penatibus
-								et magnis dis parturient montes, nascetur ridiculus mus. Ut
-								tellus leo, rutrum et consequat a, mattis sit amet justo. Proin
-								in metus eu est tempus ultrices. Vestibulum vel purus in tellus
-								lobortis scelerisque. Quisque non est eu mi suscipit aliquam ut
-								eu lectus. Nulla vel efficitur justo.
+								Got a question about warranties? From registration to coverage
+								details, Cub Cadet® has compiled answers to the most frequently
+								asked questions.
 							</p>
 						</li>
 					</ul>
