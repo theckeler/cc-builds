@@ -16,7 +16,7 @@ import Website from "@/components/Website";
 import Address from "@/components/Address";
 import IconBlock from "./IconBlock";
 
-export default function StickyMenu({ dealer }) {
+export default function StickyMenu({ className, dealer }) {
 	const icon = {
 		style: {
 			padding: "0.5rem",
@@ -63,11 +63,11 @@ export default function StickyMenu({ dealer }) {
 
 	return (
 		<ul
-			className="align-self-start px-0 list-unstyled w-100 flex flex-xl-column bg-white border"
+			className={`align-self-start px-0 list-unstyled w-100 flex flex-xl-column bg-white border sticky bottom-0 top-4 ${className}`}
 			style={{
-				position: "sticky",
-				bottom: 0,
-				top: "10px",
+				//position: "sticky",
+				//bottom: 0,
+				//top: "10px",
 				zIndex: 1001,
 			}}>
 			<li className="col-6 col-xl-12 p-1 pt-0">
@@ -108,7 +108,7 @@ export default function StickyMenu({ dealer }) {
 					//backgroundColor: "#efefef",
 					gap: "0.5em",
 				}}>
-				<style jsx>{`
+				{/* <style jsx>{`
 					@media (min-width: 1366px) {
 						.position-xl-relative {
 							position: relative !important;
@@ -118,10 +118,10 @@ export default function StickyMenu({ dealer }) {
 							position: absolute !important;
 						}
 					}
-				`}</style>
+				`}</style> */}
 				<ul
 					id="sticky-menu"
-					className="list-unstyled mb-0 d-none d-xl-block position-absolute position-xl-relative w-100 border-top bg-secondary"
+					className="list-unstyled mb-0 d-none d-xl-block w-100 border-top bg-secondary"
 					style={{ bottom: "100%", left: 0 }}>
 					{navButtons.map((block, i) => (
 						<li className={`border-b border-white ${block.className}`} key={i}>

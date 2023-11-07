@@ -36,12 +36,13 @@ export default function DealerMiniSite() {
 				}}
 			/>
 
-			<div
-				// className="list-unstyled mtd-page py-2 mx-0 mx-lg-auto py-xl-5 container px-0 d-flex flex-column flex-column-reverse flex-xl-row"
-				className="list-unstyled mtd-page py-2 mx-0 mx-lg-auto py-xl-5 container px-0 grid grid-cols-1 xl:grid-cols-[400px_880px] gap-3">
-				<StickyMenu dealer={dealer[currentDealer]} />
+			<div className="list-unstyled mtd-page py-2 mx-0 mx-lg-auto py-xl-5 container px-0 grid grid-cols-1 xl:grid-cols-[400px_880px] gap-3">
+				<StickyMenu
+					className="order-2 order-xl-1"
+					dealer={dealer[currentDealer]}
+				/>
 
-				<div className="align-self-start grid grid-cols-1">
+				<div className="align-self-start grid grid-cols-1 order-1 order-xl-2">
 					<DealerInfo dealer={dealer[currentDealer]} />
 
 					<CubDays />
