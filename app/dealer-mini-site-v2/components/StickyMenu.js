@@ -19,11 +19,12 @@ import IconBlock from "./IconBlock";
 export default function StickyMenu({ dealer }) {
 	const icon = {
 		style: {
-			// width: "48px",
-			// height: "48px",
+			padding: "0.5rem",
+			//minWidth: "48px",
+			//minHeight: "48px",
 			// backgroundColor: "#ffc20f",
 		},
-		class: "w-100 h-100",
+		class: "w-full h-full",
 	};
 
 	const icons = [
@@ -62,7 +63,7 @@ export default function StickyMenu({ dealer }) {
 
 	return (
 		<ul
-			className="align-self-start col-12 px-0 col-xl-4 list-unstyled w-100 flex flex-xl-column bg-white border"
+			className="align-self-start px-0 list-unstyled w-100 flex flex-xl-column bg-white border"
 			style={{
 				position: "sticky",
 				bottom: 0,
@@ -123,9 +124,9 @@ export default function StickyMenu({ dealer }) {
 					className="list-unstyled mb-0 d-none d-xl-block position-absolute position-xl-relative w-100 border-top bg-secondary"
 					style={{ bottom: "100%", left: 0 }}>
 					{navButtons.map((block, i) => (
-						<li className={`border-bottom ${block.className}`} key={i}>
+						<li className={`border-b border-white ${block.className}`} key={i}>
 							<button
-								className="w-100 d-block border-0 text-left p-2 font-weight-bold"
+								className="w-100 d-block border-0 text-left p-2 font-weight-bold outline-0"
 								style={{ cursor: "pointer" }}
 								onClick={(e) => {
 									document

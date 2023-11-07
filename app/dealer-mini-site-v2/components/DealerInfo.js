@@ -6,7 +6,7 @@ export default function DealerInfo({ dealer }) {
 	const hasBadges = dealer.badges.some((x) => x === true);
 
 	return (
-		<ul className="list-unstyled mb-0">
+		<ul className="list-unstyled mb-0 ">
 			<li
 				className="px-0 position-relative overflow-hidden"
 				style={{

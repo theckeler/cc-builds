@@ -4,9 +4,9 @@ export default function Stars({
 }) {
 	return (
 		<div
-			className={`flex align-items-center justify-content-center list-unstyled mb-0 ${className}`}>
+			className={`flex items-center justify-center list-unstyled mb-0 ${className}`}>
 			<span>{stars.average}</span>
-			<span>
+			<span className="flex">
 				{[...Array(5)].map((x, i) => (
 					<svg
 						key={i}

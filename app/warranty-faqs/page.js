@@ -20,8 +20,8 @@ const WarrantyFaqs = () => {
 				/>
 			</section> */}
 
-			<section class="" style={{ backgroundColor: "#ffc20f" }}>
-				<div class="container text-center">
+			<section className="" style={{ backgroundColor: "#ffc20f" }}>
+				<div className="container text-center">
 					<ul
 						className="list-unstyled flex align-items-center"
 						style={{ overflow: "hidden" }}>

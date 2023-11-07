@@ -56,7 +56,7 @@ export default function ItemBlock({ curState }) {
 				<div className="product-line-item-details col-6">
 					<div className="line-item-header">
 						<div
-							class="remove-line-item d-block"
+							className="remove-line-item d-block"
 							style={{ textAlign: "right" }}>
 							<button
 								//className="border-1"
@@ -66,7 +66,7 @@ export default function ItemBlock({ curState }) {
 									borderColor: "transparent",
 								}}
 								type="button"
-								class="remove-btn remove-product btn btn-light"
+								className="remove-btn remove-product btn btn-light"
 								data-toggle="modal"
 								data-target="#removeProductModal"
 								data-pid="17AREACM010"

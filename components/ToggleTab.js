@@ -1,6 +1,13 @@
 "use client";
 
-export default function ToggleTab({ className, style, Component, id, title }) {
+export default function ToggleTab({
+	className,
+	style,
+	Component,
+	id,
+	title,
+	hideTitle,
+}) {
 	const hoursCSS = "row col-6";
 
 	return (
@@ -9,7 +16,9 @@ export default function ToggleTab({ className, style, Component, id, title }) {
 			style={{ ...style, scrollMarginTop: "16px" }}
 			id={id}>
 			<h3
-				className="position-relative flex mb-0 mb-xl-1"
+				className={`position-relative flex mb-0 mb-xl-1 ${
+					!!hideTitle && "d-xl-none"
+				}`}
 				style={{ fontSize: "22px" }}>
 				<button
 					className="position-absolute w-100 h-100 d-block d-xl-none"

@@ -10,7 +10,7 @@ export default function ErrorMessage({ curState }) {
 				One or more of your items is unable to ship to your location. Please
 				note the change in "Items to Ship" and edit your order to proceed.
 			</div>
-			<button class="btn btn-secondary" type="submit">
+			<button className="btn btn-secondary" type="submit">
 				Remove Product and Edit Order
 			</button>
 		</div>

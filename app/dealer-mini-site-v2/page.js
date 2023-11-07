@@ -18,8 +18,7 @@ import Promotions from "./components/Promotions";
 
 import TitleFlexGridViews from "@/components/FlexGridViews/TitleFlexGridViews";
 import BookService from "./components/BookService";
-import IconCubDays from "@/images/IconCubDays.js";
-import Button from "@/components/Button";
+import CubDays from "./components/CubDays";
 
 export default function DealerMiniSite() {
 	let dealer = mainJSON.dealers;
@@ -37,19 +36,36 @@ export default function DealerMiniSite() {
 				}}
 			/>
 
-			<div className="list-unstyled mtd-page py-2 mx-0 mx-lg-auto py-xl-5 container px-0 d-flex flex-column flex-column-reverse flex-xl-row">
+			<div
+				// className="list-unstyled mtd-page py-2 mx-0 mx-lg-auto py-xl-5 container px-0 d-flex flex-column flex-column-reverse flex-xl-row"
+				className="list-unstyled mtd-page py-2 mx-0 mx-lg-auto py-xl-5 container px-0 grid grid-cols-1 xl:grid-cols-[400px_880px] gap-3">
 				<StickyMenu dealer={dealer[currentDealer]} />
 
-				<div className="col-12 col-xl-8 px-0 px-xl-2 align-self-start">
+				<div className="align-self-start grid grid-cols-1">
 					<DealerInfo dealer={dealer[currentDealer]} />
 
-					<ToggleTab
-						className={`p-2 ${tabSpacing}`}
-						style={{ backgroundColor: "#ebebeb" }}
+					<CubDays />
+
+					<div
 						id="book-service"
-						title="Book Service"
-						Component={BookService}
-					/>
+						className="p-2 mt-2"
+						style={{ backgroundColor: "#ebebeb" }}>
+						<h2
+							className="text-center mb-2 border-bottom pb-1"
+							style={{ fontSize: "26px" }}>
+							Book Service
+						</h2>
+						<p className="text-center px-4">
+							Vestibulum vitae lorem sed nisl aliquam luctus. Integer blandit
+							ligula eget tellus dapibus, vitae iaculis felis lobortis. Etiam
+							condimentum dui porttitor, tristique quam a, tincidunt nisl. Lorem
+							ipsum dolor sit amet, consectetur adipiscing elit. Donec et
+							suscipit tellus, id malesuada lacus. Integer eu feugiat arcu, in
+							lobortis ligula. Maecenas a elementum nunc, non congue odio.
+						</p>
+
+						<BookService />
+					</div>
 
 					<TitleFlexGridViews
 						id="lineup"
@@ -60,37 +76,6 @@ export default function DealerMiniSite() {
 						title={`Product Lineup`}
 						Component={ProductCard}
 					/>
-
-					<div
-						className="mt-0 mt-xl-2 mt-0 mt-xl-2"
-						id="cub-days"
-						style={{ scrollMarginTop: 16 }}>
-						{/* <h3 className="position-relative flex mb-0 mb-xl-1">Cub Days</h3> */}
-						<div className="">
-							<div>
-								<IconCubDays />
-								<div className="p-4 text-center">
-									<h2>
-										Only 2 Days Left To Save $100 on Select Cub Cadet Lawn
-										Tractors and Zero Turns through May 16th 2018!
-									</h2>
-									<p className="mx-lg-8 my-3">
-										Do not delay before this promotion ends. All Cub Cadet XT1
-										Lawn Tractors, Heavy Duty LX42, LX46EFI FAB, GX54D Lawn &
-										Garden Tractors, and RZTLX54, RZTSX50, & RZTSX54 Zero Turn
-										mowers are featured under the $100 off promotion. 0%
-										financing is available with approved financing and all Cub
-										Cadet products and are backed by Central Equipment's
-										extensive service department.
-									</p>
-									<Button
-										copy="Find out More"
-										className="border-0 bg-secondary"
-									/>
-								</div>
-							</div>
-						</div>
-					</div>
 
 					<TitleFlexGridViews
 						className={`p-2 ${tabSpacing}`}
@@ -111,12 +96,10 @@ export default function DealerMiniSite() {
 						Component={ProductCard}
 					/> */}
 
-					<ToggleTab
-						className={`p-2 ${tabSpacing}`}
-						//style={{ backgroundColor: "#ebebeb" }}
+					<Promotions
+						className={`p-2 p-xl-0 mt-2 ${tabSpacing}`}
 						id="promotions"
 						title="Promotions"
-						Component={Promotions}
 					/>
 
 					<TitleFlexGridViews
@@ -127,6 +110,7 @@ export default function DealerMiniSite() {
 						title="Financing"
 						Component={FinancingCard}
 					/>
+
 					<ToggleTab
 						className={`border p-2 ${tabSpacing}`}
 						Component={
@@ -156,6 +140,7 @@ export default function DealerMiniSite() {
 						id="contact"
 						title={dealer[currentDealer].name}
 					/>
+
 					<ToggleTab
 						className={`border p-2 ${tabSpacing}`}
 						Component={
@@ -193,6 +178,7 @@ export default function DealerMiniSite() {
 						id="why"
 						title="Why buy from a dealer?"
 					/>
+
 					<ToggleTab
 						className={`border p-2 ${tabSpacing}`}
 						Component={<Faqs faqs={mainJSON.faqs} />}
