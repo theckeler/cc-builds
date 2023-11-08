@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-import "./scss/snow-v2.scss";
+// import "./scss/snow-v2.scss";
 
 import Articles from "@/components/Articles";
 import AttchmentsAccessories from "@/components/AttchmentsAccessories";
