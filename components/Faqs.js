@@ -74,6 +74,7 @@ export default function Faqs({ faqs, className, style, id, allOpen }) {
 								__html: block.answer,
 							}}
 							className={`${!allOpen && "hidden"} text-xs px-3 pb-2`}
+							style={{ ...style }}
 						/>
 
 						<div className="border-bottom"></div>
