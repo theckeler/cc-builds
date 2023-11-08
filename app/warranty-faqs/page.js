@@ -1,25 +1,10 @@
 "use client";
 
 import Faqs from "@/components/Faqs";
-import ResponsiveImage from "@/components/ResponsiveImage";
 
 const WarrantyFaqs = () => {
 	return (
 		<div className="mtd-page">
-			{/* HERO */}
-			{/* <section
-				className="position-relative container px-0"
-				style={{ minHeight: "200px" }}>
-				<ResponsiveImage
-					id="hero"
-					src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/31AM5HVSB56_2X26_Inteli_env02.jpg"
-					alt=""
-					className="h-100 w-100 position-absolute"
-					style={{ objectFit: "cover", top: 0 }}
-					hero
-				/>
-			</section> */}
-
 			<section className="" style={{ backgroundColor: "#ffc20f" }}>
 				<div className="container text-center">
 					<ul
@@ -58,21 +43,17 @@ const WarrantyFaqs = () => {
 				</div>
 			</section>
 
-			{/* copyBlock */}
-			{/* <section className="mt-0 mb-0 text-white bg-primary">
-				<div className="container p-3 text-center">
-					<h1 className="h1 d-block text-white">Warranty FAQs</h1>
-				</div>
-			</section> */}
-
 			<section className="container">
 				<section className="container">
 					<Faqs
+						className="font-bold"
+						style={{ fontSize: "1.375rem" }}
 						faqs={[
 							{
 								question:
 									"How can I find out if I registered my equipment and how long I have left on the warranty? When does the warranty start?",
 								className: "font-bold",
+
 								answer:
 									"Warranty period begins on the date of purchase or date of receiving product delivery. Please refer to the warranty statement provided with your products. The warranty period and exclusions are provided.",
 							},
@@ -261,7 +242,6 @@ const WarrantyFaqs = () => {
 							},
 						]}
 						id="warranty-faqs"
-						className="p-2 p-lg-4"
 					/>
 				</section>
 			</section>
