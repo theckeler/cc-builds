@@ -1,7 +1,15 @@
 "use client";
 import { Fragment } from "react";
 
-export default function Faqs({ faqs, className, style, id, allOpen }) {
+export default function Faqs({
+	faqs,
+	className,
+	style,
+	id,
+	allOpen,
+	answers,
+	questions,
+}) {
 	let schemea = {
 		"@context": "https://schema.org",
 		"@type": "FAQPage",
@@ -39,11 +47,11 @@ export default function Faqs({ faqs, className, style, id, allOpen }) {
 						? "rotate(0)"
 						: "rotate(45deg)";
 				}}
-				className={`text-left question cursor-pointer w-100 p-1 border-0 bg-transparent ${className}`}
+				className={`text-left question cursor-pointer w-100 p-1 border-0 bg-transparent ${questions.className}`}
 				style={{
-					...style,
+					...questions.style,
 					cursor: "pointer",
-					fontSize: style?.fontSize ? style.fontSize : "1.1em",
+					fontSize: style?.fontSize ? questions.style.fontSize : "1.1em",
 					textTransform: "none",
 				}}>
 				<ul className="list-unstyled d-flex align-items-center w-100 mb-1 mb-0">
@@ -73,8 +81,10 @@ export default function Faqs({ faqs, className, style, id, allOpen }) {
 							dangerouslySetInnerHTML={{
 								__html: block.answer,
 							}}
-							className={`${!allOpen && "hidden"} text-xs px-3 pb-2`}
-							style={{ ...style }}
+							className={`${!allOpen && "hidden"} text-xs px-3 pb-2 ${
+								answers.className
+							}`}
+							style={{ ...answers.style }}
 						/>
 
 						<div className="border-bottom"></div>

@@ -48,6 +48,20 @@ const WarrantyFaqs = () => {
 					<Faqs
 						className="font-bold"
 						style={{ fontSize: "1.375rem", lineHeight: "1.4" }}
+						questions={{
+							className: "font-bold",
+							style: {
+								fontSize: "1.375rem",
+								lineHeight: "1.4",
+							},
+						}}
+						answers={{
+							//className: "font-bold",
+							style: {
+								fontSize: "0.875rem",
+								lineHeight: "1.4",
+							},
+						}}
 						faqs={[
 							{
 								question:
