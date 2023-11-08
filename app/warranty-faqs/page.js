@@ -56,7 +56,7 @@ const WarrantyFaqs = () => {
 							},
 						}}
 						answers={{
-							//className: "font-bold",
+							className: "",
 							style: {
 								fontSize: "0.875rem",
 								lineHeight: "1.4",
