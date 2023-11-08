@@ -47,13 +47,19 @@ export default function Faqs({
 						? "rotate(0)"
 						: "rotate(45deg)";
 				}}
-				className={`text-left question cursor-pointer w-100 p-1 border-0 bg-transparent ${questions.className}`}
-				style={{
-					...questions.style,
-					cursor: "pointer",
-					fontSize: style?.fontSize ? questions.style.fontSize : "1.1em",
-					textTransform: "none",
-				}}>
+				className={`text-left question cursor-pointer w-100 p-1 border-0 bg-transparent ${
+					questions ? questions.className : ""
+				}`}
+				style={
+					(questions && {
+						...questions.style,
+					},
+					{
+						cursor: "pointer",
+						fontSize: style?.fontSize ? questions.style.fontSize : "1.1em",
+						textTransform: "none",
+					})
+				}>
 				<ul className="list-unstyled d-flex align-items-center w-100 mb-1 mb-0">
 					<li
 						dangerouslySetInnerHTML={{
@@ -82,9 +88,9 @@ export default function Faqs({
 								__html: block.answer,
 							}}
 							className={`${!allOpen && "hidden"} text-xs px-3 pb-2 ${
-								answers.className
+								answers ? answers.className : ""
 							}`}
-							style={{ ...answers.style }}
+							style={answers ? { ...answers.style } : null}
 						/>
 
 						<div className="border-bottom"></div>
