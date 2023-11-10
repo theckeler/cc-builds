@@ -44,7 +44,7 @@ export default function SnowV2({}) {
 		document.body.appendChild(scriptEl);
 	});
 
-	const addPromo = true;
+	const addPromo = false;
 
 	return (
 		<>
@@ -863,9 +863,9 @@ export default function SnowV2({}) {
 								"Cub Cadet® snow blowers are engineered to quickly remove snow from unwanted areas. A single stage snow blower is the most basic kind, where the auger paddle pulls snow into the machine and throws it out of the chute. More advanced stages are designed to handle more snow.",
 						},
 						{
-							question: "What is the best snow blower for a driveway?",
+							question: "What is the best type of snow blower for a driveway?",
 							answer:
-								'There’s no one size fits all snow blower. Cub Cadet has models ideal for up to 6-, 12-, and 18-in. of snowfall, so take stock of how much snow is expected in your area to zero in on a category. From there, determine what kind of features you’d benefit from, like electric start, heated hand grips, IntelliPower™ engines, or LED headlights, among others. This <a href="https://www.cubcadet.com/en_US/product-information/cub-cadet-snow-blower-buying-guide.html">snow blower buyers guide</a> goes into more detail.',
+								'There’s no one size fits all snow blower. Cub Cadet has models ideal for up to 6-in, 12-in, and 18-in. of snowfall, so take stock of how much snow is expected in your area to zero in on a category. From there, determine what kind of features you’d benefit from, like electric start, heated hand grips, IntelliPower™ engines, or LED headlights, among others. This <a href="https://www.cubcadet.com/en_US/product-information/cub-cadet-snow-blower-buying-guide.html">snow blower buyers guide</a> goes into more detail.',
 						},
 						{
 							question: "Do I need a 1, 2 or 3 stage snow blower?",
@@ -880,13 +880,13 @@ export default function SnowV2({}) {
 								`,
 						},
 						{
-							question: "How do I store my snow blower in the offseason?",
+							question: "How do I store my snow blower in the off season?",
 							answer: `
 								Always refer to your <a href="https://www.cubcadet.com/en_US/operatorsmanuals">operator’s manual</a> for comprehensive instructions on maintenance and storage. Instructions will differ between single-, 2-, and 3-stage snow blowers. <a href="https://www.cubcadet.com/en_US/knowledge-center/knowledge-how-to-prepare-your-snow-thrower-for-storage-in-the-off-season.html">This guide</a> can help walk you through some of the most common steps.
 								`,
 						},
 						{
-							question: "How do I register my cub cadet snow blower?",
+							question: "How do I register my Cub Cadet snow blower?",
 							answer: `
 								Once you’ve purchased a Cub Cadet® snow blower, you can register your machine <a href="https://www.cubcadet.com/en_US/content-asset-page-includes/registration.html">here</a>.
 								`,
