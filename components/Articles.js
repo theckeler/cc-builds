@@ -1,24 +1,28 @@
 import ImgCopyBlockStacked from "./ImgCopyBlockStacked";
-
-const Articles = ({ articles, className, numRows, imgType = null }) => {
+export default function Articles({
+	articles,
+	className,
+	numRows,
+	imgType = null,
+}) {
 	return (
 		<section className={className}>
-			<div className="wrapper">
-				<ul className="list-unstyled d-flex flex-column flex-md-row align-items-center px-3">
+			<div className="">
+				<ul className="flex items-center">
 					<li>
-						<h2 className="text-center">
+						<h2 className="text-center text-3xl">
 							{typeof articles.h2 !== undefined && articles.h2}
 						</h2>
 					</li>
-					<li className="ml-2">
-						<a href={articles.viewAllURL} className="d-block text-center">
+					<li>
+						<a href={articles.viewAllURL} className="ml-2">
 							<u>View All</u>
 						</a>
 					</li>
 				</ul>
 
-				<div className="slick pl-3 pr-3">
-					<ul className="list-unstyled d-flex flex-column flex-md-row flex-wrap">
+				<div className="">
+					<ul className="grid md:grid-cols-2 xl:grid-cols-4 gap-4">
 						{articles.blocks.map((block, i) => {
 							let schemea = {
 								"@context": "https://schema.org",
@@ -28,15 +32,11 @@ const Articles = ({ articles, className, numRows, imgType = null }) => {
 							};
 
 							return (
-								<li
-									className={`col-12 col-md-6 col-xl-3 p-1 d-flex col-md-${
-										12 / numRows
-									} p-1 d-flex flex-column`}
-									key={i}>
+								<li key={i}>
 									<ImgCopyBlockStacked
 										imgType={imgType}
 										{...{ block }}
-										className="p-2 h-100"
+										className="p-1 h-100"
 										style={{ backgroundColor: "#efefef" }}
 									/>
 									<script
@@ -53,6 +53,4 @@ const Articles = ({ articles, className, numRows, imgType = null }) => {
 			</div>
 		</section>
 	);
-};
-
-export default Articles;
+}

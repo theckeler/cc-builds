@@ -6,17 +6,19 @@ const ImgCopyBlockStacked = ({ block, className, style, imgType = null }) => {
 			href={block.url}
 			className={`d-flex flex-column text-decoration-none ${className}`}
 			style={style}>
-			{imgType === "res" ? block.res : block.orig}
-			<div className="content d-flex flex-column p-3 h-100">
+			<div className="relative min-h-[10rem]">
+				{imgType === "res" ? block.res : block.orig}
+			</div>
+
+			<div className="content d-flex flex-column p-1 h-100">
 				<strong
-					className="h3"
+					className="text-lg"
 					dangerouslySetInnerHTML={{
 						__html: block.title,
 					}}
-					style={{ fontSize: "1.6em" }}
 				/>
 				<p
-					className="copy mt-2"
+					className="mt-1 text-sm line-clamp-5"
 					style={
 						block.lineClamp && {
 							overflow: "hidden",
@@ -30,7 +32,7 @@ const ImgCopyBlockStacked = ({ block, className, style, imgType = null }) => {
 					}}
 				/>
 				<span
-					className="mt-auto text-uppercase font-weight-bold"
+					className="mt-auto uppercase font-bold"
 					style={{ textDecoration: "underline" }}>
 					Read more
 				</span>

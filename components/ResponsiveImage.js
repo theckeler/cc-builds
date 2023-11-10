@@ -69,12 +69,12 @@ export default function ResponsiveImage({
 				id={id ? `${id}-jpg` : ""}
 				src={src}
 				// HERO:
-				rel={hero ? "preload" : "false"}
-				as={hero ? "image" : "false"}
-				fetchPriority={hero ? "high" : "false"}
-				decoding={hero ? "async" : "false"}
+				rel={hero ? "preload" : false}
+				as={hero ? "image" : false}
+				fetchPriority={hero ? "high" : false}
+				decoding={hero ? "async" : false}
 				// NOT
-				loading={!hero ? "lazy" : "false"}
+				loading={hero ? false : "lazy"}
 			/>
 		</picture>
 	) : (
@@ -85,12 +85,12 @@ export default function ResponsiveImage({
 			id={id ? `${id}-jpg` : ""}
 			src={src}
 			// HERO:
-			rel={hero ? "preload" : "false"}
-			as={hero ? "image" : "false"}
-			fetchPriority={hero ? "high" : "false"}
-			decoding={hero ? "async" : "false"}
+			rel={hero ? "preload" : false}
+			as={hero ? "image" : false}
+			fetchPriority={hero ? "high" : false}
+			decoding={hero ? "async" : false}
 			// NOT
-			loading={hero ? "lazy" : "false"}
+			loading={hero ? false : "lazy"}
 		/>
 	);
 }

@@ -3,7 +3,7 @@ import Stars from "./Stars";
 const QuoteBlock = ({
 	quote,
 	className,
-	addCSS,
+	style,
 	stackStars = false,
 	starFill = "#FFC10F",
 }) => {
@@ -11,20 +11,16 @@ const QuoteBlock = ({
 	const starCSS = stackStars ? 12 : 8;
 
 	return (
-		<div
-			className={`quote-block d-flex flex-column h-100 w-100 p-1 p-lg-4 ${className}`}
-			style={addCSS}>
-			<ul className={`list-unstyled d-flex mb-0 ${stackEmUp}`}>
-				<li className={`col-${starCSS} font-weight-bold h3 text-uppercase p-0`}>
-					{quote.title}
-				</li>
-				<li className={`col-4 text-right p-0`}>
+		<div className={`quote-block  ${className}`} style={style}>
+			<ul className="grid grid-cols-1 md:grid-cols-2">
+				<li className="text-lg font-bold">{quote.title}</li>
+				<li className="">
 					<Stars fill={starFill} />
 				</li>
 			</ul>
 			<p className="mt-2">{quote.copy}</p>
-			<ul className="list-unstyled d-flex flex-column flex-lg-row mt-1">
-				<li className="border-lg-right font-weight-bold pr-2">{quote.name}</li>
+			<ul className="">
+				<li className="border-r font-bold pr-2">{quote.name}</li>
 				<li
 					className="font-weight-normal pl-lg-2"
 					dangerouslySetInnerHTML={{

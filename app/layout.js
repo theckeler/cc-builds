@@ -12,12 +12,9 @@ export default function RootLayout({ children }) {
 			<body>
 				<link
 					rel="stylesheet"
-					href="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1683198954438/css/global.css"
+					href="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1699531593270/css/global.css"
 				/>
-				<link
-					rel="stylesheet"
-					href="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/main.css"
-				/>
+
 				<script src="https://cdn.tailwindcss.com" async />
 
 				<Header />
