@@ -574,19 +574,20 @@ export default function SnowV2({}) {
 					</div>
 				</section>
 
-				<section className="section-8">
+				<section className="container">
 					<div className="wrapper p-1">
 						<ResponsiveImage
-							className="d-block d-md-none w-full"
+							className="md:hidden w-full h-full"
 							src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Group3564.png"
 							alt=""
+							id="Group3564-mobile"
 						/>
 
 						<ResponsiveImage
-							className="d-none d-md-block w-full"
+							className="overflow-hidden w-0 h-0 md:h-full md:w-full"
 							src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Group3540.png"
 							alt=""
-							id="group-desktop"
+							id="Group3564-desktop"
 						/>
 					</div>
 				</section>
