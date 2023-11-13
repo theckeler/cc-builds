@@ -98,6 +98,14 @@ const AttchmentsAccessories = ({ attAcc }) => {
 												className="btn btn-secondary w-full mt-4"
 												addPadding={{ padding: "0.9375rem 1.5625rem" }}
 											/>
+											<button
+												class="add-to-cart-tile btn btn-secondary"
+												data-pid={block.item}
+												data-add-to-cart-url="/on/demandware.store/Sites-cubcadet-Site/en_US/Cart-AddProduct"
+												// data-gtmdata='{"id":"31AH8DVSB10","name":"2X 30\" MAX™ Snow Blower","productType":"WholeGood"}'
+											>
+												Add to Cart
+											</button>
 										</div>
 									</div>
 								</li>
