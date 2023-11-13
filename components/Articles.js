@@ -8,7 +8,7 @@ export default function Articles({
 	return (
 		<section className={className}>
 			<div className="">
-				<ul className="flex items-center">
+				<ul className="flex flex-col lg:flex-row items-center">
 					<li>
 						<h2 className="text-center text-3xl">
 							{typeof articles.h2 !== undefined && articles.h2}

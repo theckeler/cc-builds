@@ -15,7 +15,7 @@
 		"blocks": [
 			{
 				"url": "https://www.cubcadet.com/en_US/snow-blowers/single-stage-snow-blowers",
-				"img": "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Cub-Cadet-1X_21LHP_1.jpg?sw=290&sh=290&sm=fit",
+				"img": "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Cub-Cadet-1X_21LHP_1.jpg",
 				"title": "1X Single-Stage Snow Blowers",
 				"copy": "Engineered to use a high-performance auger to quickly and easily remove up to 6 inches of snow from small, smooth areas.",
 				"engFor": [
@@ -41,7 +41,7 @@
 			},
 			{
 				"url": "https://www.cubcadet.com/en_US/snow-blowers/two-stage-snow-blowers",
-				"img": "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Cub-Cadet_2X28_IP_4.jpg",
+				"img": "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Cub-Cadet_2X_30EFI_14.jpg",
 				"title": "2X Two-Stage Snow Blowers",
 				"copy": "Engineered for clearing between 12-18 inches in powder and slush. If you measure snow in feet instead of inches, step up to the commercial-grade features on the 2X MAX.",
 				"engFor": [
@@ -332,28 +332,28 @@
 				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw0c657c35/products/Attachments_Accessories/490-241-0032.jpg?sw=1000&sh=1000&sm=fit",
 				"title": "Universal Cab",
 				"item": "490-241-0032",
-				"price": "From $132.99 MSRP",
+				"price": "$132.99",
 				"url": "https://www.cubcadet.com/en_US/snow-blower-accessories/snow-blower-cab/490-241-0032.html#q=490-241-0032&lang=en_US&start=0"
 			},
 			{
 				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw2a0b010e/products/Attachments_Accessories/490-290-0010_1.jpg?sw=1000&sh=1000&sm=fit",
 				"title": "Snow Blower Cover",
 				"item": "490-290-0010",
-				"price": "From $38.99 MSRP",
+				"price": "$38.99",
 				"url": "https://www.cubcadet.com/en_US/snow-blower-accessories/snow-blower-cover/490-290-0010.html#q=490-290-0010&lang=en_US&start=0"
 			},
 			{
 				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw32dc42ff/products/Attachments_Accessories/OEM-390-679.jpg?sw=1000&sh=1000&sm=fit",
 				"title": "Drift Cutter Kit",
 				"item": "OEM-390-679",
-				"price": "From $41.99 MSRP",
+				"price": "$41.99",
 				"url": "https://www.cubcadet.com/en_US/snow-blower-accessories/drift-cutter-kit/OEM-390-679.html#q=OEM-390-679&lang=en_US&start=0"
 			},
 			{
 				"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw301fe215/products/753-08629.jpg?sw=1000&sh=1000&sm=fit",
 				"title": "LED Light Bar Kit",
 				"item": "753-08629A",
-				"price": "From $135.89 MSRP",
+				"price": "$135.89",
 				"url": "https://www.cubcadet.com/en_US/snow-blower-accessories/led-light-bar-kit/753-08629A.html#q=753-08629A&lang=en_US&start=0"
 			}
 		]
