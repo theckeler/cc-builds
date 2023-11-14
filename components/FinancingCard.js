@@ -1,16 +1,8 @@
-// "use client";
-// import { useState, useEffect } from "react";
-
-// import data from "../data/plans.json";
-
-const FinancingCard = ({ plansData }) => {
+export default function FinancingCard({ plansData }) {
 	return (
 		<div className="flo">
 			{plansData &&
 				plansData.map((block, i) => {
-					const title = { __html: block.title };
-					const text = { __html: block.text };
-					const minPurchase = { __html: block.minPurchase };
 					return (
 						<div className="card-container" key={i}>
 							<div className="card">
@@ -23,11 +15,20 @@ const FinancingCard = ({ plansData }) => {
 									<div className="back">
 										<h4
 											className="card-title"
-											dangerouslySetInnerHTML={title}></h4>
-										{/* <p className="card-text" dangerouslySetInnerHTML={text}></p> */}
+											dangerouslySetInnerHTML={{ __html: block.title }}
+										/>
+										{!!block.text && (
+											<p
+												className="card-text"
+												dangerouslySetInnerHTML={{ __html: block.text }}
+											/>
+										)}
 										<p
 											className="card-text"
-											dangerouslySetInnerHTML={minPurchase}></p>
+											dangerouslySetInnerHTML={{
+												__html: block.minPurchase,
+											}}
+										/>
 										<p className="card-text">
 											Valid from:{" "}
 											<span>
@@ -56,6 +57,4 @@ const FinancingCard = ({ plansData }) => {
 				})}
 		</div>
 	);
-};
-
-export default FinancingCard;
+}

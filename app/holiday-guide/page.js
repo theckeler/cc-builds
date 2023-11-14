@@ -73,11 +73,11 @@ const guide = [
 			src: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/holiday-guide/Cub-Cadet_SC300K_5.jpg",
 		},
 		//heading: "New Gardeners Will Dig It",
-		title: "SC300K",
+		title: "SC300K Self-propelled mower",
 		price: "$579.00",
 		copy: `Designed to help you navigate uneven terrain with ease thanks to front-wheel drive with single lever drive contro`,
 		button: {
-			title: "Shop SC300K",
+			title: "Shop SC300K Self-propelled mower",
 		},
 	},
 	{
@@ -86,11 +86,11 @@ const guide = [
 			src: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/holiday-guide/Cub-Cadet_SC500K_6.jpg",
 		},
 		//heading: "Put Branches Within Reach",
-		title: "SC500K",
+		title: "SC500K Self-propelled mower",
 		price: "$679.00",
 		copy: `Rear-wheel drive with dual lever control allows you to navigate uneven terrain with either hand`,
 		button: {
-			title: "Shop SC500K",
+			title: "Shop SC500K Self-propelled mower",
 		},
 	},
 	{
@@ -100,10 +100,10 @@ const guide = [
 		},
 		//heading: "When You Can’t Pick Just One",
 		price: "$499.00",
-		title: "SC300B",
+		title: "SC300B Self-propelled mower",
 		copy: `Designed to help you navigate uneven terrain with ease thanks to front-wheel drive with single lever drive control.`,
 		button: {
-			title: "Shop SC300B",
+			title: "Shop SC300B Self-propelled mower",
 		},
 	},
 	{

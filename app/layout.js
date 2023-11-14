@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body>
+			<body suppressHydrationWarning={true}>
 				<link
 					rel="stylesheet"
 					href="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1699531593270/css/global.css"
