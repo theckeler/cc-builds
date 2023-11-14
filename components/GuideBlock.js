@@ -29,7 +29,7 @@ export default function GuideBlock({
 				<ResponsiveImage
 					src={img.src}
 					alt=""
-					id={makeID(title)}
+					id={img.id}
 					className={`w-full h-auto ${img?.className}`}
 					style={{ ...img?.style }}
 				/>

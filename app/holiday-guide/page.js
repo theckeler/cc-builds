@@ -6,6 +6,7 @@ const guide = [
 		href: "https://www.cubcadet.com/en_US/all-snow-blowers/1x-21inch-lhp-snow-blower/31PM2T6C710.html",
 		img: {
 			src: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/holiday-guide/Cub-Cadet-1X_21LHP_1.jpg",
+			id: "LHP-Snow-Blower",
 		},
 		//heading: "A Group Gift They’ll Fight Over",
 		title: '1X™ 21" LHP Snow Blower',
@@ -19,6 +20,7 @@ const guide = [
 		href: "https://www.cubcadet.com/en_US/snow-blowers/2x-26inch-intellipower-snow-blower%C2%A0/31AM5HVSB10.html",
 		img: {
 			src: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/holiday-guide/Cub-Cadet_2X26_IP_11.jpg",
+			id: "IntelliPOWER-Blower",
 		},
 		//heading: "Make Leaf Cleanup a Breeze",
 		title: '2X™ 26" IntelliPOWER® Snow Blower',
@@ -32,6 +34,7 @@ const guide = [
 		href: "https://www.cubcadet.com/en_US/snow-blowers/2x-26inch-trac-intellipower-snow-blower/31AH7IVSB10.html",
 		img: {
 			src: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/holiday-guide/Cub-Cadet_2X26Trac_IP_2.jpg",
+			id: "TRAC-Blower",
 		},
 		//heading: "For Trimming Trees with Ease",
 		title: '2X™ 26" TRAC IntelliPOWER® Snow Blower',
@@ -45,6 +48,7 @@ const guide = [
 		href: "https://www.cubcadet.com/en_US/snow-blowers/3x-26inch-intellipower-snow-blower%C2%A0/31AH5JVAB10.html",
 		img: {
 			src: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/holiday-guide/Cub-Cadet_3X26IP_11.jpg",
+			id: "IntelliPOWER-26-Blower",
 		},
 		//heading: "The Tool for Trimming and Tapering Grass",
 		title: '3X™ 26" IntelliPOWER® Snow Blower',
@@ -58,6 +62,7 @@ const guide = [
 		href: "https://www.cubcadet.com/en_US/riding-mower-accessories/fastattach-all-season-plow-blade/19A30037100.html",
 		img: {
 			src: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/holiday-guide/19A30037100.jpg",
+			id: "FastAttach-Blade",
 		},
 		//heading: "A Classic for the New Homeowner",
 		title: "FastAttach® All-Season Plow Blade",
@@ -71,9 +76,10 @@ const guide = [
 		href: "https://www.cubcadet.com/en_US/self-propelled-mowers/sc300k/12AVB2KL710.html",
 		img: {
 			src: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/holiday-guide/Cub-Cadet_SC300K_5.jpg",
+			id: "Self-propelled-mower-SC300K",
 		},
 		//heading: "New Gardeners Will Dig It",
-		title: "SC300K Self-propelled mower",
+		title: "SC300K-Self-propelled-mower",
 		price: "$579.00",
 		copy: `Designed to help you navigate uneven terrain with ease thanks to front-wheel drive with single lever drive contro`,
 		button: {
@@ -84,9 +90,10 @@ const guide = [
 		href: "https://www.cubcadet.com/en_US/self-propelled-mowers/sc500k/12AVP2KL710.html",
 		img: {
 			src: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/holiday-guide/Cub-Cadet_SC500K_6.jpg",
+			id: "Self-propelled-mower-SC500K",
 		},
 		//heading: "Put Branches Within Reach",
-		title: "SC500K Self-propelled mower",
+		title: "SC500K-Self-propelled-mower",
 		price: "$679.00",
 		copy: `Rear-wheel drive with dual lever control allows you to navigate uneven terrain with either hand`,
 		button: {
@@ -97,10 +104,11 @@ const guide = [
 		href: "https://www.cubcadet.com/en_US/self-propelled-mowers/sc300b/12AVB2R3710.html",
 		img: {
 			src: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/holiday-guide/Cub-Cadet_SC300B_4.jpg",
+			id: "Self-propelled-mower-SC300B",
 		},
 		//heading: "When You Can’t Pick Just One",
 		price: "$499.00",
-		title: "SC300B Self-propelled mower",
+		title: "SC300B-Self-propelled mower",
 		copy: `Designed to help you navigate uneven terrain with ease thanks to front-wheel drive with single lever drive control.`,
 		button: {
 			title: "Shop SC300B Self-propelled mower",
@@ -111,6 +119,7 @@ const guide = [
 		img: {
 			src: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/holiday-guide/cub-cadet-credit-card.png",
 			className: "py-[4.3rem]",
+			id: "Cub-Cadet-Financing",
 		},
 		//heading: "Financing Offers Just for You",
 		title: "Cub Cadet Financing",
