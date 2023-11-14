@@ -1,7 +1,7 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
-import { lineup, quote, machineExtreme, compare } from "./data/home.json";
+import snowData from "./data/home.json";
 
 import Articles from "@/components/Articles";
 import AttchmentsAccessories from "@/components/AttchmentsAccessories";
@@ -167,7 +167,7 @@ export default function SnowV2({}) {
 						<div className="container py-4 lg:py-10">
 							<h2 className="text-center block mb-6">The X Series Lineup</h2>
 							<ul className="grid gap-4 lg:grid-cols-3 list-unstyled">
-								{lineup.blocks.map((block, i) => (
+								{snowData.lineup.blocks.map((block, i) => (
 									<li className="flex flex-col" key={i}>
 										<Lineup block={block} imgType={imgType} />
 									</li>
@@ -184,7 +184,7 @@ export default function SnowV2({}) {
 				<section className="relative mb-6 flex flex-col flex-col-reverse">
 					<div className="container relative z-10 pt-2 lg:pt-14 lg:pb-64">
 						<QuoteBlock
-							quote={quote}
+							quote={snowData.quote}
 							className="bg-white lg:p-4 lg:max-w-[40rem]"
 						/>
 					</div>
@@ -565,7 +565,7 @@ export default function SnowV2({}) {
 							your winter done right.
 						</p>
 						<ul className="grid gap-4 lg:grid-cols-2 mt-6">
-							{machineExtreme.blocks.map((block, i) => (
+							{snowData.machineExtreme.blocks.map((block, i) => (
 								<li className="" key={i}>
 									<IconTextBlock block={block} imgType={imgType} />
 								</li>
@@ -600,11 +600,11 @@ export default function SnowV2({}) {
 
 						<div className="max-w-screen overflow-x-auto">
 							<ul className="grid grid-cols-[20rem_10rem_10rem_10rem] lg:grid-cols-[1fr_16rem_16rem_16rem] mt-4">
-								{compare.blocks.map((block, i) => {
+								{snowData.compare.blocks.map((block, i) => {
 									return (
 										<CompareRow
 											block={block}
-											numRows={compare.blocks.length}
+											numRows={snowData.compare.blocks.length}
 											rowNum={i}
 											key={i}
 										/>
