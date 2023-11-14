@@ -94,17 +94,16 @@ const guide = [
 		},
 	},
 	{
-		href: "https://www.cubcadet.com/en_US/self-propelled-mowers/sc300/12AVB2KM710.html",
+		href: "https://www.cubcadet.com/en_US/self-propelled-mowers/sc300b/12AVB2R3710.html",
 		img: {
-			src: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/holiday-guide/Cub_Cadet_SC300_2000x2000_7.jpg",
-			//className: "py-[3.4rem]",
+			src: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/holiday-guide/Cub-Cadet_SC300B_4.jpg",
 		},
 		//heading: "When You Can’t Pick Just One",
-		price: "$579.00",
-		title: "SC300",
+		price: "$499.00",
+		title: "SC300B",
 		copy: `Designed to help you navigate uneven terrain with ease thanks to front-wheel drive with single lever drive control.`,
 		button: {
-			title: "Shop SC300",
+			title: "Shop SC300B",
 		},
 	},
 	{
