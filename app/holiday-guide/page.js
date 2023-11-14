@@ -79,7 +79,7 @@ const guide = [
 			id: "Self-propelled-mower-SC300K",
 		},
 		//heading: "New Gardeners Will Dig It",
-		title: "SC300K-Self-propelled-mower",
+		title: "SC300K Self-propelled Mower",
 		price: "$579.00",
 		copy: `Designed to help you navigate uneven terrain with ease thanks to front-wheel drive with single lever drive contro`,
 		button: {
@@ -93,7 +93,7 @@ const guide = [
 			id: "Self-propelled-mower-SC500K",
 		},
 		//heading: "Put Branches Within Reach",
-		title: "SC500K-Self-propelled-mower",
+		title: "SC500K Self-propelled Mower",
 		price: "$679.00",
 		copy: `Rear-wheel drive with dual lever control allows you to navigate uneven terrain with either hand`,
 		button: {
@@ -108,7 +108,7 @@ const guide = [
 		},
 		//heading: "When You Can’t Pick Just One",
 		price: "$499.00",
-		title: "SC300B-Self-propelled mower",
+		title: "SC300B Self-propelled Mower",
 		copy: `Designed to help you navigate uneven terrain with ease thanks to front-wheel drive with single lever drive control.`,
 		button: {
 			title: "Shop SC300B Self-propelled mower",
