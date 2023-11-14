@@ -1,4 +1,4 @@
-import Plus from "@/images/IconPlus";
+import Plus from "@/components/images/IconPlus";
 
 const Pluses = ({ className, addCSS, num, svgFill }) => {
 	return (

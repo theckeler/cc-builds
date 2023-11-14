@@ -1,0 +1,952 @@
+<div class="mtd-page">
+	<script>
+		document.querySelector(".hero.slant-down.content-page-image").remove();
+	</script>
+	<style>
+		.container.content-asset-container {
+			max-width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+
+		.mtd-page {
+			font-size: 16px;
+		}
+		.mtd-page section {
+			position: relative;
+			overflow: hidden;
+		}
+		.mtd-page .wrapper {
+			position: relative;
+			z-index: 1;
+			width: 100%;
+			max-width: 80.625rem;
+			margin: auto;
+		}
+		.mtd-page .bg-black {
+			background-color: #000;
+			color: #fff;
+		}
+		.mtd-page .bg-white {
+			background-color: #fff;
+			color: #000;
+		}
+		.mtd-page .bg-grey {
+			background-color: #d8d8d8;
+			color: #000;
+		}
+		.mtd-page .bg-grey-dark {
+			background-color: #c8c8c8;
+		}
+		.mtd-page .bg-grey-dark-2 {
+			background-color: #2c2b2b;
+			color: #fff;
+		}
+		.mtd-page .bg-yellow {
+			background-color: #ffc20f;
+		}
+		.mtd-page .bg-none {
+			background-color: transparent;
+		}
+		.mtd-page a.link-yellow {
+			color: #ffc20f;
+		}
+		.mtd-page h1 {
+			font-size: 3.125rem;
+		}
+		.mtd-page .fw-bold {
+			font-weight: 600;
+		}
+		.mtd-page .star-rating svg * {
+			fill: #000;
+		}
+		.mtd-page .quote-block .title {
+			font-size: 1.125rem;
+		}
+		.mtd-page .quote-block .copy {
+			font-size: 1.375rem;
+		}
+		.mtd-page .quote-block .row {
+			margin-bottom: 0;
+		}
+		.mtd-page .quote-block .author,
+		.mtd-page .quote-block .unit {
+			font-size: 1rem;
+			flex: 0 1 auto;
+			width: auto;
+		}
+		.mtd-page .quote-block .unit {
+			border-left: 1px solid #000;
+		}
+		.mtd-page .clip-corner {
+			clip-path: polygon(1.5rem 0, 100% 0%, 100% 100%, 0 100%, 0 1.5rem);
+		}
+		.mtd-page .desktop {
+			display: block;
+		}
+		.mtd-page .mobile {
+			display: none;
+		}
+		.mtd-page .unstyled.link {
+			text-decoration: none;
+		}
+		.mtd-page button.bg-black,
+		.mtd-page .button.bg-black,
+		.mtd-page .btn.bg-black {
+			color: #fff;
+			background: #000;
+		}
+		.mtd-page button.bg-yellow,
+		.mtd-page .button.bg-yellow,
+		.mtd-page .btn.bg-yellow {
+			color: #000;
+			background: #ffc20f;
+		}
+		.mtd-page button:hover,
+		.mtd-page .button:hover,
+		.mtd-page .btn:hover {
+			cursor: pointer;
+		}
+		.mtd-page .slick-next,
+		.mtd-page .slick-prev {
+			padding: initial;
+			font-weight: initial;
+		}
+		.mtd-page .slick-next:before,
+		.mtd-page .slick-prev:before {
+			padding: 0.625rem;
+		}
+		.mtd-page .faqs .question {
+			display: flex;
+			position: relative;
+			font-size: 1.375rem;
+			padding: 32px 0;
+			font-weight: 700;
+		}
+		.mtd-page .faqs .question.active span {
+			transform: rotate(0);
+		}
+		.mtd-page .faqs .question span {
+			display: flex;
+			align-content: center;
+			justify-content: center;
+			position: relative;
+			width: 30px;
+			height: 30px;
+			transform: rotate(45deg);
+			transform-origin: center;
+			transition: all 0.2s;
+			margin-left: auto;
+		}
+		.mtd-page .faqs .answer {
+			overflow: hidden;
+			max-height: 0;
+			border-bottom: 1px solid #d9d9d9;
+			transition: max-height 0.2s;
+		}
+		.mtd-page .faqs .answer.active {
+			max-height: 1000px;
+		}
+		.mtd-page .faqs .answer.active span {
+			transform: rotate(0);
+		}
+		.mtd-page .video-wrapper {
+			position: relative;
+			padding-bottom: 56.25%;
+			/* 16:9 */
+			padding-top: 25px;
+			height: 0;
+		}
+		.mtd-page .video-wrapper iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		.mtd-page .max-width-1000 {
+			max-width: 62.5rem;
+			margin: auto;
+		}
+		.mtd-page .max-width-800 {
+			max-width: 50rem;
+			margin: auto;
+		}
+		.mtd-page .cursor-grab {
+			cursor: grab;
+		}
+		.mtd-page .overlay {
+			display: none;
+			z-index: 99;
+			background: rgba(0, 0, 0, 0.5);
+			position: absolute;
+			width: 0;
+			height: 0;
+			top: 0px;
+			left: 0px;
+			overflow: hidden;
+		}
+		.mtd-page .overlay.active {
+			display: block;
+			width: 100vw;
+			height: 100vh;
+		}
+
+		@media (min-width: 64em) {
+			.position-lg-relative {
+				position: relative !important;
+			}
+
+			.position-lg-absolute {
+				position: absolute !important;
+			}
+		}
+		@media (max-width: 64rem) {
+			.quote-block {
+				max-width: 100%;
+			}
+		}
+		@media (max-width: 48rem) {
+			.mtd-page .desktop {
+				display: none;
+			}
+			.mtd-page .mobile {
+				display: block;
+			}
+		}
+		.hide {
+			display: none;
+		}
+		.hide.active {
+			display: block;
+		}
+		.mtd-page .fill-white path {
+			fill: #efefef;
+		}
+		.mtd-page .unit sup {
+			top: 0;
+			font-size: 50%;
+		}
+		.mtd-page .min-height-quote {
+			min-height: 45rem;
+		}
+		.mtd-page .snow-v2 .title {
+			font-size: 1.875rem;
+			line-height: 1;
+		}
+		.mtd-page .snow-v2 .copy {
+			font-size: 1rem;
+			line-height: 1.6;
+		}
+		.mtd-page .snow-v2 .pluses {
+			position: absolute;
+			max-width: 6.25rem;
+		}
+		.mtd-page .snow-v2 .pluses.top {
+			top: 2.5rem;
+			left: 2.5rem;
+		}
+		.mtd-page .snow-v2 .pluses.bottom {
+			bottom: 2.5rem;
+			right: 2.5rem;
+		}
+		.mtd-page .snow-v2 .pluses svg {
+			width: 1.875rem;
+			height: 1.875rem;
+		}
+		.mtd-page .snow-v2 .pluses svg * {
+			fill: #fff;
+		}
+		.mtd-page .snow-v2 .pluses.fill-black svg * {
+			fill: #000;
+		}
+		.mtd-page .snow-v2 .star-rating svg {
+			max-width: 1.375rem;
+		}
+		.mtd-page .snow-v2 .img-wrapper {
+			position: relative;
+			min-height: 26.25rem;
+		}
+		.mtd-page .snow-v2 .img-wrapper img {
+			object-fit: cover;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.hero .wrapper {
+			margin-bottom: 1.25rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.hero .block {
+			display: flex;
+			justify-content: center;
+			margin-left: auto;
+			max-width: 25rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.hero .block svg * {
+			fill: #fff;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.quote .wrapper {
+			margin-top: 2.5rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.quote .block {
+			max-width: 43.75rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.hero,
+		.mtd-page .snow-v2.snow-v2-index section.quote {
+			display: flex;
+			padding: 0;
+			min-height: 37.5rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.hero .block,
+		.mtd-page .snow-v2.snow-v2-index section.quote .block {
+			padding: 2.5rem 1.5rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.hero > img,
+		.mtd-page .snow-v2.snow-v2-index section.quote > img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1001;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			max-height: 37.5rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-2 {
+			padding: 7.5rem;
+			background: #000;
+			text-align: center;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-2 p {
+			font-size: 1.375rem;
+			line-height: 1.6;
+			margin: 1.25rem auto 0 auto;
+			max-width: 43.75rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-3 {
+			padding: 5rem 0;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-3 h2 {
+			font-size: 3.125rem;
+			margin: 0 auto 1.25rem auto;
+			text-align: center;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-3 .row .col {
+			display: flex;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-3 .row .col > div {
+			display: flex;
+			flex-direction: column;
+			padding: 0.625rem;
+			border-radius: 0.1875rem;
+			-webkit-user-select: none;
+			user-select: none;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-3 .row .col > div > img {
+			max-width: 18.75rem;
+			width: 100%;
+			height: auto;
+			margin: 0 auto 1.25rem auto;
+			border-radius: 0.1875rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-3 .row .col > div .title {
+			margin-bottom: 0.625rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-3 .row .col > div .icon {
+			margin-top: 0.625rem;
+			margin-bottom: 0.625rem;
+			width: 100%;
+			height: 7.5rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-3 .row .col > div .copy {
+			margin-bottom: 1.25rem;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-index
+			section.section-3
+			.row
+			.col
+			> div
+			.eng-for {
+			text-align: center;
+			text-transform: uppercase;
+			width: 100%;
+			margin-top: auto;
+			margin-bottom: 0.75rem;
+			padding: 0.625rem 2.5rem;
+			font-weight: 600;
+			border: 0;
+			font-size: 0.875rem;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-index
+			section.section-3
+			.row
+			.col
+			> div
+			.eng-for-blocks {
+			text-align: center;
+			font-size: 0.75rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-3 .row .col > div small {
+			display: block;
+			line-height: 1;
+			margin-top: 0.25rem;
+			text-align: center;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-6 {
+			padding: 3.75rem 0;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-6 .logo {
+			min-height: 14.625rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-6 .row .title {
+			font-weight: 600;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-6 .row .plus {
+			font-family: "Times New Roman", sans-serif;
+			font-weight: 100;
+			font-size: 2rem;
+			flex: 0 0 1.25rem;
+			padding-right: 1.25rem;
+			margin-top: -14px;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-7 {
+			padding: 3.75rem 0;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-7 .copy {
+			margin-bottom: 2.5rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-8 {
+			padding: 3.75rem 0;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-9 {
+			padding: 3.75rem 0;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-9 .compare {
+			padding: 1.25rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-9 .compare li {
+			border: 1px solid #000;
+			border-top-width: 0.0625rem;
+			border-right-width: 0rem;
+			border-bottom-width: 0rem;
+			border-left-width: 0.0625rem;
+			flex: 0 1 20%;
+			max-width: 20%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-size: 1rem;
+			font-weight: 600;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-9 .compare li img {
+			max-width: 60%;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-9 .compare li p {
+			margin-top: 0.625rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-9 .compare li .dash-bull {
+			font-size: 1.375rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-9 .compare li .logo,
+		.mtd-page .snow-v2.snow-v2-index section.section-9 .compare li .img {
+			display: flex;
+			min-height: 4.0625rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-9 .compare li .logo img,
+		.mtd-page .snow-v2.snow-v2-index section.section-9 .compare li .img img {
+			width: auto;
+			height: 4.0625rem;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-index
+			section.section-9
+			.compare
+			li:nth-child(4n + 4) {
+			border-right-width: 0;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-index
+			section.section-9
+			.compare
+			li:nth-child(4n + 1) {
+			align-items: flex-start;
+			border-left-width: 0;
+			flex: 0 1 40%;
+			max-width: 40%;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-index
+			section.section-9
+			.compare
+			li:nth-child(1) {
+			font-size: 1.375rem;
+			justify-content: flex-end;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-index
+			section.section-9
+			.compare
+			li:nth-child(-n + 4) {
+			border-top-width: 0rem;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-index
+			section.section-9
+			.compare
+			li:nth-child(-n + 4)
+			.logo,
+		.mtd-page
+			.snow-v2.snow-v2-index
+			section.section-9
+			.compare
+			li:nth-child(-n + 4)
+			.img {
+			justify-content: center;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-index
+			section.section-9
+			.compare
+			li:nth-child(-n + 4).column-1,
+		.mtd-page
+			.snow-v2.snow-v2-index
+			section.section-9
+			.compare
+			li:nth-child(-n + 4).column-2,
+		.mtd-page
+			.snow-v2.snow-v2-index
+			section.section-9
+			.compare
+			li:nth-child(-n + 4).column-3 {
+			font-weight: 100;
+			text-align: center;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-10 a,
+		.mtd-page .snow-v2.snow-v2-index section.section-11 a {
+			display: flex;
+			flex-direction: column;
+			background: #efefef;
+			text-decoration: none;
+			height: 100%;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-10 a .content strong,
+		.mtd-page .snow-v2.snow-v2-index section.section-11 a .content strong {
+			font-size: 1.375rem;
+			line-height: 1.3;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-10 a .content .copy,
+		.mtd-page .snow-v2.snow-v2-index section.section-11 a .content .copy {
+			font-size: 1rem;
+			line-height: 1.6;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-10 a .content .read-more,
+		.mtd-page .snow-v2.snow-v2-index section.section-11 a .content .read-more {
+			text-decoration: underline;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-10 a:hover,
+		.mtd-page .snow-v2.snow-v2-index section.section-11 a:hover {
+			color: #000;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-1 .wrapper {
+			min-height: 32.8125rem;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-1 .wrapper p {
+			max-width: 31.25rem;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-2 .wrapper {
+			min-height: 35rem;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-2 .wrapper .logo {
+			width: 100%;
+			max-width: 46.875rem;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-intellipower
+			section.section-2
+			.wrapper
+			.logo
+			svg {
+			width: 100%;
+			height: auto;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-2 .wrapper h2 {
+			font-size: 3.4375rem;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-2 > svg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: auto;
+			height: 100%;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-3 p.h1 {
+			font-size: 7.5rem;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-3 h2 {
+			font-size: 4.75rem;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-3 .power .line-1,
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-3 .power .line-2,
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-3 .power .line-3 {
+			line-height: 0;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-3 .power .line-4 {
+			font-size: 0.75rem;
+			border-top: 0.25rem solid #ffc10f;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-intellipower
+			section.section-3
+			.consistent
+			.line-2 {
+			font-size: 1rem;
+			border-top: 0.125rem solid #000;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-3 .videos {
+			min-height: 47.5rem;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-3 .videos .video {
+			display: none;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-intellipower
+			section.section-3
+			.videos
+			.video.active {
+			display: block;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-intellipower
+			section.section-3
+			.video-buttons
+			button {
+			background: transparent;
+			border-color: #d9d9d9;
+			border-bottom-width: 0.125rem;
+			border-style: solid;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-intellipower
+			section.section-3
+			.video-buttons
+			button.active {
+			border-color: #000;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-4 .block .title {
+			border-bottom: 0.125rem solid #000;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-8 .img-wrapper img {
+			object-position: left;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-9 .faqs {
+			display: none;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-9 .faqs.active {
+			display: block;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-9 button {
+			background: #000;
+			color: #fff;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-9 button.active {
+			background: #ffc10f;
+			color: #000;
+		}
+		.mtd-page .snow-v2.snow-v2-threex section.hero .wrapper {
+			margin-bottom: 1.25rem;
+		}
+		.mtd-page .snow-v2.snow-v2-threex section.hero .block {
+			display: flex;
+			justify-content: center;
+			margin-left: auto;
+			max-width: 25rem;
+		}
+		.mtd-page .snow-v2.snow-v2-threex section.hero .block svg * {
+			fill: #fff;
+		}
+		.mtd-page .snow-v2.snow-v2-threex section.quote .wrapper {
+			margin-top: 2.5rem;
+		}
+		.mtd-page .snow-v2.snow-v2-threex section.quote .block {
+			max-width: 43.75rem;
+		}
+		.mtd-page .snow-v2.snow-v2-threex section.hero,
+		.mtd-page .snow-v2.snow-v2-threex section.quote {
+			display: flex;
+			padding: 0;
+			min-height: 37.5rem;
+		}
+		.mtd-page .snow-v2.snow-v2-threex section.hero .block,
+		.mtd-page .snow-v2.snow-v2-threex section.quote .block {
+			padding: 2.5rem 1.5rem;
+		}
+		.mtd-page .snow-v2.snow-v2-threex section.hero > img,
+		.mtd-page .snow-v2.snow-v2-threex section.quote > img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1001;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			max-height: 37.5rem;
+		}
+
+		@media (max-width: 64rem) {
+			.mtd-page .min-height-quote {
+				min-height: 60rem;
+			}
+			.mtd-page .snow-v2.snow-v2-index section.hero,
+			.mtd-page .snow-v2.snow-v2-index section.quote {
+				min-height: 37.5rem;
+			}
+			.mtd-page .snow-v2.snow-v2-index section.hero .wrapper,
+			.mtd-page .snow-v2.snow-v2-index section.quote .wrapper {
+				position: absolute;
+			}
+			.mtd-page .snow-v2.snow-v2-index section.hero > img,
+			.mtd-page .snow-v2.snow-v2-index section.quote > img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				max-height: initial;
+				object-fit: cover;
+			}
+			.mtd-page .snow-v2.snow-v2-index section.section-2 {
+				padding: 2.5rem 1.25rem;
+			}
+			.mtd-page .snow-v2.snow-v2-index section.section-2 .pluses {
+				position: relative;
+				top: 0;
+				left: 0;
+			}
+			.mtd-page .snow-v2.snow-v2-index section.section-2 .pluses.top {
+				margin-bottom: 2.5rem;
+			}
+			.mtd-page .snow-v2.snow-v2-index section.section-2 .pluses.bottom {
+				margin-top: 2.5rem;
+				margin-left: auto;
+			}
+			.mtd-page .snow-v2.snow-v2-index section.section-3 .row .col a .icon {
+				max-width: 25em;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.mtd-page .snow-v2.snow-v2-index section.section-6 .logo {
+				min-height: auto;
+			}
+			.mtd-page .snow-v2.snow-v2-intellipower section.section-3 .videos {
+				min-height: auto;
+			}
+
+			.quote-block {
+				max-width: 100%;
+			}
+		}
+	</style>
+	<div class="snow-v2 snow-v2-index">
+		<section class="pt-6">
+			<div class="wrapper">
+				<ul
+					class="list-unstyled d-flex flex-column flex-md-row align-items-center px-3">
+					<li class="">
+						<h2 class="text-center">How To’s &amp; Maintenance</h2>
+					</li>
+					<li class="ml-2">
+						<a class="d-block text-center"><u>View All</u></a>
+					</li>
+				</ul>
+				<div class="slick pl-3 pr-3">
+					<ul class="list-unstyled d-flex flex-column flex-md-row">
+						<li class="col-sm-12 col-md-4 p-1 d-flex flex-column">
+							<a
+								href="https://www.cubcadet.com/en_US/product-information/knowledge-snow-thrower-safety-tips.html"
+								class="d-flex flex-column text-decoration-none p-2 h-100"
+								style="background-color: rgb(239, 239, 239)">
+								<img
+									src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw6de79658/Knowledge_Center/help-center/snow-thrower-safety-tips_1100x572.jpg?sw=1116"
+									alt="" />
+								<div class="content d-flex flex-column p-3 h-100">
+									<strong class="h3" style="font-size: 1.6em">
+										Snow Blower Safety Tips
+									</strong>
+									<p class="copy mt-2">
+										Snow blowers, often referred to as snow blowers are an easy
+										way to keep the snow off your driveway during the winter
+										months. Like any piece of power equipment, snow blower
+										safety should be a top priority…
+									</p>
+									<span
+										class="mt-auto text-uppercase font-weight-bold"
+										style="text-decoration: underline">
+										Read more
+									</span>
+								</div>
+							</a>
+						</li>
+						<li class="col-sm-12 col-md-4 p-1 d-flex flex-column">
+							<a
+								href="https://www.cubcadet.com/en_US/product-information/knowledge-recommended-snow-thrower-back-up-parts.html"
+								class="d-flex flex-column text-decoration-none p-2 h-100"
+								style="background-color: rgb(239, 239, 239)">
+								<img
+									src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw3ea98eda/Knowledge_Center/help-center/recommended-snow-thrower-back-up-parts_1100x572.jpg?sw=1116"
+									alt="" />
+								<div class="content d-flex flex-column p-3 h-100">
+									<strong class="h3" style="font-size: 1.6em">
+										Recommended Snow Blower Back-Up Parts
+									</strong>
+									<p class="copy mt-2">
+										Always prepare your snow blower for maintenance before
+										starting any repairs. Move your snow blower to a flat
+										surface. Turn the engine off and let it cool. Disconnect the
+										spark plug ignition wire and remove the safety ignition key
+										to prevent accidental starting of the engine…
+									</p>
+									<span
+										class="mt-auto text-uppercase font-weight-bold"
+										style="text-decoration: underline">
+										Read more
+									</span>
+								</div>
+							</a>
+						</li>
+						<li class="col-sm-12 col-md-4 p-1 d-flex flex-column">
+							<a
+								href="https://www.cubcadet.com/en_US/how-to/knowledge-how-to-prepare-your-snow-thrower-for-winter-use.html"
+								class="d-flex flex-column text-decoration-none p-2 h-100"
+								style="background-color: rgb(239, 239, 239)">
+								<img
+									src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw071865a6/Knowledge_Center/help-center/snow-thrower-operation-tips_1100x572.jpg?sw=1116"
+									alt="" />
+								<div class="content d-flex flex-column p-3 h-100">
+									<strong class="h3" style="font-size: 1.6em">
+										How to Prepare Your Snow Thrower for Winter Use
+									</strong>
+									<p class="copy mt-2">
+										Whether you're prepping your trusty 2X two-stage snow
+										thrower for yet another winter, or getting your new 3X
+										three-stage snow thrower ready to face its first blizzard,
+										these snow thrower maintenance tips can help ensure you're
+										prepared for cold and stormy weather this…
+									</p>
+									<span
+										class="mt-auto text-uppercase font-weight-bold"
+										style="text-decoration: underline">
+										Read more
+									</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="pb-6">
+			<div class="wrapper">
+				<ul
+					class="list-unstyled d-flex flex-column flex-md-row align-items-center px-3">
+					<li class=""><h2 class="text-center">Snow Articles</h2></li>
+					<li class="ml-2">
+						<a class="d-block text-center"><u>View All</u></a>
+					</li>
+				</ul>
+				<div class="slick pl-3 pr-3">
+					<ul class="list-unstyled d-flex flex-column flex-md-row">
+						<li class="col-sm-12 col-md-4 p-1 d-flex flex-column">
+							<a
+								href="https://www.cubcadet.com/en_US/product-information/knowledge-the-benefits-of-intellipower-for-snow-blowers.html"
+								class="d-flex flex-column text-decoration-none p-2 h-100"
+								style="background-color: rgb(239, 239, 239)">
+								<img
+									src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw26bee84c/images/product-line-browse/Main-Carousel/SnowBlow_PLB_31AH5GVO710_2X_30EFI_desktop_1015x630.jpg?sw=1116"
+									alt="" />
+								<div class="content d-flex flex-column p-3 h-100">
+									<strong class="h3" style="font-size: 1.6em">
+										The Benefits of IntelliPower
+										<sup>®</sup>
+										Technology &amp; Electronic Fuel Injection for Snow Blowers
+									</strong>
+									<p class="copy mt-2">
+										Cub Cadet
+										<sup>®</sup>
+										snow blowers are engineered for extreme. The 2X
+										<sup>®</sup>
+										30 EFI with IntelliPower
+										<sup>®</sup>
+										combines two technologies — IntelliPower and Electronic Fuel
+										Injection (EFI) — to give you a powerful combination and
+										help handle whatever winter has to offer…
+									</p>
+									<span
+										class="mt-auto text-uppercase font-weight-bold"
+										style="text-decoration: underline">
+										Read more
+									</span>
+								</div>
+							</a>
+						</li>
+						<li class="col-sm-12 col-md-4 p-1 d-flex flex-column">
+							<a
+								href="https://www.cubcadet.com/en_US/product-information/right-snow-blower-specs.html"
+								class="d-flex flex-column text-decoration-none p-2 h-100"
+								style="background-color: rgb(239, 239, 239)">
+								<img
+									src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw832aa68d/images/product-line-browse/Main-Carousel/31AH8E4V710_3X34MAX_ENV-1015x630.jpg?sw=1116"
+									alt="" />
+								<div class="content d-flex flex-column p-3 h-100">
+									<strong class="h3" style="font-size: 1.6em">
+										Identifying the right snow blower specifications
+									</strong>
+									<p class="copy mt-2">
+										A snow blower is a significant investment, so you want to
+										make sure that you’re getting a machine that suits your
+										needs. The Cub Cadet® X-Series has a snow blower for many
+										different extremes, but you first need to identify what
+										your…
+									</p>
+									<span
+										class="mt-auto text-uppercase font-weight-bold"
+										style="text-decoration: underline">
+										Read more
+									</span>
+								</div>
+							</a>
+						</li>
+						<li class="col-sm-12 col-md-4 p-1 d-flex flex-column">
+							<a
+								href="https://www.cubcadet.com/en_US/product-information/cub-cadet-snow-blower-buying-guide.html"
+								class="d-flex flex-column text-decoration-none p-2 h-100"
+								style="background-color: rgb(239, 239, 239)">
+								<img
+									src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dwa05374e7/images/product-line-browse/Main-Carousel/SnowBlow_ProdLineBrow_Hero_LineUp_01_desktop_1015x630_v1.jpg?sw=1116"
+									alt="" />
+								<div class="content d-flex flex-column p-3 h-100">
+									<strong class="h3" style="font-size: 1.6em">
+										Cub Cadet Snow Blower Buyers Guide
+									</strong>
+									<p class="copy mt-2">
+										If you live in areas where snowfall is frequent or heavy,
+										shoveling becomes part of your daily routine. Ditching your
+										shovel, along with the heavy lifting and repetitive strain
+										that comes with shoveling snow, in favor of a snow blower
+										can save you time and energy. A couple of reasons to justify
+										a snow blower…
+									</p>
+									<span
+										class="mt-auto text-uppercase font-weight-bold"
+										style="text-decoration: underline">
+										Read more
+									</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>

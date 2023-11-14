@@ -10,7 +10,7 @@ import RelatedLinks from "@/components/RelatedLinks";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import ImgSwappin from "./elements/ImgSwappin";
 import Button from "@/components/Button";
-import IntellipowerLogo from "../images/IntellipowerLogo";
+import IntellipowerLogo from "../../components/images/IntellipowerLogo";
 import Lineup from "./elements/Lineup";
 import QuoteBlock from "@/components/QuoteBlock";
 import IconTextBlock from "./elements/IconTextBlock";

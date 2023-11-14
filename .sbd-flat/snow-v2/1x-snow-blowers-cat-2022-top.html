@@ -1,0 +1,2387 @@
+<div class="mtd-page">
+	<style>
+		.container.content-asset-container {
+			max-width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+
+		.mtd-page {
+			font-size: 16px;
+		}
+		.mtd-page section {
+			position: relative;
+			overflow: hidden;
+		}
+		.mtd-page .wrapper {
+			position: relative;
+			z-index: 1;
+			width: 100%;
+			max-width: 80.625rem;
+			margin: auto;
+		}
+		.mtd-page .bg-black {
+			background-color: #000;
+			color: #fff;
+		}
+		.mtd-page .bg-white {
+			background-color: #fff;
+			color: #000;
+		}
+		.mtd-page .bg-grey {
+			background-color: #d8d8d8;
+			color: #000;
+		}
+		.mtd-page .bg-grey-dark {
+			background-color: #c8c8c8;
+		}
+		.mtd-page .bg-grey-dark-2 {
+			background-color: #2c2b2b;
+			color: #fff;
+		}
+		.mtd-page .bg-yellow {
+			background-color: #ffc20f;
+		}
+		.mtd-page .bg-none {
+			background-color: transparent;
+		}
+		.mtd-page a.link-yellow {
+			color: #ffc20f;
+		}
+		.mtd-page h1 {
+			font-size: 3.125rem;
+		}
+		.mtd-page .fw-bold {
+			font-weight: 600;
+		}
+		.mtd-page .star-rating svg * {
+			fill: #000;
+		}
+		.mtd-page .quote-block .title {
+			font-size: 1.125rem;
+		}
+		.mtd-page .quote-block .copy {
+			font-size: 1.375rem;
+		}
+		.mtd-page .quote-block .row {
+			margin-bottom: 0;
+		}
+		.mtd-page .quote-block .author,
+		.mtd-page .quote-block .unit {
+			font-size: 1rem;
+			flex: 0 1 auto;
+			width: auto;
+		}
+		.mtd-page .quote-block .unit {
+			border-left: 1px solid #000;
+		}
+		.mtd-page .clip-corner {
+			clip-path: polygon(1.5rem 0, 100% 0%, 100% 100%, 0 100%, 0 1.5rem);
+		}
+		.mtd-page .desktop {
+			display: block;
+		}
+		.mtd-page .mobile {
+			display: none;
+		}
+		.mtd-page .unstyled.link {
+			text-decoration: none;
+		}
+		.mtd-page button.bg-black,
+		.mtd-page .button.bg-black,
+		.mtd-page .btn.bg-black {
+			color: #fff;
+			background: #000;
+		}
+		.mtd-page button.bg-yellow,
+		.mtd-page .button.bg-yellow,
+		.mtd-page .btn.bg-yellow {
+			color: #000;
+			background: #ffc20f;
+		}
+		.mtd-page button:hover,
+		.mtd-page .button:hover,
+		.mtd-page .btn:hover {
+			cursor: pointer;
+		}
+		.mtd-page .slick-next,
+		.mtd-page .slick-prev {
+			padding: initial;
+			font-weight: initial;
+		}
+		.mtd-page .slick-next:before,
+		.mtd-page .slick-prev:before {
+			padding: 0.625rem;
+		}
+		.mtd-page .faqs .question {
+			display: flex;
+			position: relative;
+			font-size: 1.375rem;
+			padding: 32px 0;
+			font-weight: 700;
+		}
+		.mtd-page .faqs .question.active span {
+			transform: rotate(0);
+		}
+		.mtd-page .faqs .question span {
+			display: flex;
+			align-content: center;
+			justify-content: center;
+			position: relative;
+			width: 30px;
+			height: 30px;
+			transform: rotate(45deg);
+			transform-origin: center;
+			transition: all 0.2s;
+			margin-left: auto;
+		}
+		.mtd-page .faqs .answer {
+			overflow: hidden;
+			max-height: 0;
+			border-bottom: 1px solid #d9d9d9;
+			transition: max-height 0.2s;
+		}
+		.mtd-page .faqs .answer.active {
+			max-height: 1000px;
+		}
+		.mtd-page .faqs .answer.active span {
+			transform: rotate(0);
+		}
+		.mtd-page .video-wrapper {
+			position: relative;
+			padding-bottom: 56.25%;
+			/* 16:9 */
+			padding-top: 25px;
+			height: 0;
+		}
+		.mtd-page .video-wrapper iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		.mtd-page .max-width-1000 {
+			max-width: 62.5rem;
+			margin: auto;
+		}
+		.mtd-page .max-width-800 {
+			max-width: 50rem;
+			margin: auto;
+		}
+		.mtd-page .cursor-grab {
+			cursor: grab;
+		}
+		.mtd-page .overlay {
+			display: none;
+			z-index: 99;
+			background: rgba(0, 0, 0, 0.5);
+			position: absolute;
+			width: 0;
+			height: 0;
+			top: 0px;
+			left: 0px;
+			overflow: hidden;
+		}
+		.mtd-page .overlay.active {
+			display: block;
+			width: 100vw;
+			height: 100vh;
+		}
+
+		@media (min-width: 64em) {
+			.position-lg-relative {
+				position: relative !important;
+			}
+
+			.position-lg-absolute {
+				position: absolute !important;
+			}
+		}
+		@media (max-width: 64rem) {
+			.quote-block {
+				max-width: 100%;
+			}
+		}
+		@media (max-width: 48rem) {
+			.mtd-page .desktop {
+				display: none;
+			}
+			.mtd-page .mobile {
+				display: block;
+			}
+		}
+		.hide {
+			display: none;
+		}
+		.hide.active {
+			display: block;
+		}
+		.mtd-page .fill-white path {
+			fill: #efefef;
+		}
+		.mtd-page .unit sup {
+			top: 0;
+			font-size: 50%;
+		}
+		.mtd-page .min-height-quote {
+			min-height: 45rem;
+		}
+		.mtd-page .snow-v2 .title {
+			font-size: 1.875rem;
+			line-height: 1;
+		}
+		.mtd-page .snow-v2 .copy {
+			font-size: 1rem;
+			line-height: 1.6;
+		}
+		.mtd-page .snow-v2 .pluses {
+			position: absolute;
+			max-width: 6.25rem;
+		}
+		.mtd-page .snow-v2 .pluses.top {
+			top: 2.5rem;
+			left: 2.5rem;
+		}
+		.mtd-page .snow-v2 .pluses.bottom {
+			bottom: 2.5rem;
+			right: 2.5rem;
+		}
+		.mtd-page .snow-v2 .pluses svg {
+			width: 1.875rem;
+			height: 1.875rem;
+		}
+		.mtd-page .snow-v2 .pluses svg * {
+			fill: #fff;
+		}
+		.mtd-page .snow-v2 .pluses.fill-black svg * {
+			fill: #000;
+		}
+		.mtd-page .snow-v2 .star-rating svg {
+			max-width: 1.375rem;
+		}
+		.mtd-page .snow-v2 .img-wrapper {
+			position: relative;
+			min-height: 26.25rem;
+		}
+		.mtd-page .snow-v2 .img-wrapper img {
+			object-fit: cover;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.hero .wrapper {
+			margin-bottom: 1.25rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.hero .block {
+			display: flex;
+			justify-content: center;
+			margin-left: auto;
+			max-width: 25rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.hero .block svg * {
+			fill: #fff;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.quote .wrapper {
+			margin-top: 2.5rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.quote .block {
+			max-width: 43.75rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.hero,
+		.mtd-page .snow-v2.snow-v2-index section.quote {
+			display: flex;
+			padding: 0;
+			min-height: 37.5rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.hero .block,
+		.mtd-page .snow-v2.snow-v2-index section.quote .block {
+			padding: 2.5rem 1.5rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.hero > img,
+		.mtd-page .snow-v2.snow-v2-index section.quote > img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1001;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			max-height: 37.5rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-2 {
+			padding: 7.5rem;
+			background: #000;
+			text-align: center;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-2 p {
+			font-size: 1.375rem;
+			line-height: 1.6;
+			margin: 1.25rem auto 0 auto;
+			max-width: 43.75rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-3 {
+			padding: 5rem 0;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-3 h2 {
+			font-size: 3.125rem;
+			margin: 0 auto 1.25rem auto;
+			text-align: center;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-3 .row .col {
+			display: flex;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-3 .row .col > div {
+			display: flex;
+			flex-direction: column;
+			padding: 0.625rem;
+			border-radius: 0.1875rem;
+			-webkit-user-select: none;
+			user-select: none;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-3 .row .col > div > img {
+			max-width: 18.75rem;
+			width: 100%;
+			height: auto;
+			margin: 0 auto 1.25rem auto;
+			border-radius: 0.1875rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-3 .row .col > div .title {
+			margin-bottom: 0.625rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-3 .row .col > div .icon {
+			margin-top: 0.625rem;
+			margin-bottom: 0.625rem;
+			width: 100%;
+			height: 7.5rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-3 .row .col > div .copy {
+			margin-bottom: 1.25rem;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-index
+			section.section-3
+			.row
+			.col
+			> div
+			.eng-for {
+			text-align: center;
+			text-transform: uppercase;
+			width: 100%;
+			margin-top: auto;
+			margin-bottom: 0.75rem;
+			padding: 0.625rem 2.5rem;
+			font-weight: 600;
+			border: 0;
+			font-size: 0.875rem;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-index
+			section.section-3
+			.row
+			.col
+			> div
+			.eng-for-blocks {
+			text-align: center;
+			font-size: 0.75rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-3 .row .col > div small {
+			display: block;
+			line-height: 1;
+			margin-top: 0.25rem;
+			text-align: center;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-6 {
+			padding: 3.75rem 0;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-6 .logo {
+			min-height: 14.625rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-6 .row .title {
+			font-weight: 600;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-6 .row .plus {
+			font-family: "Times New Roman", sans-serif;
+			font-weight: 100;
+			font-size: 2rem;
+			flex: 0 0 1.25rem;
+			padding-right: 1.25rem;
+			margin-top: -14px;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-7 {
+			padding: 3.75rem 0;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-7 .copy {
+			margin-bottom: 2.5rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-8 {
+			padding: 3.75rem 0;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-9 {
+			padding: 3.75rem 0;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-9 .compare {
+			padding: 1.25rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-9 .compare li {
+			border: 1px solid #000;
+			border-top-width: 0.0625rem;
+			border-right-width: 0rem;
+			border-bottom-width: 0rem;
+			border-left-width: 0.0625rem;
+			flex: 0 1 20%;
+			max-width: 20%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-size: 1rem;
+			font-weight: 600;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-9 .compare li img {
+			max-width: 60%;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-9 .compare li p {
+			margin-top: 0.625rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-9 .compare li .dash-bull {
+			font-size: 1.375rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-9 .compare li .logo,
+		.mtd-page .snow-v2.snow-v2-index section.section-9 .compare li .img {
+			display: flex;
+			min-height: 4.0625rem;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-9 .compare li .logo img,
+		.mtd-page .snow-v2.snow-v2-index section.section-9 .compare li .img img {
+			width: auto;
+			height: 4.0625rem;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-index
+			section.section-9
+			.compare
+			li:nth-child(4n + 4) {
+			border-right-width: 0;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-index
+			section.section-9
+			.compare
+			li:nth-child(4n + 1) {
+			align-items: flex-start;
+			border-left-width: 0;
+			flex: 0 1 40%;
+			max-width: 40%;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-index
+			section.section-9
+			.compare
+			li:nth-child(1) {
+			font-size: 1.375rem;
+			justify-content: flex-end;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-index
+			section.section-9
+			.compare
+			li:nth-child(-n + 4) {
+			border-top-width: 0rem;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-index
+			section.section-9
+			.compare
+			li:nth-child(-n + 4)
+			.logo,
+		.mtd-page
+			.snow-v2.snow-v2-index
+			section.section-9
+			.compare
+			li:nth-child(-n + 4)
+			.img {
+			justify-content: center;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-index
+			section.section-9
+			.compare
+			li:nth-child(-n + 4).column-1,
+		.mtd-page
+			.snow-v2.snow-v2-index
+			section.section-9
+			.compare
+			li:nth-child(-n + 4).column-2,
+		.mtd-page
+			.snow-v2.snow-v2-index
+			section.section-9
+			.compare
+			li:nth-child(-n + 4).column-3 {
+			font-weight: 100;
+			text-align: center;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-10 a,
+		.mtd-page .snow-v2.snow-v2-index section.section-11 a {
+			display: flex;
+			flex-direction: column;
+			background: #efefef;
+			text-decoration: none;
+			height: 100%;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-10 a .content strong,
+		.mtd-page .snow-v2.snow-v2-index section.section-11 a .content strong {
+			font-size: 1.375rem;
+			line-height: 1.3;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-10 a .content .copy,
+		.mtd-page .snow-v2.snow-v2-index section.section-11 a .content .copy {
+			font-size: 1rem;
+			line-height: 1.6;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-10 a .content .read-more,
+		.mtd-page .snow-v2.snow-v2-index section.section-11 a .content .read-more {
+			text-decoration: underline;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+		.mtd-page .snow-v2.snow-v2-index section.section-10 a:hover,
+		.mtd-page .snow-v2.snow-v2-index section.section-11 a:hover {
+			color: #000;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-1 .wrapper {
+			min-height: 32.8125rem;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-1 .wrapper p {
+			max-width: 31.25rem;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-2 .wrapper {
+			min-height: 35rem;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-2 .wrapper .logo {
+			width: 100%;
+			max-width: 46.875rem;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-intellipower
+			section.section-2
+			.wrapper
+			.logo
+			svg {
+			width: 100%;
+			height: auto;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-2 .wrapper h2 {
+			font-size: 3.4375rem;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-2 > svg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: auto;
+			height: 100%;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-3 p.h1 {
+			font-size: 7.5rem;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-3 h2 {
+			font-size: 4.75rem;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-3 .power .line-1,
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-3 .power .line-2,
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-3 .power .line-3 {
+			line-height: 0;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-3 .power .line-4 {
+			font-size: 0.75rem;
+			border-top: 0.25rem solid #ffc10f;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-intellipower
+			section.section-3
+			.consistent
+			.line-2 {
+			font-size: 1rem;
+			border-top: 0.125rem solid #000;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-3 .videos {
+			min-height: 47.5rem;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-3 .videos .video {
+			display: none;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-intellipower
+			section.section-3
+			.videos
+			.video.active {
+			display: block;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-intellipower
+			section.section-3
+			.video-buttons
+			button {
+			background: transparent;
+			border-color: #d9d9d9;
+			border-bottom-width: 0.125rem;
+			border-style: solid;
+		}
+		.mtd-page
+			.snow-v2.snow-v2-intellipower
+			section.section-3
+			.video-buttons
+			button.active {
+			border-color: #000;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-4 .block .title {
+			border-bottom: 0.125rem solid #000;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-8 .img-wrapper img {
+			object-position: left;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-9 .faqs {
+			display: none;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-9 .faqs.active {
+			display: block;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-9 button {
+			background: #000;
+			color: #fff;
+		}
+		.mtd-page .snow-v2.snow-v2-intellipower section.section-9 button.active {
+			background: #ffc10f;
+			color: #000;
+		}
+		.mtd-page .snow-v2.snow-v2-threex section.hero .wrapper {
+			margin-bottom: 1.25rem;
+		}
+		.mtd-page .snow-v2.snow-v2-threex section.hero .block {
+			display: flex;
+			justify-content: center;
+			margin-left: auto;
+			max-width: 25rem;
+		}
+		.mtd-page .snow-v2.snow-v2-threex section.hero .block svg * {
+			fill: #fff;
+		}
+		.mtd-page .snow-v2.snow-v2-threex section.quote .wrapper {
+			margin-top: 2.5rem;
+		}
+		.mtd-page .snow-v2.snow-v2-threex section.quote .block {
+			max-width: 43.75rem;
+		}
+		.mtd-page .snow-v2.snow-v2-threex section.hero,
+		.mtd-page .snow-v2.snow-v2-threex section.quote {
+			display: flex;
+			padding: 0;
+			min-height: 37.5rem;
+		}
+		.mtd-page .snow-v2.snow-v2-threex section.hero .block,
+		.mtd-page .snow-v2.snow-v2-threex section.quote .block {
+			padding: 2.5rem 1.5rem;
+		}
+		.mtd-page .snow-v2.snow-v2-threex section.hero > img,
+		.mtd-page .snow-v2.snow-v2-threex section.quote > img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1001;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			max-height: 37.5rem;
+		}
+
+		@media (max-width: 64rem) {
+			.mtd-page .min-height-quote {
+				min-height: 60rem;
+			}
+			.mtd-page .snow-v2.snow-v2-index section.hero,
+			.mtd-page .snow-v2.snow-v2-index section.quote {
+				min-height: 37.5rem;
+			}
+			.mtd-page .snow-v2.snow-v2-index section.hero .wrapper,
+			.mtd-page .snow-v2.snow-v2-index section.quote .wrapper {
+				position: absolute;
+			}
+			.mtd-page .snow-v2.snow-v2-index section.hero > img,
+			.mtd-page .snow-v2.snow-v2-index section.quote > img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				max-height: initial;
+				object-fit: cover;
+			}
+			.mtd-page .snow-v2.snow-v2-index section.section-2 {
+				padding: 2.5rem 1.25rem;
+			}
+			.mtd-page .snow-v2.snow-v2-index section.section-2 .pluses {
+				position: relative;
+				top: 0;
+				left: 0;
+			}
+			.mtd-page .snow-v2.snow-v2-index section.section-2 .pluses.top {
+				margin-bottom: 2.5rem;
+			}
+			.mtd-page .snow-v2.snow-v2-index section.section-2 .pluses.bottom {
+				margin-top: 2.5rem;
+				margin-left: auto;
+			}
+			.mtd-page .snow-v2.snow-v2-index section.section-3 .row .col a .icon {
+				max-width: 25em;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.mtd-page .snow-v2.snow-v2-index section.section-6 .logo {
+				min-height: auto;
+			}
+			.mtd-page .snow-v2.snow-v2-intellipower section.section-3 .videos {
+				min-height: auto;
+			}
+
+			.quote-block {
+				max-width: 100%;
+			}
+		}
+		.container.content-asset-container {
+			max-width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+
+		.mtd-page {
+			font-size: 16px;
+		}
+		.mtd-page section {
+			position: relative;
+			overflow: hidden;
+		}
+		.mtd-page .wrapper {
+			position: relative;
+			z-index: 1;
+			width: 100%;
+			max-width: 80.625rem;
+			margin: auto;
+		}
+		.mtd-page .bg-black {
+			background-color: #000;
+			color: #fff;
+		}
+		.mtd-page .bg-white {
+			background-color: #fff;
+			color: #000;
+		}
+		.mtd-page .bg-grey {
+			background-color: #d8d8d8;
+			color: #000;
+		}
+		.mtd-page .bg-grey-dark {
+			background-color: #c8c8c8;
+		}
+		.mtd-page .bg-grey-dark-2 {
+			background-color: #2c2b2b;
+			color: #fff;
+		}
+		.mtd-page .bg-yellow {
+			background-color: #ffc20f;
+		}
+		.mtd-page .bg-none {
+			background-color: transparent;
+		}
+		.mtd-page a.link-yellow {
+			color: #ffc20f;
+		}
+		.mtd-page h1 {
+			font-size: 3.125rem;
+		}
+		.mtd-page .fw-bold {
+			font-weight: 600;
+		}
+		.mtd-page .star-rating svg * {
+			fill: #000;
+		}
+		.mtd-page .quote-block .title {
+			font-size: 1.125rem;
+		}
+		.mtd-page .quote-block .copy {
+			font-size: 1.375rem;
+		}
+		.mtd-page .quote-block .row {
+			margin-bottom: 0;
+		}
+		.mtd-page .quote-block .author,
+		.mtd-page .quote-block .unit {
+			font-size: 1rem;
+			flex: 0 1 auto;
+			width: auto;
+		}
+		.mtd-page .quote-block .unit {
+			border-left: 1px solid #000;
+		}
+		.mtd-page .clip-corner {
+			-webkit-clip-path: polygon(
+				1.5rem 0,
+				100% 0%,
+				100% 100%,
+				0 100%,
+				0 1.5rem
+			);
+			clip-path: polygon(1.5rem 0, 100% 0%, 100% 100%, 0 100%, 0 1.5rem);
+		}
+		.mtd-page .desktop {
+			display: block;
+		}
+		.mtd-page .mobile {
+			display: none;
+		}
+		.mtd-page .unstyled.link {
+			text-decoration: none;
+		}
+		.mtd-page button.bg-black,
+		.mtd-page .button.bg-black,
+		.mtd-page .btn.bg-black {
+			color: #fff;
+			background: #000;
+		}
+		.mtd-page button.bg-yellow,
+		.mtd-page .button.bg-yellow,
+		.mtd-page .btn.bg-yellow {
+			color: #000;
+			background: #ffc20f;
+		}
+		.mtd-page button:hover,
+		.mtd-page .button:hover,
+		.mtd-page .btn:hover {
+			cursor: pointer;
+		}
+		.mtd-page .slick-next,
+		.mtd-page .slick-prev {
+			padding: initial;
+			font-weight: initial;
+		}
+		.mtd-page .slick-next:before,
+		.mtd-page .slick-prev:before {
+			padding: 0.625rem;
+		}
+		.mtd-page .faqs .question {
+			display: flex;
+			position: relative;
+			font-size: 1.375rem;
+			padding: 32px 0;
+			font-weight: 700;
+		}
+		.mtd-page .faqs .question.active span {
+			transform: rotate(0);
+		}
+		.mtd-page .faqs .question span {
+			display: flex;
+			align-content: center;
+			justify-content: center;
+			position: relative;
+			width: 30px;
+			height: 30px;
+			transform: rotate(45deg);
+			transform-origin: center;
+			transition: all 0.2s;
+			margin-left: auto;
+		}
+		.mtd-page .faqs .answer {
+			overflow: hidden;
+			max-height: 0;
+			border-bottom: 1px solid #d9d9d9;
+			transition: max-height 0.2s;
+		}
+		.mtd-page .faqs .answer.active {
+			max-height: 1000px;
+		}
+		.mtd-page .faqs .answer.active span {
+			transform: rotate(0);
+		}
+		.mtd-page .video-wrapper {
+			position: relative;
+			padding-bottom: 56.25%;
+			/* 16:9 */
+			padding-top: 25px;
+			height: 0;
+		}
+		.mtd-page .video-wrapper iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		.mtd-page .max-width-1000 {
+			max-width: 62.5rem;
+			margin: auto;
+		}
+		.mtd-page .max-width-800 {
+			max-width: 50rem;
+			margin: auto;
+		}
+		.mtd-page .cursor-grab {
+			cursor: -webkit-grab;
+			cursor: grab;
+		}
+		.mtd-page .overlay {
+			display: none;
+			z-index: 99;
+			background: rgba(0, 0, 0, 0.5);
+			/* position: absolute; */
+			width: 0;
+			height: 0;
+			top: 0px;
+			left: 0px;
+			overflow: hidden;
+		}
+		.mtd-page .overlay.active {
+			display: block;
+			width: 100vw;
+			height: 100vh;
+		}
+
+		@media (min-width: 64em) {
+			.position-lg-relative {
+				position: relative !important;
+			}
+
+			.position-lg-absolute {
+				position: absolute !important;
+			}
+		}
+		@media (max-width: 64rem) {
+			.quote-block {
+				max-width: 100%;
+			}
+		}
+		@media (max-width: 48rem) {
+			.mtd-page .desktop {
+				display: none;
+			}
+			.mtd-page .mobile {
+				display: block;
+			}
+		}
+		.hide {
+			display: none;
+		}
+		.hide.active {
+			display: block;
+		}
+
+		.container.content-asset-container {
+			max-width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+
+		.mtd-page {
+			font-size: 16px;
+		}
+		.mtd-page section {
+			position: relative;
+			overflow: hidden;
+		}
+		.mtd-page .wrapper {
+			position: relative;
+			z-index: 1;
+			width: 100%;
+			max-width: 80.625rem;
+			margin: auto;
+		}
+		.mtd-page .bg-black {
+			background-color: #000;
+			color: #fff;
+		}
+		.mtd-page .bg-white {
+			background-color: #fff;
+			color: #000;
+		}
+		.mtd-page .bg-grey {
+			background-color: #d8d8d8;
+			color: #000;
+		}
+		.mtd-page .bg-grey-dark {
+			background-color: #c8c8c8;
+		}
+		.mtd-page .bg-grey-dark-2 {
+			background-color: #2c2b2b;
+			color: #fff;
+		}
+		.mtd-page .bg-yellow {
+			background-color: #ffc20f;
+		}
+		.mtd-page .bg-none {
+			background-color: transparent;
+		}
+		.mtd-page a.link-yellow {
+			color: #ffc20f;
+		}
+		.mtd-page h1 {
+			font-size: 3.125rem;
+		}
+		.mtd-page .fw-bold {
+			font-weight: 600;
+		}
+		.mtd-page .star-rating svg * {
+			fill: #000;
+		}
+		.mtd-page .quote-block .title {
+			font-size: 1.125rem;
+		}
+		.mtd-page .quote-block .copy {
+			font-size: 1.375rem;
+		}
+		.mtd-page .quote-block .row {
+			margin-bottom: 0;
+		}
+		.mtd-page .quote-block .author,
+		.mtd-page .quote-block .unit {
+			font-size: 1rem;
+			flex: 0 1 auto;
+			width: auto;
+		}
+		.mtd-page .quote-block .unit {
+			border-left: 1px solid #000;
+		}
+		.mtd-page .clip-corner {
+			-webkit-clip-path: polygon(
+				1.5rem 0,
+				100% 0%,
+				100% 100%,
+				0 100%,
+				0 1.5rem
+			);
+			clip-path: polygon(1.5rem 0, 100% 0%, 100% 100%, 0 100%, 0 1.5rem);
+		}
+		.mtd-page .desktop {
+			display: block;
+		}
+		.mtd-page .mobile {
+			display: none;
+		}
+		.mtd-page .unstyled.link {
+			text-decoration: none;
+		}
+		.mtd-page button.bg-black,
+		.mtd-page .button.bg-black,
+		.mtd-page .btn.bg-black {
+			color: #fff;
+			background: #000;
+		}
+		.mtd-page button.bg-yellow,
+		.mtd-page .button.bg-yellow,
+		.mtd-page .btn.bg-yellow {
+			color: #000;
+			background: #ffc20f;
+		}
+		.mtd-page button:hover,
+		.mtd-page .button:hover,
+		.mtd-page .btn:hover {
+			cursor: pointer;
+		}
+		.mtd-page .slick-next,
+		.mtd-page .slick-prev {
+			padding: initial;
+			font-weight: initial;
+		}
+		.mtd-page .slick-next:before,
+		.mtd-page .slick-prev:before {
+			padding: 0.625rem;
+		}
+		.mtd-page .faqs .question {
+			display: flex;
+			position: relative;
+			font-size: 1.375rem;
+			padding: 32px 0;
+			font-weight: 700;
+		}
+		.mtd-page .faqs .question.active span {
+			transform: rotate(0);
+		}
+		.mtd-page .faqs .question span {
+			display: flex;
+			align-content: center;
+			justify-content: center;
+			position: relative;
+			width: 30px;
+			height: 30px;
+			transform: rotate(45deg);
+			transform-origin: center;
+			transition: all 0.2s;
+			margin-left: auto;
+		}
+		.mtd-page .faqs .answer {
+			overflow: hidden;
+			max-height: 0;
+			border-bottom: 1px solid #d9d9d9;
+			transition: max-height 0.2s;
+		}
+		.mtd-page .faqs .answer.active {
+			max-height: 1000px;
+		}
+		.mtd-page .faqs .answer.active span {
+			transform: rotate(0);
+		}
+		.mtd-page .video-wrapper {
+			position: relative;
+			padding-bottom: 56.25%;
+			/* 16:9 */
+			padding-top: 25px;
+			height: 0;
+		}
+		.mtd-page .video-wrapper iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		.mtd-page .max-width-1000 {
+			max-width: 62.5rem;
+			margin: auto;
+		}
+		.mtd-page .max-width-800 {
+			max-width: 50rem;
+			margin: auto;
+		}
+		.mtd-page .cursor-grab {
+			cursor: -webkit-grab;
+			cursor: grab;
+		}
+		.mtd-page .overlay {
+			display: none;
+			z-index: 99;
+			background: rgba(0, 0, 0, 0.5);
+			position: absolute;
+			width: 0;
+			height: 0;
+			top: 0px;
+			left: 0px;
+			overflow: hidden;
+		}
+		.mtd-page .overlay.active {
+			display: block;
+			width: 100vw;
+			height: 100vh;
+		}
+
+		@media (min-width: 64em) {
+			.position-lg-relative {
+				position: relative !important;
+			}
+
+			.position-lg-absolute {
+				position: absolute !important;
+			}
+		}
+		@media (max-width: 64rem) {
+			.quote-block {
+				max-width: 100%;
+			}
+		}
+		@media (max-width: 48rem) {
+			.mtd-page .desktop {
+				display: none;
+			}
+			.mtd-page .mobile {
+				display: block;
+			}
+		}
+		.hide {
+			display: none;
+		}
+		.hide.active {
+			display: block;
+		}
+		.container.content-asset-container {
+			max-width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+
+		.mtd-page {
+			font-size: 16px;
+		}
+		.mtd-page section {
+			position: relative;
+			overflow: hidden;
+		}
+		.mtd-page .wrapper {
+			position: relative;
+			z-index: 1;
+			width: 100%;
+			max-width: 80.625rem;
+			margin: auto;
+		}
+		.mtd-page .bg-black {
+			background-color: #000;
+			color: #fff;
+		}
+		.mtd-page .bg-white {
+			background-color: #fff;
+			color: #000;
+		}
+		.mtd-page .bg-grey {
+			background-color: #d8d8d8;
+			color: #000;
+		}
+		.mtd-page .bg-grey-dark {
+			background-color: #c8c8c8;
+		}
+		.mtd-page .bg-grey-dark-2 {
+			background-color: #2c2b2b;
+			color: #fff;
+		}
+		.mtd-page .bg-yellow {
+			background-color: #ffc20f;
+		}
+		.mtd-page .bg-none {
+			background-color: transparent;
+		}
+		.mtd-page a.link-yellow {
+			color: #ffc20f;
+		}
+		.mtd-page h1 {
+			font-size: 3.125rem;
+		}
+		.mtd-page .fw-bold {
+			font-weight: 600;
+		}
+		.mtd-page .star-rating svg * {
+			fill: #000;
+		}
+		.mtd-page .quote-block .title {
+			font-size: 1.125rem;
+		}
+		.mtd-page .quote-block .copy {
+			font-size: 1.375rem;
+		}
+		.mtd-page .quote-block .row {
+			margin-bottom: 0;
+		}
+		.mtd-page .quote-block .author,
+		.mtd-page .quote-block .unit {
+			font-size: 1rem;
+			flex: 0 1 auto;
+			width: auto;
+		}
+		.mtd-page .quote-block .unit {
+			border-left: 1px solid #000;
+		}
+		.mtd-page .clip-corner {
+			-webkit-clip-path: polygon(
+				1.5rem 0,
+				100% 0%,
+				100% 100%,
+				0 100%,
+				0 1.5rem
+			);
+			clip-path: polygon(1.5rem 0, 100% 0%, 100% 100%, 0 100%, 0 1.5rem);
+		}
+		.mtd-page .desktop {
+			display: block;
+		}
+		.mtd-page .mobile {
+			display: none;
+		}
+		.mtd-page .unstyled.link {
+			text-decoration: none;
+		}
+		.mtd-page button.bg-black,
+		.mtd-page .button.bg-black,
+		.mtd-page .btn.bg-black {
+			color: #fff;
+			background: #000;
+		}
+		.mtd-page button.bg-yellow,
+		.mtd-page .button.bg-yellow,
+		.mtd-page .btn.bg-yellow {
+			color: #000;
+			background: #ffc20f;
+		}
+		.mtd-page button:hover,
+		.mtd-page .button:hover,
+		.mtd-page .btn:hover {
+			cursor: pointer;
+		}
+		.mtd-page .slick-next,
+		.mtd-page .slick-prev {
+			padding: initial;
+			font-weight: initial;
+		}
+		.mtd-page .slick-next:before,
+		.mtd-page .slick-prev:before {
+			padding: 0.625rem;
+		}
+		.mtd-page .faqs .question {
+			display: flex;
+			position: relative;
+			font-size: 1.375rem;
+			padding: 32px 0;
+			font-weight: 700;
+		}
+		.mtd-page .faqs .question.active span {
+			transform: rotate(0);
+		}
+		.mtd-page .faqs .question span {
+			display: flex;
+			align-content: center;
+			justify-content: center;
+			position: relative;
+			width: 30px;
+			height: 30px;
+			transform: rotate(45deg);
+			transform-origin: center;
+			transition: all 0.2s;
+			margin-left: auto;
+		}
+		.mtd-page .faqs .answer {
+			overflow: hidden;
+			max-height: 0;
+			border-bottom: 1px solid #d9d9d9;
+			transition: max-height 0.2s;
+		}
+		.mtd-page .faqs .answer.active {
+			max-height: 1000px;
+		}
+		.mtd-page .faqs .answer.active span {
+			transform: rotate(0);
+		}
+		.mtd-page .video-wrapper {
+			position: relative;
+			padding-bottom: 56.25%;
+			/* 16:9 */
+			padding-top: 25px;
+			height: 0;
+		}
+		.mtd-page .video-wrapper iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		.mtd-page .max-width-1000 {
+			max-width: 62.5rem;
+			margin: auto;
+		}
+		.mtd-page .max-width-800 {
+			max-width: 50rem;
+			margin: auto;
+		}
+		.mtd-page .cursor-grab {
+			cursor: -webkit-grab;
+			cursor: grab;
+		}
+		.mtd-page .overlay {
+			display: none;
+			z-index: 99;
+			background: rgba(0, 0, 0, 0.5);
+			position: absolute;
+			width: 0;
+			height: 0;
+			top: 0px;
+			left: 0px;
+			overflow: hidden;
+		}
+		.mtd-page .overlay.active {
+			display: block;
+			width: 100vw;
+			height: 100vh;
+		}
+
+		@media (min-width: 64em) {
+			.position-lg-relative {
+				position: relative !important;
+			}
+
+			.position-lg-absolute {
+				position: absolute !important;
+			}
+			.top-xl-20 {
+				top: 20px;
+			}
+			.w-xl-400 {
+				max-width: 400px !important;
+			}
+		}
+		@media (max-width: 64rem) {
+			.quote-block {
+				max-width: 100%;
+			}
+		}
+		@media (max-width: 48rem) {
+			.mtd-page .desktop {
+				display: none;
+			}
+			.mtd-page .mobile {
+				display: block;
+			}
+		}
+		.hide {
+			display: none;
+		}
+		.hide.active {
+			display: block;
+		}
+
+		.mtd-page .fill-white path {
+			fill: #efefef;
+		}
+		.mtd-page .unit sup {
+			top: 0;
+			font-size: 50%;
+		}
+		.mtd-page .min-height-quote {
+			min-height: 45rem;
+		}
+		.mtd-page .snow-v2 .title {
+			font-size: 1.875rem;
+			line-height: 1;
+		}
+		.mtd-page .snow-v2 .copy {
+			font-size: 1rem;
+			line-height: 1.6;
+		}
+		.mtd-page .snow-v2 .pluses {
+			position: absolute;
+			max-width: 6.25rem;
+		}
+		.mtd-page .snow-v2 .pluses.top {
+			top: 2.5rem;
+			left: 2.5rem;
+		}
+		.mtd-page .snow-v2 .pluses.bottom {
+			bottom: 2.5rem;
+			right: 2.5rem;
+		}
+		.mtd-page .snow-v2 .pluses svg {
+			width: 1.875rem;
+			height: 1.875rem;
+		}
+		.mtd-page .snow-v2 .pluses svg * {
+			fill: #fff;
+		}
+		.mtd-page .snow-v2 .pluses.fill-black svg * {
+			fill: #000;
+		}
+		.mtd-page .snow-v2 .star-rating svg {
+			max-width: 1.375rem;
+		}
+		.mtd-page .snow-v2 .img-wrapper {
+			position: relative;
+			min-height: 26.25rem;
+		}
+		.mtd-page .snow-v2 .img-wrapper img {
+			object-fit: cover;
+		}
+		/* .mtd-page section.hero .wrapper {
+	margin-bottom: 1.25rem;
+} */
+		.mtd-page section.hero .block {
+			display: flex;
+			justify-content: center;
+			margin-left: auto;
+			max-width: 25rem;
+		}
+		.mtd-page section.hero .block svg * {
+			fill: #fff;
+		}
+		.mtd-page section.quote .wrapper {
+			margin-top: 2.5rem;
+		}
+		.mtd-page section.quote .block {
+			max-width: 43.75rem;
+		}
+		.mtd-page section.hero,
+		.mtd-page section.quote {
+			display: flex;
+			padding: 0;
+			min-height: 37.5rem;
+		}
+		.mtd-page section.hero .block,
+		.mtd-page section.quote .block {
+			padding: 2.5rem 1.5rem;
+		}
+		.mtd-page section.hero > img,
+		.mtd-page section.quote > img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1001;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			max-height: 37.5rem;
+		}
+		.mtd-page section.section-2 {
+			padding: 7.5rem;
+			background: #000;
+			text-align: center;
+		}
+		.mtd-page section.section-2 p {
+			font-size: 1.375rem;
+			line-height: 1.6;
+			margin: 1.25rem auto 0 auto;
+			max-width: 43.75rem;
+		}
+		.mtd-page section.section-3 {
+			padding: 5rem 0;
+		}
+		.mtd-page section.section-3 h2 {
+			font-size: 3.125rem;
+			margin: 0 auto 1.25rem auto;
+			text-align: center;
+		}
+		.mtd-page section.section-3 .row .col {
+			display: flex;
+		}
+		.mtd-page section.section-3 .row .col > div {
+			display: flex;
+			flex-direction: column;
+			padding: 0.625rem;
+			border-radius: 0.1875rem;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			user-select: none;
+		}
+		.mtd-page section.section-3 .row .col > div > img {
+			max-width: 18.75rem;
+			width: 100%;
+			height: auto;
+			margin: 0 auto 1.25rem auto;
+			border-radius: 0.1875rem;
+		}
+		.mtd-page section.section-3 .row .col > div .title {
+			margin-bottom: 0.625rem;
+		}
+		.mtd-page section.section-3 .row .col > div .icon {
+			margin-top: 0.625rem;
+			margin-bottom: 0.625rem;
+			width: 100%;
+			height: 7.5rem;
+		}
+		.mtd-page section.section-3 .row .col > div .copy {
+			margin-bottom: 1.25rem;
+		}
+		.mtd-page section.section-3 .row .col > div .eng-for {
+			text-align: center;
+			text-transform: uppercase;
+			width: 100%;
+			margin-top: auto;
+			margin-bottom: 0.75rem;
+			padding: 0.625rem 2.5rem;
+			font-weight: 600;
+			border: 0;
+			font-size: 0.875rem;
+		}
+		.mtd-page section.section-3 .row .col > div .eng-for-blocks {
+			text-align: center;
+			font-size: 0.75rem;
+		}
+		.mtd-page section.section-3 .row .col > div small {
+			display: block;
+			line-height: 1;
+			margin-top: 0.25rem;
+			text-align: center;
+		}
+		.mtd-page section.section-6 {
+			padding: 3.75rem 0;
+		}
+		.mtd-page section.section-6 .logo {
+			min-height: 14.625rem;
+		}
+		.mtd-page section.section-6 .row .title {
+			font-weight: 600;
+		}
+		.mtd-page section.section-6 .row .plus {
+			font-family: "Times New Roman", sans-serif;
+			font-weight: 100;
+			font-size: 2rem;
+			flex: 0 0 1.25rem;
+			padding-right: 1.25rem;
+			margin-top: -14px;
+		}
+		.mtd-page section.section-7 {
+			padding: 3.75rem 0;
+		}
+		.mtd-page section.section-7 .copy {
+			margin-bottom: 2.5rem;
+		}
+		.mtd-page section.section-8 {
+			padding: 3.75rem 0;
+		}
+		.mtd-page section.section-9 {
+			padding: 3.75rem 0;
+		}
+		.mtd-page section.section-9 .compare {
+			padding: 1.25rem;
+		}
+		.mtd-page section.section-9 .compare li {
+			border: 1px solid #000;
+			border-top-width: 0.0625rem;
+			border-right-width: 0rem;
+			border-bottom-width: 0rem;
+			border-left-width: 0.0625rem;
+			flex: 0 1 20%;
+			max-width: 20%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-size: 1rem;
+			font-weight: 600;
+		}
+		.mtd-page section.section-9 .compare li img {
+			max-width: 60%;
+		}
+		.mtd-page section.section-9 .compare li p {
+			margin-top: 0.625rem;
+		}
+		.mtd-page section.section-9 .compare li .dash-bull {
+			font-size: 1.375rem;
+		}
+		.mtd-page section.section-9 .compare li .logo,
+		.mtd-page section.section-9 .compare li .img {
+			display: flex;
+			min-height: 4.0625rem;
+		}
+		.mtd-page section.section-9 .compare li .logo img,
+		.mtd-page section.section-9 .compare li .img img {
+			width: auto;
+			height: 4.0625rem;
+		}
+		.mtd-page section.section-9 .compare li:nth-child(4n + 4) {
+			border-right-width: 0;
+		}
+		.mtd-page section.section-9 .compare li:nth-child(4n + 1) {
+			align-items: flex-start;
+			border-left-width: 0;
+			flex: 0 1 40%;
+			max-width: 40%;
+		}
+		.mtd-page section.section-9 .compare li:nth-child(1) {
+			font-size: 1.375rem;
+			justify-content: flex-end;
+		}
+		.mtd-page section.section-9 .compare li:nth-child(-n + 4) {
+			border-top-width: 0rem;
+		}
+		.mtd-page section.section-9 .compare li:nth-child(-n + 4) .logo,
+		.mtd-page section.section-9 .compare li:nth-child(-n + 4) .img {
+			justify-content: center;
+		}
+		.mtd-page section.section-9 .compare li:nth-child(-n + 4).column-1,
+		.mtd-page section.section-9 .compare li:nth-child(-n + 4).column-2,
+		.mtd-page section.section-9 .compare li:nth-child(-n + 4).column-3 {
+			font-weight: 100;
+			text-align: center;
+		}
+		.mtd-page section.section-10 a,
+		.mtd-page section.section-11 a {
+			display: flex;
+			flex-direction: column;
+			background: #efefef;
+			text-decoration: none;
+			height: 100%;
+		}
+		.mtd-page section.section-10 a .content strong,
+		.mtd-page section.section-11 a .content strong {
+			font-size: 1.375rem;
+			line-height: 1.3;
+		}
+		.mtd-page section.section-10 a .content .copy,
+		.mtd-page section.section-11 a .content .copy {
+			font-size: 1rem;
+			line-height: 1.6;
+		}
+		.mtd-page section.section-10 a .content .read-more,
+		.mtd-page section.section-11 a .content .read-more {
+			text-decoration: underline;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+		.mtd-page section.section-10 a:hover,
+		.mtd-page section.section-11 a:hover {
+			color: #000;
+		}
+
+		@media (max-width: 64rem) {
+			.mtd-page .min-height-quote {
+				min-height: 60rem;
+			}
+			.mtd-page section.hero,
+			.mtd-page section.quote {
+				min-height: 37.5rem;
+			}
+			/* .mtd-page section.hero .wrapper,
+	.mtd-page section.quote .wrapper {
+		position: absolute;
+	} */
+			.mtd-page section.hero > img,
+			.mtd-page section.quote > img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				max-height: initial;
+				object-fit: cover;
+			}
+			.mtd-page section.section-2 {
+				padding: 2.5rem 1.25rem;
+			}
+			.mtd-page section.section-2 .pluses {
+				position: relative;
+				top: 0;
+				left: 0;
+			}
+			.mtd-page section.section-2 .pluses.top {
+				margin-bottom: 2.5rem;
+			}
+			.mtd-page section.section-2 .pluses.bottom {
+				margin-top: 2.5rem;
+				margin-left: auto;
+			}
+			.mtd-page section.section-3 .row .col a .icon {
+				max-width: 25em;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.mtd-page section.section-6 .logo {
+				min-height: auto;
+			}
+			.mtd-page .snow-v2.snow-v2-intellipower section.section-3 .videos {
+				min-height: auto;
+			}
+
+			.quote-block {
+				max-width: 100%;
+			}
+		}
+	</style>
+
+	<script>
+		document.querySelector(".hero.slant-down.content-page-image").remove();
+	</script>
+
+	<div class="snow-v2 snow-v2-threex">
+		<section class="section-1 hero d-flex flex-column position-relative">
+			<div
+				class="position-relative"
+				style="min-height: 600px; overflow: hidden">
+				<div
+					class="position-absolute w-100 d-flex flex-column align-items-end d-lg-none"
+					style="bottom: 20px">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						x="0"
+						y="0"
+						viewBox="0 0 544.1 123"
+						xml:space="preserve"
+						class="bg-primary p-4"
+						style="
+							max-width: 400px;
+							z-index: 1;
+							clip-path: polygon(
+								1.5rem 0px,
+								100% 0%,
+								100% 100%,
+								0px 100%,
+								0px 1.5rem
+							);
+						">
+						<path
+							d="M94.7 0 65.5 22.1 52.1 0H25l19.9 31.5L0 63.1h28.2L59 40.2l14.3 22.9h28.2L79.3 31.5 121.8 0H94.7z"
+							style="fill: rgb(255, 255, 255)"></path>
+						<path d="M0 0h544.1v63.7H0z" style="fill: none"></path>
+						<path
+							d="M127.3 46.5h16.9c-1.9 5.4.3 5.8 5.2 5.8h20.7c3.6 0 7.4-.4 8.8-4.3 1.6-4.4-.3-4.7-22.1-4.7-25.4 0-27.3-2.8-22.8-15.3 3.3-9.2 6.8-16.3 28.1-16.3h23.6c19.5 0 19.1 6.1 15.9 15l-.6 1.6h-16.9c1.3-3.7 1.4-5.3-6.3-5.3h-18.7c-3.8 0-6.8 1.2-7.8 3.9-1.6 4.4.4 4.6 18.6 4.5 26.3-.1 31.8 1.4 26.5 16.2-4.9 13.7-10.7 15.9-33.2 15.9h-20.5c-15.4 0-20.6-2.7-16.6-13.7l1.2-3.3zM220 12.3h60.3L276 24.1h-43.4l-2.9 8.1h41.1L267 42.7h-41.1l-2.9 8.1h44.4L263 63.1h-61.3zM343.1 12.3h-51L273.9 63h16.9l4.7-13.2h26.6c5.3 0 6.3 1.8 4.4 7.1l-2.2 6.1h16.9l3.1-8.6c3-8.3-.5-10.4-5.2-11.2v-.1c8.3-1.7 11.5-5.7 13.9-12.5l1.2-3.2c3.3-9.1 1.9-15.1-11.1-15.1zm-6.4 17.9-.6 1.7c-1.4 3.6-3.6 5.3-8.2 5.3H300l4.5-12.3h26.4c5.3 0 7.4.8 5.8 5.3zM371.8 12.2h16.9L370.4 63h-16.9zM401.1 12.2h60.3L457.1 24h-43.4l-2.9 8.1h41.1l-3.8 10.5H407l-2.9 8.1h44.4L444.1 63h-61.3zM460.4 46.4h16.9c-1.9 5.4.3 5.8 5.2 5.8h20.7c3.6 0 7.4-.4 8.8-4.3 1.6-4.4-.3-4.7-22.1-4.7-25.4 0-27.3-2.8-22.8-15.3 3.3-9.2 6.8-16.3 28.1-16.3h23.6c19.5 0 19.1 6.1 15.9 15l-.6 1.6h-16.9c1.3-3.7 1.4-5.3-6.3-5.3h-18.7c-3.8 0-6.8 1.2-7.8 3.9-1.6 4.4.4 4.6 18.6 4.5 26.3-.1 31.8 1.4 26.5 16.2-4.9 13.7-10.8 15.9-33.2 15.9h-20.5c-15.4 0-20.6-2.7-16.6-13.7l1.2-3.3z"
+							style="fill: rgb(255, 255, 255)"></path>
+						<path
+							d="M4.7 92.4h19v6.1H11.3v5.8h11.4v6.1H11.3v6.6h12.4v6.1h-19zM52.4 123H46l-10.2-17.8V123h-6.4V92.4h6.4L46 110.3V92.4h6.4zM68.3 106.3h11.2v11.6c0 2.8-2.3 5.1-5.1 5.1H63.6c-2.8 0-5.1-2.3-5.1-5.1V97.4c0-2.8 2.3-5.1 5.1-5.1h10.8c2.8 0 5.1 2.3 5.1 5.1v3.7l-6.5 1.1v-3.4c0-.3-.2-.5-.5-.5h-6.8c-.3 0-.5.2-.5.5v17.6c0 .3.2.5.5.5h6.8c.3 0 .5-.2.5-.5V112h-4.6l-.1-5.7zM85.5 92.4h6.7V123h-6.7zM121.9 123h-6.4l-10.2-17.8V123h-6.4V92.4h6.4l10.2 17.9V92.4h6.4zM128.4 92.4h19v6.1H135v5.8h11.4v6.1H135v6.6h12.4v6.1h-19.1V92.4zM153 92.4h19v6.1h-12.4v5.8H171v6.1h-11.4v6.6H172v6.1h-19zM196 111.6c2.1-.7 3.6-2.6 3.6-4.9v-9.2c0-2.8-2.3-5.1-5.1-5.1h-17V123h6.7v-11.3h4.6l5.3 11.4h7.3l-5.4-11.5zm-2.9-6.5c0 .3-.2.5-.5.5h-8.3v-7.3h8.3c.3 0 .5.2.5.5v6.3zM206.1 92.4h19v6.1h-12.4v5.8h11.4v6.1h-11.4v6.6h12.4v6.1H206V92.4zM246.5 92.4h-15.8v30.7h15.8c2.8 0 5.1-2.3 5.1-5.1V97.5c0-2.8-2.3-5.1-5.1-5.1zm-1.6 24c0 .3-.2.5-.5.5h-7.1V98.4h7.1c.3 0 .5.2.5.5v17.5zM267.6 123V92.4h19.3v6.1h-12.7v5.8h11.6v6.1h-11.6V123h-6.6zM307.4 92.3h-11.3c-2.8 0-5.1 2.3-5.1 5.1v20.5c0 2.8 2.3 5.1 5.1 5.1h11.3c2.8 0 5.1-2.3 5.1-5.1V97.4c0-2.8-2.3-5.1-5.1-5.1zm-1.5 24.2c0 .3-.2.5-.5.5h-7.2c-.3 0-.5-.2-.5-.5V98.9c0-.3.2-.5.5-.5h7.2c.2 0 .4.2.5.5v17.6zM337.1 111.6c2.1-.7 3.6-2.6 3.6-4.9v-9.2c0-2.8-2.3-5.1-5.1-5.1h-17V123h6.7v-11.3h4.6l5.3 11.4h7.3l-5.4-11.5zm-2.9-6.5c0 .3-.2.5-.5.5h-8.3v-7.3h8.3c.3 0 .5.2.5.5v6.3zM357 92.4h19v6.1h-12.4v5.8H375v6.1h-11.4v6.6H376v6.1h-19zM391.9 101.5l4.9-9.2h7l-8.1 15.1L404 123h-7l-5.1-9.6-5.1 9.6h-7l8.3-15.5-8.1-15.1h7l4.9 9.1zM406.5 92.4H429v6.1h-7.9V123h-6.7V98.4h-7.9zM451.8 111.6c2.1-.7 3.6-2.6 3.6-4.9v-9.2c0-2.8-2.3-5.1-5.1-5.1h-17V123h6.7v-11.3h4.6l5.3 11.4h7.3l-5.4-11.5zm-2.9-6.5c0 .3-.2.5-.5.5h-8.3v-7.3h8.3c.3 0 .5.2.5.5v6.3zM461.9 92.4h19v6.1h-12.4v5.8h11.4v6.1h-11.4v6.6H481v6.1h-19.1zM492.9 106.9V123h-6.4V92.4h6.4l7.7 18.4 7.7-18.4h6.4V123h-6.4v-16.1l-4.9 11.4h-5.6l-4.9-11.4zM521.2 92.4h19v6.1h-12.4v5.8h11.4v6.1h-11.4v6.6h12.4v6.1h-19.1V92.4zM538.7 63.4c-3 0-5.4-2.4-5.4-5.4 0-3 2.4-5.4 5.4-5.4 3 0 5.4 2.4 5.4 5.4 0 3-2.4 5.4-5.4 5.4zm0-10.1c-2.6 0-4.7 2.1-4.7 4.7s2.1 4.7 4.7 4.7 4.7-2.1 4.7-4.7-2.1-4.7-4.7-4.7z"
+							style="fill: rgb(255, 255, 255)"></path>
+						<path
+							d="M538.4 57.6c.3 0 .5-.1.7-.2.1-.1.2-.3.2-.6s-.1-.5-.2-.6c-.1-.1-.4-.2-.7-.2h-.6v1.5h.6m-.6 1.1v2.2h-1.5V55h2.3c.8 0 1.3.1 1.7.4.4.3.5.7.5 1.2 0 .4-.1.7-.3 1-.2.2-.5.4-.8.5l.6.3c.2.2.3.4.5.8l.8 1.7H540l-.7-1.5c-.1-.3-.3-.5-.4-.6-.1-.1-.3-.2-.6-.2h-.5"
+							style="fill: rgb(255, 255, 255)"></path>
+					</svg>
+				</div>
+				<picture>
+					<source
+						media="(min-width: 768px)"
+						srcset="
+							https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/veed3207c3f180871c2fe63844e18adc185f28147/snow-v2/Mask%20Group%2033.png
+						" />
+					<source
+						media="(min-width: 1px)"
+						srcset="
+							https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/veed3207c3f180871c2fe63844e18adc185f28147/snow-v2/Mask%20Group%2047.png
+						" />
+					<img
+						alt=""
+						class="w-100 h-100 position-absolute"
+						src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/veed3207c3f180871c2fe63844e18adc185f28147/snow-v2/Mask%20Group%2033.png"
+						loading="lazy"
+						decoding="async"
+						style="object-fit: cover; z-index: 0" />
+				</picture>
+			</div>
+			<div class="position-lg-absolute w-100 pt-4">
+				<div
+					class="wrapper w-100 d-flex flex-column align-items-end"
+					style="bottom: 20px">
+					
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						x="0"
+						y="0"
+						viewBox="0 0 544.1 123"
+						xml:space="preserve"
+						class="bg-primary p-4 d-none d-lg-block mt-2"
+						style="
+							max-width: 400px;
+							clip-path: polygon(
+								1.5rem 0px,
+								100% 0%,
+								100% 100%,
+								0px 100%,
+								0px 1.5rem
+							);
+						">
+						<path
+							d="M94.7 0 65.5 22.1 52.1 0H25l19.9 31.5L0 63.1h28.2L59 40.2l14.3 22.9h28.2L79.3 31.5 121.8 0H94.7z"
+							style="fill: rgb(255, 255, 255)"></path>
+						<path d="M0 0h544.1v63.7H0z" style="fill: none"></path>
+						<path
+							d="M127.3 46.5h16.9c-1.9 5.4.3 5.8 5.2 5.8h20.7c3.6 0 7.4-.4 8.8-4.3 1.6-4.4-.3-4.7-22.1-4.7-25.4 0-27.3-2.8-22.8-15.3 3.3-9.2 6.8-16.3 28.1-16.3h23.6c19.5 0 19.1 6.1 15.9 15l-.6 1.6h-16.9c1.3-3.7 1.4-5.3-6.3-5.3h-18.7c-3.8 0-6.8 1.2-7.8 3.9-1.6 4.4.4 4.6 18.6 4.5 26.3-.1 31.8 1.4 26.5 16.2-4.9 13.7-10.7 15.9-33.2 15.9h-20.5c-15.4 0-20.6-2.7-16.6-13.7l1.2-3.3zM220 12.3h60.3L276 24.1h-43.4l-2.9 8.1h41.1L267 42.7h-41.1l-2.9 8.1h44.4L263 63.1h-61.3zM343.1 12.3h-51L273.9 63h16.9l4.7-13.2h26.6c5.3 0 6.3 1.8 4.4 7.1l-2.2 6.1h16.9l3.1-8.6c3-8.3-.5-10.4-5.2-11.2v-.1c8.3-1.7 11.5-5.7 13.9-12.5l1.2-3.2c3.3-9.1 1.9-15.1-11.1-15.1zm-6.4 17.9-.6 1.7c-1.4 3.6-3.6 5.3-8.2 5.3H300l4.5-12.3h26.4c5.3 0 7.4.8 5.8 5.3zM371.8 12.2h16.9L370.4 63h-16.9zM401.1 12.2h60.3L457.1 24h-43.4l-2.9 8.1h41.1l-3.8 10.5H407l-2.9 8.1h44.4L444.1 63h-61.3zM460.4 46.4h16.9c-1.9 5.4.3 5.8 5.2 5.8h20.7c3.6 0 7.4-.4 8.8-4.3 1.6-4.4-.3-4.7-22.1-4.7-25.4 0-27.3-2.8-22.8-15.3 3.3-9.2 6.8-16.3 28.1-16.3h23.6c19.5 0 19.1 6.1 15.9 15l-.6 1.6h-16.9c1.3-3.7 1.4-5.3-6.3-5.3h-18.7c-3.8 0-6.8 1.2-7.8 3.9-1.6 4.4.4 4.6 18.6 4.5 26.3-.1 31.8 1.4 26.5 16.2-4.9 13.7-10.8 15.9-33.2 15.9h-20.5c-15.4 0-20.6-2.7-16.6-13.7l1.2-3.3z"
+							style="fill: rgb(255, 255, 255)"></path>
+						<path
+							d="M4.7 92.4h19v6.1H11.3v5.8h11.4v6.1H11.3v6.6h12.4v6.1h-19zM52.4 123H46l-10.2-17.8V123h-6.4V92.4h6.4L46 110.3V92.4h6.4zM68.3 106.3h11.2v11.6c0 2.8-2.3 5.1-5.1 5.1H63.6c-2.8 0-5.1-2.3-5.1-5.1V97.4c0-2.8 2.3-5.1 5.1-5.1h10.8c2.8 0 5.1 2.3 5.1 5.1v3.7l-6.5 1.1v-3.4c0-.3-.2-.5-.5-.5h-6.8c-.3 0-.5.2-.5.5v17.6c0 .3.2.5.5.5h6.8c.3 0 .5-.2.5-.5V112h-4.6l-.1-5.7zM85.5 92.4h6.7V123h-6.7zM121.9 123h-6.4l-10.2-17.8V123h-6.4V92.4h6.4l10.2 17.9V92.4h6.4zM128.4 92.4h19v6.1H135v5.8h11.4v6.1H135v6.6h12.4v6.1h-19.1V92.4zM153 92.4h19v6.1h-12.4v5.8H171v6.1h-11.4v6.6H172v6.1h-19zM196 111.6c2.1-.7 3.6-2.6 3.6-4.9v-9.2c0-2.8-2.3-5.1-5.1-5.1h-17V123h6.7v-11.3h4.6l5.3 11.4h7.3l-5.4-11.5zm-2.9-6.5c0 .3-.2.5-.5.5h-8.3v-7.3h8.3c.3 0 .5.2.5.5v6.3zM206.1 92.4h19v6.1h-12.4v5.8h11.4v6.1h-11.4v6.6h12.4v6.1H206V92.4zM246.5 92.4h-15.8v30.7h15.8c2.8 0 5.1-2.3 5.1-5.1V97.5c0-2.8-2.3-5.1-5.1-5.1zm-1.6 24c0 .3-.2.5-.5.5h-7.1V98.4h7.1c.3 0 .5.2.5.5v17.5zM267.6 123V92.4h19.3v6.1h-12.7v5.8h11.6v6.1h-11.6V123h-6.6zM307.4 92.3h-11.3c-2.8 0-5.1 2.3-5.1 5.1v20.5c0 2.8 2.3 5.1 5.1 5.1h11.3c2.8 0 5.1-2.3 5.1-5.1V97.4c0-2.8-2.3-5.1-5.1-5.1zm-1.5 24.2c0 .3-.2.5-.5.5h-7.2c-.3 0-.5-.2-.5-.5V98.9c0-.3.2-.5.5-.5h7.2c.2 0 .4.2.5.5v17.6zM337.1 111.6c2.1-.7 3.6-2.6 3.6-4.9v-9.2c0-2.8-2.3-5.1-5.1-5.1h-17V123h6.7v-11.3h4.6l5.3 11.4h7.3l-5.4-11.5zm-2.9-6.5c0 .3-.2.5-.5.5h-8.3v-7.3h8.3c.3 0 .5.2.5.5v6.3zM357 92.4h19v6.1h-12.4v5.8H375v6.1h-11.4v6.6H376v6.1h-19zM391.9 101.5l4.9-9.2h7l-8.1 15.1L404 123h-7l-5.1-9.6-5.1 9.6h-7l8.3-15.5-8.1-15.1h7l4.9 9.1zM406.5 92.4H429v6.1h-7.9V123h-6.7V98.4h-7.9zM451.8 111.6c2.1-.7 3.6-2.6 3.6-4.9v-9.2c0-2.8-2.3-5.1-5.1-5.1h-17V123h6.7v-11.3h4.6l5.3 11.4h7.3l-5.4-11.5zm-2.9-6.5c0 .3-.2.5-.5.5h-8.3v-7.3h8.3c.3 0 .5.2.5.5v6.3zM461.9 92.4h19v6.1h-12.4v5.8h11.4v6.1h-11.4v6.6H481v6.1h-19.1zM492.9 106.9V123h-6.4V92.4h6.4l7.7 18.4 7.7-18.4h6.4V123h-6.4v-16.1l-4.9 11.4h-5.6l-4.9-11.4zM521.2 92.4h19v6.1h-12.4v5.8h11.4v6.1h-11.4v6.6h12.4v6.1h-19.1V92.4zM538.7 63.4c-3 0-5.4-2.4-5.4-5.4 0-3 2.4-5.4 5.4-5.4 3 0 5.4 2.4 5.4 5.4 0 3-2.4 5.4-5.4 5.4zm0-10.1c-2.6 0-4.7 2.1-4.7 4.7s2.1 4.7 4.7 4.7 4.7-2.1 4.7-4.7-2.1-4.7-4.7-4.7z"
+							style="fill: rgb(255, 255, 255)"></path>
+						<path
+							d="M538.4 57.6c.3 0 .5-.1.7-.2.1-.1.2-.3.2-.6s-.1-.5-.2-.6c-.1-.1-.4-.2-.7-.2h-.6v1.5h.6m-.6 1.1v2.2h-1.5V55h2.3c.8 0 1.3.1 1.7.4.4.3.5.7.5 1.2 0 .4-.1.7-.3 1-.2.2-.5.4-.8.5l.6.3c.2.2.3.4.5.8l.8 1.7H540l-.7-1.5c-.1-.3-.3-.5-.4-.6-.1-.1-.3-.2-.6-.2h-.5"
+							style="fill: rgb(255, 255, 255)"></path>
+					</svg>
+				</div>
+			</div>
+		</section>
+
+		<section class="d-flex flex-column px-1">
+			<div class="wrapper p-sm-6 p-md-9 max-width-1000">
+				<h1 class="text-center">
+					1X
+					<sup style="font-size: 15px; top: -30px">®</sup>
+					Single-Stage Snow Blowers
+				</h1>
+				<p class="text-center">
+					The Cub Cadet
+					<sup>®</sup>
+					1X single-stage snow blower packs quite a punch, designed to easily
+					remove up to 6 inches of snowfall from small, smooth areas. The
+					high-performance auger efficiently scoops and throws snow. If you have
+					a small driveway or sidewalks to clear, this machine helps make quick
+					work of it.
+				</p>
+			</div>
+		</section>
+		<section class="d-flex flex-column">
+			<div
+				class="position-relative mx-auto"
+				style="z-index: 1001; max-width: 600px">
+				<img
+					src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/veed3207c3f180871c2fe63844e18adc185f28147/snow-v2/31AM2T6C710_1X_21LHP_rt_shd_rt2_treat.png"
+					alt=""
+					class="w-100" />
+			</div>
+			<div
+				class="position-relative bg-black"
+				style="height: 18rem; margin-top: -12rem">
+				<div
+					class="position-absolute w-100 h-100 undefined"
+					style="left: 0px; top: 0px">
+					<img
+						src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/veed3207c3f180871c2fe63844e18adc185f28147/snow-v2/ProductHighlight_1600x1000.jpg"
+						alt=""
+						class="w-100 h-100 d-none d-md-block mx-auto"
+						style="
+							object-fit: cover;
+							object-position: center top;
+							max-width: 80rem;
+						" />
+				</div>
+				<div
+					class="top d-none d-lg-block"
+					style="
+						top: 2.5rem;
+						left: 2.5rem;
+						position: absolute;
+						max-width: 6.25rem;
+					">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 45 45"
+						xml:space="preserve"
+						fill="#fff"
+						style="width: 1.875rem; height: 1.875rem">
+						<path
+							d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z"></path>
+					</svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 45 45"
+						xml:space="preserve"
+						fill="#fff"
+						style="width: 1.875rem; height: 1.875rem">
+						<path
+							d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z"></path>
+					</svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 45 45"
+						xml:space="preserve"
+						fill="#fff"
+						style="width: 1.875rem; height: 1.875rem">
+						<path
+							d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z"></path>
+					</svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 45 45"
+						xml:space="preserve"
+						fill="#fff"
+						style="width: 1.875rem; height: 1.875rem">
+						<path
+							d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z"></path>
+					</svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 45 45"
+						xml:space="preserve"
+						fill="#fff"
+						style="width: 1.875rem; height: 1.875rem">
+						<path
+							d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z"></path>
+					</svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 45 45"
+						xml:space="preserve"
+						fill="#fff"
+						style="width: 1.875rem; height: 1.875rem">
+						<path
+							d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z"></path>
+					</svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 45 45"
+						xml:space="preserve"
+						fill="#fff"
+						style="width: 1.875rem; height: 1.875rem">
+						<path
+							d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z"></path>
+					</svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 45 45"
+						xml:space="preserve"
+						fill="#fff"
+						style="width: 1.875rem; height: 1.875rem">
+						<path
+							d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z"></path>
+					</svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 45 45"
+						xml:space="preserve"
+						fill="#fff"
+						style="width: 1.875rem; height: 1.875rem">
+						<path
+							d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z"></path>
+					</svg>
+				</div>
+			</div>
+			<div class="bg-black pb-3">
+				<div class="wrapper max-width-1000 px-md-0 p-lg-7">
+					<h2
+						class="h4 text-uppercase pb-2 mx-4 border-bottom mb-3 text-center fs-6">
+						Engineered for
+					</h2>
+					<ul class="row list-unstyled p-1" style="min-height: 220px">
+						<li class="flex-column col col-4 text-center">
+							<div class="">
+								<strong class="text-uppercase">Snowfall</strong>
+								<div
+									class="d-flex justify-content-center align-items-center p-3"
+									style="height: 120px">
+									<img
+										src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-snowfall-up-6.svg"
+										alt=""
+										class="w-100 h-100"
+										style="filter: invert(1); max-width: 160px" />
+								</div>
+								<p style="margin-top: auto">Up to 6"</p>
+							</div>
+						</li>
+						<li class="flex-column col col-4 text-center">
+							<div class="">
+								<strong class="text-uppercase">Driveway</strong>
+								<div
+									class="d-flex justify-content-center align-items-center p-3"
+									style="height: 120px">
+									<img
+										src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-driveway-up-8.svg"
+										alt=""
+										class="w-100 h-100"
+										style="filter: invert(1); max-width: 160px" />
+								</div>
+								<p style="margin-top: auto">Up to 8 cars</p>
+							</div>
+						</li>
+						<li class="flex-column col col-4 text-center">
+							<div class="">
+								<strong class="text-uppercase">Surfaces</strong>
+								<div
+									class="d-flex justify-content-center align-items-center p-3"
+									style="height: 120px">
+									<img
+										src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-surfaces-smooth.svg"
+										alt=""
+										class="w-100 h-100"
+										style="filter: invert(1); max-width: 160px" />
+								</div>
+								<p style="margin-top: auto">Smooth</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div
+					class="bottom d-none d-lg-block"
+					style="
+						bottom: 2.5rem;
+						right: 2.5rem;
+						position: absolute;
+						max-width: 6.25rem;
+					">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 45 45"
+						xml:space="preserve"
+						fill="#fff"
+						style="width: 1.875rem; height: 1.875rem">
+						<path
+							d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z"></path>
+					</svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 45 45"
+						xml:space="preserve"
+						fill="#fff"
+						style="width: 1.875rem; height: 1.875rem">
+						<path
+							d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z"></path>
+					</svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 45 45"
+						xml:space="preserve"
+						fill="#fff"
+						style="width: 1.875rem; height: 1.875rem">
+						<path
+							d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z"></path>
+					</svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 45 45"
+						xml:space="preserve"
+						fill="#fff"
+						style="width: 1.875rem; height: 1.875rem">
+						<path
+							d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z"></path>
+					</svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 45 45"
+						xml:space="preserve"
+						fill="#fff"
+						style="width: 1.875rem; height: 1.875rem">
+						<path
+							d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z"></path>
+					</svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 45 45"
+						xml:space="preserve"
+						fill="#fff"
+						style="width: 1.875rem; height: 1.875rem">
+						<path
+							d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z"></path>
+					</svg>
+				</div>
+			</div>
+		</section>
+		<section class="mb-6 px-2">
+			<h2
+				class="wrapper text-center pt-8 mb-4 px-1 position-relative d-flex justify-content-center align-items-start undefined">
+				<div class="d-flex align-items-start" style="margin-top: -4px">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 45 45"
+						xml:space="preserve"
+						style="width: 1.875rem; height: 1.875rem">
+						<path
+							d="M21.8 35V23.2H10v-1.4h11.8V10h1.4v11.8H35v1.4H23.2V35h-1.4z"></path>
+					</svg>
+				</div>
+				Confidently Compact
+			</h2>
+			<div class="wrapper">
+				<ul class="row list-unstyled">
+					<li class="quote col-sm-12 col-md-4">
+						<div
+							class="d-flex flex-column text-decoration-none h-100"
+							style="background: rgb(239, 239, 239)">
+							<img
+								src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/ve1f3e6cb0cf2f950d44a96bbcdc4fbdabb979847/snow-v2/Image 59.png"
+								alt=""
+								class="w-100" />
+							<div class="d-flex flex-column h-100 p-3">
+								<p class="font-weight-bold false mb-0 display-4">
+									Easy chute control
+								</p>
+								<p class="copy mt-2" style="line-height: 1.7">
+									Throw snow in the direction of your choosing with pitch and
+									chute control from the operator’s station.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="quote col-sm-12 col-md-4">
+						<div
+							class="d-flex flex-column text-decoration-none h-100"
+							style="background: rgb(239, 239, 239)">
+							<img
+								src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/ve1f3e6cb0cf2f950d44a96bbcdc4fbdabb979847/snow-v2/Image 60.png"
+								alt=""
+								class="w-100" />
+							<div class="d-flex flex-column h-100 p-3">
+								<p class="font-weight-bold false mb-0 display-4">
+									Compact Design
+								</p>
+								<p class="copy mt-2" style="line-height: 1.7">
+									A high-performance auger-propelled drive system is designed to
+									work at your pace.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="quote col-sm-12 col-md-4">
+						<div
+							class="d-flex flex-column text-decoration-none h-100"
+							style="background: rgb(239, 239, 239)">
+							<img
+								src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/veed3207c3f180871c2fe63844e18adc185f28147/snow-v2/Image 61.png"
+								alt=""
+								class="w-100" />
+							<div class="d-flex flex-column h-100 p-3">
+								<p class="font-weight-bold false mb-0 display-4">
+									Easy Start-Ups
+								</p>
+								<p class="copy mt-2" style="line-height: 1.7">
+									Skip the pull starts and get to work quickly with push-button
+									electric start.
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="d-flex flex-column p-2 min-height-quote">
+			<div
+				class="wrapper d-flex flex-column h-100 mt-auto mr-auto mb-0 my-md-0 p-0 p-lg-2">
+				<div
+					class="quote-block d-flex flex-column h-100 w-100 p-4 bg-white clip-corner ml-auto"
+					style="max-width: 40rem">
+					<ul class="list-unstyled d-flex mb-0">
+						<li class="col-8 font-weight-bold h3 text-uppercase p-0">
+							Cub Cadet is the best in my view
+						</li>
+						<li class="col-4 text-right p-0">
+							<div class="star-rating d-flex undefined">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 48 48"
+									class="w-100">
+									<path
+										d="m11.6 43 3.2-14L4 19.5l14.4-1.2L24 5l5.6 13.2L44 19.5 33.1 29l3.2 14L24 35.5 11.6 43z"
+										style="fill: rgb(255, 193, 15)"></path>
+								</svg>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 48 48"
+									class="w-100">
+									<path
+										d="m11.6 43 3.2-14L4 19.5l14.4-1.2L24 5l5.6 13.2L44 19.5 33.1 29l3.2 14L24 35.5 11.6 43z"
+										style="fill: rgb(255, 193, 15)"></path>
+								</svg>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 48 48"
+									class="w-100">
+									<path
+										d="m11.6 43 3.2-14L4 19.5l14.4-1.2L24 5l5.6 13.2L44 19.5 33.1 29l3.2 14L24 35.5 11.6 43z"
+										style="fill: rgb(255, 193, 15)"></path>
+								</svg>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 48 48"
+									class="w-100">
+									<path
+										d="m11.6 43 3.2-14L4 19.5l14.4-1.2L24 5l5.6 13.2L44 19.5 33.1 29l3.2 14L24 35.5 11.6 43z"
+										style="fill: rgb(255, 193, 15)"></path>
+								</svg>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 48 48"
+									class="w-100">
+									<path
+										d="m11.6 43 3.2-14L4 19.5l14.4-1.2L24 5l5.6 13.2L44 19.5 33.1 29l3.2 14L24 35.5 11.6 43z"
+										style="fill: rgb(255, 193, 15)"></path>
+								</svg>
+							</div>
+						</li>
+					</ul>
+					<p class="mt-2">
+						I have had many snow blowers over the last 40 years and the Cub
+						Cadet 1X 21” LHP is the best I have ever owned for clearing snow off
+						my deck and pathway. This is my second year with this blower and it
+						pull starts every time, it’s very quiet and a joy to use.
+					</p>
+					<ul class="list-unstyled d-flex mt-1">
+						<li class="border-right font-weight-bold pr-2">BDCarroll</li>
+						<li class="font-weight-bold pl-2">
+							1X
+							<sup>®</sup>
+							21” LHP
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div
+				class="position-absolute w-100 h-100 undefined"
+				style="left: 0px; top: 0px">
+				<img
+					src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/veed3207c3f180871c2fe63844e18adc185f28147/snow-v2/Mask Group 31.png"
+					alt=""
+					class="w-100 h-100 d-none d-md-block mx-auto"
+					style="
+						object-fit: cover;
+						object-position: center top;
+						max-width: 100%;
+					" />
+				<img
+					src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/veed3207c3f180871c2fe63844e18adc185f28147/snow-v2/Mask Group 47.png"
+					alt=""
+					class="w-100 h-100 d-block d-md-none"
+					style="
+						object-fit: cover;
+						object-position: center bottom;
+						max-width: 100%;
+					" />
+			</div>
+		</section>
+		<section class="py-8 px-2">
+			<div class="wrapper">
+				<h2 class="text-center">A Machine for the Extreme</h2>
+				<p class="copy text-center">
+					All Cub Cadet X Series models come with premium features to get your
+					winter done right.
+				</p>
+				<ul class="row list-unstyled">
+					<li class="col-sm-12 col-md-6">
+						<div class="p-2">
+							<ul class="row list-unstyled align-items-center undefined">
+								<li class="col-3 p-2">
+									<img
+										src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/Group 3360.svg"
+										alt=""
+										class="w-100" />
+								</li>
+								<li class="col-9 p-2">
+									<strong class="text-uppercase">Easy chute control</strong>
+									<p class="mb-1">
+										Throw snow in the direction you want with pitch and chute
+										control from the operator’s station.
+									</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="col-sm-12 col-md-6">
+						<div class="p-2">
+							<ul class="row list-unstyled align-items-center undefined">
+								<li class="col-3 p-2">
+									<img
+										src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/Group 4053.svg"
+										alt=""
+										class="w-100" />
+								</li>
+								<li class="col-9 p-2">
+									<strong class="text-uppercase">
+										Push-button electric start
+									</strong>
+									<p class="mb-1">
+										Eliminate pull starts and get to blowing snow quickly with
+										push-button electric start.
+									</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="col-sm-12 col-md-6">
+						<div class="p-2">
+							<ul class="row list-unstyled align-items-center undefined">
+								<li class="col-3 p-2">
+									<img
+										src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/Group 3370.svg"
+										alt=""
+										class="w-100" />
+								</li>
+								<li class="col-9 p-2">
+									<strong class="text-uppercase">MAXIMIZE VISIBILITY</strong>
+									<p class="mb-1">
+										For visibility at dawn or dusk, with an in-dash LED
+										headlight that comes standard.
+									</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="col-sm-12 col-md-6">
+						<div class="p-2">
+							<ul class="row list-unstyled align-items-center undefined">
+								<li class="col-3 p-2">
+									<img
+										src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/Group 3353.svg"
+										alt=""
+										class="w-100" />
+								</li>
+								<li class="col-9 p-2">
+									<strong class="text-uppercase">Move at your speed</strong>
+									<p class="mb-1">
+										A high-performance auger-propelled drive system designed to
+										work at your pace.
+									</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<div class="wrapper text-center">
+				<h2>Shop &amp; Compare Single-Stage Snow Blowers</h2>
+			</div>
+		</section>
+	</div>
+</div>

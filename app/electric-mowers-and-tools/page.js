@@ -5,7 +5,7 @@ import AttchmentsAccessories from "@/components/AttchmentsAccessories";
 import Faqs from "@/components/Faqs";
 import RelatedLinks from "@/components/RelatedLinks";
 import ResponsiveImage from "@/components/ResponsiveImage";
-import IntellipowerLogo from "../images/IntellipowerLogo";
+import IntellipowerLogo from "../../components/images/IntellipowerLogo";
 
 export default function ElectricMowersAndTools({}) {
 	return (

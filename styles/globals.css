@@ -1,0 +1,25 @@
+/* @tailwind base; */
+
+@tailwind components;
+@tailwind utilities;
+#sdb-container ol,
+#sdb-container ul,
+#sdb-container menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.hero.slant-down.content-page-image {
+	display: none !important;
+	position: fixed !important;
+	left: -1000vw !important;
+	top: -1000vh !important;
+	width: 0 !important;
+	height: 0 !important;
+	overflow: hidden !important;
+}
+
+.container.content-asset-container {
+	max-width: 100% !important;
+	padding: 0;
+}

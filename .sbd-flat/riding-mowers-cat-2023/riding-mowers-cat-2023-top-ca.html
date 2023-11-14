@@ -1,0 +1,1054 @@
+<link
+	rel="stylesheet"
+	href="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1677240364535/css/global.css" />
+
+<!-- ALL BELOW -->
+
+<div class="mtd-page">
+	<style type="text/css">
+		.hero.slant-down.content-page-image {
+			display: none;
+			position: absolute;
+			top: -1000000vw;
+			left: -1000000vh;
+			height: 0;
+			width: 0;
+		}
+		.container.content-asset-container {
+			max-width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+		.model-num-modal h4 {
+			margin-bottom: 1rem;
+		}
+		.model-num-modal .modal-header {
+			padding-bottom: 0;
+		}
+		.model-num-modal .modal-body {
+			clear: both;
+			overflow: hidden;
+		}
+		.model-num-modal .img-wrap {
+			width: 300px;
+			display: block;
+			margin-bottom: 1rem;
+		}
+		.model-num-modal ul {
+			padding-left: 1rem;
+		}
+		.model-num-modal img {
+			max-width: 100%;
+		}
+		.tab-browse-parts {
+			padding: 0 1rem;
+		}
+		.tab-browse-parts h2 {
+			margin-bottom: 1rem;
+			text-align: center;
+		}
+		.tab-browse-parts nav {
+			overflow-x: auto;
+			overflow-y: hidden;
+			white-space: nowrap;
+			margin-bottom: 1.5rem;
+			margin-left: -1rem;
+			margin-right: -1rem;
+		}
+		.tab-browse-parts ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		.tab-browse-parts li {
+			display: inline-block;
+		}
+		.tab-browse-parts li a {
+			text-decoration: none;
+			font-weight: 600;
+			text-align: center;
+			display: block;
+			text-transform: uppercase;
+		}
+		.tab-browse-parts .img-wrap {
+			display: block;
+			width: 150px;
+			margin-bottom: 8px;
+		}
+		.tab-browse-parts .img-wrap img {
+			max-width: 100%;
+		}
+		.tab-browse-parts .btn-secondary {
+			margin-bottom: 3rem;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 150px;
+		}
+		.pf-search {
+			background: #efefef;
+			padding: 2rem 0;
+			max-width: 1220px;
+			margin: 0 auto 3rem;
+		}
+		.pf-search .wrap {
+			max-width: 375px;
+			margin: 0px auto;
+		}
+		.pf-search h3 {
+			text-transform: uppercase;
+			font-size: 1.125rem;
+			text-align: center;
+			margin: 0 0 1rem;
+		}
+		.pf-search .input-btn {
+			position: relative;
+			width: 290px;
+		}
+		.pf-search .input-btn input {
+			width: 250px;
+		}
+		.pf-search .input-btn button {
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 40px;
+			width: 40px;
+			padding: 0;
+		}
+		.pf-search .input-btn .icon-container {
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			top: 0px;
+			right: 0px;
+		}
+		.pf-search .find-model {
+			text-transform: uppercase;
+			font-weight: 500;
+			text-align: center;
+			display: block;
+		}
+		.pf-search .col {
+			margin-bottom: 1.5rem;
+		}
+		.pf-search .cs {
+			text-align: center;
+			font-weight: 500;
+		}
+		.pf-search .cs p {
+			font-size: 1rem;
+			line-height: 1.25rem;
+		}
+		.pf-search .cs .heading {
+			font-size: 1.125rem;
+			line-height: 1.5rem;
+		}
+		.pf-search .heading span {
+			display: block;
+		}
+		.pf-search .cs a {
+			font-size: 1.5rem;
+			line-height: 1.5rem;
+			font-weight: 700;
+			margin-bottom: 0;
+			display: block;
+			text-decoration: none;
+		}
+		.pf-search .cs .btn-outline-secondary svg {
+			margin-right: 0.25rem;
+		}
+		.s-a-p {
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+		.s-a-p .tab-browse-parts,
+		.s-a-p .tab-attachments,
+		.s-a-p .tab-diagrams,
+		.s-a-p .tab-part-finder {
+			display: none;
+			transition: opacity 0.4s ease-in-out;
+		}
+		.s-a-p .show-tab {
+			transition: opacity 0.4s ease-in-out;
+			display: block;
+		}
+		.s-a-p .sticky {
+			background: #000;
+			padding: 0.25rem 0.5rem;
+			position: -webkit-sticky;
+			position: sticky;
+			top: 0;
+			margin-bottom: 2rem;
+			z-index: 1;
+		}
+		.s-a-p .sticky nav {
+			overflow-x: auto;
+			overflow-y: hidden;
+			white-space: nowrap;
+		}
+		.s-a-p .sticky ul {
+			max-width: 380px;
+			margin: 0px auto;
+			padding: 0;
+		}
+		.s-a-p .sticky li {
+			display: inline-block;
+			position: relative;
+			padding: 0.5rem 0;
+		}
+		.s-a-p .sticky a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 0.75rem;
+			text-transform: uppercase;
+			font-weight: 700;
+			padding: 0.5rem 0.375rem;
+			transition: background-color 0.5s ease;
+		}
+		.s-a-p .sticky a:hover {
+			color: #000;
+			background-color: #fff;
+		}
+		.s-a-p .sticky .active:hover,
+		.s-a-p .sticky .active {
+			background: #ffc20f;
+			color: #000;
+		}
+		.oc {
+			background: #ffc10f;
+			padding: 1rem;
+			margin-bottom: 2rem;
+		}
+		.oc .group {
+			max-width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.oc .col {
+			background: #fff;
+			padding: 1.5rem 2rem;
+			margin-bottom: 1.5rem;
+		}
+		.oc h1,
+		.oc .col h2,
+		.oc .col p {
+			text-align: center;
+		}
+		.oc h1,
+		.oc h2,
+		.oc p {
+			margin-bottom: 1.5rem;
+		}
+		.oc .icon-container {
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 1rem;
+			width: 84px;
+		}
+		.oc p {
+			max-width: 220px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.oc .col .btn-secondary {
+			width: 90%;
+			margin: 0px auto;
+			display: block;
+		}
+		.hli {
+			padding: 1rem;
+			margin-bottom: 2rem;
+		}
+		.hli h1 {
+			text-align: center;
+			text-transform: uppercase;
+		}
+		.hli .group {
+			max-width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.hli .col {
+			padding: 1.5rem 2rem;
+		}
+		.hli ul {
+			list-style-type: none;
+			margin: 0 0 0 1rem;
+			padding: 0;
+		}
+		.hli li {
+			margin-bottom: 0.3125rem;
+		}
+		.hli a {
+			text-decoration: none;
+			font-size: 1rem;
+			font-weight: 500;
+			display: block;
+		}
+		@media only screen and (min-width: 23.4375em) {
+			.pf-search .input-btn {
+				position: relative;
+				width: 348px;
+			}
+			.pf-search .input-btn input {
+				width: 308px;
+			}
+		}
+		@media only screen and (min-width: 48em) {
+			.s-a-p .sticky {
+				padding: 0.5rem 1rem;
+			}
+			.s-a-p .sticky nav {
+				overflow: hidden;
+				white-space: normal;
+			}
+			.s-a-p .sticky ul {
+				max-width: 530px;
+			}
+			.s-a-p .sticky li {
+				padding: 0.5rem;
+			}
+			.s-a-p .sticky a {
+				font-size: 0.875rem;
+				line-height: 1rem;
+				padding: 0.5rem 0.75rem;
+			}
+			.tab-browse-parts {
+				max-width: 768px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 4rem;
+			}
+			.tab-attachments {
+				max-width: 615px;
+			}
+			.tab-browse-parts h2 {
+				text-align: center;
+			}
+			.tab-browse-parts nav {
+				overflow: hidden;
+				margin-bottom: 2rem;
+			}
+			.tab-browse-parts .part-types-list .img-wrap {
+				width: 125px;
+			}
+			.model-num-modal .img-wrap {
+				float: right;
+			}
+		}
+		@media only screen and (min-width: 52.5em) {
+			.pf-search .wrap {
+				max-width: 840px;
+			}
+			.pf-search .group {
+				clear: both;
+				overflow: hidden;
+			}
+			.pf-search .col {
+				float: left;
+				width: 50%;
+			}
+			.pf-search h3 {
+				text-align: left;
+			}
+			.pf-search .find-model {
+				text-align: left;
+				margin-left: 4rem;
+			}
+			.pf-search .heading span {
+				display: inline;
+			}
+			.tab-browse-parts {
+				max-width: 840px;
+			}
+			.tab-attachments {
+				max-width: 672px;
+			}
+			.tab-browse-parts li {
+				margin-right: 1rem;
+			}
+		}
+		@media only screen and (min-width: 60em) {
+			.oc {
+				padding: 2rem 0 3rem;
+			}
+			.oc h1 {
+				margin-bottom: 2.5rem;
+				font-size: 2.5rem;
+			}
+			.oc .group {
+				clear: both;
+				overflow: hidden;
+				max-width: 940px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.oc .col {
+				float: left;
+				width: 31%;
+				margin: 0 2rem 0 0;
+			}
+			.oc .col:last-child {
+				margin-right: 0;
+			}
+			.hli h1 {
+				font-size: 1.75rem;
+			}
+			.oc h2,
+			.hli h3 {
+				font-size: 1.5rem;
+			}
+			.oc .icon-container {
+				height: 70px;
+			}
+			.hli .group {
+				clear: both;
+				overflow: hidden;
+				width: 99%;
+				max-width: 1220px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.hli .col {
+				float: left;
+				width: 23%;
+				margin: 0 1rem 0 0;
+				padding-left: 0;
+				padding-right: 0;
+			}
+			.hli .ilt {
+				width: 20%;
+			}
+			.hli .pml {
+				width: 30%;
+			}
+			.hli .ppl {
+				width: 26%;
+			}
+			.hli .pa {
+				width: 18%;
+			}
+			.hli .col:last-child {
+				margin-right: 0;
+			}
+			.hli li {
+				margin-bottom: 0.75rem;
+			}
+			.tab-browse-parts h2 {
+				margin-bottom: 2rem;
+			}
+			.tab-browse-parts h2 a {
+				top: 1rem;
+			}
+			.tab-browse-parts li {
+				margin-right: 1rem;
+			}
+		}
+		@media only screen and (min-width: 69.25em) {
+			.tab-browse-parts {
+				max-width: 1108px;
+			}
+			.tab-attachments {
+				max-width: 886px;
+			}
+			.tab-browse-parts .img-wrap {
+				width: 190px;
+			}
+			.tab-browse-parts .part-types-list .img-wrap {
+				width: 160px;
+			}
+		}
+		@media only screen and (min-width: 80em) {
+			.oc .group {
+				max-width: 1220px;
+			}
+			.oc .col {
+				width: 28%;
+				margin-right: 6rem;
+			}
+		}
+
+		.bg-yellow {
+			background: #ffc20f;
+		}
+
+		.bg-yellow p {
+			font-size: 26px;
+		}
+
+		.bg-yellow a {
+			text-decoration: none;
+			font-size: 26px;
+			font-weight: 700;
+		}
+
+		.section-8 {
+			margin-top: 60px;
+			padding: 40px 20px;
+			font-size: 36px;
+			font-weight: 700;
+			text-align: center;
+		}
+	</style>
+
+	<section class="position-relative">
+		<picture class="">
+			<source
+				media="(min-width: 768px)"
+				srcset="
+					https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/hero-1024w.jpg?version=1,678,369,065,000
+				" />
+			<source
+				media="(min-width: 0px)"
+				srcset="
+					https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/hero-640w.jpg?version=1,678,369,060,000
+				" />
+			<img
+				src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/hero-1024w.jpg?version=1,678,298,490,000"
+				alt=""
+				class="w-100 h-100"
+				style="object-fit: cover" />
+		</picture>
+	</section>
+	<section class="mt-0 mb-4 text-white bg-primary">
+		<ul class="flex list-unstyled no-gutters">
+			<li
+				class="col-md-2 d-none d-lg-flex justify-content-end"
+				style="
+					background: linear-gradient(
+						to right,
+						rgb(255, 194, 15) 0%,
+						rgb(255, 194, 15) 70%,
+						rgb(0, 0, 0) 70%,
+						rgb(0, 0, 0) 100%
+					);
+				">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="h-100 w-auto"
+					viewBox="0 0 167.9 352"
+					style="max-height: 24em">
+					<path d="M-1.8-.8h169.4v355.6H-1.8z"></path>
+					<path
+						d="M144.1 0 142 27.6c-.7 8.8-1.3 17.6-2 26.4-.3 4.1-.5 8.3-1 12.4s-2.4 7.3-6.2 9.3c-9.6 5.2-19.4 10.3-29.2 15.5-5.9 3.1-11.7 6.2-17.6 9.3-4.1 2.2-5.7 5.6-4.9 10.3l5.7 36c1.8 11.2 3.6 22.5 5.4 33.7 1.9 11.8 3.7 23.6 5.6 35.3 1.6 9.9 3.2 19.9 4.7 29.8 1.5 9.6 3.1 19.2 4.7 28.8 1.5 9.2 2.9 18.5 4.3 27.7.2 1.6.5 3.1.8 4.7.7 4 3.6 6.3 7.7 6.3h30.6c4.6 0 7.4 2.2 8.5 6.7 2.4 9.6 4.8 19.2 7.1 28.8.3 1.2.5 2.3.7 3.5H-1C-.8 234.6-.8 117.3-.8 0h144.9z"
+						fill="#ffc20f"></path>
+				</svg>
+			</li>
+			<li
+				class="col-12 col-lg-8 py-9 bg-primary flex flex-column justify-content-center">
+				<div class="container p-3 text-left text-lg-center">
+					<h1 class="h1 d-block">
+						The Lawn &amp; Garden Tractors to Get It Done
+					</h1>
+					<p class="">
+						Get the most out of your lawn and garden tractors, including the XT
+						Enduro Series™. Designed with comfort and command in mind, you can
+						tackle your diverse lawn from season to season while enjoying a
+						premium experience.
+					</p>
+				</div>
+			</li>
+			<li
+				class="col-md-2 d-none d-lg-block"
+				style="
+					background: linear-gradient(
+						to left,
+						rgb(255, 194, 15) 0%,
+						rgb(255, 194, 15) 70%,
+						rgb(0, 0, 0) 70%,
+						rgb(0, 0, 0) 100%
+					);
+				">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 167.9 352"
+					class="h-100 w-auto"
+					style="transform: scaleX(-1); max-height: 24em">
+					<path d="M51.6-.8h116v355.6h-116z"></path>
+					<path
+						d="M144.1 0 142 27.6c-.7 8.8-1.3 17.6-2 26.4-.3 4.1-.5 8.3-1 12.4s-2.4 7.3-6.2 9.3c-9.6 5.2-19.4 10.3-29.2 15.5-5.9 3.1-11.7 6.2-17.6 9.3-4.1 2.2-5.7 5.6-4.9 10.3l5.7 36c1.8 11.2 3.6 22.5 5.4 33.7 1.9 11.8 3.7 23.6 5.6 35.3 1.6 9.9 3.2 19.9 4.7 29.8 1.5 9.6 3.1 19.2 4.7 28.8 1.5 9.2 2.9 18.5 4.3 27.7.2 1.6.5 3.1.8 4.7.7 4 3.6 6.3 7.7 6.3h30.6c4.6 0 7.4 2.2 8.5 6.7 2.4 9.6 4.8 19.2 7.1 28.8.3 1.2.5 2.3.7 3.5H-1C-.8 234.6-.8 117.3-.8 0h144.9z"
+						fill="#ffc20f"></path>
+				</svg>
+			</li>
+		</ul>
+	</section>
+	<section class="container d-flex flex-column p-1 mt-8 mb-4">
+		<h2 class="h2 d-block text-center mb-8">
+			Cub Cadet® Lawn &amp; Garden Tractors
+		</h2>
+		<ul class="row list-unstyled">
+			<li class="col-12 col-md-4">
+				<div
+					class="mb-2 h-100 d-flex flex-column h-100 position-relative undefined"
+					style="background-color: rgb(239, 239, 239)">
+					<div class="d-flex flex-column h-100">
+						<div class="bg-white p-2">
+							<img
+								src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw24519b24/products/Equipment/Cub-Cadet_CC30H_6.jpg?sw=740&amp;sh=740&amp;sm=fit"
+								alt=""
+								class="w-100 mb-2" />
+						</div>
+						<div
+							class="d-flex flex-column h-100 mt-2 p-1 p-lg-4"
+							style="background-color: rgb(239, 239, 239)">
+							<h2 class="h2">CC30</h2>
+							<p class="mb-2" style="line-height: 1.8">
+								The Cub Cadet Mini-Riders delivers the same strength, durability
+								and perfect cut as our larger riders; but in a more compact
+								design.
+							</p>
+							<ul class="list-unstyled d-flex align-items-start">
+								<li class="p-2 col-4">
+									<strong class="text-center mt-0 mb-2 text-uppercase d-block">
+										Terrain
+									</strong>
+									<div class="position-relative" style="height: 6em">
+										<img
+											src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/icon-sm-bump.svg?version=1,678,300,141,000"
+											class="position-absolute w-100 h-100"
+											alt=""
+											style="object-fit: contain" />
+									</div>
+									<p class="small text-center mt-2 mb-0">Mostly flat</p>
+								</li>
+								<li class="p-2 col-4">
+									<strong class="text-center mt-0 mb-2 text-uppercase d-block">
+										Seat Type
+									</strong>
+									<div class="position-relative" style="height: 6em">
+										<img
+											src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/icon-seat-2.svg?version=1,678,715,243,000"
+											class="position-absolute w-100 h-100"
+											alt=""
+											style="object-fit: contain" />
+									</div>
+									<p class="small text-center mt-2 mb-0">15" high-back seat</p>
+								</li>
+								<li class="p-2 col-4">
+									<strong class="text-center mt-0 mb-2 text-uppercase d-block">
+										Speed
+									</strong>
+									<div class="position-relative" style="height: 6em">
+										<img
+											src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/icon-fast.svg?version=1,678,300,141,000"
+											class="position-absolute w-100 h-100"
+											alt=""
+											style="object-fit: contain" />
+									</div>
+									<p class="small text-center mt-2 mb-0">Up to 4 mph</p>
+								</li>
+							</ul>
+							<a
+								href="https://www.cubcadet.ca/en/riding-lawn-mowers/lawn-and-garden-tractors/?prefn1=productName2&amp;prefv1=%7CCC%2030%20SERIES"
+								class="button text-uppercase font-weight-bold text-decoration-none d-inline-block mb-0 text-center w-100 mt-auto bg-secondary"
+								style="padding: 0.625rem 2.5rem">
+								EXPLORE MINI RIDERS
+							</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="col-12 col-md-4">
+				<div
+					class="mb-2 h-100 d-flex flex-column h-100 position-relative undefined"
+					style="background-color: rgb(239, 239, 239)">
+					<div class="d-flex flex-column h-100">
+						<div class="bg-white p-2">
+							<img
+								src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw8f055b11/products/Equipment/Cub-Cadet_XT1LT46_New_2000x2000_8.jpg?sw=1000&amp;sh=1000&amp;sm=fit"
+								alt=""
+								class="w-100 mb-2" />
+						</div>
+						<div
+							class="d-flex flex-column h-100 mt-2 p-1 p-lg-4"
+							style="background-color: rgb(239, 239, 239)">
+							<img
+								src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/logo-XT1.svg?version=1,678,374,028,000"
+								alt=""
+								class="w-100 mt-1 mb-3" />
+							<p class="mb-2" style="line-height: 1.8">
+								The base model of the Enduro Series, the XT1 tractors are loaded
+								from the start-equipped for mowing, hauling and using a variety
+								of attachments.
+							</p>
+							<ul class="list-unstyled d-flex align-items-start">
+								<li class="p-2 col-4">
+									<strong class="text-center mt-0 mb-2 text-uppercase d-block">
+										Terrain
+									</strong>
+									<div class="position-relative" style="height: 6em">
+										<img
+											src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/icon-md-bump.svg?version=1,678,300,141,000"
+											class="position-absolute w-100 h-100"
+											alt=""
+											style="object-fit: contain" />
+									</div>
+									<p class="small text-center mt-2 mb-0">Mostly flat</p>
+								</li>
+								<li class="p-2 col-4">
+									<strong class="text-center mt-0 mb-2 text-uppercase d-block">
+										Seat Type
+									</strong>
+									<div class="position-relative" style="height: 6em">
+										<img
+											src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/icon-seat-2.svg?version=1,678,715,243,000"
+											class="position-absolute w-100 h-100"
+											alt=""
+											style="object-fit: contain" />
+									</div>
+									<p class="small text-center mt-2 mb-0">15" high-back seat</p>
+								</li>
+								<li class="p-2 col-4">
+									<strong class="text-center mt-0 mb-2 text-uppercase d-block">
+										Speed
+									</strong>
+									<div class="position-relative" style="height: 6em">
+										<img
+											src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/icon-fast.svg?version=1,678,300,141,000"
+											class="position-absolute w-100 h-100"
+											alt=""
+											style="object-fit: contain" />
+									</div>
+									<p class="small text-center mt-2 mb-0">Up to 5.5 mph</p>
+								</li>
+							</ul>
+							<a
+								href="https://www.cubcadet.ca/en/riding-lawn-mowers/lawn-and-garden-tractors/?prefn1=productName2&amp;prefv1=%7CXT1%20ENDURO%20SERIES"
+								class="button text-uppercase font-weight-bold text-decoration-none d-inline-block mb-0 text-center w-100 mt-auto bg-secondary"
+								style="padding: 0.625rem 2.5rem">
+								EXPLORE XT1 ENDURO
+							</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="col-12 col-md-4">
+				<div
+					class="mb-2 h-100 d-flex flex-column h-100 position-relative undefined"
+					style="background-color: rgb(239, 239, 239)">
+					<div class="d-flex flex-column h-100">
+						<div class="bg-white p-2">
+							<img
+								src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwd121df42/products/Equipment/Cub-Cadet_XT2_LX46_2000x2000_1.jpg?sw=740&amp;sh=740&amp;sm=fit"
+								alt=""
+								class="w-100 mb-2" />
+						</div>
+						<div
+							class="d-flex flex-column h-100 mt-2 p-1 p-lg-4"
+							style="background-color: rgb(239, 239, 239)">
+							<img
+								src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/logo-XT2.svg?version=1,678,374,032,000"
+								alt=""
+								class="w-100 mt-1 mb-3" />
+							<p class="mb-2" style="line-height: 1.8">
+								The Enduro XT2 brings a more premium experience to the table,
+								with higher levels of power, control and durability.
+							</p>
+							<ul class="list-unstyled d-flex align-items-start">
+								<li class="p-2 col-4">
+									<strong class="text-center mt-0 mb-2 text-uppercase d-block">
+										Terrain
+									</strong>
+									<div class="position-relative" style="height: 6em">
+										<img
+											src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/icon-lg-bump.svg?version=1,678,300,141,000"
+											class="position-absolute w-100 h-100"
+											alt=""
+											style="object-fit: contain" />
+									</div>
+									<p class="small text-center mt-2 mb-0">
+										Slight hills, mostly flat
+									</p>
+								</li>
+								<li class="p-2 col-4">
+									<strong class="text-center mt-0 mb-2 text-uppercase d-block">
+										Seat Type
+									</strong>
+									<div class="position-relative" style="height: 6em">
+										<img
+											src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/icon-seat-arms.svg?version=1,678,300,141,000"
+											class="position-absolute w-100 h-100"
+											alt=""
+											style="object-fit: contain" />
+									</div>
+									<p class="small text-center mt-2 mb-0">
+										15" high-back seat with armrests
+									</p>
+								</li>
+								<li class="p-2 col-4">
+									<strong class="text-center mt-0 mb-2 text-uppercase d-block">
+										Speed
+									</strong>
+									<div class="position-relative" style="height: 6em">
+										<img
+											src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/icon-fast.svg?version=1,678,300,141,000"
+											class="position-absolute w-100 h-100"
+											alt=""
+											style="object-fit: contain" />
+									</div>
+									<p class="small text-center mt-2 mb-0">Up to 5.5 mph</p>
+								</li>
+							</ul>
+							<a
+								href="https://www.cubcadet.ca/en/riding-lawn-mowers/lawn-and-garden-tractors/?prefn1=productName2&amp;prefv1=%7CXT1%20ENDURO%20SERIES"
+								class="button text-uppercase font-weight-bold text-decoration-none d-inline-block mb-0 text-center w-100 mt-auto bg-secondary"
+								style="padding: 0.625rem 2.5rem">
+								EXPLORE XT2 ENDURO
+							</a>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</section>
+	<section class="container d-flex flex-column p-1 mt-3">
+		<ul
+			class="row list-unstyled p-2 no-gutters"
+			style="background-color: rgb(239, 239, 239)">
+			<li class="col col-12 col-sm-12 col-md-6 p-2">
+				<ul class="row list-unstyled align-items-center">
+					<li class="col-12 col-md-3 p-2">
+						<img
+							src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/icon-battery.svg?version=1,678,303,258,000"
+							alt=""
+							class="w-100"
+							style="max-height: 6em" />
+					</li>
+					<li class="col-12 col-md-9 p-2">
+						<strong class="text-uppercase">Electric</strong>
+						<p class="mb-1">
+							Our lithium-ion battery technology provides long runtime, quiet
+							operation, minimal power fade, less maintenance than gas and a
+							fast charge.
+						</p>
+					</li>
+				</ul>
+			</li>
+			<li class="col col-12 col-sm-12 col-md-6 p-2">
+				<ul class="row list-unstyled align-items-center">
+					<li class="col-12 col-md-3 p-2">
+						<img
+							src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/SVG/icon-gas.svg?version=1,678,303,258,000"
+							alt=""
+							class="w-100"
+							style="max-height: 6em" />
+					</li>
+					<li class="col-12 col-md-9 p-2">
+						<strong class="text-uppercase">Gas Engine</strong>
+						<p class="mb-1">
+							Engine options offer smooth operation, quick acceleration with
+							simple recovery; also available with electronic fuel injection
+							technology (EFI) for easy startup.
+						</p>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	<section class="d-flex flex-column p-0 mt-3 position-relative bg-primary">
+		<picture class="">
+			<source
+				media="(min-width: 768px)"
+				srcset="
+					https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/vf8f3346f3f9e48fc80cac0087ded1ed737356c1b/xt-enduro-series/hero-2-1024w.jpg?version=1,678,990,691,000
+				" />
+			<source
+				media="(min-width: 0px)"
+				srcset="
+					https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/vf8f3346f3f9e48fc80cac0087ded1ed737356c1b/xt-enduro-series/hero-2-768w.jpg?version=1,678,991,353,000
+				" />
+			<img
+				src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/vf8f3346f3f9e48fc80cac0087ded1ed737356c1b/xt-enduro-series/hero-2-1024w.jpg?version=1,678,990,691,000"
+				alt=""
+				class="w-100 h-100 position-absolute"
+				style="
+					object-fit: cover;
+					max-width: 100em;
+					left: 50%;
+					transform: translateX(-50%);
+				" />
+		</picture>
+		<div
+			class="container w-100 p-1 pb-9 pb-lg-9"
+			style="z-index: 2; padding-top: 3em; min-height: 35em">
+			<div
+				class="quote-block d-flex flex-column h-100 w-100 p-1 p-lg-4 position-relative text-white pb-9 pb-lg-9"
+				style="max-width: 700px; z-index: 1">
+				<ul class="list-unstyled d-flex mb-0 flex-column">
+					<li class="col-12 font-weight-bold h3 text-uppercase p-0">
+						GREAT LAWN TRACTOR
+					</li>
+					<li class="col-4 text-right p-0">
+						<div class="star-rating d-flex undefined">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 48 48"
+								class="w-100">
+								<path
+									d="m11.6 43 3.2-14L4 19.5l14.4-1.2L24 5l5.6 13.2L44 19.5 33.1 29l3.2 14L24 35.5 11.6 43z"
+									style="fill: rgb(255, 255, 255)"></path>
+							</svg>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 48 48"
+								class="w-100">
+								<path
+									d="m11.6 43 3.2-14L4 19.5l14.4-1.2L24 5l5.6 13.2L44 19.5 33.1 29l3.2 14L24 35.5 11.6 43z"
+									style="fill: rgb(255, 255, 255)"></path>
+							</svg>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 48 48"
+								class="w-100">
+								<path
+									d="m11.6 43 3.2-14L4 19.5l14.4-1.2L24 5l5.6 13.2L44 19.5 33.1 29l3.2 14L24 35.5 11.6 43z"
+									style="fill: rgb(255, 255, 255)"></path>
+							</svg>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 48 48"
+								class="w-100">
+								<path
+									d="m11.6 43 3.2-14L4 19.5l14.4-1.2L24 5l5.6 13.2L44 19.5 33.1 29l3.2 14L24 35.5 11.6 43z"
+									style="fill: rgb(255, 255, 255)"></path>
+							</svg>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 48 48"
+								class="w-100">
+								<path
+									d="m11.6 43 3.2-14L4 19.5l14.4-1.2L24 5l5.6 13.2L44 19.5 33.1 29l3.2 14L24 35.5 11.6 43z"
+									style="fill: rgb(255, 255, 255)"></path>
+							</svg>
+						</div>
+					</li>
+				</ul>
+				<p class="mt-2">
+					“I purchased the XT1 for cutting my two acre lawn with a number of
+					obstacles to cut around. I have both the bagger and mulch plate and
+					both work great. It made clean up a breeze.”
+				</p>
+				<ul class="list-unstyled d-flex flex-column flex-lg-row mt-1">
+					<li class="border-lg-right font-weight-bold pr-2">
+						Rkinney from Ottawa, ON
+					</li>
+					<li class="font-weight-normal pl-lg-2">
+						XT1 LT46 with triple bagger attachment
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="container d-flex flex-column align-items-center p-0 mt-8">
+		<h2 class="text-center mb-3 p-1">Year-Round Versatility</h2>
+		<p class="text-center mb-6 p-1">
+			Designed to get more done season after season with a selection of
+			attachments and accessories designed for a variety of jobs.
+		</p>
+		<ul class="flex flex-column flex-md-row list-unstyled">
+			<li class="col-12 col-md-4">
+				<div class="d-flex flex-column text-decoration-none h-100 undefined">
+					<div class="d-flex flex-column h-100">
+						<img
+							src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/versatility-1.jpg?version=1,678,298,499,000"
+							alt=""
+							class="w-100" />
+						<p class="font-weight-bold mt-2 mb-0 display-4">Bagger System</p>
+						<p class="copy mt-2" style="line-height: 1.7">
+							Designed for excellent bagging performance with twin baggers
+							available to fit every lawn and garden tractor. And for even
+							bigger jobs, triple baggers are available on lawn and garden
+							tractors 42 inches and larger
+						</p>
+					</div>
+				</div>
+			</li>
+			<li class="col-12 col-md-4">
+				<div class="d-flex flex-column text-decoration-none h-100 undefined">
+					<div class="d-flex flex-column h-100">
+						<img
+							src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/versatility-2.jpg?version=1,678,298,499,000"
+							alt=""
+							class="w-100" />
+						<p class="font-weight-bold mt-2 mb-0 display-4">Hauler</p>
+						<p class="copy mt-2" style="line-height: 1.7">
+							Designed for up to 800 pounds and built with fold-out side panels
+							for easy loading and unloading, the hauler allows you to easily
+							move mulch, logs and more.
+						</p>
+					</div>
+				</div>
+			</li>
+			<li class="col-12 col-md-4">
+				<div class="d-flex flex-column text-decoration-none h-100 undefined">
+					<div class="d-flex flex-column h-100">
+						<img
+							src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9edc065984860cd594ba2c5c845f0728b1e16873/xt-enduro-series/versatility-3.jpg?version=1,678,458,327,000"
+							alt=""
+							class="w-100" />
+						<p class="font-weight-bold mt-2 mb-0 display-4">All-Season Plow</p>
+						<p class="copy mt-2" style="line-height: 1.7">
+							With the convenience of the FastAttach® Connection System, this
+							46-inch heavy-duty all-season plow can move snow, dirt, gravel,
+							mulch and more.
+						</p>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<a
+			href="https://www.cubcadet.ca/en/riding-lawn-mowers/riding-mower-accessories/"
+			class="button text-uppercase font-weight-bold text-decoration-none d-inline-block bg-secondary text-center"
+			style="padding: 0.625rem 2.5rem">
+			VIEW ALL ATTACHMENTS
+		</a>
+	</section>
+	<section
+		class="d-flex flex-column p-9 mt-3"
+		style="background-color: rgb(239, 239, 239)">
+		<div class="container p-9 text-center">FOR RIDING MOWER FINDER</div>
+	</section>
+
+	<section
+		class="d-flex flex-column p-2 mt-3"
+		style="background-color: rgb(239, 239, 239)">
+		<div class="container p-9 text-center">
+			<style type="text/css">
+				.content-page-image h1.page-title {
+					color: #ffffff;
+				}
+			</style>
+
+			<div id="product-finder-riding-mowers">
+				<script>
+					(function (c, a, r, t, f, u, l) {
+						(c[u] =
+							c[u] ||
+							function () {
+								(c[u].q = c[u].q || []).push(arguments);
+							}),
+							(l = a.createElement(r)),
+							(l.async = 1),
+							(l.id = u + "scr"),
+							(l.src = f),
+							a[t].appendChild(l);
+					})(
+						window,
+						document,
+						"script",
+						"body",
+						"//embed.cartfulsolutions.com/cub-cadet-riding-finder/recommendation.min.js",
+						"cfl681"
+					);
+				</script>
+			</div>
+
+			<style>
+				.content-page-image {
+					display: none;
+				}
+			</style>
+		</div>
+	</section>
+</div>

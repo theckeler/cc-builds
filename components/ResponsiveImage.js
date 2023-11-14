@@ -7,8 +7,8 @@ export default function ResponsiveImage({
 	className,
 	style,
 	id,
-	hero = false,
-	webp = false,
+	hero = undefined,
+	webp = undefined,
 }) {
 	//const breakpoints = [544, 768, 1025, 1366, 1920, 2048];
 	const breakpoints = [2048, 1920, 1366, 1025, 768, 544];
@@ -59,25 +59,7 @@ export default function ResponsiveImage({
 		};
 	});
 
-	return webp ? (
-		<picture>
-			{webp && <source id={`${id}-webp`} type="image/webp" />}
-			<img
-				alt={alt}
-				className={className}
-				style={style}
-				id={id ? `${id}-jpg` : ""}
-				src={src}
-				// HERO:
-				rel={hero ? "preload" : false}
-				as={hero ? "image" : false}
-				fetchPriority={hero ? "high" : false}
-				decoding={hero ? "async" : false}
-				// NOT
-				loading={hero ? false : "lazy"}
-			/>
-		</picture>
-	) : (
+	return (
 		<img
 			alt={alt}
 			className={className}
@@ -85,12 +67,47 @@ export default function ResponsiveImage({
 			id={id ? `${id}-jpg` : ""}
 			src={src}
 			// HERO:
-			rel={hero ? "preload" : false}
-			as={hero ? "image" : false}
-			fetchPriority={hero ? "high" : false}
-			decoding={hero ? "async" : false}
+			rel={hero ? "preload" : undefined}
+			as={hero ? "image" : undefined}
+			fetchPriority={hero ? "high" : undefined}
+			decoding={hero ? "async" : undefined}
 			// NOT
-			loading={hero ? false : "lazy"}
+			loading={!hero ? "lazy" : undefined}
 		/>
 	);
+
+	// return webp ? (
+	// 	<picture>
+	// 		{webp && <source id={`${id}-webp`} type="image/webp" />}
+	// 		<img
+	// 			alt={alt}
+	// 			className={className}
+	// 			style={style}
+	// 			id={id ? `${id}-jpg` : ""}
+	// 			src={src}
+	// 			// HERO:
+	// 			rel={hero ? "preload" : undefined}
+	// 			as={hero ? "image" : undefined}
+	// 			fetchPriority={hero ? "high" : undefined}
+	// 			decoding={hero ? "async" : undefined}
+	// 			// NOT
+	// 			loading={!hero ? "lazy" : undefined}
+	// 		/>
+	// 	</picture>
+	// ) : (
+	// 	<img
+	// 		alt={alt}
+	// 		className={className}
+	// 		style={style}
+	// 		id={id ? `${id}-jpg` : ""}
+	// 		src={src}
+	// 		// HERO:
+	// 		rel={hero ? "preload" : undefined}
+	// 		as={hero ? "image" : undefined}
+	// 		fetchPriority={hero ? "high" : undefined}
+	// 		decoding={hero ? "async" : undefined}
+	// 		// NOT
+	// 		loading={!hero && "lazy"}
+	// 	/>
+	// );
 }

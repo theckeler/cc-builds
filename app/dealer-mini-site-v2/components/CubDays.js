@@ -1,4 +1,4 @@
-import IconCubDays from "@/images/IconCubDays";
+import IconCubDays from "@/components/images/IconCubDays";
 import Button from "@/components/Button";
 
 export default function CubDays({ title, className, style }) {

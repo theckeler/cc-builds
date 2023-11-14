@@ -1,4 +1,4 @@
-import IconCubDays from "../../images/IconCubDays.js";
+import IconCubDays from "../../../components/images/IconCubDays.js";
 
 export default function ZeroTurnMowers() {
 	return (
