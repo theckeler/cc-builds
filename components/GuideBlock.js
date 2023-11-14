@@ -21,7 +21,9 @@ export default function GuideBlock({
 		<a
 			href={href}
 			className="no-underline hover:no-underline hover:pointer p-2 flex flex-col h-full">
-			<p className="text-center p-2 mb-0 bg-black text-white">{heading}</p>
+			{!!heading && (
+				<p className="text-center p-2 mb-0 bg-black text-white">{heading}</p>
+			)}
 
 			<div className="relative bg-white p-2">
 				<ResponsiveImage

@@ -1,9 +1,9 @@
 import Faqs from "@/components/Faqs";
 import FinancingCard from "@/components/FinancingCard";
-import PreQualify from "@/components/PreQualify";
+// import PreQualify from "@/components/PreQualify";
 
 import faqsData from "./data/faqs.json";
-import plansData from "./data/plans.json";
+// import plansData from "./data/plans.json";
 
 const Financing = () => {
 	const containerCSS = "container mb-3 pb-3 border-bottom";
@@ -11,12 +11,12 @@ const Financing = () => {
 		"ml-auto btn bg-secondary d-flex align-items-center justify-content-center p-1 ";
 
 	return (
-		<div>
+		<div id="sdb-container">
 			<link
 				href="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/vd006db48162baba2af567f7c8619194f2376165f/Financing/financing-2020.css?version=1,684,337,597,000"
 				rel="stylesheet"
 			/>
-			<div id="COPY-PASTE">
+			<div>
 				<div className="of-plans container mx-auto" id="of-plans">
 					<div className="container shop-financing">
 						<div className="row">
@@ -38,11 +38,108 @@ const Financing = () => {
 						</div>
 					</div>
 					<div className="card-deckz group">
-						<FinancingCard plansData={plansData} />
+						<FinancingCard
+							plansData={[
+								{
+									term: 6,
+									title:
+										"No interest if paid in full within 6 months <sup>1</sup>",
+									text: "Interest will be charged from the purchase date if the purchase balance is not paid in full by the end of the promotional period.",
+									minPurchase: "Minimum purchase $199",
+									validFrom: "November 1, 2023",
+									validTo: "January 31, 2024",
+									detailText: "Click for details",
+									buttonTitle: "Apply Now",
+									buttonHref:
+										"https://finance.consumercreditapp.com/cc/landing/cub_cadet",
+								},
+								{
+									term: 12,
+									title:
+										"No interest if paid in full within 12 months <sup>2</sup>",
+									text: "Interest will be charged from the purchase date if the purchase balance is not paid in full by the end of the promotional period.",
+									fee: "There is a promotional fee of $50 for this transaction.",
+									minPurchase: "Minimum purchase $500",
+									validFrom: "November 1, 2023",
+									validTo: "January 31, 2024",
+									detailText: "Click for details",
+									buttonTitle: "Apply Now",
+									buttonHref:
+										"https://finance.consumercreditapp.com/cc/landing/cub_cadet",
+								},
+								{
+									term: 18,
+									title:
+										"No interest if paid in full within 18 months <sup>14</sup>",
+									text: "Interest will be charged from the purchase date if the purchase balance is not paid in full by the end of the promotional period.",
+									fee: "There is a promotional fee of $50 for this transaction.",
+									minPurchase: "Minimum purchase $750",
+									validFrom: "November 1, 2023",
+									validTo: "February 29, 2024",
+									detailText: "Click for details",
+									buttonTitle: "Apply Now",
+									buttonHref:
+										"https://finance.consumercreditapp.com/cc/landing/cub_cadet",
+								},
+								{
+									term: 24,
+									title: "0% APR for 24 months with equal payments<sup>3</sup>",
+									//text: "<strong>There is a promotional fee of $125 for this transaction.</strong>",
+									fee: "There is a promotional fee of $150 for this transaction.",
+									minPurchase: "Minimum purchase $2,000",
+									validFrom: "November 1, 2023",
+									validTo: "January 31, 2024",
+									detailText: "Click for details",
+									buttonTitle: "Apply Now",
+									buttonHref:
+										"https://finance.consumercreditapp.com/cc/landing/cub_cadet",
+								},
+								{
+									term: 36,
+									title: "0% APR for 36 months with equal payments<sup>5</sup>",
+									//text: "<strong>There is a promotional fee of $125 for this transaction.</strong>",
+									fee: "There is a promotional fee of $150 for this transaction.",
+									minPurchase:
+										"Minimum purchase $3,000. Excludes Utility Vehicles.",
+									validFrom: "November 1, 2023",
+									validTo: "January 31, 2024",
+									detailText: "Click for details",
+									buttonTitle: "Apply Now",
+									buttonHref:
+										"https://finance.consumercreditapp.com/cc/landing/cub_cadet",
+								},
+								{
+									term: 48,
+									title: "2.99% APR with 48 Monthly Payments<sup>7</sup>",
+									//text: "<strong>There is a promotional fee of $125 for this transaction.</strong>",
+									fee: "There is a promotional fee of $150 for this transaction.",
+									minPurchase: "Minimum purchase $2,500",
+									validFrom: "November 1, 2023",
+									validTo: "January 31, 2024",
+									detailText: "Click for details",
+									buttonTitle: "Apply Now",
+									buttonHref:
+										"https://finance.consumercreditapp.com/cc/landing/cub_cadet",
+								},
+								{
+									term: 60,
+									title: "3.99% APR with 60 monthly payments<sup>8</sup>",
+									//text: "<strong>There is a promotional fee of $125 for this transaction.</strong>",
+									fee: "There is a promotional fee of $150 for this transaction.",
+									minPurchase: "Minimum purchase $1,500",
+									validFrom: "November 1, 2023",
+									validTo: "January 31, 2024",
+									detailText: "Click for details",
+									buttonTitle: "Apply Now",
+									buttonHref:
+										"https://finance.consumercreditapp.com/cc/landing/cub_cadet",
+								},
+							]}
+						/>
 					</div>
 				</div>
 
-				<PreQualify />
+				{/* <PreQualify /> */}
 
 				<div className="container-fluid plan-fis">
 					<div className="row">
