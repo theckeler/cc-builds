@@ -119,7 +119,7 @@ export default function Financing({}) {
 					<ul className="grid gap-4 lg:gap-2 grid-flow-col auto-cols-[320px] lg:auto-cols-auto lg:grid-cols-4 lg:grid-flow-row">
 						{plansData.map((block, i) => {
 							return (
-								<li className="">
+								<li className="" key={i}>
 									<FinancingCard block={block} />
 								</li>
 							);
