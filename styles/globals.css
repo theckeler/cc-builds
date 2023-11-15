@@ -23,3 +23,18 @@
 	max-width: 100% !important;
 	padding: 0;
 }
+
+.overflow-y-auto::-webkit-scrollbar {
+	/* Customize the scrollbar width */
+	height: 6px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+	/* Customize the scrollbar track */
+	background-color: #000;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+	/* Customize the scrollbar thumb */
+	background-color: #eab308;
+}

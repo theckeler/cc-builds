@@ -56,11 +56,11 @@ export default function Faqs({
 					},
 					{
 						cursor: "pointer",
-						fontSize: style?.fontSize ? questions.style.fontSize : "1.1em",
+						fontSize: style?.fontSize ? questions.style.fontSize : "1.375rem",
 						textTransform: "none",
 					})
 				}>
-				<ul className="list-unstyled d-flex align-items-center w-100 mb-1 mb-0">
+				<ul className="list-unstyled d-flex align-items-center w-100 mb-0">
 					<li
 						dangerouslySetInnerHTML={{
 							__html: block.question,

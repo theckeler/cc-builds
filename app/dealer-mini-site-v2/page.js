@@ -27,22 +27,22 @@ export default function DealerMiniSite() {
 	const tabSpacing = "mt-0 mt-xl-2";
 
 	return (
-		<>
-			<Menu
+		<div id="sdb-container">
+			{/* <Menu
 				setCurrentDealer={setCurrentDealer}
 				button={{
 					style: { outline: 0, minWidth: "48px", minHeight: "48px" },
 					className: "bg-secondary border-0 mr-1 mb-1 w-100",
 				}}
-			/>
+			/> */}
 
-			<div className="list-unstyled mtd-page py-2 mx-0 mx-lg-auto py-xl-5 container px-0 grid grid-cols-1 xl:grid-cols-[400px_880px] gap-3">
+			<div className="py-2 mx-0 mx-lg-auto py-xl-5 container px-0 grid grid-cols-1 xl:grid-cols-[400px_880px] gap-3">
 				<StickyMenu
-					className="order-2 order-xl-1"
+					className="order-2 lg:order-1"
 					dealer={dealer[currentDealer]}
 				/>
 
-				<div className="align-self-start grid grid-cols-1 order-1 order-xl-2">
+				<div className="align-self-start grid grid-cols-1 order-1 lg:order-2">
 					<DealerInfo dealer={dealer[currentDealer]} />
 
 					<CubDays />
@@ -188,6 +188,6 @@ export default function DealerMiniSite() {
 					/>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 }
