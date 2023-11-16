@@ -124,7 +124,7 @@ const guide = [
 		//heading: "Financing Offers Just for You",
 		title: "Cub Cadet Financing",
 		//price: "$219.00",
-		copy: `Get special financing on online purchases of new Troy-Bilt equipment, parts and accessories with the Troy-Bilt credit card. Restrictions apply.`,
+		copy: `Get special financing on online purchases of new Cub Cadet equipment, parts and accessories with the Cub Cadet credit card. Restrictions apply.`,
 		button: {
 			title: "Learn More",
 		},
