@@ -19,8 +19,8 @@ const QuoteBlock = ({
 				</li>
 			</ul>
 			<p className="mt-2">{quote.copy}</p>
-			<ul className="">
-				<li className="border-r font-bold pr-2">{quote.name}</li>
+			<ul className="flex">
+				<li className="font-bold pr-2">{quote.name}</li>
 				<li
 					className="font-weight-normal pl-lg-2"
 					dangerouslySetInnerHTML={{

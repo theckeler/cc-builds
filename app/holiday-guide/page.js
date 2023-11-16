@@ -11,7 +11,7 @@ const guide = [
 		//heading: "A Group Gift They’ll Fight Over",
 		title: '1X™ 21" LHP Snow Blower',
 		price: "$799.00",
-		copy: `Compact and powerful, the 1X 21 in. 208cc Gas Single-Stage Snow Blower with Remote Chute Control and Headlight can tackle up to 6 in.of snow†. A 13 in. intake height is designed to clear small driveways or sidewalks quickly. Quickly change the direction of snow discharge from the operator’s station with the dashboard-mounted control lever. Push button electric start is designed for reliable starting without the need to pull-start. An in-dash headlight helps provide visibility before dawn or after sundown.`,
+		copy: `Compact and powerful, the 1X 21 in. 208cc Gas Single-Stage Snow Blower with Remote Chute Control and Headlight can tackle up to 6 in.of snow†. A 13 in. intake height is designed to clear small driveways or sidewalks quickly.`,
 		button: {
 			title: 'Shop 1X™ 21" LHP Snow Blower',
 		},
@@ -25,7 +25,7 @@ const guide = [
 		//heading: "Make Leaf Cleanup a Breeze",
 		title: '2X™ 26" IntelliPOWER® Snow Blower',
 		price: "$1,299.00",
-		copy: `Tackle winter weather with this 2X 26 in. 243cc Gas Two-Stage Snow Blower with IntelliPOWER® Engine engineered to take on up to 12 in. of snow†. IntelliPOWER® technology is designed to deliver consistent power in heavy, deep, and wet snow conditions. Push button electric start is designed for reliable starting without the need to pull start. Includes trigger-controlled power steering with a self-propelled drive engineered for control, maneuverability, and single-hand operation.`,
+		copy: `Tackle winter weather with this 2X 26 in. 243cc Gas Two-Stage Snow Blower with IntelliPOWER® Engine engineered to take on up to 12 in. of snow†. IntelliPOWER® technology is designed to deliver consistent power in heavy, deep, and wet snow conditions.`,
 		button: {
 			title: 'Shop 2X™ 26" IntelliPOWER® Snow Blower',
 		},
@@ -39,7 +39,7 @@ const guide = [
 		//heading: "For Trimming Trees with Ease",
 		title: '2X™ 26" TRAC IntelliPOWER® Snow Blower',
 		price: "$1,999.00",
-		copy: `Tackle winter weather with this 2X 26 in. TRAC 272cc Gas Two-Stage Snow Blower with IntelliPOWER® Engine and Track Drive engineered to take on up to 12 in. of snow†. Equipped with track drive designed for traction on slopes, inclines, and gravel driveways. IntelliPOWER® technology is designed to deliver consistent power in heavy, deep, and wet snow conditions. Includes trigger-controlled power steering with a self-propelled drive engineered for control, maneuverability, and single-hand operation.`,
+		copy: `Tackle winter weather with this 2X 26 in. TRAC 272cc Gas Two-Stage Snow Blower with IntelliPOWER® Engine and Track Drive engineered to take on up to 12 in. of snow†. Equipped with track drive designed for traction on slopes, inclines, and gravel driveways.`,
 		button: {
 			title: 'Shop 2X™ 26" TRAC IntelliPOWER® Snow Blower',
 		},
@@ -53,7 +53,7 @@ const guide = [
 		//heading: "The Tool for Trimming and Tapering Grass",
 		title: '3X™ 26" IntelliPOWER® Snow Blower',
 		price: "$1,699.00",
-		copy: `Take down the wall of winter with this 3X 26 in. 357cc Gas Three-Stage Snow Blower with IntelliPOWER® Engine design. IntelliPOWER® technology is engineered to deliver consistent power in heavy, deep, and wet snow conditions. The three-stage design breaks down and quickly clears heavy, wet snow and is designed to clear up to 18 in. of snow†. Includes trigger-controlled power steering with a self-propelled drive engineered for control, maneuverability, and single-hand operation. Heated hand grips help provide warmth and comfort.`,
+		copy: `Take down the wall of winter with this 3X 26 in. 357cc Gas Three-Stage Snow Blower with IntelliPOWER® Engine design. IntelliPOWER® technology is engineered to deliver consistent power in heavy, deep, and wet snow conditions.`,
 		button: {
 			title: 'Shop 3X™ 26" IntelliPOWER® Snow Blower',
 		},
@@ -165,6 +165,9 @@ export default function HolidayGuide({}) {
 						);
 					})}
 				</ul>
+				<p className="mt-2 text-xs font-bold text-center">
+					†Results may vary depending on weather and snow conditions
+				</p>
 			</section>
 		</div>
 	);

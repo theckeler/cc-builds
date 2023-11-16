@@ -8,4 +8,7 @@ module.exports = {
 	],
 	theme: {},
 	plugins: [],
+	corePlugins: {
+		borderOpacity: false,
+	},
 };

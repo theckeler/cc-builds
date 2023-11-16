@@ -47,7 +47,7 @@ export default function SnowV2({}) {
 	const addPromo = false;
 
 	return (
-		<>
+		<div id="sdb-container" className="mt-4">
 			{/* <div
 				className="position-fixed p-2 bg-white"
 				style={{ right: "20px", top: "20px", zIndex: 1001 }}>
@@ -181,7 +181,7 @@ export default function SnowV2({}) {
 					<div id="product-finder-snow-blowers" />
 				</section>
 
-				<section className="relative mb-6 flex flex-col flex-col-reverse">
+				<section className="relative mb-6 flex flex-col-reverse">
 					<div className="container relative z-10 pt-2 lg:pt-14 lg:pb-64">
 						<QuoteBlock
 							quote={snowData.quote}
@@ -543,7 +543,8 @@ export default function SnowV2({}) {
 								</div>
 							</li>
 						</ul>
-						<div className="text-center">
+
+						<div className="text-center mt-4">
 							<a
 								href="https://www.cubcadet.com/en_US/engine-advantage.html"
 								className="bg-black px-10 py-2 text-center text-white inline-block no-underline uppercase font-bold"
@@ -574,7 +575,7 @@ export default function SnowV2({}) {
 					</div>
 				</section>
 
-				<section className="container">
+				<section className="container mb-6">
 					<div className="wrapper p-1">
 						<ResponsiveImage
 							className="md:hidden w-full h-full"
@@ -592,7 +593,7 @@ export default function SnowV2({}) {
 					</div>
 				</section>
 
-				<section className="mt-6">
+				<section className="mb-6">
 					<div className="container">
 						<h2 className="text-center">
 							Shop and Compare X Series Snow Blowers
@@ -630,232 +631,235 @@ export default function SnowV2({}) {
 				</section>
 			</div>
 
+			<Articles
+				imgType={imgType}
+				articles={{
+					h2: "Snow Blower Articles & How To’s",
+					blocks: [
+						{
+							img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/SnowBlow_ProdLineBrow_Hero_LineUp_01_desktop_1015x630_v1.jpg",
+							title: "Cub Cadet Snow Blower Buyers Guide",
+							copy: "If you live in areas where snowfall is frequent or heavy, shoveling becomes part of your daily routine. Ditching your shovel, along with the heavy lifting and repetitive strain that comes with shoveling snow, in favor of a snow blower can save you time and energy. A couple of reasons to justify a snow blower…",
+							url: "https://www.cubcadet.com/en_US/product-information/cub-cadet-snow-blower-buying-guide.html",
+							res: (
+								<ResponsiveImage
+									src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/SnowBlow_ProdLineBrow_Hero_LineUp_01_desktop_1015x630_v1.jpg"
+									id="Hero_LineUp_01"
+									className="absolute w-full h-full object-cover"
+								/>
+							),
+						},
+						{
+							img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/recommended-snow-thrower-back-up-parts_1100x572.jpg",
+							title: "Recommended Snow Blower Back-Up Parts",
+							copy: "Always prepare your snow blower for maintenance before starting any repairs. Move your snow blower to a flat surface.  Turn the engine off and let it cool. Disconnect the spark plug ignition wire and remove the safety ignition key to prevent accidental starting of the engine…",
+							url: "https://www.cubcadet.com/en_US/product-information/knowledge-recommended-snow-thrower-back-up-parts.html",
+							res: (
+								<ResponsiveImage
+									src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/recommended-snow-thrower-back-up-parts_1100x572.jpg"
+									id="recommended-snow-thrower-back-up-parts"
+									className="absolute w-full h-full object-cover"
+								/>
+							),
+						},
+						{
+							img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/snow-thrower-operation-tips_1100x572.jpg",
+							title: "How to Prepare Your Snow Thrower for Winter Use",
+							copy: "Whether you're prepping your trusty 2X two-stage snow thrower for yet another winter, or getting your new 3X three-stage snow thrower ready to face its first blizzard, these snow thrower maintenance tips can help ensure you're prepared for cold and stormy weather this…",
+							url: "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-prepare-your-snow-thrower-for-winter-use.html",
+							res: (
+								<ResponsiveImage
+									src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/snow-thrower-operation-tips_1100x572.jpg"
+									id="snow-thrower-operation-tips"
+									className="absolute w-full h-full object-cover"
+								/>
+							),
+						},
+						{
+							img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/snow-thrower-safety-tips_1100x572.jpg",
+							title: "Snow Blower Safety Tips",
+							copy: "Snow blowers, often referred to as snow blowers are an easy way to keep the snow off your driveway during the winter months. Like any piece of power equipment, snow blower safety should be a top priority…",
+							url: "https://www.cubcadet.com/en_US/product-information/knowledge-snow-thrower-safety-tips.html",
+							res: (
+								<ResponsiveImage
+									src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/snow-thrower-safety-tips_1100x572.jpg"
+									id="snow-thrower-safety-tips"
+									className="absolute w-full h-full object-cover"
+								/>
+							),
+						},
+					],
+				}}
+				numRows={4}
+				className="container mt-8"
+			/>
+
+			<AttchmentsAccessories
+				className="container mt-8"
+				imgType={imgType}
+				attAcc={{
+					h2: "Snow Blower Attachments & Accessories",
+					blocks: [
+						{
+							img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/490-241-0032.jpg",
+							title: "Universal Cab",
+							item: "490-241-0032",
+							price: "$132.99",
+							url: "https://www.cubcadet.com/en_US/snow-blower-accessories/snow-blower-cab/490-241-0032.html#q=490-241-0032&lang=en_US&start=0",
+							res: (
+								<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/490-241-0032.jpg" />
+							),
+							orig: (
+								<img
+									src="https://www.cubcadet.com/en_US/snow-blower-accessories/snow-blower-cab/490-241-0032.html?fitsOnModel=false"
+									alt=""
+								/>
+							),
+						},
+						{
+							img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/490-290-0010_1.jpg",
+							title: "Snow Blower Cover",
+							item: "490-290-0010",
+							price: "$38.99",
+							url: "https://www.cubcadet.com/en_US/snow-blower-accessories/snow-blower-cover/490-290-0010.html#q=490-290-0010&lang=en_US&start=0",
+							res: (
+								<ResponsiveImage src="https://www.cubcadet.com/en_US/snow-blower-accessories/snow-blower-cover/490-290-0010.html#q=490-290-0010&lang=en_US&start=0" />
+							),
+							orig: (
+								<img
+									src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw2a0b010e/products/Attachments_Accessories/490-290-0010_1.jpg?sw=280&sh=280&sm=fit"
+									alt=""
+								/>
+							),
+						},
+						{
+							img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/OEM-390-679.jpg",
+							title: "Drift Cutter Kit",
+							item: "OEM-390-679",
+							price: "$41.99",
+							url: "https://www.cubcadet.com/en_US/snow-blower-accessories/drift-cutter-kit/OEM-390-679.html#q=OEM-390-679&lang=en_US&start=0",
+							res: (
+								<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/OEM-390-679.jpg" />
+							),
+							orig: (
+								<img
+									src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw32dc42ff/products/Attachments_Accessories/OEM-390-679.jpg?sw=280&sh=280&sm=fit"
+									alt=""
+								/>
+							),
+						},
+						{
+							img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/753-08629.jpg",
+							title: "LED Light Bar Kit",
+							item: "753-08629A",
+							price: "$135.89",
+							url: "https://www.cubcadet.com/en_US/snow-blower-accessories/led-light-bar-kit/753-08629A.html#q=753-08629A&lang=en_US&start=0",
+							res: (
+								<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/753-08629.jpg" />
+							),
+							orig: (
+								<img
+									src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw301fe215/products/753-08629.jpg?sw=280&sh=280&sm=fit"
+									alt=""
+								/>
+							),
+						},
+					],
+				}}
+			/>
+
+			<RelatedLinks
+				relatedCats={{
+					h3: "Related Categories",
+					list: [
+						{
+							title: "Single-Stage Snow Blowers",
+							href: "https://www.cubcadet.com/en_US/snow-blowers/single-stage-snow-blowers",
+						},
+						{
+							title: "Two-Stage Snow Blowers",
+							href: "https://www.cubcadet.com/en_US/snow-blowers/two-stage-snow-blowers",
+						},
+						{
+							title: "Three-Stage Snow Blowers",
+							href: "https://www.cubcadet.com/en_US/snow-blowers/three-stage-snow-blowers",
+						},
+						{
+							title: "Snow Blower Accessories",
+							href: "https://www.cubcadet.com/en_US/snow-blowers/snow-blower-accessories",
+						},
+					],
+				}}
+				className="container mt-8"
+			/>
+
+			<RelatedLinks
+				relatedCats={{
+					h3: "Related Searches",
+					list: [
+						{
+							title: "Financing",
+							href: "https://www.cubcadet.com/en_US/financing",
+						},
+						{
+							title: "Extended Warranty",
+							href: "https://www.cubcadet.com/en_US/ew-info-page.html",
+						},
+						{
+							title: "Register My Product",
+							href: "https://www.cubcadet.com/en_US/content-asset-page-includes/registration.html",
+						},
+						{
+							title: "Operator’s Manual",
+							href: "https://www.cubcadet.com/en_US/operatorsmanuals",
+						},
+						{
+							title: "Snow Plow Blade Attachment",
+							href: "https://www.cubcadet.com/en_US/riding-mower-accessories/46-inch-snow-plow-blade-attachment/19A30017OEM.html?fitsOnModel=false#q=snow%2Bplow%2Bblade&lang=en_US&start=0",
+						},
+					],
+				}}
+				className="container mt-8"
+			/>
+
+			<RelatedLinks
+				relatedCats={{
+					h3: "Snow Blower Maintenance",
+					p: "When customers buy Snow Blowers they often buy or consider:",
+					list: [
+						{
+							title: "Shear Pins",
+							href: "https://www.cubcadet.com/en_US/snow-blower-parts/snow-blower-shear-pins",
+						},
+						{
+							title: "Belts",
+							href: "https://www.cubcadet.com/en_US/snow-blower-parts/snow-blower-belts",
+						},
+						{
+							title: "Shave Plates",
+							href: "https://www.cubcadet.com/en_US/snow-blower-parts/snow-blower-shave-plates",
+						},
+						{
+							title: "Slide Shoes",
+							href: "https://www.cubcadet.com/en_US/snow-blower-parts/snow-blower-slide-shoes",
+						},
+						{
+							title: "Tires and Wheels",
+							href: "https://www.cubcadet.com/en_US/snow-blower-parts/snow-blower-tires-and-wheels",
+						},
+						{
+							title: "All Snow Blower Parts",
+							href: "https://www.cubcadet.com/en_US/shop-by-machine-type/snow-blower-parts",
+						},
+					],
+				}}
+				className="container mt-8"
+			/>
+
 			<div className="container mt-8">
-				<Articles
-					imgType={imgType}
-					articles={{
-						h2: "Snow Blower Articles & How To’s",
-						blocks: [
-							{
-								img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/SnowBlow_ProdLineBrow_Hero_LineUp_01_desktop_1015x630_v1.jpg",
-								title: "Cub Cadet Snow Blower Buyers Guide",
-								copy: "If you live in areas where snowfall is frequent or heavy, shoveling becomes part of your daily routine. Ditching your shovel, along with the heavy lifting and repetitive strain that comes with shoveling snow, in favor of a snow blower can save you time and energy. A couple of reasons to justify a snow blower…",
-								url: "https://www.cubcadet.com/en_US/product-information/cub-cadet-snow-blower-buying-guide.html",
-								res: (
-									<ResponsiveImage
-										src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/SnowBlow_ProdLineBrow_Hero_LineUp_01_desktop_1015x630_v1.jpg"
-										id="Hero_LineUp_01"
-										className="absolute w-full h-full object-cover"
-									/>
-								),
-							},
-							{
-								img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/recommended-snow-thrower-back-up-parts_1100x572.jpg",
-								title: "Recommended Snow Blower Back-Up Parts",
-								copy: "Always prepare your snow blower for maintenance before starting any repairs. Move your snow blower to a flat surface.  Turn the engine off and let it cool. Disconnect the spark plug ignition wire and remove the safety ignition key to prevent accidental starting of the engine…",
-								url: "https://www.cubcadet.com/en_US/product-information/knowledge-recommended-snow-thrower-back-up-parts.html",
-								res: (
-									<ResponsiveImage
-										src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/recommended-snow-thrower-back-up-parts_1100x572.jpg"
-										id="recommended-snow-thrower-back-up-parts"
-										className="absolute w-full h-full object-cover"
-									/>
-								),
-							},
-							{
-								img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/snow-thrower-operation-tips_1100x572.jpg",
-								title: "How to Prepare Your Snow Thrower for Winter Use",
-								copy: "Whether you're prepping your trusty 2X two-stage snow thrower for yet another winter, or getting your new 3X three-stage snow thrower ready to face its first blizzard, these snow thrower maintenance tips can help ensure you're prepared for cold and stormy weather this…",
-								url: "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-prepare-your-snow-thrower-for-winter-use.html",
-								res: (
-									<ResponsiveImage
-										src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/snow-thrower-operation-tips_1100x572.jpg"
-										id="snow-thrower-operation-tips"
-										className="absolute w-full h-full object-cover"
-									/>
-								),
-							},
-							{
-								img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/snow-thrower-safety-tips_1100x572.jpg",
-								title: "Snow Blower Safety Tips",
-								copy: "Snow blowers, often referred to as snow blowers are an easy way to keep the snow off your driveway during the winter months. Like any piece of power equipment, snow blower safety should be a top priority…",
-								url: "https://www.cubcadet.com/en_US/product-information/knowledge-snow-thrower-safety-tips.html",
-								res: (
-									<ResponsiveImage
-										src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/snow-thrower-safety-tips_1100x572.jpg"
-										id="snow-thrower-safety-tips"
-										className="absolute w-full h-full object-cover"
-									/>
-								),
-							},
-						],
-					}}
-					numRows={4}
-				/>
-
-				<AttchmentsAccessories
-					imgType={imgType}
-					attAcc={{
-						h2: "Snow Blower Attachments & Accessories",
-						blocks: [
-							{
-								img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/490-241-0032.jpg",
-								title: "Universal Cab",
-								item: "490-241-0032",
-								price: "$132.99",
-								url: "https://www.cubcadet.com/en_US/snow-blower-accessories/snow-blower-cab/490-241-0032.html#q=490-241-0032&lang=en_US&start=0",
-								res: (
-									<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/490-241-0032.jpg" />
-								),
-								orig: (
-									<img
-										src="https://www.cubcadet.com/en_US/snow-blower-accessories/snow-blower-cab/490-241-0032.html?fitsOnModel=false"
-										alt=""
-									/>
-								),
-							},
-							{
-								img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/490-290-0010_1.jpg",
-								title: "Snow Blower Cover",
-								item: "490-290-0010",
-								price: "$38.99",
-								url: "https://www.cubcadet.com/en_US/snow-blower-accessories/snow-blower-cover/490-290-0010.html#q=490-290-0010&lang=en_US&start=0",
-								res: (
-									<ResponsiveImage src="https://www.cubcadet.com/en_US/snow-blower-accessories/snow-blower-cover/490-290-0010.html#q=490-290-0010&lang=en_US&start=0" />
-								),
-								orig: (
-									<img
-										src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw2a0b010e/products/Attachments_Accessories/490-290-0010_1.jpg?sw=280&sh=280&sm=fit"
-										alt=""
-									/>
-								),
-							},
-							{
-								img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/OEM-390-679.jpg",
-								title: "Drift Cutter Kit",
-								item: "OEM-390-679",
-								price: "$41.99",
-								url: "https://www.cubcadet.com/en_US/snow-blower-accessories/drift-cutter-kit/OEM-390-679.html#q=OEM-390-679&lang=en_US&start=0",
-								res: (
-									<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/OEM-390-679.jpg" />
-								),
-								orig: (
-									<img
-										src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw32dc42ff/products/Attachments_Accessories/OEM-390-679.jpg?sw=280&sh=280&sm=fit"
-										alt=""
-									/>
-								),
-							},
-							{
-								img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/753-08629.jpg",
-								title: "LED Light Bar Kit",
-								item: "753-08629A",
-								price: "$135.89",
-								url: "https://www.cubcadet.com/en_US/snow-blower-accessories/led-light-bar-kit/753-08629A.html#q=753-08629A&lang=en_US&start=0",
-								res: (
-									<ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/753-08629.jpg" />
-								),
-								orig: (
-									<img
-										src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw301fe215/products/753-08629.jpg?sw=280&sh=280&sm=fit"
-										alt=""
-									/>
-								),
-							},
-						],
-					}}
-				/>
-
-				<RelatedLinks
-					relatedCats={{
-						h3: "Related Categories",
-						list: [
-							{
-								title: "Single-Stage Snow Blowers",
-								href: "https://www.cubcadet.com/en_US/snow-blowers/single-stage-snow-blowers",
-							},
-							{
-								title: "Two-Stage Snow Blowers",
-								href: "https://www.cubcadet.com/en_US/snow-blowers/two-stage-snow-blowers",
-							},
-							{
-								title: "Three-Stage Snow Blowers",
-								href: "https://www.cubcadet.com/en_US/snow-blowers/three-stage-snow-blowers",
-							},
-							{
-								title: "Snow Blower Accessories",
-								href: "https://www.cubcadet.com/en_US/snow-blowers/snow-blower-accessories",
-							},
-						],
-					}}
-					className="mt-6"
-				/>
-
-				<RelatedLinks
-					relatedCats={{
-						h3: "Related Searches",
-						list: [
-							{
-								title: "Financing",
-								href: "https://www.cubcadet.com/en_US/financing",
-							},
-							{
-								title: "Extended Warranty",
-								href: "https://www.cubcadet.com/en_US/ew-info-page.html",
-							},
-							{
-								title: "Register My Product",
-								href: "https://www.cubcadet.com/en_US/content-asset-page-includes/registration.html",
-							},
-							{
-								title: "Operator’s Manual",
-								href: "https://www.cubcadet.com/en_US/operatorsmanuals",
-							},
-							{
-								title: "Snow Plow Blade Attachment",
-								href: "https://www.cubcadet.com/en_US/riding-mower-accessories/46-inch-snow-plow-blade-attachment/19A30017OEM.html?fitsOnModel=false#q=snow%2Bplow%2Bblade&lang=en_US&start=0",
-							},
-						],
-					}}
-					className="mt-2"
-				/>
-
-				<RelatedLinks
-					relatedCats={{
-						h3: "Snow Blower Maintenance",
-						p: "When customers buy Snow Blowers they often buy or consider:",
-						list: [
-							{
-								title: "Shear Pins",
-								href: "https://www.cubcadet.com/en_US/snow-blower-parts/snow-blower-shear-pins",
-							},
-							{
-								title: "Belts",
-								href: "https://www.cubcadet.com/en_US/snow-blower-parts/snow-blower-belts",
-							},
-							{
-								title: "Shave Plates",
-								href: "https://www.cubcadet.com/en_US/snow-blower-parts/snow-blower-shave-plates",
-							},
-							{
-								title: "Slide Shoes",
-								href: "https://www.cubcadet.com/en_US/snow-blower-parts/snow-blower-slide-shoes",
-							},
-							{
-								title: "Tires and Wheels",
-								href: "https://www.cubcadet.com/en_US/snow-blower-parts/snow-blower-tires-and-wheels",
-							},
-							{
-								title: "All Snow Blower Parts",
-								href: "https://www.cubcadet.com/en_US/shop-by-machine-type/snow-blower-parts",
-							},
-						],
-					}}
-					className="mt-2"
-				/>
-
 				<h3 className="mt-6">Questions & Answers</h3>
 				<Faqs
+					className="border-t"
 					faqs={[
 						{
 							question: "What does a snow blower do?",
@@ -894,6 +898,6 @@ export default function SnowV2({}) {
 					]}
 				/>
 			</div>
-		</>
+		</div>
 	);
 }

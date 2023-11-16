@@ -47,7 +47,7 @@ export default function Faqs({
 						? "rotate(0)"
 						: "rotate(45deg)";
 				}}
-				className={`text-left question cursor-pointer w-100 p-1 border-0 bg-transparent ${
+				className={`text-left question cursor-pointer w-100 p-1 border-0 bg-transparent font-bold ${
 					questions ? questions.className : ""
 				}`}
 				style={
@@ -77,7 +77,7 @@ export default function Faqs({
 		);
 
 	return (
-		<div className={`faqs`} id={id}>
+		<div className={className} id={id}>
 			{faqs.map((block, i) => {
 				return (
 					<Fragment key={i}>
