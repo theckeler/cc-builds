@@ -5,5 +5,5 @@
 			"name": "CubCadet Builds"
 		}
 	],
-	"settings": {}
+	"settings": { "window.title": "${folderName}", "window.commandCenter": false }
 }

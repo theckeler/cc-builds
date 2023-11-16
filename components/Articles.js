@@ -1,4 +1,3 @@
-import ImgCopyBlockStacked from "./ImgCopyBlockStacked";
 export default function Articles({
 	articles,
 	className,
@@ -15,7 +14,9 @@ export default function Articles({
 						</h2>
 					</li>
 					<li>
-						<a href={articles.viewAllURL} className="ml-2">
+						<a
+							href="https://www.troybilt.com/en_US/knowledge-center/"
+							className="ml-2">
 							<u>View All</u>
 						</a>
 					</li>
@@ -33,12 +34,29 @@ export default function Articles({
 
 							return (
 								<li key={i}>
-									<ImgCopyBlockStacked
-										imgType={imgType}
-										{...{ block }}
-										className="p-1 h-100"
-										style={{ backgroundColor: "#efefef" }}
-									/>
+									<a
+										href={block.url}
+										className="d-flex flex-column text-decoration-none p-1 h-full"
+										style={{ backgroundColor: "#efefef" }}>
+										<div className="relative h-40">{block.res}</div>
+										<div
+											className="px-2 pt-2 text-xl"
+											dangerouslySetInnerHTML={{
+												__html: block.title,
+											}}
+										/>
+										<div
+											className="px-2 pt-1 line-clamp-4 text-xs"
+											dangerouslySetInnerHTML={{
+												__html: block.copy,
+											}}
+										/>
+										<div
+											className="px-2 pt-2 mt-auto text-uppercase font-weight-bold"
+											style={{ textDecoration: "underline" }}>
+											Read more
+										</div>
+									</a>
 									<script
 										type="application/ld+json"
 										dangerouslySetInnerHTML={{
