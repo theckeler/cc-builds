@@ -623,6 +623,7 @@ export default function SnowV2({}) {
 
       <Articles
         imgType={imgType}
+        viewAllLink="https://www.cubcadet.com/en_US/how-to/?crefn1=tags&crefv1=Snow%20Blowers"
         articles={{
           h2: "Snow Blower Articles & How To’s",
           blocks: [
@@ -685,6 +686,7 @@ export default function SnowV2({}) {
       />
 
       <AttchmentsAccessories
+        viewAllLink="https://www.cubcadet.com/en_US/how-to/?crefn1=tags&crefv1=Snow%20Blowers"
         className="container mt-8"
         imgType={imgType}
         attAcc={{
