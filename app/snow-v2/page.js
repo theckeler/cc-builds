@@ -15,6 +15,7 @@ import Lineup from "./elements/Lineup";
 import QuoteBlock from "@/components/QuoteBlock";
 import IconTextBlock from "./elements/IconTextBlock";
 import CompareRow from "./elements/CompareRow";
+import FinancingBanner18 from "@/components/FinancingBanner18";
 
 export default function SnowV2({}) {
   const [imgType, setImgType] = useState("res");
@@ -44,6 +45,7 @@ export default function SnowV2({}) {
     document.body.appendChild(scriptEl);
   });
 
+  const addPromoBlock = false;
   const addPromo = false;
 
   return (
@@ -52,41 +54,11 @@ export default function SnowV2({}) {
         <section className="relative section-1 d-flex flex-column align-items-stretch">
           <div className="relative min-h-[600px]">
             <div className="mb-0 container px-0 relative z-10 min-h-[600px]">
-              <div className="absolute top-2 lg:top-auto lg:bottom-8 lg:right-8 w-full lg:max-w-[480px] px-8 px-lg-0">
-                {addPromo && (
-                  <>
-                    <a
-                      className="d-block text-white bg-black no-underline"
-                      href="https://www.cubcadet.com/en_US/financing"
-                      aria-label="See Details"
-                    >
-                      <ul className="mb-0 list-unstyled grid grid-cols-[80px_1fr_120px] gap-2 items-stretch p-1">
-                        <li className="overflow-hidden relative">
-                          <ResponsiveImage
-                            id="financing-18"
-                            src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/cub-cadet-credit-card-new.jpg"
-                            alt=""
-                            className="position-absolute w-full h-full top-0 left-0  object-contain min-w-[60px]"
-                          />
-                        </li>
-                        <li className="px-0 font-bold text-center lg:text-left">
-                          <span style={{ fontSize: "1.2em" }}>
-                            18 Month Financing Available
-                          </span>
-                          <br />
-                          <small>Restrictions apply</small>
-                        </li>
-                        <li className="">
-                          <Button
-                            copy="Learn More"
-                            className="p-1 border-0 bg-secondary w-full h-full text-black"
-                          />
-                        </li>
-                      </ul>
-                    </a>
-                  </>
-                )}
-              </div>
+              {addPromoBlock && (
+                <div className="absolute top-2 lg:top-auto lg:bottom-8 lg:right-8 w-full lg:max-w-[480px] px-8 px-lg-0">
+                  {addPromo && <FinancingBanner18 />}
+                </div>
+              )}
 
               <div
                 className="block bg-black clip-corner fill-white position-absolute bottom-8 lg:bottom-auto lg:top-8 right-8 p-3"
@@ -686,7 +658,7 @@ export default function SnowV2({}) {
       />
 
       <AttchmentsAccessories
-        viewAllLink="https://www.cubcadet.com/en_US/how-to/?crefn1=tags&crefv1=Snow%20Blowers"
+        viewAllLink="https://www.cubcadet.com/en_US/snow-blowers/snow-blower-accessories"
         className="container mt-8"
         imgType={imgType}
         attAcc={{
