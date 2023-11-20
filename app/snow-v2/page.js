@@ -67,7 +67,7 @@ export default function SnowV2({}) {
           </div>
 
           <div className="relative xl:absolute h-[600px] w-full z-0">
-            <div className="absolute container w-full h-full z-10 py-2">
+            <div className="relative container w-full h-full z-10 py-2">
               <div className="flex flex-col items-end justify-end h-full">
                 <XSeriesLogo />
               </div>
