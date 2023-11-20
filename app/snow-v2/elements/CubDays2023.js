@@ -1,5 +1,5 @@
 "use client";
-export default function CubDays2023({ className }) {
+export default function CubDays2023({ className, thru }) {
   return (
     <div className="bg-black">
       <svg
@@ -22,7 +22,7 @@ export default function CubDays2023({ className }) {
         </h2>
         <p className="" style={{ fontSize: 16 }}>
           Don’t wait for winter to arrive, prepare for your extreme during Cub
-          Cadet® Days now through October 28, 2023, take $100 off select
+          Cadet® Days now through {thru}, take $100 off select
           single-stage, 2-stage, and 3-stage models.
         </p>
         <div className="mt-3 mb-1">

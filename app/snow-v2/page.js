@@ -47,22 +47,19 @@ export default function SnowV2({}) {
     document.body.appendChild(scriptEl);
   });
 
-  const addPromoBlock = true;
-  const addPromo = false;
+  const addPromo = true;
   const addCubDays2023 = true;
 
   return (
     <div id="sdb-container" className="mt-4">
       <div className="upper">
         <section className="flex flex-col xl:flex-row items-center justify-center">
-          
           <div className="xl:container w-full xl:h-[600px] z-10 xl:py-2">
             <div className="flex flex-col items-end justify-between h-full">
               <div className="w-full xl:max-w-[480px]">
-                {/* {addPromo && <FinancingBanner18 />} */}
-                {addCubDays2023 && <CubDays2023 />}
+                {addCubDays2023 && <CubDays2023 thru="December 22, 2023" />}
+                {addPromo && <FinancingBanner18 className="mt-1" />}
               </div>
-
             </div>
           </div>
 
