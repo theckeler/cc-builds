@@ -1,14 +1,15 @@
 "use client";
 
+import ResponsiveImage from "@/components/ResponsiveImage";
+import IconAwards from "@/components/images/IconAwards";
 import IconBelt from "@/components/images/IconBelt";
 import IconBlades from "@/components/images/IconBlades";
-import IconLevel from "@/components/images/IconLevel";
-import IconAwards from "@/components/images/IconAwards";
-import IconScrewdriverWrench from "@/components/images/IconScrewdriverWrench";
-import IconManuals from "@/components/images/IconManuals";
-import IconMagGlassBolt from "@/components/images/IconMagGlassBolt";
-import IconPhone from "@/components/images/IconPhone";
 import IconChat from "@/components/images/IconChat";
+import IconLevel from "@/components/images/IconLevel";
+import IconMagGlassBolt from "@/components/images/IconMagGlassBolt";
+import IconManuals from "@/components/images/IconManuals";
+import IconPhone from "@/components/images/IconPhone";
+import IconScrewdriverWrench from "@/components/images/IconScrewdriverWrench";
 
 const howToContent = {
   blocks: [
@@ -63,9 +64,9 @@ const popularHelpLinks = {
     {
       icon: <IconAwards className="w-full max-h-[100px] h-full" />,
       copy: "Find warranty information and extended plans",
-      href: "https://www.cubcadet.com/en_US/ew-info-page.html",
+      href: "https://www.cubcadet.com/en_US/warranty-faqs.html",
       button: {
-        copy: "Find warranty info",
+        copy: "Warranty FAQs",
       },
     },
   ],
@@ -75,42 +76,50 @@ const findSupport = {
   h2: "Find Support by Model",
   blocks: [
     {
-      img: "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw8f055b11/products/Equipment/Cub-Cadet_XT1LT46_New_2000x2000_8.jpg?sw=290&sh=290&sm=fit",
+      img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/customer-service/Cub-Cadet_XT1LT46_New_2000x2000_8.jpg",
+      id: "Cadet_XT1LT46_New_2000x2000_8",
       title: "Lawn Mowers",
       url: "https://www.cubcadet.com/en_US/how-to/?crefn1=tags&crefv1=Lawn%20%26%20Garden%20Tractors",
     },
     {
-      img: "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9e835077e52279a69a54b4c30b00cf9f3c2d0358/ultima/product-ZTS.jpg?version=1,639,577,713,000",
+      img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/customer-service/product-ZTS.jpg?version=1,639,577,713,000",
+      id: "product-ZTS",
       title: "Zero-Turn",
       url: "https://www.cubcadet.com/en_US/how-to/?crefn1=tags&crefv1=Zero%20Turn%20Mowers",
     },
     {
-      img: "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v9e835077e52279a69a54b4c30b00cf9f3c2d0358/ultima/product-ZT-el.jpg?version=1,639,577,700,000",
+      img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/customer-service/product-ZT-el.jpg?version=1,639,577,700,000",
+      id: "product-ZT-el",
       title: "Electric",
       url: "https://www.cubcadet.com/en_US/electric-mowers-and-tools",
     },
     {
-      img: "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw9d00b090/products/Equipment/Cub-Cadet_ProZ_972SD_1.jpg?sw=550&sh=550&sm=fit",
+      img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/customer-service/Cub-Cadet_ProZ_972SD_1.jpg?sw=550&sh=550&sm=fit",
+      id: "Cadet_ProZ_972SD_1",
       title: "Professional",
       url: "https://www.cubcadet.com/en_US/commercial-equipment",
     },
     {
-      img: "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw5cb54c82/products/Equipment/Cub-Cadet_3X_30HD_3.jpg?sw=290&sh=290&sm=fit",
+      img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/customer-service/Cub-Cadet_3X_30HD_3.jpg?sw=290&sh=290&sm=fit",
       title: "Snow",
+      id: "Cadet_3X_30HD_3",
       url: "https://www.cubcadet.com/en_US/how-to/?crefn1=tags&crefv1=Snow%20Blowers",
     },
     {
-      img: "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwa5c0e1bd/products/Equipment/37DZ7CKK710_MX550_H.jpg?sw=290&sh=290&sm=fit",
+      img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/customer-service/37DZ7CKK710_MX550_H.jpg?sw=290&sh=290&sm=fit",
+      id: "MX550",
       title: "UTV",
       url: "https://www.cubcadet.com/en_US/utility-vehicles",
     },
     {
-      img: "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw7b269624/products/Equipment/Cub_Cadet_CS16E_2000x2000_4.jpg?sw=1000&sh=1000&sm=fit",
+      img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/customer-service/Cub_Cadet_CS16E_2000x2000_4.jpg?sw=1000&sh=1000&sm=fit",
+      id: "Cub_Cadet_CS16E_2000x2000_4",
       title: "Chore & Handheld",
       url: "https://www.cubcadet.com/en_US/how-to/?crefn1=tags&crefv1=Yard%20Equipment",
     },
     {
-      img: "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dw63b8d5db/menu-card-images/Cub-Cadet-Riding-Mower-Accessory1_NavCard.png",
+      img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/customer-service/19A30018100.jpg",
+      id: "CC19A30018100",
       title: "Attachments",
       url: "https://www.cubcadet.com/en_US/riding-lawn-mowers/riding-mower-accessories",
     },
@@ -134,12 +143,15 @@ export default function CustomerService({}) {
         </div>
       </section>
 
-      <section className="section-2 mt-3">
+      <section className="mt-3">
         <div className="container">
-          <ul className="grid gap-3 grid-cols-3">
+          <ul className="grid gap-3 lg:grid-cols-3">
             {howToContent.blocks.map((block, i) => {
               return (
-                <li className="" key={i}>
+                <li
+                  className=""
+                  key={i}
+                >
                   <a
                     href={block.href}
                     className="no-underline flex flex-col p-2 h-full bg-neutral-100"
@@ -169,7 +181,7 @@ export default function CustomerService({}) {
 
       <section>
         <div className="container mt-4">
-          <ul className="grid gap-3 grid-cols-2 justify-content-center">
+          <ul className="grid gap-3 lg:grid-cols-2 justify-content-center">
             <li className=" p-6 h-100 bg-neutral-100">
               <form
                 action="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Order-Track"
@@ -230,7 +242,10 @@ export default function CustomerService({}) {
                 >
                   HOW DO I FIND MY SERIAL NUMBER?
                 </button>
-                <div className="mt-3 hidden" id="find-model-number">
+                <div
+                  className="mt-3 hidden"
+                  id="find-model-number"
+                >
                   <img
                     src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw3bde9ca9/Service%20and%20Parts/How%20to%20Find%20Model%20Number/Find_Model_Number_Cub_Cadet.jpg"
                     alt=""
@@ -254,7 +269,7 @@ export default function CustomerService({}) {
         </div>
       </section>
 
-      <section className="section-4 py-5 px-3 bg-neutral-800">
+      <section className="py-5 px-3 bg-neutral-800">
         <div className="container mx-auto text-white">
           <h2 className="text-center">Don't have an account?</h2>
           <div className="text-center lg:px-32">
@@ -281,14 +296,20 @@ export default function CustomerService({}) {
         </div>
       </section>
 
-      <section className="section-5 py-4">
+      <section className="py-4">
         <div className="container px-3 py-6">
           <h2 className="text-center mb-3">Popular Help Links</h2>
-          <ul className="grid gap-3 grid-cols-4">
+          <ul className="grid gap-3 md:grid-cols-2 lg:grid-cols-4">
             {popularHelpLinks.blocks.map(({ href, copy, icon, button }, i) => {
               return (
-                <li className="" key={i}>
-                  <a href={href} className="flex flex-col h-full no-underline">
+                <li
+                  className=""
+                  key={i}
+                >
+                  <a
+                    href={href}
+                    className="flex flex-col h-full no-underline"
+                  >
                     {icon}
                     <div className="text-center mt-auto pt-3">{copy}</div>
                     <button
@@ -305,19 +326,29 @@ export default function CustomerService({}) {
         </div>
       </section>
 
-      <section className="section-6">
+      <section className="">
         <div className="container px-3 py-6">
           <h2 className="text-center">Find Support by Model</h2>
-          <ul className="grid gap-3 grid-cols-4">
-            {findSupport.blocks.map(({ img, title, url }, i) => {
+          <ul className="grid gap-3 md:grid-cols-2 lg:grid-cols-4">
+            {findSupport.blocks.map(({ img, title, url, id }, i) => {
               return (
-                <li className="d-flex flex-col" key={i}>
+                <li
+                  className="d-flex flex-col"
+                  key={i}
+                >
                   <a
                     href={url}
                     className="flex flex-col no-underline items-center p-2 bg-neutral-100"
                   >
                     <h3 className="">{title}</h3>
-                    <img src={img} className="w-full" alt="" />
+                    <div className="bg-white p-1">
+                      <ResponsiveImage
+                        id={id}
+                        src={img}
+                        alt=""
+                        className="w-full"
+                      />
+                    </div>
                   </a>
                 </li>
               );
@@ -330,7 +361,10 @@ export default function CustomerService({}) {
         className="section-7 py-5"
         style={{ background: "rgb(255, 194, 15)" }}
       >
-        <div className="container" style={{ maxWidth: 700 }}>
+        <div
+          className="container"
+          style={{ maxWidth: 700 }}
+        >
           <h2 className="text-center">
             Didn’t Find What You Were Looking For?
           </h2>
