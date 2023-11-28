@@ -1,3 +1,4 @@
+"use client";
 import Faqs from "@/components/Faqs";
 import FinancingCard from "@/components/FinancingCard";
 import PreQualify from "@/components/PreQualify";
@@ -93,11 +94,14 @@ const plansData = [
 
 export default function Financing({}) {
   return (
-    <div id="sdb-container" className="mt-4">
-      <link
+    <div
+      id="sdb-container"
+      className="mt-4"
+    >
+      {/* <link
         href="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/vd006db48162baba2af567f7c8619194f2376165f/Financing/financing-2020.css?version=1,684,337,597,000"
         rel="stylesheet"
-      />
+      /> */}
       <div className="container">
         <div className="container text-center">
           <h1>Shop Online Financing Plans</h1>
@@ -116,22 +120,57 @@ export default function Financing({}) {
           </p>
         </div>
 
-        <div className="overflow-y-auto lg:overflow-y-clip pb-4 mb-6">
-          <ul className="grid gap-4 lg:gap-2 grid-flow-col auto-cols-[320px] lg:auto-cols-auto lg:grid-cols-4 lg:grid-flow-row">
-            {plansData.map((block, i) => {
-              return (
-                <li className="" key={i}>
-                  <FinancingCard block={block} />
-                </li>
-              );
-            })}
-          </ul>
+        <div className="relative">
+          <button className="rounded-full h-14 w-14 absolute top-1/2 -mt-[28px] -ml-6 z-10 xl:block hidden bg-black fill-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -960 960 960"
+              className="w-full h-full"
+            >
+              <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+            </svg>
+          </button>
+
+          <div
+            className="overflow-y-auto pb-4 mb-6 relative z-0"
+            id="plans-container"
+          >
+            <ul className="grid gap-4 lg:gap-2 grid-flow-col auto-cols-[320px] ">
+              {plansData.map((block, i) => {
+                return (
+                  <li
+                    className=""
+                    key={i}
+                  >
+                    <FinancingCard
+                      block={block}
+                      i={i}
+                    />
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+
+          <button className="rounded-full h-14 w-14 absolute right-0 top-1/2 -mt-[28px] -mr-6 z-10 bg-black fill-white xl:block hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -960 960 960"
+              className="w-full h-full"
+            >
+              <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+            </svg>
+          </button>
         </div>
 
         <PreQualify />
 
         <ul className="grid lg:grid-cols-[1fr_minmax(24em,_30em)] mb-6">
-          <li className="">
+          <li
+            className="flex items-center justify-center"
+            //style={{ backgroundColor: "lightgray" }}
+          >
+            {/* FOR FINDER */}
             <style
               type="text/css"
               dangerouslySetInnerHTML={{
@@ -237,7 +276,10 @@ export default function Financing({}) {
             </div>
             <div className="text-xl mb-2">
               We&apos;re happy to help! Call a customer service specialist{" "}
-              <a href="tel:(877) 428-2349" className="text-xl font-bold">
+              <a
+                href="tel:(877) 428-2349"
+                className="text-xl font-bold"
+              >
                 (877) 428-2349
               </a>{" "}
               <span>8am-5pm EST</span>
