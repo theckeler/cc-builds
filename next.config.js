@@ -6,6 +6,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "*.cubcadet.com",
       },
+      {
+        protocol: "https",
+        hostname: "staging-na01-mtd.demandware.net",
+      },
     ],
   },
   webpack(config) {
