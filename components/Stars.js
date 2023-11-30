@@ -6,8 +6,8 @@ export default function Stars({
 }) {
   console.log(starFill);
   return (
-    <div className={`flex items-center list-unstyled mb-0 ${className}`}>
-      <span>{stars.average}</span>
+    <div className={`flex items-center ${className}`}>
+      <span className="mr-1">{stars.average}</span>
       <span className="flex">
         {[...Array(5)].map((x, i) => (
           <svg
@@ -44,7 +44,7 @@ export default function Stars({
           </svg>
         ))}
       </span>
-      <span>({stars.reviews} Google Reviews)</span>
+      <span className="ml-1">({stars.reviews} Google Reviews)</span>
     </div>
   );
 }

@@ -13,7 +13,7 @@ const QuoteBlock = ({
 
   return (
     <div
-      className={`[text-shadow:_0_0_6px_rgba(0_0_0_/_50%)] ${className}`}
+      className={`[text-shadow:_0_0_6px_rgba(255_255_255_/_50%)] ${className}`}
       style={style}
     >
       <span className="text-2xl font-bold">{quote.title}</span>
@@ -24,7 +24,7 @@ const QuoteBlock = ({
 
       <p className="mt-2">{quote.copy}</p>
       <ul className="flex">
-        <li className="font-bold pr-2">{quote.name}</li>
+        <li className="font-bold pr-2 border-r">{quote.name}</li>
         <li
           className="font-weight-normal pl-lg-2"
           dangerouslySetInnerHTML={{
