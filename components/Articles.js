@@ -1,8 +1,6 @@
 export default function Articles({
   articles,
   className,
-  numRows,
-  imgType = null,
   viewAllLink = "https://www.troybilt.com/en_US/knowledge-center/",
 }) {
   return (

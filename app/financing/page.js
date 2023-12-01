@@ -4,8 +4,6 @@ import FinancingCard from "@/components/FinancingCard";
 import PreQualify from "@/components/PreQualify";
 import ResponsiveImage from "@/components/ResponsiveImage";
 
-import faqsData from "./data/faqs.json";
-
 const plansData = [
   {
     term: 6,
@@ -99,10 +97,6 @@ export default function Financing({}) {
       id="sdb-container"
       className="mt-4"
     >
-      {/* <link
-        href="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/vd006db48162baba2af567f7c8619194f2376165f/Financing/financing-2020.css?version=1,684,337,597,000"
-        rel="stylesheet"
-      /> */}
       <div className="container">
         <div className="container text-center">
           <h1>Shop Online Financing Plans</h1>
@@ -167,10 +161,7 @@ export default function Financing({}) {
         <PreQualify />
 
         <ul className="grid lg:grid-cols-[1fr_minmax(24em,_30em)] mb-6">
-          <li
-            className="flex items-center justify-center"
-            //style={{ backgroundColor: "lightgray" }}
-          >
+          <li className="flex items-center justify-center">
             {/* FOR FINDER */}
             <style
               type="text/css"
@@ -250,7 +241,41 @@ export default function Financing({}) {
             FAQs
           </div>
           <Faqs
-            faqs={faqsData}
+            faqs={[
+              {
+                question: "How long does the online application take?",
+                answer:
+                  "The application takes only minutes, and most application decisions are returned within seconds.",
+              },
+              {
+                question:
+                  "Is there an annual fee with the Cub Cadet credit card?",
+                answer:
+                  "There is no annual fee to carry the Cub Cadet credit card.",
+              },
+              {
+                question: "Can I apply for the Cub Cadet credit card by mail?",
+                answer:
+                  "There is no mail-in application. Applications can be completed online or at your local participating dealer.",
+              },
+              {
+                question:
+                  "How do I make payments on my Cub Cadet credit card account?",
+                answer:
+                  '<p>You can make payments on your Cub Cadet credit card account in 3 convenient ways:</p><ol style="list-style-type: number; padding-left:20px"><li>Online with TD\'s Online Account Management system at <a href="https://www.myonlineaccount.net">www.myonlineaccount.net </a></li><li>Via phone at <a href="tel:18883826665" title="Call 888-382-6665">1-888-382-6665</a></li><li>Via mail: Cub Cadet, PO BOX 100114, Columbia SC 29202-3114</li></ol>',
+              },
+              {
+                question:
+                  "How do I contact customer service regarding my Cub Cadet credit card account?",
+                answer:
+                  'The customer service number for your Cub Cadet credit card account is <a href="tel:18667024074" title="Call 866-702-4074">1-866-702-4074</a>.',
+              },
+              {
+                question: "I am a commercial customer. Can I apply online?",
+                answer:
+                  "No, commercial customers can only apply at your local participating dealer.",
+              },
+            ]}
             questions={{
               className: "font-bold text-4xl",
               style: {
