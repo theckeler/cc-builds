@@ -26,7 +26,7 @@ export default function FinancingCard({ block, i }) {
         />
       )}
       <p
-        className="text-lg text-center px-1"
+        className="text-center px-1"
         dangerouslySetInnerHTML={{
           __html: block.minPurchase,
         }}

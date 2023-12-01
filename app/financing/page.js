@@ -35,7 +35,8 @@ const plansData = [
     title: "No interest if paid in full within 18 months <sup>14</sup>",
     text: "Interest will be charged from the purchase date if the purchase balance is not paid in full by the end of the promotional period.",
     fee: "There is a promotional fee of $50 for this transaction.",
-    minPurchase: "Minimum purchase $750",
+    minPurchase:
+      "Minimum purchase $750. Offer valid on 2X and 3X snow blowers.",
     validFrom: "November 1, 2023",
     validTo: "February 29, 2024",
     detailText: "Click for details",
@@ -71,7 +72,7 @@ const plansData = [
     title: "2.99% APR with 48 Monthly Payments<sup>7</sup>",
     //text: "<strong>There is a promotional fee of $125 for this transaction.</strong>",
     fee: "There is a promotional fee of $150 for this transaction.",
-    minPurchase: "Minimum purchase $2,500",
+    minPurchase: "Minimum purchase $1,500",
     validFrom: "November 1, 2023",
     validTo: "January 31, 2024",
     detailText: "Click for details",
@@ -302,7 +303,7 @@ export default function Financing({}) {
                 <p>
                   <strong>
                     Cub Cadet Revolving Plan Disclosures Available
-                    5/1/2023-7/31/2023
+                    11/1/2023-1/31/2024
                     <br />
                     Commercial Cards also available. For offer details about
                     Commercial Cards please contact your Dealer.
@@ -318,222 +319,191 @@ export default function Financing({}) {
                 <span aria-hidden="true" />
               </button>
             </div>
-            <div className="modal-content">
-              <div className="modal-header">
-                <div>
-                  <h4 className="modal-title">&nbsp;</h4>
-                  <p>
-                    <strong>
-                      Cub Cadet Revolving Plan Disclosures Available
-                      11/1/2023-1/31/2024
-                      <br />
-                      Commercial Cards also available. For offer details about
-                      Commercial Cards please contact your Dealer.
-                    </strong>
-                  </p>
-                </div>
-                <button
-                  aria-label="Close"
-                  className="close"
-                  data-dismiss="modal"
-                  type="button"
-                >
-                  <span aria-hidden="true" />
-                </button>
-              </div>
-              <div className="modal-body">
-                <p>
-                  <strong>
-                    <sup>1</sup> No Interest if Paid in Full within 6 Months:
-                  </strong>
-                  Minimum purchase $199. To avoid interest, you must pay the
-                  full promotional balance before the promotional period ends.
-                  If you do not, you will be charged interest from the purchase
-                  date at the standard Purchase APR. After the promotional
-                  period ends, the standard Purchase APR also applies to the
-                  remaining balance and the charged interest.
-                  <strong>
-                    Minimum monthly payments required, but they will not pay off
-                    the balance in time. You must make larger payments to avoid
-                    the interest.
-                  </strong>
-                  Advertised monthly payment, if any, is greater than your
-                  required minimum payment and may exclude taxes, delivery or
-                  other charges. Prior purchases excluded. Account must be in
-                  good standing. Offer valid 11/1/2023-1/31/2024. Other finance
-                  plans may be available. Standard account terms apply to
-                  purchases that do not qualify. New accounts: standard Purchase
-                  APR 29.99%. Minimum interest charge $1. Existing accounts, see
-                  your Cardholder Agreement for applicable terms. Subject to
-                  credit approval. Cub Cadet financing account issued by TD
-                  Bank, N.A.
-                </p>
-                <p>
-                  <strong>
-                    <sup>2</sup> No Interest if Paid in Full within 12 Months:
-                  </strong>
-                  Minimum purchase $500.
-                  <strong>
-                    There is a promotional fee of $50 for this transaction.
-                  </strong>
-                  To avoid interest, you must pay the full promotional balance
-                  before the promotional period ends. If you do not, you will be
-                  charged interest from the purchase date at the standard
-                  Purchase APR. After the promotional period ends, the standard
-                  Purchase APR also applies to the remaining balance and the
-                  charged interest.
-                  <strong>
-                    Minimum monthly payments required, but they will not pay off
-                    the balance in time. You must make larger payments to avoid
-                    the interest.
-                  </strong>
-                  Advertised monthly payment, if any, is greater than your
-                  required minimum payment and may exclude taxes, delivery or
-                  other charges. Prior purchases excluded. Account must be in
-                  good standing. Offer valid 11/1/2023-1/31/2024. Other finance
-                  plans may be available. Standard account terms apply to
-                  purchases that do not qualify. New accounts: standard Purchase
-                  APR 29.99%. Minimum interest charge $1. Existing accounts, see
-                  your Cardholder Agreement for applicable terms. Subject to
-                  credit approval. Cub Cadet financing account issued by TD
-                  Bank, N.A.
-                </p>
-                <p>
-                  <strong>
-                    <sup>14</sup> No Interest if Paid in Full within 18 Months:
-                  </strong>
-                  Offer valid on 2X and 3X snow blowers. Minimum purchase $750.
-                  <strong>
-                    There is a promotional fee of $50 for this transaction.
-                  </strong>
-                  To avoid interest, you must pay the full promotional balance
-                  before the promotional period ends. If you do not, you will be
-                  charged interest from the purchase date at the standard
-                  Purchase APR. After the promotional period ends, the standard
-                  Purchase APR also applies to the remaining balance and the
-                  charged interest.
-                  <strong>
-                    Minimum monthly payments required, but they will not pay off
-                    the balance in time. You must make larger payments to avoid
-                    the interest.
-                  </strong>
-                  Advertised monthly payment, if any, is greater than your
-                  required minimum payment and may exclude taxes, delivery or
-                  other charges. Prior purchases excluded. Account must be in
-                  good standing. Offer valid 11/1/2023-2/29/2024. Other finance
-                  plans may be available. Standard account terms apply to
-                  purchases that do not qualify. New accounts: standard Purchase
-                  APR 29.99%. Minimum interest charge $1. Existing accounts, see
-                  your Cardholder Agreement for applicable terms. Subject to
-                  credit approval. Cub Cadet financing account issued by TD
-                  Bank, N.A.
-                </p>
-                <p>
-                  <strong>
-                    <sup>3</sup> 0% APR for 24 Months with Equal Payments:
-                  </strong>
-                  Minimum purchase $2,000.
-                  <strong>
-                    There is a promotional fee of $150 for this transaction.
-                  </strong>
-                  0% APR from date of eligible purchase until paid in full.
-                  Monthly payment is the purchase amount divided by the number
-                  of months in the offer. Last payment may vary due to rounding.
-                  On-time payments will pay off the promotional balance.
-                  Advertised monthly payment, if any, may exclude taxes,
-                  delivery, or other charges. Other transactions and charges
-                  affect total monthly payment amount. Prior purchases excluded.
-                  Account must be in good standing. Offer valid
-                  11/1/2023-1/31/2024. Standard account terms apply to purchases
-                  that do not qualify. New accounts: standard Purchase APR
-                  29.99%. Minimum interest charge $1. Existing accounts, see
-                  your Cardholder Agreement for applicable terms. Subject to
-                  credit approval. Cub Cadet financing account issued by TD
-                  Bank, N.A.
-                </p>
-                <p>
-                  <strong>
-                    <sup>4</sup> Standard Purchase APR and Payments
-                  </strong>
-                  Standard financing terms apply. Interest will be charged on
-                  the unpaid purchase balance at the APR for standard Purchases.
-                  New accounts: standard Purchase APR 29.99%. Minimum interest
-                  charge $1. Existing accounts, see your Cardholder Agreement
-                  for applicable terms. Subject to credit approval. Cub Cadet
-                  financing account issued by TD Bank, N.A.
-                </p>
-                <p>
-                  <strong>
-                    <sup>5</sup> 0% APR for 36 Months with Equal Payments:
-                  </strong>
-                  Minimum purchase $3,000. Excludes Utility Vehicles.
-                  <strong>
-                    There is a promotional fee of $150 for this transaction.
-                  </strong>
-                  0% APR from date of eligible purchase until paid in full.
-                  Monthly payment is the purchase amount divided by the number
-                  of months in the offer. Last payment may vary due to rounding.
-                  On-time payments will pay off the promotional balance.
-                  Advertised monthly payment, if any, may exclude taxes,
-                  delivery, or other charges. Other transactions and charges
-                  affect total monthly payment amount. Prior purchases excluded.
-                  Account must be in good standing. Offer valid
-                  11/1/2023-1/31/2024. Standard account terms apply to purchases
-                  that do not qualify. New accounts: standard Purchase APR
-                  29.99%. Minimum interest charge $1. Existing accounts, see
-                  your Cardholder Agreement for applicable terms. Subject to
-                  credit approval. Cub Cadet financing account issued by TD
-                  Bank, N.A.
-                </p>
-                <p>
-                  <strong>
-                    <sup>7</sup> 2.99% APR with 48 Monthly Payments:
-                  </strong>
-                  Minimum purchase $1,500.
-                  <strong>
-                    There is a promotional fee of $150 for this transaction.
-                  </strong>
-                  2.99% APR from date of eligible purchase until paid in full.
-                  Monthly payment amount equals the purchase amount and
-                  estimated interest for the length of the offer divided by the
-                  number of months in the offer. Last payment may vary due to
-                  rounding. On-time payments will pay the offer balance in full.
-                  Advertised monthly payment, if any, may exclude taxes,
-                  delivery, or other charges. Other transactions and charges
-                  affect the total monthly payment amount. Prior purchases
-                  excluded. Account must be in good standing. Offer valid
-                  11/1/2023-1/31/2024. Standard account terms apply to purchases
-                  that do not qualify. New accounts: standard Purchase APR
-                  29.99%. Minimum interest charge $1. Existing accounts, see
-                  your Cardholder Agreement for applicable terms. Subject to
-                  credit approval. Cub Cadet financing account issued by TD
-                  Bank, N.A.
-                </p>
-                <p>
-                  <strong>
-                    <sup>8</sup> 3.99% APR with 60 Monthly Payments:
-                  </strong>
-                  Minimum purchase $1,500.
-                  <strong>
-                    There is a promotional fee of $150 for this transaction.
-                  </strong>
-                  3.99% APR from date of eligible purchase until paid in full.
-                  Monthly payment amount equals the purchase amount and
-                  estimated interest for the length of the offer divided by the
-                  number of months in the offer. Last payment may vary due to
-                  rounding. On-time payments will pay the offer balance in full.
-                  Advertised monthly payment, if any, may exclude taxes,
-                  delivery, or other charges. Other transactions and charges
-                  affect the total monthly payment amount. Prior purchases
-                  excluded. Account must be in good standing. Offer valid
-                  11/1/2023-1/31/2024. Standard account terms apply to purchases
-                  that do not qualify. New accounts: standard Purchase APR
-                  29.99%. Minimum interest charge $1. Existing accounts, see
-                  your Cardholder Agreement for applicable terms. Subject to
-                  credit approval. Cub Cadet financing account issued by TD
-                  Bank, N.A.
-                </p>
-              </div>
+            <div className="modal-body">
+              <p>
+                <strong>
+                  <sup>1</sup> No Interest if Paid in Full within 6 Months:
+                </strong>
+                Minimum purchase $199. To avoid interest, you must pay the full
+                promotional balance before the promotional period ends. If you
+                do not, you will be charged interest from the purchase date at
+                the standard Purchase APR. After the promotional period ends,
+                the standard Purchase APR also applies to the remaining balance
+                and the charged interest.
+                <strong>
+                  Minimum monthly payments required, but they will not pay off
+                  the balance in time. You must make larger payments to avoid
+                  the interest.
+                </strong>
+                Advertised monthly payment, if any, is greater than your
+                required minimum payment and may exclude taxes, delivery or
+                other charges. Prior purchases excluded. Account must be in good
+                standing. Offer valid 11/1/2023-1/31/2024. Other finance plans
+                may be available. Standard account terms apply to purchases that
+                do not qualify. New accounts: standard Purchase APR 29.99%.
+                Minimum interest charge $1. Existing accounts, see your
+                Cardholder Agreement for applicable terms. Subject to credit
+                approval. Cub Cadet financing account issued by TD Bank, N.A.
+              </p>
+              <p>
+                <strong>
+                  <sup>2</sup> No Interest if Paid in Full within 12 Months:
+                </strong>
+                Minimum purchase $500.
+                <strong>
+                  There is a promotional fee of $50 for this transaction.
+                </strong>
+                To avoid interest, you must pay the full promotional balance
+                before the promotional period ends. If you do not, you will be
+                charged interest from the purchase date at the standard Purchase
+                APR. After the promotional period ends, the standard Purchase
+                APR also applies to the remaining balance and the charged
+                interest.
+                <strong>
+                  Minimum monthly payments required, but they will not pay off
+                  the balance in time. You must make larger payments to avoid
+                  the interest.
+                </strong>
+                Advertised monthly payment, if any, is greater than your
+                required minimum payment and may exclude taxes, delivery or
+                other charges. Prior purchases excluded. Account must be in good
+                standing. Offer valid 11/1/2023-1/31/2024. Other finance plans
+                may be available. Standard account terms apply to purchases that
+                do not qualify. New accounts: standard Purchase APR 29.99%.
+                Minimum interest charge $1. Existing accounts, see your
+                Cardholder Agreement for applicable terms. Subject to credit
+                approval. Cub Cadet financing account issued by TD Bank, N.A.
+              </p>
+              <p>
+                <strong>
+                  <sup>14</sup> No Interest if Paid in Full within 18 Months:
+                </strong>
+                Offer valid on 2X and 3X snow blowers. Minimum purchase $750.
+                <strong>
+                  There is a promotional fee of $50 for this transaction.
+                </strong>
+                To avoid interest, you must pay the full promotional balance
+                before the promotional period ends. If you do not, you will be
+                charged interest from the purchase date at the standard Purchase
+                APR. After the promotional period ends, the standard Purchase
+                APR also applies to the remaining balance and the charged
+                interest.
+                <strong>
+                  Minimum monthly payments required, but they will not pay off
+                  the balance in time. You must make larger payments to avoid
+                  the interest.
+                </strong>
+                Advertised monthly payment, if any, is greater than your
+                required minimum payment and may exclude taxes, delivery or
+                other charges. Prior purchases excluded. Account must be in good
+                standing. Offer valid 11/1/2023-2/29/2024. Other finance plans
+                may be available. Standard account terms apply to purchases that
+                do not qualify. New accounts: standard Purchase APR 29.99%.
+                Minimum interest charge $1. Existing accounts, see your
+                Cardholder Agreement for applicable terms. Subject to credit
+                approval. Cub Cadet financing account issued by TD Bank, N.A.
+              </p>
+              <p>
+                <strong>
+                  <sup>3</sup> 0% APR for 24 Months with Equal Payments:
+                </strong>
+                Minimum purchase $2,000.
+                <strong>
+                  There is a promotional fee of $150 for this transaction.
+                </strong>
+                0% APR from date of eligible purchase until paid in full.
+                Monthly payment is the purchase amount divided by the number of
+                months in the offer. Last payment may vary due to rounding.
+                On-time payments will pay off the promotional balance.
+                Advertised monthly payment, if any, may exclude taxes, delivery,
+                or other charges. Other transactions and charges affect total
+                monthly payment amount. Prior purchases excluded. Account must
+                be in good standing. Offer valid 11/1/2023-1/31/2024. Standard
+                account terms apply to purchases that do not qualify. New
+                accounts: standard Purchase APR 29.99%. Minimum interest charge
+                $1. Existing accounts, see your Cardholder Agreement for
+                applicable terms. Subject to credit approval. Cub Cadet
+                financing account issued by TD Bank, N.A.
+              </p>
+              <p>
+                <strong>
+                  <sup>4</sup> Standard Purchase APR and Payments
+                </strong>
+                Standard financing terms apply. Interest will be charged on the
+                unpaid purchase balance at the APR for standard Purchases. New
+                accounts: standard Purchase APR 29.99%. Minimum interest charge
+                $1. Existing accounts, see your Cardholder Agreement for
+                applicable terms. Subject to credit approval. Cub Cadet
+                financing account issued by TD Bank, N.A.
+              </p>
+              <p>
+                <strong>
+                  <sup>5</sup> 0% APR for 36 Months with Equal Payments:
+                </strong>
+                Minimum purchase $3,000. Excludes Utility Vehicles.
+                <strong>
+                  There is a promotional fee of $150 for this transaction.
+                </strong>
+                0% APR from date of eligible purchase until paid in full.
+                Monthly payment is the purchase amount divided by the number of
+                months in the offer. Last payment may vary due to rounding.
+                On-time payments will pay off the promotional balance.
+                Advertised monthly payment, if any, may exclude taxes, delivery,
+                or other charges. Other transactions and charges affect total
+                monthly payment amount. Prior purchases excluded. Account must
+                be in good standing. Offer valid 11/1/2023-1/31/2024. Standard
+                account terms apply to purchases that do not qualify. New
+                accounts: standard Purchase APR 29.99%. Minimum interest charge
+                $1. Existing accounts, see your Cardholder Agreement for
+                applicable terms. Subject to credit approval. Cub Cadet
+                financing account issued by TD Bank, N.A.
+              </p>
+              <p>
+                <strong>
+                  <sup>7</sup> 2.99% APR with 48 Monthly Payments:
+                </strong>
+                Minimum purchase $1,500.
+                <strong>
+                  There is a promotional fee of $150 for this transaction.
+                </strong>
+                2.99% APR from date of eligible purchase until paid in full.
+                Monthly payment amount equals the purchase amount and estimated
+                interest for the length of the offer divided by the number of
+                months in the offer. Last payment may vary due to rounding.
+                On-time payments will pay the offer balance in full. Advertised
+                monthly payment, if any, may exclude taxes, delivery, or other
+                charges. Other transactions and charges affect the total monthly
+                payment amount. Prior purchases excluded. Account must be in
+                good standing. Offer valid 11/1/2023-1/31/2024. Standard account
+                terms apply to purchases that do not qualify. New accounts:
+                standard Purchase APR 29.99%. Minimum interest charge $1.
+                Existing accounts, see your Cardholder Agreement for applicable
+                terms. Subject to credit approval. Cub Cadet financing account
+                issued by TD Bank, N.A.
+              </p>
+              <p>
+                <strong>
+                  <sup>8</sup> 3.99% APR with 60 Monthly Payments:
+                </strong>
+                Minimum purchase $1,500.
+                <strong>
+                  There is a promotional fee of $150 for this transaction.
+                </strong>
+                3.99% APR from date of eligible purchase until paid in full.
+                Monthly payment amount equals the purchase amount and estimated
+                interest for the length of the offer divided by the number of
+                months in the offer. Last payment may vary due to rounding.
+                On-time payments will pay the offer balance in full. Advertised
+                monthly payment, if any, may exclude taxes, delivery, or other
+                charges. Other transactions and charges affect the total monthly
+                payment amount. Prior purchases excluded. Account must be in
+                good standing. Offer valid 11/1/2023-1/31/2024. Standard account
+                terms apply to purchases that do not qualify. New accounts:
+                standard Purchase APR 29.99%. Minimum interest charge $1.
+                Existing accounts, see your Cardholder Agreement for applicable
+                terms. Subject to credit approval. Cub Cadet financing account
+                issued by TD Bank, N.A.
+              </p>
             </div>
           </div>
         </div>

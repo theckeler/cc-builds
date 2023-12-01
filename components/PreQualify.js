@@ -62,7 +62,7 @@ const PreQualify = () => {
                 See If You Pre-Qualify
               </a>
 
-              <p className="mt-1">
+              {/* <p className="mt-1">
                 <a
                   className="btn-text click"
                   data-target="#financing-modal"
@@ -72,7 +72,7 @@ const PreQualify = () => {
                 >
                   Click for details
                 </a>
-              </p>
+              </p> */}
             </div>
           </div>
         </li>
