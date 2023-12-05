@@ -163,13 +163,6 @@ export default function Financing({}) {
         <ul className="grid lg:grid-cols-[1fr_minmax(24em,_30em)] mb-6">
           <li className="flex items-center justify-center">
             {/* FOR FINDER */}
-            <style
-              type="text/css"
-              dangerouslySetInnerHTML={{
-                __html:
-                  ".content-page-image h1.page-title {\n\t\t\t\t\t\tcolor: #ffffff;\n\t\t\t\t\t}\n",
-              }}
-            />
             <div id="product-finder-financing">
               <script
                 type="text/javascript"
@@ -199,17 +192,17 @@ export default function Financing({}) {
             </div>
           </li>
           <li className="">
-            <div className="bg-secondary">
-              <div className="relative">
+            <div className="bg-secondary grid grid-rows-[1fr_16em] h-full">
+              <div className="relative min-h-[200px]">
                 <ResponsiveImage
                   alt=""
                   id="become_a_dealer_desktop"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover absolute "
                   src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/financing/become_a_dealer_desktop_1015x765.jpg"
                   title=""
                 />
               </div>
-              <div className="p-3">
+              <div className="p-3 flex flex-col justify-center">
                 <h3>Finance In-Store</h3>
                 <p>
                   We have multiple financing offers to fit your needs. Financing

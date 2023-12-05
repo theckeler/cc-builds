@@ -38,36 +38,52 @@ const howToContent = {
 const popularHelpLinks = {
   blocks: [
     {
-      icon: <IconMagGlassBolt className="w-full max-h-[100px] h-full" />,
+      icon: <IconMagGlassBolt className="w-full h-[100px]" />,
       copy: "Search parts for your machine or view diagrams",
-      href: "https://www.cubcadet.com/en_US/service-and-parts",
-      button: {
-        copy: "Find parts",
-      },
+      button: [
+        {
+          href: "https://www.cubcadet.com/en_US/service-and-parts",
+          copy: "Find parts",
+        },
+      ],
     },
     {
-      icon: <IconManuals className="w-full max-h-[100px] h-full" />,
+      icon: <IconManuals className="w-full h-[100px]" />,
       copy: "Use your model number to download your Operator’s Manual",
-      href: "https://www.cubcadet.com/en_US/operatorsmanuals",
-      button: {
-        copy: "Find manuals",
-      },
+      button: [
+        {
+          href: "https://www.cubcadet.com/en_US/operatorsmanuals",
+          copy: "Find manuals",
+        },
+      ],
     },
     {
-      icon: <IconScrewdriverWrench className="w-full max-h-[100px] h-full" />,
+      icon: <IconScrewdriverWrench className="w-full h-[100px]" />,
       copy: "Find a licensed mechanic at a service center near you ",
-      href: "https://www.cubcadet.com/en_US/servicelocator",
-      button: {
-        copy: "Find service",
-      },
+      button: [
+        {
+          href: "https://www.cubcadet.com/en_US/servicelocator",
+          copy: "Find service",
+        },
+      ],
     },
     {
-      icon: <IconAwards className="w-full max-h-[100px] h-full" />,
+      icon: <IconAwards className="w-full h-[100px]" />,
       copy: "Find warranty information and extended plans",
-      href: "https://www.cubcadet.com/en_US/warranty-faqs.html",
-      button: {
-        copy: "Warranty FAQs",
-      },
+      button: [
+        {
+          href: "https://www.cubcadet.com/en_US/warranty-faqs.html",
+          copy: "Warranty FAQs",
+        },
+        {
+          href: "https://www.cubcadet.com/en_US/ew-info-page.html",
+          copy: "Extended Warranty",
+        },
+      ],
+      // href: "https://www.cubcadet.com/en_US/warranty-faqs.html",
+      // button: {
+      //   copy: "Warranty FAQs",
+      // },
     },
   ],
 };
@@ -303,22 +319,25 @@ export default function CustomerService({}) {
             {popularHelpLinks.blocks.map(({ href, copy, icon, button }, i) => {
               return (
                 <li
-                  className=""
+                  className="h-full flex flex-col"
                   key={i}
                 >
-                  <a
-                    href={href}
-                    className="flex flex-col h-full no-underline"
-                  >
-                    {icon}
-                    <div className="text-center mt-auto pt-3">{copy}</div>
-                    <button
-                      className="font-bold bg-black text-white mt-2"
-                      style={{ padding: "0.625rem 2.5rem" }}
-                    >
-                      {button.copy}
-                    </button>
-                  </a>
+                  {icon}
+                  <div className="text-center mt-auto pt-3">{copy}</div>
+
+                  <div className="mt-auto pt-2">
+                    {button.map(({ copy, href }, i) => {
+                      return (
+                        <a
+                          href={href}
+                          key={i}
+                          className="btn w-full font-bold bg-black text-white mt-2"
+                        >
+                          {copy}
+                        </a>
+                      );
+                    })}
+                  </div>
                 </li>
               );
             })}

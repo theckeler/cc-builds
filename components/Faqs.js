@@ -69,7 +69,10 @@ export default function Faqs({
             className="text-left"
           />
           <li className="ml-auto">
-            <div className="rotate-45" style={{ transform: "rotate(45deg)" }}>
+            <div
+              className="rotate-45"
+              style={{ transform: "rotate(45deg)" }}
+            >
               ✖
             </div>
           </li>
@@ -78,7 +81,10 @@ export default function Faqs({
     );
 
   return (
-    <div className={className} id={id}>
+    <div
+      className={className}
+      id={id}
+    >
       {faqs.map((block, i) => {
         return (
           <Fragment key={i}>
