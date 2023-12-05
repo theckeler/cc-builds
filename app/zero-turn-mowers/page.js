@@ -3,12 +3,11 @@ import { useEffect } from "react";
 
 import Articles from "@/components/Articles";
 import AttchmentsAccessories from "@/components/AttchmentsAccessories";
+import Explore from "@/components/Explore";
 import Faqs from "@/components/Faqs";
 import QuoteBlock from "@/components/QuoteBlock";
 import RelatedLinks from "@/components/RelatedLinks";
 import ResponsiveImage from "@/components/ResponsiveImage";
-import IntellipowerLogo from "../../components/images/IntellipowerLogo";
-import IconTextBlock from "./elements/IconTextBlock";
 
 export default function ZeroTurnMowers({}) {
   const imgType = "res";
@@ -18,139 +17,34 @@ export default function ZeroTurnMowers({}) {
       elem.remove();
     });
     const html = `
-  <script type="text/javascript" id="finder-script">
-    (function(c,a,r,t,f,u,l)
-              {
-                ((c[u] =
-                  c[u] ||
-                  function () {
-                    (c[u].q = c[u].q || []).push(arguments);
-                  }),
-                (l = a.createElement(r)),
-                (l.async = 1),
-                (l.id = u + "scr"),
-                (l.src = f),
-                a[t].appendChild(l))
-              }
-              )(window,document,"script","body","https://embed.cartfulsolutions.com/cub-cadet-finder/recommendation.min.js","cfl643");
-  </script>`;
+    <script>
+    (function (c, a, r, t, f, u, l) {
+      (c[u] =
+        c[u] ||
+        function () {
+          (c[u].q = c[u].q || []).push(arguments);
+        }),
+        (l = a.createElement(r)),
+        (l.async = 1),
+        (l.id = u + "scr"),
+        (l.src = f),
+        a[t].appendChild(l);
+    })(
+      window,
+      document,
+      "script",
+      "body",
+      "//embed.cartfulsolutions.com/zero-turn-finder/recommendation.min.js",
+      "cfl659"
+    );
+  </script>
+  `;
     const scriptEl = document.createRange().createContextualFragment(html);
     document.body.appendChild(scriptEl);
   });
 
   const addPromo = false;
   const addCubDays2023 = false;
-
-  const lineup = {
-    title: "The X Series Lineup",
-    blocks: [
-      {
-        url: "https://www.cubcadet.com/en_US/snow-blowers/single-stage-snow-blowers",
-        img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Cub-Cadet-1X_21LHP_1.jpg",
-        title: "1X Single-Stage Snow Blowers",
-        copy: "Engineered to use a high-performance auger to quickly and easily remove up to 6 inches of snow from small, smooth areas.",
-        engFor: [
-          {
-            title: "Snowfall",
-            img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-snowfall-up-6.svg",
-            copy: 'Up to 6"',
-          },
-          {
-            title: "Driveway",
-            img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-driveway-up-8.svg",
-            copy: "Up to 8 cars",
-          },
-          {
-            title: "Surfaces",
-            img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-surfaces-smooth.svg",
-            copy: "Smooth",
-          },
-        ],
-        button: {
-          copy: "Explore 1X snow blowers",
-        },
-      },
-      {
-        url: "https://www.cubcadet.com/en_US/snow-blowers/two-stage-snow-blowers",
-        img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Cub-Cadet_2X_30EFI_14.jpg",
-        title: "2X Two-Stage Snow Blowers",
-        copy: "Engineered for clearing between 12-18 inches in powder and slush. If you measure snow in feet instead of inches, step up to the commercial-grade features on the 2X MAX.",
-        engFor: [
-          {
-            title: "Snowfall",
-            img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-snowfall-up-18.svg",
-            copy: 'Up to 18" <br><small>(18–23" for EFI and MAX<sup>™</sup> units)</small>',
-          },
-          {
-            title: "Driveway",
-            img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-driveway-up-15.svg",
-            copy: "Up to 15 cars",
-          },
-          {
-            title: "Surfaces",
-            img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-surfaces-smooth-gravel.svg",
-            copy: "Smooth & gravel",
-          },
-        ],
-        button: {
-          copy: "Explore 2X snow blowers",
-        },
-      },
-      {
-        url: "https://www.cubcadet.com/en_US/snow-blowers/three-stage-snow-blowers",
-        img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Cub-Cadet_3X_30HD_3.jpg",
-        title: "3X Three-Stage Snow Blowers",
-        copy: "Engineered to clear deep snowfall faster than 2X models with its patented three-stage system. Designed to easily remove up to 23 inches of snowfall and bust through tough snow barriers.",
-        engFor: [
-          {
-            title: "Snowfall",
-            img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-snowfall-up-23.svg",
-            copy: 'Up to 23"',
-          },
-          {
-            title: "Driveway",
-            img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-driveway-up-15-plus.svg",
-            copy: "Up to 15+ cars",
-          },
-          {
-            title: "Surfaces",
-            img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-surfaces-smooth-gravel.svg",
-            copy: "Smooth & gravel",
-          },
-        ],
-        button: {
-          copy: "Explore 3X snow blowers",
-        },
-      },
-    ],
-  };
-
-  const machineExtreme = {
-    h2: "A Machine for the Extreme",
-    copy: "All Cub Cadet X Series models come with premium features to get your winter done right.",
-    blocks: [
-      {
-        icon: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-chute-control.svg",
-        title: "Easy chute control",
-        copy: "Throw snow in any direction with easy pitch and chute control from the operator’s station.",
-      },
-      {
-        icon: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-light.svg",
-        title: "Improved Visibility",
-        copy: "Designed to help you see at dawn or dusk with headlights that shine bright and far.",
-      },
-      {
-        icon: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-push-button.svg",
-        title: "Push-button electric start",
-        copy: "Eliminate pull starts and start blowing snow quickly with push-button electric start.",
-      },
-      {
-        icon: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/icon-speed.svg",
-        title: "Move at your speed",
-        copy: "A high-performance auger-propelled drive system designed to work at your pace.",
-      },
-    ],
-  };
 
   return (
     <>
@@ -247,9 +141,162 @@ export default function ZeroTurnMowers({}) {
           </div>
         </section>
 
-        <section className="snow-picker">
-          <div id="product-finder-snow-blowers" />
-        </section>
+        <Explore
+          showH2={true}
+          explore={{
+            h2: "Explore Zero-Turn Mowers",
+            blocks: [
+              {
+                img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/product-ZT.jpg",
+                title: "Ultima ZT",
+                copy: `The award-winning Ultima Series™ features enhanced strength and durability, redefined comfort and uncompromised performance.`,
+                button: {
+                  url: "https://www.cubcadet.com/en_US/ultima-zt-zero-turn-mowers",
+                  copy: "Shop for Ultima ZT",
+                  className: "text-white border-0",
+                  style: { backgroundColor: "#000" },
+                },
+                engFor: [
+                  {
+                    icon: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/icon-area-5.webp",
+                    copy: "Up to 5 acres",
+                  },
+                  {
+                    icon: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/icon-speed.png",
+                    copy: "Up to 7.5 mph​",
+                  },
+                  {
+                    icon: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/icon-slope-15.webp",
+                    copy: "Up to 15 degree slopes​",
+                  },
+                ],
+              },
+              {
+                img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/product-ZT.jpg",
+                title: "Ultima Electric ZT",
+                copy: `The Ultima Series(TM) ZT1 42E is equipped with the latest lithium-ion battery technology for a quiet operation, run time up to 1.5 hours of run time and limited power fade.`,
+                button: {
+                  url: "https://www.cubcadet.com/en_US/electric-lawn-mowers/zt1-42e/34CBA2CS710.html",
+                  copy: "Shop for Ultima Electric ZT",
+                  className: "text-white border-0",
+                  style: { backgroundColor: "#000" },
+                },
+                engFor: [
+                  {
+                    icon: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/icon-battery.webp",
+                    copy: "Electric",
+                  },
+                  {
+                    icon: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/icon-area-2.webp",
+                    copy: "Up to 2 acres on a single charge​",
+                  },
+                  {
+                    icon: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/icon-speed.png",
+                    copy: "Up to 7.0 mph​​​",
+                  },
+                  {
+                    icon: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/icon-slope-15.webp",
+                    copy: "Up to 15 degree slopes​​​",
+                  },
+                ],
+              },
+              {
+                img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/product-ZTS.jpg",
+                title: "Ultima ZTS",
+                copy: `Equipped with Cub Cadet® Synchro-Steer™ Technology, the Ultima ZTS line delivers precision, control and stability on hills up to 20 degrees.`,
+                button: {
+                  url: "https://www.cubcadet.com/en_US/ultima-zts-zero-turn-mowers",
+                  copy: "Shop for Ultima ZTS",
+                  className: "text-white border-0",
+                  style: { backgroundColor: "#000" },
+                },
+                engFor: [
+                  {
+                    icon: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/icon-steer.webp",
+                    copy: "Synchro Steer® Technology",
+                  },
+                  {
+                    icon: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/icon-area-5.webp",
+                    copy: "Up to 5 acres​",
+                  },
+                  {
+                    icon: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/icon-speed.png",
+                    copy: "Up to 7.5 mph​​​​",
+                  },
+                  {
+                    icon: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/icon-slope-15.webp",
+                    copy: "Up to 20 degree slopes​​​​",
+                  },
+                ],
+              },
+              {
+                img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/product-ZTX.jpg",
+                title: "Ultima ZTX",
+                copy: `The Ultima Series™ ZTX is engineered with commercial-grade features that allow you to tackle tough challenges on your large property.`,
+                button: {
+                  url: "https://www.cubcadet.com/en_US/ultima-ztx-zero-turn-mowers",
+                  copy: "Shop for Ultima ZTS",
+                  className: "text-white border-0",
+                  style: { backgroundColor: "#000" },
+                },
+                engFor: [
+                  {
+                    icon: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/icon-strength.webp",
+                    copy: "Commercial grade features​",
+                  },
+                  {
+                    icon: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/icon-area-12.webp",
+                    copy: "Up to 12 acres​",
+                  },
+                  {
+                    icon: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/icon-speed.png",
+                    copy: "Up to 9 mph​​​​​​​",
+                  },
+                  {
+                    icon: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/icon-slope-15.webp",
+                    copy: "Up to 15 degree slopes​​",
+                  },
+                ],
+              },
+              {
+                img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/product-ZTS.jpg",
+                title: "Ultima ZTXS",
+                copy: `The Ultima Series™ ZTXS is engineered with commercial-grade features that allow you to tackle tough challenges on your large property.`,
+                button: {
+                  url: "https://www.cubcadet.com/en_US/ultima-ztxs-zero-turn-mowers",
+                  copy: "Shop for Ultima ZTXS",
+                  className: "text-white border-0",
+                  style: { backgroundColor: "#000" },
+                },
+                engFor: [
+                  {
+                    icon: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/icon-steer.webp",
+                    copy: "Synchro Steer® Technology​​",
+                  },
+                  {
+                    icon: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/icon-area-12.webp",
+                    copy: "Up to 12 acres​",
+                  },
+                  {
+                    icon: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/icon-strength.webp",
+                    copy: "Commercial grade features​​​​​​​​",
+                  },
+                  {
+                    icon: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/icon-slope-15.webp",
+                    copy: "Up to 20 degree slopes​​",
+                  },
+                ],
+              },
+            ],
+            button: {
+              url: "https://www.cubcadet.com/en_US/ultima-series-features-benefits.html",
+              copy: "Learn more about the Ultima series",
+              className: "",
+              style: { backgroundColor: "#000" },
+            },
+          }}
+          addButton={true}
+        />
 
         <section className="relative mb-6 flex flex-col-reverse">
           <div className="container relative z-10 pt-2 lg:pt-14 lg:pb-64">
@@ -257,17 +304,17 @@ export default function ZeroTurnMowers({}) {
               quote={{
                 stars: 5,
                 img: "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/vde16d024a27b8e0c81e1c6e963f0a6bf041c9496/snow-v2/31AH5EVZ596_3X30HD_Env03.jpg",
-                title: "THIS THING WAS A BEAST.",
-                copy: "“We just had our first blizzard of the season. No problem clearing our property, and helped a couple neighbors too. Over a foot of wet heavy snow and it did not intimidate this Cub.”",
-                name: "Ryan from Sioux City, IA",
-                unit: "3X<sup>®</sup> 30” HD",
+                title: "LOOK NO MORE FOR A GREAT MOWER.",
+                copy: "“This Cub Cadet mower is a beast. I absolutely love it and all of its features. Honestly, I haven’t found one negative thing to say about it since I’ve bene using it. Needless to say, I love this mower!”",
+                name: "Twwagoner from Lexington, NC",
+                unit: "Ultima ZT1",
               }}
               className="bg-white lg:p-4 lg:max-w-[40rem]"
             />
           </div>
 
           <ResponsiveImage
-            src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/31AH5EVZ596_3X30HD_Env03.jpg"
+            src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/quote-desktop.jpg"
             alt=""
             id="snowguy"
             className="lg:absolute top-0 left-0 z-0 w-full h-full object-cover"
@@ -275,411 +322,12 @@ export default function ZeroTurnMowers({}) {
           />
         </section>
 
-        <section className="mb-6">
-          <div className="container">
-            <ul className="grid lg:grid-cols-2 gap-4 ">
-              <li className="relative">
-                <div
-                  className="bg-black text-white h-full p-1"
-                  style={{
-                    clipPath:
-                      "polygon(1.5rem 0, 100% 0%, 100% 100%, 0 100%, 0 1.5rem)",
-                  }}
-                >
-                  <div
-                    className="logo intellipower p-4 position-relative"
-                    style={{ zIndex: 1 }}
-                  >
-                    <IntellipowerLogo style={{ fill: "#fff" }} />
-                  </div>
-                  <ul
-                    className="d-flex list-unstyled p-2 position-relative"
-                    style={{ zIndex: 1 }}
-                  >
-                    <li className="plus">+</li>
-                    <li className="content">
-                      <p className="copy title">
-                        Discover power that rises to the occasion.
-                      </p>
-                      <p className="copy">
-                        IntelliPower<sup>®</sup> technology provides
-                        <strong>up to 13% more available power</strong> for the
-                        272cc engine, resulting in less bogging down when
-                        clearing heavy, wet and deep snow.<sup>*</sup>
-                      </p>
-                      <small>
-                        <sup>*</sup>When compared to the same engine without
-                        IntelliPower<sup>®</sup> technology. Improvements vary
-                        depending on engine models and specific operating
-                        conditions.
-                      </small>
-                    </li>
-                  </ul>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                    x="0px"
-                    y="0px"
-                    viewBox="0 0 1600 559.3"
-                    xmlSpace="preserve"
-                    className="absolute top-0 left-0 w-full h-full fill-white z-0 opacity-60"
-                  >
-                    <line
-                      x1={0}
-                      y1={-467}
-                      x2={1600}
-                      y2={-467}
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0-423.1c5.2,0,314.8,8.4,320,8.4s314.9-8.4,320-8.4 s314.8,8.4,320,8.4s314.8-8.4,320-8.4s314.8,8.4,320,8.4"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0-379.4c10.3,0,309.7,16.7,320,16.7s309.7-16.7,320-16.7 s309.7,16.8,320,16.8s309.7-16.7,320-16.7s309.7,16.7,320,16.7"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0-335.5c15.5,0,304.5,25.1,320,25.1s304.5-25.1,320-25.1 s304.5,25.1,320,25.1s304.5-25.1,320-25.1s304.5,25.1,320,25.1"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0-291.6c20.6,0,299.3,33.5,320,33.5s299.4-33.5,320-33.5 s299.3,33.5,320,33.5s299.4-33.5,320-33.5s299.4,33.5,320,33.5"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0-247.8c25.8,0,294.2,41.9,320,41.9s294.2-41.9,320-41.9 s294.2,41.9,320,41.9s294.2-41.9,320-41.9s294.2,41.9,320,41.9"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0-203.9c31,0,289,50.2,320,50.2s289.1-50.2,320-50.2 s289,50.2,320,50.2s289-50.2,320-50.2s289,50.2,320,50.2"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0-160.1c36.1,0,283.8,58.6,320,58.6s283.9-58.6,320-58.6 s283.9,58.6,320,58.6s283.9-58.6,320-58.6s283.9,58.6,320,58.6"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0-116.2c41.3,0,278.7,67,320,67s278.7-67,320-67s278.7,67,320,67 s278.7-67,320-67s278.7,67,320,67"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0-72.3C46.5-72.3,273.5,3,320,3s273.6-75.3,320-75.3 S913.5,3,960,3s273.6-75.3,320-75.3S1553.6,3,1600,3"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0-28.5c51.6,0,268.4,83.7,320,83.7s268.4-83.7,320-83.7 s268.4,83.7,320,83.7s268.4-83.7,320-83.7s268.4,83.7,320,83.7"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0,15.4c56.8,0,263.2,92.1,320,92.1s263.2-92.1,320-92.1 s263.2,92.1,320,92.1s263.2-92.1,320-92.1s263.2,92.1,320,92.1"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0,59.2c61.9,0,258,100.5,320,100.5S578.1,59.1,640,59.1 s258,100.5,320,100.5s258.1-100.5,320-100.5s258.1,100.5,320,100.5"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0,103.1c67.1,0,252.9,108.8,320,108.8s252.9-108.8,320-108.8 s252.9,108.8,320,108.8s252.9-108.8,320-108.8s252.9,108.8,320,108.8"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0,146.9c72.3,0,247.7,117.2,320,117.2s247.8-117.2,320-117.2 S887.7,264,960,264s247.7-117.2,320-117.2S1527.7,264,1600,264"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0,190.8c77.4,0,242.6,125.6,320,125.6s242.6-125.6,320-125.6 s242.6,125.6,320,125.6s242.6-125.6,320-125.6s242.6,125.6,320,125.6"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0,234.6c82.6,0,237.4,133.9,320,133.9s237.4-133.9,320-133.9 s237.4,133.9,320,133.9s237.4-133.9,320-133.9s237.4,133.9,320,133.9"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0,278.5c87.7,0,232.2,142.3,320,142.3s232.3-142.3,320-142.3 s232.2,142.3,320,142.3s232.3-142.3,320-142.3s232.3,142.3,320,142.3"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0,322.2c92.9,0,227.1,150.7,320,150.7s227.1-150.7,320-150.7 S867.1,473,960,473s227.1-150.7,320-150.7S1507.1,473,1600,473"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0,366.1c98.1,0,221.9,159,320,159s221.9-159,320-159 s221.9,159.1,320,159.1s221.9-159,320-159s221.9,159,320,159"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0,410c103.2,0,216.8,167.4,320,167.4s216.8-167.4,320-167.4 s216.8,167.5,320,167.5S1176.8,410,1280,410s216.8,167.4,320,167.4"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0,453.9c108.4,0,211.6,175.8,320,175.8s211.6-175.8,320-175.8 s211.6,175.8,320,175.8s211.6-175.8,320-175.8s211.6,175.8,320,175.8"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0,497.6c113.5,0,206.4,184.2,320,184.2s206.5-184.2,320-184.2 s206.4,184.2,320,184.2s206.5-184.2,320-184.2s206.5,184.2,320,184.2"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0,541.5c118.7,0,201.3,192.5,320,192.5s201.3-192.5,320-192.5 S841.3,734,960,734s201.3-192.5,320-192.5S1481.3,734,1600,734"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0,585.3c123.9,0,196.1,200.9,320,200.9s196.1-200.9,320-200.9 s196.1,200.9,320,200.9s196.1-200.9,320-200.9s196.1,200.9,320,200.9"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0,629.2c129,0,191,209.3,320,209.3s191-209.3,320-209.3 s191,209.3,320,209.3s191-209.3,320-209.3s191,209.3,320,209.3"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0,673c134.2,0,185.8,217.6,320,217.6s185.8-217.6,320-217.6 s185.8,217.6,320,217.6s185.8-217.6,320-217.6s185.8,217.6,320,217.6"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0,717c139.4,0,180.6,226,320,226s180.6-226,320-226 s180.6,226,320,226s180.6-226,320-226s180.6,226,320,226"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0,760.8c144.5,0,175.5,234.4,320,234.4s175.5-234.4,320-234.4 s175.5,234.4,320,234.4s175.5-234.4,320-234.4s175.5,234.4,320,234.4"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0,804.7c149.7,0,170.3,242.8,320,242.8s170.3-242.8,320-242.8 s170.3,242.8,320,242.8s170.3-242.8,320-242.8s170.3,242.8,320,242.8"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0,848.5c154.8,0,165.2,251.1,320,251.1s165.2-251.1,320-251.1 s165.2,251.1,320,251.1s165.2-251.1,320-251.1s165.2,251.1,320,251.1"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                    <path
-                      d="M0,892.3c160,0,160,259.5,320,259.5s160-259.5,320-259.5 s160,259.5,320,259.5s160-259.5,320-259.5s160,259.5,320,259.5"
-                      style={{
-                        fill: "none",
-                        stroke: "rgb(255, 255, 255)",
-                        strokeMiterlimit: 10,
-                      }}
-                    />
-                  </svg>
-                </div>
-              </li>
-              <li className="">
-                <div
-                  className="bg-black text-white h-full"
-                  style={{
-                    clipPath:
-                      "polygon(1.5rem 0, 100% 0%, 100% 100%, 0 100%, 0 1.5rem)",
-                  }}
-                >
-                  <div className="logo efi p-6 w-75 mx-auto">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 393 152.1"
-                      xmlSpace="preserve"
-                    >
-                      <path
-                        d="M154.3 90H58.9l6.9-19h88.4l8.9-24.6H74.8l6.9-19H175L185 0H55.4L12.2 118.5H144L154.3 90zM310.3 50.6H227l8-22.1h87.4L332.8 0H209.1L166 118.5h36.3L217 78.1h83.3l10-27.5zM393 0h-36.3l-43.1 118.5h36.3L393 0zM13.4 147.5l.8-2.3H5.9l.7-1.8h8.8l.9-2.6H4.1L0 152h12.4l1-2.7h-9l.7-1.8h8.3zM22 140.8h-3.4L14.5 152h11.1l1-2.9H19l3-8.3zM40.5 147.5l.8-2.3H33l.7-1.8h8.8l.9-2.6H31.2L27.1 152h12.4l1-2.7h-9l.7-1.8h8.3zM54.5 140.7h-4c-3.1 0-5.2.8-6.4 4.1l-1.2 3.3c-1.2 3.3.4 4.1 3.5 4.1h5.5c3.4 0 4.7-1.5 5.4-3.4l.4-1.1h-3.4c-.5 1.4-1 1.5-2.6 1.5H48c-1.6 0-1.7-.6-1.1-2.2l.4-1.2c.5-1.4 1.2-2.2 3-2.2H54c1 0 1.5.2 1.2 1l-.1.3h3.4c1.1-3.1.9-4.2-4-4.2zM74.4 140.8H61.3l-1 2.8h4.8L62 152h3.4l3.1-8.4h4.8l1.1-2.8zM86.3 140.8H75.9L71.8 152h3.4l1.1-2.9h5.4c1.1 0 1.3.4.8 1.6L82 152h3.4l.7-1.9c.7-1.8 0-2.3-1-2.5 1.4-.2 2.6-1.3 2.9-2.8l.3-.7c.8-2 .6-3.3-2-3.3zm-1.5 4-.1.4c-.2.8-.9 1.3-1.7 1.2h-5.7l1-2.7h5.4c1.1-.1 1.5.1 1.1 1.1zM102.2 140.7h-5.5c-3.1 0-5.2.8-6.4 4.1l-1.2 3.3c-1.2 3.3.4 4.1 3.5 4.1H98c3.1 0 5.2-.8 6.4-4.1l1.2-3.3c1.2-3.3-.3-4.1-3.4-4.1zm-.5 5.1-.4 1.2c-.6 1.6-1.2 2.2-2.8 2.2h-4.4c-1.6 0-1.7-.6-1.1-2.2l.4-1.2c.5-1.4 1.2-2.2 3-2.2h4c1.8 0 1.8.8 1.3 2.2zM120.9 140.8l-3 8.1-3.5-8.1h-5.3L105 152h3.4l3-8.1 3.5 8.1h5.3l4.1-11.2h-3.4zM126.9 140.8l-4.1 11.2h3.4l4.1-11.2h-3.4zM141.6 140.7h-4c-3.1 0-5.2.8-6.4 4.1l-1.2 3.3c-1.2 3.3.4 4.1 3.5 4.1h5.5c3.4 0 4.7-1.5 5.4-3.4l.4-1.1h-3.4c-.5 1.4-1 1.5-2.6 1.5H135c-1.6 0-1.7-.6-1.1-2.2l.4-1.2c.5-1.4 1.2-2.2 3-2.2h3.7c1 0 1.5.2 1.2 1l-.1.3h3.4c1.2-3.1.9-4.2-3.9-4.2zM167.6 143.5l1-2.7h-11.7l-4.1 11.2h3.4l1.4-3.8h7.9l.9-2.6h-7.9l.8-2.1h8.3zM181.3 140.8l-2.4 6.5c-.2 1.2-1.4 2.1-2.6 2h-3.4c-1.4 0-1.7-.6-1.2-2l2.4-6.5h-3.4L168 148c-1 2.8-.1 4.1 3.1 4.1h4.9c3.2 0 5.1-1.3 6.1-4.1l2.6-7.2h-3.4zM196.4 147.5l.8-2.3h-8.3l.7-1.8h8.8l.9-2.6H187l-4 11.2h12.4l1-2.7h-9l.7-1.8h8.3zM205 140.8h-3.4l-4.1 11.2h11.1l1-2.9H202l3-8.3zM222 140.8l-4.1 11.2h3.4l4.1-11.2H222zM239.7 140.8l-3 8.1-3.5-8.1h-5.3l-4.1 11.2h3.4l3-8.1 3.5 8.1h5.3l4.1-11.2h-3.4zM252.7 140.8l-2.7 7.4c-.4 1-1.1 1.2-2.2 1.2h-1.4c-1.1 0-1.4-.3-1.1-1.2l.4-1h-3.3l-.5 1.3c-1 2.6-.1 3.6 3.1 3.6h2.2c3.1 0 5-.6 6.1-3.7l2.8-7.6h-3.4zM267.8 147.5l.8-2.3h-8.3l.7-1.8h8.8l.9-2.6h-12.2l-4.1 11.2h12.4l1-2.7h-9l.7-1.8h8.3zM281.7 140.7h-4c-3.1 0-5.2.8-6.4 4.1l-1.2 3.3c-1.2 3.3.4 4.1 3.5 4.1h5.5c3.4 0 4.7-1.5 5.4-3.4l.4-1.1h-3.4c-.5 1.4-1 1.5-2.6 1.5h-3.7c-1.6 0-1.7-.6-1.1-2.2l.4-1.2c.5-1.4 1.2-2.2 3-2.2h3.7c1 0 1.5.2 1.2 1l-.1.3h3.4c1.1-3.1.9-4.2-4-4.2zM301.6 140.8h-13.1l-1 2.8h4.8l-3.1 8.4h3.4l3.1-8.4h4.8l1.1-2.8zM303.3 140.8l-4.1 11.2h3.4l4.1-11.2h-3.4zM319.5 140.7H314c-3.1 0-5.2.8-6.4 4.1l-1.2 3.3c-1.2 3.3.4 4.1 3.5 4.1h5.5c3.1 0 5.2-.8 6.4-4.1l1.2-3.3c1.1-3.3-.4-4.1-3.5-4.1zm-.5 5.1-.4 1.2c-.6 1.6-1.2 2.2-2.8 2.2h-4.4c-1.6 0-1.7-.6-1.1-2.2l.4-1.2c.5-1.4 1.2-2.2 3-2.2h4c1.8 0 1.8.8 1.3 2.2zM335.3 149l-3.5-8.1h-5.3l-4.1 11.2h3.4l3-8.1 3.5 8.1h5.3l4.1-11.2h-3.4l-3 8.1z"
-                        style={{ fill: "rgb(255, 255, 255)" }}
-                      />
-                    </svg>
-                  </div>
-                  <ul className="d-flex list-unstyled p-2">
-                    <li className="plus">+</li>
-                    <li className="content">
-                      <p className="copy title">
-                        Cub Cadet electronic fuel-injected (EFI) engines set new
-                        standards in strength and power. EFI provides reliable
-                        starting in most conditions.
-                      </p>
-                      <p className="copy">
-                        Available with IntelliPower<sup>®</sup> engine
-                        technology to take on heavy, deep and wet snow
-                        conditions.
-                      </p>
-                      <small />
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-
-            <div className="text-center mt-4">
-              <a
-                href="https://www.cubcadet.com/en_US/engine-advantage.html"
-                className="bg-black px-10 py-2 text-center text-white inline-block no-underline uppercase font-bold"
-                style={{
-                  clipPath:
-                    "polygon(1rem 0px,100% 0%,100% 100%,0px 100%,0px 1rem)",
-                }}
-              >
-                Learn more about cub cadet engine innovation
-              </a>
-            </div>
-          </div>
+        <section className="snow-picker">
+          <div id="product-finder-zero-turns" />
         </section>
 
-        <section className="mb-8">
-          <div className="container">
-            <h2 className="text-center">A Machine for the Extreme</h2>
-            <p className="text-center">
-              All Cub Cadet X Series models come with premium features to get
-              your winter done right.
-            </p>
-            <ul className="grid gap-4 lg:grid-cols-2 mt-6">
-              {machineExtreme.blocks.map((block, i) => (
-                <li
-                  className=""
-                  key={i}
-                >
-                  <IconTextBlock
-                    block={block}
-                    imgType="res"
-                  />
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-
-        <section className="container mb-6">
-          <div className="wrapper p-1">
-            <ResponsiveImage
-              className="md:hidden w-full h-full"
-              src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Group3564.png"
-              alt=""
-              id="Group3564-mobile"
-            />
-
-            <ResponsiveImage
-              className="overflow-hidden w-0 h-0 md:h-full md:w-full"
-              src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/Group3540.png"
-              alt=""
-              id="Group3564-desktop"
-            />
-          </div>
+        <section className="text-center">
+          <h2>Shop & Compare Zero-Turn Mowers</h2>
         </section>
       </div>
 
@@ -691,55 +339,52 @@ export default function ZeroTurnMowers({}) {
           imgType="res"
           viewAllLink="https://www.cubcadet.com/en_US/how-to/?crefn1=tags&crefv1=Snow%20Blowers"
           articles={{
-            h2: "Snow Blower Articles & How To’s",
+            h2: "Zero-Turn Mower Articles & How To’s",
             blocks: [
               {
-                img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/SnowBlow_ProdLineBrow_Hero_LineUp_01_desktop_1015x630_v1.jpg",
-                title: "Cub Cadet Snow Blower Buyers Guide",
-                copy: "If you live in areas where snowfall is frequent or heavy, shoveling becomes part of your daily routine. Ditching your shovel, along with the heavy lifting and repetitive strain that comes with shoveling snow, in favor of a snow blower can save you time and energy. A couple of reasons to justify a snow blower…",
-                url: "https://www.cubcadet.com/en_US/product-information/cub-cadet-snow-blower-buying-guide.html",
+                title: "Zero-Turn Mower Maintenance Schedule and Tips",
+                copy: `When properly cared for, Cub Cadet's zero-turn lawn mowers can be your go-to lawn care tool for years. So to keep your mower riding smoothly, follow the zero-turn mower maintenance schedule below, then keep reading for a few tips on getting the most from your Cub Cadet riding mower.`,
+                url: "https://www.cubcadet.com/en_US/product-information/knowledge-zero-turn-mowers-maintenance-schedule-and-tips.html",
                 res: (
                   <ResponsiveImage
-                    src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/SnowBlow_ProdLineBrow_Hero_LineUp_01_desktop_1015x630_v1.jpg"
+                    src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/zero-turn-mowers-maintenance-schedule-and-tips_1100x572.jpg"
                     id="Hero_LineUp_01"
                     className="absolute w-full h-full object-cover"
                   />
                 ),
               },
               {
-                img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/recommended-snow-thrower-back-up-parts_1100x572.jpg",
-                title: "Recommended Snow Blower Back-Up Parts",
-                copy: "Always prepare your snow blower for maintenance before starting any repairs. Move your snow blower to a flat surface.  Turn the engine off and let it cool. Disconnect the spark plug ignition wire and remove the safety ignition key to prevent accidental starting of the engine…",
-                url: "https://www.cubcadet.com/en_US/product-information/knowledge-recommended-snow-thrower-back-up-parts.html",
+                title: "How To Change a Deck Belt on a Zero-Turn Mower",
+                copy: "Lawn mower deck belts can wear with ordinary use over time and they can cause greater damage to your machine if not replaced in a timely manner. This video will show you how to perform a mower deck belt replacement on a Cub Cadet Ultima zero-turn mower.  Depending on your model, the instructions in this video may vary slightly.  Always be sure to check your operator's manual for detailed instructions.",
+                url: "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-change-the-deck-belt-on-a-cub-cadet-zero-turn-rider.html",
                 res: (
                   <ResponsiveImage
-                    src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/recommended-snow-thrower-back-up-parts_1100x572.jpg"
+                    src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/replace-belt.png"
                     id="recommended-snow-thrower-back-up-parts"
                     className="absolute w-full h-full object-cover"
                   />
                 ),
               },
               {
-                img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/snow-thrower-operation-tips_1100x572.jpg",
-                title: "How to Prepare Your Snow Thrower for Winter Use",
-                copy: "Whether you're prepping your trusty 2X two-stage snow thrower for yet another winter, or getting your new 3X three-stage snow thrower ready to face its first blizzard, these snow thrower maintenance tips can help ensure you're prepared for cold and stormy weather this…",
-                url: "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-prepare-your-snow-thrower-for-winter-use.html",
+                title: "How to Replace a Blade on a Zero-Turn Mower",
+                copy: "Over time, the blades on your zero-turn riding lawn mower can become worn out, bent or dinged. This gradual damage can reduce the effectiveness of your mower, so be sure to sharpen or replace the blades if you notice these signs of wear. How often you visually check the blades depends on how regularly the mower is used. Check the blades at least twice a year, at the beginning and middle of the mowing season, or more often if you mow year-round. This video will show you how replace the blades on your Cub Cadet Ultima zero-turn mower. Depending on your model, the instructions in this video may vary slightly. Always be sure to check your operator's manual for detailed instructions.",
+                url: "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-change-the-blades-on-a-zero-turn.html",
                 res: (
                   <ResponsiveImage
-                    src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/snow-thrower-operation-tips_1100x572.jpg"
+                    src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/change-blades.png"
                     id="snow-thrower-operation-tips"
                     className="absolute w-full h-full object-cover"
                   />
                 ),
               },
               {
-                img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/snow-thrower-safety-tips_1100x572.jpg",
-                title: "Snow Blower Safety Tips",
-                copy: "Snow blowers, often referred to as snow blowers are an easy way to keep the snow off your driveway during the winter months. Like any piece of power equipment, snow blower safety should be a top priority…",
-                url: "https://www.cubcadet.com/en_US/product-information/knowledge-snow-thrower-safety-tips.html",
+                title:
+                  "How to Install a Bagger Attachment on a Zero-Turn Riding Mower",
+                copy: "The following video will show you how to install a double bagger on your Ultima Series ZT Zero Turn mower. The tools needed for installation include two 9/16 in. socket wrenches, two 1/2 in. socket wrenches, and two 7/16 in. socket wrenches. Depending on your model, the instructions in this video may vary slightly. Always be sure to check your operator's manual for detailed instructions.",
+                url: "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-install-a-bagger-on-a-zero-turn.html",
                 res: (
                   <ResponsiveImage
-                    src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/snow-thrower-safety-tips_1100x572.jpg"
+                    src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/how-to-install-a-bagger-on-a-zero-turn_1100x572.jpg"
                     id="snow-thrower-safety-tips"
                     className="absolute w-full h-full object-cover"
                   />
@@ -755,73 +400,37 @@ export default function ZeroTurnMowers({}) {
           viewAllLink="https://www.cubcadet.com/en_US/snow-blowers/snow-blower-accessories"
           className="container mt-8"
           imgType="res"
+          centerTitle
           attAcc={{
-            h2: "Snow Blower Attachments & Accessories",
+            h2: "Zero-Turn Mower Attachments & Accessories",
             blocks: [
               {
-                img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/490-241-0032.jpg",
-                title: "Universal Cab",
-                item: "490-241-0032",
-                price: "$132.99",
-                url: "https://www.cubcadet.com/en_US/snow-blower-accessories/snow-blower-cab/490-241-0032.html#q=490-241-0032&lang=en_US&start=0",
-                res: (
-                  <ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/490-241-0032.jpg" />
-                ),
-                orig: (
-                  <img
-                    src="https://www.cubcadet.com/en_US/snow-blower-accessories/snow-blower-cab/490-241-0032.html?fitsOnModel=false"
-                    alt=""
-                  />
-                ),
+                title: "Baggers",
+                url: "https://www.cubcadet.com/en_US/riding-lawn-mowers/riding-mower-accessories?prefn1=universal-part-category&prefv1=Baggers%20and%20Grass%20Collectors",
+                img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/19A30018100.jpg",
               },
               {
-                img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/490-290-0010_1.jpg",
-                title: "Snow Blower Cover",
-                item: "490-290-0010",
-                price: "$38.99",
-                url: "https://www.cubcadet.com/en_US/snow-blower-accessories/snow-blower-cover/490-290-0010.html#q=490-290-0010&lang=en_US&start=0",
-                res: (
-                  <ResponsiveImage src="https://www.cubcadet.com/en_US/snow-blower-accessories/snow-blower-cover/490-290-0010.html#q=490-290-0010&lang=en_US&start=0" />
-                ),
-                orig: (
-                  <img
-                    src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw2a0b010e/products/Attachments_Accessories/490-290-0010_1.jpg?sw=280&sh=280&sm=fit"
-                    alt=""
-                  />
-                ),
+                img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/19A70041100.jpg",
+                title: "Mulching Kits",
+                url: "https://www.cubcadet.com/en_US/riding-lawn-mowers/riding-mower-accessories?prefn1=universal-part-category&prefv1=Mulching%20Kit",
               },
               {
-                img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/OEM-390-679.jpg",
-                title: "Drift Cutter Kit",
-                item: "OEM-390-679",
-                price: "$41.99",
-                url: "https://www.cubcadet.com/en_US/snow-blower-accessories/drift-cutter-kit/OEM-390-679.html#q=OEM-390-679&lang=en_US&start=0",
-                res: (
-                  <ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/OEM-390-679.jpg" />
-                ),
-                orig: (
-                  <img
-                    src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw32dc42ff/products/Attachments_Accessories/OEM-390-679.jpg?sw=280&sh=280&sm=fit"
-                    alt=""
-                  />
-                ),
+                img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/19B40026100_1.jpg",
+                title: "Hauler",
+                url: "https://www.cubcadet.com/en_US/riding-mower-accessories/cub-cadet-hauler/19B40026100.html#q=hauler&lang=en_US&start=5",
               },
               {
-                img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/753-08629.jpg",
-                title: "LED Light Bar Kit",
-                item: "753-08629A",
-                price: "$135.89",
-                url: "https://www.cubcadet.com/en_US/snow-blower-accessories/led-light-bar-kit/753-08629A.html#q=753-08629A&lang=en_US&start=0",
-                res: (
-                  <ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/753-08629.jpg" />
-                ),
-                orig: (
-                  <img
-                    src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw301fe215/products/753-08629.jpg?sw=280&sh=280&sm=fit"
-                    alt=""
-                  />
-                ),
+                img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/19A30037100.jpg",
+                title: "All-Season Plow Blade",
+                url: "https://www.cubcadet.com/en_US/riding-mower-accessories/fastattach-all-season-plow-blade/19A30037100.html?fitsOnModel=false#start=3",
               },
+              //{
+              //   title: "PASTE",
+              //   url: "PASTE",
+              //   res: (
+              //     <ResponsiveImage src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/" />
+              //   ),
+              // },
             ],
           }}
         />
@@ -831,20 +440,24 @@ export default function ZeroTurnMowers({}) {
             h3: "Related Categories",
             list: [
               {
-                title: "Single-Stage Snow Blowers",
-                href: "https://www.cubcadet.com/en_US/snow-blowers/single-stage-snow-blowers",
+                title: "Riding Mower Accessories",
+                href: "https://www.cubcadet.com/en_US/riding-lawn-mowers/riding-mower-accessories",
               },
               {
-                title: "Two-Stage Snow Blowers",
-                href: "https://www.cubcadet.com/en_US/snow-blowers/two-stage-snow-blowers",
+                title: "Zero-Turn Mowers",
+                href: "https://www.cubcadet.com/en_US/riding-lawn-mowers/zero-turn-mowers",
               },
               {
-                title: "Three-Stage Snow Blowers",
-                href: "https://www.cubcadet.com/en_US/snow-blowers/three-stage-snow-blowers",
+                title: "Small Riding Lawn Mowers",
+                href: "https://www.cubcadet.com/en_US/riding-lawn-mowers/small-riding-lawn-mowers",
               },
               {
-                title: "Snow Blower Accessories",
-                href: "https://www.cubcadet.com/en_US/snow-blowers/snow-blower-accessories",
+                title: "Electric Lawn Mowers",
+                href: "https://www.cubcadet.com/en_US/riding-lawn-mowers/electric-riding-mowers",
+              },
+              {
+                title: "Walk-Behind Mowers",
+                href: "https://www.cubcadet.com/en_US/lawn-mowers/walk-behind-mowers",
               },
             ],
           }}
@@ -860,20 +473,20 @@ export default function ZeroTurnMowers({}) {
                 href: "https://www.cubcadet.com/en_US/financing",
               },
               {
+                title: "Warranty",
+                href: "https://www.cubcadet.com/en_US/warranty-details.html",
+              },
+              {
                 title: "Extended Warranty",
                 href: "https://www.cubcadet.com/en_US/ew-info-page.html",
               },
               {
-                title: "Register My Product",
+                title: "Product Registration",
                 href: "https://www.cubcadet.com/en_US/content-asset-page-includes/registration.html",
               },
               {
                 title: "Operator’s Manual",
                 href: "https://www.cubcadet.com/en_US/operatorsmanuals",
-              },
-              {
-                title: "Snow Plow Blade Attachment",
-                href: "https://www.cubcadet.com/en_US/riding-mower-accessories/46-inch-snow-plow-blade-attachment/19A30017OEM.html?fitsOnModel=false#q=snow%2Bplow%2Bblade&lang=en_US&start=0",
               },
             ],
           }}
@@ -882,11 +495,11 @@ export default function ZeroTurnMowers({}) {
 
         <RelatedLinks
           relatedCats={{
-            h3: "Snow Blower Maintenance",
-            p: "When customers buy Snow Blowers they often buy or consider:",
+            h3: "Zero-Turn Mower Maintenance",
+            p: "When customers buy Zero-Turn Lawn Mowers they often buy or consider:",
             list: [
               {
-                title: "Shear Pins",
+                title: "Oil Change Kit",
                 href: "https://www.cubcadet.com/en_US/snow-blower-parts/snow-blower-shear-pins",
               },
               {
@@ -909,6 +522,26 @@ export default function ZeroTurnMowers({}) {
                 title: "All Snow Blower Parts",
                 href: "https://www.cubcadet.com/en_US/shop-by-machine-type/snow-blower-parts",
               },
+              {
+                title: "Oil Change Kit",
+                href: "https://www.cubcadet.com/en_US/riding-mower-accessories/oil-change-kit/490-950-C042.html#q=490-950-C042&lang=en_US&start=0",
+              },
+              {
+                title: "Kawasaki Engine Maintenance Kits",
+                href: "https://www.cubcadet.com/en_US/small-engine-parts/kawasaki-engine-maintenance-kit/490-950-C063.html#q=490-950-C063&lang=en_US&start=0Blades",
+              },
+              {
+                title: "Belts",
+                href: "https://www.cubcadet.com/en_US/zero-turn-mower-parts/zero-turn-mower-belts",
+              },
+              {
+                title: "Blades",
+                href: "https://www.cubcadet.com/en_US/zero-turn-mower-parts/zero-turn-mower-blades",
+              },
+              {
+                title: "Tires and Wheels",
+                href: "https://www.cubcadet.com/en_US/zero-turn-mower-parts/zero-turn-mower-tires-and-wheels",
+              },
             ],
           }}
           className="container mt-8"
@@ -920,39 +553,30 @@ export default function ZeroTurnMowers({}) {
             className="border-t"
             faqs={[
               {
-                question: "What does a snow blower do?",
-                answer:
-                  "Cub Cadet® snow blowers are engineered to quickly remove snow from unwanted areas. A single stage snow blower is the most basic kind, where the auger paddle pulls snow into the machine and throws it out of the chute. More advanced stages are designed to handle more snow.",
+                question:
+                  "What should I know before buying a zero-turn lawn mower?",
+                answer: `Zero-turn mowers are ideal for large lawns or properties for a variety of reasons. One of the main benefits is the efficiency gained through speed and turning capabilities. Zero-turn mowers are ideal from a maneuverability standpoint, designed to provide control for mowing around obstacles. For additional information to determine whether a zero-turn lawn mower is right for you, check out this <a href="https://www.cubcadet.com/en_US/popular-faqs/knowledge-is-a-zero-turn-mower-right-for-you.html">article</a>. Additionally, <a href="https://www.cubcadet.com/en_US/product-information/knowledge-the-ultimate-lawn-mower-buying-guide.html">our lawn mower buying guide</a> goes into more depth on the differences between Cub Cadet® lawn mower options.`,
+              },
+              {
+                question: "What size zero-turn mower do I need for my yard?",
+                answer: `The size of your yard will usually determine what size deck you need for your lawn mower, and zero-turns are no different. The bigger the deck, the more grass you can cut with each pass, allowing you to complete the task efficiently. But you also need to consider maneuverability: Will you be mowing uneven terrain with a lot of obstacles, or is your property mostly flat? Zero-turn lawn mowers are designed to tackle yards with obstacles because of their zero-degree turning radius. Check out the <a href="https://www.cubcadet.com/en_US/product-finder-zero-turn-mowers.html">Cub Cadet zero-turn mower product finder</a> to help determine the ideal product for you based on your requirements.`,
               },
               {
                 question:
-                  "What is the best type of snow blower for a driveway?",
-                answer:
-                  'There’s no one size fits all snow blower. Cub Cadet has models ideal for up to 6-in, 12-in, and 18-in. of snowfall, so take stock of how much snow is expected in your area to zero in on a category. From there, determine what kind of features you’d benefit from, like electric start, heated hand grips, IntelliPower™ engines, or LED headlights, among others. This <a href="https://www.cubcadet.com/en_US/product-information/cub-cadet-snow-blower-buying-guide.html">snow blower buyers guide</a> goes into more detail.',
+                  "What zero-turn lawn mower is best suited for my yard?",
+                answer: `There’s no one size fits all lawn mower. A zero-turn that works for one operator might not be ideal for another. Cub Cadet designs a variety of models with features that cater to the needs of the operator. Once you’ve considered the needs of your yard and decided on the right size mower, there’s a checklist of features that your zero-turn mower should fulfill. Beware of zero-turn mowers that focus on just one feature and look for a machine that can excel across the board. <a href="https://www.cubcadet.com/en_US/how-to/knowledge-how-to-pick-the-best-zero-turn.html">This article</a> provides more information on this topic or you can check out the <a href="https://www.cubcadet.com/en_US/product-finder-zero-turn-mowers.html">Cub Cadet zero-turn mower product finder</a> to help determine the ideal product for you based on your requirements.`,
               },
               {
-                question: "Do I need a 1, 2 or 3 stage snow blower?",
-                answer: `
-								Once you determine how much snowfall your area is expected to get, you can <a href="https://www.cubcadet.com/en_US/knowledge-center/knowledge-how-to-choose-the-right-snow-blower.html">choose the right model</a> for your needs. Cub Cadet® single-stage snow blowers are generally ideal for up to 6-in. of snowfall, 2-stage models can handle up to 12-in. of snowfall and 3-stage units typically can handle up to 18-in. of snowfall. Cub Cadet® MAX units — available in 2-stage and 3-stage models — can tackle up to 23-in. of snowfall.
-								`,
+                question: "What is an ideal commercial zero-turn lawn mower?",
+                answer: `Cub Cadet commercial zero-turn lawn mowers are built different to tackle the needs of professionals. The PRO series has a variety of options available, including units featuring SurePath™, a semi-autonomous technology, and award-winning stand-on mowers. <a href="">The Cub Cadet commercial lineup</a> is built with true innovation to fuel real progress.`,
               },
               {
-                question: "How do I finance a Cub Cadet snow blower?",
-                answer: `
-								Cub Cadet® offers a variety of financing plans depending on your budget and your purchase minimum. <a href="https://www.cubcadet.com/en_US/financing">Click here</a> for more details.
-								`,
+                question: "How do I finance my Cub Cadet zero-turn mower?",
+                answer: `Cub Cadet offers a variety of financing plans depending on your budget and your purchase minimum. <a href="https://www.cubcadet.com/en_US/commercial-equipment/commercial-zero-turn-mowers">Click here</a> for more details.`,
               },
               {
-                question: "How do I store my snow blower in the off season?",
-                answer: `
-								Always refer to your <a href="https://www.cubcadet.com/en_US/operatorsmanuals">operator’s manual</a> for comprehensive instructions on maintenance and storage. Instructions will differ between single-, 2-, and 3-stage snow blowers. <a href="https://www.cubcadet.com/en_US/knowledge-center/knowledge-how-to-prepare-your-snow-thrower-for-storage-in-the-off-season.html">This guide</a> can help walk you through some of the most common steps.
-								`,
-              },
-              {
-                question: "How do I register my Cub Cadet snow blower?",
-                answer: `
-								Once you’ve purchased a Cub Cadet® snow blower, you can register your machine <a href="https://www.cubcadet.com/en_US/content-asset-page-includes/registration.html">here</a>.
-								`,
+                question: "How do I register my Cub Cadet zero-turn mower?",
+                answer: `Once you’ve purchased a Cub Cadet riding lawn mower, you can register your machine <a href="https://www.cubcadet.com/en_US/financing">here</a>.`,
               },
             ]}
           />
