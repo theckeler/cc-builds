@@ -215,7 +215,7 @@ export default function RidingLawnMowers({}) {
 
         <AttchmentsAccessories
           centerTitle
-          viewAllLink="https://www.cubcadet.com/en_US/walk-behind-mowers/push-mower-accessories"
+          viewAllLink="https://www.cubcadet.com/en_US/riding-lawn-mowers/riding-mower-accessories"
           className="container mt-8"
           attAcc={{
             h2: "Riding Lawn Mower Attachments & Accessories",
@@ -306,7 +306,7 @@ export default function RidingLawnMowers({}) {
 
         <RelatedLinks
           relatedCats={{
-            h3: "Snow Blower Maintenance",
+            h3: "Riding Lawn Mower Maintenance",
             p: "When customers buy Snow Blowers they often buy or consider:",
             list: [
               {
