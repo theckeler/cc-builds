@@ -337,7 +337,7 @@ export default function ZeroTurnMowers({}) {
       >
         <Articles
           imgType="res"
-          viewAllLink="https://www.cubcadet.com/en_US/how-to/?crefn1=tags&crefv1=Snow%20Blowers"
+          viewAllLink="https://www.cubcadet.com/en_US/how-to/?crefn1=tags&crefv1=Zero%20Turn%20Mowers"
           articles={{
             h2: "Zero-Turn Mower Articles & How To’s",
             blocks: [
@@ -397,7 +397,7 @@ export default function ZeroTurnMowers({}) {
         />
 
         <AttchmentsAccessories
-          viewAllLink="https://www.cubcadet.com/en_US/snow-blowers/snow-blower-accessories"
+          viewAllLink="https://www.cubcadet.com/en_US/riding-lawn-mowers/zero-turn-mower-accessories"
           className="container mt-8"
           imgType="res"
           centerTitle
@@ -406,23 +406,23 @@ export default function ZeroTurnMowers({}) {
             blocks: [
               {
                 title: "Baggers",
-                url: "https://www.cubcadet.com/en_US/riding-lawn-mowers/riding-mower-accessories?prefn1=universal-part-category&prefv1=Baggers%20and%20Grass%20Collectors",
+                url: "https://www.cubcadet.com/en_US/riding-lawn-mowers/zero-turn-mower-accessories?prefn1=universal-part-category&prefv1=Mower%20Lifts%7CBaggers%20and%20Grass%20Collectors",
                 img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/19A30018100.jpg",
               },
               {
                 img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/19A70041100.jpg",
                 title: "Mulching Kits",
-                url: "https://www.cubcadet.com/en_US/riding-lawn-mowers/riding-mower-accessories?prefn1=universal-part-category&prefv1=Mulching%20Kit",
+                url: "https://www.cubcadet.com/en_US/riding-lawn-mowers/zero-turn-mower-accessories?prefn1=universal-part-category&prefv1=Mower%20Lifts%7CMulching%20Kit",
               },
               {
                 img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/19B40026100_1.jpg",
                 title: "Hauler",
-                url: "https://www.cubcadet.com/en_US/riding-mower-accessories/cub-cadet-hauler/19B40026100.html#q=hauler&lang=en_US&start=5",
+                url: "https://www.cubcadet.com/en_US/zero-turn-mower-accessories/52-inch-all-season-plow-blade-attachment/19A70063OEM.html?fitsOnModel=false#start=",
               },
               {
                 img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/19A30037100.jpg",
                 title: "All-Season Plow Blade",
-                url: "https://www.cubcadet.com/en_US/riding-mower-accessories/fastattach-all-season-plow-blade/19A30037100.html?fitsOnModel=false#start=3",
+                url: "ttps://www.cubcadet.com/en_US/riding-mower-accessories/cub-cadet-hauler/19B40026100.html#q=hauler&lang=en_US&start=5",
               },
               //{
               //   title: "PASTE",
@@ -440,12 +440,16 @@ export default function ZeroTurnMowers({}) {
             h3: "Related Categories",
             list: [
               {
-                title: "Riding Mower Accessories",
-                href: "https://www.cubcadet.com/en_US/riding-lawn-mowers/riding-mower-accessories",
+                title: "Zero-Turn Mower Accessories",
+                href: "https://www.cubcadet.com/en_US/riding-lawn-mowers/zero-turn-mower-accessories",
               },
               {
                 title: "Zero-Turn Mowers",
                 href: "https://www.cubcadet.com/en_US/riding-lawn-mowers/zero-turn-mowers",
+              },
+              {
+                title: "Lawn & Garden Tractors",
+                href: "https://www.cubcadet.com/en_US/riding-lawn-mowers/lawn-and-garden-tractors",
               },
               {
                 title: "Small Riding Lawn Mowers",
@@ -568,15 +572,15 @@ export default function ZeroTurnMowers({}) {
               },
               {
                 question: "What is an ideal commercial zero-turn lawn mower?",
-                answer: `Cub Cadet commercial zero-turn lawn mowers are built different to tackle the needs of professionals. The PRO series has a variety of options available, including units featuring SurePath™, a semi-autonomous technology, and award-winning stand-on mowers. <a href="">The Cub Cadet commercial lineup</a> is built with true innovation to fuel real progress.`,
+                answer: `Cub Cadet commercial zero-turn lawn mowers are built different to tackle the needs of professionals. The PRO series has a variety of options available, including units featuring SurePath™, a semi-autonomous technology, and award-winning stand-on mowers. <a href="https://www.cubcadet.com/en_US/commercial-equipment/commercial-zero-turn-mowers">The Cub Cadet commercial lineup</a> is built with true innovation to fuel real progress.`,
               },
               {
                 question: "How do I finance my Cub Cadet zero-turn mower?",
-                answer: `Cub Cadet offers a variety of financing plans depending on your budget and your purchase minimum. <a href="https://www.cubcadet.com/en_US/commercial-equipment/commercial-zero-turn-mowers">Click here</a> for more details.`,
+                answer: `Cub Cadet offers a variety of financing plans depending on your budget and your purchase minimum. <a href="https://www.cubcadet.com/en_US/financing">Click here</a> for more details.`,
               },
               {
                 question: "How do I register my Cub Cadet zero-turn mower?",
-                answer: `Once you’ve purchased a Cub Cadet riding lawn mower, you can register your machine <a href="https://www.cubcadet.com/en_US/financing">here</a>.`,
+                answer: `Once you’ve purchased a Cub Cadet riding lawn mower, you can register your machine <a href="https://www.cubcadet.com/en_US/content-asset-page-includes/registration.html">here</a>.`,
               },
             ]}
           />
