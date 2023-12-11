@@ -44,7 +44,7 @@ export default function Stars({
           </svg>
         ))}
       </span>
-      <span className="ml-1">({stars.reviews} Google Reviews)</span>
+      <span className="ml-1">({stars.reviews})</span>
     </div>
   );
 }

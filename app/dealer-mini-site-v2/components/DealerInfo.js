@@ -31,7 +31,7 @@ export default function DealerInfo({ dealer }) {
 			<li>
 				<ul className="w-100 list-unstyled mb-0 flex flex-column flex-md-row">
 					<li
-						className={`px-0 h-100 w-100 border flex position-relative ${
+						className={`px-0 h-100 w-100  flex position-relative ${
 							hasBadges === true && "col-12 col-md-6"
 						}`}
 						style={{
@@ -48,7 +48,7 @@ export default function DealerInfo({ dealer }) {
 					</li>
 					{hasBadges === true && (
 						<li
-							className="px-0 h-100 w-100 border flex col-12 col-md-6 align-items-center"
+							className="px-0 h-100 w-100  flex col-12 col-md-6 align-items-center"
 							style={{
 								minHeight: "240px",
 							}}>

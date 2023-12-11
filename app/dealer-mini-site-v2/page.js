@@ -5,19 +5,20 @@ import mainJSON from "./data/main.json";
 
 import Address from "@/components/Address";
 import Faqs from "@/components/Faqs";
+import TitleFlexGridViews from "@/components/FlexGridViews/TitleFlexGridViews";
 import Phone from "@/components/Phone";
 import ProductCard from "@/components/Product/Card";
-import Social from "@/components/Social";
 import ToggleTab from "@/components/ToggleTab";
 import Website from "@/components/Website";
+import BookService from "./components/BookService";
+import ContactForm from "./components/ContactForm";
+import CubDays from "./components/CubDays";
 import DealerInfo from "./components/DealerInfo";
 import FinancingCard from "./components/FinancingCard";
+import Menu from "./components/Menu";
 import Promotions from "./components/Promotions";
+import Social from "./components/Social";
 import StickyMenu from "./components/StickyMenu";
-
-import TitleFlexGridViews from "@/components/FlexGridViews/TitleFlexGridViews";
-import BookService from "./components/BookService";
-import CubDays from "./components/CubDays";
 
 export default function DealerMiniSite() {
   let dealer = mainJSON.dealers;
@@ -27,15 +28,15 @@ export default function DealerMiniSite() {
 
   return (
     <div id="sdb-container">
-      {/* <Menu
-				setCurrentDealer={setCurrentDealer}
-				button={{
-					style: { outline: 0, minWidth: "48px", minHeight: "48px" },
-					className: "bg-secondary border-0 mr-1 mb-1 w-100",
-				}}
-			/> */}
+      <Menu
+        setCurrentDealer={setCurrentDealer}
+        button={{
+          style: { outline: 0, minWidth: "48px", minHeight: "48px" },
+          className: "bg-secondary mr-1 mb-1 w-100",
+        }}
+      />
 
-      <div className="py-2 mx-0 mx-lg-auto py-xl-5 container px-0 grid grid-cols-1 xl:grid-cols-[400px_880px] gap-3">
+      <div className="py-2 mx-0 mx-lg-auto container px-0 grid grid-cols-1 xl:grid-cols-[400px_880px] gap-3">
         <StickyMenu
           className="order-2 lg:order-1"
           dealer={dealer[currentDealer]}
@@ -46,13 +47,15 @@ export default function DealerMiniSite() {
 
           <CubDays />
 
+          <hr className="border-t border-neutral-200 w-full" />
+
           <div
             id="book-service"
             className="p-2 mt-2"
-            style={{ backgroundColor: "#ebebeb" }}
+            // style={{ backgroundColor: "#ebebeb" }}
           >
             <h2
-              className="text-center mb-2 border-bottom pb-1"
+              className="text-center mb-2 -bottom pb-1"
               style={{ fontSize: "26px" }}
             >
               Book Service
@@ -66,13 +69,15 @@ export default function DealerMiniSite() {
               lobortis ligula. Maecenas a elementum nunc, non congue odio.
             </p>
 
-            <BookService />
+            <div className="text-center">
+              <BookService />
+            </div>
           </div>
 
           <TitleFlexGridViews
             id="lineup"
             className={`p-2 ${tabSpacing}`}
-            style={{ backgroundColor: "#ebebeb" }}
+            // style={{ backgroundColor: "#ebebeb" }}
             jsonData={mainJSON.lineup}
             //title={`${dealer[currentDealer].name}'s Product Lineup`}
             title={`Product Lineup`}
@@ -81,40 +86,40 @@ export default function DealerMiniSite() {
 
           <TitleFlexGridViews
             className={`p-2 ${tabSpacing}`}
-            style={{ backgroundColor: "#ebebeb" }}
+            // style={{ backgroundColor: "#ebebeb" }}
             id="parts-accessories"
             jsonData={mainJSON.accessories}
             title="Parts & Accessories"
             Component={ProductCard}
           />
 
-          {/* <TitleFlexGridViews
-						id="promotions"
-						className={`p-2 ${tabSpacing}`}
-						style={{ backgroundColor: "#ebebeb" }}
-						jsonData={mainJSON.promotions}
-						//title={`${dealer[currentDealer].name}'s Promotions`}
-						title={`Promotions`}
-						Component={ProductCard}
-					/> */}
+          <hr className="border-t border-neutral-200 w-full" />
+          <h2
+            className="text-center"
+            style={{ fontSize: "26px" }}
+          >
+            Promotions
+          </h2>
 
           <Promotions
-            className={`p-2 p-xl-0 mt-2 ${tabSpacing}`}
+            className={`p-2`}
             id="promotions"
             title="Promotions"
           />
 
+          <hr className="border-t border-neutral-200 w-full" />
+
           <TitleFlexGridViews
             id="financing"
             className={`p-2 ${tabSpacing}`}
-            style={{ backgroundColor: "#ebebeb" }}
+            // style={{ backgroundColor: "#ebebeb" }}
             jsonData={mainJSON.financing}
             title="Financing"
             Component={FinancingCard}
           />
 
           <ToggleTab
-            className={`border p-2 ${tabSpacing}`}
+            className={` p-2 ${tabSpacing}`}
             Component={
               <div>
                 <p className="mt-1">
@@ -126,7 +131,9 @@ export default function DealerMiniSite() {
                   and believe America is the best place to live, work and run a
                   business.
                 </p>
+
                 <Phone />
+
                 <Website
                   className="mb-2"
                   style={{
@@ -135,8 +142,15 @@ export default function DealerMiniSite() {
                     display: "block",
                   }}
                 />
+
                 <Address address={dealer[currentDealer].address} />
+
                 <Social className="mt-2" />
+
+                <div className="mt-3">
+                  <h2 className="text-2xl">Contact:</h2>
+                  <ContactForm />
+                </div>
               </div>
             }
             id="contact"
@@ -144,7 +158,7 @@ export default function DealerMiniSite() {
           />
 
           <ToggleTab
-            className={`border p-2 ${tabSpacing}`}
+            className={` p-2 ${tabSpacing}`}
             Component={
               <div className="mt-2">
                 <p>
@@ -182,7 +196,7 @@ export default function DealerMiniSite() {
           />
 
           <ToggleTab
-            className={`border p-2 ${tabSpacing}`}
+            className={` p-2 ${tabSpacing}`}
             Component={<Faqs faqs={mainJSON.faqs} />}
             id="faqs"
             title="FAQs"

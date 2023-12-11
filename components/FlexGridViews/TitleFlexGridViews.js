@@ -85,13 +85,13 @@ export default function TitleFlexGridViews({
 						{title && title}
 					</h3>
 				</li>
-				<li className="ml-auto">
+				{/* <li className="ml-auto">
 					<TitleFlexGridViewsButtons
 						setWhichView={setWhichView}
 						buttons={buttons}
 						setView={setView}
 					/>
-				</li>
+				</li> */}
 			</ul>
 
 			<div className="position-relative">
