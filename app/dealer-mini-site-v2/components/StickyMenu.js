@@ -141,7 +141,7 @@ export default function StickyMenu({ className, dealer }) {
               key={i}
             >
               <button
-                className="w-100 hidden text-left p-2 font-weight-bold outline-0"
+                className="w-100 hidden lg:block text-left p-2 font-weight-bold outline-0"
                 style={{ cursor: "pointer" }}
                 onClick={(e) => {
                   document
