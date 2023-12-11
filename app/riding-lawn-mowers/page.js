@@ -307,7 +307,7 @@ export default function RidingLawnMowers({}) {
         <RelatedLinks
           relatedCats={{
             h3: "Riding Lawn Mower Maintenance",
-            p: "When customers buy Snow Blowers they often buy or consider:",
+            p: "When customers buy Riding Lawn Mowers they often buy or consider:",
             list: [
               {
                 title: "Blades",
