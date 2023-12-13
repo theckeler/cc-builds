@@ -10,7 +10,6 @@ import Phone from "@/components/Phone";
 import ProductCard from "@/components/Product/Card";
 import ToggleTab from "@/components/ToggleTab";
 import Website from "@/components/Website";
-import BookService from "./components/BookService";
 import ContactForm from "./components/ContactForm";
 import CubDays from "./components/CubDays";
 import DealerInfo from "./components/DealerInfo";
@@ -49,7 +48,7 @@ export default function DealerMiniSite() {
 
           <hr className="border-t border-neutral-200 w-full" />
 
-          <div
+          {/* <div
             id="book-service"
             className="p-2 mt-2"
             // style={{ backgroundColor: "#ebebeb" }}
@@ -72,7 +71,7 @@ export default function DealerMiniSite() {
             <div className="text-center">
               <BookService />
             </div>
-          </div>
+          </div> */}
 
           <TitleFlexGridViews
             id="lineup"

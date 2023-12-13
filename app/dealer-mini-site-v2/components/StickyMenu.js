@@ -70,7 +70,7 @@ export default function StickyMenu({ className, dealer }) {
   ];
 
   const navButtons = [
-    { title: "Book Service", id: "book-service" },
+    // { title: "Book Service", id: "book-service" },
     { title: "Lineup", id: "lineup" },
     { title: "Parts & Accessories", id: "parts-accessories" },
     { title: "Promotions", id: "promotions" },
