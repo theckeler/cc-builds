@@ -43,14 +43,16 @@ export default function RidingLawnMowers({}) {
 
         <section className="py-5 px-1">
           <div className="container">
-            <h1 className="text-lg-center">Cub Cadet Riding Lawn Mowers</h1>
+            <h1 className="text-lg-center">
+              Versatile, Durable Riding Lawn Mowers
+            </h1>
             <p
               className="text-lg-center mt2 mb-0 mx-auto"
               style={{ maxWidth: "800px", lineHeight: "1.8" }}
             >
-              A complete lineup of zero-turn mowers, lawn and garden tractors,
-              and electric mowers, all featuring the strength and durability
-              that bring your lawn to life.
+              Cub Cadet® riding lawn mowers range from zero-tuns, lawn and
+              garden tractors, and electric mowers, each designed to deliver the
+              strength and durability to tackle more than just cutting grass.
             </p>
           </div>
         </section>
@@ -62,7 +64,7 @@ export default function RidingLawnMowers({}) {
               {
                 img: "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwd121df42/products/Equipment/Cub-Cadet_XT2_LX46_2000x2000_1.jpg?sw=740&sh=740&sm=fit",
                 title: "Lawn & Garden Tractors",
-                copy: "Built in America since ‘61 and backed by the industry’s strongest warranty, Cub Cadet® lawn and garden tractors all come standard with the strongest cutting systems for mowing performance, refined ergonomics designed around you and an array of attachments and accessories for year-round versatility and utility.",
+                copy: "Cub Cadet® lawn and garden tractors are equipped with cutting systems designed to deliver strong mowing performance and capable of handling an array of attachments and accessories for year-round versatility and utility.",
                 button: {
                   url: "https://www.cubcadet.com/en_US/riding-lawn-mowers/lawn-and-garden-tractors",
                   copy: "Shop for Lawn & Garden Tractors",
@@ -73,7 +75,7 @@ export default function RidingLawnMowers({}) {
               {
                 img: "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v9e835077e52279a69a54b4c30b00cf9f3c2d0358/ultima/product-ZTS.jpg",
                 title: "Zero-Turn Mowers",
-                copy: "Designed with strength, comfort and the ability to get the job done 50% faster than riding tractors, each Cub Cadet zero-turn riding mower is engineered to handle a range of terrain and cover up to 5 acres, with steering wheel options that increase ease.",
+                copy: "Cub Cadet® zero-turn mowers are engineered to handle a range of terrain and cover up to 5 acres, with steering wheel options that increase ease.",
                 button: {
                   url: "https://www.cubcadet.com/en_US/riding-lawn-mowers/zero-turn-mowers",
                   copy: "Shop for Zero-Turn Mowers",
@@ -84,7 +86,7 @@ export default function RidingLawnMowers({}) {
               {
                 img: "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v9e835077e52279a69a54b4c30b00cf9f3c2d0358/ultima/product-ZT-el.jpg",
                 title: "Electric Riding Mowers",
-                copy: "We took the proven strength and performance of our gas-powered machines and combined them with a powerful and convenient lithium-ion battery to create electric lawn mowers with no power fade and reduced noise for a more enjoyable ride.",
+                copy: "Cub Cadet® electric riding mowers combined the power of gas with the convenance of lithium-ion battery technology for a quieter mowing experience with less maintenance compared to gas.",
                 button: {
                   url: "https://www.cubcadet.com/en_US/riding-lawn-mowers/electric-riding-mowers",
                   copy: "Shop for Electric Riding Mowers",

@@ -79,13 +79,12 @@ export default function ZeroTurnMowers({}) {
         className=""
       >
         <section className="container text-center p-2 lg:px-52 py-4 lg:py-10">
-          <h1 className="">Cub Cadet Zero-Turn Mowers</h1>
+          <h1 className="">The Ultimate Zero-Turn Lineup</h1>
           <p className="lg:px-48 mt-1 lg:mt-4">
-            Zero-turn lawn mowers answer the call of challenging yards and
-            difficult obstacles. It’s time to explore the full Cub Cadet line-up
-            of innovative zero-turns, including lap bar and Cub Cadet exclusive
-            steering wheel options as part of the Ultima series. With a
-            zero-turn mower, the possibilities are at every turn.
+            Cub Cadet® zero-turn mowers are designed to answer the call of
+            challenging yards and difficult obstacles. The Ultima Series™ lineup
+            includes both lap bar and steering wheel units, unlocking
+            possibilities at every turn.
           </p>
         </section>
 
@@ -109,9 +108,7 @@ export default function ZeroTurnMowers({}) {
               <li className="">
                 <div className="p-3">
                   <h2 className="mb-2 text-4xl">
-                    Introducing the Ultima Series
-                    <sup>™</sup>
-                    ZTXS
+                    Introducing the Ultima Series™ ZTXS
                   </h2>
                   <h3 className="mb-2">
                     The Ultima Series™ Zero-Turn with
@@ -121,12 +118,10 @@ export default function ZeroTurnMowers({}) {
                   <p className="mb-2">
                     From tight turns to inclined hillsides and stretching
                     valleys, the Ultima ZTXS is built to help tackle your yard’s
-                    unique challenges. The Ultima ZTXS brings Cub Cadet’s
-                    innovative and proprietary Synchro-Steer
-                    <sup>™</sup>
-                    technology to the proven Ultima Series
-                    <sup>™</sup>
-                    platform for reliable precision and confident control.
+                    unique challenges by combining commercial-grade features
+                    with Synchro-Steer™ technology, a proprietary steering wheel
+                    platform from Cub Cadet designed to deliver precision and
+                    control.
                   </p>
                   <a
                     className="button text-uppercase font-weight-bold text-decoration-none d-inline-block border-0 bg-black text-white"
@@ -174,7 +169,7 @@ export default function ZeroTurnMowers({}) {
               {
                 img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/product-ZT.jpg",
                 title: "Ultima Electric ZT",
-                copy: `The Ultima Series(TM) ZT1 42E is equipped with the latest lithium-ion battery technology for a quiet operation, run time up to 1.5 hours of run time and limited power fade.`,
+                copy: `The Ultima Series™ ZT1 42E is equipped with the latest lithium-ion battery technology for a quiet operation, run time up to 1.5 hours of run time and limited power fade.`,
                 button: {
                   url: "https://www.cubcadet.com/en_US/electric-lawn-mowers/zt1-42e/34CBA2CS710.html",
                   copy: "Shop for Ultima Electric ZT",
@@ -203,7 +198,7 @@ export default function ZeroTurnMowers({}) {
               {
                 img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/product-ZTS.jpg",
                 title: "Ultima ZTS",
-                copy: `Equipped with Cub Cadet® Synchro-Steer™ Technology, the Ultima ZTS line delivers precision, control and stability on hills up to 20 degrees.`,
+                copy: `Equipped with Cub Cadet® Synchro-Steer™ technology, the Ultima ZTS line delivers precision, control and stability on hills up to 20 degrees.`,
                 button: {
                   url: "https://www.cubcadet.com/en_US/ultima-zts-zero-turn-mowers",
                   copy: "Shop for Ultima ZTS",
@@ -261,7 +256,7 @@ export default function ZeroTurnMowers({}) {
               {
                 img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/product-ZTS.jpg",
                 title: "Ultima ZTXS",
-                copy: `The Ultima Series™ ZTXS is engineered with commercial-grade features that allow you to tackle tough challenges on your large property.`,
+                copy: `The Ultima Series™ ZTXS is engineered with commercial-grade features and equipped with Cub Cadet® Synchro-Steer™ technology, delivering precision, control and stability on hills up to 20 degrees.`,
                 button: {
                   url: "https://www.cubcadet.com/en_US/ultima-ztxs-zero-turn-mowers",
                   copy: "Shop for Ultima ZTXS",

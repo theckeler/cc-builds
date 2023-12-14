@@ -1,0 +1,1538 @@
+<div class="surepath mtd-page">
+  <style type="text/css">
+    .hide {
+      position: fixed;
+      left: -100000px;
+      top: -100000px;
+      display: none;
+      clip: rect(0 0 0 0);
+      -webkit-clip-path: inset(50%);
+      clip-path: inset(50%);
+      overflow: hidden;
+      white-space: nowrap;
+      height: 0;
+      width: 0;
+      opacity: 0;
+    }
+    .container.content-asset-container {
+      max-width: 100%;
+      padding: 0;
+    }
+    .content-page-image {
+      height: auto;
+    }
+    .mtd-page .wrapper {
+      max-width: 1400px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .mtd-page ul {
+      margin-bottom: 0;
+    }
+    .mtd-page img {
+      width: 100%;
+      height: auto;
+    }
+    .mtd-page .bg-yellow,
+    .mtd-page .button {
+      background: #ffc20f;
+    }
+    .mtd-page .bg-yellow:hover,
+    .mtd-page .button:hover {
+      border-color: #000;
+      background: #ffc20f;
+      color: #1f1f1f;
+    }
+    .mtd-page .bg-troy-red {
+      background: #c00;
+      color: #fff;
+    }
+    .mtd-page .bg-troy-red h3 {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    .mtd-page .bg-mtd-green {
+      background: #008540;
+      color: #fff;
+    }
+    .mtd-page .bg-mtd-green h3 {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    .mtd-page .bg-red,
+    .mtd-page .button.troy-red {
+      background: #c00;
+      color: #fff;
+    }
+    .mtd-page .mtd-green,
+    .mtd-page .button.mtd-green {
+      background: #008540;
+      color: #fff;
+    }
+    .mtd-page .bg-grey {
+      background: #efefef;
+    }
+    .mtd-page .yellow {
+      color: #ffc20f;
+    }
+    .mtd-page .troy-red {
+      color: #c00;
+    }
+    .mtd-page .bg-black {
+      background: #000;
+    }
+    .mtd-page .clip-corner {
+      -webkit-clip-path: polygon(0 44px, 44px 0, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 44px, 44px 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .mtd-page .title {
+      font-weight: bold;
+    }
+    .mtd-page .button {
+      display: block;
+      padding: 15px 25px;
+      text-align: center;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 700;
+      border: 2px solid transparent;
+    }
+    .mtd-page .button:hover {
+      border-color: #000;
+      background: #ffc20f;
+      color: #1f1f1f;
+    }
+    .mtd-page .button.mtd-green:hover {
+      border-color: #000;
+      background: #008540;
+      color: #fff;
+    }
+    .mtd-page .button.troy-red:hover {
+      border-color: #000;
+      background: #c00;
+      color: #fff;
+    }
+    .mtd-page .no-list {
+      list-style: none;
+      padding: 0;
+    }
+    .mtd-page .list {
+      list-style: disc;
+    }
+    .mtd-page .blocks {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+    .mtd-page .blocks.two > .block {
+      width: 50%;
+    }
+    .mtd-page .blocks.three > .block {
+      width: 33%;
+    }
+    .mtd-page .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+    }
+    .mtd-page .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .mtd-page .img-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      min-height: 100%;
+      overflow: hidden;
+    }
+    .mtd-page .img-wrapper > img {
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+    .mtd-page .visually-hidden {
+      clip: rect(0 0 0 0);
+      -webkit-clip-path: inset(50%);
+      clip-path: inset(50%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+    }
+    .mtd-page .desktop {
+      display: block;
+    }
+    .mtd-page .mobile {
+      display: none;
+    }
+    .mtd-page .faqs-container {
+      padding: 60px 0;
+    }
+    .mtd-page .faqs-container h2 {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .mtd-page .faqs-container .question {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      font-size: 1.375rem;
+      padding: 32px 0;
+      font-weight: 700;
+    }
+    .mtd-page .faqs-container .question span {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      position: relative;
+      width: 30px;
+      height: 30px;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      -webkit-transform-origin: center;
+      transform-origin: center;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      margin-left: auto;
+    }
+    .mtd-page .faqs-container .question:hover {
+      cursor: pointer;
+    }
+    .mtd-page .faqs-container .question.active span {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+    }
+    .mtd-page .faqs-container .answer {
+      overflow: hidden;
+      max-height: 0;
+      border-bottom: 1px solid #d9d9d9;
+      -webkit-transition: max-height 0.2s;
+      transition: max-height 0.2s;
+    }
+    .mtd-page .faqs-container .answer.active {
+      max-height: 1000px;
+    }
+    .mtd-page .layered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      z-index: 101;
+    }
+    @media only screen and (max-width: 768px) {
+      .mtd-page .desktop {
+        display: none;
+      }
+      .mtd-page .mobile {
+        display: block;
+      }
+    }
+    .hero.content-page-image {
+      clip: rect(0 0 0 0);
+      -webkit-clip-path: inset(50%);
+      clip-path: inset(50%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+    }
+    .mtd-page .quotes > .block {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+    .mtd-page .quotes.two > .block-1 {
+      padding-right: 14px;
+    }
+    .mtd-page .quotes.two > .block-2 {
+      padding-left: 14px;
+    }
+    .mtd-page .quote.blocks.two > .block-1 {
+      width: 65%;
+    }
+    .mtd-page .quote.blocks.two > .block-2 {
+      width: 35%;
+    }
+    .mtd-page .quote.blocks.two figure {
+      padding: 40px 20px;
+    }
+    .mtd-page .quote.blocks.two figure figcaption {
+      padding-left: 78px;
+    }
+    .mtd-page .quote.blocks.two figure figcaption p {
+      font-size: 1.3125rem;
+      margin-bottom: 6px;
+    }
+    .mtd-page .quote.blocks.two figure figcaption p:last-of-type {
+      margin-bottom: 0;
+    }
+    .mtd-page .quote.blocks.two .icon {
+      color: #fff;
+      font-size: 9rem;
+      line-height: 1;
+      font-weight: 700;
+    }
+    .mtd-page .quote.blocks.two .icon.block-3 {
+      -ms-flex-item-align: end;
+      align-self: flex-end;
+      line-height: 0.2;
+    }
+    .mtd-page .quote.blocks.two .blockquote {
+      font-size: 1.875rem;
+      font-weight: 700;
+      line-height: 1.2;
+      padding: 10px;
+    }
+    .mtd-page .quote.blocks.two .quote-img img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      display: block;
+    }
+    .mtd-page .hero.section-1 {
+      padding: 0;
+      position: relative;
+    }
+    .mtd-page .hero.section-1 > img {
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+    .mtd-page .hero.section-1 .button {
+      margin-top: 10px;
+    }
+    .mtd-page .section-2,
+    .mtd-page .section-4,
+    .mtd-page .section-8,
+    .mtd-page .section-10 {
+      padding: 70px 20px;
+      color: #fff;
+      text-align: center;
+    }
+    .mtd-page .section-2 .wrapper,
+    .mtd-page .section-4 .wrapper,
+    .mtd-page .section-8 .wrapper,
+    .mtd-page .section-10 .wrapper {
+      max-width: 750px;
+    }
+    .mtd-page .section-2 h2,
+    .mtd-page .section-4 h2,
+    .mtd-page .section-8 h2,
+    .mtd-page .section-10 h2 {
+      font-size: 3rem;
+    }
+    .mtd-page .section-2 p,
+    .mtd-page .section-4 p,
+    .mtd-page .section-8 p,
+    .mtd-page .section-10 p {
+      margin-top: 20px;
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+    .mtd-page .section-3 {
+      padding: 30px 20px;
+    }
+    .mtd-page .section-3 h3 {
+      font-size: 3rem;
+      line-height: 1;
+    }
+    .mtd-page .section-3 p {
+      margin-top: 20px;
+      font-size: 1.5rem;
+      line-height: 1.4;
+    }
+    .mtd-page .section-3 .block-1 {
+      position: relative;
+    }
+    .mtd-page .section-3 .block-1 .layered {
+      width: 160px;
+      height: 160px;
+      border: 3px solid #fff;
+      border-radius: 100%;
+      padding: 40px;
+      font-size: 300px;
+      color: #fff;
+      line-height: 1;
+    }
+    .mtd-page .section-3 .block-1 .layered > div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      margin-left: 10px;
+    }
+    .mtd-page .section-3 .block-2 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+    .mtd-page .section-3 .block-2 .content {
+      padding: 80px 60px 60px 60px;
+      max-width: 620px;
+    }
+    .mtd-page .section-3 .block-2 .content .button {
+      display: inline-block;
+      margin-top: 40px;
+      background: #000;
+      color: #fff;
+      font-size: 1.5rem;
+      padding: 14px 90px;
+    }
+    .mtd-page .section-3 #surepath-video-container {
+      display: none;
+      width: 100%;
+      height: 100%;
+    }
+    .mtd-page .section-4,
+    .mtd-page .section-8,
+    .mtd-page .section-10 {
+      color: #000;
+    }
+    .mtd-page .section-4 .wrapper,
+    .mtd-page .section-8 .wrapper,
+    .mtd-page .section-10 .wrapper {
+      max-width: 1040px;
+    }
+    .mtd-page .section-4 p,
+    .mtd-page .section-8 p,
+    .mtd-page .section-10 p {
+      max-width: 840px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .mtd-page .section-6 {
+      padding: 30px;
+      max-width: 1280px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .mtd-page .section-6 .block {
+      padding: 14px;
+    }
+    .mtd-page .section-6 .block .bg-black {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      text-align: center;
+      padding: 50px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .mtd-page .section-6 .block .bg-black p {
+      line-height: 1;
+      margin-bottom: 0;
+    }
+    .mtd-page .section-6 .block .bg-black .line-1,
+    .mtd-page .section-6 .block .bg-black .line-3 {
+      font-size: 2.25rem;
+    }
+    .mtd-page .section-6 .block .bg-black .line-2 {
+      font-size: 8.375rem;
+      margin-bottom: 10px;
+    }
+    .mtd-page .section-7 {
+      padding: 60px 20px;
+    }
+    .mtd-page .section-8 .calculator.wrapper {
+      max-width: 1400px;
+    }
+    .mtd-page .section-9 {
+      padding: 60px 20px;
+    }
+    .mtd-page .section-9 .blocks {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+    .mtd-page .section-9 .blocks .block-1 {
+      width: 60%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      padding-right: 30px;
+    }
+    .mtd-page .section-9 .blocks .block-2 {
+      width: 40%;
+      padding-left: 30px;
+    }
+    .mtd-page .section-9 .button {
+      display: inline-block;
+      padding: 14px 90px;
+      background: #000;
+      color: #fff;
+      font-size: 1.5rem;
+    }
+    .mtd-page .section-10 .wrapper p {
+      margin: 0 auto 30px auto;
+    }
+    .mtd-page .section-10 h3 {
+      font-size: 1.875rem;
+    }
+    .mtd-page .section-10 .blocks .block {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+    .mtd-page .section-10 .blocks .block > .bg-grey {
+      width: 100%;
+    }
+    .mtd-page .section-10 .blocks > .block-1 {
+      padding-right: 14px;
+    }
+    .mtd-page .section-10 .blocks > .block-2 {
+      padding-left: 14px;
+    }
+    .mtd-page .section-10 .content {
+      text-align: left;
+      padding: 40px 50px 20px 50px;
+    }
+    .mtd-page .section-10 .content p {
+      max-width: 100%;
+    }
+    .mtd-page .section-11 h2 {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .mtd-page .section-12 {
+      padding: 70px 0;
+    }
+    .mtd-page .section-12 h2 {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .mtd-page .section-12 .blocks {
+      margin-top: 30px;
+    }
+    .mtd-page .section-12 .blocks > .block-1 {
+      padding-right: 14px;
+    }
+    .mtd-page .section-12 .blocks > .block-2 {
+      padding-left: 14px;
+    }
+    .mtd-page .section-12 form ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: "form-name form-name  form-name" "form-email form-email form-email" "form-co-name form-co-name form-zip" "form-checkboxes form-submit form-submit";
+      gap: 20px;
+    }
+    .mtd-page .section-12 form ul li {
+      padding: 10px 0;
+    }
+    .mtd-page .section-12 form ul li .label,
+    .mtd-page .section-12 form ul li input:not([type="checkbox"]) {
+      width: 100%;
+      border: 0;
+    }
+    .mtd-page .section-12 form ul li input[type="checkbox"] {
+      position: relative;
+      width: 32px;
+      height: 32px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: 0;
+      background: #fff;
+      border-radius: 0;
+      outline: none;
+      margin-right: 10px;
+      padding: 0;
+    }
+    .mtd-page .section-12 form ul li input[type="checkbox"]:checked:after {
+      position: absolute;
+      left: 7px;
+      top: 7px;
+      content: "";
+      width: 18px;
+      height: 18px;
+      background: #000;
+    }
+    .mtd-page .section-12 form ul li label {
+      font-size: 1rem;
+      font-weight: 100;
+    }
+    .mtd-page .section-12 form ul li input {
+      padding: 14px;
+    }
+    .mtd-page .section-12 form ul li.form-name {
+      grid-area: form-name;
+    }
+    .mtd-page .section-12 form ul li.form-email {
+      grid-area: form-email;
+    }
+    .mtd-page .section-12 form ul li.form-co-name {
+      grid-area: form-co-name;
+    }
+    .mtd-page .section-12 form ul li.form-zip {
+      grid-area: form-zip;
+    }
+    .mtd-page .section-12 form ul li.form-checkboxes {
+      grid-area: form-checkboxes;
+    }
+    .mtd-page .section-12 form ul li.form-checkboxes p {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-size: 1.125rem;
+    }
+    .mtd-page .section-12 form ul li.form-submit {
+      grid-area: form-submit;
+    }
+    .mtd-page .section-12 form ul li.form-submit .button {
+      font-size: 1.375rem;
+      background: #000;
+      color: #fff;
+    }
+    @media only screen and (max-width: 1300px) {
+      .mtd-page .quote.blocks.two .icon {
+        font-size: 5rem;
+      }
+      .mtd-page .quote.blocks.two .blockquote {
+        font-size: 1.5rem;
+      }
+      .mtd-page .quote.blocks.two figure figcaption {
+        padding-left: 48px;
+      }
+      .mtd-page .quote.blocks.two figure figcaption p {
+        font-size: 1.25rem;
+      }
+      .mtd-page .section-6 {
+        max-width: 100%;
+        padding: 30px 0;
+      }
+      .mtd-page .section-6 .block.block-1 {
+        padding-left: 0;
+      }
+      .mtd-page .section-6 .block.block-2 {
+        padding-right: 0;
+      }
+      .mtd-page .section-6 .block .bg-black .line-1,
+      .mtd-page .section-6 .block .bg-black .line-3 {
+        font-size: 2rem;
+      }
+      .mtd-page .section-6 .block .bg-black .line-2 {
+        font-size: 6.25rem;
+      }
+    }
+    @media only screen and (max-width: 1024px) {
+      .mtd-page .button {
+        width: 100%;
+      }
+      .mtd-page .img-wrapper {
+        min-height: 400px;
+      }
+      .mtd-page .section-3 .blocks {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      .mtd-page .section-3 .blocks .block-2 .content {
+        max-width: 100%;
+        padding: 40px;
+      }
+      .mtd-page .section-3 .blocks.two > .block {
+        width: 100%;
+      }
+      .mtd-page .section-2,
+      .mtd-page .section-4,
+      .mtd-page .section-7,
+      .mtd-page .section-8,
+      .mtd-page .section-9 {
+        padding: 20px 0;
+      }
+      .mtd-page .section-7 {
+        padding: 20px;
+      }
+      .mtd-page .section-7 .quotes {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      .mtd-page .section-7 .quotes > .block {
+        width: 100%;
+        padding: 0;
+      }
+      .mtd-page .section-7 .quotes > .block.block-2 {
+        padding-top: 20px;
+      }
+      .mtd-page .section-9 .blocks,
+      .mtd-page .section-10 .blocks,
+      .mtd-page .section-12 .blocks {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      .mtd-page .section-9 .blocks .block,
+      .mtd-page .section-10 .blocks .block,
+      .mtd-page .section-12 .blocks .block {
+        width: 100%;
+        padding: 20px 0;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+      .mtd-page .section-10 .content {
+        padding: 20px;
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      .hero .layered img {
+        max-width: 200px;
+      }
+      .mtd-page .section-1 h2,
+      .mtd-page .section-1 h3,
+      .mtd-page .section-2 h2,
+      .mtd-page .section-2 h3,
+      .mtd-page .section-3 h2,
+      .mtd-page .section-3 h3,
+      .mtd-page .section-4 h2,
+      .mtd-page .section-4 h3,
+      .mtd-page .section-5 h2,
+      .mtd-page .section-5 h3,
+      .mtd-page .section-6 h2,
+      .mtd-page .section-6 h3,
+      .mtd-page .section-7 h2,
+      .mtd-page .section-7 h3,
+      .mtd-page .section-8 h2,
+      .mtd-page .section-8 h3,
+      .mtd-page .section-9 h2,
+      .mtd-page .section-9 h3,
+      .mtd-page .section-10 h2,
+      .mtd-page .section-10 h3,
+      .mtd-page .section-11 h2,
+      .mtd-page .section-11 h3,
+      .mtd-page .section-12 h2,
+      .mtd-page .section-12 h3 {
+        font-size: 1.75rem;
+      }
+      .mtd-page .section-1 p,
+      .mtd-page .section-2 p,
+      .mtd-page .section-3 p,
+      .mtd-page .section-4 p,
+      .mtd-page .section-5 p,
+      .mtd-page .section-6 p,
+      .mtd-page .section-7 p,
+      .mtd-page .section-8 p,
+      .mtd-page .section-9 p,
+      .mtd-page .section-10 p,
+      .mtd-page .section-11 p,
+      .mtd-page .section-12 p {
+        font-size: 1rem;
+      }
+      .mtd-page .section-12 form ul {
+        grid-template-columns: 1fr;
+        grid-template-areas: "form-name" "form-email" "form-co-name" "form-zip" "form-checkboxes" "form-submit";
+      }
+      .mtd-page .section-6 {
+        padding-bottom: 0;
+      }
+      .mtd-page .section-6 .block .bg-black {
+        padding: 30px;
+      }
+      .mtd-page .section-6 .block .bg-black .line-1,
+      .mtd-page .section-6 .block .bg-black .line-3 {
+        font-size: 1rem;
+      }
+      .mtd-page .section-6 .block .bg-black .line-2 {
+        font-size: 3.4375rem;
+      }
+      .mtd-page .section-3 {
+        padding: 20px;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      .mtd-page .quote.blocks.two .icon {
+        font-size: 4rem;
+      }
+      .mtd-page .quote.blocks.two .icon.block-3 {
+        line-height: 1;
+      }
+      .mtd-page .quote.blocks.two .blockquote {
+        font-size: 1rem;
+      }
+      .mtd-page .quote.blocks.two figure {
+        padding: 20px;
+      }
+      .mtd-page .quote.blocks.two figure figcaption {
+        padding-left: 38px;
+      }
+      .mtd-page .quote.blocks.two figure figcaption p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+  <section class="section-1 hero">
+    <h1 class="visually-hidden">SurePath</h1>
+    <img
+      alt=""
+      class="desktop"
+      sizes="(max-width: 3200px) 100vw, 3200px"
+      src="/on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/surepath/hero@2x.jpg"
+      srcset="
+        /on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/surepath/hero@2x.jpg 1600w,
+        /on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/surepath/hero@2x.jpg 3200w
+      "
+    />
+    <img
+      alt=""
+      class="mobile"
+      sizes="(max-width: 768px) 100vw, 768px"
+      src="/on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/surepath/hero-mobile@2x.jpg"
+      srcset="
+        /on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/surepath/hero-mobile.jpg    375w,
+        /on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/surepath/hero-mobile@2x.jpg 768w
+      "
+    />
+  </section>
+
+  <section class="section-2 bg-black">
+    <div class="wrapper">
+      <h2>
+        Put time back on your side with SurePath<sup>&trade;</sup> Auto Steer
+        technology.
+      </h2>
+
+      <p>
+        SurePath Auto Steer uses GPS-assisted driving to minimize unnecessary
+        overlap, guiding you to the most efficient cut possible. The results are
+        crisp, clean stripes no matter the operator and more time to do
+        everything else you need to do.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-3">
+    <ul class="blocks two no-list">
+      <li class="block block-1">
+        <div class="img-wrapper">
+          <div class="layered">
+            <div>
+              <a
+                href="#"
+                id="play-surepath-video"
+                >‣</a
+              >
+            </div>
+          </div>
+          <a
+            href="#"
+            id="play-surepath-video"
+            ><img
+              alt=""
+              src="/on/demandware.static/-/Sites-cubcadet-Library/default/vfeca51bf5ff02b801fde993942a9a9b78a945b77/images/surepath/temp-video.png"
+            />
+          </a>
+        </div>
+
+        <div
+          class="video-wrapper"
+          id="surepath-video-container"
+        >
+          <iframe
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""
+            frameborder="0"
+            height="315"
+            id="surepath-video"
+            src=""
+            title="YouTube video player"
+            width="560"
+          ></iframe>
+        </div>
+        <script>
+          document
+            .querySelector("#play-surepath-video")
+            .addEventListener("click", function (e) {
+              e.preventDefault();
+              document.querySelector("#play-surepath-video").style.display =
+                "none";
+              document.querySelector("#surepath-video").src =
+                "https://www.youtube.com/embed/Ks6b512nxuo?rel=0&autoplay=1&enablejsapi=1&modestbranding=1&controls=0";
+              document.querySelector(
+                "#surepath-video-container"
+              ).style.display = "block";
+            });
+        </script>
+      </li>
+      <li class="block block-2 bg-yellow">
+        <div class="content">
+          <h3>How does Auto Steer technology work?</h3>
+
+          <p>
+            See the simplicity and efficiency of SurePath Auto Steer in action
+            and sign up to get notified when these machines are available in
+            your area.
+          </p>
+          <a
+            class="button"
+            href="https://marketing.cubcadet.com/LeadCapture"
+            >REQUEST A DEMO</a
+          >
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section-4">
+    <div class="wrapper">
+      <h2>Minimize overlap. Maximize productivity.</h2>
+
+      <p>
+        Field research shows that SurePath Auto Steer significantly reduces
+        overlap compared to manual operation.* And these little efficiencies add
+        up to some serious productivity gains over time.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-5 animate-this">
+    <img
+      alt=""
+      class="desktop"
+      sizes="(max-width: 3200px) 100vw, 3200px"
+      src="/on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/surepath/horizontal_stripe_graphic_v2@2x.jpg"
+      srcset="
+        /on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/surepath/horizontal_stripe_graphic_v2.jpg    1600w,
+        /on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/surepath/horizontal_stripe_graphic_v2@2x.jpg 3200w
+      "
+    />
+    <img
+      alt=""
+      class="mobile"
+      src="/on/demandware.static/-/Sites-cubcadet-Library/default/vfeca51bf5ff02b801fde993942a9a9b78a945b77/images/surepath/vertical_stripe_graphic_v2.jpg"
+    />
+  </section>
+
+  <section class="section-6 animate-this">
+    <div class="wrapper">
+      <ul class="blocks two no-list">
+        <li class="block block-1">
+          <div class="bg-black clip-corner">
+            <p class="line-1 yellow">Gain</p>
+
+            <p class="line-2">0.52</p>
+
+            <p class="line-3 yellow">Acres Per Hour</p>
+          </div>
+        </li>
+        <li class="block block-2">
+          <div class="bg-black clip-corner">
+            <p class="line-1 yellow">Get Back</p>
+
+            <p class="line-2">2.96</p>
+
+            <p class="line-3 yellow">Hours Per Week</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section-7">
+    <ul class="blocks two no-list quotes">
+      <li class="block block-1">
+        <ul class="blocks two no-list quote">
+          <li class="block block-1 bg-yellow">
+            <figure>
+              <ul class="blocks three no-list">
+                <li class="block-1 icon">&ldquo;</li>
+                <li class="block-2 blockquote">
+                  <blockquote>
+                    Guys in my position are always looking for ways to save
+                    money and time&hellip;SurePath has helped us do that.
+                  </blockquote>
+                </li>
+                <li class="block-3 icon">&rdquo;</li>
+              </ul>
+
+              <figcaption>
+                <p><b>JASON STEWART</b></p>
+
+                <p>Ground Superintendent</p>
+
+                <p>Brickyard Crossing</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="block block-2 quote-img">
+            <img
+              alt=""
+              src="/on/demandware.static/-/Sites-cubcadet-Library/default/vfeca51bf5ff02b801fde993942a9a9b78a945b77/images/surepath/SurePath1547_rt1_BW_LR.jpg"
+            />
+          </li>
+        </ul>
+      </li>
+      <li class="block block-2">
+        <ul class="blocks two no-list quote">
+          <li class="block block-1 bg-yellow">
+            <figure>
+              <ul class="blocks three no-list">
+                <li class="block-1 icon">&ldquo;</li>
+                <li class="block-2 blockquote">
+                  <blockquote>
+                    It takes me maybe 5 minutes to take a new person out, show
+                    them how to use it and then I&rsquo;m out of the picture.
+                  </blockquote>
+                </li>
+                <li class="block-3 icon">&rdquo;</li>
+              </ul>
+
+              <figcaption>
+                <p><b>WILLIAM HOKE</b></p>
+
+                <p>Equipment Manager</p>
+
+                <p>Brickyard Crossing</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="block block-2 quote-img">
+            <img
+              alt=""
+              src="/on/demandware.static/-/Sites-cubcadet-Library/default/vfeca51bf5ff02b801fde993942a9a9b78a945b77/images/surepath/LOWRESSurePath1590_BW.jpg"
+            />
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  <a
+    id="calculator"
+    name="calculator"
+  ></a>
+
+  <section class="section-8 bg-grey">
+    <div class="wrapper">
+      <h2>See what a PRO Z&trade; SurePath&trade; could do for you.</h2>
+
+      <p>
+        Select the values that most align with your operation to calculate your
+        potential time savings and revenue enhancement using a SurePath mower.*
+      </p>
+    </div>
+
+    <div class="calculator">
+      <div id="product-finder-surepath-savings">
+        <script>
+          (function (c, a, r, t, f, u, l) {
+            (c[u] =
+              c[u] ||
+              function () {
+                (c[u].q = c[u].q || []).push(arguments);
+              }),
+              (l = a.createElement(r)),
+              (l.async = 1),
+              (l.id = u + "scr"),
+              (l.src = f),
+              a[t].appendChild(l);
+          })(
+            window,
+            document,
+            "script",
+            "body",
+            "//embed.cartfulsolutions.com/cubcadet-calculator-finder/recommendation.min.js",
+            "cfl749"
+          );
+        </script>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-9 bg-yellow">
+    <div class="wrapper">
+      <ul class="blocks two no-list">
+        <li class="block block-1">
+          <h3>
+            Get notified when SurePath Mowers are available in your market.
+          </h3>
+        </li>
+        <li class="block block-2">
+          <a
+            class="button"
+            href="https://marketing.cubcadet.com/LeadCapture"
+            >Request a demo</a
+          >
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section-10">
+    <div class="wrapper">
+      <h2>Gain efficiency at every turn.</h2>
+
+      <p>
+        With SurePath Auto Steer in your fleet, you can train new employees in
+        no time, reduce operator fatigue and free up time to take on other
+        tasks.
+      </p>
+    </div>
+
+    <ul class="flex list-unstyled row">
+      <li class="flex flex-column col-12 col-sm-12 col-md-4 p-1">
+        <div class="bg-grey flex flex-column h-100">
+          <img
+            alt=""
+            src="/on/demandware.static/-/Sites-cubcadet-Library/default/vfeca51bf5ff02b801fde993942a9a9b78a945b77/images/surepath/section-10-block-1.jpg"
+          />
+          <div class="content">
+            <h3>Advanced technology. Simple operation.</h3>
+
+            <p>
+              The intuitive three-step process makes it easy to train anyone on
+              SurePath Auto Steer quickly and get a flawless cut from any
+              experience level.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="flex flex-column col-12 col-sm-12 col-md-4 p-1">
+        <div class="bg-grey flex flex-column h-100">
+          <img
+            alt=""
+            src="/on/demandware.static/-/Sites-cubcadet-Library/default/vfeca51bf5ff02b801fde993942a9a9b78a945b77/images/surepath/section-10-block-2.jpg"
+          />
+          <div class="content">
+            <h3>Save time and energy.</h3>
+
+            <p>
+              With SurePath Auto Steer holding a straight line for you,
+              operators may experience less fatigue with time to take on tasks
+              they&rsquo;d normally push to another day.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="flex flex-column col-12 col-sm-12 col-md-4 p-1">
+        <div class="bg-grey flex flex-column h-100">
+          <img
+            alt=""
+            src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/vde16d024a27b8e0c81e1c6e963f0a6bf041c9496/PTIA/award.jpg"
+          />
+          <div class="content">
+            <h3>2022 Pro Tool Innovation Award Winner</h3>
+
+            <p>
+              We are excited to announce that our PRO Z 960 S SurePath&reg; unit
+              received a 2022 Pro Tool Innovation Award. Each year the Pro Tool
+              Innovation Awards are judged by a panel of industry professionals
+              who handle and use hundreds of new tools each year. SurePath was
+              given this award because of its innovative GPS technology that
+              provides a semi-autonomous experience designed to cut consistent,
+              even striping no matter how long your lines are.
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section-11">
+    <div class="wrapper">
+      <h2>SurePath Semi-Autonomous Mowers</h2>
+
+      <div
+        class="row product-grid"
+        itemid="#product"
+        itemtype="http://schema.org/SomeProducts"
+      >
+        <div
+          class="col-12 col-sm-6 col-lg-4"
+          data-index="11"
+        >
+          <div
+            class="grid-tile"
+            data-pid="53RIHMAV050"
+          >
+            <div
+              class="product-tile"
+              data-monetate-pid="53RIHMAV050"
+              data-monetate-producturl="https://www.cubcadet.com/en_US/commercial-zero-turn-mowers/pro-z-960-s-surepath/53RLHUAV050.html"
+              data-product-extended-name="PRO Z 900 S SERIES"
+              data-product-name="PRO Z 960 S SurePath"
+              itemscope=""
+              itemtype="http://schema.org/Product"
+            >
+              <div class="image-container">
+                <a
+                  href="https://www.cubcadet.com/en_US/commercial-zero-turn-mowers/pro-z-960-s-surepath/53RLHUAV050.html"
+                  ><picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BCSH_STG/on/demandware.static/-/Sites-mtd-master-catalog/default/dwcca89491/products/Equipment/CubCadet_ProZ960SSurepath_1.jpg?sw=290&amp;sh=290&amp;sm=fit
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BCSH_STG/on/demandware.static/-/Sites-mtd-master-catalog/default/dwcca89491/products/Equipment/CubCadet_ProZ960SSurepath_1.jpg?sw=290&amp;sh=290&amp;sm=fit
+                      "
+                    />
+                    <source
+                      media="(max-width: 479px)"
+                      srcset="
+                        https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BCSH_STG/on/demandware.static/-/Sites-mtd-master-catalog/default/dwcca89491/products/Equipment/CubCadet_ProZ960SSurepath_1.jpg?sw=315&amp;sh=315&amp;sm=fit
+                      "
+                    />
+                    <!--[if IE 9]></video><![endif]-->
+                    <img
+                      alt="PRO Z 960 S SurePath"
+                      class="tile-image"
+                      data-compare-desktop="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BCSH_STG/on/demandware.static/-/Sites-mtd-master-catalog/default/dwcca89491/products/Equipment/CubCadet_ProZ960SSurepath_1.jpg?sw=90&amp;sh=90&amp;sm=fit"
+                      data-compare-mobile="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BCSH_STG/on/demandware.static/-/Sites-mtd-master-catalog/default/dwcca89491/products/Equipment/CubCadet_ProZ960SSurepath_1.jpg?sw=145&amp;sh=145&amp;sm=fit"
+                      itemprop="image"
+                      src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BCSH_STG/on/demandware.static/-/Sites-mtd-master-catalog/default/dwcca89491/products/Equipment/CubCadet_ProZ960SSurepath_1.jpg?sw=315&amp;sh=315&amp;sm=fit"
+                      title="PRO Z 960 S SurePath"
+                    />
+                  </picture>
+                </a>
+              </div>
+
+              <div class="tile-body tile-footer-xlg">
+                <div
+                  class="pdp-link"
+                  itemprop="name"
+                >
+                  <a
+                    class="link"
+                    data-gtmdata='{"id":"53RIHMAV050","name":"PRO Z 960 S SurePath","productType":"WholeGood"}'
+                    href="https://www.cubcadet.com/en_US/commercial-zero-turn-mowers/pro-z-960-s-surepath/53RLHUAV050.html"
+                    itemprop="url"
+                    >PRO Z 960 S SurePath</a
+                  >
+                </div>
+
+                <div
+                  class="product-extended-name"
+                  itemprop="name"
+                >
+                  <span class="name">PRO Z 900 S SERIES</span>
+                </div>
+
+                <div class="product-number invisible d-none">
+                  Item#:
+                  <span
+                    class="product-id"
+                    itemprop="productID"
+                    >53RIHMAV050</span
+                  >
+                </div>
+
+                <div
+                  class="price"
+                  itemprop="offers"
+                  itemscope=""
+                  itemtype="http://schema.org/Offer"
+                >
+                  <span>
+                    <meta
+                      itemprop="priceCurrency"
+                      content="USD"
+                    />
+                    <span class="sales">
+                      <span
+                        class="value"
+                        content="23999.00"
+                        itemprop="price"
+                      >
+                        $27,859.89
+                      </span>
+                    </span>
+                  </span>
+                </div>
+
+                <div
+                  class="tile-attributes"
+                  itemprop="name"
+                >
+                  <ul>
+                    <li>
+                      Semi-autonomous mower with GPS technology combined with
+                      exclusive four-wheel steering
+                    </li>
+                    <li>Make perfect auto-turns with the push of a button</li>
+                    <li>
+                      35 HP Kawasaki FX1000v (999cc) engine and 16cc Parker HTG
+                      transmission
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-12 col-sm-6 col-lg-4"
+          data-index="15"
+        >
+          <div
+            class="grid-tile"
+            data-pid="53RIHMAY050"
+          >
+            <div
+              class="product-tile"
+              data-monetate-pid="53RIHMAY050"
+              data-monetate-producturl="https://www.cubcadet.com/en_US/semi-autonomous-mower-with-gps-technology/53RLHUAY050.html"
+              data-product-extended-name="PRO Z 900 S SERIES"
+              data-product-name="PRO Z 972 S SurePath"
+              itemscope=""
+              itemtype="http://schema.org/Product"
+            >
+              <div class="image-container">
+                <a
+                  href="https://www.cubcadet.com/en_US/semi-autonomous-mower-with-gps-technology/53RLHUAY050.html"
+                  ><picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BCSH_STG/on/demandware.static/-/Sites-mtd-master-catalog/default/dw51f53002/products/Equipment/CubCadet_ProZ972SSurepath_14.jpg?sw=290&amp;sh=290&amp;sm=fit
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BCSH_STG/on/demandware.static/-/Sites-mtd-master-catalog/default/dw51f53002/products/Equipment/CubCadet_ProZ972SSurepath_14.jpg?sw=290&amp;sh=290&amp;sm=fit
+                      "
+                    />
+                    <source
+                      media="(max-width: 479px)"
+                      srcset="
+                        https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BCSH_STG/on/demandware.static/-/Sites-mtd-master-catalog/default/dw51f53002/products/Equipment/CubCadet_ProZ972SSurepath_14.jpg?sw=315&amp;sh=315&amp;sm=fit
+                      "
+                    />
+                    <!--[if IE 9]></video><![endif]-->
+                    <img
+                      alt="PRO Z 972 S SurePath"
+                      class="tile-image"
+                      data-compare-desktop="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BCSH_STG/on/demandware.static/-/Sites-mtd-master-catalog/default/dw51f53002/products/Equipment/CubCadet_ProZ972SSurepath_14.jpg?sw=90&amp;sh=90&amp;sm=fit"
+                      data-compare-mobile="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BCSH_STG/on/demandware.static/-/Sites-mtd-master-catalog/default/dw51f53002/products/Equipment/CubCadet_ProZ972SSurepath_14.jpg?sw=145&amp;sh=145&amp;sm=fit"
+                      itemprop="image"
+                      src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BCSH_STG/on/demandware.static/-/Sites-mtd-master-catalog/default/dw51f53002/products/Equipment/CubCadet_ProZ972SSurepath_14.jpg?sw=315&amp;sh=315&amp;sm=fit"
+                      title="PRO Z 972 S SurePath"
+                    />
+                  </picture>
+                </a>
+              </div>
+
+              <div class="tile-body tile-footer-xlg">
+                <div
+                  class="pdp-link"
+                  itemprop="name"
+                >
+                  <a
+                    class="link"
+                    data-gtmdata='{"id":"53RIHMAY050","name":"PRO Z 972 S SurePath","productType":"WholeGood"}'
+                    href="https://www.cubcadet.com/en_US/semi-autonomous-mower-with-gps-technology/53RLHUAY050.html"
+                    itemprop="url"
+                    >PRO Z 972 S SurePath</a
+                  >
+                </div>
+
+                <div
+                  class="product-extended-name"
+                  itemprop="name"
+                >
+                  <span class="name">PRO Z 900 S SERIES</span>
+                </div>
+
+                <div class="product-number invisible d-none">
+                  Item#:
+                  <span
+                    class="product-id"
+                    itemprop="productID"
+                    >53RIHMAY050</span
+                  >
+                </div>
+
+                <div
+                  class="price"
+                  itemprop="offers"
+                  itemscope=""
+                  itemtype="http://schema.org/Offer"
+                >
+                  <span>
+                    <meta
+                      itemprop="priceCurrency"
+                      content="USD"
+                    />
+                    <span class="sales">
+                      <span
+                        class="value"
+                        content="24999.00"
+                        itemprop="price"
+                      >
+                        $28,969.89
+                      </span>
+                    </span>
+                  </span>
+                </div>
+
+                <div
+                  class="tile-attributes"
+                  itemprop="name"
+                >
+                  <ul>
+                    <li>
+                      Semi-autonomous mower with GPS technology combined with
+                      exclusive four-wheel steering
+                    </li>
+                    <li>
+                      35 HP Kawasaki FX1000v (999cc) engine and 16cc Parker HTG
+                      transmission
+                    </li>
+                    <li>Auto-turning GPS control system</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-13 faqs-container">
+    <div class="wrapper">
+      <h2>FAQs</h2>
+
+      <ul class="faqs no-list">
+        <li class="question">
+          Are there additional costs for GPS connection?<span>✖</span>
+        </li>
+        <li class="answer">
+          <p>
+            SurePath mowers require a technology package to use the
+            semi-autonomous features. The first year of the technology package
+            (based on the product activation date) is included in the
+            SurePath&trade; purchase price. For additional years, the technology
+            package will be billed annually and can be ordered through your
+            local Cub Cadet dealer.
+          </p>
+        </li>
+        <li class="question">Does weather affect usage?<span>✖</span></li>
+        <li class="answer">
+          <p>
+            With RTK-GPS, certain extreme weather conditions could impact
+            connectivity or performance. However, mowing would not be possible
+            in most of those extreme conditions anyway.
+          </p>
+        </li>
+        <li class="question">
+          What if I have GPS or cellular issues?<span>✖</span>
+        </li>
+        <li class="answer">
+          <p>
+            Your SurePath<sup>&trade;</sup> unit needs a good GPS signal as well
+            as a cellular service to operate. If the unit is experiencing issues
+            with either of these, the SurePath indicator lights will switch from
+            solid green to flashing green or will turn off. If the indicators
+            flash red, SurePath Auto Steer mode is temporarily unavailable, and
+            you will need to resume mowing manually. Once the system reacquires
+            the signal, the indicator lights will switch to solid green. You can
+            then press Engage Auto to resume semi-autonomous mowing along the
+            nearest cut line.
+          </p>
+        </li>
+        <li class="question">Where is SurePath available?<span>✖</span></li>
+        <li class="answer">
+          <p>
+            SurePath is currently only available in the United States in select
+            states. Contact your local Cub Cadet dealer for more information.
+          </p>
+
+          <p>
+            Available States: Indiana, Ohio, Kentucky, Florida, Alabama,
+            Tennessee, North Carolina, Michigan, West Virginia, Wisconsin, Iowa,
+            Minnesota, Missouri, Mississippi, New York, Connecticut,
+            Massachusetts, Vermont, Oregon, Maine, Washington, *Montana, *North
+            Dakota, *South Dakota, *Nebraska, *Kansas, *Oklahoma, *Texas,
+            *Illinois, *Georgia, *South Carolina, *Virginia, *Maryland,
+            *Pennsylvania, *Delaware *Notes partial coverage. Contact Cub Cadet
+            for more information
+          </p>
+        </li>
+        <li class="question">
+          Can I get this fitted or mounted on a different mower?<span>✖</span>
+        </li>
+        <li class="answer">
+          <p>
+            SurePath<sup>&trade;</sup> is a new, exclusive model with unique and
+            innovative components. This technology is not available to be
+            retrofitted or mounted on different mowers.
+          </p>
+        </li>
+        <li class="question">What is the warranty?<span>✖</span></li>
+        <li class="answer">
+          <p>
+            Cub Cadet&reg; SurePath<sup>&trade;</sup> is covered by the same
+            warranty as the PRO Z 900 Series: 3-year limited commercial warranty
+            (no hour limitations) and 5 year / 1,750 hour limited deck
+            construction warranty.
+          </p>
+        </li>
+        <li class="question">
+          Is maintenance any different from a non-SurePath unit?<span>✖</span>
+        </li>
+        <li class="answer">
+          <p>
+            Your local Cub Cadet&reg; dealer will be able to provide the same
+            high-quality service and maintenance support for SurePath<sup
+              >&trade;</sup
+            >
+            units.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <script>
+      var divs = document.querySelectorAll(".question").forEach(function (el) {
+        el.addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.nextElementSibling.classList.toggle("active");
+        });
+      });
+    </script>
+  </section>
+</div>
