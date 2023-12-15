@@ -5,7 +5,7 @@ import ProductBlock from "@/components/ProductBlock";
 export default function Explore({ addButton, explore, showH2 = false }) {
   return (
     <section>
-      <div className="container py-5 px-1 d-flex flex-column ">
+      <div className="container py-5 px-1 d-flex flex-column">
         {showH2 && (
           <h2
             dangerouslySetInnerHTML={{ __html: explore.h2 }}

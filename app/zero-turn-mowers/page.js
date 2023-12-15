@@ -107,10 +107,10 @@ export default function ZeroTurnMowers({}) {
               </li>
               <li className="">
                 <div className="p-3">
-                  <h2 className="mb-2 text-4xl">
-                    Introducing the Ultima Series™ ZTXS
+                  <h2 className="mb-2 text-3xl">
+                    Tackle Slopes With The Ultima ZTXS
                   </h2>
-                  <h3 className="mb-2">
+                  <h3 className="mb-2 text-xl">
                     The Ultima Series™ Zero-Turn with
                     <br />
                     Commercial-Grade Features
@@ -145,8 +145,8 @@ export default function ZeroTurnMowers({}) {
                 img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/product-ZT.jpg",
                 title: "Ultima ZT",
                 copy: `The award-winning Ultima Series™ features enhanced strength and durability, redefined comfort and uncompromised performance.`,
+                url: "https://www.cubcadet.com/en_US/ultima-zt-zero-turn-mowers",
                 button: {
-                  url: "https://www.cubcadet.com/en_US/ultima-zt-zero-turn-mowers",
                   copy: "Shop for Ultima ZT",
                   className: "text-white border-0",
                   style: { backgroundColor: "#000" },
@@ -170,8 +170,8 @@ export default function ZeroTurnMowers({}) {
                 img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/product-ZT.jpg",
                 title: "Ultima Electric ZT",
                 copy: `The Ultima Series™ ZT1 42E is equipped with the latest lithium-ion battery technology for a quiet operation, run time up to 1.5 hours of run time and limited power fade.`,
+                url: "https://www.cubcadet.com/en_US/electric-lawn-mowers/zt1-42e/34CBA2CS710.html",
                 button: {
-                  url: "https://www.cubcadet.com/en_US/electric-lawn-mowers/zt1-42e/34CBA2CS710.html",
                   copy: "Shop for Ultima Electric ZT",
                   className: "text-white border-0",
                   style: { backgroundColor: "#000" },
@@ -199,8 +199,8 @@ export default function ZeroTurnMowers({}) {
                 img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/product-ZTS.jpg",
                 title: "Ultima ZTS",
                 copy: `Equipped with Cub Cadet® Synchro-Steer™ technology, the Ultima ZTS line delivers precision, control and stability on hills up to 20 degrees.`,
+                url: "https://www.cubcadet.com/en_US/ultima-zts-zero-turn-mowers",
                 button: {
-                  url: "https://www.cubcadet.com/en_US/ultima-zts-zero-turn-mowers",
                   copy: "Shop for Ultima ZTS",
                   className: "text-white border-0",
                   style: { backgroundColor: "#000" },
@@ -228,8 +228,8 @@ export default function ZeroTurnMowers({}) {
                 img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/product-ZTX.jpg",
                 title: "Ultima ZTX",
                 copy: `The Ultima Series™ ZTX is engineered with commercial-grade features that allow you to tackle tough challenges on your large property.`,
+                url: "https://www.cubcadet.com/en_US/ultima-ztx-zero-turn-mowers",
                 button: {
-                  url: "https://www.cubcadet.com/en_US/ultima-ztx-zero-turn-mowers",
                   copy: "Shop for Ultima ZTS",
                   className: "text-white border-0",
                   style: { backgroundColor: "#000" },
@@ -257,8 +257,8 @@ export default function ZeroTurnMowers({}) {
                 img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/product-ZTS.jpg",
                 title: "Ultima ZTXS",
                 copy: `The Ultima Series™ ZTXS is engineered with commercial-grade features and equipped with Cub Cadet® Synchro-Steer™ technology, delivering precision, control and stability on hills up to 20 degrees.`,
+                url: "https://www.cubcadet.com/en_US/ultima-ztxs-zero-turn-mowers",
                 button: {
-                  url: "https://www.cubcadet.com/en_US/ultima-ztxs-zero-turn-mowers",
                   copy: "Shop for Ultima ZTXS",
                   className: "text-white border-0",
                   style: { backgroundColor: "#000" },
@@ -412,12 +412,12 @@ export default function ZeroTurnMowers({}) {
               {
                 img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/19B40026100_1.jpg",
                 title: "Hauler",
-                url: "https://www.cubcadet.com/en_US/zero-turn-mower-accessories/52-inch-all-season-plow-blade-attachment/19A70063OEM.html?fitsOnModel=false#start=",
+                url: "https://www.cubcadet.com/en_US/riding-mower-accessories/cub-cadet-hauler/19B40026100.html#q=hauler&lang=en_US&start=5",
               },
               {
-                img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/19A30037100.jpg",
+                img: "https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/zero-turn-mowers/19A70063OEM_2.jpg",
                 title: "All-Season Plow Blade",
-                url: "ttps://www.cubcadet.com/en_US/riding-mower-accessories/cub-cadet-hauler/19B40026100.html#q=hauler&lang=en_US&start=5",
+                url: "https://www.cubcadet.com/en_US/zero-turn-mower-accessories/52-inch-all-season-plow-blade-attachment/19A70063OEM.html?fitsOnModel=false#start=",
               },
               //{
               //   title: "PASTE",
@@ -438,10 +438,10 @@ export default function ZeroTurnMowers({}) {
                 title: "Zero-Turn Mower Accessories",
                 href: "https://www.cubcadet.com/en_US/riding-lawn-mowers/zero-turn-mower-accessories",
               },
-              {
-                title: "Zero-Turn Mowers",
-                href: "https://www.cubcadet.com/en_US/riding-lawn-mowers/zero-turn-mowers",
-              },
+              // {
+              //   title: "Zero-Turn Mowers",
+              //   href: "https://www.cubcadet.com/en_US/riding-lawn-mowers/zero-turn-mowers",
+              // },
               {
                 title: "Lawn & Garden Tractors",
                 href: "https://www.cubcadet.com/en_US/riding-lawn-mowers/lawn-and-garden-tractors",
@@ -500,30 +500,6 @@ export default function ZeroTurnMowers({}) {
               {
                 title: "Oil Change Kit",
                 href: "https://www.cubcadet.com/en_US/snow-blower-parts/snow-blower-shear-pins",
-              },
-              {
-                title: "Belts",
-                href: "https://www.cubcadet.com/en_US/snow-blower-parts/snow-blower-belts",
-              },
-              {
-                title: "Shave Plates",
-                href: "https://www.cubcadet.com/en_US/snow-blower-parts/snow-blower-shave-plates",
-              },
-              {
-                title: "Slide Shoes",
-                href: "https://www.cubcadet.com/en_US/snow-blower-parts/snow-blower-slide-shoes",
-              },
-              {
-                title: "Tires and Wheels",
-                href: "https://www.cubcadet.com/en_US/snow-blower-parts/snow-blower-tires-and-wheels",
-              },
-              {
-                title: "All Snow Blower Parts",
-                href: "https://www.cubcadet.com/en_US/shop-by-machine-type/snow-blower-parts",
-              },
-              {
-                title: "Oil Change Kit",
-                href: "https://www.cubcadet.com/en_US/riding-mower-accessories/oil-change-kit/490-950-C042.html#q=490-950-C042&lang=en_US&start=0",
               },
               {
                 title: "Kawasaki Engine Maintenance Kits",
