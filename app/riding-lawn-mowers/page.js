@@ -15,8 +15,8 @@ export default function RidingLawnMowers({}) {
       elem.remove();
     });
     const html = `<script>
-  (function(c,a,r,t,f,u,l){c[u]=c[u]||function(){(c[u].q=c[u].q||[]).push(arguments)},l=a.createElement(r),l.async=1,l.id=u+"scr",l.src=f,a[t].appendChild(l)})(window,document,"script","body","//embed.cartfulsolutions.com/zero-turn-finder/recommendation.min.js","cfl659");
-  </script>`;
+    (function(c,a,r,t,f,u,l){c[u]=c[u]||function(){(c[u].q=c[u].q||[]).push(arguments)},l=a.createElement(r),l.async=1,l.id=u+"scr",l.src=f,a[t].appendChild(l)})(window,document,"script","body","//embed.cartfulsolutions.com/cub-cadet-riding-finder/recommendation.min.js","cfl681");
+    </script>`;
     const scriptEl = document.createRange().createContextualFragment(html);
     document.body.appendChild(scriptEl);
   });
@@ -99,19 +99,15 @@ export default function RidingLawnMowers({}) {
           addButton={false}
         />
 
-        <section className="relative flex flex-col-reverse lg:block">
+        <section className="relative flex flex-col-reverse lg:block max-h-[600px] overflow-hidden">
           <div className="container w-100 relative top-0 left-0 z-20 bg-neutral-100 lg:bg-transparent">
             <QuoteBlock
               className="text-black lg:absolute p-4 mt-10 md:max-w-xl lg:bg-white/70"
               quote={{
                 stars: 5,
-                imgMobile:
-                  "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/quote-mobile.jpg",
-                imgDesktop:
-                  "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/quote-desktop.jpg",
-                title: "LOOK NO MORE FOR A GREAT MOWER.",
-                copy: "This Cub Cadet mower is a beast. I absolutely love it and all of its features. Honestly, I haven’t found one negative thing to say about it since I’ve bene using it. Needless to say, I love this mower!”",
-                name: "Twwagoner from Lexington, NC",
+                title: "Great machine",
+                copy: `This is a great machine. The motor has plenty of power to get through almost anything and the fabricated deck for just a small amount more over the 46" is definitely worth it.`,
+                name: "Kane B from Michigan",
                 unit: "Ultima ZT1",
               }}
               addCSS={{ maxWidth: "700px" }}
@@ -122,7 +118,7 @@ export default function RidingLawnMowers({}) {
           </div>
 
           <ResponsiveImage
-            src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/hero.jpg"
+            src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/13AQA1TLA10_XT1LT50-2.jpg"
             alt=""
             id="quoteimg"
             className="w-100 h-100 relative z-0 object-cover"
@@ -131,8 +127,8 @@ export default function RidingLawnMowers({}) {
           />
         </section>
 
-        <section className="py-5 px-1">
-          <div id="product-finder-zero-turns"></div>
+        <section className="py-5 px-1 container">
+          <div id="product-finder-riding-mowers"></div>
         </section>
 
         <section>
@@ -146,7 +142,7 @@ export default function RidingLawnMowers({}) {
 
       <div
         className="middle my-6 d-flex justify-content-center align-items-center h2"
-        style={{ backgroundColor: "#cfcfcf", minHeight: "600px" }}
+        style={{ backgroundColor: "#cfcfcf", minHeight: "800px" }}
       >
         For PLP
       </div>
