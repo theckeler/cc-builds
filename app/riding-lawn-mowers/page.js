@@ -43,9 +43,9 @@ export default function RidingLawnMowers({}) {
 
         <section className="py-5 px-1">
           <div className="container">
-            <h1 className="text-lg-center">
+            <h2 className="text-lg-center">
               Versatile, Durable Riding Lawn Mowers
-            </h1>
+            </h2>
             <p
               className="text-lg-center mt2 mb-0 mx-auto"
               style={{ maxWidth: "800px", lineHeight: "1.8" }}
@@ -108,7 +108,7 @@ export default function RidingLawnMowers({}) {
                 title: "Great machine",
                 copy: `This is a great machine. The motor has plenty of power to get through almost anything and the fabricated deck for just a small amount more over the 46" is definitely worth it.`,
                 name: "Kane B from Michigan",
-                unit: "Ultima ZT1",
+                unit: "XT1 LT50 FAB",
               }}
               addCSS={{ maxWidth: "700px" }}
               stackStars={true}

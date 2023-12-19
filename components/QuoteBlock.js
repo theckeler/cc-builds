@@ -20,6 +20,7 @@ const QuoteBlock = ({
       <Stars
         starFill={starFill}
         fillBase={fillBase}
+        stars={{ average: 10, starsOnly: true }}
       />
 
       <p className="mt-2">{quote.copy}</p>
