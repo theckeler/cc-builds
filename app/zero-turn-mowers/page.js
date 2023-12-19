@@ -79,7 +79,7 @@ export default function ZeroTurnMowers({}) {
         className=""
       >
         <section className="container text-center p-2 lg:px-52 py-4 lg:py-10">
-          <h1 className="">The Ultimate Zero-Turn Lineup</h1>
+          <h2 className="">The Ultimate Zero-Turn Lawn Mower Lineup</h2>
           <p className="lg:px-48 mt-1 lg:mt-4">
             Cub Cadet® zero-turn mowers are designed to answer the call of
             challenging yards and difficult obstacles. The Ultima Series™ lineup
@@ -499,7 +499,7 @@ export default function ZeroTurnMowers({}) {
             list: [
               {
                 title: "Oil Change Kit",
-                href: "https://www.cubcadet.com/en_US/snow-blower-parts/snow-blower-shear-pins",
+                href: "https://www.cubcadet.com/en_US/riding-mower-accessories/oil-change-kit/490-950-C042.html#q=490-950-C042&lang=en_US&start=0",
               },
               {
                 title: "Kawasaki Engine Maintenance Kits",
