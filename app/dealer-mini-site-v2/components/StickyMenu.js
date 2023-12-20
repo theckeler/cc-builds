@@ -1,207 +1,152 @@
 "use client";
 
-// import Hours from "@/components/Hours";
-// import ToggleTab from "@/components/ToggleTab";
-
 import Stars from "@/components/Stars";
 
 import ContactsIcon from "@/components/icons/Contacts";
 import DirectionsIcon from "@/components/icons/Directions";
 import PhoneIcon from "@/components/icons/Phone";
-import SupportIcon from "@/components/icons/Support";
 
-import Address from "@/components/Address";
 import Phone from "@/components/Phone";
+import Hours from "./Hours";
 import IconBlock from "./IconBlock";
 
 export default function StickyMenu({ className, dealer }) {
   const icon = {
-    style: {
-      padding: "0.5rem",
-      //minWidth: "48px",
-      //minHeight: "48px",
-      // backgroundColor: "#ffc20f",
-    },
-    class: "w-full h-full",
+    class: "p-1 bg-neutral-100",
   };
 
   const icons = [
     {
-      icon: (
-        <SupportIcon
-          style={icon.style}
-          className={icon.class}
-        />
-      ),
-      title: "Support",
-    },
-    {
-      icon: (
-        <DirectionsIcon
-          style={icon.style}
-          className={icon.class}
-        />
-      ),
+      icon: <DirectionsIcon className={icon.class} />,
       title: "Directions",
-      className: "d-xl-none",
+      id: "directions",
+      onClick: () => {
+        window.open("https://www.google.com/maps");
+      },
     },
-    // {
-    // 	icon: <ClockIcon style={icon.style} className={icon.class} />,
-    // 	title: "Hours",
-    // },
     {
-      icon: (
-        <ContactsIcon
-          style={icon.style}
-          className={icon.class}
-        />
-      ),
+      icon: <ContactsIcon className={icon.class} />,
       title: "Contact",
+      id: "directions",
+      onClick: () => {
+        document
+          .querySelector(`#contact-form-top`)
+          .scrollIntoView({ behavior: "smooth" });
+      },
+      className: "xl:hidden",
     },
     {
-      icon: (
-        <PhoneIcon
-          style={icon.style}
-          className={icon.class}
-        />
-      ),
+      icon: <PhoneIcon className={icon.class} />,
       title: "Phone",
+      id: "directions",
+      onClick: () => {
+        window.open("tel:216-555-5555");
+      },
+      className: "xl:hidden",
     },
   ];
 
   const navButtons = [
-    // { title: "Book Service", id: "book-service" },
-    { title: "Lineup", id: "lineup" },
-    { title: "Parts & Accessories", id: "parts-accessories" },
+    {
+      title: "Contact",
+      id: "contact-form",
+      className: "bg-[#ffc20f] hidden xl:block",
+      icon: <PhoneIcon className="w-6 h-full mr-1" />,
+    },
+    {
+      title: "Contact",
+      id: "contact-form-top",
+      className: "bg-[#ffc20f] xl:hidden",
+      icon: <PhoneIcon className="w-6 h-full mr-1" />,
+    },
+    { title: "Products", id: "products" },
     { title: "Promotions", id: "promotions" },
     { title: "Financing", id: "financing" },
-    { title: "Contact", id: "contact" },
     { title: "Faqs", id: "faqs" },
   ];
 
   return (
     <ul
-      className={`align-self-start px-0 list-unstyled w-100 flex flex-xl-column bg-white sticky bottom-0 top-4 ${className}`}
-      style={{
-        zIndex: 1001,
-      }}
+      className={`align-self-start px-0 list-unstyled bg-white sticky bottom-0 top-4 z-50 grid grid-cols-[1fr_160px] items-center gap-2 xl:grid-cols-1 border-t xl:border-0 ${className}`}
     >
-      <li className="col-6 col-xl-12 p-1 pt-0">
-        <h1
-          className="text-xl-center h-100 mt-0 mb-0 pt-2"
-          style={{
-            fontSize: "22px",
-            lineHeight: 1,
-            overflow: "hidden",
-            textOverflow: "ellipsis",
-            whiteSpace: "nowrap",
-          }}
-        >
+      <li className="p-1 pt-0 grid gap-1 grid-cols-[1fr_150px] md:grid-cols-[1fr_200px] xl:grid-cols-1 items-center">
+        <h1 className="xl:text-center overflow-hidden text-nowrap truncate mb-0 text-sm md:text-xl lg:text-2xl">
           {dealer.name}
         </h1>
 
         <Stars
-          className="d-none d-xl-flex mt-2 justify-center"
+          className="justify-center hidden xl:flex"
           stars={dealer.stars}
         />
 
-        <ul className="mx-auto mb-0 list-unstyled hidden lg:flex  align-items-center px-1 mt-2">
-          <li className="mt-1">
-            <Address address={dealer.address} />
+        <ul className="flex">
+          <li className="mt-1 hidden xl:block">
+            <div className="">{dealer.address.street}</div>
+            <div className="">
+              {dealer.address.city}, {dealer.address.state} {dealer.address.zip}
+            </div>
             <Phone />
           </li>
           <li className="ml-auto">
-            <IconBlock
-              block={{
-                icon: (
-                  <DirectionsIcon
-                    style={icon.style}
-                    className={icon.class}
+            <ul className="grid grid-flow-col auto-cols-min gap-1">
+              {icons.map(({ icon, title, onClick, className }, i) => (
+                <li
+                  key={i}
+                  className={"w-12 md:w-auto " + className}
+                >
+                  <IconBlock
+                    block={{
+                      icon: icon,
+                      title: title,
+                    }}
+                    onClick={onClick}
                   />
-                ),
-                title: "Directions",
-              }}
-            />
+                </li>
+              ))}
+            </ul>
           </li>
         </ul>
+
+        <hr className="border-t border-neutral-200 w-full hidden xl:block my-0 mt-1" />
       </li>
-      <li
-        style={{
-          gap: "0.5em",
-        }}
-      >
+      <li className="h-full py-1">
         <ul
           id="sticky-menu"
-          className="list-unstyled mb-0 gap-2 grid w-100"
-          style={{ bottom: "100%", left: 0 }}
+          className="mb-0 gap-2 grid hidden absolute xl:relative bottom-full xl:bottom-auto bg-white p-1 lg:p-0 min-w-[326px] xl:min-w-min right-0 xl:grid"
         >
           {navButtons.map((block, i) => (
-            <li
-              className={`${block.className}`}
-              key={i}
-            >
+            <li key={i}>
               <button
-                className="w-100 hidden lg:block text-left p-2 font-weight-bold outline-0"
-                style={{ cursor: "pointer" }}
-                onClick={(e) => {
+                className={`text-left p-2 font-weight-bold outline-0 cursor-pointer w-full ${block.className}`}
+                onClick={() => {
                   document
                     .querySelector(`#${block.id}`)
                     .scrollIntoView({ behavior: "smooth" });
+
                   document
                     .querySelector("#sticky-menu")
-                    .classList.add("d-none");
-
-                  if (
-                    document
-                      .querySelector("#" + block.id + "-block")
-                      ?.classList.contains("d-none")
-                  ) {
-                    document
-                      .querySelector("#" + block.id + "-block")
-                      .classList.remove("d-none");
-                  }
+                    .classList.add("hidden");
                 }}
               >
+                {block.icon}
                 {block.title}
               </button>
             </li>
           ))}
         </ul>
-      </li>
 
-      <li className="col-6 col-xl-12 ml-auto pr-0">
-        <ul
-          className="flex justify-content-end list-unstyled h-100 mb-0 p-1"
-          style={{
-            flex: "1 1 auto",
-            gap: "0.25em",
+        <button
+          className="w-full h-full font-weight-bold text-center cursor-pointer xl:hidden"
+          onClick={() => {
+            document.querySelector("#sticky-menu").classList.toggle("hidden");
           }}
         >
-          <li className="d-xl-none">
-            <button
-              className="w-100 -0 text-left p-2 font-weight-bold"
-              style={{ cursor: "pointer" }}
-              onClick={(e) => {
-                document
-                  .querySelector("#sticky-menu")
-                  .classList.toggle("d-none");
-              }}
-            >
-              Dealer Menu
-            </button>
-          </li>
-          {icons.map(
-            (block, i) =>
-              dealer.icons[i] === true && (
-                <li
-                  className={`flex align-items-center ${block.className}`}
-                  key={i}
-                >
-                  <IconBlock block={block} />
-                </li>
-              )
-          )}
-        </ul>
+          Dealer Menu
+        </button>
+      </li>
+      <li className="hidden xl:block px-2 pt-1">
+        <hr className="border-t border-neutral-200 w-full mt-0 mb-2" />
+        <Hours className="text-sm" />
       </li>
     </ul>
   );

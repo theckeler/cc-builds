@@ -4,7 +4,6 @@ export default function Stars({
   fillBase,
   stars = { average: 4.6, reviews: 43 },
 }) {
-  console.log(starFill);
   return (
     <div className={`flex items-center ${className}`}>
       {!stars.starsOnly && <span className="mr-1">{stars.average}</span>}

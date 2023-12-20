@@ -1,7 +1,9 @@
-import ButtonMain from "@/components/Buttons/Main";
 import { Fragment } from "react";
 
-export default function ContactForm() {
+import ButtonMain from "@/components/Buttons/Main";
+import ReCapthca from "@/components/ReCapthca";
+
+export default function ContactForm({}) {
   const inputText = <input className="w-100 p-1 border" />;
   const inputSelect = (
     <select className="p-1">
@@ -14,40 +16,38 @@ export default function ContactForm() {
       className="w-full p-1"
     />
   );
+  const inputTextbox = <textarea className="w-full p-1 border" />;
 
   const form = [
-    { title: "Name", input: inputText },
-    { title: "Address", input: inputText },
-    { title: "City", input: inputText },
-    { title: "State", input: inputText },
-    { title: "Zipcode", input: inputText },
+    { title: "First Name", input: inputText },
+    { title: "Last Name", input: inputText },
+    { title: "Phone", input: inputText },
+    { title: "Email", input: inputText },
+    { title: "Message", input: inputTextbox },
   ];
 
   return (
-    <ul
-      className="list-unstyled flex flex-wrap align-items-center"
-      style={{ gap: "0.75em" }}
-    >
+    <ul className="list-unstyled grid grid-cols-[200px_1fr] gap-3">
       {form.map(function (block, i) {
         return (
           <Fragment key={i}>
-            <li
-              className="col-2 text-right font-bold px-0 mb-0"
-              style={{ fontSize: "16px" }}
-            >
+            <li className="text-right font-bold px-0 mb-0 text-lg">
               {block.title}:
             </li>
-            <li className="col-9 px-0">{block.input}</li>
+            <li className="px-0">{block.input}</li>
           </Fragment>
         );
       })}
-      <li className="col-2 text-right font-bold px-0 mb-0"></li>
-      <li className="col-9 px-0 mt-2">
+      <li></li>
+      <li className="text-left">
+        <ReCapthca />
+      </li>
+      <li></li>
+      <li className="px-0 text-left">
         <ButtonMain
           title="Submit"
           href="#top"
-          className="flex justify-content-center align-items-center bg-secondary border-0 px-2 font-weight-bold text-decoration-none text-uppercase"
-          style={{}}
+          className="inline-block bg-secondary border-0 px-32 py-2 font-weight-bold text-decoration-none text-uppercase"
         />
       </li>
     </ul>
