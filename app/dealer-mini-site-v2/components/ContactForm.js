@@ -27,11 +27,11 @@ export default function ContactForm({}) {
   ];
 
   return (
-    <ul className="list-unstyled grid grid-cols-[200px_1fr] gap-3">
+    <ul className="list-unstyled grid md:grid-cols-[200px_1fr] gap-3">
       {form.map(function (block, i) {
         return (
           <Fragment key={i}>
-            <li className="text-right font-bold px-0 mb-0 text-lg">
+            <li className="md:text-right font-bold px-0 mb-0 text-lg">
               {block.title}:
             </li>
             <li className="px-0">{block.input}</li>
