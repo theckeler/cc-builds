@@ -137,7 +137,6 @@ export default function SnowV2({}) {
 
           <ResponsiveImage
             src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/31AH5EVZ596_3X30HD_Env03.jpg"
-            // webp="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/snow-blowers/31AH5EVZ596_3X30HD_Env03.webp"
             alt=""
             id="snowguy"
             className="lg:absolute top-0 left-0 z-0 w-full h-full object-cover"
