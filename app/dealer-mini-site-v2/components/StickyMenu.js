@@ -109,6 +109,10 @@ export default function StickyMenu({ className, dealer }) {
 
         <hr className="border-t border-neutral-200 w-full hidden xl:block my-0 mt-1" />
       </li>
+      <li className="hidden xl:block px-2 pt-1">
+        <Hours className="text-sm" />
+        <hr className="border-t border-neutral-200 w-full mt-2 mb-0" />
+      </li>
       <li className="h-full py-1">
         <ul
           id="sticky-menu"
@@ -143,10 +147,6 @@ export default function StickyMenu({ className, dealer }) {
         >
           Dealer Menu
         </button>
-      </li>
-      <li className="hidden xl:block px-2 pt-1">
-        <hr className="border-t border-neutral-200 w-full mt-0 mb-2" />
-        <Hours className="text-sm" />
       </li>
     </ul>
   );

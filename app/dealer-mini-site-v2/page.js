@@ -187,56 +187,84 @@ export default function DealerMiniSite() {
 
           <hr className="border-t border-neutral-200 w-full" />
 
-          <TitleFlexGridViews
-            id="promotions"
-            className={`p-2 ${tabSpacing}`}
+          <Promotions
             jsonData={[
               {
-                span: true,
-                title: "Equip Expo Show Product Giveaway 2023",
-                subTitle: "Offer Valid at Show Only",
-                valid:
-                  "Valid 10/18/2023, 9:00 a.m. to 5:00 p.m. – 10/19/2023, 9:00 a.m. to 4:00 p.m. EST",
+                img: {
+                  src: "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw10c40a58/special-offers/NALP-logo_690x384.jpg",
+                },
+                title: "NALP Member Discount",
+                subTitle: `Members of the National Association of Landscape Professionals are eligible for a 15% discount.`,
+                valid: "10/01/2023 - 9/30/2024",
                 offerDetails: [
-                  "NO PURCHASE NECESSARY TO ENTER OR WIN.",
-                  "Enter between October 18, 2023, 9:00 a.m. to 5:00 p.m. and October 19, 2023, 9:00 a.m. to 4:00 p.m. Eastern Time.",
-                  `For Official Rules go <a href="https://www.cubcadet.com/s/cubcadet/en_US/cub-cadet-equipment-expo-2023-official-rules.html">here</a>`,
+                  "Members of the NALP are eligible for 15% off discounted pricing.",
+                  "15% off regular price on PRO Z™ Series and PRO Z™ Series Attachments.",
+                  "Cannot be combined with any other offer, demo or promotion.",
                 ],
-                link: "TERMS & CONDITIONS",
+                link: "Offer Details",
                 button: {
-                  title: "Shop Now",
-                  href: "/shop/",
+                  title: "Find a dealer",
+                  href: "https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&horizontalView=true&isForm=true&rid=dealers",
                 },
               },
               {
-                title: "Military Member Rebate",
-                subTitle:
-                  "Current and former military members are eligible for a rebate up to $500 on the purchase of select PRO products.",
-                valid: "Valid 11/01/2022 - 10/31/2023",
+                img: {
+                  src: "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dwc805e60b/special-offers/so-fleet-discount-program.jpg",
+                },
+                title: "Fleet Discount Program",
+                subTitle: `Professional landscape contractors are eligible for fleet discounts up to 27%.`,
+                valid: "10/01/2023 - 9/30/2024",
                 offerDetails: [
-                  "A one-time $300 Military Appreciation Rebate may be applied to (1) PRO Z™ 100 Series, (1) PRO Z™ HW 300 Series or (1) ZTX™ purchase.",
-                  "A one-time $500 Military Appreciation Rebate may be applied to (1) PRO Z™ 500, 700 or 900 Series or (1) PRO X™ Series purchase.",
-                  `Upon verification, approved Military Appreciation Rebates will be mailed, as an American Express® gift card, to the address submitted by the consumer.`,
-                  `Cannot be combined with any other offer, demo or promotion.`,
+                  "Fleet pricing (25% off) is earned when a minimum 2 units is purchased.",
+                  "Super Fleet pricing (27% off) is provided when 4 units or more of product is purchased.",
+                  "All DEWALT handhelds sold through IR dealers are eligible. Every $5,000 worth of DEWALT equals 1 unit (20% off)",
+                  "Cannot be combined with any other offer or promotion.",
                 ],
-                link: "TERMS & CONDITIONS",
+                link: "Offer Details",
+                button: {
+                  title: "Find a dealer",
+                  href: "https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&horizontalView=true&isForm=true&rid=dealers",
+                },
               },
               {
-                title: "Fleet Discount Program",
-                subTitle:
-                  "Professional landscape contractors are eligible for fleet discounts up to 27%.",
-                valid: "Valid 11/01/2022 - 10/31/2023",
+                img: {
+                  src: "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw443bb471/special-offers/Non-Profit_690x386.jpg",
+                },
+                title: "Bid Program",
+                subTitle: `PRO Products are available at 27% off retail and Cub Cadet Residential*, DeWALT Battery Handhelds and Walk Behinds are available at 15% off retail to non-profit and tax-supported agencies.`,
+                valid: "10/01/2023 - 9/30/2024",
                 offerDetails: [
-                  "Fleet pricing (25% off) is earned when a 20-point minimum value of product is purchased.",
-                  "Super Fleet pricing (27% off) is provided when a 50-point minimum value of product is purchased.",
-                  `PRO Z 972 SD Zero-Turn = 5 points; PRO Z 500 / 700 / 900 Zero-Turn = 10 points, PRO X Stand-On = 10 points, Hydro Walk-Behind Mower = 10 Points, PRO Z 100 = 5 points, ZTX6 = 5 points.`,
-                  `Cannot be combined with any other offer or promotion.`,
+                  "PRO Products are available at 27% off retail to non-profit and tax-supported agencies.",
+                  "Cub Cadet Residential*, DeWALT Residential* are available at 15% off retail to non-profit and tax-supported agencies.",
+                  "Attachment & accessory discounts are also available at time of purchase.",
+                  "Cannot be combined with any other offer or promotion.",
+                  "*Bid Assistance Program Rebates are not available for the following products: Cub Cadet electric, CC30, Enduro Series XT1, Challenger 500, 700 & UVs.",
                 ],
-                link: "TERMS & CONDITIONS",
+                link: "Offer Details",
+                button: {
+                  title: "Find a dealer",
+                  href: "https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&horizontalView=true&isForm=true&rid=dealers",
+                },
+              },
+              {
+                img: {
+                  src: "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw34883fbb/special-offers/Co-op__690x386.jpg",
+                },
+                title: "Cooperative Purchasing Program",
+                subTitle: `Programs available through nationwide government-to-government procurement contracts.`,
+                valid: "10/01/2023 - 9/30/2024",
+                offerDetails: [
+                  "This program provides options for the following organizations interested in purchasing product without the full bid process or in states where there is no purchasing contract please see the list on full document.",
+                  "MTD Products Company, as the contract holder, quotes and invoices for HGAC and BuyBoard. Purchases made under NPPGov are direct through a dealer.",
+                  "Cannot be combined with any other offer or promotion.",
+                ],
+                link: "Offer Details",
+                button: {
+                  title: "Find a Dealer",
+                  href: "https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&horizontalView=true&isForm=true&rid=dealers",
+                },
               },
             ]}
-            title="Promotions"
-            Component={Promotions}
           />
 
           <hr className="border-t border-neutral-200 w-full" />

@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import snowData from "./data/home.json";
 
@@ -10,13 +10,13 @@ import RelatedLinks from "@/components/RelatedLinks";
 import ResponsiveImage from "@/components/ResponsiveImage";
 // import ImgSwappin from "./elements/ImgSwappin";
 // import Button from "@/components/Button";
-import IntellipowerLogo from "../../components/images/IntellipowerLogo";
-import Lineup from "./elements/Lineup";
-import QuoteBlock from "@/components/QuoteBlock";
-import IconTextBlock from "./elements/IconTextBlock";
-import CompareRow from "./elements/CompareRow";
 import FinancingBanner18 from "@/components/FinancingBanner18";
+import QuoteBlock from "@/components/QuoteBlock";
+import IntellipowerLogo from "../../components/images/IntellipowerLogo";
+import CompareRow from "./elements/CompareRow";
 import CubDays2023 from "./elements/CubDays2023";
+import IconTextBlock from "./elements/IconTextBlock";
+import Lineup from "./elements/Lineup";
 import XSeriesLogo from "./elements/XSeriesLogo";
 
 export default function SnowV2({}) {
@@ -47,12 +47,15 @@ export default function SnowV2({}) {
     document.body.appendChild(scriptEl);
   });
 
-  const addPromo = true;
-  const addCubDays2023 = true;
+  const addPromo = false;
+  const addCubDays2023 = false;
 
   return (
     <>
-      <div id="sdb-container" className="mt-4">
+      <div
+        id="sdb-container"
+        className="mt-4"
+      >
         <section className="flex flex-col xl:flex-row items-center justify-center">
           <div className="xl:container w-full xl:h-[600px] z-10 xl:py-2">
             <div className="flex flex-col items-end justify-between h-full">
@@ -80,7 +83,10 @@ export default function SnowV2({}) {
         </section>
       </div>
 
-      <div id="sdb-container" className="">
+      <div
+        id="sdb-container"
+        className=""
+      >
         <section className="bg-black d-flex flex-column">
           <div className="wrapper text-center text-white p-2 lg:px-52 py-4 lg:py-10">
             <h1 className="">
@@ -102,8 +108,14 @@ export default function SnowV2({}) {
               <h2 className="text-center block mb-6">The X Series Lineup</h2>
               <ul className="grid gap-4 lg:grid-cols-3 list-unstyled">
                 {snowData.lineup.blocks.map((block, i) => (
-                  <li className="flex flex-col" key={i}>
-                    <Lineup block={block} imgType={imgType} />
+                  <li
+                    className="flex flex-col"
+                    key={i}
+                  >
+                    <Lineup
+                      block={block}
+                      imgType={imgType}
+                    />
                   </li>
                 ))}
               </ul>
@@ -508,8 +520,14 @@ export default function SnowV2({}) {
             </p>
             <ul className="grid gap-4 lg:grid-cols-2 mt-6">
               {snowData.machineExtreme.blocks.map((block, i) => (
-                <li className="" key={i}>
-                  <IconTextBlock block={block} imgType={imgType} />
+                <li
+                  className=""
+                  key={i}
+                >
+                  <IconTextBlock
+                    block={block}
+                    imgType={imgType}
+                  />
                 </li>
               ))}
             </ul>
@@ -573,7 +591,10 @@ export default function SnowV2({}) {
         </section>
       </div>
 
-      <div id="sdb-container" className="">
+      <div
+        id="sdb-container"
+        className=""
+      >
         <Articles
           imgType={imgType}
           viewAllLink="https://www.cubcadet.com/en_US/how-to/?crefn1=tags&crefv1=Snow%20Blowers"
