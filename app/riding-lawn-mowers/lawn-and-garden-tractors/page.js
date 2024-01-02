@@ -165,8 +165,8 @@ export default function LawnAndGardenTractors({}) {
         </section>
 
         <section className="bg-black text-white text-center">
-          <ul className="grid xl:grid-cols-[1fr_minmax(768px,1400px)_1fr] ">
-            <li className="bg-[#ffc20f] justify-end hidden xl:flex">
+          <ul className="grid xl:grid-cols-[1fr_minmax(768px,1400px)_1fr]">
+            <li className="bg-[#ffc20f] justify-end hidden xl:flex max-h-[500px]">
               <svg
                 className="h-full w-auto -mr-1"
                 viewBox="0 0 167.9 352"
@@ -192,7 +192,7 @@ export default function LawnAndGardenTractors({}) {
                 </p>
               </div>
             </li>
-            <li className="bg-[#ffc20f] hidden xl:flex">
+            <li className="bg-[#ffc20f] hidden xl:flex max-h-[500px]">
               <svg
                 className="h-full w-auto -ml-1"
                 viewBox="0 0 167.9 352"
