@@ -1,6 +1,4 @@
 export default function Promotions({ jsonData }) {
-  const styleOverride = { border: "1px solid #d9d9d9 !important" };
-
   return (
     <div>
       <h3 className="font-weight-bold text-center">Promotions</h3>
@@ -13,7 +11,7 @@ export default function Promotions({ jsonData }) {
           >
             <div
               id={`card-${i}`}
-              className="h-full bg-[#1f1f1f] flex flex-col"
+              className="h-full border border-color-[#efefef] flex flex-col"
               style={
                 {
                   //  transformStyle: "preserve-3d",
@@ -27,7 +25,7 @@ export default function Promotions({ jsonData }) {
                 className="w-full"
               />
 
-              <div className="text-white flex flex-col grow">
+              <div className="flex flex-col grow">
                 <h3
                   className="mb-2 px-2 pt-2"
                   style={{ fontSize: "24px" }}
@@ -40,10 +38,10 @@ export default function Promotions({ jsonData }) {
 
                 <div className="mt-auto">
                   <button
-                    className="w-full py-2 bg-transparent text-white text-left"
+                    className="w-full py-2 bg-transparent text-left"
                     style={{
-                      borderTop: "1px solid #4b4b4b",
-                      borderBottom: "1px solid #4b4b4b",
+                      borderTop: "1px solid #dadada",
+                      borderBottom: "1px solid #dadada",
                     }}
                     onClick={(e) => {
                       e.currentTarget.nextElementSibling.classList.toggle(
@@ -54,7 +52,7 @@ export default function Promotions({ jsonData }) {
                     {block.link}
                   </button>
                   <div className="relative hidden">
-                    <div className="p-2 bg-neutral-200 text-black">
+                    <div className="p-2">
                       <h3 style={{ fontSize: "18px" }}>Offer Details</h3>
                       <ul className="">
                         {block.offerDetails.map(function (detail, i) {
@@ -76,7 +74,7 @@ export default function Promotions({ jsonData }) {
                     <div className="">
                       <a
                         href={block.button.href}
-                        className="font-weight-bold text-white  text-uppercase w-full py-2 bg-transparent block px-1 text-left border-light"
+                        className="font-weight-bold bg-[#ffc20f] text-uppercase w-full py-2 block px-1 text-left border-light"
                       >
                         {block.button.title}
                       </a>
