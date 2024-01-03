@@ -46,7 +46,7 @@ export default function Promotions({ jsonData }) {
       />
 
       <h3 className="font-weight-bold text-center">Promotions</h3>
-      <ul className="grid gap-3 grid-cols-3 grid-flow-row">
+      <ul className="grid gap-3 md:grid-cols-2 xl:grid-cols-3 grid-flow-row p-3">
         {jsonData.map((block, i) => (
           <li
             key={i}
