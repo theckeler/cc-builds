@@ -1086,7 +1086,10 @@ export default function LawnAndGardenTractors({}) {
               </div>
               {/* Prices */}
               <div className="d-flex">
-                <div className="prices finance">
+                <div
+                  className="prices finance"
+                  style={{ borderRight: "2px solid #efefef" }}
+                >
                   <div className="price">
                     <span>
                       <span className="sales">
@@ -1162,7 +1165,7 @@ export default function LawnAndGardenTractors({}) {
               </div>
             </div>
             <hr className="d-none" />
-            <hr />
+            <hr style={{ borderBottom: "2px solid #efefef" }} />
             <div className="row justify-content-center">
               <div className="col-12">
                 <div className="product-description">
