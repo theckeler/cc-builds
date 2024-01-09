@@ -159,7 +159,7 @@ export default function HeaderRevised({}) {
         </div>
 
         <div className="container mx-auto">
-          <ul className="grid grid-cols-[1fr_48px]  md:grid-cols-[1fr_48px_48px] lg:grid-cols-[200px_minmax(500px,1fr)_minmax(48px,120px)_minmax(48px,120px)] p-2 gap-4 items-center border-b border-black ">
+          <ul className="grid grid-cols-[1fr_48px]  md:grid-cols-[1fr_48px_48px] lg:grid-cols-[200px_minmax(500px,1fr)_minmax(48px,120px)_minmax(48px,120px)] p-2 gap-4 items-center sm:border-b sm:border-black">
             <li className="w-48 order-1">
               <a
                 href=""
