@@ -32,20 +32,20 @@
   padding: 0;
 }
 
-.overflow-y-auto::-webkit-scrollbar {
-  width: 6px;
+.overflow-scrollbar::-webkit-scrollbar {
+  height: 1px;
 }
 
-.overflow-x-auto::-webkit-scrollbar {
-  height: 6px;
-}
-
-.overflow-y-auto::-webkit-scrollbar-track,
-.overflow-x-auto::-webkit-scrollbar-track {
+.overflow-scrollbar::-webkit-scrollbar-track,
+.overflow-scrollbar::-webkit-scrollbar-track {
   background-color: #000;
 }
 
-.overflow-y-auto::-webkit-scrollbar-thumb,
-.overflow-x-auto::-webkit-scrollbar-thumb {
+.overflow-scrollbar::-webkit-scrollbar-thumb,
+.overflow-scrollbar::-webkit-scrollbar-thumb {
   background-color: #eab308;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  height: 0;
 }

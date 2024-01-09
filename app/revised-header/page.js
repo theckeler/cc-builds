@@ -4,12 +4,12 @@ export default function HeaderReplace({ className, toggleMenu }) {
   return (
     <>
       <div
-        className="position-fixed"
-        style={{ top: 0, left: 0 }}
+        id="sdb-container"
+        style={{ position: "absolute", top: 0, left: 0, width: "100%" }}
       >
         <HeaderNew />
       </div>
-      <div style={{ minHeight: "calc(100vh - 600px)" }}></div>
+      <div style={{ minHeight: "80vh", backgroundColor: "#efefef" }}></div>
     </>
   );
 }
