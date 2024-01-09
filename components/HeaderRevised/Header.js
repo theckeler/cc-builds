@@ -188,15 +188,31 @@ export default function HeaderRevised({}) {
               </a>
             </li>
             <li
-              className={`fixed h-screen md:h-auto md:relative top-0 left-0 order-3 lg:order-2 col-span-full lg:col-span-1 ${
-                searchOpen ? "bg-white" : "bg-transparent"
+              className={` md:h-auto md:relative top-0 left-0 order-3 lg:order-2 col-span-full lg:col-span-1 ${
+                searchOpen ? "bg-white fixed h-screen" : "bg-transparent"
               }  p-1 z-50`}
             >
               <div
-                className={`flex border-b border-t border-s border-[#FFC20F]`}
+                className={`flex`}
               >
+                <button
+                  className={`flex w-12 h-full p-2 bg-[#FFC20F] min-h-[48px] ${
+                    searchOpen ? "" : "hidden"
+                  }`}
+                  onClick={() => {
+                    setSearchOpen(false);
+                  }}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 -960 960 960"
+                    className="w-full h-full"
+                  >
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                  </svg>
+                </button>
                 <input
-                  className="w-full h-full min-h-[48px] p-2"
+                  className="w-full h-full min-h-[48px] p-1 border-y border-[#FFC20F]"
                   placeholder="Search keyword, model or part number"
                   value={searchOpen ? "Mowers" : ""}
                   onClick={() => {
@@ -222,7 +238,10 @@ export default function HeaderRevised({}) {
                 </button>
               </div>
               <div className={`${searchOpen ? "block" : "hidden"}`}>
-                <SearchResults />
+                <SearchResults
+                  setSearchOpen={setSearchOpen}
+                  searchOpen={searchOpen}
+                />
               </div>
             </li>
             {nav.middle.map((block, i) => (

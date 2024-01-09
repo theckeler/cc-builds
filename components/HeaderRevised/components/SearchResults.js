@@ -1,6 +1,6 @@
 import SearchResultProduct from "./SearchResultProduct";
 
-export default function SearchResults({}) {
+export default function SearchResults({ setSearchOpen, searchOpen }) {
   return (
     <div className="top-0 md:top-full md:absolute bg-white w-full left-0 top-100 md:max-h-[70vh] overflow-x-scroll">
       <div className="p-2">
