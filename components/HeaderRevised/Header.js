@@ -227,6 +227,7 @@ export default function HeaderRevised() {
                   </button>
                   <input
                     className="w-full h-full min-h-[48px] p-1 border-y border-[#FFC20F]"
+                    style={{ fontSize: "16px" }}
                     placeholder="Search keyword, model or part number"
                     value={searchOpen ? "Mowers" : ""}
                     onClick={() => {
