@@ -1100,7 +1100,7 @@ export default function LawnAndGardenTractors({}) {
                         <span className="msrp-text d-none">From</span>
                         <span
                           className="formatted-price"
-                          style={{ fontSize: "22px" }}
+                          style={{ fontSize: "20px" }}
                         >
                           $1,199.00
                         </span>
@@ -1127,7 +1127,7 @@ export default function LawnAndGardenTractors({}) {
                       }}
                     />
                     <div>
-                      <strong>
+                      <strong style={{ fontSize: "20px" }}>
                         $70/mo No interest if paid in full within 18 months
                         <sup>14</sup>
                       </strong>
