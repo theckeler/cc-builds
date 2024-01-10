@@ -14,7 +14,7 @@ export default function SearchResultProduct({}) {
         <div className="name">
           <a
             href="/en_US/all-products/zt1-42-zero-turn-lawn-mower/17AREACSA10.html"
-            className="product-name"
+            className="font-bold no-underline text-lg"
           >
             ZT1 42 Zero-Turn Lawn Mower
           </a>

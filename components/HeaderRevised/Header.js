@@ -2,9 +2,13 @@
 import { useState } from "react";
 import SearchResults from "./components/SearchResults";
 
-export default function HeaderRevised({}) {
+export default function HeaderRevised() {
   const [subNavOpen, setSubNavOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+
+  if (searchOpen) {
+    document.querySelector("body").classList.toggle("overflow-hidden");
+  }
 
   const nav = {
     top: [
@@ -44,7 +48,7 @@ export default function HeaderRevised({}) {
       },
       {
         title: "USA/EN",
-        svg: `<i class="flag-icon flag-icon-us"></i>`,
+        svg: `<i className="flag-icon flag-icon-us"></i>`,
         after: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><g fill="none"><path stroke="#FFC20F" d="M9.496 3C5.916 3 3 5.918 3 9.5S5.916 16 9.496 16c3.58 0 6.496-2.918 6.496-6.5S13.076 3 9.496 3z"/><path fill="#FFC20F" d="M9.389 12L6.38 8.927 7.4 8l1.989 2.145L11.36 8l1.02.927z"/></g></svg>`,
       },
     ],
@@ -66,7 +70,7 @@ export default function HeaderRevised({}) {
         className: "hidden md:block",
       },
       {
-        title: "Cart (1)",
+        title: "Cart",
         svg: `<svg
         xmlns="http://www.w3.org/2000/svg"
         width="20"
@@ -81,6 +85,7 @@ export default function HeaderRevised({}) {
         </g>
       </svg>`,
         className: "",
+        after: "(1)",
       },
     ],
     bottom: [
@@ -158,9 +163,18 @@ export default function HeaderRevised({}) {
           </ul>
         </div>
 
-        <div className="container mx-auto">
-          <ul className="grid grid-cols-[1fr_48px]  md:grid-cols-[1fr_48px_48px] lg:grid-cols-[200px_minmax(500px,1fr)_minmax(48px,120px)_minmax(48px,120px)] p-2 gap-4 items-center sm:border-b sm:border-black">
-            <li className="w-48 order-1">
+        <div className="lg:container mx-auto">
+          <ul className="w-full grid grid-cols-[1fr_48px] md:grid-cols-[1fr_48px_48px] lg:grid-cols-[200px_minmax(500px,1fr)_minmax(48px,120px)_minmax(48px,120px)] p-1 lg:gap-2 items-center sm:border-b sm:border-black">
+            <li className="w-48 order-1 flex">
+              <button className="w-12 h-12 bg-transparent md:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 -960 960 960"
+                  className="h-full w-full"
+                >
+                  <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+              </button>
               <a
                 href=""
                 className="block w-48"
@@ -187,61 +201,62 @@ export default function HeaderRevised({}) {
                 </svg>
               </a>
             </li>
+
             <li
-              className={` md:h-auto md:relative top-0 left-0 order-3 lg:order-2 col-span-full lg:col-span-1 ${
+              className={`w-full md:h-auto md:relative top-0 left-0 order-3 lg:order-2 col-span-full lg:col-span-1 ${
                 searchOpen ? "bg-white fixed h-screen" : "bg-transparent"
-              }  p-1 z-50`}
+              } z-50`}
             >
-              <div
-                className={`flex`}
-              >
-                <button
-                  className={`flex w-12 h-full p-2 bg-[#FFC20F] min-h-[48px] ${
-                    searchOpen ? "" : "hidden"
-                  }`}
-                  onClick={() => {
-                    setSearchOpen(false);
-                  }}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 -960 960 960"
-                    className="w-full h-full"
+              <div className="p-1">
+                <div className={`flex`}>
+                  <button
+                    className={`flex w-12 h-full p-2 bg-[#FFC20F] min-h-[48px] ${
+                      searchOpen ? "" : "hidden"
+                    }`}
+                    onClick={() => {
+                      setSearchOpen(false);
+                    }}
                   >
-                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                  </svg>
-                </button>
-                <input
-                  className="w-full h-full min-h-[48px] p-1 border-y border-[#FFC20F]"
-                  placeholder="Search keyword, model or part number"
-                  value={searchOpen ? "Mowers" : ""}
-                  onClick={() => {
-                    console.log("input");
-                    // document
-                    //   .querySelector("#overlay")
-                    //   .classList.remove("hidden");
-                    setSearchOpen(!searchOpen);
-                  }}
-                />
-                <button className="bg-black px-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="21"
-                    height="21"
-                    viewBox="0 0 21 21"
-                  >
-                    <path
-                      fill="#FFC20F"
-                      d="M20.743 19.404l-6.525-6.526a7.94 7.94 0 0 0 1.704-4.92 7.938 7.938 0 0 0-2.331-5.626A7.932 7.932 0 0 0 7.966 0a7.946 7.946 0 0 0-5.635 2.332A7.94 7.94 0 0 0 0 7.962a7.94 7.94 0 0 0 2.331 5.63 7.93 7.93 0 0 0 5.627 2.331 7.938 7.938 0 0 0 4.863-1.662l.056-.043 6.524 6.526a.87.87 0 0 0 .62.256c.224 0 .45-.086.62-.257l.102-.102a.872.872 0 0 0 0-1.238zm-8.199-6.858a6.454 6.454 0 0 1-4.582 1.898 6.463 6.463 0 0 1-4.583-1.898A6.46 6.46 0 0 1 1.48 7.962c0-1.658.633-3.319 1.898-4.584A6.46 6.46 0 0 1 7.962 1.48c1.658 0 3.318.634 4.582 1.898a6.458 6.458 0 0 1 1.898 4.584 6.456 6.456 0 0 1-1.898 4.584z"
-                    />
-                  </svg>
-                </button>
-              </div>
-              <div className={`${searchOpen ? "block" : "hidden"}`}>
-                <SearchResults
-                  setSearchOpen={setSearchOpen}
-                  searchOpen={searchOpen}
-                />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 -960 960 960"
+                      className="w-full h-full"
+                    >
+                      <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg>
+                  </button>
+                  <input
+                    className="w-full h-full min-h-[48px] p-1 border-y border-[#FFC20F]"
+                    placeholder="Search keyword, model or part number"
+                    value={searchOpen ? "Mowers" : ""}
+                    onClick={() => {
+                      console.log("input");
+                      // document
+                      //   .querySelector("#overlay")
+                      //   .classList.remove("hidden");
+                      setSearchOpen(!searchOpen);
+                    }}
+                  />
+                  <button className="bg-black px-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="21"
+                      height="21"
+                      viewBox="0 0 21 21"
+                    >
+                      <path
+                        fill="#FFC20F"
+                        d="M20.743 19.404l-6.525-6.526a7.94 7.94 0 0 0 1.704-4.92 7.938 7.938 0 0 0-2.331-5.626A7.932 7.932 0 0 0 7.966 0a7.946 7.946 0 0 0-5.635 2.332A7.94 7.94 0 0 0 0 7.962a7.94 7.94 0 0 0 2.331 5.63 7.93 7.93 0 0 0 5.627 2.331 7.938 7.938 0 0 0 4.863-1.662l.056-.043 6.524 6.526a.87.87 0 0 0 .62.256c.224 0 .45-.086.62-.257l.102-.102a.872.872 0 0 0 0-1.238zm-8.199-6.858a6.454 6.454 0 0 1-4.582 1.898 6.463 6.463 0 0 1-4.583-1.898A6.46 6.46 0 0 1 1.48 7.962c0-1.658.633-3.319 1.898-4.584A6.46 6.46 0 0 1 7.962 1.48c1.658 0 3.318.634 4.582 1.898a6.458 6.458 0 0 1 1.898 4.584 6.456 6.456 0 0 1-1.898 4.584z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div className={`${searchOpen ? "block" : "hidden"}`}>
+                  <SearchResults
+                    setSearchOpen={setSearchOpen}
+                    searchOpen={searchOpen}
+                  />
+                </div>
               </div>
             </li>
             {nav.middle.map((block, i) => (
@@ -260,12 +275,13 @@ export default function HeaderRevised({}) {
                     }}
                   />
                   <span className="hidden lg:block">{block.title}</span>
+                  <span>{block.after}</span>
                 </a>
               </li>
             ))}
           </ul>
 
-          <div className="items-center hidden sm:flex">
+          <div className="items-center hidden sm:flex px-2">
             <ul className="grid grid-flow-col gap-2 overflow-y-auto no-scrollbar w-full max-w-4xl lg:max-w-none">
               {nav.bottom.map((block, i) => (
                 <li key={i}>
