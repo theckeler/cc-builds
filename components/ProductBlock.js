@@ -48,7 +48,7 @@ export default function ProductBlock({ block, className, addCSS }) {
               className="w-100 mt-1 mb-3"
             />
           ) : (
-            <h2 className="h2">{block.title}</h2>
+            <div className="h2">{block.title}</div>
           )}
           <p
             dangerouslySetInnerHTML={{
