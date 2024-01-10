@@ -5,6 +5,7 @@ import Articles from "@/components/Articles";
 import AttchmentsAccessories from "@/components/AttchmentsAccessories";
 import Explore from "@/components/Explore";
 import Faqs from "@/components/Faqs";
+import H1Block from "@/components/H1Block";
 import QuoteBlock from "@/components/QuoteBlock";
 import RelatedLinks from "@/components/RelatedLinks";
 import ResponsiveImage from "@/components/ResponsiveImage";
@@ -78,18 +79,17 @@ export default function ZeroTurnMowers({}) {
         id="sdb-container"
         className=""
       >
-        <section className="container text-center p-2 lg:px-52 py-4 lg:py-10">
-          <div className="h1">Zero-Turn Mowers</div>
-          <h2 className="font-normal text-3xl">
-            Shop the Ultimate Zero-Turn Lawn Mower Lineup
-          </h2>
-          <p className="lg:px-48 mt-1 lg:mt-4">
-            Cub Cadet® zero-turn mowers are designed to answer the call of
+        <H1Block
+          block={{
+            h1: "Zero-Turn Mowers",
+            h2: "Shop the Ultimate Zero-Turn Lawn Mower Lineup",
+            copy: `Cub Cadet® zero-turn mowers are designed to answer the call of
             challenging yards and difficult obstacles. The Ultima Series™ lineup
-            includes both lap bar and steering wheel units, unlocking
-            possibilities at every turn.
-          </p>
-        </section>
+            includes both lap bar and steering wheel units, unlocking possibilities
+            at every turn.`,
+          }}
+          className="container text-center p-2 lg:px-52 py-4 lg:py-10"
+        />
 
         <section className="py-5 px-1">
           <div className="container ">

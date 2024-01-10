@@ -5,6 +5,7 @@ import Articles from "@/components/Articles";
 import AttchmentsAccessories from "@/components/AttchmentsAccessories";
 import Explore from "@/components/Explore";
 import Faqs from "@/components/Faqs";
+import H1Block from "@/components/H1Block";
 import QuoteBlock from "@/components/QuoteBlock";
 import RelatedLinks from "@/components/RelatedLinks";
 import ResponsiveImage from "@/components/ResponsiveImage";
@@ -41,21 +42,16 @@ export default function RidingLawnMowers({}) {
           />
         </section>
 
-        <section className="py-5 px-1">
-          <div className="container">
-            <h2 className="text-lg-center">
-              Versatile, Durable Riding Lawn Mowers
-            </h2>
-            <p
-              className="text-lg-center mt2 mb-0 mx-auto"
-              style={{ maxWidth: "800px", lineHeight: "1.8" }}
-            >
-              Cub Cadet® riding lawn mowers range from zero-tuns, lawn and
-              garden tractors, and electric mowers, each designed to deliver the
-              strength and durability to tackle more than just cutting grass.
-            </p>
-          </div>
-        </section>
+        <H1Block
+          block={{
+            h1: "Riding Lawn Mowers",
+            h2: "Shop versatile, durable riding mowers",
+            copy: `Cub Cadet® riding lawn mowers range from zero-turns, lawn and
+            garden tractors, and electric mowers, each designed to deliver the
+            strength and durability to tackle more than just cutting grass.`,
+          }}
+          className="container text-center p-2 lg:px-52 py-4 lg:py-10"
+        />
 
         <Explore
           explore={{
@@ -67,7 +63,7 @@ export default function RidingLawnMowers({}) {
                 copy: "Cub Cadet® lawn and garden tractors are equipped with cutting systems designed to deliver strong mowing performance and capable of handling an array of attachments and accessories for year-round versatility and utility.",
                 url: "https://www.cubcadet.com/en_US/riding-lawn-mowers/lawn-and-garden-tractors",
                 button: {
-                  copy: "Shop for Lawn & Garden Tractors",
+                  copy: "Shop Lawn & Garden Tractors",
                   className: "text-white border-0",
                   style: { backgroundColor: "#000" },
                 },
@@ -78,7 +74,7 @@ export default function RidingLawnMowers({}) {
                 copy: "Cub Cadet® zero-turn mowers are engineered to handle a range of terrain and cover up to 5 acres, with steering wheel options that increase ease.",
                 url: "https://www.cubcadet.com/en_US/riding-lawn-mowers/zero-turn-mowers",
                 button: {
-                  copy: "Shop for Zero-Turn Mowers",
+                  copy: "Shop Zero-Turn Mowers",
                   className: "text-white border-0",
                   style: { backgroundColor: "#000" },
                 },
@@ -89,7 +85,7 @@ export default function RidingLawnMowers({}) {
                 copy: "Cub Cadet® electric riding mowers combined the power of gas with the convenance of lithium-ion battery technology for a quieter mowing experience with less maintenance compared to gas.",
                 url: "https://www.cubcadet.com/en_US/riding-lawn-mowers/electric-riding-mowers",
                 button: {
-                  copy: "Shop for Electric Riding Mowers",
+                  copy: "Shop Electric Riding Mowers",
                   className: "text-white border-0",
                   style: { backgroundColor: "#000" },
                 },
@@ -152,7 +148,7 @@ export default function RidingLawnMowers({}) {
         id="sdb-container"
       >
         <Articles
-          viewAllLink="https://www.cubcadet.com/en_US/help-center/"
+          viewAllLink="https://www.cubcadet.com/en_US/how-to/?crefn1=tags&crefv1=Lawn%20%26%20Garden%20Tractors"
           articles={{
             h2: "Riding Lawn Mower How-Tos and Maintenance",
             blocks: [
@@ -303,6 +299,7 @@ export default function RidingLawnMowers({}) {
         />
 
         <RelatedLinks
+          viewAllLink="https://www.cubcadet.com/en_US/riding-lawn-mower-parts"
           relatedCats={{
             h3: "Riding Lawn Mower Maintenance",
             p: "When customers buy Riding Lawn Mowers they often buy or consider:",
