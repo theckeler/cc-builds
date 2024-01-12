@@ -1,6 +1,6 @@
 import ResponsiveImage from "@/components/ResponsiveImage";
 
-export default function Lineup({ imgType, block }) {
+export default function Lineup({ block }) {
   function makeID(id) {
     return id.replace(/\s+/g, "-", "-").replace(/\d+/g, "").toLowerCase();
   }
@@ -15,7 +15,7 @@ export default function Lineup({ imgType, block }) {
         />
       )}
 
-      <strong className="text-xl mb-1">
+      <strong className="text-4xl mb-1">
         {block.title.src ? (
           <ResponsiveImage
             src={block.title.src}

@@ -215,6 +215,10 @@ export default function LawnAndGardenTractors({}) {
         <section className="">
           <div className="wrapper">
             <div className="container py-4 lg:py-10">
+              <h2 className="mt-4 display-3 text-center">
+                Cub Cadet® Lawn & Garden Tractors
+              </h2>
+
               <ul className="grid gap-4 grid-cols-2 lg:grid-cols-3 list-unstyled">
                 {lineup.map((block, i) => (
                   <li
@@ -475,7 +479,7 @@ export default function LawnAndGardenTractors({}) {
             schema: { active: false, type: "" },
             title: {
               h2: "Riding Lawn Mower Attachments & Accessories",
-              href: "https://www.cubcadet.com/en_US/help-center/",
+              href: "https://www.cubcadet.com/en_US/riding-lawn-mowers/riding-mower-accessories",
             },
             blocks: [
               {
