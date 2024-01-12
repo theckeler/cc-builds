@@ -89,7 +89,7 @@ const lineup = [
       copy: "Two-Stage Snow Blowers",
       src: imgURLBase + "logo-XT2.svg",
     },
-    copy: "These powerful machines are designed to help tackle drifts and icy conditions with a center-mounted steel accelerator and powerful engines to take on winter conditions.",
+    copy: "The Enduro XT2 brings a more premium experience to the table, with higher levels of power, control and durability.",
     noEngineeredFor: true,
     engFor: [
       {
