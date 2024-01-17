@@ -1,50 +1,33 @@
-<link
-  rel="stylesheet"
-  href="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1701691543321/css/global.css"
-/>
-
 <style>
-  /*!****************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./styles/globals.css ***!
-  \****************************************************************************************************************************************************************************************************************************************************************/
-  /* @tailwind base; */
   #sdb-container *,
-  #sdb-container ::before,
-  #sdb-container ::after {
+  #sdb-container :after,
+  #sdb-container :before {
     box-sizing: border-box;
-    border-width: 0;
-    border-style: solid;
-    border-color: #d9d9d9;
+    border: 0 solid #d9d9d9;
   }
-
   .container {
     width: 100%;
   }
-
   @media (min-width: 640px) {
     .container {
       max-width: 640px;
     }
   }
-
   @media (min-width: 768px) {
     .container {
       max-width: 768px;
     }
   }
-
   @media (min-width: 1024px) {
     .container {
       max-width: 1024px;
     }
   }
-
   @media (min-width: 1280px) {
     .container {
       max-width: 1280px;
     }
   }
-
   @media (min-width: 1536px) {
     .container {
       max-width: 1536px;
@@ -89,19 +72,19 @@
     left: -50%;
   }
   #sdb-container :is(.bottom-0) {
-    bottom: 0px;
+    bottom: 0;
   }
   #sdb-container :is(.bottom-full) {
     bottom: 100%;
   }
   #sdb-container :is(.left-0) {
-    left: 0px;
+    left: 0;
   }
   #sdb-container :is(.right-0) {
-    right: 0px;
+    right: 0;
   }
   #sdb-container :is(.top-0) {
-    top: 0px;
+    top: 0;
   }
   #sdb-container :is(.top-1\/2) {
     top: 50%;
@@ -124,20 +107,29 @@
   #sdb-container :is(.z-20) {
     z-index: 20;
   }
+  #sdb-container :is(.z-40) {
+    z-index: 40;
+  }
+  #sdb-container :is(.z-50) {
+    z-index: 50;
+  }
   #sdb-container :is(.order-1) {
     order: 1;
   }
   #sdb-container :is(.order-2) {
     order: 2;
   }
+  #sdb-container :is(.order-3) {
+    order: 3;
+  }
   #sdb-container :is(.col-auto) {
     grid-column: auto;
   }
-  #sdb-container :is(.col-span-1) {
-    grid-column: span 1 / span 1;
+  #sdb-container :is(.col-span-full) {
+    grid-column: 1/-1;
   }
   #sdb-container :is(.m-0) {
-    margin: 0px;
+    margin: 0;
   }
   #sdb-container :is(.m-1) {
     margin: 0.25rem;
@@ -146,8 +138,8 @@
     margin: 0.5rem;
   }
   #sdb-container :is(.mx-0) {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
   }
   #sdb-container :is(.mx-4) {
     margin-left: 1rem;
@@ -156,6 +148,10 @@
   #sdb-container :is(.mx-auto) {
     margin-left: auto;
     margin-right: auto;
+  }
+  #sdb-container :is(.my-0) {
+    margin-top: 0;
+    margin-bottom: 0;
   }
   #sdb-container :is(.my-1) {
     margin-top: 0.25rem;
@@ -188,8 +184,14 @@
   #sdb-container :is(.-mb-1) {
     margin-bottom: -0.25rem;
   }
+  #sdb-container :is(.-ml-1) {
+    margin-left: -0.25rem;
+  }
   #sdb-container :is(.-ml-6) {
     margin-left: -1.5rem;
+  }
+  #sdb-container :is(.-mr-1) {
+    margin-right: -0.25rem;
   }
   #sdb-container :is(.-mr-6) {
     margin-right: -1.5rem;
@@ -204,7 +206,7 @@
     margin-top: -28px;
   }
   #sdb-container :is(.mb-0) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   #sdb-container :is(.mb-1) {
     margin-bottom: 0.25rem;
@@ -255,7 +257,7 @@
     margin-right: auto;
   }
   #sdb-container :is(.mt-0) {
-    margin-top: 0px;
+    margin-top: 0;
   }
   #sdb-container :is(.mt-1) {
     margin-top: 0.25rem;
@@ -327,7 +329,7 @@
     display: none;
   }
   #sdb-container :is(.h-0) {
-    height: 0px;
+    height: 0;
   }
   #sdb-container :is(.h-12) {
     height: 3rem;
@@ -344,9 +346,6 @@
   #sdb-container :is(.h-6) {
     height: 1.5rem;
   }
-  #sdb-container :is(.h-8) {
-    height: 2rem;
-  }
   #sdb-container :is(.h-96) {
     height: 24rem;
   }
@@ -362,40 +361,53 @@
   #sdb-container :is(.h-full) {
     height: 100%;
   }
-  #sdb-container :is(.max-h-\[100px\]) {
-    max-height: 100px;
+  #sdb-container :is(.h-screen) {
+    height: 100vh;
+  }
+  #sdb-container :is(.max-h-24) {
+    max-height: 6rem;
+  }
+  #sdb-container :is(.max-h-\[500px\]) {
+    max-height: 500px;
   }
   #sdb-container :is(.max-h-\[50px\]) {
     max-height: 50px;
   }
+  #sdb-container :is(.max-h-\[600px\]) {
+    max-height: 600px;
+  }
   #sdb-container :is(.max-h-\[80px\]) {
     max-height: 80px;
+  }
+  #sdb-container :is(.max-h-\[calc\(100vh-80px\)\]) {
+    max-height: calc(100vh - 80px);
   }
   #sdb-container :is(.min-h-\[10rem\]) {
     min-height: 10rem;
   }
-  #sdb-container :is(.min-h-\[20rem\]) {
-    min-height: 20rem;
-  }
-  #sdb-container :is(.min-h-full) {
-    min-height: 100%;
-  }
-  #sdb-container :is(.min-h-\[\]) {
-    min-height: ;
+  #sdb-container :is(.min-h-\[140px\]) {
+    min-height: 140px;
   }
   #sdb-container :is(.min-h-\[200px\]) {
     min-height: 200px;
   }
-  #sdb-container :is(.min-h-fit) {
-    min-height: -moz-fit-content;
-    min-height: fit-content;
+  #sdb-container :is(.min-h-\[20rem\]) {
+    min-height: 20rem;
   }
-  #sdb-container :is(.min-h-max) {
-    min-height: -moz-max-content;
-    min-height: max-content;
+  #sdb-container :is(.min-h-\[300px\]) {
+    min-height: 300px;
+  }
+  #sdb-container :is(.min-h-\[34em\]) {
+    min-height: 34em;
+  }
+  #sdb-container :is(.min-h-\[48px\]) {
+    min-height: 48px;
+  }
+  #sdb-container :is(.min-h-full) {
+    min-height: 100%;
   }
   #sdb-container :is(.w-0) {
-    width: 0px;
+    width: 0;
   }
   #sdb-container :is(.w-10) {
     width: 2.5rem;
@@ -409,11 +421,14 @@
   #sdb-container :is(.w-4) {
     width: 1rem;
   }
+  #sdb-container :is(.w-48) {
+    width: 12rem;
+  }
   #sdb-container :is(.w-6) {
     width: 1.5rem;
   }
-  #sdb-container :is(.w-8) {
-    width: 2rem;
+  #sdb-container :is(.w-\[200px\]) {
+    width: 200px;
   }
   #sdb-container :is(.w-auto) {
     width: auto;
@@ -424,11 +439,23 @@
   #sdb-container :is(.min-w-\[12rem\]) {
     min-width: 12rem;
   }
+  #sdb-container :is(.min-w-\[326px\]) {
+    min-width: 326px;
+  }
   #sdb-container :is(.min-w-\[60px\]) {
     min-width: 60px;
   }
+  #sdb-container :is(.max-w-4xl) {
+    max-width: 56rem;
+  }
   #sdb-container :is(.max-w-\[260px\]) {
     max-width: 260px;
+  }
+  #sdb-container :is(.max-w-xs) {
+    max-width: 20rem;
+  }
+  #sdb-container :is(.grow) {
+    flex-grow: 1;
   }
   #sdb-container :is(.-translate-x-1\/4) {
     --tw-translate-x: -25%;
@@ -497,95 +524,56 @@
   #sdb-container :is(.auto-cols-\[320px\]) {
     grid-auto-columns: 320px;
   }
+  #sdb-container :is(.auto-cols-min) {
+    grid-auto-columns: min-content;
+  }
+  #sdb-container :is(.grid-flow-row) {
+    grid-auto-flow: row;
+  }
   #sdb-container :is(.grid-flow-col) {
     grid-auto-flow: column;
   }
   #sdb-container :is(.grid-cols-1) {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
+  #sdb-container :is(.grid-cols-2) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   #sdb-container :is(.grid-cols-3) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  #sdb-container :is(.grid-cols-\[100px_1fr\]) {
+    grid-template-columns: 100px 1fr;
   }
   #sdb-container :is(.grid-cols-\[12rem_1fr\]) {
     grid-template-columns: 12rem 1fr;
   }
+  #sdb-container :is(.grid-cols-\[1fr_150px\]) {
+    grid-template-columns: 1fr 150px;
+  }
+  #sdb-container :is(.grid-cols-\[1fr_160px\]) {
+    grid-template-columns: 1fr 160px;
+  }
+  #sdb-container :is(.grid-cols-\[1fr_48px\]) {
+    grid-template-columns: 1fr 48px;
+  }
   #sdb-container :is(.grid-cols-\[20rem_10rem_10rem_10rem\]) {
     grid-template-columns: 20rem 10rem 10rem 10rem;
+  }
+  #sdb-container :is(.grid-cols-\[40em_1fr\]) {
+    grid-template-columns: 40em 1fr;
+  }
+  #sdb-container :is(.grid-cols-\[5em_1fr\]) {
+    grid-template-columns: 5em 1fr;
   }
   #sdb-container :is(.grid-cols-\[80px_1fr_120px\]) {
     grid-template-columns: 80px 1fr 120px;
   }
-  #sdb-container :is(.grid-rows-\[minmax\(2rem\)_1fr_minmax\(2rem\)\]) {
-    grid-template-rows: minmax(2rem) 1fr minmax(2rem);
-  }
-  #sdb-container :is(.grid-rows-2) {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
-  }
-  #sdb-container :is(.grid-rows-\[\]) {
-    grid-template-rows: ;
-  }
-  #sdb-container :is(.grid-rows-\[20\]) {
-    grid-template-rows: 20;
-  }
-  #sdb-container :is(.grid-rows-\[20em_1fr\]) {
-    grid-template-rows: 20em 1fr;
-  }
-  #sdb-container :is(.grid-rows-\[26em_1fr\]) {
-    grid-template-rows: 26em 1fr;
-  }
-  #sdb-container :is(.grid-rows-\[24em_1fr\]) {
-    grid-template-rows: 24em 1fr;
-  }
-  #sdb-container :is(.grid-rows-\[mix-max24em_1fr\]) {
-    grid-template-rows: mix-max24em 1fr;
-  }
-  #sdb-container :is(.grid-rows-\[mix-max\(24em\)_1fr\]) {
-    grid-template-rows: mix-max(24em) 1fr;
-  }
-  #sdb-container :is(.grid-rows-\[mix-max\(1024em\)_1fr\]) {
-    grid-template-rows: mix-max(1024em) 1fr;
-  }
-  #sdb-container :is(.grid-rows-\[mix-max\(10em24em\)_1fr\]) {
-    grid-template-rows: mix-max(10em24em) 1fr;
-  }
-  #sdb-container :is(.grid-rows-\[mix-max\(10em\2c _24em\)_1fr\]) {
-    grid-template-rows: mix-max(10em, 24em) 1fr;
-  }
-  #sdb-container :is(.grid-rows-\[mix-max\(24em\2c _\)_1fr\]) {
-    grid-template-rows: mix-max(24em) 1fr;
-  }
-  #sdb-container :is(.grid-rows-\[mix-max\(24em\2c _30em\)_1fr\]) {
-    grid-template-rows: mix-max(24em, 30em) 1fr;
-  }
-  #sdb-container :is(.grid-rows-\[mix-max\(24em\2c 30em\)_1fr\]) {
-    grid-template-rows: mix-max(24em, 30em) 1fr;
-  }
-  #sdb-container :is(.grid-rows-\[mimax\(24em\2c 30em\)_1fr\]) {
-    grid-template-rows: mimax(24em, 30em) 1fr;
-  }
-  #sdb-container :is(.grid-rows-\[minmax\(24em\2c 30em\)_1fr\]) {
-    grid-template-rows: minmax(24em, 30em) 1fr;
-  }
-  #sdb-container :is(.grid-rows-\[minmax\(24em\2c 26em\)_1fr\]) {
-    grid-template-rows: minmax(24em, 26em) 1fr;
-  }
-  #sdb-container :is(.grid-rows-\[24em_\]) {
-    grid-template-rows: 24em;
-  }
-  #sdb-container :is(.grid-rows-\[1fr_24em_\]) {
-    grid-template-rows: 1fr 24em;
-  }
-  #sdb-container :is(.grid-rows-\[1fr_24em\]) {
-    grid-template-rows: 1fr 24em;
-  }
-  #sdb-container :is(.grid-rows-\[1fr_10em\]) {
-    grid-template-rows: 1fr 10em;
-  }
-  #sdb-container :is(.grid-rows-\[1fr_12em\]) {
-    grid-template-rows: 1fr 12em;
-  }
   #sdb-container :is(.grid-rows-\[1fr_16em\]) {
     grid-template-rows: 1fr 16em;
+  }
+  #sdb-container :is(.grid-rows-\[minmax\(2rem\)_1fr_minmax\(2rem\)\]) {
+    grid-template-rows: minmax(2rem) 1fr minmax(2rem);
   }
   #sdb-container :is(.flex-row) {
     flex-direction: row;
@@ -632,6 +620,9 @@
   #sdb-container :is(.gap-4) {
     gap: 1rem;
   }
+  #sdb-container :is(.gap-8) {
+    gap: 2rem;
+  }
   #sdb-container :is(.self-start) {
     align-self: flex-start;
   }
@@ -647,6 +638,17 @@
   #sdb-container :is(.overflow-y-auto) {
     overflow-y: auto;
   }
+  #sdb-container :is(.overflow-x-scroll) {
+    overflow-x: scroll;
+  }
+  #sdb-container :is(.truncate) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  #sdb-container :is(.whitespace-nowrap) {
+    white-space: nowrap;
+  }
   #sdb-container :is(.rounded) {
     border-radius: 0.25rem;
   }
@@ -661,25 +663,38 @@
     border-width: 1px;
   }
   #sdb-container :is(.border-0) {
-    border-width: 0px;
+    border-width: 0;
+  }
+  #sdb-container :is(.border-y) {
+    border-top-width: 1px;
+    border-bottom-width: 1px;
   }
   #sdb-container :is(.border-b) {
     border-bottom-width: 1px;
+  }
+  #sdb-container :is(.border-b-4) {
+    border-bottom-width: 4px;
   }
   #sdb-container :is(.border-r) {
     border-right-width: 1px;
   }
   #sdb-container :is(.border-r-0) {
-    border-right-width: 0px;
+    border-right-width: 0;
   }
   #sdb-container :is(.border-t) {
     border-top-width: 1px;
   }
   #sdb-container :is(.border-t-0) {
-    border-top-width: 0px;
+    border-top-width: 0;
+  }
+  #sdb-container :is(.border-\[\#FFC20F\]) {
+    border-color: #ffc20f;
   }
   #sdb-container :is(.border-amber-300) {
     border-color: #fcd34d;
+  }
+  #sdb-container :is(.border-neutral-200) {
+    border-color: #e5e5e5;
   }
   #sdb-container :is(.border-neutral-400) {
     border-color: #a3a3a3;
@@ -687,8 +702,19 @@
   #sdb-container :is(.border-neutral-500) {
     border-color: #737373;
   }
+  #sdb-container :is(.border-transparent) {
+    border-color: transparent;
+  }
   #sdb-container :is(.border-white) {
     border-color: #fff;
+  }
+  #sdb-container :is(.bg-\[\#202020\]) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(32 32 32 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-\[\#FFC20F\]) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 194 15 / var(--tw-bg-opacity));
   }
   #sdb-container :is(.bg-\[\#efefef\]) {
     --tw-bg-opacity: 1;
@@ -710,6 +736,9 @@
     --tw-bg-opacity: 1;
     background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   }
+  #sdb-container :is(.bg-black\/80) {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
   #sdb-container :is(.bg-gray-200) {
     --tw-bg-opacity: 1;
     background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -728,10 +757,6 @@
   #sdb-container :is(.bg-white) {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  }
-  #sdb-container :is(.bg-yellow-400) {
-    --tw-bg-opacity: 1;
-    background-color: rgb(250 204 21 / var(--tw-bg-opacity));
   }
   #sdb-container :is(.bg-yellow-500) {
     --tw-bg-opacity: 1;
@@ -762,7 +787,7 @@
     object-position: center;
   }
   #sdb-container :is(.p-0) {
-    padding: 0px;
+    padding: 0;
   }
   #sdb-container :is(.p-1) {
     padding: 0.25rem;
@@ -789,8 +814,8 @@
     padding: 2.25rem;
   }
   #sdb-container :is(.px-0) {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
   #sdb-container :is(.px-1) {
     padding-left: 0.25rem;
@@ -812,6 +837,10 @@
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
+  #sdb-container :is(.px-32) {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
   #sdb-container :is(.px-4) {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -825,8 +854,8 @@
     padding-right: 1.5rem;
   }
   #sdb-container :is(.py-0) {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   #sdb-container :is(.py-1) {
     padding-top: 0.25rem;
@@ -839,6 +868,10 @@
   #sdb-container :is(.py-2) {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+  }
+  #sdb-container :is(.py-24) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
   #sdb-container :is(.py-3) {
     padding-top: 0.75rem;
@@ -869,13 +902,16 @@
     padding-bottom: 4.3rem;
   }
   #sdb-container :is(.pb-0) {
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
   #sdb-container :is(.pb-1) {
     padding-bottom: 0.25rem;
   }
   #sdb-container :is(.pb-10) {
     padding-bottom: 2.5rem;
+  }
+  #sdb-container :is(.pb-16) {
+    padding-bottom: 4rem;
   }
   #sdb-container :is(.pb-2) {
     padding-bottom: 0.5rem;
@@ -896,7 +932,7 @@
     padding-bottom: 2.25rem;
   }
   #sdb-container :is(.pl-0) {
-    padding-left: 0px;
+    padding-left: 0;
   }
   #sdb-container :is(.pl-1) {
     padding-left: 0.25rem;
@@ -911,7 +947,7 @@
     padding-left: 1rem;
   }
   #sdb-container :is(.pr-0) {
-    padding-right: 0px;
+    padding-right: 0;
   }
   #sdb-container :is(.pr-1) {
     padding-right: 0.25rem;
@@ -923,7 +959,7 @@
     padding-right: 0.75rem;
   }
   #sdb-container :is(.pt-0) {
-    padding-top: 0px;
+    padding-top: 0;
   }
   #sdb-container :is(.pt-1) {
     padding-top: 0.25rem;
@@ -966,6 +1002,10 @@
   #sdb-container :is(.text-4xl) {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+  #sdb-container :is(.text-5xl) {
+    font-size: 3rem;
+    line-height: 1;
   }
   #sdb-container :is(.text-7xl) {
     font-size: 4.5rem;
@@ -1028,7 +1068,8 @@
     opacity: 0.6;
   }
   #sdb-container :is(.shadow) {
-    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+      0 1px 2px -1px rgba(0, 0, 0, 0.1);
     --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),
       0 1px 2px -1px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
@@ -1038,7 +1079,7 @@
     outline-style: solid;
   }
   #sdb-container :is(.outline-0) {
-    outline-width: 0px;
+    outline-width: 0;
   }
   #sdb-container :is(.invert) {
     --tw-invert: invert(100%);
@@ -1062,14 +1103,14 @@
       text-decoration-color, fill, stroke, opacity, box-shadow, transform,
       filter, backdrop-filter, -webkit-backdrop-filter;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
+    transition-duration: 0.15s;
   }
   .\[text-shadow\:_0_0_6px_rgba\(255_255_255_\/_50\%\)\] {
-    text-shadow: 0 0 6px rgba(255 255 255 / 50%);
+    text-shadow: 0 0 6px hsla(0, 0%, 100%, 0.5);
   }
+  #sdb-container menu,
   #sdb-container ol,
-  #sdb-container ul,
-  #sdb-container menu {
+  #sdb-container ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -1083,30 +1124,52 @@
     height: 0 !important;
     overflow: hidden !important;
   }
-
   .container.content-asset-container {
     max-width: 100% !important;
     padding: 0;
   }
-
-  .overflow-y-auto::-webkit-scrollbar {
-    width: 6px;
+  .overflow-scrollbar::-webkit-scrollbar {
+    height: 1px;
   }
-
-  .overflow-x-auto::-webkit-scrollbar {
-    height: 6px;
-  }
-
-  .overflow-y-auto::-webkit-scrollbar-track,
-  .overflow-x-auto::-webkit-scrollbar-track {
+  .overflow-scrollbar::-webkit-scrollbar-track {
     background-color: #000;
   }
-
-  .overflow-y-auto::-webkit-scrollbar-thumb,
-  .overflow-x-auto::-webkit-scrollbar-thumb {
+  .overflow-scrollbar::-webkit-scrollbar-thumb {
     background-color: #eab308;
   }
-
+  .no-scrollbar::-webkit-scrollbar {
+    height: 0;
+  }
+  @media (min-width: 1024px) {
+    .lg\:container {
+      width: 100%;
+    }
+    @media (min-width: 640px) {
+      .lg\:container {
+        max-width: 640px;
+      }
+    }
+    @media (min-width: 768px) {
+      .lg\:container {
+        max-width: 768px;
+      }
+    }
+    @media (min-width: 1024px) {
+      .lg\:container {
+        max-width: 1024px;
+      }
+    }
+    @media (min-width: 1280px) {
+      .lg\:container {
+        max-width: 1280px;
+      }
+    }
+    @media (min-width: 1536px) {
+      .lg\:container {
+        max-width: 1536px;
+      }
+    }
+  }
   @media (min-width: 1280px) {
     .xl\:container {
       width: 100%;
@@ -1137,25 +1200,27 @@
       }
     }
   }
-
+  #sdb-container :is(.hover\:border-black:hover) {
+    border-color: #000;
+  }
+  #sdb-container :is(.hover\:text-black:hover) {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
   #sdb-container :is(.hover\:no-underline:hover) {
     text-decoration-line: none;
   }
-
   #sdb-container :is(.group:hover .group-hover\:block) {
     display: block;
   }
-
   #sdb-container :is(.group:hover .group-hover\:bg-black) {
     --tw-bg-opacity: 1;
     background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   }
-
   #sdb-container :is(.group:hover .group-hover\:text-white) {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
-
   @media (prefers-color-scheme: dark) {
     #sdb-container :is(.dark\:border-neutral-700) {
       border-color: #404040;
@@ -1176,20 +1241,36 @@
       color: rgb(255 255 255 / var(--tw-text-opacity));
     }
   }
-
   @media (min-width: 640px) {
+    #sdb-container :is(.sm\:flex) {
+      display: flex;
+    }
     #sdb-container :is(.sm\:rounded-t) {
       border-top-left-radius: 0.25rem;
       border-top-right-radius: 0.25rem;
     }
+    #sdb-container :is(.sm\:border-b) {
+      border-bottom-width: 1px;
+    }
+    #sdb-container :is(.sm\:border-black) {
+      border-color: #000;
+    }
   }
-
   @media (min-width: 768px) {
-    #sdb-container :is(.md\:col-span-full) {
-      grid-column: 1 / -1;
+    #sdb-container :is(.md\:absolute) {
+      position: absolute;
+    }
+    #sdb-container :is(.md\:relative) {
+      position: relative;
+    }
+    #sdb-container :is(.md\:top-full) {
+      top: 100%;
     }
     #sdb-container :is(.md\:mb-0) {
-      margin-bottom: 0px;
+      margin-bottom: 0;
+    }
+    #sdb-container :is(.md\:block) {
+      display: block;
     }
     #sdb-container :is(.md\:inline-block) {
       display: inline-block;
@@ -1197,8 +1278,17 @@
     #sdb-container :is(.md\:hidden) {
       display: none;
     }
+    #sdb-container :is(.md\:h-auto) {
+      height: auto;
+    }
     #sdb-container :is(.md\:h-full) {
       height: 100%;
+    }
+    #sdb-container :is(.md\:max-h-\[70vh\]) {
+      max-height: 70vh;
+    }
+    #sdb-container :is(.md\:w-auto) {
+      width: auto;
     }
     #sdb-container :is(.md\:w-full) {
       width: 100%;
@@ -1209,27 +1299,57 @@
     #sdb-container :is(.md\:grid-cols-2) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+    #sdb-container :is(.md\:grid-cols-3) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    #sdb-container :is(.md\:grid-cols-\[1fr_200px\]) {
+      grid-template-columns: 1fr 200px;
+    }
+    #sdb-container :is(.md\:grid-cols-\[1fr_48px_48px\]) {
+      grid-template-columns: 1fr 48px 48px;
+    }
+    #sdb-container :is(.md\:grid-cols-\[200px_1fr\]) {
+      grid-template-columns: 200px 1fr;
+    }
     #sdb-container :is(.md\:grid-cols-\[260px_1fr\]) {
       grid-template-columns: 260px 1fr;
     }
     #sdb-container :is(.md\:gap-4) {
       gap: 1rem;
     }
+    #sdb-container :is(.md\:divide-x > :not([hidden]) ~ :not([hidden])) {
+      --tw-divide-x-reverse: 0;
+      border-right-width: calc(1px * var(--tw-divide-x-reverse));
+      border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+    }
+    #sdb-container :is(.md\:px-2) {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
     #sdb-container :is(.md\:px-4) {
       padding-left: 1rem;
       padding-right: 1rem;
     }
+    #sdb-container :is(.md\:text-right) {
+      text-align: right;
+    }
+    #sdb-container :is(.md\:text-xl) {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
   }
-
   @media (min-width: 1024px) {
     #sdb-container :is(.lg\:absolute) {
       position: absolute;
     }
-    #sdb-container :is(.lg\:order-1) {
-      order: 1;
-    }
     #sdb-container :is(.lg\:order-2) {
       order: 2;
+    }
+    #sdb-container :is(.lg\:order-3) {
+      order: 3;
+    }
+    #sdb-container :is(.lg\:col-span-1) {
+      grid-column: span 1 / span 1;
     }
     #sdb-container :is(.lg\:mt-4) {
       margin-top: 1rem;
@@ -1237,14 +1357,23 @@
     #sdb-container :is(.lg\:block) {
       display: block;
     }
+    #sdb-container :is(.lg\:flex) {
+      display: flex;
+    }
     #sdb-container :is(.lg\:hidden) {
       display: none;
     }
     #sdb-container :is(.lg\:min-h-\[4rem\]) {
       min-height: 4rem;
     }
+    #sdb-container :is(.lg\:max-w-3xl) {
+      max-width: 48rem;
+    }
     #sdb-container :is(.lg\:max-w-\[40rem\]) {
       max-width: 40rem;
+    }
+    #sdb-container :is(.lg\:max-w-none) {
+      max-width: none;
     }
     #sdb-container :is(.lg\:rotate-0) {
       --tw-rotate: 0deg;
@@ -1257,6 +1386,9 @@
       transform: translate(var(--tw-translate-x), var(--tw-translate-y))
         rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
         scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    }
+    #sdb-container :is(.lg\:grid-flow-col) {
+      grid-auto-flow: column;
     }
     #sdb-container :is(.lg\:grid-cols-2) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1276,6 +1408,18 @@
     #sdb-container :is(.lg\:grid-cols-\[1fr_minmax\(24em\2c _30em\)\]) {
       grid-template-columns: 1fr minmax(24em, 30em);
     }
+    #sdb-container
+      :is(
+        .lg\:grid-cols-\[200px_minmax\(500px\2c
+          1fr\)_minmax\(48px\2c
+          120px\)_minmax\(48px\2c
+          120px\)\]
+      ) {
+      grid-template-columns: 200px minmax(500px, 1fr) minmax(48px, 120px) minmax(
+          48px,
+          120px
+        );
+    }
     #sdb-container :is(.lg\:flex-row) {
       flex-direction: row;
     }
@@ -1286,7 +1430,10 @@
       background-color: transparent;
     }
     #sdb-container :is(.lg\:bg-white\/70) {
-      background-color: rgb(255 255 255 / 0.7);
+      background-color: hsla(0, 0%, 100%, 0.7);
+    }
+    #sdb-container :is(.lg\:p-0) {
+      padding: 0;
     }
     #sdb-container :is(.lg\:p-4) {
       padding: 1rem;
@@ -1324,6 +1471,10 @@
     #sdb-container :is(.lg\:text-left) {
       text-align: left;
     }
+    #sdb-container :is(.lg\:text-2xl) {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
     #sdb-container :is(.lg\:hover\:bg-amber-200:hover) {
       --tw-bg-opacity: 1;
       background-color: rgb(253 230 138 / var(--tw-bg-opacity));
@@ -1358,10 +1509,21 @@
       fill: #111827;
     }
   }
-
   @media (min-width: 1280px) {
     #sdb-container :is(.xl\:absolute) {
       position: absolute;
+    }
+    #sdb-container :is(.xl\:relative) {
+      position: relative;
+    }
+    #sdb-container :is(.xl\:bottom-auto) {
+      bottom: auto;
+    }
+    #sdb-container :is(.xl\:order-1) {
+      order: 1;
+    }
+    #sdb-container :is(.xl\:order-2) {
+      order: 2;
     }
     #sdb-container :is(.xl\:mr-2) {
       margin-right: 0.5rem;
@@ -1369,11 +1531,27 @@
     #sdb-container :is(.xl\:block) {
       display: block;
     }
+    #sdb-container :is(.xl\:flex) {
+      display: flex;
+    }
+    #sdb-container :is(.xl\:grid) {
+      display: grid;
+    }
+    #sdb-container :is(.xl\:hidden) {
+      display: none;
+    }
     #sdb-container :is(.xl\:h-\[600px\]) {
       height: 600px;
     }
+    #sdb-container :is(.xl\:min-w-min) {
+      min-width: -moz-min-content;
+      min-width: min-content;
+    }
     #sdb-container :is(.xl\:max-w-\[480px\]) {
       max-width: 480px;
+    }
+    #sdb-container :is(.xl\:grid-cols-1) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
     }
     #sdb-container :is(.xl\:grid-cols-3) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1381,15 +1559,24 @@
     #sdb-container :is(.xl\:grid-cols-4) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
+    #sdb-container :is(.xl\:grid-cols-\[1fr_minmax\(768px\2c 1400px\)_1fr\]) {
+      grid-template-columns: 1fr minmax(768px, 1400px) 1fr;
+    }
     #sdb-container :is(.xl\:grid-cols-\[400px_880px\]) {
       grid-template-columns: 400px 880px;
     }
     #sdb-container :is(.xl\:flex-row) {
       flex-direction: row;
     }
+    #sdb-container :is(.xl\:border-0) {
+      border-width: 0;
+    }
     #sdb-container :is(.xl\:py-2) {
       padding-top: 0.5rem;
       padding-bottom: 0.5rem;
+    }
+    #sdb-container :is(.xl\:text-center) {
+      text-align: center;
     }
   }
 </style>
@@ -1416,7 +1603,6 @@
     <div class="relative">
       <button
         class="rounded-full h-14 w-14 absolute top-1/2 -mt-[28px] -ml-6 z-10 xl:block hidden bg-black fill-white"
-        onclick="movePlans('back')"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -1740,7 +1926,6 @@
       </div>
       <button
         class="rounded-full h-14 w-14 absolute right-0 top-1/2 -mt-[28px] -mr-6 z-10 bg-black fill-white xl:block hidden"
-        onclick="movePlans('forward')"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -1753,8 +1938,7 @@
         </svg>
       </button>
     </div>
-   
-    <!-- <div class="mt-6 mb-6 p-1">
+    <div class="mt-6 mb-6 p-1">
       <ul class="container mb-0 p-4 flex flex-column flex-md-row list-unstyled">
         <li class="col-md-4 p-0">
           <div
@@ -1793,19 +1977,12 @@
               </ul>
             </div>
             <div class="pre-qual flex-col">
-              <a
-                class="btn btn-primary"
-                href="#"
-                title="Prequal"
-                data-prequalurl="$url('FinancingApplication-GetURL','prequal','true')$"
-                >See If You Pre-Qualify</a
-              >
+              <a class="btn btn-primary pre-qual prequal" href="#" title="Prequal" data-prequalurl="/on/demandware.store/Sites-cubcadet-Site/en_US/FinancingApplication-GetURL?prequal=true">See If You Pre-Qualify</a>
             </div>
           </div>
         </li>
       </ul>
-    </div> -->
-
+    </div>
     <ul class="grid lg:grid-cols-[1fr_minmax(24em,_30em)] mb-6">
       <li class="flex items-center justify-center">
         <div id="product-finder-financing">
@@ -1879,7 +2056,6 @@
         <button
           class="text-left question cursor-pointer w-100 p-1 border-0 bg-transparent font-bold text-4xl"
           style="cursor: pointer; font-size: 1.1rem; text-transform: none"
-          onclick="clickFaqs(this)"
         >
           <ul class="list-unstyled d-flex align-items-center w-100 mb-0">
             <li class="text-left">
@@ -1887,7 +2063,7 @@
             </li>
             <li class="ml-auto">
               <div
-                class="faq-rotate"
+                class="rotate-45"
                 style="transform: rotate(45deg)"
               >
                 ✖
@@ -1906,7 +2082,6 @@
         <button
           class="text-left question cursor-pointer w-100 p-1 border-0 bg-transparent font-bold text-4xl"
           style="cursor: pointer; font-size: 1.1rem; text-transform: none"
-          onclick="clickFaqs(this)"
         >
           <ul class="list-unstyled d-flex align-items-center w-100 mb-0">
             <li class="text-left">
@@ -1914,7 +2089,7 @@
             </li>
             <li class="ml-auto">
               <div
-                class="faq-rotate"
+                class="rotate-45"
                 style="transform: rotate(45deg)"
               >
                 ✖
@@ -1932,7 +2107,6 @@
         <button
           class="text-left question cursor-pointer w-100 p-1 border-0 bg-transparent font-bold text-4xl"
           style="cursor: pointer; font-size: 1.1rem; text-transform: none"
-          onclick="clickFaqs(this)"
         >
           <ul class="list-unstyled d-flex align-items-center w-100 mb-0">
             <li class="text-left">
@@ -1940,7 +2114,7 @@
             </li>
             <li class="ml-auto">
               <div
-                class="faq-rotate"
+                class="rotate-45"
                 style="transform: rotate(45deg)"
               >
                 ✖
@@ -1959,7 +2133,6 @@
         <button
           class="text-left question cursor-pointer w-100 p-1 border-0 bg-transparent font-bold text-4xl"
           style="cursor: pointer; font-size: 1.1rem; text-transform: none"
-          onclick="clickFaqs(this)"
         >
           <ul class="list-unstyled d-flex align-items-center w-100 mb-0">
             <li class="text-left">
@@ -1967,7 +2140,7 @@
             </li>
             <li class="ml-auto">
               <div
-                class="faq-rotate"
+                class="rotate-45"
                 style="transform: rotate(45deg)"
               >
                 ✖
@@ -2005,7 +2178,6 @@
         <button
           class="text-left question cursor-pointer w-100 p-1 border-0 bg-transparent font-bold text-4xl"
           style="cursor: pointer; font-size: 1.1rem; text-transform: none"
-          onclick="clickFaqs(this)"
         >
           <ul class="list-unstyled d-flex align-items-center w-100 mb-0">
             <li class="text-left">
@@ -2014,7 +2186,7 @@
             </li>
             <li class="ml-auto">
               <div
-                class="faq-rotate"
+                class="rotate-45"
                 style="transform: rotate(45deg)"
               >
                 ✖
@@ -2037,7 +2209,6 @@
         <button
           class="text-left question cursor-pointer w-100 p-1 border-0 bg-transparent font-bold text-4xl"
           style="cursor: pointer; font-size: 1.1rem; text-transform: none"
-          onclick="clickFaqs(this)"
         >
           <ul class="list-unstyled d-flex align-items-center w-100 mb-0">
             <li class="text-left">
@@ -2045,7 +2216,7 @@
             </li>
             <li class="ml-auto">
               <div
-                class="faq-rotate"
+                class="rotate-45"
                 style="transform: rotate(45deg)"
               >
                 ✖
@@ -2061,24 +2232,6 @@
           dealer.
         </div>
         <div class="border-bottom"></div>
-        <script type="text/javascript">
-          const clickFaqs = (e) => {
-            console.log(e.querySelector(".faq-rotate").style.transform);
-            e.nextElementSibling.classList.toggle("hidden");
-            e.querySelector(".faq-rotate").style.transform == "rotate(45deg)"
-              ? (e.querySelector(".faq-rotate").style.transform = "rotate(0)")
-              : (e.querySelector(".faq-rotate").style.transform =
-                  "rotate(45deg)");
-          };
-
-          const movePlans = (e) => {
-            const cards = document.querySelectorAll(".financing-card");
-            const numCards = cards.length - 1;
-            e == "forward"
-              ? cards[numCards].scrollIntoView()
-              : cards[0].scrollIntoView();
-          };
-        </script>
         <script type="application/ld+json">
           {
             "@context": "https://schema.org",

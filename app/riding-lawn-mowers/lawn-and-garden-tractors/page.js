@@ -2,11 +2,9 @@
 import { useEffect } from "react";
 
 import Lineup from "@/app/snow-v2/elements/Lineup";
-import Faqs from "@/components/Faqs";
 import FooterBlocks from "@/components/FooterBlocks";
 import ImgTitleCopy from "@/components/ImgTitleCopy";
 import QuoteBlock from "@/components/QuoteBlock";
-import RelatedLinks from "@/components/RelatedLinks";
 import ResponsiveImage from "@/components/ResponsiveImage";
 
 const imgURLBase =
@@ -216,7 +214,7 @@ export default function LawnAndGardenTractors({}) {
           <div className="wrapper">
             <div className="container py-4 lg:py-10">
               <h2 className="mt-4 display-3 text-center">
-                Cub Cadet® Lawn & Garden Tractors
+                Shop and Compare Lawn & Garden Tractors
               </h2>
 
               <ul className="grid gap-4 grid-cols-2 lg:grid-cols-3 list-unstyled">
@@ -473,7 +471,7 @@ export default function LawnAndGardenTractors({}) {
           }}
         />
 
-        <FooterBlocks
+        {/* <FooterBlocks
           className="mt-6"
           articles={{
             schema: { active: false, type: "" },
@@ -534,9 +532,9 @@ export default function LawnAndGardenTractors({}) {
               },
             ],
           }}
-        />
+        /> */}
 
-        <RelatedLinks
+        {/* <RelatedLinks
           relatedCats={{
             h3: "Related Categories",
             list: [
@@ -657,7 +655,7 @@ export default function LawnAndGardenTractors({}) {
               },
             ]}
           />
-        </div>
+        </div> */}
       </div>
     </>
   );
