@@ -471,7 +471,7 @@ export default function LawnAndGardenTractors({}) {
           }}
         />
 
-        {/* <FooterBlocks
+        <FooterBlocks
           className="mt-6"
           articles={{
             schema: { active: false, type: "" },
@@ -532,7 +532,7 @@ export default function LawnAndGardenTractors({}) {
               },
             ],
           }}
-        /> */}
+        />
 
         {/* <RelatedLinks
           relatedCats={{
