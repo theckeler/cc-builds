@@ -214,7 +214,7 @@ export default function LawnAndGardenTractors({}) {
           <div className="wrapper">
             <div className="container py-4 lg:py-10">
               <h2 className="mt-4 display-3 text-center">
-                Shop and Compare Lawn & Garden Tractors
+                Cub Cadet® Lawn & Garden Tractors
               </h2>
 
               <ul className="grid gap-4 grid-cols-2 lg:grid-cols-3 list-unstyled">
@@ -341,7 +341,7 @@ export default function LawnAndGardenTractors({}) {
         <section>
           <div className="container-fluid">
             <h2 className="mt-4 display-3 text-center">
-              Shop & Compare Riding Lawn Mowers
+              Shop and Compare Lawn & Garden Tractors
             </h2>
           </div>
         </section>
