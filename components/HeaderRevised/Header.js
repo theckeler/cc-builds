@@ -129,7 +129,7 @@ export default function HeaderRevised() {
   };
 
   return (
-    <>
+    <div id="sdb-container">
       <header className="w-full bg-[#FFC20F]">
         <div className="bg-[#202020] hidden lg:block">
           <ul className="grid grid-flow-col justify-end container mx-auto">
@@ -342,6 +342,6 @@ export default function HeaderRevised() {
           }}
         />
       )}
-    </>
+    </div>
   );
 }

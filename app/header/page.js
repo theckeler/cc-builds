@@ -5,7 +5,7 @@ export default function HeaderReplace({ className, toggleMenu }) {
     <>
       <div
         className="position-fixed"
-        style={{ top: 0, left: 0 }}
+        style={{ top: 0, left: 0, width: "100%" }}
       >
         <HeaderNew />
       </div>
