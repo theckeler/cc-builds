@@ -1,0 +1,996 @@
+<div class="mtd-page">
+  <style>
+    .hero.slant-down.content-page-image {
+      display: none;
+      position: absolute;
+      top: -1000000vw;
+      left: -1000000vh;
+      height: 0;
+      width: 0;
+    }
+
+    .container.content-asset-container {
+      max-width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    .mtd-page {
+      font-size: 16px;
+    }
+    .mtd-page section {
+      position: relative;
+      overflow: hidden;
+    }
+    .mtd-page .wrapper {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 80.625rem;
+      margin: auto;
+    }
+    .mtd-page .bg-black {
+      background-color: #000;
+      color: #fff;
+    }
+    .mtd-page .bg-white {
+      background-color: #fff;
+      color: #000;
+    }
+    .mtd-page .bg-grey {
+      background-color: #d8d8d8;
+      color: #000;
+    }
+    .mtd-page .bg-grey-dark {
+      background-color: #c8c8c8;
+    }
+    .mtd-page .bg-grey-dark-2 {
+      background-color: #2c2b2b;
+      color: #fff;
+    }
+    .mtd-page .bg-yellow {
+      background-color: #ffc20f;
+    }
+    .mtd-page .bg-none {
+      background-color: transparent;
+    }
+    .mtd-page a.link-yellow {
+      color: #ffc20f;
+    }
+    .mtd-page h1 {
+      font-size: 3.125rem;
+    }
+    .mtd-page .fw-bold {
+      font-weight: 600;
+    }
+    .mtd-page .star-rating svg * {
+      fill: #000;
+    }
+    .mtd-page .quote-block .title {
+      font-size: 1.125rem;
+    }
+    .mtd-page .quote-block .copy {
+      font-size: 1.375rem;
+    }
+    .mtd-page .quote-block .row {
+      margin-bottom: 0;
+    }
+    .mtd-page .quote-block .author,
+    .mtd-page .quote-block .unit {
+      font-size: 1rem;
+      flex: 0 1 auto;
+      width: auto;
+    }
+    .mtd-page .quote-block .unit {
+      border-left: 1px solid #000;
+    }
+    .mtd-page .clip-corner {
+      clip-path: polygon(1.5rem 0, 100% 0%, 100% 100%, 0 100%, 0 1.5rem);
+    }
+    .mtd-page .desktop {
+      display: block;
+    }
+    .mtd-page .mobile {
+      display: none;
+    }
+    .mtd-page .unstyled.link {
+      text-decoration: none;
+    }
+    .mtd-page button.bg-black,
+    .mtd-page .button.bg-black,
+    .mtd-page .btn.bg-black {
+      color: #fff;
+      background: #000;
+    }
+    .mtd-page button.bg-yellow,
+    .mtd-page .button.bg-yellow,
+    .mtd-page .btn.bg-yellow {
+      color: #000;
+      background: #ffc20f;
+    }
+    .mtd-page button:hover,
+    .mtd-page .button:hover,
+    .mtd-page .btn:hover {
+      cursor: pointer;
+    }
+    .mtd-page .slick-next,
+    .mtd-page .slick-prev {
+      padding: initial;
+      font-weight: initial;
+    }
+    .mtd-page .slick-next:before,
+    .mtd-page .slick-prev:before {
+      padding: 0.625rem;
+    }
+    .mtd-page .faqs .question {
+      display: flex;
+      position: relative;
+      font-size: 1.375rem;
+      padding: 32px 0;
+      font-weight: 700;
+    }
+    .mtd-page .faqs .question.active span {
+      transform: rotate(0);
+    }
+    .mtd-page .faqs .question span {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      position: relative;
+      width: 30px;
+      height: 30px;
+      transform: rotate(45deg);
+      transform-origin: center;
+      transition: all 0.2s;
+      margin-left: auto;
+    }
+    .mtd-page .faqs .answer {
+      overflow: hidden;
+      max-height: 0;
+      border-bottom: 1px solid #d9d9d9;
+      transition: max-height 0.2s;
+    }
+    .mtd-page .faqs .answer.active {
+      max-height: 1000px;
+    }
+    .mtd-page .faqs .answer.active span {
+      transform: rotate(0);
+    }
+    .mtd-page .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      /* 16:9 */
+      padding-top: 25px;
+      height: 0;
+    }
+    .mtd-page .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .mtd-page .max-width-1000 {
+      max-width: 62.5rem;
+      margin: auto;
+    }
+    .mtd-page .max-width-800 {
+      max-width: 50rem;
+      margin: auto;
+    }
+    .mtd-page .cursor-grab {
+      cursor: grab;
+    }
+    .mtd-page .overlay {
+      display: none;
+      z-index: 99;
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 0px;
+      left: 0px;
+      overflow: hidden;
+    }
+    .mtd-page .overlay.active {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    @media (min-width: 64em) {
+      .position-lg-relative {
+        position: relative !important;
+      }
+
+      .position-lg-absolute {
+        position: absolute !important;
+      }
+    }
+    @media (max-width: 64rem) {
+      .quote-block {
+        max-width: 100%;
+      }
+    }
+    @media (max-width: 48rem) {
+      .mtd-page .desktop {
+        display: none;
+      }
+      .mtd-page .mobile {
+        display: block;
+      }
+    }
+    .hide {
+      display: none;
+    }
+    .hide.active {
+      display: block;
+    }
+    .home .home-list {
+      font-size: 22px;
+      text-transform: uppercase;
+    }
+    .home a {
+      font-size: inherit;
+      font-weight: inherit;
+    }
+    .home ul > li a {
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .home ul > li li a {
+      font-size: 16px;
+      font-weight: 100;
+    }
+
+    .mtd-page header button,
+    .mtd-page header .btn,
+    .mtd-page header .button {
+      display: none;
+    }
+
+    .mtd-page .fill-white path {
+      fill: #efefef;
+    }
+    .mtd-page .unit sup {
+      top: 0;
+      font-size: 50%;
+    }
+    .mtd-page .min-height-quote {
+      min-height: 45rem;
+    }
+    .mtd-page .snow-v2 .title {
+      font-size: 1.875rem;
+      line-height: 1;
+    }
+    .mtd-page .snow-v2 .copy {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .mtd-page .snow-v2 .pluses {
+      position: absolute;
+      max-width: 6.25rem;
+    }
+    .mtd-page .snow-v2 .pluses.top {
+      top: 2.5rem;
+      left: 2.5rem;
+    }
+    .mtd-page .snow-v2 .pluses.bottom {
+      bottom: 2.5rem;
+      right: 2.5rem;
+    }
+    .mtd-page .snow-v2 .pluses svg {
+      width: 1.875rem;
+      height: 1.875rem;
+    }
+    .mtd-page .snow-v2 .pluses svg * {
+      fill: #fff;
+    }
+    .mtd-page .snow-v2 .pluses.fill-black svg * {
+      fill: #000;
+    }
+    .mtd-page .snow-v2 .star-rating svg {
+      max-width: 1.375rem;
+    }
+    .mtd-page .snow-v2 .img-wrapper {
+      position: relative;
+      min-height: 26.25rem;
+    }
+    .mtd-page .snow-v2 .img-wrapper img {
+      object-fit: cover;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.hero .wrapper {
+      margin-bottom: 1.25rem;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.hero .block {
+      display: flex;
+      justify-content: center;
+      margin-left: auto;
+      max-width: 25rem;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.hero .block svg * {
+      fill: #fff;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.quote .wrapper {
+      margin-top: 2.5rem;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.quote .block {
+      max-width: 43.75rem;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.hero,
+    .mtd-page .snow-v2.snow-v2-index section.quote {
+      display: flex;
+      padding: 0;
+      min-height: 37.5rem;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.hero .block,
+    .mtd-page .snow-v2.snow-v2-index section.quote .block {
+      padding: 2.5rem 1.5rem;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.hero > img,
+    .mtd-page .snow-v2.snow-v2-index section.quote > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1001;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      max-height: 37.5rem;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-2 {
+      padding: 7.5rem;
+      background: #000;
+      text-align: center;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-2 p {
+      font-size: 1.375rem;
+      line-height: 1.6;
+      margin: 1.25rem auto 0 auto;
+      max-width: 43.75rem;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-3 {
+      padding: 5rem 0;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-3 h2 {
+      font-size: 3.125rem;
+      margin: 0 auto 1.25rem auto;
+      text-align: center;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-3 .row .col {
+      display: flex;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-3 .row .col > div {
+      display: flex;
+      flex-direction: column;
+      padding: 0.625rem;
+      border-radius: 0.1875rem;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-3 .row .col > div > img {
+      max-width: 18.75rem;
+      width: 100%;
+      height: auto;
+      margin: 0 auto 1.25rem auto;
+      border-radius: 0.1875rem;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-3 .row .col > div .title {
+      margin-bottom: 0.625rem;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-3 .row .col > div .icon {
+      margin-top: 0.625rem;
+      margin-bottom: 0.625rem;
+      width: 100%;
+      height: 7.5rem;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-3 .row .col > div .copy {
+      margin-bottom: 1.25rem;
+    }
+    .mtd-page
+      .snow-v2.snow-v2-index
+      section.section-3
+      .row
+      .col
+      > div
+      .eng-for {
+      text-align: center;
+      text-transform: uppercase;
+      width: 100%;
+      margin-top: auto;
+      margin-bottom: 0.75rem;
+      padding: 0.625rem 2.5rem;
+      font-weight: 600;
+      border: 0;
+      font-size: 0.875rem;
+    }
+    .mtd-page
+      .snow-v2.snow-v2-index
+      section.section-3
+      .row
+      .col
+      > div
+      .eng-for-blocks {
+      text-align: center;
+      font-size: 0.75rem;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-3 .row .col > div small {
+      display: block;
+      line-height: 1;
+      margin-top: 0.25rem;
+      text-align: center;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-6 {
+      padding: 3.75rem 0;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-6 .logo {
+      min-height: 14.625rem;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-6 .row .title {
+      font-weight: 600;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-6 .row .plus {
+      font-family: "Times New Roman", sans-serif;
+      font-weight: 100;
+      font-size: 2rem;
+      flex: 0 0 1.25rem;
+      padding-right: 1.25rem;
+      margin-top: -14px;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-7 {
+      padding: 3.75rem 0;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-7 .copy {
+      margin-bottom: 2.5rem;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-8 {
+      padding: 3.75rem 0;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-9 {
+      padding: 3.75rem 0;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-9 .compare {
+      padding: 1.25rem;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-9 .compare li {
+      border: 1px solid #000;
+      border-top-width: 0.0625rem;
+      border-right-width: 0rem;
+      border-bottom-width: 0rem;
+      border-left-width: 0.0625rem;
+      flex: 0 1 20%;
+      max-width: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-9 .compare li img {
+      max-width: 60%;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-9 .compare li p {
+      margin-top: 0.625rem;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-9 .compare li .dash-bull {
+      font-size: 1.375rem;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-9 .compare li .logo,
+    .mtd-page .snow-v2.snow-v2-index section.section-9 .compare li .img {
+      display: flex;
+      min-height: 4.0625rem;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-9 .compare li .logo img,
+    .mtd-page .snow-v2.snow-v2-index section.section-9 .compare li .img img {
+      width: auto;
+      height: 4.0625rem;
+    }
+    .mtd-page
+      .snow-v2.snow-v2-index
+      section.section-9
+      .compare
+      li:nth-child(4n + 4) {
+      border-right-width: 0;
+    }
+    .mtd-page
+      .snow-v2.snow-v2-index
+      section.section-9
+      .compare
+      li:nth-child(4n + 1) {
+      align-items: flex-start;
+      border-left-width: 0;
+      flex: 0 1 40%;
+      max-width: 40%;
+    }
+    .mtd-page
+      .snow-v2.snow-v2-index
+      section.section-9
+      .compare
+      li:nth-child(1) {
+      font-size: 1.375rem;
+      justify-content: flex-end;
+    }
+    .mtd-page
+      .snow-v2.snow-v2-index
+      section.section-9
+      .compare
+      li:nth-child(-n + 4) {
+      border-top-width: 0rem;
+    }
+    .mtd-page
+      .snow-v2.snow-v2-index
+      section.section-9
+      .compare
+      li:nth-child(-n + 4)
+      .logo,
+    .mtd-page
+      .snow-v2.snow-v2-index
+      section.section-9
+      .compare
+      li:nth-child(-n + 4)
+      .img {
+      justify-content: center;
+    }
+    .mtd-page
+      .snow-v2.snow-v2-index
+      section.section-9
+      .compare
+      li:nth-child(-n + 4).column-1,
+    .mtd-page
+      .snow-v2.snow-v2-index
+      section.section-9
+      .compare
+      li:nth-child(-n + 4).column-2,
+    .mtd-page
+      .snow-v2.snow-v2-index
+      section.section-9
+      .compare
+      li:nth-child(-n + 4).column-3 {
+      font-weight: 100;
+      text-align: center;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-10 a,
+    .mtd-page .snow-v2.snow-v2-index section.section-11 a {
+      display: flex;
+      flex-direction: column;
+      background: #efefef;
+      text-decoration: none;
+      height: 100%;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-10 a .content strong,
+    .mtd-page .snow-v2.snow-v2-index section.section-11 a .content strong {
+      font-size: 1.375rem;
+      line-height: 1.3;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-10 a .content .copy,
+    .mtd-page .snow-v2.snow-v2-index section.section-11 a .content .copy {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-10 a .content .read-more,
+    .mtd-page .snow-v2.snow-v2-index section.section-11 a .content .read-more {
+      text-decoration: underline;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .mtd-page .snow-v2.snow-v2-index section.section-10 a:hover,
+    .mtd-page .snow-v2.snow-v2-index section.section-11 a:hover {
+      color: #000;
+    }
+    .mtd-page .snow-v2.snow-v2-intellipower section.section-1 .wrapper {
+      min-height: 32.8125rem;
+    }
+    .mtd-page .snow-v2.snow-v2-intellipower section.section-1 .wrapper p {
+      max-width: 31.25rem;
+    }
+    .mtd-page .snow-v2.snow-v2-intellipower section.section-2 .wrapper {
+      min-height: 35rem;
+    }
+    .mtd-page .snow-v2.snow-v2-intellipower section.section-2 .wrapper .logo {
+      width: 100%;
+      max-width: 46.875rem;
+    }
+    .mtd-page
+      .snow-v2.snow-v2-intellipower
+      section.section-2
+      .wrapper
+      .logo
+      svg {
+      width: 100%;
+      height: auto;
+    }
+    .mtd-page .snow-v2.snow-v2-intellipower section.section-2 .wrapper h2 {
+      font-size: 3.4375rem;
+    }
+    .mtd-page .snow-v2.snow-v2-intellipower section.section-2 > svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: auto;
+      height: 100%;
+    }
+    .mtd-page .snow-v2.snow-v2-intellipower section.section-3 p.h1 {
+      font-size: 7.5rem;
+    }
+    .mtd-page .snow-v2.snow-v2-intellipower section.section-3 h2 {
+      font-size: 4.75rem;
+    }
+    .mtd-page .snow-v2.snow-v2-intellipower section.section-3 .power .line-1,
+    .mtd-page .snow-v2.snow-v2-intellipower section.section-3 .power .line-2,
+    .mtd-page .snow-v2.snow-v2-intellipower section.section-3 .power .line-3 {
+      line-height: 0;
+    }
+    .mtd-page .snow-v2.snow-v2-intellipower section.section-3 .power .line-4 {
+      font-size: 0.75rem;
+      border-top: 0.25rem solid #ffc10f;
+    }
+    .mtd-page
+      .snow-v2.snow-v2-intellipower
+      section.section-3
+      .consistent
+      .line-2 {
+      font-size: 1rem;
+      border-top: 0.125rem solid #000;
+    }
+    .mtd-page .snow-v2.snow-v2-intellipower section.section-3 .videos {
+      min-height: 47.5rem;
+    }
+    .mtd-page .snow-v2.snow-v2-intellipower section.section-3 .videos .video {
+      display: none;
+    }
+    .mtd-page
+      .snow-v2.snow-v2-intellipower
+      section.section-3
+      .videos
+      .video.active {
+      display: block;
+    }
+    .mtd-page
+      .snow-v2.snow-v2-intellipower
+      section.section-3
+      .video-buttons
+      button {
+      background: transparent;
+      border-color: #d9d9d9;
+      border-bottom-width: 0.125rem;
+      border-style: solid;
+    }
+    .mtd-page
+      .snow-v2.snow-v2-intellipower
+      section.section-3
+      .video-buttons
+      button.active {
+      border-color: #000;
+    }
+    .mtd-page .snow-v2.snow-v2-intellipower section.section-4 .block .title {
+      border-bottom: 0.125rem solid #000;
+    }
+    .mtd-page .snow-v2.snow-v2-intellipower section.section-8 .img-wrapper img {
+      object-position: left;
+    }
+    .mtd-page .snow-v2.snow-v2-intellipower section.section-9 .faqs {
+      display: none;
+    }
+    .mtd-page .snow-v2.snow-v2-intellipower section.section-9 .faqs.active {
+      display: block;
+    }
+    .mtd-page .snow-v2.snow-v2-intellipower section.section-9 button {
+      background: #000;
+      color: #fff;
+    }
+    .mtd-page .snow-v2.snow-v2-intellipower section.section-9 button.active {
+      background: #ffc10f;
+      color: #000;
+    }
+    .mtd-page .snow-v2.snow-v2-threex section.hero .wrapper {
+      margin-bottom: 1.25rem;
+    }
+    .mtd-page .snow-v2.snow-v2-threex section.hero .block {
+      display: flex;
+      justify-content: center;
+      margin-left: auto;
+      max-width: 25rem;
+    }
+    .mtd-page .snow-v2.snow-v2-threex section.hero .block svg * {
+      fill: #fff;
+    }
+    .mtd-page .snow-v2.snow-v2-threex section.quote .wrapper {
+      margin-top: 2.5rem;
+    }
+    .mtd-page .snow-v2.snow-v2-threex section.quote .block {
+      max-width: 43.75rem;
+    }
+    .mtd-page .snow-v2.snow-v2-threex section.hero,
+    .mtd-page .snow-v2.snow-v2-threex section.quote {
+      display: flex;
+      padding: 0;
+      min-height: 37.5rem;
+    }
+    .mtd-page .snow-v2.snow-v2-threex section.hero .block,
+    .mtd-page .snow-v2.snow-v2-threex section.quote .block {
+      padding: 2.5rem 1.5rem;
+    }
+    .mtd-page .snow-v2.snow-v2-threex section.hero > img,
+    .mtd-page .snow-v2.snow-v2-threex section.quote > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1001;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      max-height: 37.5rem;
+    }
+
+    @media (max-width: 64rem) {
+      .mtd-page .min-height-quote {
+        min-height: 60rem;
+      }
+      .mtd-page .snow-v2.snow-v2-index section.hero,
+      .mtd-page .snow-v2.snow-v2-index section.quote {
+        min-height: 37.5rem;
+      }
+      .mtd-page .snow-v2.snow-v2-index section.hero .wrapper,
+      .mtd-page .snow-v2.snow-v2-index section.quote .wrapper {
+        position: absolute;
+      }
+      .mtd-page .snow-v2.snow-v2-index section.hero > img,
+      .mtd-page .snow-v2.snow-v2-index section.quote > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-height: initial;
+        object-fit: cover;
+      }
+      .mtd-page .snow-v2.snow-v2-index section.section-2 {
+        padding: 2.5rem 1.25rem;
+      }
+      .mtd-page .snow-v2.snow-v2-index section.section-2 .pluses {
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+      .mtd-page .snow-v2.snow-v2-index section.section-2 .pluses.top {
+        margin-bottom: 2.5rem;
+      }
+      .mtd-page .snow-v2.snow-v2-index section.section-2 .pluses.bottom {
+        margin-top: 2.5rem;
+        margin-left: auto;
+      }
+      .mtd-page .snow-v2.snow-v2-index section.section-3 .row .col a .icon {
+        max-width: 25em;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .mtd-page .snow-v2.snow-v2-index section.section-6 .logo {
+        min-height: auto;
+      }
+      .mtd-page .snow-v2.snow-v2-intellipower section.section-3 .videos {
+        min-height: auto;
+      }
+
+      .quote-block {
+        max-width: 100%;
+      }
+    }
+  </style>
+
+  <div class="bottom">
+    <section class="pt-6">
+      <div class="wrapper">
+        <ul
+          class="list-unstyled d-flex flex-column flex-md-row align-items-center px-3"
+        >
+          <li class="">
+            <h2 class="text-center">How To’s &amp; Maintenance</h2>
+          </li>
+          <li class="ml-2">
+            <a class="d-block text-center"><u>View All</u></a>
+          </li>
+        </ul>
+        <div class="slick pl-3 pr-3">
+          <ul class="list-unstyled d-flex flex-column flex-md-row">
+            <li class="col-sm-12 col-md-4 p-1 flex flex-column">
+              <a
+                href="https://www.cubcadet.com/en_US/how-to/knowledge-how-to-change-the-air-filter-on-a-cub-cadet-zero-turn-rider.html "
+                class="flex flex-column text-decoration-none p-2 h-100"
+                style="background-color: rgb(239, 239, 239);"
+              >
+                <img
+                  src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/how-to-1.jpg"
+                  alt=""
+                />
+                <div class="content flex flex-column p-3 h-100">
+                  <strong class="h3" style="font-size: 1.6em;">
+                    How to clean or replace an air filter on an Ultima Zero Turn
+                  </strong>
+                  <p class="copy mt-2">
+                    It is recommended that your engine air filter be cleaned or
+                    replaced every 50 operating hours. In dry, dusty conditions
+                    this should be done more frequently. The video and
+                    instructions…
+                  </p>
+                  <span
+                    class="mt-auto text-uppercase fw-bold"
+                    style="text-decoration: underline;"
+                  >
+                    Read more
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="col-sm-12 col-md-4 p-1 flex flex-column">
+              <a
+                href="https://www.cubcadet.com/en_US/how-to/knowledge-how-to-change-the-blades-on-a-zero-turn.html"
+                class="flex flex-column text-decoration-none p-2 h-100"
+                style="background-color: rgb(239, 239, 239);"
+              >
+                <img
+                  src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/how-to-2.jpg"
+                  alt=""
+                />
+                <div class="content flex flex-column p-3 h-100">
+                  <strong class="h3" style="font-size: 1.6em;">
+                    How to Change the Blades on a Zero-Turn Lawn Mower
+                  </strong>
+                  <p class="copy mt-2">
+                    Over time, the blades on your zero-turn riding lawn mower
+                    can become worn out, bent or dinged. This gradual damage can
+                    reduce the effectiveness of your mower, so be sure to…
+                  </p>
+                  <span
+                    class="mt-auto text-uppercase fw-bold"
+                    style="text-decoration: underline;"
+                  >
+                    Read more
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="col-sm-12 col-md-4 p-1 flex flex-column">
+              <a
+                href="https://www.cubcadet.com/en_US/how-to/knowledge-how-to-install-a-bagger-on-a-zero-turn.html"
+                class="flex flex-column text-decoration-none p-2 h-100"
+                style="background-color: rgb(239, 239, 239);"
+              >
+                <img
+                  src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/how-to-3.jpg"
+                  alt=""
+                />
+                <div class="content flex flex-column p-3 h-100">
+                  <strong class="h3" style="font-size: 1.6em;">
+                    How to Install a Bagger Attachment on a Zero-Turn Riding
+                    Mower
+                  </strong>
+                  <p class="copy mt-2">
+                    The following video will show you how to install a double
+                    bagger on your Ultima Series ZT Zero Turn mower. The tools
+                    needed for installation include two 9/16 in. socket
+                    wrenches…
+                  </p>
+                  <span
+                    class="mt-auto text-uppercase fw-bold"
+                    style="text-decoration: underline;"
+                  >
+                    Read more
+                  </span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="pb-6">
+      <div class="wrapper">
+        <ul
+          class="list-unstyled d-flex flex-column flex-md-row align-items-center px-3"
+        >
+          <li class=""><h2 class="text-center">Zero-Turn Articles</h2></li>
+          <li class="ml-2">
+            <a
+              href="https://www.cubcadet.com/en_US/how-to/"
+              class="d-block text-center"
+            >
+              <u>View All</u>
+            </a>
+          </li>
+        </ul>
+        <div class="slick pl-3 pr-3">
+          <ul class="list-unstyled d-flex flex-column flex-md-row">
+            <li class="col-sm-12 col-md-4 p-1 flex flex-column">
+              <a
+                href="https://www.cubcadet.com/en_US/how-to/knowledge-how-to-pick-the-best-zero-turn.html "
+                class="flex flex-column text-decoration-none p-2 h-100"
+                style="background-color: rgb(239, 239, 239);"
+              >
+                <img
+                  src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/zero-turn-1.jpg"
+                  alt=""
+                />
+                <div class="content flex flex-column p-3 h-100">
+                  <strong class="h3" style="font-size: 1.6em;">
+                    How to Pick the Best Zero-Turn Lawn Mower
+                  </strong>
+                  <p class="copy mt-2">
+                    There are plenty of options in the marketplace when it comes
+                    to choosing the right zero-turn lawn mower. And if you’ve
+                    decided that a zero-turn mower is right for you, it’s time
+                    to understand what to look for in a machine…
+                  </p>
+                  <span
+                    class="mt-auto text-uppercase fw-bold"
+                    style="text-decoration: underline;"
+                  >
+                    Read more
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="col-sm-12 col-md-4 p-1 flex flex-column">
+              <a
+                href="https://www.cubcadet.com/en_US/popular-faqs/knowledge-is-a-zero-turn-mower-right-for-you.html"
+                class="flex flex-column text-decoration-none p-2 h-100"
+                style="background-color: rgb(239, 239, 239);"
+              >
+                <img
+                  src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/zero-turn-2.jpg"
+                  alt=""
+                />
+                <div class="content flex flex-column p-3 h-100">
+                  <strong class="h3" style="font-size: 1.6em;">
+                    Is a Zero-Turn Lawn Mower Right for You?
+                  </strong>
+                  <p class="copy mt-2">
+                    Homeowners looking to reduce the amount of time spent mowing
+                    their lawns may want to invest in a zero-turn mower. With
+                    free time at a premium and these powerful mowers becoming
+                    more affordable, many homeowners are asking themselves…
+                  </p>
+                  <span
+                    class="mt-auto text-uppercase fw-bold"
+                    style="text-decoration: underline;"
+                  >
+                    Read more
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="col-sm-12 col-md-4 p-1 flex flex-column">
+              <a
+                href="https://www.cubcadet.com/en_US/current-news/news-commercial-grade-zero-turn-ztx-2020.html"
+                class="flex flex-column text-decoration-none p-2 h-100"
+                style="background-color: rgb(239, 239, 239);"
+              >
+                <img
+                  src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/zero-turn-3.jpg"
+                  alt=""
+                />
+                <div class="content flex flex-column p-3 h-100">
+                  <strong class="h3" style="font-size: 1.6em;">
+                    Cub Cadet Adds Another Step Up With Commercial-Grade
+                    Residential Zero-Turn
+                  </strong>
+                  <p class="copy mt-2">
+                    Building on the groundbreaking launch of the Ultima Series
+                    residential zero-turn lawn mowers, Cub Cadet announced
+                    another step up in the ultimate all-around mowing
+                    experience…
+                  </p>
+                  <span
+                    class="mt-auto text-uppercase fw-bold"
+                    style="text-decoration: underline;"
+                  >
+                    Read more
+                  </span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

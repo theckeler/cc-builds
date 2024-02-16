@@ -1,0 +1,2489 @@
+<style>
+  #sdb-container *,
+  #sdb-container :after,
+  #sdb-container :before {
+    box-sizing: border-box;
+    border: 0 solid #d9d9d9;
+  }
+  .container {
+    width: 100%;
+  }
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1536px;
+    }
+  }
+  #sdb-container :is(.sr-only) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  #sdb-container :is(.visible) {
+    visibility: visible;
+  }
+  #sdb-container :is(.invisible) {
+    visibility: hidden;
+  }
+  #sdb-container :is(.collapse) {
+    visibility: collapse;
+  }
+  #sdb-container :is(.static) {
+    position: static;
+  }
+  #sdb-container :is(.fixed) {
+    position: fixed;
+  }
+  #sdb-container :is(.absolute) {
+    position: absolute;
+  }
+  #sdb-container :is(.relative) {
+    position: relative;
+  }
+  #sdb-container :is(.sticky) {
+    position: sticky;
+  }
+  #sdb-container :is(.-left-2\/4) {
+    left: -50%;
+  }
+  #sdb-container :is(.bottom-0) {
+    bottom: 0;
+  }
+  #sdb-container :is(.bottom-full) {
+    bottom: 100%;
+  }
+  #sdb-container :is(.left-0) {
+    left: 0;
+  }
+  #sdb-container :is(.right-0) {
+    right: 0;
+  }
+  #sdb-container :is(.top-0) {
+    top: 0;
+  }
+  #sdb-container :is(.top-1\/2) {
+    top: 50%;
+  }
+  #sdb-container :is(.top-2\/4) {
+    top: 50%;
+  }
+  #sdb-container :is(.top-4) {
+    top: 1rem;
+  }
+  #sdb-container :is(.top-full) {
+    top: 100%;
+  }
+  #sdb-container :is(.z-0) {
+    z-index: 0;
+  }
+  #sdb-container :is(.z-10) {
+    z-index: 10;
+  }
+  #sdb-container :is(.z-20) {
+    z-index: 20;
+  }
+  #sdb-container :is(.z-40) {
+    z-index: 40;
+  }
+  #sdb-container :is(.z-50) {
+    z-index: 50;
+  }
+  #sdb-container :is(.order-1) {
+    order: 1;
+  }
+  #sdb-container :is(.order-2) {
+    order: 2;
+  }
+  #sdb-container :is(.order-3) {
+    order: 3;
+  }
+  #sdb-container :is(.col-auto) {
+    grid-column: auto;
+  }
+  #sdb-container :is(.col-span-full) {
+    grid-column: 1/-1;
+  }
+  #sdb-container :is(.m-0) {
+    margin: 0;
+  }
+  #sdb-container :is(.m-1) {
+    margin: 0.25rem;
+  }
+  #sdb-container :is(.m-2) {
+    margin: 0.5rem;
+  }
+  #sdb-container :is(.mx-0) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #sdb-container :is(.mx-4) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  #sdb-container :is(.mx-auto) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #sdb-container :is(.my-0) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #sdb-container :is(.my-1) {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  #sdb-container :is(.my-10) {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  #sdb-container :is(.my-2) {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  #sdb-container :is(.my-3) {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  #sdb-container :is(.my-4) {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  #sdb-container :is(.my-6) {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  #sdb-container :is(.my-auto) {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  #sdb-container :is(.-mb-1) {
+    margin-bottom: -0.25rem;
+  }
+  #sdb-container :is(.-ml-1) {
+    margin-left: -0.25rem;
+  }
+  #sdb-container :is(.-ml-6) {
+    margin-left: -1.5rem;
+  }
+  #sdb-container :is(.-mr-1) {
+    margin-right: -0.25rem;
+  }
+  #sdb-container :is(.-mr-6) {
+    margin-right: -1.5rem;
+  }
+  #sdb-container :is(.-mt-5) {
+    margin-top: -1.25rem;
+  }
+  #sdb-container :is(.-mt-6) {
+    margin-top: -1.5rem;
+  }
+  #sdb-container :is(.-mt-\[28px\]) {
+    margin-top: -28px;
+  }
+  #sdb-container :is(.mb-0) {
+    margin-bottom: 0;
+  }
+  #sdb-container :is(.mb-1) {
+    margin-bottom: 0.25rem;
+  }
+  #sdb-container :is(.mb-2) {
+    margin-bottom: 0.5rem;
+  }
+  #sdb-container :is(.mb-3) {
+    margin-bottom: 0.75rem;
+  }
+  #sdb-container :is(.mb-4) {
+    margin-bottom: 1rem;
+  }
+  #sdb-container :is(.mb-5) {
+    margin-bottom: 1.25rem;
+  }
+  #sdb-container :is(.mb-6) {
+    margin-bottom: 1.5rem;
+  }
+  #sdb-container :is(.mb-8) {
+    margin-bottom: 2rem;
+  }
+  #sdb-container :is(.ml-1) {
+    margin-left: 0.25rem;
+  }
+  #sdb-container :is(.ml-2) {
+    margin-left: 0.5rem;
+  }
+  #sdb-container :is(.ml-3) {
+    margin-left: 0.75rem;
+  }
+  #sdb-container :is(.ml-4) {
+    margin-left: 1rem;
+  }
+  #sdb-container :is(.ml-5) {
+    margin-left: 1.25rem;
+  }
+  #sdb-container :is(.ml-auto) {
+    margin-left: auto;
+  }
+  #sdb-container :is(.mr-1) {
+    margin-right: 0.25rem;
+  }
+  #sdb-container :is(.mr-2) {
+    margin-right: 0.5rem;
+  }
+  #sdb-container :is(.mr-auto) {
+    margin-right: auto;
+  }
+  #sdb-container :is(.mt-0) {
+    margin-top: 0;
+  }
+  #sdb-container :is(.mt-1) {
+    margin-top: 0.25rem;
+  }
+  #sdb-container :is(.mt-10) {
+    margin-top: 2.5rem;
+  }
+  #sdb-container :is(.mt-2) {
+    margin-top: 0.5rem;
+  }
+  #sdb-container :is(.mt-3) {
+    margin-top: 0.75rem;
+  }
+  #sdb-container :is(.mt-4) {
+    margin-top: 1rem;
+  }
+  #sdb-container :is(.mt-6) {
+    margin-top: 1.5rem;
+  }
+  #sdb-container :is(.mt-8) {
+    margin-top: 2rem;
+  }
+  #sdb-container :is(.mt-auto) {
+    margin-top: auto;
+  }
+  #sdb-container :is(.line-clamp-4) {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  #sdb-container :is(.line-clamp-5) {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+  }
+  #sdb-container :is(.\!block) {
+    display: block !important;
+  }
+  #sdb-container :is(.block) {
+    display: block;
+  }
+  #sdb-container :is(.inline-block) {
+    display: inline-block;
+  }
+  #sdb-container :is(.inline) {
+    display: inline;
+  }
+  #sdb-container :is(.flex) {
+    display: flex;
+  }
+  #sdb-container :is(.inline-flex) {
+    display: inline-flex;
+  }
+  #sdb-container :is(.table) {
+    display: table;
+  }
+  #sdb-container :is(.table-cell) {
+    display: table-cell;
+  }
+  #sdb-container :is(.table-row) {
+    display: table-row;
+  }
+  #sdb-container :is(.grid) {
+    display: grid;
+  }
+  #sdb-container :is(.hidden) {
+    display: none;
+  }
+  #sdb-container :is(.h-0) {
+    height: 0;
+  }
+  #sdb-container :is(.h-12) {
+    height: 3rem;
+  }
+  #sdb-container :is(.h-14) {
+    height: 3.5rem;
+  }
+  #sdb-container :is(.h-4) {
+    height: 1rem;
+  }
+  #sdb-container :is(.h-40) {
+    height: 10rem;
+  }
+  #sdb-container :is(.h-6) {
+    height: 1.5rem;
+  }
+  #sdb-container :is(.h-96) {
+    height: 24rem;
+  }
+  #sdb-container :is(.h-\[100px\]) {
+    height: 100px;
+  }
+  #sdb-container :is(.h-\[600px\]) {
+    height: 600px;
+  }
+  #sdb-container :is(.h-auto) {
+    height: auto;
+  }
+  #sdb-container :is(.h-full) {
+    height: 100%;
+  }
+  #sdb-container :is(.h-screen) {
+    height: 100vh;
+  }
+  #sdb-container :is(.max-h-24) {
+    max-height: 6rem;
+  }
+  #sdb-container :is(.max-h-\[500px\]) {
+    max-height: 500px;
+  }
+  #sdb-container :is(.max-h-\[50px\]) {
+    max-height: 50px;
+  }
+  #sdb-container :is(.max-h-\[600px\]) {
+    max-height: 600px;
+  }
+  #sdb-container :is(.max-h-\[80px\]) {
+    max-height: 80px;
+  }
+  #sdb-container :is(.max-h-\[calc\(100vh-80px\)\]) {
+    max-height: calc(100vh - 80px);
+  }
+  #sdb-container :is(.min-h-\[10rem\]) {
+    min-height: 10rem;
+  }
+  #sdb-container :is(.min-h-\[140px\]) {
+    min-height: 140px;
+  }
+  #sdb-container :is(.min-h-\[200px\]) {
+    min-height: 200px;
+  }
+  #sdb-container :is(.min-h-\[20rem\]) {
+    min-height: 20rem;
+  }
+  #sdb-container :is(.min-h-\[300px\]) {
+    min-height: 300px;
+  }
+  #sdb-container :is(.min-h-\[34em\]) {
+    min-height: 34em;
+  }
+  #sdb-container :is(.min-h-\[48px\]) {
+    min-height: 48px;
+  }
+  #sdb-container :is(.min-h-full) {
+    min-height: 100%;
+  }
+  #sdb-container :is(.w-0) {
+    width: 0;
+  }
+  #sdb-container :is(.w-10) {
+    width: 2.5rem;
+  }
+  #sdb-container :is(.w-12) {
+    width: 3rem;
+  }
+  #sdb-container :is(.w-14) {
+    width: 3.5rem;
+  }
+  #sdb-container :is(.w-4) {
+    width: 1rem;
+  }
+  #sdb-container :is(.w-48) {
+    width: 12rem;
+  }
+  #sdb-container :is(.w-6) {
+    width: 1.5rem;
+  }
+  #sdb-container :is(.w-\[200px\]) {
+    width: 200px;
+  }
+  #sdb-container :is(.w-auto) {
+    width: auto;
+  }
+  #sdb-container :is(.w-full) {
+    width: 100%;
+  }
+  #sdb-container :is(.min-w-\[12rem\]) {
+    min-width: 12rem;
+  }
+  #sdb-container :is(.min-w-\[326px\]) {
+    min-width: 326px;
+  }
+  #sdb-container :is(.min-w-\[60px\]) {
+    min-width: 60px;
+  }
+  #sdb-container :is(.max-w-4xl) {
+    max-width: 56rem;
+  }
+  #sdb-container :is(.max-w-\[260px\]) {
+    max-width: 260px;
+  }
+  #sdb-container :is(.max-w-xs) {
+    max-width: 20rem;
+  }
+  #sdb-container :is(.grow) {
+    flex-grow: 1;
+  }
+  #sdb-container :is(.-translate-x-1\/4) {
+    --tw-translate-x: -25%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  #sdb-container :is(.-translate-y-2\/4) {
+    --tw-translate-y: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  #sdb-container :is(.translate-x-1\/4) {
+    --tw-translate-x: 25%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  #sdb-container :is(.rotate-0) {
+    --tw-rotate: 0deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  #sdb-container :is(.rotate-180) {
+    --tw-rotate: 180deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  #sdb-container :is(.rotate-45) {
+    --tw-rotate: 45deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  #sdb-container :is(.transform) {
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  #sdb-container :is(.cursor-grab) {
+    cursor: grab;
+  }
+  #sdb-container :is(.cursor-pointer) {
+    cursor: pointer;
+  }
+  #sdb-container :is(.select-auto) {
+    -webkit-user-select: auto;
+    -moz-user-select: auto;
+    user-select: auto;
+  }
+  #sdb-container :is(.resize) {
+    resize: both;
+  }
+  #sdb-container :is(.snap-x) {
+    scroll-snap-type: x var(--tw-scroll-snap-strictness);
+  }
+  #sdb-container :is(.snap-mandatory) {
+    --tw-scroll-snap-strictness: mandatory;
+  }
+  #sdb-container :is(.snap-center) {
+    scroll-snap-align: center;
+  }
+  #sdb-container :is(.auto-cols-\[320px\]) {
+    grid-auto-columns: 320px;
+  }
+  #sdb-container :is(.auto-cols-min) {
+    grid-auto-columns: min-content;
+  }
+  #sdb-container :is(.grid-flow-row) {
+    grid-auto-flow: row;
+  }
+  #sdb-container :is(.grid-flow-col) {
+    grid-auto-flow: column;
+  }
+  #sdb-container :is(.grid-cols-1) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  #sdb-container :is(.grid-cols-2) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  #sdb-container :is(.grid-cols-3) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  #sdb-container :is(.grid-cols-\[100px_1fr\]) {
+    grid-template-columns: 100px 1fr;
+  }
+  #sdb-container :is(.grid-cols-\[12rem_1fr\]) {
+    grid-template-columns: 12rem 1fr;
+  }
+  #sdb-container :is(.grid-cols-\[1fr_150px\]) {
+    grid-template-columns: 1fr 150px;
+  }
+  #sdb-container :is(.grid-cols-\[1fr_160px\]) {
+    grid-template-columns: 1fr 160px;
+  }
+  #sdb-container :is(.grid-cols-\[1fr_48px\]) {
+    grid-template-columns: 1fr 48px;
+  }
+  #sdb-container :is(.grid-cols-\[20rem_10rem_10rem_10rem\]) {
+    grid-template-columns: 20rem 10rem 10rem 10rem;
+  }
+  #sdb-container :is(.grid-cols-\[40em_1fr\]) {
+    grid-template-columns: 40em 1fr;
+  }
+  #sdb-container :is(.grid-cols-\[5em_1fr\]) {
+    grid-template-columns: 5em 1fr;
+  }
+  #sdb-container :is(.grid-cols-\[80px_1fr_120px\]) {
+    grid-template-columns: 80px 1fr 120px;
+  }
+  #sdb-container :is(.grid-rows-\[1fr_16em\]) {
+    grid-template-rows: 1fr 16em;
+  }
+  #sdb-container :is(.grid-rows-\[minmax\(2rem\)_1fr_minmax\(2rem\)\]) {
+    grid-template-rows: minmax(2rem) 1fr minmax(2rem);
+  }
+  #sdb-container :is(.flex-row) {
+    flex-direction: row;
+  }
+  #sdb-container :is(.flex-col) {
+    flex-direction: column;
+  }
+  #sdb-container :is(.flex-col-reverse) {
+    flex-direction: column-reverse;
+  }
+  #sdb-container :is(.flex-wrap) {
+    flex-wrap: wrap;
+  }
+  #sdb-container :is(.place-items-center) {
+    place-items: center;
+  }
+  #sdb-container :is(.items-end) {
+    align-items: flex-end;
+  }
+  #sdb-container :is(.items-center) {
+    align-items: center;
+  }
+  #sdb-container :is(.items-stretch) {
+    align-items: stretch;
+  }
+  #sdb-container :is(.justify-end) {
+    justify-content: flex-end;
+  }
+  #sdb-container :is(.justify-center) {
+    justify-content: center;
+  }
+  #sdb-container :is(.justify-between) {
+    justify-content: space-between;
+  }
+  #sdb-container :is(.gap-1) {
+    gap: 0.25rem;
+  }
+  #sdb-container :is(.gap-2) {
+    gap: 0.5rem;
+  }
+  #sdb-container :is(.gap-3) {
+    gap: 0.75rem;
+  }
+  #sdb-container :is(.gap-4) {
+    gap: 1rem;
+  }
+  #sdb-container :is(.gap-8) {
+    gap: 2rem;
+  }
+  #sdb-container :is(.self-start) {
+    align-self: flex-start;
+  }
+  #sdb-container :is(.overflow-auto) {
+    overflow: auto;
+  }
+  #sdb-container :is(.overflow-hidden) {
+    overflow: hidden;
+  }
+  #sdb-container :is(.overflow-x-auto) {
+    overflow-x: auto;
+  }
+  #sdb-container :is(.overflow-y-auto) {
+    overflow-y: auto;
+  }
+  #sdb-container :is(.overflow-x-scroll) {
+    overflow-x: scroll;
+  }
+  #sdb-container :is(.truncate) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  #sdb-container :is(.whitespace-nowrap) {
+    white-space: nowrap;
+  }
+  #sdb-container :is(.rounded) {
+    border-radius: 0.25rem;
+  }
+  #sdb-container :is(.rounded-full) {
+    border-radius: 9999px;
+  }
+  #sdb-container :is(.rounded-l) {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+  #sdb-container :is(.border) {
+    border-width: 1px;
+  }
+  #sdb-container :is(.border-0) {
+    border-width: 0;
+  }
+  #sdb-container :is(.border-y) {
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+  }
+  #sdb-container :is(.border-b) {
+    border-bottom-width: 1px;
+  }
+  #sdb-container :is(.border-b-4) {
+    border-bottom-width: 4px;
+  }
+  #sdb-container :is(.border-r) {
+    border-right-width: 1px;
+  }
+  #sdb-container :is(.border-r-0) {
+    border-right-width: 0;
+  }
+  #sdb-container :is(.border-t) {
+    border-top-width: 1px;
+  }
+  #sdb-container :is(.border-t-0) {
+    border-top-width: 0;
+  }
+  #sdb-container :is(.border-\[\#FFC20F\]) {
+    border-color: #ffc20f;
+  }
+  #sdb-container :is(.border-amber-300) {
+    border-color: #fcd34d;
+  }
+  #sdb-container :is(.border-neutral-200) {
+    border-color: #e5e5e5;
+  }
+  #sdb-container :is(.border-neutral-400) {
+    border-color: #a3a3a3;
+  }
+  #sdb-container :is(.border-neutral-500) {
+    border-color: #737373;
+  }
+  #sdb-container :is(.border-transparent) {
+    border-color: transparent;
+  }
+  #sdb-container :is(.border-white) {
+    border-color: #fff;
+  }
+  #sdb-container :is(.bg-\[\#202020\]) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(32 32 32 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-\[\#FFC20F\]) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 194 15 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-\[\#efefef\]) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(239 239 239 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-\[\#ffc20f\]) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 194 15 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-amber-300) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(252 211 77 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-amber-400) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(251 191 36 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-black) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-black\/80) {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  #sdb-container :is(.bg-gray-200) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-neutral-100) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-neutral-800) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-transparent) {
+    background-color: transparent;
+  }
+  #sdb-container :is(.bg-white) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-yellow-500) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-none) {
+    background-image: none;
+  }
+  #sdb-container :is(.fill-amber-400) {
+    fill: #fbbf24;
+  }
+  #sdb-container :is(.fill-black) {
+    fill: #000;
+  }
+  #sdb-container :is(.fill-white) {
+    fill: #fff;
+  }
+  #sdb-container :is(.object-contain) {
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+  #sdb-container :is(.object-cover) {
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  #sdb-container :is(.object-center) {
+    -o-object-position: center;
+    object-position: center;
+  }
+  #sdb-container :is(.p-0) {
+    padding: 0;
+  }
+  #sdb-container :is(.p-1) {
+    padding: 0.25rem;
+  }
+  #sdb-container :is(.p-2) {
+    padding: 0.5rem;
+  }
+  #sdb-container :is(.p-3) {
+    padding: 0.75rem;
+  }
+  #sdb-container :is(.p-4) {
+    padding: 1rem;
+  }
+  #sdb-container :is(.p-5) {
+    padding: 1.25rem;
+  }
+  #sdb-container :is(.p-6) {
+    padding: 1.5rem;
+  }
+  #sdb-container :is(.p-8) {
+    padding: 2rem;
+  }
+  #sdb-container :is(.p-9) {
+    padding: 2.25rem;
+  }
+  #sdb-container :is(.px-0) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #sdb-container :is(.px-1) {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+  #sdb-container :is(.px-10) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  #sdb-container :is(.px-14) {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+  #sdb-container :is(.px-2) {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  #sdb-container :is(.px-3) {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  #sdb-container :is(.px-32) {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  #sdb-container :is(.px-4) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  #sdb-container :is(.px-5) {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  #sdb-container :is(.px-6) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  #sdb-container :is(.py-0) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  #sdb-container :is(.py-1) {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+  #sdb-container :is(.py-10) {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  #sdb-container :is(.py-2) {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  #sdb-container :is(.py-24) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  #sdb-container :is(.py-3) {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  #sdb-container :is(.py-4) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  #sdb-container :is(.py-5) {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  #sdb-container :is(.py-6) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  #sdb-container :is(.py-7) {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+  #sdb-container :is(.py-9) {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+  #sdb-container :is(.py-\[4\.3rem\]) {
+    padding-top: 4.3rem;
+    padding-bottom: 4.3rem;
+  }
+  #sdb-container :is(.pb-0) {
+    padding-bottom: 0;
+  }
+  #sdb-container :is(.pb-1) {
+    padding-bottom: 0.25rem;
+  }
+  #sdb-container :is(.pb-10) {
+    padding-bottom: 2.5rem;
+  }
+  #sdb-container :is(.pb-16) {
+    padding-bottom: 4rem;
+  }
+  #sdb-container :is(.pb-2) {
+    padding-bottom: 0.5rem;
+  }
+  #sdb-container :is(.pb-3) {
+    padding-bottom: 0.75rem;
+  }
+  #sdb-container :is(.pb-4) {
+    padding-bottom: 1rem;
+  }
+  #sdb-container :is(.pb-6) {
+    padding-bottom: 1.5rem;
+  }
+  #sdb-container :is(.pb-8) {
+    padding-bottom: 2rem;
+  }
+  #sdb-container :is(.pb-9) {
+    padding-bottom: 2.25rem;
+  }
+  #sdb-container :is(.pl-0) {
+    padding-left: 0;
+  }
+  #sdb-container :is(.pl-1) {
+    padding-left: 0.25rem;
+  }
+  #sdb-container :is(.pl-2) {
+    padding-left: 0.5rem;
+  }
+  #sdb-container :is(.pl-3) {
+    padding-left: 0.75rem;
+  }
+  #sdb-container :is(.pl-4) {
+    padding-left: 1rem;
+  }
+  #sdb-container :is(.pr-0) {
+    padding-right: 0;
+  }
+  #sdb-container :is(.pr-1) {
+    padding-right: 0.25rem;
+  }
+  #sdb-container :is(.pr-2) {
+    padding-right: 0.5rem;
+  }
+  #sdb-container :is(.pr-3) {
+    padding-right: 0.75rem;
+  }
+  #sdb-container :is(.pt-0) {
+    padding-top: 0;
+  }
+  #sdb-container :is(.pt-1) {
+    padding-top: 0.25rem;
+  }
+  #sdb-container :is(.pt-2) {
+    padding-top: 0.5rem;
+  }
+  #sdb-container :is(.pt-3) {
+    padding-top: 0.75rem;
+  }
+  #sdb-container :is(.pt-4) {
+    padding-top: 1rem;
+  }
+  #sdb-container :is(.pt-6) {
+    padding-top: 1.5rem;
+  }
+  #sdb-container :is(.pt-8) {
+    padding-top: 2rem;
+  }
+  #sdb-container :is(.pt-9) {
+    padding-top: 2.25rem;
+  }
+  #sdb-container :is(.text-left) {
+    text-align: left;
+  }
+  #sdb-container :is(.text-center) {
+    text-align: center;
+  }
+  #sdb-container :is(.text-right) {
+    text-align: right;
+  }
+  #sdb-container :is(.text-2xl) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  #sdb-container :is(.text-3xl) {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  #sdb-container :is(.text-4xl) {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  #sdb-container :is(.text-5xl) {
+    font-size: 3rem;
+    line-height: 1;
+  }
+  #sdb-container :is(.text-7xl) {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+  #sdb-container :is(.text-base) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  #sdb-container :is(.text-lg) {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  #sdb-container :is(.text-sm) {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  #sdb-container :is(.text-xl) {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  #sdb-container :is(.text-xs) {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  #sdb-container :is(.font-black) {
+    font-weight: 900;
+  }
+  #sdb-container :is(.font-bold) {
+    font-weight: 700;
+  }
+  #sdb-container :is(.font-normal) {
+    font-weight: 400;
+  }
+  #sdb-container :is(.uppercase) {
+    text-transform: uppercase;
+  }
+  #sdb-container :is(.leading-5) {
+    line-height: 1.25rem;
+  }
+  #sdb-container :is(.text-black) {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
+  #sdb-container :is(.text-neutral-800) {
+    --tw-text-opacity: 1;
+    color: rgb(38 38 38 / var(--tw-text-opacity));
+  }
+  #sdb-container :is(.text-white) {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+  #sdb-container :is(.underline) {
+    text-decoration-line: underline;
+  }
+  #sdb-container :is(.no-underline) {
+    text-decoration-line: none;
+  }
+  #sdb-container :is(.opacity-60) {
+    opacity: 0.6;
+  }
+  #sdb-container :is(.shadow) {
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+      0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),
+      0 1px 2px -1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+  #sdb-container :is(.outline) {
+    outline-style: solid;
+  }
+  #sdb-container :is(.outline-0) {
+    outline-width: 0;
+  }
+  #sdb-container :is(.invert) {
+    --tw-invert: invert(100%);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+      var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert)
+      var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+  #sdb-container :is(.filter) {
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+      var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert)
+      var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+  #sdb-container :is(.transition) {
+    transition-property: color, background-color, border-color,
+      text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+      filter, -webkit-backdrop-filter;
+    transition-property: color, background-color, border-color,
+      text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+      filter, backdrop-filter;
+    transition-property: color, background-color, border-color,
+      text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+      filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.15s;
+  }
+  .\[text-shadow\:_0_0_6px_rgba\(255_255_255_\/_50\%\)\] {
+    text-shadow: 0 0 6px hsla(0, 0%, 100%, 0.5);
+  }
+  #sdb-container menu,
+  #sdb-container ol,
+  #sdb-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .hero.slant-down.content-page-image {
+    display: none !important;
+    position: fixed !important;
+    left: -1000vw !important;
+    top: -1000vh !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+  }
+  .container.content-asset-container {
+    max-width: 100% !important;
+    padding: 0;
+  }
+  .overflow-scrollbar::-webkit-scrollbar {
+    height: 1px;
+  }
+  .overflow-scrollbar::-webkit-scrollbar-track {
+    background-color: #000;
+  }
+  .overflow-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #eab308;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    height: 0;
+  }
+  @media (min-width: 1024px) {
+    .lg\:container {
+      width: 100%;
+    }
+    @media (min-width: 640px) {
+      .lg\:container {
+        max-width: 640px;
+      }
+    }
+    @media (min-width: 768px) {
+      .lg\:container {
+        max-width: 768px;
+      }
+    }
+    @media (min-width: 1024px) {
+      .lg\:container {
+        max-width: 1024px;
+      }
+    }
+    @media (min-width: 1280px) {
+      .lg\:container {
+        max-width: 1280px;
+      }
+    }
+    @media (min-width: 1536px) {
+      .lg\:container {
+        max-width: 1536px;
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    .xl\:container {
+      width: 100%;
+    }
+    @media (min-width: 640px) {
+      .xl\:container {
+        max-width: 640px;
+      }
+    }
+    @media (min-width: 768px) {
+      .xl\:container {
+        max-width: 768px;
+      }
+    }
+    @media (min-width: 1024px) {
+      .xl\:container {
+        max-width: 1024px;
+      }
+    }
+    @media (min-width: 1280px) {
+      .xl\:container {
+        max-width: 1280px;
+      }
+    }
+    @media (min-width: 1536px) {
+      .xl\:container {
+        max-width: 1536px;
+      }
+    }
+  }
+  #sdb-container :is(.hover\:border-black:hover) {
+    border-color: #000;
+  }
+  #sdb-container :is(.hover\:text-black:hover) {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
+  #sdb-container :is(.hover\:no-underline:hover) {
+    text-decoration-line: none;
+  }
+  #sdb-container :is(.group:hover .group-hover\:block) {
+    display: block;
+  }
+  #sdb-container :is(.group:hover .group-hover\:bg-black) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.group:hover .group-hover\:text-white) {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+  @media (prefers-color-scheme: dark) {
+    #sdb-container :is(.dark\:border-neutral-700) {
+      border-color: #404040;
+    }
+    #sdb-container :is(.dark\:bg-black) {
+      --tw-bg-opacity: 1;
+      background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+    }
+    #sdb-container :is(.dark\:bg-neutral-800) {
+      --tw-bg-opacity: 1;
+      background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+    }
+    #sdb-container :is(.dark\:fill-white) {
+      fill: #fff;
+    }
+    #sdb-container :is(.dark\:text-white) {
+      --tw-text-opacity: 1;
+      color: rgb(255 255 255 / var(--tw-text-opacity));
+    }
+  }
+  @media (min-width: 640px) {
+    #sdb-container :is(.sm\:flex) {
+      display: flex;
+    }
+    #sdb-container :is(.sm\:rounded-t) {
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+    }
+    #sdb-container :is(.sm\:border-b) {
+      border-bottom-width: 1px;
+    }
+    #sdb-container :is(.sm\:border-black) {
+      border-color: #000;
+    }
+  }
+  @media (min-width: 768px) {
+    #sdb-container :is(.md\:absolute) {
+      position: absolute;
+    }
+    #sdb-container :is(.md\:relative) {
+      position: relative;
+    }
+    #sdb-container :is(.md\:top-full) {
+      top: 100%;
+    }
+    #sdb-container :is(.md\:mb-0) {
+      margin-bottom: 0;
+    }
+    #sdb-container :is(.md\:block) {
+      display: block;
+    }
+    #sdb-container :is(.md\:inline-block) {
+      display: inline-block;
+    }
+    #sdb-container :is(.md\:hidden) {
+      display: none;
+    }
+    #sdb-container :is(.md\:h-auto) {
+      height: auto;
+    }
+    #sdb-container :is(.md\:h-full) {
+      height: 100%;
+    }
+    #sdb-container :is(.md\:max-h-\[70vh\]) {
+      max-height: 70vh;
+    }
+    #sdb-container :is(.md\:w-auto) {
+      width: auto;
+    }
+    #sdb-container :is(.md\:w-full) {
+      width: 100%;
+    }
+    #sdb-container :is(.md\:max-w-xl) {
+      max-width: 36rem;
+    }
+    #sdb-container :is(.md\:grid-cols-2) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    #sdb-container :is(.md\:grid-cols-3) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    #sdb-container :is(.md\:grid-cols-\[1fr_200px\]) {
+      grid-template-columns: 1fr 200px;
+    }
+    #sdb-container :is(.md\:grid-cols-\[1fr_48px_48px\]) {
+      grid-template-columns: 1fr 48px 48px;
+    }
+    #sdb-container :is(.md\:grid-cols-\[200px_1fr\]) {
+      grid-template-columns: 200px 1fr;
+    }
+    #sdb-container :is(.md\:grid-cols-\[260px_1fr\]) {
+      grid-template-columns: 260px 1fr;
+    }
+    #sdb-container :is(.md\:gap-4) {
+      gap: 1rem;
+    }
+    #sdb-container :is(.md\:divide-x > :not([hidden]) ~ :not([hidden])) {
+      --tw-divide-x-reverse: 0;
+      border-right-width: calc(1px * var(--tw-divide-x-reverse));
+      border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+    }
+    #sdb-container :is(.md\:px-2) {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    #sdb-container :is(.md\:px-4) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    #sdb-container :is(.md\:text-right) {
+      text-align: right;
+    }
+    #sdb-container :is(.md\:text-xl) {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    #sdb-container :is(.lg\:absolute) {
+      position: absolute;
+    }
+    #sdb-container :is(.lg\:order-2) {
+      order: 2;
+    }
+    #sdb-container :is(.lg\:order-3) {
+      order: 3;
+    }
+    #sdb-container :is(.lg\:col-span-1) {
+      grid-column: span 1 / span 1;
+    }
+    #sdb-container :is(.lg\:mt-4) {
+      margin-top: 1rem;
+    }
+    #sdb-container :is(.lg\:block) {
+      display: block;
+    }
+    #sdb-container :is(.lg\:flex) {
+      display: flex;
+    }
+    #sdb-container :is(.lg\:hidden) {
+      display: none;
+    }
+    #sdb-container :is(.lg\:min-h-\[4rem\]) {
+      min-height: 4rem;
+    }
+    #sdb-container :is(.lg\:max-w-3xl) {
+      max-width: 48rem;
+    }
+    #sdb-container :is(.lg\:max-w-\[40rem\]) {
+      max-width: 40rem;
+    }
+    #sdb-container :is(.lg\:max-w-none) {
+      max-width: none;
+    }
+    #sdb-container :is(.lg\:rotate-0) {
+      --tw-rotate: 0deg;
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+        rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+        scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    }
+    #sdb-container :is(.lg\:rotate-180) {
+      --tw-rotate: 180deg;
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+        rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+        scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    }
+    #sdb-container :is(.lg\:grid-flow-col) {
+      grid-auto-flow: column;
+    }
+    #sdb-container :is(.lg\:grid-cols-2) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    #sdb-container :is(.lg\:grid-cols-3) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    #sdb-container :is(.lg\:grid-cols-4) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    #sdb-container :is(.lg\:grid-cols-\[10rem_1fr\]) {
+      grid-template-columns: 10rem 1fr;
+    }
+    #sdb-container :is(.lg\:grid-cols-\[1fr_16rem_16rem_16rem\]) {
+      grid-template-columns: 1fr 16rem 16rem 16rem;
+    }
+    #sdb-container :is(.lg\:grid-cols-\[1fr_minmax\(24em\2c _30em\)\]) {
+      grid-template-columns: 1fr minmax(24em, 30em);
+    }
+    #sdb-container
+      :is(.lg\:grid-cols-\[200px_minmax\(500px\2c
+        1fr\)_minmax\(48px\2c
+        120px\)_minmax\(48px\2c
+        120px\)\]) {
+      grid-template-columns: 200px minmax(500px, 1fr) minmax(48px, 120px) minmax(
+          48px,
+          120px
+        );
+    }
+    #sdb-container :is(.lg\:flex-row) {
+      flex-direction: row;
+    }
+    #sdb-container :is(.lg\:gap-2) {
+      gap: 0.5rem;
+    }
+    #sdb-container :is(.lg\:bg-transparent) {
+      background-color: transparent;
+    }
+    #sdb-container :is(.lg\:bg-white\/70) {
+      background-color: hsla(0, 0%, 100%, 0.7);
+    }
+    #sdb-container :is(.lg\:p-0) {
+      padding: 0;
+    }
+    #sdb-container :is(.lg\:p-4) {
+      padding: 1rem;
+    }
+    #sdb-container :is(.lg\:px-2) {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    #sdb-container :is(.lg\:px-32) {
+      padding-left: 8rem;
+      padding-right: 8rem;
+    }
+    #sdb-container :is(.lg\:px-4) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    #sdb-container :is(.lg\:px-48) {
+      padding-left: 12rem;
+      padding-right: 12rem;
+    }
+    #sdb-container :is(.lg\:px-52) {
+      padding-left: 13rem;
+      padding-right: 13rem;
+    }
+    #sdb-container :is(.lg\:py-10) {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+    #sdb-container :is(.lg\:pb-64) {
+      padding-bottom: 16rem;
+    }
+    #sdb-container :is(.lg\:pt-14) {
+      padding-top: 3.5rem;
+    }
+    #sdb-container :is(.lg\:text-left) {
+      text-align: left;
+    }
+    #sdb-container :is(.lg\:text-2xl) {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+    #sdb-container :is(.lg\:hover\:bg-amber-200:hover) {
+      --tw-bg-opacity: 1;
+      background-color: rgb(253 230 138 / var(--tw-bg-opacity));
+    }
+    #sdb-container :is(.lg\:hover\:bg-amber-300:hover) {
+      --tw-bg-opacity: 1;
+      background-color: rgb(252 211 77 / var(--tw-bg-opacity));
+    }
+    #sdb-container :is(.lg\:hover\:bg-amber-400:hover) {
+      --tw-bg-opacity: 1;
+      background-color: rgb(251 191 36 / var(--tw-bg-opacity));
+    }
+    #sdb-container :is(.lg\:hover\:bg-gray-200:hover) {
+      --tw-bg-opacity: 1;
+      background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+    }
+    #sdb-container :is(.lg\:hover\:bg-gray-300:hover) {
+      --tw-bg-opacity: 1;
+      background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+    }
+    #sdb-container :is(.group\/buttons:hover .lg\:group-hover\/buttons\:block) {
+      display: block;
+    }
+    #sdb-container
+      :is(.group\/svg:hover .lg\:group-hover\/svg\:fill-amber-400) {
+      fill: #fbbf24;
+    }
+    #sdb-container :is(.group\/svg:hover .lg\:group-hover\/svg\:fill-black) {
+      fill: #000;
+    }
+    #sdb-container :is(.group:hover .lg\:group-hover\:fill-gray-900) {
+      fill: #111827;
+    }
+  }
+  @media (min-width: 1280px) {
+    #sdb-container :is(.xl\:absolute) {
+      position: absolute;
+    }
+    #sdb-container :is(.xl\:relative) {
+      position: relative;
+    }
+    #sdb-container :is(.xl\:bottom-auto) {
+      bottom: auto;
+    }
+    #sdb-container :is(.xl\:order-1) {
+      order: 1;
+    }
+    #sdb-container :is(.xl\:order-2) {
+      order: 2;
+    }
+    #sdb-container :is(.xl\:mr-2) {
+      margin-right: 0.5rem;
+    }
+    #sdb-container :is(.xl\:block) {
+      display: block;
+    }
+    #sdb-container :is(.xl\:flex) {
+      display: flex;
+    }
+    #sdb-container :is(.xl\:grid) {
+      display: grid;
+    }
+    #sdb-container :is(.xl\:hidden) {
+      display: none;
+    }
+    #sdb-container :is(.xl\:h-\[600px\]) {
+      height: 600px;
+    }
+    #sdb-container :is(.xl\:min-w-min) {
+      min-width: -moz-min-content;
+      min-width: min-content;
+    }
+    #sdb-container :is(.xl\:max-w-\[480px\]) {
+      max-width: 480px;
+    }
+    #sdb-container :is(.xl\:grid-cols-1) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    #sdb-container :is(.xl\:grid-cols-3) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    #sdb-container :is(.xl\:grid-cols-4) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    #sdb-container :is(.xl\:grid-cols-\[1fr_minmax\(768px\2c 1400px\)_1fr\]) {
+      grid-template-columns: 1fr minmax(768px, 1400px) 1fr;
+    }
+    #sdb-container :is(.xl\:grid-cols-\[400px_880px\]) {
+      grid-template-columns: 400px 880px;
+    }
+    #sdb-container :is(.xl\:flex-row) {
+      flex-direction: row;
+    }
+    #sdb-container :is(.xl\:border-0) {
+      border-width: 0;
+    }
+    #sdb-container :is(.xl\:py-2) {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    #sdb-container :is(.xl\:text-center) {
+      text-align: center;
+    }
+  }
+</style>
+<div id="sdb-container" class="mt-4">
+  <div class="container">
+    <div class="container text-center">
+      <h1>Shop Online Financing Plans</h1>
+      <p>
+        The offers below are available online. Additional financing offers may
+        be available at your local dealer.
+      </p>
+      <p>
+        <a
+          class="font-bold"
+          href="$url('Page-Show','cid','financing-view-all')$"
+          title="View all online and in-store financing plans"
+          >View All online and in-store financing plans</a
+        >
+      </p>
+    </div>
+    <div class="relative">
+      <button
+        class="rounded-full h-14 w-14 absolute top-1/2 -mt-[28px] -ml-6 z-10 xl:block hidden bg-black fill-white"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 -960 960 960"
+          class="w-full h-full"
+        >
+          <path
+            d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"
+          ></path>
+        </svg>
+      </button>
+      <div class="overflow-y-auto pb-4 mb-6 relative z-0" id="plans-container">
+        <ul class="grid gap-4 lg:gap-2 grid-flow-col auto-cols-[320px]">
+          <li class="">
+            <div
+              class="flex flex-col h-full bg-[#efefef] financing-card"
+              id="card-1"
+            >
+              <h3 class="text-center py-1 bg-secondary">
+                <div class="text-7xl -mb-1">6</div>
+                <div class="font-normal">months</div>
+              </h3>
+              <h4 class="text-2xl text-center px-1">
+                No interest if paid in full within 6 months <sup>1</sup>
+              </h4>
+              <p class="text-center px-1">
+                Interest will be charged from the purchase date if the purchase
+                balance is not paid in full by the end of the promotional
+                period.
+              </p>
+              <p class="text-center px-1">Minimum purchase $199</p>
+              <p class="text-center px-1">
+                <span class="block">Valid from:</span
+                ><span class="block"
+                  >February 1, 2024<!-- -->
+                  -
+                  <!-- -->April 30, 2024</span
+                >
+              </p>
+              <div class="mt-auto text-center pb-2">
+                <a
+                  class="uppercase w-full block px-4 font-bold mb-2"
+                  data-target="#financing-modal"
+                  data-toggle="modal"
+                  href="#"
+                  title="Click for details"
+                  >Click for details</a
+                ><a
+                  class="btn btn-primary btn-sm"
+                  href="https://finance.consumercreditapp.com/cc/landing/cub_cadet"
+                  title="Apply Now"
+                  >Apply Now</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="">
+            <div
+              class="flex flex-col h-full bg-[#efefef] financing-card"
+              id="card-2"
+            >
+              <h3 class="text-center py-1 bg-secondary">
+                <div class="text-7xl -mb-1">12</div>
+                <div class="font-normal">months</div>
+              </h3>
+              <h4 class="text-2xl text-center px-1">
+                No interest if paid in full within 12 months <sup>2</sup>
+              </h4>
+              <p class="text-center px-1">
+                Interest will be charged from the purchase date if the purchase
+                balance is not paid in full by the end of the promotional
+                period.
+              </p>
+              <p class="text-center font-bold px-1">
+                There is a promotional fee of $50 for this transaction.
+              </p>
+              <p class="text-center px-1">Minimum purchase $500</p>
+              <p class="text-center px-1">
+                <span class="block">Valid from:</span
+                ><span class="block"
+                  >February 1, 2024<!-- -->
+                  -
+                  <!-- -->April 30, 2024</span
+                >
+              </p>
+              <div class="mt-auto text-center pb-2">
+                <a
+                  class="uppercase w-full block px-4 font-bold mb-2"
+                  data-target="#financing-modal"
+                  data-toggle="modal"
+                  href="#"
+                  title="Click for details"
+                  >Click for details</a
+                ><a
+                  class="btn btn-primary btn-sm"
+                  href="https://finance.consumercreditapp.com/cc/landing/cub_cadet"
+                  title="Apply Now"
+                  >Apply Now</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="">
+            <div
+              class="flex flex-col h-full bg-[#efefef] financing-card"
+              id="card-3"
+            >
+              <h3 class="text-center py-1 bg-secondary">
+                <div class="text-7xl -mb-1">18</div>
+                <div class="font-normal">months</div>
+              </h3>
+              <h4 class="text-2xl text-center px-1">
+                No interest if paid in full within 18 months <sup>14</sup>
+              </h4>
+              <p class="text-center px-1">
+                Interest will be charged from the purchase date if the purchase
+                balance is not paid in full by the end of the promotional
+                period.
+              </p>
+              <p class="text-center font-bold px-1">
+                There is a promotional fee of $50 for this transaction.
+              </p>
+              <p class="text-center px-1">
+                Minimum purchase $750. Offer valid on 2X and 3X snow blowers.
+              </p>
+              <p class="text-center px-1">
+                <span class="block">Valid from:</span
+                ><span class="block"
+                  >November 1, 2023<!-- -->
+                  -
+                  <!-- -->February 29, 2024</span
+                >
+              </p>
+              <div class="mt-auto text-center pb-2">
+                <a
+                  class="uppercase w-full block px-4 font-bold mb-2"
+                  data-target="#financing-modal"
+                  data-toggle="modal"
+                  href="#"
+                  title="Click for details"
+                  >Click for details</a
+                ><a
+                  class="btn btn-primary btn-sm"
+                  href="https://finance.consumercreditapp.com/cc/landing/cub_cadet"
+                  title="Apply Now"
+                  >Apply Now</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="">
+            <div
+              class="flex flex-col h-full bg-[#efefef] financing-card"
+              id="card-4"
+            >
+              <h3 class="text-center py-1 bg-secondary">
+                <div class="text-7xl -mb-1">24</div>
+                <div class="font-normal">months</div>
+              </h3>
+              <h4 class="text-2xl text-center px-1">
+                0% APR for 24 months with equal payments<sup>3</sup>
+              </h4>
+              <p class="text-center font-bold px-1">
+                There is a promotional fee of $150 for this transaction.
+              </p>
+              <p class="text-center px-1">Minimum purchase $2,000</p>
+              <p class="text-center px-1">
+                <span class="block">Valid from:</span
+                ><span class="block"
+                  >February 1, 2024<!-- -->
+                  -
+                  <!-- -->April 30, 2024</span
+                >
+              </p>
+              <div class="mt-auto text-center pb-2">
+                <a
+                  class="uppercase w-full block px-4 font-bold mb-2"
+                  data-target="#financing-modal"
+                  data-toggle="modal"
+                  href="#"
+                  title="Click for details"
+                  >Click for details</a
+                ><a
+                  class="btn btn-primary btn-sm"
+                  href="https://finance.consumercreditapp.com/cc/landing/cub_cadet"
+                  title="Apply Now"
+                  >Apply Now</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="">
+            <div
+              class="flex flex-col h-full bg-[#efefef] financing-card"
+              id="card-5"
+            >
+              <h3 class="text-center py-1 bg-secondary">
+                <div class="text-7xl -mb-1">36</div>
+                <div class="font-normal">months</div>
+              </h3>
+              <h4 class="text-2xl text-center px-1">
+                0% APR for 36 months with equal payments<sup>5</sup>
+              </h4>
+              <p class="text-center font-bold px-1">
+                There is a promotional fee of $150 for this transaction.
+              </p>
+              <p class="text-center px-1">
+                Minimum purchase $3,000. Excludes Utility Vehicles.
+              </p>
+              <p class="text-center px-1">
+                <span class="block">Valid from:</span
+                ><span class="block"
+                  >February 1, 2024<!-- -->
+                  -
+                  <!-- -->April 30, 2024</span
+                >
+              </p>
+              <div class="mt-auto text-center pb-2">
+                <a
+                  class="uppercase w-full block px-4 font-bold mb-2"
+                  data-target="#financing-modal"
+                  data-toggle="modal"
+                  href="#"
+                  title="Click for details"
+                  >Click for details</a
+                ><a
+                  class="btn btn-primary btn-sm"
+                  href="https://finance.consumercreditapp.com/cc/landing/cub_cadet"
+                  title="Apply Now"
+                  >Apply Now</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="">
+            <div
+              class="flex flex-col h-full bg-[#efefef] financing-card"
+              id="card-6"
+            >
+              <h3 class="text-center py-1 bg-secondary">
+                <div class="text-7xl -mb-1">48</div>
+                <div class="font-normal">months</div>
+              </h3>
+              <h4 class="text-2xl text-center px-1">
+                2.99% APR with 48 Monthly Payments<sup>7</sup>
+              </h4>
+              <p class="text-center font-bold px-1">
+                There is a promotional fee of $150 for this transaction.
+              </p>
+              <p class="text-center px-1">Minimum purchase $1,500</p>
+              <p class="text-center px-1">
+                <span class="block">Valid from:</span
+                ><span class="block"
+                  >February 1, 2024<!-- -->
+                  -
+                  <!-- -->April 30, 2024</span
+                >
+              </p>
+              <div class="mt-auto text-center pb-2">
+                <a
+                  class="uppercase w-full block px-4 font-bold mb-2"
+                  data-target="#financing-modal"
+                  data-toggle="modal"
+                  href="#"
+                  title="Click for details"
+                  >Click for details</a
+                ><a
+                  class="btn btn-primary btn-sm"
+                  href="https://finance.consumercreditapp.com/cc/landing/cub_cadet"
+                  title="Apply Now"
+                  >Apply Now</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="">
+            <div
+              class="flex flex-col h-full bg-[#efefef] financing-card"
+              id="card-7"
+            >
+              <h3 class="text-center py-1 bg-secondary">
+                <div class="text-7xl -mb-1">60</div>
+                <div class="font-normal">months</div>
+              </h3>
+              <h4 class="text-2xl text-center px-1">
+                3.99% APR with 60 monthly payments<sup>8</sup>
+              </h4>
+              <p class="text-center font-bold px-1">
+                There is a promotional fee of $150 for this transaction.
+              </p>
+              <p class="text-center px-1">Minimum purchase $1,500</p>
+              <p class="text-center px-1">
+                <span class="block">Valid from:</span
+                ><span class="block"
+                  >February 1, 2024<!-- -->
+                  -
+                  <!-- -->April 30, 2024</span
+                >
+              </p>
+              <div class="mt-auto text-center pb-2">
+                <a
+                  class="uppercase w-full block px-4 font-bold mb-2"
+                  data-target="#financing-modal"
+                  data-toggle="modal"
+                  href="#"
+                  title="Click for details"
+                  >Click for details</a
+                ><a
+                  class="btn btn-primary btn-sm"
+                  href="https://finance.consumercreditapp.com/cc/landing/cub_cadet"
+                  title="Apply Now"
+                  >Apply Now</a
+                >
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button
+        class="rounded-full h-14 w-14 absolute right-0 top-1/2 -mt-[28px] -mr-6 z-10 bg-black fill-white xl:block hidden"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 -960 960 960"
+          class="w-full h-full"
+        >
+          <path
+            d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <div class="mt-6 mb-6 p-1" id="prequal">
+      <ul class="container mb-0 p-4 flex flex-column flex-md-row list-unstyled">
+        <li class="col-md-4 p-0">
+          <div
+            class="flex w-100 h-100 position-relative"
+            style="min-height: 300px;"
+          >
+            <img
+              src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/ew/DealerIndoor-0170.jpg"
+              alt=""
+              class="position-absolute w-100 h-100"
+              style="top: 0; left: 0; object-fit: cover;"
+            />
+          </div>
+        </li>
+        <li class="col-md-8 p-0">
+          <div
+            class="text-center p-4 flex flex-column justify-content-center align-items-center"
+            style="background-color: #ffc20f; height: 100%;"
+          >
+            <h2 class="h2">Find Out If You Pre-Qualify</h2>
+            <hr
+              class="w-100"
+              style="max-width: 20%; border-top: 3px solid #000;"
+            />
+            <div
+              class="ml-auto mr-auto mb-4"
+              style="max-width: 60%; font-size: 16px;"
+            >
+              <ul class="text-left" style="list-style-type: disc;">
+                <li>Get a decision in seconds.</li>
+                <li>No impact to your credit score.</li>
+                <li>If prequalified, you can apply immediately.</li>
+              </ul>
+            </div>
+            <div class="pre-qual flex-col">
+              <a
+                class="btn btn-primary pre-qual prequal"
+                href="#"
+                title="Prequal"
+                data-prequalurl="/on/demandware.store/Sites-cubcadet-Site/en_US/FinancingApplication-GetURL?prequal=true"
+                >See If You Pre-Qualify</a
+              >
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <ul class="grid lg:grid-cols-[1fr_minmax(24em,_30em)] mb-6">
+      <li class="flex items-center justify-center">
+        <div id="product-finder-financing">
+          <script type="text/javascript">
+            (function (c, a, r, t, f, u, l) {
+              (c[u] =
+                c[u] ||
+                function () {
+                  (c[u].q = c[u].q || []).push(arguments);
+                }),
+                (l = a.createElement(r)),
+                (l.async = 1),
+                (l.id = u + "scr"),
+                (l.src = f),
+                a[t].appendChild(l);
+            })(
+              window,
+              document,
+              "script",
+              "body",
+              "https://embed.cartfulsolutions.com/cubcadet-finance-finder/recommendation.min.js",
+              "cfl672"
+            );
+          </script>
+        </div>
+      </li>
+      <li class="">
+        <div class="bg-secondary grid grid-rows-[1fr_16em] h-full">
+          <div class="relative min-h-[200px]">
+            <img
+              alt=""
+              class="w-full h-full object-cover absolute"
+              id="become_a_dealer_desktop-jpg"
+              src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/financing/become_a_dealer_desktop_1015x765.jpg"
+              loading="lazy"
+              srcset="
+                https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/financing/become_a_dealer_desktop_1015x765.jpg?resize=768x579 768w,
+                https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/financing/become_a_dealer_desktop_1015x765.jpg?resize=544x410 544w
+              "
+              sizes="(min-width: 768px) 768px, (min-width: 544px) 544px, 100vw"
+            />
+          </div>
+          <div class="p-3 flex flex-col justify-center">
+            <h3>Finance In-Store</h3>
+            <p>
+              We have multiple financing offers to fit your needs. Financing is
+              available at participating independent dealers.
+            </p>
+            <a
+              class="btn btn-primary w-full block mb-1"
+              href="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&amp;horizontalView=true&amp;isForm=true&amp;rid=dealers"
+              title="Find a local dealer"
+              >Find a local dealer</a
+            ><a
+              class="w-full text-center block"
+              href="/financing/all-plans"
+              title="View all online and in-store financing plans"
+              >View all online and in-store financing plans</a
+            >
+          </div>
+        </div>
+      </li>
+    </ul>
+    <section class="container">
+      <div
+        class="text-center text-4xl font-bold mb-2 border-b border-neutral-500"
+      >
+        FAQs
+      </div>
+      <div>
+        <button
+          class="text-left question cursor-pointer w-100 p-1 border-0 bg-transparent font-bold text-4xl"
+          style="cursor: pointer; font-size: 1.1rem; text-transform: none;"
+          onclick="handleClick(this)"
+        >
+          <ul class="list-unstyled d-flex align-items-center w-100 mb-0">
+            <li class="text-left">
+              How long does the online application take?
+            </li>
+            <li class="ml-auto">
+              <div class="rotate-45" style="transform: rotate(45deg);">
+                ✖
+              </div>
+            </li>
+          </ul>
+        </button>
+        <div
+          class="hidden text-xs px-3 pb-2"
+          style="font-size: 0.875rem; line-height: 1.4;"
+        >
+          The application takes only minutes, and most application decisions are
+          returned within seconds.
+        </div>
+        <div class="border-bottom"></div>
+        <button
+          class="text-left question cursor-pointer w-100 p-1 border-0 bg-transparent font-bold text-4xl"
+          style="cursor: pointer; font-size: 1.1rem; text-transform: none;"
+          onclick="handleClick(this)"
+        >
+          <ul class="list-unstyled d-flex align-items-center w-100 mb-0">
+            <li class="text-left">
+              Is there an annual fee with the Cub Cadet credit card?
+            </li>
+            <li class="ml-auto">
+              <div class="rotate-45" style="transform: rotate(45deg);">
+                ✖
+              </div>
+            </li>
+          </ul>
+        </button>
+        <div
+          class="hidden text-xs px-3 pb-2"
+          style="font-size: 0.875rem; line-height: 1.4;"
+        >
+          There is no annual fee to carry the Cub Cadet credit card.
+        </div>
+        <div class="border-bottom"></div>
+        <button
+          class="text-left question cursor-pointer w-100 p-1 border-0 bg-transparent font-bold text-4xl"
+          style="cursor: pointer; font-size: 1.1rem; text-transform: none;"
+          onclick="handleClick(this)"
+        >
+          <ul class="list-unstyled d-flex align-items-center w-100 mb-0">
+            <li class="text-left">
+              Can I apply for the Cub Cadet credit card by mail?
+            </li>
+            <li class="ml-auto">
+              <div class="rotate-45" style="transform: rotate(45deg);">
+                ✖
+              </div>
+            </li>
+          </ul>
+        </button>
+        <div
+          class="hidden text-xs px-3 pb-2"
+          style="font-size: 0.875rem; line-height: 1.4;"
+        >
+          There is no mail-in application. Applications can be completed online
+          or at your local participating dealer.
+        </div>
+        <div class="border-bottom"></div>
+        <button
+          class="text-left question cursor-pointer w-100 p-1 border-0 bg-transparent font-bold text-4xl"
+          style="cursor: pointer; font-size: 1.1rem; text-transform: none;"
+          onclick="handleClick(this)"
+        >
+          <ul class="list-unstyled d-flex align-items-center w-100 mb-0">
+            <li class="text-left">
+              How do I make payments on my Cub Cadet credit card account?
+            </li>
+            <li class="ml-auto">
+              <div class="rotate-45" style="transform: rotate(45deg);">
+                ✖
+              </div>
+            </li>
+          </ul>
+        </button>
+        <div
+          class="hidden text-xs px-3 pb-2"
+          style="font-size: 0.875rem; line-height: 1.4;"
+        >
+          <p>
+            You can make payments on your Cub Cadet credit card account in 3
+            convenient ways:
+          </p>
+          <ol style="list-style-type: number; padding-left: 20px;">
+            <li>
+              Online with TD's Online Account Management system at
+              <a href="https://www.myonlineaccount.net"
+                >www.myonlineaccount.net
+              </a>
+            </li>
+            <li>
+              Via phone at
+              <a href="tel:18883826665" title="Call 888-382-6665"
+                >1-888-382-6665</a
+              >
+            </li>
+            <li>Via mail: Cub Cadet, PO BOX 100114, Columbia SC 29202-3114</li>
+          </ol>
+        </div>
+        <div class="border-bottom"></div>
+        <button
+          class="text-left question cursor-pointer w-100 p-1 border-0 bg-transparent font-bold text-4xl"
+          style="cursor: pointer; font-size: 1.1rem; text-transform: none;"
+          onclick="handleClick(this)"
+        >
+          <ul class="list-unstyled d-flex align-items-center w-100 mb-0">
+            <li class="text-left">
+              How do I contact customer service regarding my Cub Cadet credit
+              card account?
+            </li>
+            <li class="ml-auto">
+              <div class="rotate-45" style="transform: rotate(45deg);">
+                ✖
+              </div>
+            </li>
+          </ul>
+        </button>
+        <div
+          class="hidden text-xs px-3 pb-2"
+          style="font-size: 0.875rem; line-height: 1.4;"
+        >
+          The customer service number for your Cub Cadet credit card account is
+          <a href="tel:18667024074" title="Call 866-702-4074">1-866-702-4074</a
+          >.
+        </div>
+        <div class="border-bottom"></div>
+        <button
+          class="text-left question cursor-pointer w-100 p-1 border-0 bg-transparent font-bold text-4xl"
+          style="cursor: pointer; font-size: 1.1rem; text-transform: none;"
+          onclick="handleClick(this)"
+        >
+          <ul class="list-unstyled d-flex align-items-center w-100 mb-0">
+            <li class="text-left">
+              I am a commercial customer. Can I apply online?
+            </li>
+            <li class="ml-auto">
+              <div class="rotate-45" style="transform: rotate(45deg);">
+                ✖
+              </div>
+            </li>
+          </ul>
+        </button>
+        <div
+          class="hidden text-xs px-3 pb-2"
+          style="font-size: 0.875rem; line-height: 1.4;"
+        >
+          No, commercial customers can only apply at your local participating
+          dealer.
+        </div>
+        <div class="border-bottom"></div>
+        <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How long does the online application take?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The application takes only minutes, and most application decisions are returned within seconds."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is there an annual fee with the Cub Cadet credit card?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "There is no annual fee to carry the Cub Cadet credit card."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I apply for the Cub Cadet credit card by mail?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "There is no mail-in application. Applications can be completed online or at your local participating dealer."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I make payments on my Cub Cadet credit card account?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "<p>You can make payments on your Cub Cadet credit card account in 3 convenient ways:</p><ol style=\"list-style-type: number; padding-left:20px\"><li>Online with TD's Online Account Management system at <a href=\"https://www.myonlineaccount.net\">www.myonlineaccount.net </a></li><li>Via phone at <a href=\"tel:18883826665\" title=\"Call 888-382-6665\">1-888-382-6665</a></li><li>Via mail: Cub Cadet, PO BOX 100114, Columbia SC 29202-3114</li></ol>"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I contact customer service regarding my Cub Cadet credit card account?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The customer service number for your Cub Cadet credit card account is <a href=\"tel:18667024074\" title=\"Call 866-702-4074\">1-866-702-4074</a>."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "I am a commercial customer. Can I apply online?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No, commercial customers can only apply at your local participating dealer."
+                }
+              }
+            ]
+          }
+        </script>
+      </div>
+    </section>
+  </div>
+  <div class="bg-secondary py-10 mt-8">
+    <div class="container">
+      <div class="text-center">
+        <div class="text-4xl font-bold mb-2">
+          Still have financing questions?
+        </div>
+        <div class="text-xl mb-2">
+          We're happy to help! Call a customer service specialist<!-- -->
+          <a href="tel:(877) 428-2349" class="text-xl font-bold"
+            >(877) 428-2349</a
+          >
+          <span>8am-5pm EST</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    aria-hidden="true"
+    class="modal fade"
+    id="financing-modal"
+    style="display: none;"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <h4 class="modal-title">&nbsp;</h4>
+            <p>
+              <strong
+                >Cub Cadet Revolving Plan Disclosures Available
+                2/1/2024-4/30/2024<br />Commercial Cards also available. For
+                offer details about Commercial Cards please contact your
+                Dealer.</strong
+              >
+            </p>
+          </div>
+          <button
+            aria-label="Close"
+            class="close"
+            data-dismiss="modal"
+            type="button"
+          >
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            <strong
+              ><sup>1</sup> No Interest if Paid in Full within 6 Months: </strong
+            >Minimum purchase $199. To avoid interest, you must pay the full
+            promotional balance before the promotional period ends. If you do
+            not, you will be charged interest from the purchase date at the
+            standard Purchase APR. After the promotional period ends, the
+            standard Purchase APR also applies to the remaining balance and the
+            charged interest.
+            <strong
+              >Minimum monthly payments required, but they will not pay off the
+              balance in time. You must make larger payments to avoid the
+              interest. </strong
+            >Advertised monthly payment, if any, is greater than your required
+            minimum payment and may exclude taxes, delivery or other charges.
+            Prior purchases excluded. Account must be in good standing. Limited
+            time offer. Other finance plans may be available. Standard account
+            terms apply to purchases that do not qualify. New accounts: standard
+            Purchase APR 29.99%. Minimum interest charge $1. Existing accounts,
+            see your Cardholder Agreement for applicable terms. Subject to
+            credit approval. Cub Cadet financing account issued by TD Bank, N.A.
+          </p>
+          <p>
+            <strong
+              ><sup>2</sup> No Interest if Paid in Full within 12 Months: </strong
+            >Minimum purchase $500.
+            <strong
+              >There is a promotional fee of $50 for this transaction. </strong
+            >To avoid interest, you must pay the full promotional balance before
+            the promotional period ends. If you do not, you will be charged
+            interest from the purchase date at the standard Purchase APR. After
+            the promotional period ends, the standard Purchase APR also applies
+            to the remaining balance and the charged interest.
+            <strong
+              >Minimum monthly payments required, but they will not pay off the
+              balance in time. You must make larger payments to avoid the
+              interest. </strong
+            >Advertised monthly payment, if any, is greater than your required
+            minimum payment and may exclude taxes, delivery or other charges.
+            Prior purchases excluded. Account must be in good standing. Limited
+            time offer. Other finance plans may be available. Standard account
+            terms apply to purchases that do not qualify. New accounts: standard
+            Purchase APR 29.99%. Minimum interest charge $1. Existing accounts,
+            see your Cardholder Agreement for applicable terms. Subject to
+            credit approval. Cub Cadet financing account issued by TD Bank, N.A.
+          </p>
+          <p>
+            <strong
+              ><sup>14</sup> No Interest if Paid in Full within 18 Months: </strong
+            >Offer valid on 2X and 3X snow blowers. Minimum purchase $750.
+            <strong
+              >There is a promotional fee of $50 for this transaction. </strong
+            >To avoid interest, you must pay the full promotional balance before
+            the promotional period ends. If you do not, you will be charged
+            interest from the purchase date at the standard Purchase APR. After
+            the promotional period ends, the standard Purchase APR also applies
+            to the remaining balance and the charged interest.
+            <strong
+              >Minimum monthly payments required, but they will not pay off the
+              balance in time. You must make larger payments to avoid the
+              interest. </strong
+            >Advertised monthly payment, if any, is greater than your required
+            minimum payment and may exclude taxes, delivery or other charges.
+            Prior purchases excluded. Account must be in good standing. Limited
+            time offer. Other finance plans may be available. Standard account
+            terms apply to purchases that do not qualify. New accounts: standard
+            Purchase APR 29.99%. Minimum interest charge $1. Existing accounts,
+            see your Cardholder Agreement for applicable terms. Subject to
+            credit approval. Cub Cadet financing account issued by TD Bank, N.A.
+          </p>
+          <p>
+            <strong
+              ><sup>3</sup> 0% APR for 24 Months with Equal Payments: </strong
+            >Minimum purchase $2,000.
+            <strong
+              >There is a promotional fee of $150 for this transaction. </strong
+            >0% APR from date of eligible purchase until paid in full. Monthly
+            payment is the purchase amount divided by the number of months in
+            the offer. Last payment may vary due to rounding. On-time payments
+            will pay off the promotional balance. Advertised monthly payment, if
+            any, may exclude taxes, delivery, or other charges. Other
+            transactions and charges affect total monthly payment amount. Prior
+            purchases excluded. Account must be in good standing. Limited time
+            offer. Standard account terms apply to purchases that do not
+            qualify. New accounts: standard Purchase APR 29.99%. Minimum
+            interest charge $1. Existing accounts, see your Cardholder Agreement
+            for applicable terms. Subject to credit approval. Cub Cadet
+            financing account issued by TD Bank, N.A.
+          </p>
+          <p>
+            <strong><sup>4</sup> Standard Purchase APR and Payments </strong
+            >Standard financing terms apply. Interest will be charged on the
+            unpaid purchase balance at the APR for standard Purchases. New
+            accounts: standard Purchase APR 29.99%. Minimum interest charge $1.
+            Existing accounts, see your Cardholder Agreement for applicable
+            terms. Subject to credit approval. Cub Cadet financing account
+            issued by TD Bank, N.A.
+          </p>
+          <p>
+            <strong
+              ><sup>5</sup> 0% APR for 36 Months with Equal Payments: </strong
+            >Minimum purchase $3,000. Excludes Utility Vehicles.
+            <strong
+              >There is a promotional fee of $150 for this transaction. </strong
+            >0% APR from date of eligible purchase until paid in full. Monthly
+            payment is the purchase amount divided by the number of months in
+            the offer. Last payment may vary due to rounding. On-time payments
+            will pay off the promotional balance. Advertised monthly payment, if
+            any, may exclude taxes, delivery, or other charges. Other
+            transactions and charges affect total monthly payment amount. Prior
+            purchases excluded. Account must be in good standing. Limited time
+            offer. Standard account terms apply to purchases that do not
+            qualify. New accounts: standard Purchase APR 29.99%. Minimum
+            interest charge $1. Existing accounts, see your Cardholder Agreement
+            for applicable terms. Subject to credit approval. Cub Cadet
+            financing account issued by TD Bank, N.A.
+          </p>
+          <p>
+            <strong><sup>7</sup> 2.99% APR with 48 Monthly Payments: </strong
+            >Minimum purchase $1,500.
+            <strong
+              >There is a promotional fee of $150 for this transaction. </strong
+            >2.99% APR from date of eligible purchase until paid in full.
+            Monthly payment amount equals the purchase amount and estimated
+            interest for the length of the offer divided by the number of months
+            in the offer. Last payment may vary due to rounding. On-time
+            payments will pay the offer balance in full. Advertised monthly
+            payment, if any, may exclude taxes, delivery, or other charges.
+            Other transactions and charges affect the total monthly payment
+            amount. Prior purchases excluded. Account must be in good standing.
+            Limited time offer. Standard account terms apply to purchases that
+            do not qualify. New accounts: standard Purchase APR 29.99%. Minimum
+            interest charge $1. Existing accounts, see your Cardholder Agreement
+            for applicable terms. Subject to credit approval. Cub Cadet
+            financing account issued by TD Bank, N.A.
+          </p>
+          <p>
+            <strong><sup>8</sup> 3.99% APR with 60 Monthly Payments: </strong
+            >Minimum purchase $1,500.
+            <strong
+              >There is a promotional fee of $150 for this transaction.
+            </strong>
+            3.99% APR from date of eligible purchase until paid in full. Monthly
+            payment amount equals the purchase amount and estimated interest for
+            the length of the offer divided by the number of months in the
+            offer. Last payment may vary due to rounding. On-time payments will
+            pay the offer balance in full. Advertised monthly payment, if any,
+            may exclude taxes, delivery, or other charges. Other transactions
+            and charges affect the total monthly payment amount. Prior purchases
+            excluded. Account must be in good standing. Limited time offer.
+            Standard account terms apply to purchases that do not qualify. New
+            accounts: standard Purchase APR 29.99%. Minimum interest charge $1.
+            Existing accounts, see your Cardholder Agreement for applicable
+            terms. Subject to credit approval. Cub Cadet financing account
+            issued by TD Bank, N.A.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const handleClick = (e) => {
+      const el = e.querySelector(".rotate-45");
+      e.nextElementSibling.classList.toggle("hidden");
+      el.classList.toggle("active");
+
+      el.style.transform = el.classList.contains("active")
+        ? "rotate(0)"
+        : "rotate(45deg)";
+    };
+  </script>
+</div>
