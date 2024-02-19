@@ -11,7 +11,7 @@ export default function DealerMiniSiteOrig() {
   const svgStyle = { width: "100%", minWidth: "100%" };
   const [logoCSS, setLogoCSS] = useState("");
   const [logoStyle, setLogoStyle] = useState({});
-  const [imgStyle, setImgStyle] = useState({});
+  const [imgStyle] = useState({});
   const [logoSize, setLogoSize] = useState(100);
   const [leftPos, setLeft] = useState(10);
   const [topPos, setTop] = useState(10);
@@ -25,33 +25,11 @@ export default function DealerMiniSiteOrig() {
   const [whitePercent, setWhitePercent] = useState(100);
 
   const imgs = [
-    // <NowOffering1 key={1} style={svgStyle} />,
-    <NowOffering2
-      key={2}
-      style={svgStyle}
-    />,
-    // <NowOffering3 key={3} style={svgStyle} />,
-    <NowOffering4
-      key={4}
-      style={svgStyle}
-    />,
-    // <NowOffering5 key={5} style={svgStyle} />,
-    // <NowOffering6 key={6} style={svgStyle} />,
-    // <NowOffering7 key={7} style={svgStyle} />,
+    <NowOffering2 key={2} style={svgStyle} />,
+    <NowOffering4 key={4} style={svgStyle} />,
 
-    // <SoldHere1 key={1} style={svgStyle} />,
-    <SoldHere2
-      key={2}
-      style={svgStyle}
-    />,
-    // <SoldHere3 key={3} style={svgStyle} />,
-    <SoldHere4
-      key={4}
-      style={svgStyle}
-    />,
-    // <SoldHere5 key={5} style={svgStyle} />,
-    // <SoldHere6 key={6} style={svgStyle} />,
-    // <SoldHere7 key={7} style={svgStyle} />,
+    <SoldHere2 key={2} style={svgStyle} />,
+    <SoldHere4 key={4} style={svgStyle} />,
   ];
 
   useEffect(() => {
@@ -243,26 +221,6 @@ export default function DealerMiniSiteOrig() {
               </button>
             ))}
           </div>
-
-          {/* <div className="mt-1 border-top border-bottom p-1 mb-1">
-						Sold Here Logos
-					</div>
-					<div className="d-flex flex-wrap">
-						{[...Array(7)].map((x, i) => (
-							<button
-								className={buttonClass}
-								style={{
-									...buttonStyle,
-									borderRadius: "100%",
-									maxWidth: "48px",
-								}}
-								onClick={(e) => buttonClick(e)}
-								value={i + 7}
-								key={i + 7}>
-								{i + 8}
-							</button>
-						))}
-					</div> */}
         </div>
       </div>
 
@@ -289,10 +247,7 @@ export default function DealerMiniSiteOrig() {
                         style={imgStyle}
                       />
                     )}
-                    <div
-                      className={logoCSS}
-                      style={logoStyle}
-                    >
+                    <div className={logoCSS} style={logoStyle}>
                       <div
                         className="p-1"
                         style={
@@ -1666,10 +1621,7 @@ export default function DealerMiniSiteOrig() {
                       </div>
                     </div>
                     <div className="recaptch-content">
-                      <div
-                        id="testDriveRecaptcha"
-                        className="g-recaptcha"
-                      >
+                      <div id="testDriveRecaptcha" className="g-recaptcha">
                         <div style={{ width: 304, height: 78 }}>
                           <div>
                             <iframe
@@ -1714,14 +1666,8 @@ export default function DealerMiniSiteOrig() {
                         Submit
                       </button>
                     </div>
-                    <input
-                      type="hidden"
-                      name="CompanyId"
-                    />
-                    <input
-                      type="hidden"
-                      name="null"
-                    />
+                    <input type="hidden" name="CompanyId" />
+                    <input type="hidden" name="null" />
                   </form>
                 </div>
               </div>
@@ -1750,10 +1696,7 @@ export default function DealerMiniSiteOrig() {
                     <li className="col-md-6 col-lg-4 mx-0 p-1 mb-1">
                       <div className="border h-100 x d-flex flex-column ">
                         <ul className="list-unstyled text-center p-2 bg-secondary">
-                          <li
-                            className="display-1"
-                            style={{ fontSize: 68 }}
-                          >
+                          <li className="display-1" style={{ fontSize: 68 }}>
                             24
                           </li>
                           <li className="display-4">months</li>
@@ -1812,10 +1755,7 @@ export default function DealerMiniSiteOrig() {
                     <li className="col-md-6 col-lg-4 mx-0 p-1 mb-1">
                       <div className="border h-100 x d-flex flex-column ">
                         <ul className="list-unstyled text-center p-2 bg-secondary">
-                          <li
-                            className="display-1"
-                            style={{ fontSize: 68 }}
-                          >
+                          <li className="display-1" style={{ fontSize: 68 }}>
                             36
                           </li>
                           <li className="display-4">months</li>
@@ -1875,10 +1815,7 @@ export default function DealerMiniSiteOrig() {
                     <li className="col-md-6 col-lg-4 mx-0 p-1 mb-1">
                       <div className="border h-100 x d-flex flex-column ">
                         <ul className="list-unstyled text-center p-2 bg-secondary">
-                          <li
-                            className="display-1"
-                            style={{ fontSize: 68 }}
-                          >
+                          <li className="display-1" style={{ fontSize: 68 }}>
                             48
                           </li>
                           <li className="display-4">months</li>
@@ -1938,10 +1875,7 @@ export default function DealerMiniSiteOrig() {
                     <li className="col-md-6 col-lg-4 mx-0 p-1 mb-1">
                       <div className="border h-100 x d-flex flex-column ">
                         <ul className="list-unstyled text-center p-2 bg-secondary">
-                          <li
-                            className="display-1"
-                            style={{ fontSize: 68 }}
-                          >
+                          <li className="display-1" style={{ fontSize: 68 }}>
                             60
                           </li>
                           <li className="display-4">months</li>
@@ -2002,10 +1936,7 @@ export default function DealerMiniSiteOrig() {
                     <li className="col-md-6 col-lg-4 mx-0 p-1 mb-1">
                       <div className="border h-100 x d-flex flex-column ">
                         <ul className="list-unstyled text-center p-2 bg-secondary">
-                          <li
-                            className="display-1"
-                            style={{ fontSize: 68 }}
-                          >
+                          <li className="display-1" style={{ fontSize: 68 }}>
                             36
                           </li>
                           <li className="display-4">months</li>
@@ -2064,10 +1995,7 @@ export default function DealerMiniSiteOrig() {
                     <li className="col-md-6 col-lg-4 mx-0 p-1 mb-1">
                       <div className="border h-100 x d-flex flex-column ">
                         <ul className="list-unstyled text-center p-2 bg-secondary">
-                          <li
-                            className="display-1"
-                            style={{ fontSize: 68 }}
-                          >
+                          <li className="display-1" style={{ fontSize: 68 }}>
                             48
                           </li>
                           <li className="display-4">months</li>
@@ -2126,10 +2054,7 @@ export default function DealerMiniSiteOrig() {
                     <li className="col-md-6 col-lg-4 mx-0 p-1 mb-1">
                       <div className="border h-100 x d-flex flex-column ">
                         <ul className="list-unstyled text-center p-2 bg-secondary">
-                          <li
-                            className="display-1"
-                            style={{ fontSize: 68 }}
-                          >
+                          <li className="display-1" style={{ fontSize: 68 }}>
                             60
                           </li>
                           <li className="display-4">months</li>
@@ -2345,10 +2270,7 @@ export default function DealerMiniSiteOrig() {
                       <div className="invalid-feedback" />
                     </div>
                     <div className="recaptcha-content">
-                      <div
-                        id="contactUsRecaptcha"
-                        className="g-recaptcha"
-                      >
+                      <div id="contactUsRecaptcha" className="g-recaptcha">
                         <div style={{ width: 304, height: 78 }}>
                           <div>
                             <iframe
@@ -2383,14 +2305,8 @@ export default function DealerMiniSiteOrig() {
                         ReCaptcha validation failed
                       </div>
                     </div>
-                    <input
-                      type="hidden"
-                      name="null"
-                    />
-                    <input
-                      type="hidden"
-                      name="CompanyId"
-                    />
+                    <input type="hidden" name="null" />
+                    <input type="hidden" name="CompanyId" />
                     <div className="form-group-cta">
                       <button
                         type="submit"
@@ -2416,10 +2332,7 @@ export default function DealerMiniSiteOrig() {
                 <span className="dealer-tab-heading-copy">News</span>
                 <i className="dealer-tab-heading-icon" />
               </a>
-              <div
-                className="dealer-tab-content "
-                data-tab-content="news"
-              >
+              <div className="dealer-tab-content " data-tab-content="news">
                 <div className="dealer-container">
                   <div className="news-items-heading">Our Latest News</div>
                   <div className="news-item-cards container slick-initialized slick-slider slick-dotted">
@@ -2433,10 +2346,7 @@ export default function DealerMiniSiteOrig() {
                         }}
                       />
                     </div>
-                    <ul
-                      className="slick-dots"
-                      role="tablist"
-                    />
+                    <ul className="slick-dots" role="tablist" />
                   </div>
                 </div>
               </div>
