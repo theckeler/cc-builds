@@ -18,7 +18,7 @@ export default function HomeCTA2024({
               width="560"
               height="315"
               className="w-full h-full absolute"
-              src="https://www.youtube.com/embed/2AgVMA02lTw?si=6RsGLMFiTQFy5im8"
+              src="https://www.youtube.com/embed/x-_qooDWr1c?rel=0"
               title={content.title + " Video"}
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
