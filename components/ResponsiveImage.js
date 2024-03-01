@@ -12,6 +12,7 @@ export default function ResponsiveImage({
   base = undefined,
 }) {
   const breakpoints = [2048, 1920, 1366, 1025, 768, 544];
+  const imgSrc = base ? base + src : src;
 
   useEffect(() => {
     let srcSetJpg = "";
@@ -19,7 +20,7 @@ export default function ResponsiveImage({
     let sizes = "";
 
     let img = document.createElement("img");
-    img.src = src;
+    img.src = imgSrc;
     img.onload = function () {
       breakpoints.forEach((breakpoint) => {
         if (breakpoint < img.width) {
@@ -28,30 +29,34 @@ export default function ResponsiveImage({
             const width = Math.round(img.width * ratio);
             const height = Math.round(img.height * ratio);
 
-            srcSetJpg += `${src}?resize=${width}x${height} ${breakpoint}w, `;
+            srcSetJpg += `${imgSrc}?resize=${width}x${height} ${breakpoint}w, `;
             srcSetWebp += `${webp}?resize=${width}x${height} ${breakpoint}w, `;
             sizes += `(min-width: ${breakpoint}px) ${breakpoint}px, `;
-          } else {
           }
         }
       });
+
       if (id) {
         sizes += `100vw`;
-        document
-          .querySelector("#" + id + "-jpg")
-          .setAttribute("srcset", srcSetJpg.substring(0, srcSetJpg.length - 2));
-        document.querySelector("#" + id + "-jpg").setAttribute("sizes", sizes);
-        if (webp) {
-          document
-            .querySelector("#" + id + "-webp")
-            .setAttribute("sizes", sizes);
 
-          document
-            .querySelector("#" + id + "-webp")
-            .setAttribute(
+        const jpgElement = document.querySelector("#" + id + "-jpg");
+        if (jpgElement) {
+          jpgElement.setAttribute(
+            "srcset",
+            srcSetJpg.substring(0, srcSetJpg.length - 2)
+          );
+          jpgElement.setAttribute("sizes", sizes);
+        }
+
+        if (webp) {
+          const webpElement = document.querySelector("#" + id + "-webp");
+          if (webpElement) {
+            webpElement.setAttribute("sizes", sizes);
+            webpElement.setAttribute(
               "srcset",
               srcSetWebp.substring(0, srcSetWebp.length - 2)
             );
+          }
         }
       }
     };
@@ -63,7 +68,7 @@ export default function ResponsiveImage({
       className={className}
       style={style}
       id={id ? `${id}-jpg` : ""}
-      src={base ? base + src : src}
+      src={imgSrc}
       // HERO:
       rel={hero ? "preload" : undefined}
       as={hero ? "image" : undefined}

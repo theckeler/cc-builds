@@ -20,8 +20,6 @@ export default function Home2024ScrollContainer({
   };
 
   useEffect(() => {
-    console.log(document.querySelectorAll(".scroll-me"));
-
     document.querySelectorAll(".scroll-me").forEach(function (el) {
       el.addEventListener("scroll", (scroll) => {
         const containerWidth = scroll.currentTarget.offsetWidth;
@@ -47,79 +45,12 @@ export default function Home2024ScrollContainer({
     });
   }, []);
 
-  //   useEffect(() => {
-  //     console.log(document.querySelectorAll(".scroll-me"));
-  //
-  //     document.querySelectorAll(".scroll-me").forEach(function (el) {
-  //       el.addEventListener("scroll", (scroll) => {
-  //         const eScrollWidth = scroll.currentTarget.parentElement.scrollWidth;
-  //         const eScrollLeft = scroll.currentTarget.scrollLeft;
-  //
-  //         // console.log("eScrollLeft: ", eScrollLeft);
-  //         // console.log("eScrollWidth: ", eScrollWidth);
-  //
-  //         const isEndReached =
-  //           eScrollWidth - eScrollLeft === scroll.currentTarget.clientWidth;
-  //         console.log("eScrollWidth - eScrollLeft: ", eScrollWidth - eScrollLeft);
-  //         console.log(
-  //           "scroll.currentTarget.clientWidth: ",
-  //           scroll.currentTarget.clientWidth
-  //         );
-  //
-  //         // console.log("eScrollLeft + eScrollWidth: ", eScrollLeft + eScrollWidth);
-  //
-  //         //     if (scroll.currentTarget.scrollLeft >= scrollWidth) {
-  //         //       el.querySelector(".forward").classList.add("hidden");
-  //         //     } else {
-  //         //       el.querySelector(".forward").classList.remove("hidden");
-  //         //     }
-  //         //
-  //         //     if (scroll.currentTarget.scrollLeft > 100) {
-  //         //       el.querySelector(".back").classList.remove("hidden");
-  //         //     } else {
-  //         //       el.querySelector(".back").classList.add("hidden");
-  //         //     }
-  //       });
-  //     });
-  //
-  //     //     document.querySelectorAll(".scroll-me").forEach(function (el) {
-  //     //       el.addEventListener("scroll", (scroll) => {
-  //     //         const eScrollWidth = scroll.currentTarget.parentElement.scrollWidth;
-  //     //         const eScrollLeft = scroll.currentTarget.scrollLeft;
-  //     //
-  //     //         // Log the numbers for debugging
-  //     //         console.log("eScrollLeft: ", eScrollLeft);
-  //     //         console.log("eScrollWidth: ", eScrollWidth);
-  //     //
-  //     // //         // Get the forward and back elements
-  //     // //         const forwardElement = el.querySelector(".forward");
-  //     // //         const backElement = el.querySelector(".back");
-  //     // //
-  //     // //         // Toggle "hidden" class based on scroll position
-  //     // //         if (forwardElement) {
-  //     // //           const isEndReached =
-  //     // //             eScrollWidth - eScrollLeft === scroll.currentTarget.clientWidth;
-  //     // //           forwardElement.classList.toggle("hidden", isEndReached);
-  //     // //         }
-  //     // //
-  //     // //         if (backElement) {
-  //     // //           const isAtBeginning = eScrollLeft === 0;
-  //     // //           backElement.classList.toggle("hidden", isAtBeginning);
-  //     // //         }
-  //     //       });
-  //     //     });
-  //   });
-
-  // document.querySelector(".scroll-me").addEventListener("scroll", (event) => {
-  //   let scroll = this.scrollY;
-  //   console.log(scroll);
-  // });
-
   return (
     <div className="relative scroll-container">
       <button
         className="w-12 h-12 absolute top-[50%] left-0 z-20 translate-y-[-100%] bg-white shadow outline-0 cursor-pointer rounded hidden back"
         style={{ transform: "translate(-8px, -50%)" }}
+        aria-label="Scroll Backwards"
         onClick={(e) => {
           moveMe(e, "back");
         }}
@@ -144,6 +75,7 @@ export default function Home2024ScrollContainer({
       <button
         className="w-12 h-12 absolute top-[50%] right-0 z-20 translate-y-[-100%] bg-white shadow outline-0 cursor-pointer forward"
         style={{ transform: "translate(8px, -50%)" }}
+        aria-label="Scroll Forwards"
         onClick={(e) => {
           moveMe(e, "forward");
         }}

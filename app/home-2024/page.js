@@ -201,7 +201,7 @@ export default function Home2024() {
             className:
               "border-2 border-[#ffc20f] px-4 py-1 mt-auto text-[#ffc20f] uppercase no-underline font-bold text-center",
           }}
-          src="31AM5HVSB56_2X26_Inteli_env02.jpg"
+          img={{ src: "31AM5HVSB56_2X26_Inteli_env02.jpg", hero: true }}
         />
 
         <section className="mb-3">
@@ -257,7 +257,7 @@ export default function Home2024() {
             className:
               "border-2 border-white px-4 py-1 mt-auto text-white uppercase no-underline font-bold text-center",
           }}
-          src="OutdoorSale-0323_HR_rt3_72dpi.webp"
+          img={{ src: "OutdoorSale-0323_HR_rt3_72dpi.webp" }}
         />
       </div>
 
@@ -308,7 +308,7 @@ export default function Home2024() {
                   content={block.content}
                   button={{
                     title: "Learn More",
-                    url: "https://www.cubcadet.com/",
+                    href: "https://www.cubcadet.com/",
                     sr: "about Integer sodales leo risus",
                     className:
                       "border-2 border-white px-4 py-1 mt-auto text-white uppercase no-underline font-bold text-center",

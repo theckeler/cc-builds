@@ -7,6 +7,7 @@ export default function HomeCTA2024({
   src,
   videoID,
   className,
+  img,
 }) {
   return (
     <section className={className}>
@@ -18,18 +19,21 @@ export default function HomeCTA2024({
               height="315"
               className="w-full h-full absolute"
               src="https://www.youtube.com/embed/2AgVMA02lTw?si=6RsGLMFiTQFy5im8"
-              title={content.title + "-video"}
+              title={content.title + " Video"}
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             />
           ) : (
             <ResponsiveImage
-              id="hero"
-              src={src}
+              id={content.title
+                .replace(/\s+/g, "-", "-")
+                .replace(/\d+/g, "")
+                .toLowerCase()}
+              src={img.src}
               base={base}
+              hero={img.hero ? true : false}
               alt=""
               className="h-full w-full absolute object-cover top-0 left-0"
-              hero
             />
           )}
         </li>
