@@ -33,7 +33,7 @@
 }
 
 .overflow-scrollbar::-webkit-scrollbar {
-  height: 1px;
+  height: 2px;
 }
 
 .overflow-scrollbar::-webkit-scrollbar-track,
@@ -48,4 +48,8 @@
 
 .no-scrollbar::-webkit-scrollbar {
   height: 0;
+}
+
+header {
+  z-index: 60 !important;
 }

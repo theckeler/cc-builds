@@ -1,0 +1,2473 @@
+<style>
+  #sdb-container *,
+  #sdb-container :after,
+  #sdb-container :before {
+    box-sizing: border-box;
+    border: 0 solid #d9d9d9;
+  }
+  .container {
+    width: 100%;
+  }
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1536px;
+    }
+  }
+  #sdb-container :is(.sr-only) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  #sdb-container :is(.visible) {
+    visibility: visible;
+  }
+  #sdb-container :is(.invisible) {
+    visibility: hidden;
+  }
+  #sdb-container :is(.collapse) {
+    visibility: collapse;
+  }
+  #sdb-container :is(.static) {
+    position: static;
+  }
+  #sdb-container :is(.fixed) {
+    position: fixed;
+  }
+  #sdb-container :is(.absolute) {
+    position: absolute;
+  }
+  #sdb-container :is(.relative) {
+    position: relative;
+  }
+  #sdb-container :is(.sticky) {
+    position: sticky;
+  }
+  #sdb-container :is(.-left-2\/4) {
+    left: -50%;
+  }
+  #sdb-container :is(.bottom-0) {
+    bottom: 0;
+  }
+  #sdb-container :is(.bottom-full) {
+    bottom: 100%;
+  }
+  #sdb-container :is(.left-0) {
+    left: 0;
+  }
+  #sdb-container :is(.right-0) {
+    right: 0;
+  }
+  #sdb-container :is(.top-0) {
+    top: 0;
+  }
+  #sdb-container :is(.top-1\/2) {
+    top: 50%;
+  }
+  #sdb-container :is(.top-2\/4) {
+    top: 50%;
+  }
+  #sdb-container :is(.top-4) {
+    top: 1rem;
+  }
+  #sdb-container :is(.top-full) {
+    top: 100%;
+  }
+  #sdb-container :is(.z-0) {
+    z-index: 0;
+  }
+  #sdb-container :is(.z-10) {
+    z-index: 10;
+  }
+  #sdb-container :is(.z-20) {
+    z-index: 20;
+  }
+  #sdb-container :is(.z-40) {
+    z-index: 40;
+  }
+  #sdb-container :is(.z-50) {
+    z-index: 50;
+  }
+  #sdb-container :is(.order-1) {
+    order: 1;
+  }
+  #sdb-container :is(.order-2) {
+    order: 2;
+  }
+  #sdb-container :is(.order-3) {
+    order: 3;
+  }
+  #sdb-container :is(.col-auto) {
+    grid-column: auto;
+  }
+  #sdb-container :is(.col-span-full) {
+    grid-column: 1/-1;
+  }
+  #sdb-container :is(.m-0) {
+    margin: 0;
+  }
+  #sdb-container :is(.m-1) {
+    margin: 0.25rem;
+  }
+  #sdb-container :is(.m-2) {
+    margin: 0.5rem;
+  }
+  #sdb-container :is(.mx-0) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #sdb-container :is(.mx-4) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  #sdb-container :is(.mx-auto) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #sdb-container :is(.my-0) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #sdb-container :is(.my-1) {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  #sdb-container :is(.my-10) {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  #sdb-container :is(.my-2) {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  #sdb-container :is(.my-3) {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  #sdb-container :is(.my-4) {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  #sdb-container :is(.my-6) {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  #sdb-container :is(.my-auto) {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  #sdb-container :is(.-mb-1) {
+    margin-bottom: -0.25rem;
+  }
+  #sdb-container :is(.-ml-1) {
+    margin-left: -0.25rem;
+  }
+  #sdb-container :is(.-ml-6) {
+    margin-left: -1.5rem;
+  }
+  #sdb-container :is(.-mr-1) {
+    margin-right: -0.25rem;
+  }
+  #sdb-container :is(.-mr-6) {
+    margin-right: -1.5rem;
+  }
+  #sdb-container :is(.-mt-5) {
+    margin-top: -1.25rem;
+  }
+  #sdb-container :is(.-mt-6) {
+    margin-top: -1.5rem;
+  }
+  #sdb-container :is(.-mt-\[28px\]) {
+    margin-top: -28px;
+  }
+  #sdb-container :is(.mb-0) {
+    margin-bottom: 0;
+  }
+  #sdb-container :is(.mb-1) {
+    margin-bottom: 0.25rem;
+  }
+  #sdb-container :is(.mb-2) {
+    margin-bottom: 0.5rem;
+  }
+  #sdb-container :is(.mb-3) {
+    margin-bottom: 0.75rem;
+  }
+  #sdb-container :is(.mb-4) {
+    margin-bottom: 1rem;
+  }
+  #sdb-container :is(.mb-5) {
+    margin-bottom: 1.25rem;
+  }
+  #sdb-container :is(.mb-6) {
+    margin-bottom: 1.5rem;
+  }
+  #sdb-container :is(.mb-8) {
+    margin-bottom: 2rem;
+  }
+  #sdb-container :is(.ml-1) {
+    margin-left: 0.25rem;
+  }
+  #sdb-container :is(.ml-2) {
+    margin-left: 0.5rem;
+  }
+  #sdb-container :is(.ml-3) {
+    margin-left: 0.75rem;
+  }
+  #sdb-container :is(.ml-4) {
+    margin-left: 1rem;
+  }
+  #sdb-container :is(.ml-5) {
+    margin-left: 1.25rem;
+  }
+  #sdb-container :is(.ml-auto) {
+    margin-left: auto;
+  }
+  #sdb-container :is(.mr-1) {
+    margin-right: 0.25rem;
+  }
+  #sdb-container :is(.mr-2) {
+    margin-right: 0.5rem;
+  }
+  #sdb-container :is(.mr-auto) {
+    margin-right: auto;
+  }
+  #sdb-container :is(.mt-0) {
+    margin-top: 0;
+  }
+  #sdb-container :is(.mt-1) {
+    margin-top: 0.25rem;
+  }
+  #sdb-container :is(.mt-10) {
+    margin-top: 2.5rem;
+  }
+  #sdb-container :is(.mt-2) {
+    margin-top: 0.5rem;
+  }
+  #sdb-container :is(.mt-3) {
+    margin-top: 0.75rem;
+  }
+  #sdb-container :is(.mt-4) {
+    margin-top: 1rem;
+  }
+  #sdb-container :is(.mt-6) {
+    margin-top: 1.5rem;
+  }
+  #sdb-container :is(.mt-8) {
+    margin-top: 2rem;
+  }
+  #sdb-container :is(.mt-auto) {
+    margin-top: auto;
+  }
+  #sdb-container :is(.line-clamp-4) {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  #sdb-container :is(.line-clamp-5) {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+  }
+  #sdb-container :is(.\!block) {
+    display: block !important;
+  }
+  #sdb-container :is(.block) {
+    display: block;
+  }
+  #sdb-container :is(.inline-block) {
+    display: inline-block;
+  }
+  #sdb-container :is(.inline) {
+    display: inline;
+  }
+  #sdb-container :is(.flex) {
+    display: flex;
+  }
+  #sdb-container :is(.inline-flex) {
+    display: inline-flex;
+  }
+  #sdb-container :is(.table) {
+    display: table;
+  }
+  #sdb-container :is(.table-cell) {
+    display: table-cell;
+  }
+  #sdb-container :is(.table-row) {
+    display: table-row;
+  }
+  #sdb-container :is(.grid) {
+    display: grid;
+  }
+  #sdb-container :is(.hidden) {
+    display: none;
+  }
+  #sdb-container :is(.h-0) {
+    height: 0;
+  }
+  #sdb-container :is(.h-12) {
+    height: 3rem;
+  }
+  #sdb-container :is(.h-14) {
+    height: 3.5rem;
+  }
+  #sdb-container :is(.h-4) {
+    height: 1rem;
+  }
+  #sdb-container :is(.h-40) {
+    height: 10rem;
+  }
+  #sdb-container :is(.h-6) {
+    height: 1.5rem;
+  }
+  #sdb-container :is(.h-96) {
+    height: 24rem;
+  }
+  #sdb-container :is(.h-\[100px\]) {
+    height: 100px;
+  }
+  #sdb-container :is(.h-\[600px\]) {
+    height: 600px;
+  }
+  #sdb-container :is(.h-auto) {
+    height: auto;
+  }
+  #sdb-container :is(.h-full) {
+    height: 100%;
+  }
+  #sdb-container :is(.h-screen) {
+    height: 100vh;
+  }
+  #sdb-container :is(.max-h-24) {
+    max-height: 6rem;
+  }
+  #sdb-container :is(.max-h-\[500px\]) {
+    max-height: 500px;
+  }
+  #sdb-container :is(.max-h-\[50px\]) {
+    max-height: 50px;
+  }
+  #sdb-container :is(.max-h-\[600px\]) {
+    max-height: 600px;
+  }
+  #sdb-container :is(.max-h-\[80px\]) {
+    max-height: 80px;
+  }
+  #sdb-container :is(.max-h-\[calc\(100vh-80px\)\]) {
+    max-height: calc(100vh - 80px);
+  }
+  #sdb-container :is(.min-h-\[10rem\]) {
+    min-height: 10rem;
+  }
+  #sdb-container :is(.min-h-\[140px\]) {
+    min-height: 140px;
+  }
+  #sdb-container :is(.min-h-\[200px\]) {
+    min-height: 200px;
+  }
+  #sdb-container :is(.min-h-\[20rem\]) {
+    min-height: 20rem;
+  }
+  #sdb-container :is(.min-h-\[300px\]) {
+    min-height: 300px;
+  }
+  #sdb-container :is(.min-h-\[34em\]) {
+    min-height: 34em;
+  }
+  #sdb-container :is(.min-h-\[48px\]) {
+    min-height: 48px;
+  }
+  #sdb-container :is(.min-h-full) {
+    min-height: 100%;
+  }
+  #sdb-container :is(.w-0) {
+    width: 0;
+  }
+  #sdb-container :is(.w-10) {
+    width: 2.5rem;
+  }
+  #sdb-container :is(.w-12) {
+    width: 3rem;
+  }
+  #sdb-container :is(.w-14) {
+    width: 3.5rem;
+  }
+  #sdb-container :is(.w-4) {
+    width: 1rem;
+  }
+  #sdb-container :is(.w-48) {
+    width: 12rem;
+  }
+  #sdb-container :is(.w-6) {
+    width: 1.5rem;
+  }
+  #sdb-container :is(.w-\[200px\]) {
+    width: 200px;
+  }
+  #sdb-container :is(.w-auto) {
+    width: auto;
+  }
+  #sdb-container :is(.w-full) {
+    width: 100%;
+  }
+  #sdb-container :is(.min-w-\[12rem\]) {
+    min-width: 12rem;
+  }
+  #sdb-container :is(.min-w-\[326px\]) {
+    min-width: 326px;
+  }
+  #sdb-container :is(.min-w-\[60px\]) {
+    min-width: 60px;
+  }
+  #sdb-container :is(.max-w-4xl) {
+    max-width: 56rem;
+  }
+  #sdb-container :is(.max-w-\[260px\]) {
+    max-width: 260px;
+  }
+  #sdb-container :is(.max-w-xs) {
+    max-width: 20rem;
+  }
+  #sdb-container :is(.grow) {
+    flex-grow: 1;
+  }
+  #sdb-container :is(.-translate-x-1\/4) {
+    --tw-translate-x: -25%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  #sdb-container :is(.-translate-y-2\/4) {
+    --tw-translate-y: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  #sdb-container :is(.translate-x-1\/4) {
+    --tw-translate-x: 25%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  #sdb-container :is(.rotate-0) {
+    --tw-rotate: 0deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  #sdb-container :is(.rotate-180) {
+    --tw-rotate: 180deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  #sdb-container :is(.rotate-45) {
+    --tw-rotate: 45deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  #sdb-container :is(.transform) {
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  #sdb-container :is(.cursor-grab) {
+    cursor: grab;
+  }
+  #sdb-container :is(.cursor-pointer) {
+    cursor: pointer;
+  }
+  #sdb-container :is(.select-auto) {
+    -webkit-user-select: auto;
+    -moz-user-select: auto;
+    user-select: auto;
+  }
+  #sdb-container :is(.resize) {
+    resize: both;
+  }
+  #sdb-container :is(.snap-x) {
+    scroll-snap-type: x var(--tw-scroll-snap-strictness);
+  }
+  #sdb-container :is(.snap-mandatory) {
+    --tw-scroll-snap-strictness: mandatory;
+  }
+  #sdb-container :is(.snap-center) {
+    scroll-snap-align: center;
+  }
+  #sdb-container :is(.auto-cols-\[320px\]) {
+    grid-auto-columns: 320px;
+  }
+  #sdb-container :is(.auto-cols-min) {
+    grid-auto-columns: min-content;
+  }
+  #sdb-container :is(.grid-flow-row) {
+    grid-auto-flow: row;
+  }
+  #sdb-container :is(.grid-flow-col) {
+    grid-auto-flow: column;
+  }
+  #sdb-container :is(.grid-cols-1) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  #sdb-container :is(.grid-cols-2) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  #sdb-container :is(.grid-cols-3) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  #sdb-container :is(.grid-cols-\[100px_1fr\]) {
+    grid-template-columns: 100px 1fr;
+  }
+  #sdb-container :is(.grid-cols-\[12rem_1fr\]) {
+    grid-template-columns: 12rem 1fr;
+  }
+  #sdb-container :is(.grid-cols-\[1fr_150px\]) {
+    grid-template-columns: 1fr 150px;
+  }
+  #sdb-container :is(.grid-cols-\[1fr_160px\]) {
+    grid-template-columns: 1fr 160px;
+  }
+  #sdb-container :is(.grid-cols-\[1fr_48px\]) {
+    grid-template-columns: 1fr 48px;
+  }
+  #sdb-container :is(.grid-cols-\[20rem_10rem_10rem_10rem\]) {
+    grid-template-columns: 20rem 10rem 10rem 10rem;
+  }
+  #sdb-container :is(.grid-cols-\[40em_1fr\]) {
+    grid-template-columns: 40em 1fr;
+  }
+  #sdb-container :is(.grid-cols-\[5em_1fr\]) {
+    grid-template-columns: 5em 1fr;
+  }
+  #sdb-container :is(.grid-cols-\[80px_1fr_120px\]) {
+    grid-template-columns: 80px 1fr 120px;
+  }
+  #sdb-container :is(.grid-rows-\[1fr_16em\]) {
+    grid-template-rows: 1fr 16em;
+  }
+  #sdb-container :is(.grid-rows-\[minmax\(2rem\)_1fr_minmax\(2rem\)\]) {
+    grid-template-rows: minmax(2rem) 1fr minmax(2rem);
+  }
+  #sdb-container :is(.flex-row) {
+    flex-direction: row;
+  }
+  #sdb-container :is(.flex-col) {
+    flex-direction: column;
+  }
+  #sdb-container :is(.flex-col-reverse) {
+    flex-direction: column-reverse;
+  }
+  #sdb-container :is(.flex-wrap) {
+    flex-wrap: wrap;
+  }
+  #sdb-container :is(.place-items-center) {
+    place-items: center;
+  }
+  #sdb-container :is(.items-end) {
+    align-items: flex-end;
+  }
+  #sdb-container :is(.items-center) {
+    align-items: center;
+  }
+  #sdb-container :is(.items-stretch) {
+    align-items: stretch;
+  }
+  #sdb-container :is(.justify-end) {
+    justify-content: flex-end;
+  }
+  #sdb-container :is(.justify-center) {
+    justify-content: center;
+  }
+  #sdb-container :is(.justify-between) {
+    justify-content: space-between;
+  }
+  #sdb-container :is(.gap-1) {
+    gap: 0.25rem;
+  }
+  #sdb-container :is(.gap-2) {
+    gap: 0.5rem;
+  }
+  #sdb-container :is(.gap-3) {
+    gap: 0.75rem;
+  }
+  #sdb-container :is(.gap-4) {
+    gap: 1rem;
+  }
+  #sdb-container :is(.gap-8) {
+    gap: 2rem;
+  }
+  #sdb-container :is(.self-start) {
+    align-self: flex-start;
+  }
+  #sdb-container :is(.overflow-auto) {
+    overflow: auto;
+  }
+  #sdb-container :is(.overflow-hidden) {
+    overflow: hidden;
+  }
+  #sdb-container :is(.overflow-x-auto) {
+    overflow-x: auto;
+  }
+  #sdb-container :is(.overflow-y-auto) {
+    overflow-y: auto;
+  }
+  #sdb-container :is(.overflow-x-scroll) {
+    overflow-x: scroll;
+  }
+  #sdb-container :is(.truncate) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  #sdb-container :is(.whitespace-nowrap) {
+    white-space: nowrap;
+  }
+  #sdb-container :is(.rounded) {
+    border-radius: 0.25rem;
+  }
+  #sdb-container :is(.rounded-full) {
+    border-radius: 9999px;
+  }
+  #sdb-container :is(.rounded-l) {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+  #sdb-container :is(.border) {
+    border-width: 1px;
+  }
+  #sdb-container :is(.border-0) {
+    border-width: 0;
+  }
+  #sdb-container :is(.border-y) {
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+  }
+  #sdb-container :is(.border-b) {
+    border-bottom-width: 1px;
+  }
+  #sdb-container :is(.border-b-4) {
+    border-bottom-width: 4px;
+  }
+  #sdb-container :is(.border-r) {
+    border-right-width: 1px;
+  }
+  #sdb-container :is(.border-r-0) {
+    border-right-width: 0;
+  }
+  #sdb-container :is(.border-t) {
+    border-top-width: 1px;
+  }
+  #sdb-container :is(.border-t-0) {
+    border-top-width: 0;
+  }
+  #sdb-container :is(.border-\[\#FFC20F\]) {
+    border-color: #ffc20f;
+  }
+  #sdb-container :is(.border-amber-300) {
+    border-color: #fcd34d;
+  }
+  #sdb-container :is(.border-neutral-200) {
+    border-color: #e5e5e5;
+  }
+  #sdb-container :is(.border-neutral-400) {
+    border-color: #a3a3a3;
+  }
+  #sdb-container :is(.border-neutral-500) {
+    border-color: #737373;
+  }
+  #sdb-container :is(.border-transparent) {
+    border-color: transparent;
+  }
+  #sdb-container :is(.border-white) {
+    border-color: #fff;
+  }
+  #sdb-container :is(.bg-\[\#202020\]) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(32 32 32 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-\[\#FFC20F\]) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 194 15 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-\[\#efefef\]) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(239 239 239 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-\[\#ffc20f\]) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 194 15 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-amber-300) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(252 211 77 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-amber-400) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(251 191 36 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-black) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-black\/80) {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  #sdb-container :is(.bg-gray-200) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-neutral-100) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-neutral-800) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-transparent) {
+    background-color: transparent;
+  }
+  #sdb-container :is(.bg-white) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-yellow-500) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.bg-none) {
+    background-image: none;
+  }
+  #sdb-container :is(.fill-amber-400) {
+    fill: #fbbf24;
+  }
+  #sdb-container :is(.fill-black) {
+    fill: #000;
+  }
+  #sdb-container :is(.fill-white) {
+    fill: #fff;
+  }
+  #sdb-container :is(.object-contain) {
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+  #sdb-container :is(.object-cover) {
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  #sdb-container :is(.object-center) {
+    -o-object-position: center;
+    object-position: center;
+  }
+  #sdb-container :is(.p-0) {
+    padding: 0;
+  }
+  #sdb-container :is(.p-1) {
+    padding: 0.25rem;
+  }
+  #sdb-container :is(.p-2) {
+    padding: 0.5rem;
+  }
+  #sdb-container :is(.p-3) {
+    padding: 0.75rem;
+  }
+  #sdb-container :is(.p-4) {
+    padding: 1rem;
+  }
+  #sdb-container :is(.p-5) {
+    padding: 1.25rem;
+  }
+  #sdb-container :is(.p-6) {
+    padding: 1.5rem;
+  }
+  #sdb-container :is(.p-8) {
+    padding: 2rem;
+  }
+  #sdb-container :is(.p-9) {
+    padding: 2.25rem;
+  }
+  #sdb-container :is(.px-0) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #sdb-container :is(.px-1) {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+  #sdb-container :is(.px-10) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  #sdb-container :is(.px-14) {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+  #sdb-container :is(.px-2) {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  #sdb-container :is(.px-3) {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  #sdb-container :is(.px-32) {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  #sdb-container :is(.px-4) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  #sdb-container :is(.px-5) {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  #sdb-container :is(.px-6) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  #sdb-container :is(.py-0) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  #sdb-container :is(.py-1) {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+  #sdb-container :is(.py-10) {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  #sdb-container :is(.py-2) {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  #sdb-container :is(.py-24) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  #sdb-container :is(.py-3) {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  #sdb-container :is(.py-4) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  #sdb-container :is(.py-5) {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  #sdb-container :is(.py-6) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  #sdb-container :is(.py-7) {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+  #sdb-container :is(.py-9) {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+  #sdb-container :is(.py-\[4\.3rem\]) {
+    padding-top: 4.3rem;
+    padding-bottom: 4.3rem;
+  }
+  #sdb-container :is(.pb-0) {
+    padding-bottom: 0;
+  }
+  #sdb-container :is(.pb-1) {
+    padding-bottom: 0.25rem;
+  }
+  #sdb-container :is(.pb-10) {
+    padding-bottom: 2.5rem;
+  }
+  #sdb-container :is(.pb-16) {
+    padding-bottom: 4rem;
+  }
+  #sdb-container :is(.pb-2) {
+    padding-bottom: 0.5rem;
+  }
+  #sdb-container :is(.pb-3) {
+    padding-bottom: 0.75rem;
+  }
+  #sdb-container :is(.pb-4) {
+    padding-bottom: 1rem;
+  }
+  #sdb-container :is(.pb-6) {
+    padding-bottom: 1.5rem;
+  }
+  #sdb-container :is(.pb-8) {
+    padding-bottom: 2rem;
+  }
+  #sdb-container :is(.pb-9) {
+    padding-bottom: 2.25rem;
+  }
+  #sdb-container :is(.pl-0) {
+    padding-left: 0;
+  }
+  #sdb-container :is(.pl-1) {
+    padding-left: 0.25rem;
+  }
+  #sdb-container :is(.pl-2) {
+    padding-left: 0.5rem;
+  }
+  #sdb-container :is(.pl-3) {
+    padding-left: 0.75rem;
+  }
+  #sdb-container :is(.pl-4) {
+    padding-left: 1rem;
+  }
+  #sdb-container :is(.pr-0) {
+    padding-right: 0;
+  }
+  #sdb-container :is(.pr-1) {
+    padding-right: 0.25rem;
+  }
+  #sdb-container :is(.pr-2) {
+    padding-right: 0.5rem;
+  }
+  #sdb-container :is(.pr-3) {
+    padding-right: 0.75rem;
+  }
+  #sdb-container :is(.pt-0) {
+    padding-top: 0;
+  }
+  #sdb-container :is(.pt-1) {
+    padding-top: 0.25rem;
+  }
+  #sdb-container :is(.pt-2) {
+    padding-top: 0.5rem;
+  }
+  #sdb-container :is(.pt-3) {
+    padding-top: 0.75rem;
+  }
+  #sdb-container :is(.pt-4) {
+    padding-top: 1rem;
+  }
+  #sdb-container :is(.pt-6) {
+    padding-top: 1.5rem;
+  }
+  #sdb-container :is(.pt-8) {
+    padding-top: 2rem;
+  }
+  #sdb-container :is(.pt-9) {
+    padding-top: 2.25rem;
+  }
+  #sdb-container :is(.text-left) {
+    text-align: left;
+  }
+  #sdb-container :is(.text-center) {
+    text-align: center;
+  }
+  #sdb-container :is(.text-right) {
+    text-align: right;
+  }
+  #sdb-container :is(.text-2xl) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  #sdb-container :is(.text-3xl) {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  #sdb-container :is(.text-4xl) {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  #sdb-container :is(.text-5xl) {
+    font-size: 3rem;
+    line-height: 1;
+  }
+  #sdb-container :is(.text-7xl) {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+  #sdb-container :is(.text-base) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  #sdb-container :is(.text-lg) {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  #sdb-container :is(.text-sm) {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  #sdb-container :is(.text-xl) {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  #sdb-container :is(.text-xs) {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  #sdb-container :is(.font-black) {
+    font-weight: 900;
+  }
+  #sdb-container :is(.font-bold) {
+    font-weight: 700;
+  }
+  #sdb-container :is(.font-normal) {
+    font-weight: 400;
+  }
+  #sdb-container :is(.uppercase) {
+    text-transform: uppercase;
+  }
+  #sdb-container :is(.leading-5) {
+    line-height: 1.25rem;
+  }
+  #sdb-container :is(.text-black) {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
+  #sdb-container :is(.text-neutral-800) {
+    --tw-text-opacity: 1;
+    color: rgb(38 38 38 / var(--tw-text-opacity));
+  }
+  #sdb-container :is(.text-white) {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+  #sdb-container :is(.underline) {
+    text-decoration-line: underline;
+  }
+  #sdb-container :is(.no-underline) {
+    text-decoration-line: none;
+  }
+  #sdb-container :is(.opacity-60) {
+    opacity: 0.6;
+  }
+  #sdb-container :is(.shadow) {
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+      0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),
+      0 1px 2px -1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+  #sdb-container :is(.outline) {
+    outline-style: solid;
+  }
+  #sdb-container :is(.outline-0) {
+    outline-width: 0;
+  }
+  #sdb-container :is(.invert) {
+    --tw-invert: invert(100%);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+      var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert)
+      var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+  #sdb-container :is(.filter) {
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+      var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert)
+      var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+  #sdb-container :is(.transition) {
+    transition-property: color, background-color, border-color,
+      text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+      filter, -webkit-backdrop-filter;
+    transition-property: color, background-color, border-color,
+      text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+      filter, backdrop-filter;
+    transition-property: color, background-color, border-color,
+      text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+      filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.15s;
+  }
+  .\[text-shadow\:_0_0_6px_rgba\(255_255_255_\/_50\%\)\] {
+    text-shadow: 0 0 6px hsla(0, 0%, 100%, 0.5);
+  }
+  #sdb-container menu,
+  #sdb-container ol,
+  #sdb-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .hero.slant-down.content-page-image {
+    display: none !important;
+    position: fixed !important;
+    left: -1000vw !important;
+    top: -1000vh !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+  }
+  .container.content-asset-container {
+    max-width: 100% !important;
+    padding: 0;
+  }
+  .overflow-scrollbar::-webkit-scrollbar {
+    height: 1px;
+  }
+  .overflow-scrollbar::-webkit-scrollbar-track {
+    background-color: #000;
+  }
+  .overflow-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #eab308;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    height: 0;
+  }
+  @media (min-width: 1024px) {
+    .lg\:container {
+      width: 100%;
+    }
+    @media (min-width: 640px) {
+      .lg\:container {
+        max-width: 640px;
+      }
+    }
+    @media (min-width: 768px) {
+      .lg\:container {
+        max-width: 768px;
+      }
+    }
+    @media (min-width: 1024px) {
+      .lg\:container {
+        max-width: 1024px;
+      }
+    }
+    @media (min-width: 1280px) {
+      .lg\:container {
+        max-width: 1280px;
+      }
+    }
+    @media (min-width: 1536px) {
+      .lg\:container {
+        max-width: 1536px;
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    .xl\:container {
+      width: 100%;
+    }
+    @media (min-width: 640px) {
+      .xl\:container {
+        max-width: 640px;
+      }
+    }
+    @media (min-width: 768px) {
+      .xl\:container {
+        max-width: 768px;
+      }
+    }
+    @media (min-width: 1024px) {
+      .xl\:container {
+        max-width: 1024px;
+      }
+    }
+    @media (min-width: 1280px) {
+      .xl\:container {
+        max-width: 1280px;
+      }
+    }
+    @media (min-width: 1536px) {
+      .xl\:container {
+        max-width: 1536px;
+      }
+    }
+  }
+  #sdb-container :is(.hover\:border-black:hover) {
+    border-color: #000;
+  }
+  #sdb-container :is(.hover\:text-black:hover) {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
+  #sdb-container :is(.hover\:no-underline:hover) {
+    text-decoration-line: none;
+  }
+  #sdb-container :is(.group:hover .group-hover\:block) {
+    display: block;
+  }
+  #sdb-container :is(.group:hover .group-hover\:bg-black) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  }
+  #sdb-container :is(.group:hover .group-hover\:text-white) {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+  @media (prefers-color-scheme: dark) {
+    #sdb-container :is(.dark\:border-neutral-700) {
+      border-color: #404040;
+    }
+    #sdb-container :is(.dark\:bg-black) {
+      --tw-bg-opacity: 1;
+      background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+    }
+    #sdb-container :is(.dark\:bg-neutral-800) {
+      --tw-bg-opacity: 1;
+      background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+    }
+    #sdb-container :is(.dark\:fill-white) {
+      fill: #fff;
+    }
+    #sdb-container :is(.dark\:text-white) {
+      --tw-text-opacity: 1;
+      color: rgb(255 255 255 / var(--tw-text-opacity));
+    }
+  }
+  @media (min-width: 640px) {
+    #sdb-container :is(.sm\:flex) {
+      display: flex;
+    }
+    #sdb-container :is(.sm\:rounded-t) {
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+    }
+    #sdb-container :is(.sm\:border-b) {
+      border-bottom-width: 1px;
+    }
+    #sdb-container :is(.sm\:border-black) {
+      border-color: #000;
+    }
+  }
+  @media (min-width: 768px) {
+    #sdb-container :is(.md\:absolute) {
+      position: absolute;
+    }
+    #sdb-container :is(.md\:relative) {
+      position: relative;
+    }
+    #sdb-container :is(.md\:top-full) {
+      top: 100%;
+    }
+    #sdb-container :is(.md\:mb-0) {
+      margin-bottom: 0;
+    }
+    #sdb-container :is(.md\:block) {
+      display: block;
+    }
+    #sdb-container :is(.md\:inline-block) {
+      display: inline-block;
+    }
+    #sdb-container :is(.md\:hidden) {
+      display: none;
+    }
+    #sdb-container :is(.md\:h-auto) {
+      height: auto;
+    }
+    #sdb-container :is(.md\:h-full) {
+      height: 100%;
+    }
+    #sdb-container :is(.md\:max-h-\[70vh\]) {
+      max-height: 70vh;
+    }
+    #sdb-container :is(.md\:w-auto) {
+      width: auto;
+    }
+    #sdb-container :is(.md\:w-full) {
+      width: 100%;
+    }
+    #sdb-container :is(.md\:max-w-xl) {
+      max-width: 36rem;
+    }
+    #sdb-container :is(.md\:grid-cols-2) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    #sdb-container :is(.md\:grid-cols-3) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    #sdb-container :is(.md\:grid-cols-\[1fr_200px\]) {
+      grid-template-columns: 1fr 200px;
+    }
+    #sdb-container :is(.md\:grid-cols-\[1fr_48px_48px\]) {
+      grid-template-columns: 1fr 48px 48px;
+    }
+    #sdb-container :is(.md\:grid-cols-\[200px_1fr\]) {
+      grid-template-columns: 200px 1fr;
+    }
+    #sdb-container :is(.md\:grid-cols-\[260px_1fr\]) {
+      grid-template-columns: 260px 1fr;
+    }
+    #sdb-container :is(.md\:gap-4) {
+      gap: 1rem;
+    }
+    #sdb-container :is(.md\:divide-x > :not([hidden]) ~ :not([hidden])) {
+      --tw-divide-x-reverse: 0;
+      border-right-width: calc(1px * var(--tw-divide-x-reverse));
+      border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+    }
+    #sdb-container :is(.md\:px-2) {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    #sdb-container :is(.md\:px-4) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    #sdb-container :is(.md\:text-right) {
+      text-align: right;
+    }
+    #sdb-container :is(.md\:text-xl) {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    #sdb-container :is(.lg\:absolute) {
+      position: absolute;
+    }
+    #sdb-container :is(.lg\:order-2) {
+      order: 2;
+    }
+    #sdb-container :is(.lg\:order-3) {
+      order: 3;
+    }
+    #sdb-container :is(.lg\:col-span-1) {
+      grid-column: span 1 / span 1;
+    }
+    #sdb-container :is(.lg\:mt-4) {
+      margin-top: 1rem;
+    }
+    #sdb-container :is(.lg\:block) {
+      display: block;
+    }
+    #sdb-container :is(.lg\:flex) {
+      display: flex;
+    }
+    #sdb-container :is(.lg\:hidden) {
+      display: none;
+    }
+    #sdb-container :is(.lg\:min-h-\[4rem\]) {
+      min-height: 4rem;
+    }
+    #sdb-container :is(.lg\:max-w-3xl) {
+      max-width: 48rem;
+    }
+    #sdb-container :is(.lg\:max-w-\[40rem\]) {
+      max-width: 40rem;
+    }
+    #sdb-container :is(.lg\:max-w-none) {
+      max-width: none;
+    }
+    #sdb-container :is(.lg\:rotate-0) {
+      --tw-rotate: 0deg;
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+        rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+        scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    }
+    #sdb-container :is(.lg\:rotate-180) {
+      --tw-rotate: 180deg;
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+        rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+        scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    }
+    #sdb-container :is(.lg\:grid-flow-col) {
+      grid-auto-flow: column;
+    }
+    #sdb-container :is(.lg\:grid-cols-2) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    #sdb-container :is(.lg\:grid-cols-3) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    #sdb-container :is(.lg\:grid-cols-4) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    #sdb-container :is(.lg\:grid-cols-\[10rem_1fr\]) {
+      grid-template-columns: 10rem 1fr;
+    }
+    #sdb-container :is(.lg\:grid-cols-\[1fr_16rem_16rem_16rem\]) {
+      grid-template-columns: 1fr 16rem 16rem 16rem;
+    }
+    #sdb-container :is(.lg\:grid-cols-\[1fr_minmax\(24em\2c _30em\)\]) {
+      grid-template-columns: 1fr minmax(24em, 30em);
+    }
+    #sdb-container
+      :is(.lg\:grid-cols-\[200px_minmax\(500px\2c1fr\)_minmax\(48px\2c120px\)_minmax\(48px\2c120px\)\]) {
+      grid-template-columns: 200px minmax(500px, 1fr) minmax(48px, 120px) minmax(
+          48px,
+          120px
+        );
+    }
+    #sdb-container :is(.lg\:flex-row) {
+      flex-direction: row;
+    }
+    #sdb-container :is(.lg\:gap-2) {
+      gap: 0.5rem;
+    }
+    #sdb-container :is(.lg\:bg-transparent) {
+      background-color: transparent;
+    }
+    #sdb-container :is(.lg\:bg-white\/70) {
+      background-color: hsla(0, 0%, 100%, 0.7);
+    }
+    #sdb-container :is(.lg\:p-0) {
+      padding: 0;
+    }
+    #sdb-container :is(.lg\:p-4) {
+      padding: 1rem;
+    }
+    #sdb-container :is(.lg\:px-2) {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    #sdb-container :is(.lg\:px-32) {
+      padding-left: 8rem;
+      padding-right: 8rem;
+    }
+    #sdb-container :is(.lg\:px-4) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    #sdb-container :is(.lg\:px-48) {
+      padding-left: 12rem;
+      padding-right: 12rem;
+    }
+    #sdb-container :is(.lg\:px-52) {
+      padding-left: 13rem;
+      padding-right: 13rem;
+    }
+    #sdb-container :is(.lg\:py-10) {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+    #sdb-container :is(.lg\:pb-64) {
+      padding-bottom: 16rem;
+    }
+    #sdb-container :is(.lg\:pt-14) {
+      padding-top: 3.5rem;
+    }
+    #sdb-container :is(.lg\:text-left) {
+      text-align: left;
+    }
+    #sdb-container :is(.lg\:text-2xl) {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+    #sdb-container :is(.lg\:hover\:bg-amber-200:hover) {
+      --tw-bg-opacity: 1;
+      background-color: rgb(253 230 138 / var(--tw-bg-opacity));
+    }
+    #sdb-container :is(.lg\:hover\:bg-amber-300:hover) {
+      --tw-bg-opacity: 1;
+      background-color: rgb(252 211 77 / var(--tw-bg-opacity));
+    }
+    #sdb-container :is(.lg\:hover\:bg-amber-400:hover) {
+      --tw-bg-opacity: 1;
+      background-color: rgb(251 191 36 / var(--tw-bg-opacity));
+    }
+    #sdb-container :is(.lg\:hover\:bg-gray-200:hover) {
+      --tw-bg-opacity: 1;
+      background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+    }
+    #sdb-container :is(.lg\:hover\:bg-gray-300:hover) {
+      --tw-bg-opacity: 1;
+      background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+    }
+    #sdb-container :is(.group\/buttons:hover .lg\:group-hover\/buttons\:block) {
+      display: block;
+    }
+    #sdb-container
+      :is(.group\/svg:hover .lg\:group-hover\/svg\:fill-amber-400) {
+      fill: #fbbf24;
+    }
+    #sdb-container :is(.group\/svg:hover .lg\:group-hover\/svg\:fill-black) {
+      fill: #000;
+    }
+    #sdb-container :is(.group:hover .lg\:group-hover\:fill-gray-900) {
+      fill: #111827;
+    }
+  }
+  @media (min-width: 1280px) {
+    #sdb-container :is(.xl\:absolute) {
+      position: absolute;
+    }
+    #sdb-container :is(.xl\:relative) {
+      position: relative;
+    }
+    #sdb-container :is(.xl\:bottom-auto) {
+      bottom: auto;
+    }
+    #sdb-container :is(.xl\:order-1) {
+      order: 1;
+    }
+    #sdb-container :is(.xl\:order-2) {
+      order: 2;
+    }
+    #sdb-container :is(.xl\:mr-2) {
+      margin-right: 0.5rem;
+    }
+    #sdb-container :is(.xl\:block) {
+      display: block;
+    }
+    #sdb-container :is(.xl\:flex) {
+      display: flex;
+    }
+    #sdb-container :is(.xl\:grid) {
+      display: grid;
+    }
+    #sdb-container :is(.xl\:hidden) {
+      display: none;
+    }
+    #sdb-container :is(.xl\:h-\[600px\]) {
+      height: 600px;
+    }
+    #sdb-container :is(.xl\:min-w-min) {
+      min-width: -moz-min-content;
+      min-width: min-content;
+    }
+    #sdb-container :is(.xl\:max-w-\[480px\]) {
+      max-width: 480px;
+    }
+    #sdb-container :is(.xl\:grid-cols-1) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    #sdb-container :is(.xl\:grid-cols-3) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    #sdb-container :is(.xl\:grid-cols-4) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    #sdb-container :is(.xl\:grid-cols-\[1fr_minmax\(768px\2c 1400px\)_1fr\]) {
+      grid-template-columns: 1fr minmax(768px, 1400px) 1fr;
+    }
+    #sdb-container :is(.xl\:grid-cols-\[400px_880px\]) {
+      grid-template-columns: 400px 880px;
+    }
+    #sdb-container :is(.xl\:flex-row) {
+      flex-direction: row;
+    }
+    #sdb-container :is(.xl\:border-0) {
+      border-width: 0;
+    }
+    #sdb-container :is(.xl\:py-2) {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    #sdb-container :is(.xl\:text-center) {
+      text-align: center;
+    }
+  }
+</style>
+<div class="bottom container" id="sdb-container">
+  <section class="container mt-8">
+    <div class="">
+      <ul class="flex flex-col lg:flex-row items-center">
+        <li>
+          <h2 class="text-center text-3xl">
+            Riding Lawn Mower How-Tos and Maintenance
+          </h2>
+        </li>
+        <li>
+          <a
+            href="https://www.cubcadet.com/en_US/how-to/?crefn1=tags&amp;crefv1=Lawn%20%26%20Garden%20Tractors"
+            class="ml-2"
+            ><u>View All</u></a
+          >
+        </li>
+      </ul>
+      <div class="">
+        <ul class="grid md:grid-cols-2 xl:grid-cols-4 gap-4">
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/popular-faqs/knowledge-the-difference-between-mulching-blades-and-high-lift-blades.html"
+              class="d-flex flex-column text-decoration-none p-1 h-full"
+              style="background-color: #efefef;"
+              ><div class="relative h-40">
+                <img
+                  alt=""
+                  class="absolute w-full h-full object-cover"
+                  id="Hero_LineUp_01-jpg"
+                  src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw6bb1055f/Knowledge_Center/help-center/difference-between-mulching-blades-and-high-lift-blades_1100x572.jpg?sw=950"
+                  loading="lazy"
+                  srcset="
+                    https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw6bb1055f/Knowledge_Center/help-center/difference-between-mulching-blades-and-high-lift-blades_1100x572.jpg?sw=950?resize=768x399 768w,
+                    https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw6bb1055f/Knowledge_Center/help-center/difference-between-mulching-blades-and-high-lift-blades_1100x572.jpg?sw=950?resize=544x283 544w
+                  "
+                  sizes="(min-width: 768px) 768px, (min-width: 544px) 544px, 100vw"
+                />
+              </div>
+              <div class="px-2 pt-2 text-xl">
+                The Difference Between Mulching Blades and High-Lift Blades
+              </div>
+              <div class="px-2 pt-1 line-clamp-4 text-xs">
+                Mower blade terminology can be a little confusing. Local
+                colloquialisms and engineering terminology (such as "3-in-1" or
+                "high-lift") have also contributed to this confusion.
+              </div>
+              <div
+                class="px-2 pt-2 mt-auto text-uppercase font-weight-bold"
+                style="text-decoration: underline;"
+              >
+                Read more
+              </div></a
+            >
+            <script type="application/ld+json">
+              {
+                "@context": "https://schema.org",
+                "@type": "NewsArticle",
+                "headline": "The Difference Between Mulching Blades and High-Lift Blades",
+                "image": [null]
+              }
+            </script>
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/product-information/knowledge-riding-mower-maintenance-schedule-and-tips.html"
+              class="d-flex flex-column text-decoration-none p-1 h-full"
+              style="background-color: #efefef;"
+              ><div class="relative h-40">
+                <img
+                  alt=""
+                  class="absolute w-full h-full object-cover"
+                  id="recommended-snow-thrower-back-up-parts-jpg"
+                  src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw7f4f0ec9/Knowledge_Center/help-center/riding-mower-maintenance-schedule-and-tips_1100x572.jpg?sw=950"
+                  loading="lazy"
+                  srcset="
+                    https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw7f4f0ec9/Knowledge_Center/help-center/riding-mower-maintenance-schedule-and-tips_1100x572.jpg?sw=950?resize=768x399 768w,
+                    https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw7f4f0ec9/Knowledge_Center/help-center/riding-mower-maintenance-schedule-and-tips_1100x572.jpg?sw=950?resize=544x283 544w
+                  "
+                  sizes="(min-width: 768px) 768px, (min-width: 544px) 544px, 100vw"
+                />
+              </div>
+              <div class="px-2 pt-2 text-xl">
+                Riding Mower Maintenance Schedule and Tips
+              </div>
+              <div class="px-2 pt-1 line-clamp-4 text-xs">
+                Proper riding lawn mower maintenance will help your machine run
+                well for years. It's not enough to perform maintenance on riding
+                mowers at just the start and end of the season. This riding
+                mower maintenance schedule and checklist will help you know when
+                to change the oil, replace lawn mower blades or just clean the
+                different parts and attachments to extend the life of your
+                mower.
+              </div>
+              <div
+                class="px-2 pt-2 mt-auto text-uppercase font-weight-bold"
+                style="text-decoration: underline;"
+              >
+                Read more
+              </div></a
+            >
+            <script type="application/ld+json">
+              {
+                "@context": "https://schema.org",
+                "@type": "NewsArticle",
+                "headline": "Riding Mower Maintenance Schedule and Tips",
+                "image": [null]
+              }
+            </script>
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/how-to/knowledge-how-to-change-the-blade-on-your-cub-cadet-rider.html"
+              class="d-flex flex-column text-decoration-none p-1 h-full"
+              style="background-color: #efefef;"
+              ><div class="relative h-40">
+                <img
+                  alt=""
+                  class="absolute w-full h-full object-cover"
+                  id="snow-thrower-operation-tips-jpg"
+                  src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/chnage-blades.png"
+                  loading="lazy"
+                  srcset="
+                    https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/chnage-blades.png?resize=1920x1234 1920w,
+                    https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/chnage-blades.png?resize=1366x878  1366w,
+                    https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/chnage-blades.png?resize=1025x659  1025w,
+                    https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/chnage-blades.png?resize=768x494    768w,
+                    https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/chnage-blades.png?resize=544x350    544w
+                  "
+                  sizes="(min-width: 1920px) 1920px, (min-width: 1366px) 1366px, (min-width: 1025px) 1025px, (min-width: 768px) 768px, (min-width: 544px) 544px, 100vw"
+                />
+              </div>
+              <div class="px-2 pt-2 text-xl">
+                How To Change the Blades on A Riding Mower
+              </div>
+              <div class="px-2 pt-1 line-clamp-4 text-xs">
+                Over time, the blades on your riding lawn mower can become worn
+                out, bent or dinged. This gradual damage can reduce the
+                effectiveness of your mower, so be sure to sharpen or replace
+                the blades if you notice these signs of wear. How often you
+                visually check the blades depends on how regularly the mower is
+                used. Check the blades at least twice a year, at the beginning
+                and middle of the mowing season, or more often if you mow
+                year-round. This video will show you how replace the blades on
+                your Cub Cadet riding mower. Depending on your model, the
+                instructions in this video may vary slightly. Always be sure to
+                check your operator's manual for detailed instructions.
+              </div>
+              <div
+                class="px-2 pt-2 mt-auto text-uppercase font-weight-bold"
+                style="text-decoration: underline;"
+              >
+                Read more
+              </div></a
+            >
+            <script type="application/ld+json">
+              {
+                "@context": "https://schema.org",
+                "@type": "NewsArticle",
+                "headline": "How To Change the Blades on A Riding Mower",
+                "image": [null]
+              }
+            </script>
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/how-to/knowledge-how-to-change-the-oil-in-a-cub-cadet-riding-lawn-mower.html"
+              class="d-flex flex-column text-decoration-none p-1 h-full"
+              style="background-color: #efefef;"
+              ><div class="relative h-40">
+                <img
+                  alt=""
+                  class="absolute w-full h-full object-cover"
+                  id="snow-thrower-safety-tips-jpg"
+                  src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw79307f23/Knowledge_Center/help-center/how-to-change-the-oil-in-a-cub-cadet-riding-lawn-mower_1100x572.jpg?sw=950"
+                  loading="lazy"
+                  srcset="
+                    https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw79307f23/Knowledge_Center/help-center/how-to-change-the-oil-in-a-cub-cadet-riding-lawn-mower_1100x572.jpg?sw=950?resize=768x399 768w,
+                    https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw79307f23/Knowledge_Center/help-center/how-to-change-the-oil-in-a-cub-cadet-riding-lawn-mower_1100x572.jpg?sw=950?resize=544x283 544w
+                  "
+                  sizes="(min-width: 768px) 768px, (min-width: 544px) 544px, 100vw"
+                />
+              </div>
+              <div class="px-2 pt-2 text-xl">
+                How to Change the Oil in Your Riding Mower
+              </div>
+              <div class="px-2 pt-1 line-clamp-4 text-xs">
+                Regular oil changes are critical to keeping your riding lawn
+                mower's engine in top shape and prolonging the life of your
+                mower. Watch this video to learn how to change the oil in a Cub
+                Cadet riding lawn mower. Depending on your mower model, the
+                instructions in this video tutorial may vary slightly from the
+                directions in your operator's manual. Always refer to your
+                operator's manual for comprehensive instructions on changing
+                lawn mower oil before getting started.
+              </div>
+              <div
+                class="px-2 pt-2 mt-auto text-uppercase font-weight-bold"
+                style="text-decoration: underline;"
+              >
+                Read more
+              </div></a
+            >
+            <script type="application/ld+json">
+              {
+                "@context": "https://schema.org",
+                "@type": "NewsArticle",
+                "headline": "How to Change the Oil in Your Riding Mower",
+                "image": [null]
+              }
+            </script>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="container mt-8">
+    <ul class="flex flex-col lg:flex-row items-center">
+      <li>
+        <h2 class="text-center text-3xl">
+          Riding Lawn Mower Attachments &amp; Accessories
+        </h2>
+      </li>
+      <li class="ml-2">
+        <a
+          href="https://www.cubcadet.com/en_US/riding-lawn-mowers/riding-mower-accessories"
+          class="d-block text-center"
+          ><u>View All</u></a
+        >
+      </li>
+    </ul>
+    <ul class="grid md:grid-cols-2 xl:grid-cols-4 gap-4">
+      <li>
+        <div class="p-1" style="background-color: #efefef;">
+          <div class="relative min-h-[20rem]">
+            <img
+              alt="Black Cub Cadet Triple Bagger attached to Cub Cadet riding lawn mower"
+              class="absolute w-full h-full object-contain"
+              id="riding-mower-baggers-jpg"
+              src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/19A30018100.jpg"
+              loading="lazy"
+              srcset=""
+              sizes="100vw"
+            />
+          </div>
+          <div class="mt-2">
+            <p class="text-lg font-bold mb-0 text-center">
+              Riding Mower Baggers
+            </p>
+          </div>
+          <div class="mt-auto text-center px-4">
+            <a
+              href="https://www.cubcadet.com/en_US/riding-lawn-mowers/riding-mower-accessories?prefn1=universal-part-category&amp;prefv1=Baggers%20and%20Grass%20Collectors"
+              class="button text-uppercase font-weight-bold text-decoration-none d-inline-block btn btn-secondary w-full mt-4"
+              style="padding: 0.9375rem 1.5625rem;"
+              >View More</a
+            >
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="p-1" style="background-color: #efefef;">
+          <div class="relative min-h-[20rem]">
+            <img
+              alt="Black Mulching Kit Set"
+              class="absolute w-full h-full object-contain"
+              id="mulching-kits-jpg"
+              src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/19A70041100.jpg"
+              loading="lazy"
+              srcset=""
+              sizes="100vw"
+            />
+          </div>
+          <div class="mt-2">
+            <p class="text-lg font-bold mb-0 text-center">Mulching Kits</p>
+          </div>
+          <div class="mt-auto text-center px-4">
+            <a
+              href="https://www.cubcadet.com/en_US/riding-lawn-mowers/riding-mower-accessories?prefn1=universal-part-category&amp;prefv1=Mulching%20Kit"
+              class="button text-uppercase font-weight-bold text-decoration-none d-inline-block btn btn-secondary w-full mt-4"
+              style="padding: 0.9375rem 1.5625rem;"
+              >View More</a
+            >
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="p-1" style="background-color: #efefef;">
+          <div class="relative min-h-[20rem]">
+            <img
+              alt="Black Cub Cadet Hauler attachment"
+              class="absolute w-full h-full object-contain"
+              id="hauler-jpg"
+              src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/19B40026100_1.jpg"
+              loading="lazy"
+              srcset="
+                https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/19B40026100_1.jpg?resize=768x768 768w,
+                https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/19B40026100_1.jpg?resize=544x544 544w
+              "
+              sizes="(min-width: 768px) 768px, (min-width: 544px) 544px, 100vw"
+            />
+          </div>
+          <div class="mt-2">
+            <p class="text-lg font-bold mb-0 text-center">Hauler</p>
+          </div>
+          <div class="mt-auto text-center px-4">
+            <a
+              href="https://www.cubcadet.com/en_US/riding-mower-accessories/cub-cadet-hauler/19B40026100.html#q=hauler&amp;lang=en_US&amp;start=5"
+              class="button text-uppercase font-weight-bold text-decoration-none d-inline-block btn btn-secondary w-full mt-4"
+              style="padding: 0.9375rem 1.5625rem;"
+              >View More</a
+            >
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="p-1" style="background-color: #efefef;">
+          <div class="relative min-h-[20rem]">
+            <img
+              alt="Black Plow Blade attached to a Cub Cadet riding lawn mower"
+              class="absolute w-full h-full object-contain"
+              id="all-season-plow-blade-jpg"
+              src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/19A30037100.jpg"
+              loading="lazy"
+              srcset="
+                https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/19A30037100.jpg?resize=768x768 768w,
+                https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/riding-lawn-mowers/19A30037100.jpg?resize=544x544 544w
+              "
+              sizes="(min-width: 768px) 768px, (min-width: 544px) 544px, 100vw"
+            />
+          </div>
+          <div class="mt-2">
+            <p class="text-lg font-bold mb-0 text-center">
+              All-Season Plow Blade
+            </p>
+          </div>
+          <div class="mt-auto text-center px-4">
+            <a
+              href="https://www.cubcadet.com/en_US/riding-mower-accessories/fastattach-all-season-plow-blade/19A30037100.html?fitsOnModel=false#start=3"
+              class="button text-uppercase font-weight-bold text-decoration-none d-inline-block btn btn-secondary w-full mt-4"
+              style="padding: 0.9375rem 1.5625rem;"
+              >View More</a
+            >
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <div class="container mt-8">
+    <nav
+      class="related-links"
+      aria-labelledby="related-links-title"
+      data-ui="related-links"
+    >
+      <h3 id="related-links-title" tag="h3" class="h3 mb-1">
+        Related Categories
+      </h3>
+      <ul class="list-unstyled d-flex flex-wrap">
+        <li class="pt-1 pr-1">
+          <a
+            class="d-inline-flex align-items-center p-1"
+            href=" https://www.cubcadet.com/en_US/riding-lawn-mowers/lawn-and-garden-tractors"
+            ><svg
+              class="mr-1 p-1 border rounded"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -960 960 960"
+              style="width: 32px;"
+            >
+              <path
+                d="M796-121 533-384q-30 26-69.959 40.5T378-329q-108.162 0-183.081-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.125-57.5T572-585q0-81-56.875-138.5T377-781q-82.083 0-139.542 57.5Q180-666 180-585t57.458 138.5Q294.917-389 377-389Z"
+              ></path>
+            </svg>
+            <span>Lawn &amp; Garden Tractors</span>
+          </a>
+        </li>
+        <li class="pt-1 pr-1">
+          <a
+            class="d-inline-flex align-items-center p-1"
+            href="https://www.cubcadet.com/en_US/riding-lawn-mowers/zero-turn-mowers"
+            ><svg
+              class="mr-1 p-1 border rounded"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -960 960 960"
+              style="width: 32px;"
+            >
+              <path
+                d="M796-121 533-384q-30 26-69.959 40.5T378-329q-108.162 0-183.081-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.125-57.5T572-585q0-81-56.875-138.5T377-781q-82.083 0-139.542 57.5Q180-666 180-585t57.458 138.5Q294.917-389 377-389Z"
+              ></path>
+            </svg>
+            <span>Zero-Turn Mowers</span>
+          </a>
+        </li>
+        <li class="pt-1 pr-1">
+          <a
+            class="d-inline-flex align-items-center p-1"
+            href="https://www.cubcadet.com/en_US/riding-lawn-mowers/small-riding-lawn-mowers"
+            ><svg
+              class="mr-1 p-1 border rounded"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -960 960 960"
+              style="width: 32px;"
+            >
+              <path
+                d="M796-121 533-384q-30 26-69.959 40.5T378-329q-108.162 0-183.081-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.125-57.5T572-585q0-81-56.875-138.5T377-781q-82.083 0-139.542 57.5Q180-666 180-585t57.458 138.5Q294.917-389 377-389Z"
+              ></path>
+            </svg>
+            <span>Small Riding Lawn Mowers</span>
+          </a>
+        </li>
+        <li class="pt-1 pr-1">
+          <a
+            class="d-inline-flex align-items-center p-1"
+            href="https://www.cubcadet.com/en_US/riding-lawn-mowers/electric-riding-mowers"
+            ><svg
+              class="mr-1 p-1 border rounded"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -960 960 960"
+              style="width: 32px;"
+            >
+              <path
+                d="M796-121 533-384q-30 26-69.959 40.5T378-329q-108.162 0-183.081-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.125-57.5T572-585q0-81-56.875-138.5T377-781q-82.083 0-139.542 57.5Q180-666 180-585t57.458 138.5Q294.917-389 377-389Z"
+              ></path>
+            </svg>
+            <span>Electric Lawn Mowers</span>
+          </a>
+        </li>
+        <li class="pt-1 pr-1">
+          <a
+            class="d-inline-flex align-items-center p-1"
+            href="https://www.cubcadet.com/en_US/lawn-mowers/walk-behind-mowers"
+            ><svg
+              class="mr-1 p-1 border rounded"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -960 960 960"
+              style="width: 32px;"
+            >
+              <path
+                d="M796-121 533-384q-30 26-69.959 40.5T378-329q-108.162 0-183.081-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.125-57.5T572-585q0-81-56.875-138.5T377-781q-82.083 0-139.542 57.5Q180-666 180-585t57.458 138.5Q294.917-389 377-389Z"
+              ></path>
+            </svg>
+            <span>Walk-Behind Mowers</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container mt-8">
+    <nav
+      class="related-links"
+      aria-labelledby="related-links-title"
+      data-ui="related-links"
+    >
+      <h3 id="related-links-title" tag="h3" class="h3 mb-1">
+        Related Searches
+      </h3>
+      <ul class="list-unstyled d-flex flex-wrap">
+        <li class="pt-1 pr-1">
+          <a
+            class="d-inline-flex align-items-center p-1"
+            href="https://www.cubcadet.com/en_US/financing"
+          >
+            <svg
+              class="mr-1 p-1 border rounded"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -960 960 960"
+              style="width: 32px;"
+            >
+              <path
+                d="M796-121 533-384q-30 26-69.959 40.5T378-329q-108.162 0-183.081-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.125-57.5T572-585q0-81-56.875-138.5T377-781q-82.083 0-139.542 57.5Q180-666 180-585t57.458 138.5Q294.917-389 377-389Z"
+              ></path>
+            </svg>
+            <span>Financing</span>
+          </a>
+        </li>
+        <li class="pt-1 pr-1">
+          <a
+            class="d-inline-flex align-items-center p-1"
+            href="https://www.cubcadet.com/en_US/warranty-details.html"
+            ><svg
+              class="mr-1 p-1 border rounded"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -960 960 960"
+              style="width: 32px;"
+            >
+              <path
+                d="M796-121 533-384q-30 26-69.959 40.5T378-329q-108.162 0-183.081-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.125-57.5T572-585q0-81-56.875-138.5T377-781q-82.083 0-139.542 57.5Q180-666 180-585t57.458 138.5Q294.917-389 377-389Z"
+              ></path>
+            </svg>
+            <span>Warranty</span>
+          </a>
+        </li>
+        <li class="pt-1 pr-1">
+          <a
+            class="d-inline-flex align-items-center p-1"
+            href="https://www.cubcadet.com/en_US/ew-info-page.html"
+            ><svg
+              class="mr-1 p-1 border rounded"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -960 960 960"
+              style="width: 32px;"
+            >
+              <path
+                d="M796-121 533-384q-30 26-69.959 40.5T378-329q-108.162 0-183.081-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.125-57.5T572-585q0-81-56.875-138.5T377-781q-82.083 0-139.542 57.5Q180-666 180-585t57.458 138.5Q294.917-389 377-389Z"
+              ></path>
+            </svg>
+            <span>Extended Warranty</span>
+          </a>
+        </li>
+        <li class="pt-1 pr-1">
+          <a
+            class="d-inline-flex align-items-center p-1"
+            href="https://www.cubcadet.com/en_US/content-asset-page-includes/registration.html"
+            ><svg
+              class="mr-1 p-1 border rounded"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -960 960 960"
+              style="width: 32px;"
+            >
+              <path
+                d="M796-121 533-384q-30 26-69.959 40.5T378-329q-108.162 0-183.081-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.125-57.5T572-585q0-81-56.875-138.5T377-781q-82.083 0-139.542 57.5Q180-666 180-585t57.458 138.5Q294.917-389 377-389Z"
+              ></path>
+            </svg>
+            <span>Product Registration</span>
+          </a>
+        </li>
+        <li class="pt-1 pr-1">
+          <a
+            class="d-inline-flex align-items-center p-1"
+            href="https://www.cubcadet.com/en_US/operatorsmanuals"
+            ><svg
+              class="mr-1 p-1 border rounded"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -960 960 960"
+              style="width: 32px;"
+            >
+              <path
+                d="M796-121 533-384q-30 26-69.959 40.5T378-329q-108.162 0-183.081-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.125-57.5T572-585q0-81-56.875-138.5T377-781q-82.083 0-139.542 57.5Q180-666 180-585t57.458 138.5Q294.917-389 377-389Z"
+              ></path>
+            </svg>
+            <span>Operator’s Manual</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container mt-8">
+    <nav
+      class="related-links"
+      aria-labelledby="related-links-title"
+      data-ui="related-links"
+    >
+      <ul class="flex flex-col lg:flex-row items-center">
+        <li>
+          <h3 class="text-center text-3xl">Riding Lawn Mower Maintenance</h3>
+        </li>
+        <li class="ml-2">
+          <a
+            href="https://www.cubcadet.com/en_US/riding-lawn-mower-parts"
+            class="d-block text-center"
+            ><u>View All</u></a
+          >
+        </li>
+      </ul>
+      <p class="mb-1">
+        When customers buy Riding Lawn Mowers they often buy or consider:
+      </p>
+      <ul class="list-unstyled d-flex flex-wrap">
+        <li class="pt-1 pr-1">
+          <a
+            class="d-inline-flex align-items-center p-1"
+            href="https://www.cubcadet.com/en_US/riding-lawn-mower-parts/riding-mower-blades"
+            ><svg
+              class="mr-1 p-1 border rounded"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -960 960 960"
+              style="width: 32px;"
+            >
+              <path
+                d="M796-121 533-384q-30 26-69.959 40.5T378-329q-108.162 0-183.081-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.125-57.5T572-585q0-81-56.875-138.5T377-781q-82.083 0-139.542 57.5Q180-666 180-585t57.458 138.5Q294.917-389 377-389Z"
+              ></path>
+            </svg>
+            <span>Blades</span>
+          </a>
+        </li>
+        <li class="pt-1 pr-1">
+          <a
+            class="d-inline-flex align-items-center p-1"
+            href="https://www.cubcadet.com/en_US/riding-mower-accessories/oil-change-kit/490-950-C042.html#q=490-950-C042&amp;lang=en_US&amp;start=0"
+            ><svg
+              class="mr-1 p-1 border rounded"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -960 960 960"
+              style="width: 32px;"
+            >
+              <path
+                d="M796-121 533-384q-30 26-69.959 40.5T378-329q-108.162 0-183.081-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.125-57.5T572-585q0-81-56.875-138.5T377-781q-82.083 0-139.542 57.5Q180-666 180-585t57.458 138.5Q294.917-389 377-389Z"
+              ></path>
+            </svg>
+            <span>Oil Change Kit</span>
+          </a>
+        </li>
+        <li class="pt-1 pr-1">
+          <a
+            class="d-inline-flex align-items-center p-1"
+            href="https://www.cubcadet.com/en_US/small-engine-parts/kawasaki-engine-maintenance-kit/490-950-C063.html#q=490-950-C063&amp;lang=en_US&amp;start=0"
+            ><svg
+              class="mr-1 p-1 border rounded"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -960 960 960"
+              style="width: 32px;"
+            >
+              <path
+                d="M796-121 533-384q-30 26-69.959 40.5T378-329q-108.162 0-183.081-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.125-57.5T572-585q0-81-56.875-138.5T377-781q-82.083 0-139.542 57.5Q180-666 180-585t57.458 138.5Q294.917-389 377-389Z"
+              ></path>
+            </svg>
+            <span>Kawasaki Engine Maintenance Kits</span>
+          </a>
+        </li>
+        <li class="pt-1 pr-1">
+          <a
+            class="d-inline-flex align-items-center p-1"
+            href="https://www.cubcadet.com/en_US/riding-lawn-mower-parts/riding-mower-belts"
+            ><svg
+              class="mr-1 p-1 border rounded"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -960 960 960"
+              style="width: 32px;"
+            >
+              <path
+                d="M796-121 533-384q-30 26-69.959 40.5T378-329q-108.162 0-183.081-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.125-57.5T572-585q0-81-56.875-138.5T377-781q-82.083 0-139.542 57.5Q180-666 180-585t57.458 138.5Q294.917-389 377-389Z"
+              ></path>
+            </svg>
+            <span>Belts</span>
+          </a>
+        </li>
+        <li class="pt-1 pr-1">
+          <a
+            class="d-inline-flex align-items-center p-1"
+            href="https://www.cubcadet.com/en_US/riding-lawn-mower-parts"
+            ><svg
+              class="mr-1 p-1 border rounded"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -960 960 960"
+              style="width: 32px;"
+            >
+              <path
+                d="M796-121 533-384q-30 26-69.959 40.5T378-329q-108.162 0-183.081-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.125-57.5T572-585q0-81-56.875-138.5T377-781q-82.083 0-139.542 57.5Q180-666 180-585t57.458 138.5Q294.917-389 377-389Z"
+              ></path>
+            </svg>
+            <span>All Riding Mower Parts</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container mt-8">
+    <h3 class="mt-6">Questions &amp; Answers</h3>
+    <div class="border-t">
+      <button
+        class="text-left question cursor-pointer w-100 p-1 border-0 bg-transparent"
+        style="cursor: pointer; font-size: 1.1rem; text-transform: none;"
+        onclick="handleClick(this)"
+      >
+        <ul class="list-unstyled d-flex align-items-center w-100 mb-0">
+          <li class="text-left">
+            What should I consider before buying a riding lawn mower?
+          </li>
+          <li class="ml-auto">
+            <div class="rotate-45" style="transform: rotate(45deg);">✖</div>
+          </li>
+        </ul>
+      </button>
+      <div class="hidden text-xs px-3 pb-2">
+        Cub Cadet® riding lawn mowers are ideal for large properties because
+        their powerful engines and big decks allow you to finish the job faster
+        than a walk-behind mower with a smaller deck size. Matching your lawn
+        mower to the size of your yard is one of the most important
+        considerations. Beyond that, consider the terrain type, obstacles, gates
+        you need to maneuver through, and how much storage space is available.
+        Our
+        <a
+          href="https://www.cubcadet.com/en_US/product-information/knowledge-the-ultimate-lawn-mower-buying-guide.html"
+          >lawn mower buying guide</a
+        >
+        goes into more depth on the differences between Cub Cadet lawn mower
+        options.
+      </div>
+      <div class="border-bottom"></div>
+      <button
+        class="text-left question cursor-pointer w-100 p-1 border-0 bg-transparent"
+        style="cursor: pointer; font-size: 1.1rem; text-transform: none;"
+        onclick="handleClick(this)"
+      >
+        <ul class="list-unstyled d-flex align-items-center w-100 mb-0">
+          <li class="text-left">
+            What is the riding lawn mower best suited for my yard?
+          </li>
+          <li class="ml-auto">
+            <div class="rotate-45" style="transform: rotate(45deg);">✖</div>
+          </li>
+        </ul>
+      </button>
+      <div class="hidden text-xs px-3 pb-2">
+        Riding lawn mowers are great for larger properties, but because Cub
+        Cadet® lawn tractors can accept a variety of lawn mower attachments,
+        there’s no one-size-fits-all model. The ideal lawn mower is the one that
+        is catered most closely to your yard’s needs. First, consider the size
+        of the area you need to mow, the type of terrain and the features you
+        want. Our
+        <a
+          href="https://www.cubcadet.com/en_US/product-finder-riding-mowers.html"
+          >lawn mower product finder</a
+        >
+        guides you step-by-step through all of these considerations to help
+        narrow down your search. Also, the Cub Cadet
+        <a
+          href="https://www.cubcadet.com/en_US/product-information/knowledge-the-ultimate-lawn-mower-buying-guide.html"
+          >lawn mower buying guide</a
+        >
+        goes into more depth on the differences between our riding lawn mower
+        options.
+      </div>
+      <div class="border-bottom"></div>
+      <button
+        class="text-left question cursor-pointer w-100 p-1 border-0 bg-transparent"
+        style="cursor: pointer; font-size: 1.1rem; text-transform: none;"
+        onclick="handleClick(this)"
+      >
+        <ul class="list-unstyled d-flex align-items-center w-100 mb-0">
+          <li class="text-left">
+            When is the best time to buy a riding lawn mower?
+          </li>
+          <li class="ml-auto">
+            <div class="rotate-45" style="transform: rotate(45deg);">✖</div>
+          </li>
+        </ul>
+      </button>
+      <div class="hidden text-xs px-3 pb-2">
+        The mowing season starts in the spring for most of the country, so it’s
+        best to begin your research well before then. While the timing may vary
+        depending on where you live, allow yourself enough time to compare model
+        and test drive options at your local
+        <a
+          href="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&amp;horizontalView=true&amp;isForm=true&amp;rid=dealers"
+          >Cub Cadet® dealer</a
+        >
+        before the mowing season begins.
+      </div>
+      <div class="border-bottom"></div>
+      <button
+        class="text-left question cursor-pointer w-100 p-1 border-0 bg-transparent"
+        style="cursor: pointer; font-size: 1.1rem; text-transform: none;"
+        onclick="handleClick(this)"
+      >
+        <ul class="list-unstyled d-flex align-items-center w-100 mb-0">
+          <li class="text-left">
+            What riding lawn mower can fit through a gate?
+          </li>
+          <li class="ml-auto">
+            <div class="rotate-45" style="transform: rotate(45deg);">✖</div>
+          </li>
+        </ul>
+      </button>
+      <div class="hidden text-xs px-3 pb-2">
+        <a
+          href="https://www.cubcadet.com/en_US/riding-lawn-mowers/small-riding-lawn-mowers"
+          >Cub Cadet® small riding lawn mowers</a
+        >, with their 30-in. deck size, are ideal for smaller properties because
+        of their compact size. If you’re tight on storage space or have a
+        smaller gate you need to regularly maneuver through, this model might be
+        ideal for your needs as it’s designed to fit through most gates. Cub
+        Cadet® offers two types of small riding lawn mowers: the gas
+        <a
+          href="https://www.cubcadet.com/en_US/small-riding-lawn-mower-cc-30-h/13AC21JDA10.html?fitsOnModel=false#start=0"
+          >CC30H</a
+        >
+        and the electric
+        <a
+          href="https://www.cubcadet.com/en_US/electric-riding-mowers/cc30e/33BA27JDB10.html?fitsOnModel=false#prefn1=series&amp;prefv1=XT1%25C2%25AE%2520Enduro%2520Series%25E2%2584%25A2%257CCC30%2520Series&amp;start=3"
+          >CC30E</a
+        >.
+      </div>
+      <div class="border-bottom"></div>
+      <button
+        class="text-left question cursor-pointer w-100 p-1 border-0 bg-transparent"
+        style="cursor: pointer; font-size: 1.1rem; text-transform: none;"
+        onclick="handleClick(this)"
+      >
+        <ul class="list-unstyled d-flex align-items-center w-100 mb-0">
+          <li class="text-left">
+            How do I finance a Cub Cadet riding lawn mower?
+          </li>
+          <li class="ml-auto">
+            <div class="rotate-45" style="transform: rotate(45deg);">✖</div>
+          </li>
+        </ul>
+      </button>
+      <div class="hidden text-xs px-3 pb-2">
+        Cub Cadet® offers a variety of financing plans depending on your budget
+        and your purchase minimum.
+        <a href="https://www.cubcadet.com/en_US/financing">Click here</a> for
+        more details.
+      </div>
+      <div class="border-bottom"></div>
+      <button
+        class="text-left question cursor-pointer w-100 p-1 border-0 bg-transparent"
+        style="cursor: pointer; font-size: 1.1rem; text-transform: none;"
+        onclick="handleClick(this)"
+      >
+        <ul class="list-unstyled d-flex align-items-center w-100 mb-0">
+          <li class="text-left">
+            How do I register my Cub Cadet riding lawn mower?
+          </li>
+          <li class="ml-auto">
+            <div class="rotate-45" style="transform: rotate(45deg);">✖</div>
+          </li>
+        </ul>
+      </button>
+      <div class="hidden text-xs px-3 pb-2">
+        Once you’ve purchased a Cub Cadet® riding lawn mower, you can register
+        your machine
+        <a
+          href="https://www.cubcadet.com/en_US/content-asset-page-includes/registration.html"
+          >here</a
+        >.
+      </div>
+      <div class="border-bottom"></div>
+      <script>
+        const handleClick = (e) => {
+          const el = e.querySelector(".rotate-45");
+          e.nextElementSibling.classList.toggle("hidden");
+          el.classList.toggle("active");
+
+          el.style.transform = el.classList.contains("active")
+            ? "rotate(0)"
+            : "rotate(45deg)";
+        };
+      </script>
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What should I consider before buying a riding lawn mower?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cub Cadet® riding lawn mowers are ideal for large properties because their powerful engines and big decks allow you to finish the job faster than a walk-behind mower with a smaller deck size. Matching your lawn mower to the size of your yard is one of the most important considerations. Beyond that, consider the terrain type, obstacles, gates you need to maneuver through, and how much storage space is available. Our <a href=\"https://www.cubcadet.com/en_US/product-information/knowledge-the-ultimate-lawn-mower-buying-guide.html\">lawn mower buying guide</a> goes into more depth on the differences between Cub Cadet lawn mower options."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the riding lawn mower best suited for my yard?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Riding lawn mowers are great for larger properties, but because Cub Cadet® lawn tractors can accept a variety of lawn mower attachments, there’s no one-size-fits-all model. The ideal lawn mower is the one that is catered most closely to your yard’s needs. First, consider the size of the area you need to mow, the type of terrain and the features you want. Our <a href=\"https://www.cubcadet.com/en_US/product-finder-riding-mowers.html\">lawn mower product finder</a> guides you step-by-step through all of these considerations to help narrow down your search. Also, the Cub Cadet <a href=\"https://www.cubcadet.com/en_US/product-information/knowledge-the-ultimate-lawn-mower-buying-guide.html\">lawn mower buying guide</a> goes into more depth on the differences between our riding lawn mower options."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "When is the best time to buy a riding lawn mower?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The mowing season starts in the spring for most of the country, so it’s best to begin your research well before then. While the timing may vary depending on where you live, allow yourself enough time to compare model and test drive options at your local <a href=\"https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&horizontalView=true&isForm=true&rid=dealers\">Cub Cadet® dealer</a> before the mowing season begins."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What riding lawn mower can fit through a gate?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<a href=\"https://www.cubcadet.com/en_US/riding-lawn-mowers/small-riding-lawn-mowers\">Cub Cadet® small riding lawn mowers</a>, with their 30-in. deck size, are ideal for smaller properties because of their compact size. If you’re tight on storage space or have a smaller gate you need to regularly maneuver through, this model might be ideal for your needs as it’s designed to fit through most gates. Cub Cadet® offers two types of small riding lawn mowers: the gas <a href=\"https://www.cubcadet.com/en_US/small-riding-lawn-mower-cc-30-h/13AC21JDA10.html?fitsOnModel=false#start=0\">CC30H</a> and the electric <a href=\"https://www.cubcadet.com/en_US/electric-riding-mowers/cc30e/33BA27JDB10.html?fitsOnModel=false#prefn1=series&prefv1=XT1%25C2%25AE%2520Enduro%2520Series%25E2%2584%25A2%257CCC30%2520Series&start=3\">CC30E</a>."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I finance a Cub Cadet riding lawn mower?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cub Cadet® offers a variety of financing plans depending on your budget and your purchase minimum. <a href=\"https://www.cubcadet.com/en_US/financing\">Click here</a> for more details."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I register my Cub Cadet riding lawn mower?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Once you’ve purchased a Cub Cadet® riding lawn mower, you can register your machine <a href=\"https://www.cubcadet.com/en_US/content-asset-page-includes/registration.html\">here</a>."
+              }
+            }
+          ]
+        }
+      </script>
+    </div>
+  </div>
+</div>

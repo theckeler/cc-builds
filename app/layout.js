@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
       <head>
         <link
           rel="stylesheet"
-          href="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1704715558743/css/global.css"
+          href="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1709143535542/css/global.css"
         />
       </head>
       <body suppressHydrationWarning={true}>
