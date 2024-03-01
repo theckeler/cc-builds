@@ -38,7 +38,7 @@ export default function HomeCTA2024({
           )}
         </li>
         <li className={"w-full xl:max-w-xl " + content.className}>
-          <h1 className="text-5xl">{content.title}</h1>
+          <h1 className="text-3xl xl:text-5xl">{content.title}</h1>
           <p className="text-base">{content.copy}</p>
           <a href={button.url + " inline-block"} className={button.className}>
             {button.title}

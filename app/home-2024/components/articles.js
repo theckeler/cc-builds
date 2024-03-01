@@ -10,10 +10,11 @@ export default function HomeArticles2024({
   return (
     <div
       className={
-        "h-full grid grid-rows-[300px_1fr] w-full" + container.className
+        "h-full grid grid-rows-[100px_1fr] xl:grid-rows-[300px_1fr] min-w-[300px] xl:w-full" +
+        container.className
       }
     >
-      <div className="relative h-[300px] w-full">
+      <div className="relative w-full">
         <ResponsiveImage
           base={base}
           src={img.src}
@@ -21,7 +22,7 @@ export default function HomeArticles2024({
         />
       </div>
       <div className={"h-full flex flex-col" + " " + content.className}>
-        <h3>{content.title}</h3>
+        <h3 className="text-xl">{content.title}</h3>
         <p className="text-base">{content.copy}</p>
         <a href={button.href} className={"mt-auto " + button.className}>
           Read More

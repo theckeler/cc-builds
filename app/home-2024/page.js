@@ -19,7 +19,8 @@ export default function Home2024() {
       },
       button: {
         title: "Learn More",
-        href: "https://www.cubcadet.com/",
+        href:
+          "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-pick-the-best-zero-turn.html",
         sr: "about Integer sodales leo risus",
         className: "w-full py-2 uppercase font-bold text-sm inline-block",
       },
@@ -34,7 +35,8 @@ export default function Home2024() {
       },
       button: {
         title: "Learn More",
-        href: "https://www.cubcadet.com/",
+        href:
+          "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-change-the-blade-on-your-cub-cadet-rider.html",
         sr: "about Integer sodales leo risus",
         className: "w-full py-2 uppercase font-bold text-sm inline-block",
       },
@@ -49,7 +51,8 @@ export default function Home2024() {
       },
       button: {
         title: "Learn More",
-        href: "https://www.cubcadet.com/",
+        href:
+          "https://www.cubcadet.com/en_US/product-information/electric-riding-mower-right+for-me.html",
         sr: "about Integer sodales leo risus",
         className: "w-full py-2 uppercase font-bold text-sm inline-block",
       },
@@ -58,97 +61,108 @@ export default function Home2024() {
 
   const products = [
     {
-      title: "Zero-Turn Mowers",
+      title: "Zero-turn Lawn Mowers",
       src: "17RIEACZ010_ZT150_hero_rt1_treat_HR_72dpi.webp",
-      href: "https://www.cubcadet.com/",
+      href:
+        "https://www.cubcadet.com/en_US/riding-lawn-mowers/zero-turn-mowers",
     },
     {
-      title: "Riding Mowers",
+      title: "Riding Lawn Mowers",
       src: "13AQA9TTA10_XT1_LT46_RH_rt1_treat_HR_72dpi.webp",
-      href: "https://www.cubcadet.com/",
+      href: "https://www.cubcadet.com/en_US/lawn-mowers/riding-lawn-mowers",
     },
     {
       title: "Commercial Lawn Mowers",
       src: "47RICHB8010_ZTXS660_H_treat_rt3_72dpi.webp",
-      href: "https://www.cubcadet.com/",
+      href: "https://www.cubcadet.com/en_US/commercial-equipment",
     },
     {
       title: "Electric Lawn Mowers",
       src: "34ABA2CS710_ZT1_42E_Rt_rt4_treat_HR_72dpi.webp",
-      href: "https://www.cubcadet.com/",
+      href:
+        "https://www.cubcadet.com/en_US/riding-lawn-mowers/electric-riding-mowers",
     },
     {
       title: "Walk-Behind Lawn Mowers",
       src: "12ABR2MM710_SC900_H_rt1_72dpi.webp",
-      href: "https://www.cubcadet.com/",
+      href: "https://www.cubcadet.com/en_US/lawn-mowers/walk-behind-mowers",
     },
     {
       title: "Snow Blowers",
       src: "31AH5IVTB10_2X_28_RT_rt3_treat_72dpi.webp",
-      href: "https://www.cubcadet.com/",
+      href: "https://www.cubcadet.com/en_US/snow-blowers",
     },
     {
       title: "Utility Vehicles",
       src: "37AZ7CPK710_Challenger550_BLK_0033_shd_rt1_72dpi.webp",
-      href: "https://www.cubcadet.com/",
+      href: "https://www.cubcadet.com/en_US/utility-vehicles",
     },
-    {
-      title: "Cordless Electric Lawn Tools",
-      src: "41AE125C810_ST15E_LPFL_rt2_MOCK_72dpi.webp",
-      href: "https://www.cubcadet.com/",
-    },
+    // {
+    //   title: "Cordless Electric Lawn Tools",
+    //   src: "41AE125C810_ST15E_LPFL_rt2_MOCK_72dpi.webp",
+    //   href: "https://www.cubcadet.com/en_US/utility-vehicles",
+    // },
   ];
 
   const attachments = [
     {
       title: "Riding Baggers",
       src: "17RIEACZ010_ZT150_hero_rt1_treat_HR_72dpi.webp",
-      href: "https://www.cubcadet.com/",
+      href:
+        "https://www.cubcadet.com/en_US/riding-mower-accessories/double-bagger-for-42--and-46-inch-decks/19B30031100.html",
     },
     {
       title: "Zero Turn Baggers",
       src: "13AQA9TTA10_XT1_LT46_RH_rt1_treat_HR_72dpi.webp",
-      href: "https://www.cubcadet.com/",
+      href:
+        "https://www.cubcadet.com/en_US/riding-mower-accessories/double-bagger-for-42--and-46-inch-decks/19A70054100.html",
     },
     {
       title: "Sun Shades",
       src: "47RICHB8010_ZTXS660_H_treat_rt3_72dpi.webp",
-      href: "https://www.cubcadet.com/",
+      href:
+        "https://www.cubcadet.com/en_US/riding-mower-accessories/sun-shade/19B30021100.html",
     },
     {
       title: "Fastattach® Rear Carrier",
       src: "34ABA2CS710_ZT1_42E_Rt_rt4_treat_HR_72dpi.webp",
-      href: "https://www.cubcadet.com/",
+      href:
+        "https://www.cubcadet.com/en_US/riding-mower-accessories/fastattach-rear-cargo-carrier/19B30029100.html",
     },
     {
       title: "Hauler Accessories",
       src: "12ABR2MM710_SC900_H_rt1_72dpi.webp",
-      href: "https://www.cubcadet.com/",
+      href:
+        "https://www.cubcadet.com/en_US/universal-parts/hauler-tool-holder-kit/19A40030OEM.html",
     },
     {
       title: "All-Season Plows",
       src: "31AH5IVTB10_2X_28_RT_rt3_treat_72dpi.webp",
-      href: "https://www.cubcadet.com/",
+      href:
+        "https://www.cubcadet.com/en_US/riding-mower-accessories/fastattach-all-season-plow-blade/19A30037100.html",
     },
     {
       title: "Snow Blower Cab Covering",
       src: "37AZ7CPK710_Challenger550_BLK_0033_shd_rt1_72dpi.webp",
-      href: "https://www.cubcadet.com/",
+      href:
+        "https://www.cubcadet.com/en_US/snow-blower-accessories/universal-snow-blower-cab/490-241-0032.html",
     },
     {
       title: "Tire Chains",
       src: "41AE125C810_ST15E_LPFL_rt2_MOCK_72dpi.webp",
-      href: "https://www.cubcadet.com/",
+      href:
+        "https://www.cubcadet.com/en_US/universal-parts/chains-for-26-x-12-x-12-tires/490-241-0052.html",
     },
     {
       title: "Cutting Decks",
       src: "41AE125C810_ST15E_LPFL_rt2_MOCK_72dpi.webp",
-      href: "https://www.cubcadet.com/",
+      href: "https://www.cubcadet.com/en_US/shop-by-part-type/mower-decks",
     },
     {
       title: "Mulching Kits",
       src: "41AE125C810_ST15E_LPFL_rt2_MOCK_72dpi.webp",
-      href: "https://www.cubcadet.com/",
+      href:
+        "https://www.cubcadet.com/en_US/zero-turn-mower-blades/xtreme-mulching-kit-for-42-inch-cutting-decks/19A30046100.html",
     },
   ];
 
@@ -198,7 +212,7 @@ export default function Home2024() {
             href: "https://www.cubcadet.com/",
             sr: "about Integer sodales leo risus",
             className:
-              "border-2 border-[#ffc20f] px-4 py-1 mt-auto text-[#ffc20f] uppercase no-underline font-bold text-center",
+              "border-2 border-[#ffc20f] px-4 py-1 mt-auto bg-[#ffc20f] text-black text-[#ffc20f] uppercase no-underline font-bold text-center w-full md:w-auto",
           }}
           img={{ src: "31AM5HVSB56_2X26_Inteli_env02.jpg", hero: true }}
         />
@@ -226,17 +240,27 @@ export default function Home2024() {
           }}
           button={{
             title: "Learn More",
-            href: "https://www.cubcadet.com/",
+            href:
+              "https://www.cubcadet.com/en_US/ultima-series-features-benefits.html",
             sr: "Maecenas tristique lacus ante",
             className:
-              "border-2 border-black px-4 py-1 mt-auto uppercase no-underline font-bold text-center",
+              "border-2 border-black px-4 py-1 mt-auto uppercase no-underline font-bold text-center bg-black text-[#ffc20f] w-full md:w-auto",
           }}
           videoID="x-_qooDWr1c"
+          className="mb-3"
         />
 
-        <section className="p-3">
-          <div className="flex justify-center container bg-gray-200 p-32">
-            Product Finder
+        <section className="bg-[#efefef] mb-3">
+          <div className="flex justify-center container p-2 ">
+            <div id="product-finder-zero-turns">
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `
+              (function(c,a,r,t,f,u,l){c[u]=c[u]||function(){(c[u].q=c[u].q||[]).push(arguments)},l=a.createElement(r),l.async=1,l.id=u+"scr",l.src=f,a[t].appendChild(l)})(window,document,"script","body","//embed.cartfulsolutions.com/zero-turn-finder/recommendation.min.js","cfl659");
+              `,
+                }}
+              ></script>
+            </div>
           </div>
         </section>
 
@@ -251,10 +275,11 @@ export default function Home2024() {
           }}
           button={{
             title: "Find a Dealer",
-            url: "https://www.cubcadet.com/",
+            url:
+              "https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find",
             sr: "about Integer sodales leo risus",
             className:
-              "border-2 border-white px-4 py-1 mt-auto text-white uppercase no-underline font-bold text-center",
+              "border-2 border-white px-4 py-1 mt-auto text-black uppercase no-underline font-bold text-center bg-white w-full md:w-auto",
           }}
           img={{ src: "OutdoorSale-0323_HR_rt3_72dpi.webp" }}
         />
@@ -285,8 +310,8 @@ export default function Home2024() {
                 </li>
               </ul>
               <a
-                href="#"
-                className="border-2 border-black px-4 py-1 mt-auto uppercase no-underline font-bold text-center inline-block"
+                href="https://www.cubcadet.com/en_US/financing"
+                className="border-2 border-black px-4 py-1 mt-auto uppercase no-underline font-bold text-center inline-block bg-black text-white w-full md:w-auto"
               >
                 Learn More
                 <span className="sr-only"> Nulla et libero eu nibh</span>
@@ -326,9 +351,9 @@ export default function Home2024() {
             className="flex mb-2"
           />
 
-          <ul className="flex gap-6 max-w-[100vw] overflow-x-scroll no-scrollbar">
+          <ul className="flex xl:grid xl:grid-cols-3 gap-6 max-w-[100vw] overflow-x-scroll no-scrollbar">
             {howTos.map((block, i) => (
-              <li className="relative min-w-[300px]" key={i}>
+              <li className="relative" key={i}>
                 <HomeArticles2024
                   container={block.container}
                   base={base}
@@ -344,7 +369,11 @@ export default function Home2024() {
 
       <section className="mt-3 bg-gray-100 py-10 p-3">
         <div className="max-w-[1536px] mx-auto">
-          <Home2024H2 title="Shop Attachments" href="#" className="flex mb-1" />
+          <Home2024H2
+            title="Shop Attachments"
+            href="https://www.cubcadet.com/en_US/riding-lawn-mowers/riding-mower-accessories"
+            className="flex mb-1"
+          />
 
           <Home2024ScrollContainer
             base={base}
