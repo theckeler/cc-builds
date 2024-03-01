@@ -294,7 +294,6 @@ export default function Home2024() {
             </li>
           </ul>
         </div>
-        {/* <div className="absolute h-[420px] w-full bottom-0 left-0 bg-[#ececec]" /> */}
       </section>
 
       <div className="px-3 max-w-[1536px] mx-auto">
