@@ -107,60 +107,60 @@ export default function Home2024() {
   const attachments = [
     {
       title: "Riding Baggers",
-      src: "17RIEACZ010_ZT150_hero_rt1_treat_HR_72dpi.webp",
+      src: "riding-mower-bag.webp",
       href:
         "https://www.cubcadet.com/en_US/riding-mower-accessories/double-bagger-for-42--and-46-inch-decks/19B30031100.html",
     },
     {
       title: "Zero Turn Baggers",
-      src: "13AQA9TTA10_XT1_LT46_RH_rt1_treat_HR_72dpi.webp",
+      src: "zero-turn-mower-bag.webp",
       href:
         "https://www.cubcadet.com/en_US/riding-mower-accessories/double-bagger-for-42--and-46-inch-decks/19A70054100.html",
     },
     {
       title: "Sun Shades",
-      src: "47RICHB8010_ZTXS660_H_treat_rt3_72dpi.webp",
+      src: "sun-shade.webp",
       href:
         "https://www.cubcadet.com/en_US/riding-mower-accessories/sun-shade/19B30021100.html",
     },
     {
       title: "Fastattach® Rear Carrier",
-      src: "34ABA2CS710_ZT1_42E_Rt_rt4_treat_HR_72dpi.webp",
+      src: "FASTATTACH-rear-carrier.webp",
       href:
         "https://www.cubcadet.com/en_US/riding-mower-accessories/fastattach-rear-cargo-carrier/19B30029100.html",
     },
     {
       title: "Hauler Accessories",
-      src: "12ABR2MM710_SC900_H_rt1_72dpi.webp",
+      src: "hauler-accesories.webp",
       href:
         "https://www.cubcadet.com/en_US/universal-parts/hauler-tool-holder-kit/19A40030OEM.html",
     },
     {
       title: "All-Season Plows",
-      src: "31AH5IVTB10_2X_28_RT_rt3_treat_72dpi.webp",
+      src: "all-season-plow.webp",
       href:
         "https://www.cubcadet.com/en_US/riding-mower-accessories/fastattach-all-season-plow-blade/19A30037100.html",
     },
     {
       title: "Snow Blower Cab Covering",
-      src: "37AZ7CPK710_Challenger550_BLK_0033_shd_rt1_72dpi.webp",
+      src: "snow-blower-cab-covering.webp",
       href:
         "https://www.cubcadet.com/en_US/snow-blower-accessories/universal-snow-blower-cab/490-241-0032.html",
     },
     {
       title: "Tire Chains",
-      src: "41AE125C810_ST15E_LPFL_rt2_MOCK_72dpi.webp",
+      src: "tire-chains.webp",
       href:
         "https://www.cubcadet.com/en_US/universal-parts/chains-for-26-x-12-x-12-tires/490-241-0052.html",
     },
     {
       title: "Cutting Decks",
-      src: "41AE125C810_ST15E_LPFL_rt2_MOCK_72dpi.webp",
+      src: "XT2_LX42_deck_top_F1.webp",
       href: "https://www.cubcadet.com/en_US/shop-by-part-type/mower-decks",
     },
     {
       title: "Mulching Kits",
-      src: "41AE125C810_ST15E_LPFL_rt2_MOCK_72dpi.webp",
+      src: "mulching-kit.webp",
       href:
         "https://www.cubcadet.com/en_US/zero-turn-mower-blades/xtreme-mulching-kit-for-42-inch-cutting-decks/19A30046100.html",
     },
@@ -275,7 +275,7 @@ export default function Home2024() {
           }}
           button={{
             title: "Find a Dealer",
-            url:
+            href:
               "https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find",
             sr: "about Integer sodales leo risus",
             className:

@@ -3,7 +3,7 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 export default function Home2024LinkBlock({ base, addBlock = false, product }) {
   return (
     <a
-      href=""
+      href={product.href}
       className="w-[300px] h-full group relative z-10 no-underline bg-white block"
     >
       <div className="relative z-10 flex flex-col h-full">

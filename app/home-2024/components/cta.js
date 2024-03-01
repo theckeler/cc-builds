@@ -40,7 +40,7 @@ export default function HomeCTA2024({
         <li className={"w-full xl:max-w-xl " + content.className}>
           <h1 className="text-3xl xl:text-5xl">{content.title}</h1>
           <p className="text-base">{content.copy}</p>
-          <a href={button.url + " inline-block"} className={button.className}>
+          <a href={button.href} className={button.className + " inline-block"}>
             {button.title}
             <span className="sr-only"> {button.sr}</span>
           </a>
