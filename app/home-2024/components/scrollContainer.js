@@ -11,7 +11,7 @@ export default function Home2024ScrollContainer({
   const moveMe = (e, dir) => {
     const el = e.currentTarget.closest(".scroll-container");
     const scrollWidth = el.scrollWidth;
-    const scrollMe = scrollWidth / 2;
+    const scrollMe = scrollWidth / 1.5;
     const scrollContainer = el.querySelector(".scroll-me");
     const scrollPos = scrollContainer.scrollLeft;
 
@@ -26,11 +26,7 @@ export default function Home2024ScrollContainer({
         const contentWidth = scroll.currentTarget.scrollWidth;
         const scrollLeft = scroll.currentTarget.scrollLeft;
 
-        const isEndReached = contentWidth - scrollLeft <= containerWidth;
-        console.log("isEndReached: ", isEndReached);
-
-        // Toggle "hidden" class based on scroll position
-        if (isEndReached) {
+        if (contentWidth - scrollLeft <= containerWidth) {
           el.parentElement.querySelector(".forward").classList.add("hidden");
         } else {
           el.parentElement.querySelector(".forward").classList.remove("hidden");

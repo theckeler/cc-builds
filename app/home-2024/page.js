@@ -2,7 +2,6 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 import HomeArticles2024 from "./components/articles";
 import HomeCTA2024 from "./components/cta";
 import Home2024H2 from "./components/h2";
-import HomePromo2024 from "./components/promo";
 import Home2024ScrollContainer from "./components/scrollContainer";
 
 export default function Home2024() {
@@ -251,7 +250,7 @@ export default function Home2024() {
             copy: `Maximize your Cub Cadet experience with expert service and browse your local dealers wide product selection online. Schedule a test drive today.`,
           }}
           button={{
-            title: "Learn More",
+            title: "Find a Dealer",
             url: "https://www.cubcadet.com/",
             sr: "about Integer sodales leo risus",
             className:
@@ -262,7 +261,8 @@ export default function Home2024() {
       </div>
 
       <section className="relative lg:pt-36">
-        <div className="bg-[#ececec]">
+        <div className="bg-[#ececec] relative">
+          <div className="lg:hidden absolute top-0 left-0 w-full h-full max-h-28 bg-white" />
           <ul className="grid grid-cols-1 lg:grid-cols-2 max-w-[800px] mx-auto relative z-10 p-5">
             <li className="col-start-1 lg:col-start-2 lg:row-start-1 relative">
               <ResponsiveImage
@@ -297,7 +297,7 @@ export default function Home2024() {
       </section>
 
       <div className="px-3 max-w-[1536px] mx-auto">
-        <section className="mt-3">
+        {/* <section className="mt-3">
           <h2 className="text-3xl">More From Cub Cadet</h2>
 
           <ul className="flex gap-6 max-w-[100vw] overflow-y-scroll pb-3">
@@ -317,7 +317,7 @@ export default function Home2024() {
               </li>
             ))}
           </ul>
-        </section>
+        </section> */}
 
         <section className="mt-3">
           <Home2024H2
