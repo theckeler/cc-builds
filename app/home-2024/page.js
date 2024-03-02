@@ -197,9 +197,9 @@ export default function Home2024() {
 
   return (
     <div id="sdb-container">
-      <div className="px-3 max-w-[1536px] mx-auto">
+      <div className="px-2 pt-2 px-md-3 pt-md-3 max-w-[1536px] mx-auto">
         <HomeCTA2024
-          className="pt-3 mb-3"
+          className="mb-3"
           base={base}
           content={{
             className:
