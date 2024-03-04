@@ -4,7 +4,7 @@ export default function Home2024LinkBlock({ base, addBlock = false, product }) {
   return (
     <a
       href={product.href}
-      className="w-[300px] h-full group relative z-10 no-underline bg-white block"
+      className="w-[50vw] md:w-[300px] h-full group relative z-10 no-underline bg-white block"
     >
       <div className="relative z-10 flex flex-col h-full">
         <ResponsiveImage
@@ -14,7 +14,7 @@ export default function Home2024LinkBlock({ base, addBlock = false, product }) {
           alt=""
           className="w-full"
         />
-        <h3 className="text-sm uppercase text-center px-10 pb-1 group-hover:text-black mt-auto">
+        <h3 className="text-xs md:text-sm uppercase text-center px-10 pb-1 group-hover:text-black mt-auto">
           {product.title}
         </h3>
       </div>

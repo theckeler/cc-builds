@@ -22,8 +22,10 @@ export default function HomeArticles2024({
         />
       </div>
       <div className={"h-full flex flex-col" + " " + content.className}>
-        <h3 className="text-xl">{content.title}</h3>
-        <p className="text-base">{content.copy}</p>
+        <h3 className="text-lg/5 sm:text-xl">{content.title}</h3>
+        <p className="line-clamp-2 lg:line-clamp-4 text-sm md:text-base">
+          {content.copy}
+        </p>
         <a href={button.href} className={"mt-auto " + button.className}>
           Read More
           <span className="sr-only"> Phasellus nec suscipit metus</span>

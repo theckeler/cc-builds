@@ -197,7 +197,7 @@ export default function Home2024() {
 
   return (
     <div id="sdb-container">
-      <div className="px-2 pt-2 px-md-3 pt-md-3 max-w-[1536px] mx-auto">
+      <div className="px-1 pt-1 px-md-3 pt-md-3 max-w-[1536px] mx-auto">
         <HomeCTA2024
           className="mb-3"
           base={base}
@@ -206,6 +206,7 @@ export default function Home2024() {
               "p-4 bg-black text-white w-[30%] flex flex-col items-start",
             title: "Do More This Spring",
             copy: `20% Off Fleet discount. Valid March 1-31, 2024`,
+            hero: true,
           }}
           button={{
             title: "Learn More",
@@ -218,13 +219,14 @@ export default function Home2024() {
         />
 
         <section className="mb-3">
-          {/* <Home2024H2
+          <Home2024H2
             title="Shop Products"
             href="#"
             className="flex mb-2 items-center"
-          /> */}
+            noLink
+          />
 
-          <h2 className="text-2xl xl:text-3xl">Shop Products</h2>
+          {/* <h2 className="text-2xl xl:text-3xl">Shop Products</h2> */}
 
           <Home2024ScrollContainer
             base={base}
@@ -253,7 +255,7 @@ export default function Home2024() {
         />
 
         <section className="bg-[#efefef] mb-3">
-          <div className="flex justify-center container p-2 ">
+          <div className="">
             <div id="product-finder-zero-turns">
               <script
                 dangerouslySetInnerHTML={{
@@ -301,10 +303,10 @@ export default function Home2024() {
               />
             </li>
             <li className="col-start-1 lg:col-start-1 lg:row-start-1 relative z-10">
-              <h2 className="text-3xl mb-2">
+              <h2 className="text-xl sm:text-xl xl:text-3xl mb-2">
                 Exceptional Financing Offers Available*
               </h2>
-              <ul className="flex gap-1 mb-2">
+              <ul className="flex gap-1 mb-2 text-xs md:text-base">
                 <li>*</li>
                 <li>
                   Offers subject to credit approval. <br />
@@ -313,7 +315,7 @@ export default function Home2024() {
               </ul>
               <a
                 href="https://www.cubcadet.com/en_US/financing"
-                className="border-2 border-black px-4 py-1 mt-auto uppercase no-underline font-bold text-center inline-block bg-black text-white w-full md:w-auto"
+                className="border-2 border-black px-4 py-1 mt-auto uppercase no-underline font-bold text-center bg-black text-white w-full md:w-auto min-h-[48px] flex items-center justify-center"
               >
                 Learn More
                 <span className="sr-only"> Nulla et libero eu nibh</span>
@@ -347,11 +349,7 @@ export default function Home2024() {
         </section> */}
 
         <section className="mt-3">
-          <Home2024H2
-            title="How-Tos & Articles"
-            href="#"
-            className="flex mb-2"
-          />
+          <Home2024H2 title="How-Tos & Articles" href="#" className="mb-2" />
 
           <ul className="flex xl:grid xl:grid-cols-3 gap-6 max-w-[100vw] overflow-x-scroll no-scrollbar">
             {howTos.map((block, i) => (
@@ -374,7 +372,7 @@ export default function Home2024() {
           <Home2024H2
             title="Shop Attachments"
             href="https://www.cubcadet.com/en_US/riding-lawn-mowers/riding-mower-accessories"
-            className="flex mb-1"
+            className="mb-1"
           />
 
           <Home2024ScrollContainer

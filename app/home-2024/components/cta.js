@@ -4,7 +4,6 @@ export default function HomeCTA2024({
   base,
   content,
   button,
-  src,
   videoID,
   className,
   img,
@@ -12,7 +11,7 @@ export default function HomeCTA2024({
   return (
     <section className={className}>
       <ul className="w-full flex flex-col xl:flex-row justify-center">
-        <li className="relative min-h-[420px] w-full xl:max-w-6xl">
+        <li className="relative min-h-[180px] lg:min-h-[420px] w-full xl:max-w-6xl">
           {videoID ? (
             <iframe
               width="560"
@@ -38,9 +37,12 @@ export default function HomeCTA2024({
           )}
         </li>
         <li className={"w-full xl:max-w-xl " + content.className}>
-          <h1 className="text-3xl xl:text-5xl">{content.title}</h1>
-          <p className="text-base">{content.copy}</p>
-          <a href={button.href} className={button.className + " inline-block"}>
+          <h2 className="text-xl md:text-3xl xl:text-5xl">{content.title}</h2>
+          <p className="text-sm sm:text-base leading-5">{content.copy}</p>
+          <a
+            href={button.href}
+            className={button.className + " min-h-[48px] flex items-center justify-center"}
+          >
             {button.title}
             <span className="sr-only"> {button.sr}</span>
           </a>
