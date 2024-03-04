@@ -295,7 +295,7 @@ export default function Home2024() {
           <ul className="grid grid-cols-1 lg:grid-cols-2 max-w-[800px] mx-auto relative z-10 p-5">
             <li className="col-start-1 lg:col-start-2 lg:row-start-1 relative">
               <ResponsiveImage
-                id="Inteli_env02"
+                id="cub-cadet-credit-card"
                 src="cub-cadet-credit-card-2.webp"
                 base={base}
                 alt=""

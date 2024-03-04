@@ -69,7 +69,7 @@ export default function ResponsiveImage({
       alt={alt}
       className={className}
       style={style}
-      id={id ? `${id}-jpg` : ""}
+      id={id ? `${id}-img` : ""}
       src={imgSrc}
       width={width ? width : "auto"}
       height={height ? height : "auto"}

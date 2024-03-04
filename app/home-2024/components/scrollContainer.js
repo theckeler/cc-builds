@@ -63,6 +63,7 @@ export default function Home2024ScrollContainer({
                 base={base}
                 addBlock={addBlock}
                 product={product}
+                className="w-full h-auto"
               />
             </li>
           ))}

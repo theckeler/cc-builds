@@ -1,6 +1,11 @@
 import ResponsiveImage from "@/components/ResponsiveImage";
 
-export default function Home2024LinkBlock({ base, addBlock = false, product }) {
+export default function Home2024LinkBlock({
+  base,
+  addBlock = false,
+  product,
+  className,
+}) {
   return (
     <a
       href={product.href}
@@ -12,7 +17,7 @@ export default function Home2024LinkBlock({ base, addBlock = false, product }) {
           src={product.src}
           base={base}
           alt=""
-          className="w-full"
+          className={className}
           width="300"
           height="300"
         />
