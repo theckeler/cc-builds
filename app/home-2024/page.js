@@ -210,12 +210,12 @@ export default function Home2024() {
           }}
           button={{
             title: "Learn More",
-            href: "https://www.cubcadet.com/",
+            href: "https://www.cubcadet.com/en_US/seasonal-offers.html",
             sr: "about Integer sodales leo risus",
             className:
               "border-2 border-[#ffc20f] px-4 py-1 mt-auto bg-[#ffc20f] text-black text-[#ffc20f] uppercase no-underline font-bold text-center w-full md:w-auto",
           }}
-          img={{ src: "31AM5HVSB56_2X26_Inteli_env02.jpg", hero: true }}
+          img={{ src: "53RZ3CSB050_ProX_636_Env_08_rt1.webp", hero: true }}
         />
 
         <section className="mb-3">
@@ -225,8 +225,6 @@ export default function Home2024() {
             className="flex mb-2 items-center"
             noLink
           />
-
-          {/* <h2 className="text-2xl xl:text-3xl">Shop Products</h2> */}
 
           <Home2024ScrollContainer
             base={base}
@@ -349,7 +347,11 @@ export default function Home2024() {
         </section> */}
 
         <section className="mt-3">
-          <Home2024H2 title="How-Tos & Articles" href="#" className="mb-2" />
+          <Home2024H2
+            title="How-Tos & Articles"
+            href="https://www.cubcadet.com/en_US/knowledge-center.html"
+            className="mb-2"
+          />
 
           <ul className="flex xl:grid xl:grid-cols-3 gap-6 max-w-[100vw] overflow-x-scroll no-scrollbar">
             {howTos.map((block, i) => (
