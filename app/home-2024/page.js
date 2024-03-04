@@ -218,11 +218,13 @@ export default function Home2024() {
         />
 
         <section className="mb-3">
-          <Home2024H2
+          {/* <Home2024H2
             title="Shop Products"
             href="#"
             className="flex mb-2 items-center"
-          />
+          /> */}
+
+          <h2 className="text-2xl xl:text-3xl">Shop Products</h2>
 
           <Home2024ScrollContainer
             base={base}
@@ -259,7 +261,7 @@ export default function Home2024() {
               (function(c,a,r,t,f,u,l){c[u]=c[u]||function(){(c[u].q=c[u].q||[]).push(arguments)},l=a.createElement(r),l.async=1,l.id=u+"scr",l.src=f,a[t].appendChild(l)})(window,document,"script","body","//embed.cartfulsolutions.com/zero-turn-finder/recommendation.min.js","cfl659");
               `,
                 }}
-              ></script>
+              />
             </div>
           </div>
         </section>
