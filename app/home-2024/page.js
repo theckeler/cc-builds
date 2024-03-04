@@ -11,7 +11,7 @@ export default function Home2024() {
   const howTos = [
     {
       container: { className: "bg-gray-100" },
-      img: { src: "zero-turn.webp" },
+      img: { src: "zero-turn.webp?resize=480x300" },
       content: {
         className: "p-2",
         title: "How to Pick the Best Zero-Turn Lawn Mower",
@@ -27,7 +27,7 @@ export default function Home2024() {
     },
     {
       container: { className: "bg-gray-100" },
-      img: { src: "chnage-blades.webp" },
+      img: { src: "chnage-blades.webp?width=480" },
       content: {
         className: "p-2",
         title: "How to Change a Blade on a Riding Lawn Mower",
@@ -62,39 +62,40 @@ export default function Home2024() {
   const products = [
     {
       title: "Zero-turn Lawn Mowers",
-      src: "17RIEACZ010_ZT150_hero_rt1_treat_HR_72dpi.webp",
+      src: "17RIEACZ010_ZT150_hero_rt1_treat_HR_72dpi.webp?resize=300x300",
       href:
         "https://www.cubcadet.com/en_US/riding-lawn-mowers/zero-turn-mowers",
     },
     {
       title: "Riding Lawn Mowers",
-      src: "13AQA9TTA10_XT1_LT46_RH_rt1_treat_HR_72dpi.webp",
+      src: "13AQA9TTA10_XT1_LT46_RH_rt1_treat_HR_72dpi.webp?resize=300x300",
       href: "https://www.cubcadet.com/en_US/lawn-mowers/riding-lawn-mowers",
     },
     {
       title: "Commercial Lawn Mowers",
-      src: "47RICHB8010_ZTXS660_H_treat_rt3_72dpi.webp",
+      src: "47RICHB8010_ZTXS660_H_treat_rt3_72dpi.webp?resize=300x300",
       href: "https://www.cubcadet.com/en_US/commercial-equipment",
     },
     {
       title: "Electric Lawn Mowers",
-      src: "34ABA2CS710_ZT1_42E_Rt_rt4_treat_HR_72dpi.webp",
+      src: "34ABA2CS710_ZT1_42E_Rt_rt4_treat_HR_72dpi.webp?resize=300x300",
       href:
         "https://www.cubcadet.com/en_US/riding-lawn-mowers/electric-riding-mowers",
     },
     {
       title: "Walk-Behind Lawn Mowers",
-      src: "12ABR2MM710_SC900_H_rt1_72dpi.webp",
+      src: "12ABR2MM710_SC900_H_rt1_72dpi.webp?resize=300x300",
       href: "https://www.cubcadet.com/en_US/lawn-mowers/walk-behind-mowers",
     },
     {
       title: "Snow Blowers",
-      src: "31AH5IVTB10_2X_28_RT_rt3_treat_72dpi.webp",
+      src: "31AH5IVTB10_2X_28_RT_rt3_treat_72dpi.webp?resize=300x300",
       href: "https://www.cubcadet.com/en_US/snow-blowers",
     },
     {
       title: "Utility Vehicles",
-      src: "37AZ7CPK710_Challenger550_BLK_0033_shd_rt1_72dpi.webp",
+      src:
+        "37AZ7CPK710_Challenger550_BLK_0033_shd_rt1_72dpi.webp?resize=300x300",
       href: "https://www.cubcadet.com/en_US/utility-vehicles",
     },
     // {
@@ -107,60 +108,60 @@ export default function Home2024() {
   const attachments = [
     {
       title: "Riding Baggers",
-      src: "riding-mower-bag.webp",
+      src: "riding-mower-bag.webp?resize=300x300",
       href:
         "https://www.cubcadet.com/en_US/riding-mower-accessories/double-bagger-for-42--and-46-inch-decks/19B30031100.html",
     },
     {
       title: "Zero Turn Baggers",
-      src: "zero-turn-mower-bag.webp",
+      src: "zero-turn-mower-bag.webp?resize=300x300",
       href:
         "https://www.cubcadet.com/en_US/riding-mower-accessories/double-bagger-for-42--and-46-inch-decks/19A70054100.html",
     },
     {
       title: "Sun Shades",
-      src: "sun-shade.webp",
+      src: "sun-shade.webp?resize=300x300",
       href:
         "https://www.cubcadet.com/en_US/riding-mower-accessories/sun-shade/19B30021100.html",
     },
     {
       title: "Fastattach® Rear Carrier",
-      src: "FASTATTACH-rear-carrier.webp",
+      src: "FASTATTACH-rear-carrier.webp?resize=300x300",
       href:
         "https://www.cubcadet.com/en_US/riding-mower-accessories/fastattach-rear-cargo-carrier/19B30029100.html",
     },
     {
       title: "Hauler Accessories",
-      src: "hauler-accesories.webp",
+      src: "hauler-accesories.webp?resize=300x300",
       href:
         "https://www.cubcadet.com/en_US/universal-parts/hauler-tool-holder-kit/19A40030OEM.html",
     },
     {
       title: "All-Season Plows",
-      src: "all-season-plow.webp",
+      src: "all-season-plow.webp?resize=300x300",
       href:
         "https://www.cubcadet.com/en_US/riding-mower-accessories/fastattach-all-season-plow-blade/19A30037100.html",
     },
     {
       title: "Snow Blower Cab Covering",
-      src: "snow-blower-cab-covering.webp",
+      src: "snow-blower-cab-covering.webp?resize=300x300",
       href:
         "https://www.cubcadet.com/en_US/snow-blower-accessories/universal-snow-blower-cab/490-241-0032.html",
     },
     {
       title: "Tire Chains",
-      src: "tire-chains.webp",
+      src: "tire-chains.webp?resize=300x300",
       href:
         "https://www.cubcadet.com/en_US/universal-parts/chains-for-26-x-12-x-12-tires/490-241-0052.html",
     },
     {
       title: "Cutting Decks",
-      src: "XT2_LX42_deck_top_F1.webp",
+      src: "XT2_LX42_deck_top_F1.webp?resize=300x300",
       href: "https://www.cubcadet.com/en_US/shop-by-part-type/mower-decks",
     },
     {
       title: "Mulching Kits",
-      src: "mulching-kit.webp",
+      src: "mulching-kit.webp?resize=300x300",
       href:
         "https://www.cubcadet.com/en_US/zero-turn-mower-blades/xtreme-mulching-kit-for-42-inch-cutting-decks/19A30046100.html",
     },
@@ -203,9 +204,10 @@ export default function Home2024() {
           base={base}
           content={{
             className:
-              "p-4 bg-black text-white w-[30%] flex flex-col items-start",
+              "p-2 lg:p-4 bg-black text-white w-[30%] flex flex-col items-start",
             title: "Do More This Spring",
-            copy: `20% Off Fleet discount. Valid March 1-31, 2024.`,
+            subTitle: `20% Off Fleet discount. Valid March 1-31, 2024.`,
+            copy: `This offer applies to all PRO Z 700 models, PRO Z 900 models and PRO X 600 models, only at participating dealers and online for shipments only in the 48 contiguous states.`,
             hero: true,
           }}
           button={{
@@ -236,7 +238,8 @@ export default function Home2024() {
         <HomeCTA2024
           base={base}
           content={{
-            className: "p-4 bg-[#ffc20f] w-[30%] flex flex-col items-start",
+            className:
+              "p-2 lg:p-4 bg-[#ffc20f] w-[30%] flex flex-col items-start",
             title: "Experience the Ultimate Lineup",
             copy: `Cub Cadet offers a variety of products tough enough to help tackle whatever you throw at it.`,
           }}
@@ -271,7 +274,7 @@ export default function Home2024() {
           base={base}
           content={{
             className:
-              "p-4 bg-black text-white w-[30%] flex flex-col items-start",
+              "p-2 lg:p-4 bg-black text-white w-[30%] flex flex-col items-start",
             title: "Find a Dealer Today",
             copy: `Maximize your Cub Cadet experience with expert service and browse your local dealers wide product selection online. Schedule a test drive today.`,
           }}
@@ -290,7 +293,7 @@ export default function Home2024() {
       <section className="relative lg:pt-36">
         <div className="bg-[#ececec] relative">
           <div className="lg:hidden absolute top-0 left-0 w-full h-full max-h-28 bg-white" />
-          <ul className="grid grid-cols-1 lg:grid-cols-2 max-w-[800px] mx-auto relative z-10 p-5">
+          <ul className="grid grid-cols-1 lg:grid-cols-2 max-w-[800px] mx-auto relative z-10 p-2 p-md-5">
             <li className="col-start-1 lg:col-start-2 lg:row-start-1 relative">
               <ResponsiveImage
                 id="cub-cadet-credit-card"

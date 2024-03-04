@@ -38,6 +38,7 @@ export default function HomeCTA2024({
         </li>
         <li className={"w-full xl:max-w-xl " + content.className}>
           <h2 className="text-xl md:text-3xl xl:text-5xl">{content.title}</h2>
+          <h3 className="text-lg md:text-xl">{content.subTitle}</h3>
           <p className="text-sm sm:text-base leading-5">{content.copy}</p>
           <a
             href={button.href}
