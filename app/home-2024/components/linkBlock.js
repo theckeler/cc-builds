@@ -13,6 +13,8 @@ export default function Home2024LinkBlock({ base, addBlock = false, product }) {
           base={base}
           alt=""
           className="w-full"
+          width="300"
+          height="300"
         />
         <h3 className="text-xs md:text-sm uppercase text-center px-10 pb-1 group-hover:text-black mt-auto">
           {product.title}

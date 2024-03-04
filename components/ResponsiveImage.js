@@ -10,6 +10,8 @@ export default function ResponsiveImage({
   hero = undefined,
   webp = undefined,
   base = undefined,
+  width = undefined,
+  height = undefined,
 }) {
   const breakpoints = [2048, 1920, 1366, 1025, 768, 544];
   const imgSrc = base ? base + src : src;
@@ -39,7 +41,7 @@ export default function ResponsiveImage({
       if (id) {
         sizes += `100vw`;
 
-        const jpgElement = document.querySelector("#" + id + "-jpg");
+        const jpgElement = document.querySelector("#" + id + "-img");
         if (jpgElement) {
           jpgElement.setAttribute(
             "srcset",
@@ -49,7 +51,7 @@ export default function ResponsiveImage({
         }
 
         if (webp) {
-          const webpElement = document.querySelector("#" + id + "-webp");
+          const webpElement = document.querySelector("#" + id + "-img");
           if (webpElement) {
             webpElement.setAttribute("sizes", sizes);
             webpElement.setAttribute(
@@ -69,6 +71,8 @@ export default function ResponsiveImage({
       style={style}
       id={id ? `${id}-jpg` : ""}
       src={imgSrc}
+      width={width ? width : "auto"}
+      height={height ? height : "auto"}
       // HERO:
       rel={hero ? "preload" : undefined}
       as={hero ? "image" : undefined}
