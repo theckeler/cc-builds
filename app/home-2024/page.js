@@ -205,7 +205,7 @@ export default function Home2024() {
             className:
               "p-4 bg-black text-white w-[30%] flex flex-col items-start",
             title: "Do More This Spring",
-            copy: `20% Off Fleet discount. Valid March 1-31, 2024`,
+            copy: `20% Off Fleet discount. Valid March 1-31, 2024.`,
             hero: true,
           }}
           button={{
