@@ -133,7 +133,8 @@ export default function Home2024() {
     {
       title: "Hauler Accessories",
       src: "hauler-accesories.webp?resize=300x300",
-      href: "https://www.cubcadet.com/en_US/shop-by-part-type/mower-decks",
+      href:
+        "https://www.cubcadet.com/en_US/universal-parts/hauler-tool-holder-kit/19A40030OEM.html",
     },
     {
       title: "All-Season Plows",
