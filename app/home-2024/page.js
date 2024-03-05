@@ -110,13 +110,13 @@ export default function Home2024() {
       title: "Riding Baggers",
       src: "riding-mower-bag.webp?resize=300x300",
       href:
-        "https://www.cubcadet.com/en_US/riding-mower-accessories/double-bagger-for-42--and-46-inch-decks/19B30031100.html",
+        "https://www.cubcadet.com/en_US/riding-mower-accessories/baggers-and-grass-collectors",
     },
     {
       title: "Zero Turn Baggers",
       src: "zero-turn-mower-bag.webp?resize=300x300",
       href:
-        "https://www.cubcadet.com/en_US/riding-mower-accessories/double-bagger-for-42--and-46-inch-decks/19A70054100.html",
+        "https://www.cubcadet.com/en_US/zero-turn-mower-accessories/baggers-and-grass-collectors",
     },
     {
       title: "Sun Shades",
@@ -133,8 +133,7 @@ export default function Home2024() {
     {
       title: "Hauler Accessories",
       src: "hauler-accesories.webp?resize=300x300",
-      href:
-        "https://www.cubcadet.com/en_US/universal-parts/hauler-tool-holder-kit/19A40030OEM.html",
+      href: "https://www.cubcadet.com/en_US/shop-by-part-type/mower-decks",
     },
     {
       title: "All-Season Plows",
@@ -163,7 +162,7 @@ export default function Home2024() {
       title: "Mulching Kits",
       src: "mulching-kit.webp?resize=300x300",
       href:
-        "https://www.cubcadet.com/en_US/zero-turn-mower-blades/xtreme-mulching-kit-for-42-inch-cutting-decks/19A30046100.html",
+        "https://www.cubcadet.com/en_US/riding-mower-accessories/mulching-kits",
     },
   ];
 
@@ -231,7 +230,7 @@ export default function Home2024() {
           <Home2024ScrollContainer
             base={base}
             products={products}
-            addBlock={true}
+            //addBlock={true}
           />
         </section>
 
