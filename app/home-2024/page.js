@@ -200,11 +200,11 @@ export default function Home2024() {
     <div id="sdb-container">
       <div className="px-1 pt-1 px-md-3 pt-md-3 max-w-[1536px] mx-auto">
         <HomeCTA2024
-          className="mb-3"
+          className="mb-3 mb-xl-6"
           base={base}
           content={{
             className:
-              "p-2 lg:p-4 bg-black text-white w-[30%] flex flex-col items-start",
+              "p-2 p-xl-4 bg-black text-white w-[30%] flex flex-col items-start",
             title: "Do More This Spring",
             subTitle: `20% Off Fleet discount. Valid March 1-31, 2024.`,
             copy: `This offer applies to all PRO Z 700 models, PRO Z 900 models and PRO X 600 models, only at participating dealers and online for shipments only in the 48 contiguous states.`,
@@ -220,7 +220,7 @@ export default function Home2024() {
           img={{ src: "53RZ3CSB050_ProX_636_Env_08_rt1.webp", hero: true }}
         />
 
-        <section className="mb-3">
+        <section className="mb-3 mb-xl-6">
           <Home2024H2
             title="Shop Products"
             href="#"
@@ -231,15 +231,17 @@ export default function Home2024() {
           <Home2024ScrollContainer
             base={base}
             products={products}
+            className=""
             //addBlock={true}
           />
         </section>
 
         <HomeCTA2024
+          className="mb-3 mb-xl-6"
           base={base}
           content={{
             className:
-              "p-2 lg:p-4 bg-[#ffc20f] w-[30%] flex flex-col items-start",
+              "p-2 p-xl-4 bg-[#ffc20f] w-[30%] flex flex-col items-start",
             title: "Real Progress Starts With Something Different",
             copy: `Different isn’t afraid to stand out. Different is the beating heart of innovation. The Pro Series by Cub Cadet. Built Different.`,
           }}
@@ -253,10 +255,9 @@ export default function Home2024() {
           }}
           videoID="JFo31WFQnNI"
           // video={{ src: "CubCadetPRO2BuiltDifferent.mp4" }}
-          className="mb-3"
         />
 
-        <section className="bg-[#efefef] mb-3">
+        <section className="bg-[#efefef] mb-3 mb-xl-6">
           <div className="">
             <div id="product-finder-zero-turns">
               <div className="p-20">Product Finder</div>
@@ -272,11 +273,11 @@ export default function Home2024() {
         </section>
 
         <HomeCTA2024
-          className="mb-3"
+          className="mb-3 mb-xl-6"
           base={base}
           content={{
             className:
-              "p-2 lg:p-4 bg-black text-white w-[30%] flex flex-col items-start",
+              "p-2 p-xl-4 bg-black text-white w-[30%] flex flex-col items-start",
             title: "Find a Dealer Today",
             copy: `Maximize your Cub Cadet experience with expert service and browse your local dealers wide product selection online. Schedule a test drive today.`,
           }}
@@ -292,7 +293,7 @@ export default function Home2024() {
         />
       </div>
 
-      <section className="relative lg:pt-36">
+      <section className="relative lg:pt-36 mb-3 mb-xl-6">
         <div className="bg-[#ececec] relative">
           <div className="lg:hidden absolute top-0 left-0 w-full h-full max-h-28 bg-white" />
           <ul className="grid grid-cols-1 lg:grid-cols-2 max-w-[800px] mx-auto relative z-10 p-2 p-md-5">
@@ -351,7 +352,7 @@ export default function Home2024() {
           </ul>
         </section> */}
 
-        <section className="mt-3">
+        <section className="mb-3 mb-xl-6">
           <Home2024H2
             title="How-Tos & Articles"
             href="https://www.cubcadet.com/en_US/knowledge-center.html"
@@ -374,7 +375,7 @@ export default function Home2024() {
         </section>
       </div>
 
-      <section className="mt-3 bg-gray-100 py-10 p-3">
+      <section className="bg-gray-100 py-10 p-3 p-xl-6">
         <div className="max-w-[1536px] mx-auto">
           <Home2024H2
             title="Shop Attachments"

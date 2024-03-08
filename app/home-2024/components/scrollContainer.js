@@ -7,6 +7,7 @@ export default function Home2024ScrollContainer({
   base,
   products,
   addBlock = false,
+  className,
 }) {
   const moveMe = (e, dir) => {
     const el = e.currentTarget.closest(".scroll-container");
@@ -43,7 +44,7 @@ export default function Home2024ScrollContainer({
   }, []);
 
   return (
-    <div className="relative scroll-container">
+    <div className={`relative scroll-container ${className}`}>
       <button
         className="w-12 h-12 absolute top-[50%] left-0 z-20 translate-y-[-100%] bg-white shadow outline-0 cursor-pointer rounded hidden back"
         style={{ transform: "translate(-8px, -50%)" }}
