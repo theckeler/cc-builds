@@ -119,22 +119,10 @@ export default function Home2024() {
         "https://www.cubcadet.com/en_US/zero-turn-mower-accessories/baggers-and-grass-collectors",
     },
     {
-      title: "Sun Shades",
-      src: "sun-shade.webp?resize=300x300",
+      title: "Mulching Kits",
+      src: "mulching-kit.webp?resize=300x300",
       href:
-        "https://www.cubcadet.com/en_US/riding-mower-accessories/sun-shade/19B30021100.html",
-    },
-    {
-      title: "Fastattach® Rear Carrier",
-      src: "FASTATTACH-rear-carrier.webp?resize=300x300",
-      href:
-        "https://www.cubcadet.com/en_US/riding-mower-accessories/fastattach-rear-cargo-carrier/19B30029100.html",
-    },
-    {
-      title: "Hauler Accessories",
-      src: "hauler-accesories.webp?resize=300x300",
-      href:
-        "https://www.cubcadet.com/en_US/universal-parts/hauler-tool-holder-kit/19A40030OEM.html",
+        "https://www.cubcadet.com/en_US/riding-mower-accessories/mulching-kits",
     },
     {
       title: "All-Season Plows",
@@ -142,6 +130,24 @@ export default function Home2024() {
       href:
         "https://www.cubcadet.com/en_US/riding-mower-accessories/fastattach-all-season-plow-blade/19A30037100.html",
     },
+    {
+      title: "Sun Shades",
+      src: "sun-shade.webp?resize=300x300",
+      href:
+        "https://www.cubcadet.com/en_US/riding-mower-accessories/sun-shade/19B30021100.html",
+    },
+    {
+      title: "FastAttach Attachments",
+      src: "FASTATTACH-rear-carrier.webp?resize=300x300",
+      href: "https://www.cubcadet.com/en_US/search?q=fastattach&lang=en_US",
+    },
+    {
+      title: "Hauler Accessories",
+      src: "hauler-accesories.webp?resize=300x300",
+      href:
+        "https://www.cubcadet.com/en_US/universal-parts/hauler-tool-holder-kit/19A40030OEM.html",
+    },
+
     {
       title: "Snow Blower Cab Covering",
       src: "snow-blower-cab-covering.webp?resize=300x300",
@@ -158,12 +164,6 @@ export default function Home2024() {
       title: "Cutting Decks",
       src: "XT2_LX42_deck_top_F1.webp?resize=300x300",
       href: "https://www.cubcadet.com/en_US/shop-by-part-type/mower-decks",
-    },
-    {
-      title: "Mulching Kits",
-      src: "mulching-kit.webp?resize=300x300",
-      href:
-        "https://www.cubcadet.com/en_US/riding-mower-accessories/mulching-kits",
     },
   ];
 

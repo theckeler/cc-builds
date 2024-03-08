@@ -63,7 +63,7 @@ export default function HomeCTA2024({
             }
           >
             {button.title}
-            <span className="sr-only"> {button.sr}</span>
+            <span className="sr-only">&nbsp;{button.sr}</span>
           </a>
         </li>
       </ul>
