@@ -107,14 +107,14 @@ export default function Home2024() {
 
   const attachments = [
     {
-      title: "Riding Baggers",
+      title: "Riding Mower Baggers",
       src: "riding-mower-bag.webp?resize=300x300",
       href:
         "https://www.cubcadet.com/en_US/riding-mower-accessories/baggers-and-grass-collectors",
     },
     {
-      title: "Zero Turn Baggers",
-      src: "zero-turn-mower-bag.webp?resize=300x300",
+      title: "Zero-Turn Mower Baggers",
+      src: "19B70054100_1.webp?resize=300x300",
       href:
         "https://www.cubcadet.com/en_US/zero-turn-mower-accessories/baggers-and-grass-collectors",
     },
@@ -125,7 +125,7 @@ export default function Home2024() {
         "https://www.cubcadet.com/en_US/riding-mower-accessories/mulching-kits",
     },
     {
-      title: "All-Season Plows",
+      title: "Snow Removal",
       src: "all-season-plow.webp?resize=300x300",
       href:
         "https://www.cubcadet.com/en_US/riding-mower-accessories/fastattach-all-season-plow-blade/19A30037100.html",
@@ -142,14 +142,13 @@ export default function Home2024() {
       href: "https://www.cubcadet.com/en_US/search?q=fastattach&lang=en_US",
     },
     {
-      title: "Hauler Accessories",
+      title: "Tow-Behind Attachments",
       src: "hauler-accesories.webp?resize=300x300",
       href:
         "https://www.cubcadet.com/en_US/universal-parts/hauler-tool-holder-kit/19A40030OEM.html",
     },
-
     {
-      title: "Snow Blower Cab Covering",
+      title: "Snow Blower Cabs",
       src: "snow-blower-cab-covering.webp?resize=300x300",
       href:
         "https://www.cubcadet.com/en_US/snow-blower-accessories/universal-snow-blower-cab/490-241-0032.html",
@@ -314,7 +313,7 @@ export default function Home2024() {
                 <li>*</li>
                 <li>
                   Offers subject to credit approval. <br />
-                  Some Restrictions apply.
+                  Some restrictions apply.
                 </li>
               </ul>
               <a
