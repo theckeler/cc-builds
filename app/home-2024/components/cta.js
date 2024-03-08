@@ -5,6 +5,7 @@ export default function HomeCTA2024({
   content,
   button,
   videoID,
+  video,
   className,
   img,
 }) {
@@ -12,17 +13,31 @@ export default function HomeCTA2024({
     <section className={className}>
       <ul className="w-full flex flex-col xl:flex-row justify-center">
         <li className="relative min-h-[180px] lg:min-h-[420px] w-full xl:max-w-6xl">
-          {videoID ? (
+          {videoID && (
             <iframe
               width="560"
               height="315"
               className="w-full h-full absolute"
-              src="https://www.youtube.com/embed/x-_qooDWr1c?rel=0"
+              src={`https://www.youtube.com/embed/${videoID}?rel=0&controls=0&modestbranding=1&showinfo=0`}
               title={content.title + " Video"}
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             />
-          ) : (
+          )}
+          {/* {video && (
+            <video
+              class=""
+              playsinline=""
+              aria-describedby="F8E60B45-45A4-4E07-AC54DD8032485467"
+              muted=""
+              loop=""
+              src={base + video.src}
+              autoplay=""
+            >
+              Sorry, your browser doesn’t support embedded videos.
+            </video>
+          )} */}
+          {img && (
             <ResponsiveImage
               id={content.title
                 .replace(/\s+/g, "-", "-")
@@ -42,7 +57,10 @@ export default function HomeCTA2024({
           <p className="text-sm sm:text-base leading-5">{content.copy}</p>
           <a
             href={button.href}
-            className={button.className + " min-h-[48px] flex items-center justify-center"}
+            className={
+              button.className +
+              " min-h-[48px] flex items-center justify-center"
+            }
           >
             {button.title}
             <span className="sr-only"> {button.sr}</span>

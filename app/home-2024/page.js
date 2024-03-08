@@ -240,8 +240,8 @@ export default function Home2024() {
           content={{
             className:
               "p-2 lg:p-4 bg-[#ffc20f] w-[30%] flex flex-col items-start",
-            title: "Experience the Ultimate Lineup",
-            copy: `Cub Cadet offers a variety of products tough enough to help tackle whatever you throw at it.`,
+            title: "Real Progress Starts With Something Different",
+            copy: `Different isn’t afraid to stand out. Different is the beating heart of innovation. The Pro Series by Cub Cadet. Built Different.`,
           }}
           button={{
             title: "Learn More",
@@ -251,20 +251,22 @@ export default function Home2024() {
             className:
               "border-2 border-black px-4 py-1 mt-auto uppercase no-underline font-bold text-center bg-black text-[#ffc20f] w-full md:w-auto",
           }}
-          videoID="x-_qooDWr1c"
+          videoID="JFo31WFQnNI"
+          // video={{ src: "CubCadetPRO2BuiltDifferent.mp4" }}
           className="mb-3"
         />
 
         <section className="bg-[#efefef] mb-3">
           <div className="">
             <div id="product-finder-zero-turns">
-              <script
+              <div className="p-20">Product Finder</div>
+              {/* <script
                 dangerouslySetInnerHTML={{
                   __html: `
               (function(c,a,r,t,f,u,l){c[u]=c[u]||function(){(c[u].q=c[u].q||[]).push(arguments)},l=a.createElement(r),l.async=1,l.id=u+"scr",l.src=f,a[t].appendChild(l)})(window,document,"script","body","//embed.cartfulsolutions.com/zero-turn-finder/recommendation.min.js","cfl659");
               `,
                 }}
-              />
+              /> */}
             </div>
           </div>
         </section>

@@ -36,5 +36,5 @@ yarn-error.log*
 next-env.d.ts
 
 *.old
-.sbd-flat
+.flat
 .DS_Store

@@ -21,9 +21,10 @@ export default function Home2024ScrollContainer({
 
   useEffect(() => {
     document.querySelectorAll(".scroll-me").forEach(function (el) {
+      const containerWidth = el.offsetWidth;
+      const contentWidth = el.scrollWidth;
+
       el.addEventListener("scroll", (scroll) => {
-        const containerWidth = scroll.currentTarget.offsetWidth;
-        const contentWidth = scroll.currentTarget.scrollWidth;
         const scrollLeft = scroll.currentTarget.scrollLeft;
 
         if (contentWidth - scrollLeft <= containerWidth) {
@@ -81,6 +82,13 @@ export default function Home2024ScrollContainer({
           <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
         </svg>
       </button>
+
+      {/* <div className="w-full h-1 bg-gray-200 scrollbar relative overflow-hidden">
+        <div
+          className="bg-amber-400 h-full scrollbar-thumb w-0 absolute"
+          style={{ top: 0, left: 0 }}
+        ></div>
+      </div> */}
     </div>
   );
 }
