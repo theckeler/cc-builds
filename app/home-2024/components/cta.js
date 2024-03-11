@@ -24,19 +24,20 @@ export default function HomeCTA2024({
               allowFullScreen
             />
           )}
-          {/* {video && (
+          {video && (
             <video
-              class=""
-              playsinline=""
+              className="w-full"
               aria-describedby="F8E60B45-45A4-4E07-AC54DD8032485467"
-              muted=""
-              loop=""
-              src={base + video.src}
-              autoplay=""
+              muted
+              loop
+           //   autoPlay
+              controls
+              playsInline
             >
+              <source src={base + video.src} type="video/mp4"></source>
               Sorry, your browser doesn’t support embedded videos.
             </video>
-          )} */}
+          )}
           {img && (
             <ResponsiveImage
               id={content.title

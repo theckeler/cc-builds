@@ -1,10 +1,8 @@
-import Link from "next/link";
-
 function Footer() {
   return (
     <footer>
       <div className="wrapper ml-auto mr-auto">
-        <Link
+        <div
           href="/"
           style={{
             padding: "60px 20px",
@@ -17,9 +15,7 @@ function Footer() {
             textDecoration: "none",
             display: "block",
           }}
-        >
-          FOOTER
-        </Link>
+        ></div>
       </div>
       <script
         defer
