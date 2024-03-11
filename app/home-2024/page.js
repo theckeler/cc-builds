@@ -253,7 +253,8 @@ export default function Home2024() {
               "border-2 border-black px-4 py-1 mt-auto uppercase no-underline font-bold text-center bg-black text-[#ffc20f] w-full md:w-auto",
           }}
           //videoID="JFo31WFQnNI"
-          video={{ src: "CubCadetPRO2BuiltDifferent.mp4" }}
+          // video={{ src: "CubCadetPRO2BuiltDifferent.mp4" }}
+          img={{ src: "something-different.webp" }}
         />
 
         <section className="bg-[#efefef] mb-3 mb-xl-6">
