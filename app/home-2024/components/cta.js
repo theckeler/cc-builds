@@ -62,8 +62,7 @@ export default function HomeCTA2024({
               " min-h-[48px] flex items-center justify-center"
             }
           >
-            {button.title}
-            <span className="sr-only">&nbsp;{button.sr}</span>
+            {button.title} <span className="sr-only"> {button.sr}</span>
           </a>
         </li>
       </ul>

@@ -21,7 +21,7 @@ export default function Home2024() {
         title: "Learn More",
         href:
           "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-pick-the-best-zero-turn.html",
-        sr: "about Integer sodales leo risus",
+        sr: "about How to Pick the Best Zero-Turn Lawn Mower",
         className: "w-full py-2 uppercase font-bold text-sm inline-block",
       },
     },
@@ -37,7 +37,7 @@ export default function Home2024() {
         title: "Learn More",
         href:
           "https://www.cubcadet.com/en_US/how-to/knowledge-how-to-change-the-blade-on-your-cub-cadet-rider.html",
-        sr: "about Integer sodales leo risus",
+        sr: "about how to Change a Blade on a Riding Lawn Mower",
         className: "w-full py-2 uppercase font-bold text-sm inline-block",
       },
     },
@@ -53,7 +53,7 @@ export default function Home2024() {
         title: "Learn More",
         href:
           "https://www.cubcadet.com/en_US/product-information/electric-riding-mower-right+for-me.html",
-        sr: "about Integer sodales leo risus",
+        sr: "if an Electric Rider Right for You",
         className: "w-full py-2 uppercase font-bold text-sm inline-block",
       },
     },
@@ -114,7 +114,7 @@ export default function Home2024() {
     },
     {
       title: "Zero-Turn Mower Baggers",
-      src: "19B70054100_1.webp?resize=300x300",
+      src: "19B70055100BKLFT.webp?resize=300x300",
       href:
         "https://www.cubcadet.com/en_US/zero-turn-mower-accessories/baggers-and-grass-collectors",
     },
@@ -132,9 +132,9 @@ export default function Home2024() {
     },
     {
       title: "Sun Shades",
-      src: "sun-shade.webp?resize=300x300",
+      src: "Sun-SnowShadeCUB267.webp?resize=300x300",
       href:
-        "https://www.cubcadet.com/en_US/riding-mower-accessories/sun-shade/19B30021100.html",
+        "https://www.cubcadet.com/en_US/riding-lawn-mowers/riding-mower-accessories?prefn1=universal-part-category&prefv1=Sun%20Shade",
     },
     {
       title: "FastAttach Attachments",
@@ -212,7 +212,7 @@ export default function Home2024() {
           button={{
             title: "Learn More",
             href: "https://www.cubcadet.com/en_US/seasonal-offers.html",
-            sr: "about Integer sodales leo risus",
+            sr: "about doing more this Spring",
             className:
               "border-2 border-[#ffc20f] px-4 py-1 mt-auto bg-[#ffc20f] text-black text-[#ffc20f] uppercase no-underline font-bold text-center w-full md:w-auto",
           }}
@@ -248,7 +248,7 @@ export default function Home2024() {
             title: "Learn More",
             href:
               "https://www.cubcadet.com/en_US/ultima-series-features-benefits.html",
-            sr: "Maecenas tristique lacus ante",
+            sr: "about how Real Progress Starts With Something Different",
             className:
               "border-2 border-black px-4 py-1 mt-auto uppercase no-underline font-bold text-center bg-black text-[#ffc20f] w-full md:w-auto",
           }}
@@ -284,7 +284,7 @@ export default function Home2024() {
             title: "Find a Dealer",
             href:
               "https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find",
-            sr: "about Integer sodales leo risus",
+            sr: "by clicking this button.",
             className:
               "border-2 border-white px-4 py-1 mt-auto text-black uppercase no-underline font-bold text-center bg-white w-full md:w-auto",
           }}
@@ -321,7 +321,9 @@ export default function Home2024() {
                 className="border-2 border-black px-4 py-1 mt-auto uppercase no-underline font-bold text-center bg-black text-white w-full md:w-auto min-h-[48px] flex items-center justify-center"
               >
                 Learn More
-                <span className="sr-only"> Nulla et libero eu nibh</span>
+                <span className="sr-only">
+                  about the Exceptional Financing Offers Available
+                </span>
               </a>
             </li>
           </ul>
@@ -389,6 +391,37 @@ export default function Home2024() {
           />
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: `
+                  {
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "image": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/vd543c4bdcb4ecd57647da8407d6249a8b0c7f051/ZeroTurnLanding/hero.jpg?version=1,671,452,470,000",
+                    "url": "https://www.cubcadet.com",
+                    "sameAs": [
+                      "https://www.facebook.com/cubcadet/",
+                      "https://www.instagram.com/cubcadet_usa/",
+                      "https://www.youtube.com/user/CubCadetRidingMowerS"
+                    ],
+                    "logo": "https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/default/dw1bf7d2a6/images/svg-icons/logo.svg",
+                    "name": "Cub Cadet",
+                    "description": "Established in 1961, Cub Cadet engineers, designs and builds outdoor power equipment using the highest quality components sourced locally and globally. Through a dedicated and extensive network of dealers and retailers, Cub Cadet delivers a full line of high performance power equipment and services that cover all aspects of grounds care for professionals and homeowners – including four-wheel steer zero-turn riders; lap bar zero-turn riders; utility vehicles; lawn and garden tractors, battery and gasoline powered handheld and chore products; snow throwers and more. Based in Valley City, Ohio, Cub Cadet is recognized worldwide for its legacy in engineering excellence and its progressive dedication to thoughtfully designing around the people that depend on Cub Cadet equipment to help unlock the full potential of their outdoor spaces.",
+                    "telephone": "+1-877-428-2349",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "streetAddress": "5903 Grafton Road",
+                      "addressLocality": "Valley City",
+                      "addressCountry": "US",
+                      "addressRegion": "OH",
+                      "postalCode": "44280"
+                    }
+                  }
+              `,
+        }}
+      />
     </div>
   );
 }
