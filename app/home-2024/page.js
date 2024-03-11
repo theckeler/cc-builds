@@ -216,7 +216,11 @@ export default function Home2024() {
             className:
               "border-2 border-[#ffc20f] px-4 py-1 mt-auto bg-[#ffc20f] text-black text-[#ffc20f] uppercase no-underline font-bold text-center w-full md:w-auto",
           }}
-          img={{ src: "53RZ3CSB050_ProX_636_Env_08_rt1.webp", hero: true }}
+          img={{
+            src: "53RZ3CSB050_ProX_636_Env_08_rt1.webp",
+            hero: true,
+            resize: { width: 912, height: 420 },
+          }}
         />
 
         <section className="mb-3 mb-xl-6">
@@ -246,8 +250,7 @@ export default function Home2024() {
           }}
           button={{
             title: "Learn More",
-            href:
-              "https://www.cubcadet.com/en_US/ultima-series-features-benefits.html",
+            href: "https://www.cubcadet.com/en_US/commercial-equipment",
             sr: "about how Real Progress Starts With Something Different",
             className:
               "border-2 border-black px-4 py-1 mt-auto uppercase no-underline font-bold text-center bg-black text-[#ffc20f] w-full md:w-auto",

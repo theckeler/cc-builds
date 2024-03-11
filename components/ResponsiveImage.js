@@ -12,6 +12,7 @@ export default function ResponsiveImage({
   base = undefined,
   width = undefined,
   height = undefined,
+  resize = undefined,
 }) {
   const breakpoints = [2048, 1920, 1366, 1025, 768, 544];
   const imgSrc = base ? base + src : src;
@@ -70,9 +71,13 @@ export default function ResponsiveImage({
       className={className}
       style={style}
       id={id ? `${id}-img` : ""}
-      src={imgSrc}
-      width={width ? width : "auto"}
-      height={height ? height : "auto"}
+      src={
+        resize
+          ? imgSrc + "?resize=" + resize.width + "x" + resize.height
+          : imgSrc
+      }
+      width={resize ? resize.width : "auto"}
+      height={resize ? resize.height : "auto"}
       // HERO:
       rel={hero ? "preload" : undefined}
       as={hero ? "image" : undefined}

@@ -30,7 +30,7 @@ export default function HomeCTA2024({
               aria-describedby="F8E60B45-45A4-4E07-AC54DD8032485467"
               muted
               loop
-           //   autoPlay
+              //   autoPlay
               controls
               playsInline
             >
@@ -49,6 +49,7 @@ export default function HomeCTA2024({
               hero={img.hero ? true : false}
               alt=""
               className="h-full w-full absolute object-cover top-0 left-0"
+             // resize={img.resize ? img.resize : ""}
             />
           )}
         </li>
