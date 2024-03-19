@@ -11,7 +11,7 @@ export default function HomeCTA2024({
 }) {
   return (
     <section className={className}>
-      <ul className="w-full flex flex-col xl:flex-row justify-center">
+      <ul className="flex flex-col xl:flex-row justify-center">
         <li className="relative min-h-[180px] lg:min-h-[420px] w-full xl:max-w-6xl">
           {videoID && (
             <iframe
@@ -49,7 +49,7 @@ export default function HomeCTA2024({
               hero={img.hero ? true : false}
               alt=""
               className="h-full w-full absolute object-cover top-0 left-0"
-             // resize={img.resize ? img.resize : ""}
+              // resize={img.resize ? img.resize : ""}
             />
           )}
         </li>
