@@ -454,7 +454,7 @@ export default function PDP({}) {
       <div className="product-info container no-container-gutters-lg-down mt-4">
         <div className="row">
           {/* Product Images Carousel */}
-          <div className="primary-images col-12 col-sm-7 order-sm-1 col-lg-7">
+          <div className="primary-images col-12 col-sm-7 order-sm-1 col-lg-7 lg:sticky top-0 h-full">
             <div className="d-none d-sm-block badge-container">
               <div className="badge-row">
                 <div className="content-asset">
