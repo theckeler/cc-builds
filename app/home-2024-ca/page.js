@@ -293,7 +293,7 @@ export default function Home2024() {
           }}
           img={{ src: "OutdoorSale-0323_HR_rt3_72dpi.webp" }}
         />
-      </div>
+     
 
       {/* <section className="relative lg:pt-36 mb-3 mb-xl-6">
         <div className="bg-[#ececec] relative">
@@ -353,7 +353,9 @@ export default function Home2024() {
         img={{ src: "3-year.webp" }}
       />
 
-      <div className="px-3 max-w-[1536px] mx-auto">
+
+
+      
         {/* <section className="mt-3">
           <h2 className="text-3xl">More From Cub Cadet</h2>
 
