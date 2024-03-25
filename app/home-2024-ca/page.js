@@ -1,4 +1,3 @@
-import ResponsiveImage from "@/components/ResponsiveImage";
 import HomeArticles2024 from "./components/articles";
 import HomeCTA2024 from "./components/cta";
 import Home2024H2 from "./components/h2";
@@ -92,12 +91,12 @@ export default function Home2024() {
       src: "31AH5IVTB10_2X_28_RT_rt3_treat_72dpi.webp?resize=300x300",
       href: "https://www.cubcadet.com/en_US/snow-blowers",
     },
-    {
-      title: "Utility Vehicles",
-      src:
-        "37AZ7CPK710_Challenger550_BLK_0033_shd_rt1_72dpi.webp?resize=300x300",
-      href: "https://www.cubcadet.com/en_US/utility-vehicles",
-    },
+    // {
+    //   title: "Utility Vehicles",
+    //   src:
+    //     "37AZ7CPK710_Challenger550_BLK_0033_shd_rt1_72dpi.webp?resize=300x300",
+    //   href: "https://www.cubcadet.com/en_US/utility-vehicles",
+    // },
     // {
     //   title: "Cordless Electric Lawn Tools",
     //   src: "41AE125C810_ST15E_LPFL_rt2_MOCK_72dpi.webp",
@@ -245,19 +244,19 @@ export default function Home2024() {
           base={base}
           content={{
             className: "p-2 p-xl-4 bg-[#ffc20f] flex flex-col items-start",
-            title: "Register Your Lawn Mower",
-            copy: `This easy, two-step process allows us to provide you with our warranty service and notify you of any pertinent safety information. Registration also may in some cases help to serve as proof of purchase for insurance purposes in case of flood, fire, or theft.`,
+            title: "Real Progress Starts With Something Different",
+            copy: `Different isn’t afraid to stand out. Different is the beating heart of innovation. The Pro Series by Cub Cadet. Built Different.`,
           }}
           button={{
             title: "Learn More",
-            href: "https://www.cubcadet.ca/en/registration.html",
-            sr: "about Registering Your Lawn Mower",
+            href: "https://www.cubcadet.com/en_US/commercial-equipment",
+            sr: "about how Real Progress Starts With Something Different",
             className:
               "border-2 border-black px-4 py-1 mt-auto uppercase no-underline font-bold text-center bg-black text-[#ffc20f] w-full md:w-auto",
           }}
           //videoID="JFo31WFQnNI"
           // video={{ src: "CubCadetPRO2BuiltDifferent.mp4" }}
-          img={{ src: "3-year.webp" }}
+          img={{ src: "something-different.webp" }}
         />
 
         <section className="bg-[#efefef] mb-3 mb-xl-6">
@@ -296,7 +295,7 @@ export default function Home2024() {
         />
       </div>
 
-      <section className="relative lg:pt-36 mb-3 mb-xl-6">
+      {/* <section className="relative lg:pt-36 mb-3 mb-xl-6">
         <div className="bg-[#ececec] relative">
           <div className="lg:hidden absolute top-0 left-0 w-full h-full max-h-28 bg-white" />
           <ul className="grid grid-cols-1 lg:grid-cols-2 max-w-[800px] mx-auto relative z-10 p-2 p-md-5">
@@ -332,7 +331,27 @@ export default function Home2024() {
             </li>
           </ul>
         </div>
-      </section>
+      </section> */}
+
+      <HomeCTA2024
+        className="mb-3 mb-xl-6"
+        base={base}
+        content={{
+          className: "p-2 p-xl-4 bg-[#ffc20f] flex flex-col items-start",
+          title: "Register Your Lawn Mower",
+          copy: `This easy, two-step process allows us to provide you with our warranty service and notify you of any pertinent safety information. Registration also may in some cases help to serve as proof of purchase for insurance purposes in case of flood, fire, or theft.`,
+        }}
+        button={{
+          title: "Learn More",
+          href: "https://www.cubcadet.ca/en/registration.html",
+          sr: "about Registering Your Lawn Mower",
+          className:
+            "border-2 border-black px-4 py-1 mt-auto uppercase no-underline font-bold text-center bg-black text-[#ffc20f] w-full md:w-auto",
+        }}
+        //videoID="JFo31WFQnNI"
+        // video={{ src: "CubCadetPRO2BuiltDifferent.mp4" }}
+        img={{ src: "3-year.webp" }}
+      />
 
       <div className="px-3 max-w-[1536px] mx-auto">
         {/* <section className="mt-3">
