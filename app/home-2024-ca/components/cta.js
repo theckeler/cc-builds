@@ -40,10 +40,14 @@ export default function HomeCTA2024({
           )}
           {img && (
             <ResponsiveImage
-              id={content.title
-                .replace(/\s+/g, "-", "-")
-                .replace(/\d+/g, "")
-                .toLowerCase()}
+              id={
+                img.id
+                  ? img.id
+                  : content.title
+                      .replace(/\s+/g, "-", "-")
+                      .replace(/\d+/g, "")
+                      .toLowerCase()
+              }
               src={img.src}
               base={base}
               hero={img.hero ? true : false}
@@ -64,7 +68,8 @@ export default function HomeCTA2024({
               " min-h-[48px] flex items-center justify-center"
             }
           >
-            {button.title} <span className="sr-only"> {button.sr}</span>
+            {button.title}{" "}
+            {button.sr && <span className="sr-only"> {button.sr}</span>}
           </a>
         </li>
       </ul>

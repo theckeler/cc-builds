@@ -14,6 +14,7 @@ export default function Dealer({}) {
       miles: "22",
       checked: true,
       elite: true,
+      stars: { agerage: 4.5, numReviews: 40 },
     },
     {
       id: "aenean",
@@ -25,6 +26,7 @@ export default function Dealer({}) {
       miles: "10",
       checked: false,
       elite: false,
+      stars: { agerage: 4.2, numReviews: 30 },
     },
     {
       id: "nam",
@@ -36,6 +38,7 @@ export default function Dealer({}) {
       miles: "35",
       checked: false,
       elite: false,
+      stars: { agerage: 4.7, numReviews: 60 },
     },
   ]);
 
@@ -120,35 +123,34 @@ export default function Dealer({}) {
                         className={block.checked ? "font-bold text-base" : ""}
                       >
                         {block.name}
-                        <Stars />
+                        <Stars stars={block.stars} />
+                        <div
+                          className={`pr-1 flex-grow-1 ${
+                            block.checked ? "" : "hidden"
+                          }`}
+                        >
+                          {/* <div style={{ fontSize: "0.8em" }}>{block.address}</div> */}
+                          <div style={{ fontSize: "0.8em" }}>
+                            {block.city}, {block.state} {block.zip}
+                          </div>
+                          {/* <a
+                            className="mt-1 block"
+                            onClick={() => {
+                              document
+                                .querySelector(".dealer-selector-modal")
+                                .classList.add("d-block");
+                            }}
+                          >
+                            <span className="underline font-bold">
+                              Contact Dealer
+                            </span>
+                          </a> */}
+                        </div>
                       </li>
                       <li className="ml-auto flex-shrink-1 text-nowrap">
                         {block.miles} Miles
                       </li>
                     </ul>
-                    [star rating]
-                    <div
-                      className={`pr-1 flex-grow-1 ${
-                        block.checked ? "" : "hidden"
-                      }`}
-                    >
-                      {/* <div style={{ fontSize: "0.8em" }}>{block.address}</div> */}
-                      <div style={{ fontSize: "0.8em" }}>
-                        {block.city}, {block.state} {block.zip}
-                      </div>
-                      {/* <a
-                        className="mt-1 block"
-                        onClick={() => {
-                          document
-                            .querySelector(".dealer-selector-modal")
-                            .classList.add("d-block");
-                        }}
-                      >
-                        <span className="underline font-bold">
-                          Contact Dealer
-                        </span>
-                      </a> */}
-                    </div>
                   </li>
                 </ul>
                 <label
@@ -166,36 +168,37 @@ export default function Dealer({}) {
           })}
         </ul>
         <ul className="list-unstyled d-flex align-items-center gap-1 mt-1">
-          {/* <li>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 -960 960 960"
-              className="w-6"
-            >
-              <path d="M841-518v318q0 33-23.5 56.5T761-120H201q-33 0-56.5-23.5T121-200v-318q-23-21-35.5-54t-.5-72l42-136q8-26 28.5-43t47.5-17h556q27 0 47 16.5t29 43.5l42 136q12 39-.5 71T841-518Zm-272-42q27 0 41-18.5t11-41.5l-22-140h-78v148q0 21 14 36.5t34 15.5Zm-180 0q23 0 37.5-15.5T441-612v-148h-78l-22 140q-4 24 10.5 42t37.5 18Zm-178 0q18 0 31.5-13t16.5-33l22-154h-78l-40 134q-6 20 6.5 43t41.5 23Zm540 0q29 0 42-23t6-43l-42-134h-76l22 154q3 20 16.5 33t31.5 13ZM201-200h560v-282q-5 2-6.5 2H751q-27 0-47.5-9T663-518q-18 18-41 28t-49 10q-27 0-50.5-10T481-518q-17 18-39.5 28T393-480q-29 0-52.5-10T299-518q-21 21-41.5 29.5T211-480h-4.5q-2.5 0-5.5-2v282Zm560 0H201h560Z" />
-            </svg>
-          </li> */}
-          {/* <li className="font-bold">Dealers: </li> */}
-          <li className=" ml-auto">
-            {/* <input
-              type="text"
-              value="44113"
-              id="zip"
-              className="form-control h-12 max-w-[100px] text-center"
-              placeholder="Zipcode"
-              aria-label="Enter your Zipcode"
-              style={{ fontSize: "16px" }}
-            /> */}
-          </li>
-          <li>
+          <li className="ml-auto">
             <button
-              className="btn position-relative bg-[#e4e4e4] hover:bg-[#ffc20f] p-2 h-12"
-              type="button"
-              id="button-addon2"
+              className="bg-[#ffc20f] p-1 flex text-nowrap items-center gap-1"
               onClick={(e) => {
                 e.preventDefault();
               }}
             >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 -960 960 960"
+                className="w-8"
+              >
+                <path d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
+              </svg>
+              View List
+            </button>
+          </li>
+          <li>
+            <button
+              className="bg-[#e4e4e4] p-1 flex text-nowrap items-center gap-1"
+              onClick={(e) => {
+                e.preventDefault();
+              }}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 -960 960 960"
+                className="w-8"
+              >
+                <path d="m600-120-240-84-186 72q-20 8-37-4.5T120-170v-560q0-13 7.5-23t20.5-15l212-72 240 84 186-72q20-8 37 4.5t17 33.5v560q0 13-7.5 23T812-192l-212 72Zm-40-98v-468l-160-56v468l160 56Zm80 0 120-40v-474l-120 46v468Zm-440-10 120-46v-468l-120 40v474Zm440-458v468-468Zm-320-56v468-468Z" />
+              </svg>
               View Map
             </button>
           </li>

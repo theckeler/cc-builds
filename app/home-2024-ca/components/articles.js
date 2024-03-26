@@ -27,8 +27,7 @@ export default function HomeArticles2024({
           {content.copy}
         </p>
         <a href={button.href} className={"mt-auto " + button.className}>
-          Read More
-          <span className="sr-only"> {button.sr}</span>
+          VOIR PLUS
         </a>
       </div>
     </div>
