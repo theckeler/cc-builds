@@ -108,25 +108,25 @@ export default function Home2024() {
       title: "Riding Mower Baggers",
       src: "riding-mower-bag.webp?resize=300x300",
       href:
-        "https://www.cubcadet.ca/en_US/riding-mower-accessories/baggers-and-grass-collectors",
+        "https://www.cubcadet.ca/en/riding-lawn-mowers/riding-mower-accessories/?prefn1=universal-part-category&prefv1=Baggers%20and%20Grass%20Collectors",
     },
     {
       title: "Zero-Turn Mower Baggers",
       src: "19B70055100BKLFT.webp?resize=300x300",
       href:
-        "https://www.cubcadet.ca/en_US/zero-turn-mower-accessories/baggers-and-grass-collectors",
+        "https://www.cubcadet.ca/en/riding-lawn-mowers/zero-turn-mower-accessories/?prefn1=universal-part-category&prefv1=Baggers%20and%20Grass%20Collectors",
     },
     {
       title: "Mulching Kits",
       src: "mulching-kit.webp?resize=300x300",
       href:
-        "https://www.cubcadet.ca/en_US/riding-mower-accessories/mulching-kits",
+        "https://www.cubcadet.ca/en/riding-lawn-mowers/riding-mower-accessories/?prefn1=universal-part-category&prefv1=Mulching%20Kit",
     },
     {
       title: "Snow Removal",
       src: "all-season-plow.webp?resize=300x300",
       href:
-        "https://www.cubcadet.ca/en_US/riding-mower-accessories/fastattach-all-season-plow-blade/19A30037100.html",
+        "https://www.cubcadet.ca/en/riding-lawn-mowers/riding-mower-accessories/?prefn1=universal-part-category&prefv1=Snow%20Removal",
     },
     {
       title: "Sun Shades",
@@ -143,24 +143,25 @@ export default function Home2024() {
       title: "Tow-Behind Attachments",
       src: "hauler-accesories.webp?resize=300x300",
       href:
-        "https://www.cubcadet.ca/en_US/universal-parts/hauler-tool-holder-kit/19A40030OEM.html",
+        "https://www.cubcadet.ca/en/riding-lawn-mowers/riding-mower-accessories/?prefn1=universal-part-category&prefv1=Tow-Behind%20Attachments",
     },
     {
       title: "Snow Blower Cabs",
       src: "snow-blower-cab-covering.webp?resize=300x300",
       href:
-        "https://www.cubcadet.ca/en_US/snow-blower-accessories/universal-snow-blower-cab/490-241-0032.html",
+        "https://www.cubcadet.ca/en/riding-lawn-mowers/riding-mower-accessories/?prefn1=universal-part-category&prefv1=Snow%20Cab",
     },
     {
       title: "Tire Chains",
       src: "tire-chains.webp?resize=300x300",
       href:
-        "https://www.cubcadet.ca/en_US/universal-parts/chains-for-26-x-12-x-12-tires/490-241-0052.html",
+        "https://www.cubcadet.ca/en/riding-lawn-mowers/riding-mower-accessories/?prefn1=universal-part-category&prefv1=Tire%20Chains",
     },
     {
       title: "Cutting Decks",
       src: "XT2_LX42_deck_top_F1.webp?resize=300x300",
-      href: "https://www.cubcadet.ca/en_US/shop-by-part-type/mower-decks",
+      href:
+        "https://www.cubcadet.ca/en/riding-lawn-mowers/riding-mower-accessories/?prefn1=universal-part-category&prefv1=Tire%20Chains%7CCutting%20Deck",
     },
   ];
 
