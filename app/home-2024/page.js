@@ -216,11 +216,12 @@ export default function Home2024() {
             className:
               "border-2 border-[#ffc20f] px-4 py-1 mt-auto bg-[#ffc20f] text-black text-[#ffc20f] uppercase no-underline font-bold text-center w-full md:w-auto",
           }}
-          img={{
-            src: "CubCadet_FinalImage_CC-2.webp",
-            hero: true,
-            resize: { width: 912, height: 420 },
-          }}
+          // img={{
+          //   src: "CubCadet_FinalImage_CC-2.webp",
+          //   hero: true,
+          //   resize: { width: 912, height: 420 },
+          // }}
+          video={{ src: "CUBCA24088TH ETU End Card Loop 16x9.mp4" }}
         />
 
         <section className="mb-3 mb-xl-6">
@@ -245,7 +246,7 @@ export default function Home2024() {
           content={{
             className: "p-2 p-xl-4 bg-[#ffc20f] flex flex-col items-start",
             title: "All Steerable Wheels, All Zero-Turn",
-            copy: `Climb Inclines up to 20-degrees and still leave straight stripes with Synchro-Steer™ technology.`,
+            copy: `Climb inclines up to 20-degrees and still leave straight stripes with Synchro-Steer™ technology.`,
           }}
           button={{
             title: "Shop Ultima ZTS",

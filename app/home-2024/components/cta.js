@@ -26,13 +26,14 @@ export default function HomeCTA2024({
           )}
           {video && (
             <video
-              className="w-full"
+              className="w-full h-full"
               aria-describedby="F8E60B45-45A4-4E07-AC54DD8032485467"
               muted
               loop
-              //   autoPlay
+              autoPlay
               controls
               playsInline
+              style={{ objectFit: "initial" }}
             >
               <source src={base + video.src} type="video/mp4"></source>
               Sorry, your browser doesn’t support embedded videos.
