@@ -166,34 +166,34 @@ export default function Home2024() {
     },
   ];
 
-  const moreFromCC = [
-    {
-      content: {
-        title: "A Show That’s Made to Mow",
-        copy: `From the makers of the ultimate mowing experience comes the ultimate lawn show. Introducing the Ultimas – designed for those who love to lawn.`,
-      },
-      button: {
-        title: "Learn More",
-        url: "https://www.cubcadet.com/",
-        sr: "about Integer sodales leo risus",
-        className:
-          "border-2 border-white px-4 py-1 mt-auto text-white uppercase no-underline font-bold text-center",
-      },
-    },
-    {
-      content: {
-        title: "3X the Caffeine for Clearing 3X the Snow",
-        copy: `Inspired by the 3X snow blowers, this roast is made with 3X the caffeine for winter mornings when you need to clear feet of snow – not inches.`,
-      },
-      button: {
-        title: "Learn More",
-        url: "https://www.cubcadet.com/",
-        sr: "about Integer sodales leo risus",
-        className:
-          "border-2 border-white px-4 py-1 mt-auto text-white uppercase no-underline font-bold text-center",
-      },
-    },
-  ];
+  // const moreFromCC = [
+  //   {
+  //     content: {
+  //       title: "A Show That’s Made to Mow",
+  //       copy: `From the makers of the ultimate mowing experience comes the ultimate lawn show. Introducing the Ultimas – designed for those who love to lawn.`,
+  //     },
+  //     button: {
+  //       title: "Learn More",
+  //       url: "https://www.cubcadet.com/",
+  //       sr: "about Integer sodales leo risus",
+  //       className:
+  //         "border-2 border-white px-4 py-1 mt-auto text-white uppercase no-underline font-bold text-center",
+  //     },
+  //   },
+  //   {
+  //     content: {
+  //       title: "3X the Caffeine for Clearing 3X the Snow",
+  //       copy: `Inspired by the 3X snow blowers, this roast is made with 3X the caffeine for winter mornings when you need to clear feet of snow – not inches.`,
+  //     },
+  //     button: {
+  //       title: "Learn More",
+  //       url: "https://www.cubcadet.com/",
+  //       sr: "about Integer sodales leo risus",
+  //       className:
+  //         "border-2 border-white px-4 py-1 mt-auto text-white uppercase no-underline font-bold text-center",
+  //     },
+  //   },
+  // ];
 
   return (
     <div id="sdb-container">
@@ -204,20 +204,20 @@ export default function Home2024() {
           content={{
             className:
               "p-2 p-xl-4 bg-black text-white flex flex-col items-start",
-            title: "Do More This Spring",
-            subTitle: `20% Off Fleet discount. Valid March 1-31, 2024.`,
-            copy: `This offer applies to all PRO Z 700 models, PRO Z 900 models and PRO X 600 models, only at participating dealers and online for shipments only in the 48 contiguous states.`,
+            title: "Experience the Ultimate This Spring",
+            //subTitle: `20% Off Fleet discount. Valid March 1-31, 2024.`,
+            copy: `Explore our line-up of gas and battery riders and zero-turns and step up to the ultimate mowing experience.`,
             hero: true,
           }}
           button={{
-            title: "Learn More",
-            href: "https://www.cubcadet.com/en_US/seasonal-offers.html",
-            sr: "about doing more this Spring",
+            title: "Shop Lawn Mowers",
+            href: "https://www.cubcadet.com/en_US/lawn-mowers",
+            //sr: "about doing more this Spring",
             className:
               "border-2 border-[#ffc20f] px-4 py-1 mt-auto bg-[#ffc20f] text-black text-[#ffc20f] uppercase no-underline font-bold text-center w-full md:w-auto",
           }}
           img={{
-            src: "53RZ3CSB050_ProX_636_Env_08_rt1.webp",
+            src: "CubCadet_FinalImage_CC-2.webp",
             hero: true,
             resize: { width: 912, height: 420 },
           }}
@@ -244,19 +244,19 @@ export default function Home2024() {
           base={base}
           content={{
             className: "p-2 p-xl-4 bg-[#ffc20f] flex flex-col items-start",
-            title: "Real Progress Starts With Something Different",
-            copy: `Different isn’t afraid to stand out. Different is the beating heart of innovation. The Pro Series by Cub Cadet. Built Different.`,
+            title: "All Steerable Wheels, All Zero-Turn",
+            copy: `Climb Inclines up to 20-degrees and still leave straight stripes with Synchro-Steer™ technology.`,
           }}
           button={{
-            title: "Learn More",
-            href: "https://www.cubcadet.com/en_US/commercial-equipment",
-            sr: "about how Real Progress Starts With Something Different",
+            title: "Shop Ultima ZTS",
+            href: "https://www.cubcadet.com/en_US/ultima-zts-zero-turn-mowers",
+            // sr: "about how Real Progress Starts With Something Different",
             className:
               "border-2 border-black px-4 py-1 mt-auto uppercase no-underline font-bold text-center bg-black text-[#ffc20f] w-full md:w-auto",
           }}
           //videoID="JFo31WFQnNI"
           // video={{ src: "CubCadetPRO2BuiltDifferent.mp4" }}
-          img={{ src: "something-different.webp" }}
+          img={{ src: "17RRGBYE010_ZTS142_env2.webp" }}
         />
 
         <section className="bg-[#efefef] mb-3 mb-xl-6">
