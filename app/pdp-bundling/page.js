@@ -2,7 +2,7 @@ import Bundle from "./Bundle";
 
 export default function PDPBundling({}) {
   return (
-    <div id="main">
+    <div>
       <link
         rel="stylesheet"
         href="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1711105518210/css/product/detail.css"
@@ -1199,13 +1199,16 @@ export default function PDPBundling({}) {
                     </li>
                   </ul>
                 </div>
-                
+
                 <div className="col-12">
                   <hr />
                 </div>
 
                 <Bundle />
 
+                <div className="col-12">
+                  <hr />
+                </div>
 
                 {/* Options and Quantity */}
                 <div className="col-12">

@@ -3,10 +3,7 @@ import Modal from "./Modal";
 
 export default function PDP({}) {
   return (
-    <div
-      className="container-fluid product-detail product-wrapper"
-      id="sdb-container"
-    >
+    <div className="container-fluid product-detail product-wrapper">
       <link
         rel="stylesheet"
         href="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1710759957519/css/product/detail.css"
