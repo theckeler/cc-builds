@@ -92,12 +92,12 @@ export default function Home2024() {
       src: "31AH5IVTB10_2X_28_RT_rt3_treat_72dpi.webp?resize=300x300",
       href: "https://www.cubcadet.com/en_US/snow-blowers",
     },
-    {
-      title: "Utility Vehicles",
-      src:
-        "37AZ7CPK710_Challenger550_BLK_0033_shd_rt1_72dpi.webp?resize=300x300",
-      href: "https://www.cubcadet.com/en_US/utility-vehicles",
-    },
+    // {
+    //   title: "Utility Vehicles",
+    //   src:
+    //     "37AZ7CPK710_Challenger550_BLK_0033_shd_rt1_72dpi.webp?resize=300x300",
+    //   href: "https://www.cubcadet.com/en_US/utility-vehicles",
+    // },
     // {
     //   title: "Cordless Electric Lawn Tools",
     //   src: "41AE125C810_ST15E_LPFL_rt2_MOCK_72dpi.webp",
